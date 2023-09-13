@@ -1,0 +1,147 @@
+// Padding de 00 à 100
+// En em
+// x-padding-t-00{padding-top:0}
+// x-padding-t-100{padding-top:10em}
+// Exemple =>
+// x-padding-t-05{padding-top:0.5em} : mobile (tout quand rien d'autre)
+// x-padding-t-05-m{padding-top:0.5em} : tablette
+// x-padding-t-05-l{padding-top:0.5em} : desktop
+// x-padding-t-50{padding-top:5em} : mobile (tout quand rien d'autre)
+// x-padding-t-50-m{padding-top:5em} : tablette
+// x-padding-t-50-l{padding-top:5em} : desktop
+.x-padding-b-025 {
+    padding-bottom: .25em;
+}
+
+@media screen and (min-width: 768px) {
+    .x-padding-b-025-m {
+        padding-bottom: .25em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .x-padding-b-025-l {
+        padding-bottom: .25em;
+    }
+}
+
+@for $i from 0 through 100 {
+    $iletter: calc($i*10/10);
+
+    @if $iletter < 10 {
+        $iletter: "0"+ $iletter
+    }
+
+    $i: calc($i / 10);
+
+    .x-padding-b-#{$iletter} {
+        padding-bottom: 1em * $i;
+    }
+
+    .x-padding-t-#{$iletter} {
+        padding-top: 1em * $i;
+    }
+
+    .x-padding-r-#{$iletter} {
+        padding-right: 1em * $i;
+    }
+
+    .x-padding-l-#{$iletter} {
+        padding-left: 1em * $i;
+    }
+
+    // PWA
+    @media screen and (min-width: 415px) {
+        .x-padding-b-#{$iletter}-s {
+            padding-bottom: 1em * $i;
+        }
+
+        .x-padding-t-#{$iletter}-s {
+            padding-top: 1em * $i;
+        }
+
+        .x-padding-r-#{$iletter}-s {
+            padding-right: 1em * $i;
+        }
+
+        .x-padding-l-#{$iletter}-s {
+            padding-left: 1em * $i;
+        }
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-padding-b-#{$iletter}-m {
+            padding-bottom: 1em * $i;
+        }
+
+        .x-padding-t-#{$iletter}-m {
+            padding-top: 1em * $i;
+        }
+
+        .x-padding-r-#{$iletter}-m {
+            padding-right: 1em * $i;
+        }
+
+        .x-padding-l-#{$iletter}-m {
+            padding-left: 1em * $i;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-padding-b-#{$iletter}-l {
+            padding-bottom: 1em * $i;
+        }
+
+        .x-padding-t-#{$iletter}-l {
+            padding-top: 1em * $i;
+        }
+
+        .x-padding-r-#{$iletter}-l {
+            padding-right: 1em * $i;
+        }
+
+        .x-padding-l-#{$iletter}-l {
+            padding-left: 1em * $i;
+        }
+    }
+
+    // Petit desktop
+    @media screen and (min-width:1024px) and (max-width:1350px) {
+        .x-padding-b-#{$iletter}-ml {
+            padding-bottom: 1em * $i;
+        }
+
+        .x-padding-t-#{$iletter}-ml {
+            padding-top: 1em * $i;
+        }
+
+        .x-padding-r-#{$iletter}-ml {
+            padding-right: 1em * $i;
+        }
+
+        .x-padding-l-#{$iletter}-ml {
+            padding-left: 1em * $i;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1600px) {
+        .x-padding-b-#{$iletter}-xl {
+            padding-bottom: 1em * $i;
+        }
+
+        .x-padding-t-#{$iletter}-xl {
+            padding-top: 1em * $i;
+        }
+
+        .x-padding-r-#{$iletter}-xl {
+            padding-right: 1em * $i;
+        }
+
+        .x-padding-l-#{$iletter}-xl {
+            padding-left: 1em * $i;
+        }
+    }
+}

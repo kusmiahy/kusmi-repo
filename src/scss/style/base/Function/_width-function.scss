@@ -1,0 +1,84 @@
+// CLasse pour la largeur =>
+// Si on veut 100%
+// => 
+
+// .x-width-100 : mobile
+// .x-width-100-m : tablette
+// .x-width-100-l : desktop
+
+.x-flex {
+    display: flex;
+}
+
+.x-block {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .x-flex-m {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .x-flex-l {
+        display: flex;
+    }
+
+}
+
+@for $i from 0 through 100 {
+    .x-width-#{$i} {
+        width: #{percentage(calc($i / 100))} !important;
+    }
+
+    .x-width-auto {
+        width: auto !important;
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-width-#{$i}-m {
+            width: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-width-auto-m {
+            width: auto !important;
+        }
+    }
+
+    // Tablette en landscape
+    @media screen and (min-width: 1023px) and (max-width: 1200px) {
+        .x-width-#{$i}-ml {
+            width: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-width-auto-ml {
+            width: auto !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-width-#{$i}-l {
+            width: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-width-auto-l {
+            width: auto !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1440px) {
+        .x-width-#{$i}-xl {
+            width: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-width-auto-xl {
+            width: auto !important;
+        }
+    }
+
+}

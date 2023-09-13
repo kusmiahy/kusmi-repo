@@ -1,0 +1,420 @@
+// Font Family
+.x-recoleta {
+    font-family: "Recoleta-Bold", Arial;
+}
+
+// Scroll  
+.scroll-item {
+    position: absolute;
+    bottom: 0;
+
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s all linear;
+    
+    &__text {
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: .5rem;
+    }
+    
+    &__animation {
+        width: 2px;
+        height: 20px;
+        background: rgba(255, 255, 255, .3);
+        overflow: hidden;
+
+        .animation {
+            z-index: 3;
+            background: rgba(255, 255, 255);
+            width: 2px;
+            height: 9px;
+            animation: animation-scroll 1.3s infinite;
+        }
+    }
+
+    &__scrolled{
+        opacity: 0;
+    }
+}
+  
+@keyframes animation-scroll {
+    0% {
+        height: 9px;
+    }
+
+    50% {
+        height: 15px;
+    }
+    100% {
+        height: 9px;
+    }
+}
+
+//Iframe 16/9 "adapdatif" Desktop
+.x-youtube {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    // margin: auto;
+    padding: 0% 0% 56.25%;
+    // overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+//  ----------------- Marquee Class for components bloc ---------------------
+.marquee{
+    position: relative;
+
+    .marquee_body {    
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    
+        --gap: 2rem;
+        column-gap: var(--gap);
+    
+        min-width: 100%;
+    
+        .item {
+              white-space: nowrap;
+              animation: marqueeX 35s linear 0s infinite;
+    
+              column-gap: var(--gap);
+    
+              @media screen and (min-width: 1024px) {
+                    animation: marqueeX 30s linear 0s infinite;
+              }
+        }
+
+        .item_slow{
+            animation: marqueeX 45s linear 0s infinite;  
+            @media screen and (min-width: 1024px) {
+                  animation: marqueeX 40s linear 0s infinite;
+            }
+        }
+    
+        .lvm_red{
+              color: #EB5544;
+        }
+    }
+}
+
+
+@keyframes marqueeX {
+    0% {
+          transform: translateX(0%);
+    }
+
+    100% {
+          transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+// ------------------- theatre-mode -------------------------------
+.theatre-mode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    display: none;
+    iframe {
+        z-index: 10001;
+    }
+    .theatre-mode-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 10000;
+        opacity: 80%;
+        transition: linear 1s;
+    }
+    .theatre-mode-item {
+        z-index: 10001;
+        .cross {
+            font-size: 5vh;
+            transform: rotate(45deg);
+            color: #fff;
+            cursor: pointer;
+            z-index: 10001;
+            top: -12%;
+            @include min768 {
+                top: -5vh;
+            }
+            right: 0;
+        }
+    }
+    .crossYoutube {
+        font-size: 7vh;
+        transform: rotate(45deg);
+        color: #fff;
+        cursor: pointer;
+        z-index: 10001;
+        right: 0vh;
+        top: -7vh;
+    }
+}
+
+// ------------------- theatre-mode : Youtube like -------------------------------
+.theatre-mode-YT {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    z-index: 999;
+    // @include min1024 {
+    //     height: 100vh;
+    //     z-index: 0;
+    // }
+    display: none;
+    iframe {
+        z-index: 10001;
+    }
+    .theatre-mode-item {
+        .cross {
+            font-size: 4rem;
+            transform: rotate(45deg);
+            color: #fff;
+            cursor: pointer;
+            z-index: 10001;
+            top: 0;
+            right: 1vh;
+        }
+    }
+}
+
+// ------ Classes + génériques
+// Cursor 
+.x-cpointer {
+    cursor: pointer;
+}
+
+// Transform
+.x-mirror {
+    transform: scaleX(-1);
+}
+
+
+/* Object-fit et object-position */
+
+.x-fit-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+.x-fit-cover-center {
+    object-fit: cover;
+    object-position: center;
+}
+
+.x-fit-cover-top {
+    object-fit: cover;
+    object-position: top;
+}
+
+.x-fit-cover-bot {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.x-fit-cover-right {
+    object-fit: cover;
+    object-position: right;
+}
+
+.x-fit-cover-left {
+    object-fit: cover;
+    object-position: left;
+}
+
+.x-fit-contain {
+    object-fit: contain;
+    object-position: center;
+}
+
+.x-fit-contain-left {
+    object-fit: contain;
+    object-position: left;
+}
+
+.x-bot-auto {
+    bottom: auto;
+}
+
+.x-top-auto {
+    top: auto;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .x-fit-cover-l {
+        object-fit: cover;
+        object-position: center;
+    }
+    .x-fit-cover-center-l {
+        object-fit: cover;
+        object-position: center;
+    }
+    .x-fit-cover-top-l {
+        object-fit: cover;
+        object-position: top;
+    }
+    .x-fit-cover-bot-l {
+        object-fit: cover;
+        object-position: bottom;
+    }
+    .x-fit-cover-right-l {
+        object-fit: cover;
+        object-position: right;
+    }
+    .x-fit-cover-left-l {
+        object-fit: cover;
+        object-position: left;
+    }
+    .x-fit-contain-l {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .x-fit-contain-left-l {
+        object-fit: contain;
+        object-position: left;
+    }
+
+    .x-bot-auto-l {
+        bottom: auto;
+    }
+
+    .x-top-auto-l {
+        top: auto;
+    }
+}
+
+
+/* Overflow */
+
+.x-overflow-h {
+    overflow: hidden;
+}
+
+.x-overflow-v {
+    overflow: visible;
+}
+
+
+/* Effet de hover */
+
+.x-hover-BW {
+    transition: filter 0.1s linear;
+    &:hover {
+        filter: sepia(0.2);
+    }
+}
+
+
+/* Border-radius */
+
+.x-round {
+    border-radius: 50%;
+}
+
+
+/* Effets de texte */
+
+.x-underline-b {
+    text-decoration: underline;
+}
+
+.x-italique {
+    font-style: italic;
+}
+
+.x-upper {
+    text-transform: uppercase;
+}
+
+.x-asterisque {
+    font-size: 0.5em;
+    position: absolute;
+    top: -5%;
+}
+
+.x-display-none {
+    display: none !important;
+}
+
+.x-display-block {
+    display: block;
+}
+
+
+.x-hide-mobile {
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.x-hide-desktop {
+    @media (min-width: 769px) {
+        display: none !important;
+    }
+}
+
+.x-hide-desktop-gap {
+    @media (min-width: 768px) and (max-width: 1600px) {
+        display: none;
+    }
+}
+
+.x-hide-big-screen {
+    @media (min-width: 1600px) {
+        display: none;
+    }
+}
+
+// ---- Pour les BR ---- //
+.mobile-space {
+    display: contents;
+    @include min1024() {
+        display: none;
+    }
+}
+
+.desktop-space {
+    display: none;
+    @include min1024() {
+        display: contents;
+    }
+}
+
+// ---- Nowrap ---- //
+.nowrap {
+    white-space: nowrap;
+}
+
+.nowrap-l {
+    @include min1024() {
+        white-space: nowrap;
+    }
+}

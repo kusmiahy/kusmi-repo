@@ -1,0 +1,71 @@
+// line height de 00 à 150
+// En em
+// x-lineh-00{line-height:0}
+// x-lineh-55{line-height:5.5em}
+// x-lineh-150{line-height:15em}
+// Exemple =>
+// x-lineh-05{line-height:0.5em} : mobile (tout quand rien d'autre)
+// x-lineh-05-m{line-height:0.5em} : tablette
+// x-lineh-05-l{line-height:0.5em} : desktop
+// x-lineh-t-50{line-height:5em} : mobile (tout quand rien d'autre)
+// x-lineh-t-50-m{line-height:5em} : tablette
+// x-lineh-t-50-l{line-height:5em} : desktop
+@for $i from 0 through 100 {
+    $iletter: $i;
+    @if $iletter < 10 {
+        $iletter: "0"+ $iletter
+    }
+    $i: calc($i / 10);
+    .x-lineh-#{$iletter} {
+        line-height: 1em * $i !important;
+    }
+    .x-lineh-#{$iletter}-rem {
+        line-height: 1rem * $i !important;
+    }
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-lineh-#{$iletter}-l {
+            line-height: 1em * $i !important;
+        }
+    }
+    @media screen and (min-width:1024px) and (max-width:1350px) {
+        .x-lineh-#{$iletter}-ml {
+            line-height: 1em * $i !important;
+        }
+    }
+    // Desktop - Grand écran
+    @media screen and (min-width: 1440px) {
+        .x-lineh-#{$iletter}-xl {
+            line-height: 1em * $i !important;
+        }
+    }
+    // en REM
+    @media screen and (max-width: 415px) {
+        .x-lineh-#{$iletter}-rem-s {
+            line-height: 1rem * $i !important;
+        }
+    }
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-lineh-#{$iletter}-rem-m {
+            line-height: 1rem * $i !important;
+        }
+    }
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-lineh-#{$iletter}-rem-l {
+            line-height: 1rem * $i !important;
+        }
+    }
+    @media screen and (min-width:1024px) and (max-width:1350px) {
+        .x-lineh-#{$iletter}-rem-ml {
+            line-height: 1rem * $i !important;
+        }
+    }
+    // Desktop - Grand écran
+    @media screen and (min-width: 1440px) {
+        .x-lineh-#{$iletter}-rem-xl {
+            line-height: 1rem * $i !important;
+        }
+    }
+}

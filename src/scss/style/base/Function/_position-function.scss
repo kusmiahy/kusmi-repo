@@ -1,0 +1,157 @@
+// Fonts-size de 00 à 150
+// En em
+// x-top-00{top:0}
+// x-top-55{top:5.5em}
+// x-top-150{top:15em}
+// Exemple =>
+// x-top-05{top:0.5em} : mobile (tout quand rien d'autre)
+// x-top-05-m{top:0.5em} : tablette
+// x-top-05-l{top:0.5em} : desktop
+// x-top-t-50{top:5em} : mobile (tout quand rien d'autre)
+// x-top-t-50-m{top:5em} : tablette
+// x-top-t-50-l{top:5em} : desktop
+
+
+@for $i from 0 through 100 {
+    @if $i % 2==0 {
+        $iletter: $i;
+
+        @if $iletter < 10 {
+            $iletter: "0"+ $iletter
+        }
+
+        $i: calc($i / 10);
+
+        // ----------- Top -------------
+        .x-top-#{$iletter}-em {
+            top: 1em * $i;
+        }
+
+        // PWA
+        @media screen and (min-width: 415px) {
+            .x-top-#{$iletter}-em-s {
+                top: 1em * $i;
+            }
+        }
+
+        // Tablette
+        @media screen and (max-width: 1024px) {
+            .x-top-#{$iletter}-em-m {
+                top: 1em * $i;
+            }
+        }
+
+        // Desktop
+        @media screen and (min-width: 1024px) {
+            .x-top-#{$iletter}-em-l {
+                top: 1em * $i;
+            }
+        }
+
+        // Desktop - Grand écran
+        @media screen and (min-width: 1600px) {
+            .x-top-#{$iletter}-em-xl {
+                top: 1em * $i;
+            }
+        }
+
+        // ----------- Bot -------------
+        .x-bot-#{$iletter}-em {
+            bottom: 1em * $i;
+        }
+
+        // PWA
+        @media screen and (min-width: 415px) {
+            .x-bot-#{$iletter}-em-s {
+                bottom: 1em * $i;
+            }
+        }
+
+        // Tablette
+        @media screen and (max-width: 1024px) {
+            .x-bot-#{$iletter}-em-m {
+                bottom: 1em * $i;
+            }
+        }
+
+        // Desktop
+        @media screen and (min-width: 1024px) {
+            .x-bot-#{$iletter}-em-l {
+                bottom: 1em * $i;
+            }
+        }
+
+        // Desktop - Grand écran
+        @media screen and (min-width: 1600px) {
+            .x-bot-#{$iletter}-em-xl {
+                bottom: 1em * $i;
+            }
+        }
+
+        // ----------- right -------------
+        .x-right-#{$iletter}-em {
+            right: 1em * $i;
+        }
+
+        // PWA
+        @media screen and (min-width: 415px) {
+            .x-right-#{$iletter}-em-s {
+                right: 1em * $i;
+            }
+        }
+
+        // Tablette
+        @media screen and (max-width: 1024px) {
+            .x-right-#{$iletter}-em-m {
+                right: 1em * $i;
+            }
+        }
+
+        // Desktop
+        @media screen and (min-width: 1024px) {
+            .x-right-#{$iletter}-em-l {
+                right: 1em * $i;
+            }
+        }
+
+        // Desktop - Grand écran
+        @media screen and (min-width: 1600px) {
+            .x-right-#{$iletter}-em-xl {
+                right: 1em * $i;
+            }
+        }
+
+        // ----------- left -------------
+        .x-left-#{$iletter}-em {
+            left: 1em * $i;
+        }
+
+        // PWA
+        @media screen and (min-width: 415px) {
+            .x-left-#{$iletter}-em-s {
+                left: 1em * $i;
+            }
+        }
+
+        // Tablette
+        @media screen and (min-width: 768px) {
+            .x-left-#{$iletter}-em-m {
+                left: 1em * $i;
+            }
+        }
+
+        // Desktop
+        @media screen and (min-width: 1024px) {
+            .x-left-#{$iletter}-em-l {
+                left: 1em * $i;
+            }
+        }
+
+        // Desktop - Grand écran
+        @media screen and (min-width: 1600px) {
+            .x-left-#{$iletter}-em-xl {
+                left: 1em * $i;
+            }
+        }
+    }
+}

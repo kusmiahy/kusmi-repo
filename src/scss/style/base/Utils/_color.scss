@@ -1,0 +1,45 @@
+$white : #ffffff;
+$black : #000000;
+
+// ---------------- Background color -----------------
+
+.x-bg-white{
+    background-color: $white;
+}
+
+.x-bg-black{
+    background-color: $black;
+}
+
+// ---------------- Text color -----------------
+
+.x-white{
+    color: $white;
+}
+
+.x-black{
+    color: $black;
+}
+
+
+@media screen and (min-width: 1024px) {  
+
+    // ---------------- Background color Desktop -----------------
+
+    .x-bg-white-l{
+        background-color: $white;
+    }
+    
+    .x-bg-black-l{
+        background-color: $black;
+    }
+    
+    // ---------------- Text color Desktop -----------------
+
+    .x-white-l {
+        color: #fff !important;
+    }
+    .x-black-l {
+        color: #000 !important;
+    }
+}

@@ -1,0 +1,99 @@
+// ------- Block ----- //
+.x-display-desktop-block{
+    display: none !important;
+    @include min1024() {
+        display: block !important;
+    }
+}
+
+.x-display-desktop-inline{
+    display: none !important;
+    @include min1024() {
+        display: inline !important;
+    }
+}
+
+.x-display-desktop{
+    display: none !important;
+    @include min1024() {
+        display: inline-block !important;
+    }
+}
+
+.x-display-mobile{
+    display: block !important;
+    @include min1024() {
+        display: none !important;
+    }
+}
+
+// ------- Flex ----- //
+.x-display-mobile-flex{
+    display: flex !important;
+    @include min1024() {
+        display: none !important;
+    }
+}
+
+.x-display-desktop-flex{
+    display: none !important;
+    @include min1024() {
+        display: flex !important;
+    }
+}
+
+// ------- GRID ----- //
+.x-display-mobile-grid{
+    display: grid !important;
+    @include min1024() {
+        display: none !important;
+    }
+}
+
+.x-display-desktop-grid{
+    display: none !important;
+    @include min1024() {
+        display: grid !important;
+    }
+}
+
+
+// ------- Inline ----- //
+// .x-mobile {
+//     display: none;
+//     @include min768() {
+//         display: inline-block;
+//     }
+// }
+
+// .x-desktop {
+//     display: inline-block;
+//     @include min1024() {
+//         display: none;
+//     }
+// }
+
+// ---- Pour les BR ---- //
+.x-mobile-space {
+    display: contents;
+    @include min1024() {
+        display: none;
+    }
+}
+
+.x-desktop-space {
+    display: none;
+    @include min1024() {
+        display: contents;
+    }
+}
+
+.x-nowrap{
+    white-space: nowrap;
+}
+
+.x-nowrap-l{
+    @include min1024() {
+        white-space: nowrap;
+    }
+}

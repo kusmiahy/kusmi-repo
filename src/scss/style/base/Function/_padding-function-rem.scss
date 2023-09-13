@@ -1,0 +1,132 @@
+// Padding de 00 à 100
+// En em
+// x-padding-t-00{padding-top:0}
+// x-padding-t-100{padding-top:10em}
+// Exemple =>
+// x-padding-t-05{padding-top:0.5em} : mobile (tout quand rien d'autre)
+// x-padding-t-05-m{padding-top:0.5em} : tablette
+// x-padding-t-05-l{padding-top:0.5em} : desktop
+// x-padding-t-50{padding-top:5em} : mobile (tout quand rien d'autre)
+// x-padding-t-50-m{padding-top:5em} : tablette
+// x-padding-t-50-l{padding-top:5em} : desktop
+
+@for $i from 0 through 100 {
+      $iletter: calc($i*10/10);
+
+      @if $iletter < 10 {
+            $iletter: "0"+ $iletter
+      }
+
+      $i: calc($i / 10);
+
+      .x-padding-b-#{$iletter}-rem {
+            padding-bottom: 1rem * $i;
+      }
+
+      .x-padding-t-#{$iletter}-rem {
+            padding-top: 1rem * $i;
+      }
+
+      .x-padding-r-#{$iletter}-rem {
+            padding-right: 1rem * $i;
+      }
+
+      .x-padding-l-#{$iletter}-rem {
+            padding-left: 1rem * $i;
+      }
+
+      // PWA
+      @media screen and (min-width: 415px) {
+            .x-padding-b-#{$iletter}-rem-s {
+                  padding-bottom: 1rem * $i;
+            }
+
+            .x-padding-t-#{$iletter}-rem-s {
+                  padding-top: 1rem * $i;
+            }
+
+            .x-padding-r-#{$iletter}-rem-s {
+                  padding-right: 1rem * $i;
+            }
+
+            .x-padding-l-#{$iletter}-rem-s {
+                  padding-left: 1rem * $i;
+            }
+      }
+
+      // Tablette
+      @media screen and (min-width: 768px) {
+            .x-padding-b-#{$iletter}-rem-m {
+                  padding-bottom: 1rem * $i;
+            }
+
+            .x-padding-t-#{$iletter}-rem-m {
+                  padding-top: 1rem * $i;
+            }
+
+            .x-padding-r-#{$iletter}-rem-m {
+                  padding-right: 1rem * $i;
+            }
+
+            .x-padding-l-#{$iletter}-rem-m {
+                  padding-left: 1rem * $i;
+            }
+      }
+
+      // Desktop
+      @media screen and (min-width: 1024px) {
+            .x-padding-b-#{$iletter}-rem-l {
+                  padding-bottom: 1rem * $i;
+            }
+
+            .x-padding-t-#{$iletter}-rem-l {
+                  padding-top: 1rem * $i;
+            }
+
+            .x-padding-r-#{$iletter}-rem-l {
+                  padding-right: 1rem * $i;
+            }
+
+            .x-padding-l-#{$iletter}-rem-l {
+                  padding-left: 1rem * $i;
+            }
+      }
+
+      // Petit desktop
+      @media screen and (min-width:1024px) and (max-width:1350px) {
+            .x-padding-b-#{$iletter}-rem-ml {
+                  padding-bottom: 1rem * $i;
+            }
+
+            .x-padding-t-#{$iletter}-rem-ml {
+                  padding-top: 1rem * $i;
+            }
+
+            .x-padding-r-#{$iletter}-rem-ml {
+                  padding-right: 1rem * $i;
+            }
+
+            .x-padding-l-#{$iletter}-rem-ml {
+                  padding-left: 1rem * $i;
+            }
+      }
+
+      // Desktop
+      @media screen and (min-width: 1600px) {
+            .x-padding-b-#{$iletter}-rem-xl {
+                  padding-bottom: 1rem * $i;
+            }
+
+            .x-padding-t-#{$iletter}-rem-xl {
+                  padding-top: 1rem * $i;
+            }
+
+            .x-padding-r-#{$iletter}-rem-xl {
+                  padding-right: 1rem * $i;
+            }
+
+            .x-padding-l-#{$iletter}-rem-xl {
+                  padding-left: 1rem * $i;
+            }
+      }
+}

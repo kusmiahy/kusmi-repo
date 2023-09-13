@@ -1,0 +1,297 @@
+.x-grid {
+    display: grid;
+}
+
+.grid-gap-0{
+    grid-gap: 0em;
+}
+
+//Grid number max =>
+$numberGridMax : 20;
+
+
+// Exemple
+// Si on veut une grid de 12
+// =>
+
+// => Mobile
+// x-grid-12
+// x-grid-12-fr
+
+// => Tablette
+// x-grid-12-m
+// x-grid-12-fr-m
+
+// => Desktop
+// x-grid-12-l
+// x-grid-12-fr-l
+
+// Pour les column =>
+//cl-1-12
+//cl-1-12-m
+//cl-1-12-l
+
+// cl-1-last
+
+// Pour les rows =>
+//rw-1-12
+//rw-1-12-m
+//rw-1-12-l
+
+// rw-1-last
+
+// ----------------------- grid-basic base ----------------------- //
+
+@for $i from 1 through $numberGridMax {
+    .x-grid-#{$i}{
+        display: grid;
+        grid-template-columns: repeat(#{$i}, calc(100% / #{$i}));
+        grid-template-rows: repeat(#{$i}, calc(100% / #{$i}));
+    }
+
+    .x-grid-#{$i}-fr{
+        display: grid;
+        grid-template-columns: repeat(#{$i},#{$i}fr);
+        grid-template-rows: repeat(#{$i},#{$i}fr);
+    }
+
+    .x-grid-#{$i}-fr-auto{
+        display: grid;
+        grid-template-columns: repeat(#{$i},#{$i}fr);
+        grid-template-rows: auto;
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-grid-#{$i}-m{
+            display: grid;
+            grid-template-columns: repeat(#{$i}, calc(100% / #{$i}));
+            grid-template-rows: repeat(#{$i}, calc(100% / #{$i}));
+        }
+
+        .x-grid-#{$i}-fr-m{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: repeat(#{$i},#{$i}fr);
+        }
+
+        .x-grid-#{$i}-fr-auto-m{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: auto;
+        }
+    }
+
+    // Tablette en landscape
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        .x-grid-#{$i}-ml{
+            display: grid;
+            grid-template-columns: repeat(#{$i}, calc(100% / #{$i}));
+            grid-template-rows: repeat(#{$i}, calc(100% / #{$i}));
+        }
+
+        .x-grid-#{$i}-fr-ml{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: repeat(#{$i},#{$i}fr);
+        }
+
+        .x-grid-#{$i}-fr-auto-ml{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: auto;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-grid-#{$i}-l{
+            display: grid;
+            grid-template-columns: repeat(#{$i}, calc(100% / #{$i}));
+            grid-template-rows: repeat(#{$i}, calc(100% / #{$i}));
+        }
+
+        .x-grid-#{$i}-fr-l{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: repeat(#{$i},#{$i}fr);
+        }
+
+        .x-grid-#{$i}-fr-auto-l{
+            display: grid;
+            grid-template-columns: repeat(#{$i},#{$i}fr);
+            grid-template-rows: auto;
+        }
+    }
+}
+
+// ----------------------- Grid-column ----------------------- //
+@for $x from 1 through $numberGridMax+1 {
+    .cl-1-#{$x}{
+        grid-column: 1/#{$x};
+    }
+    @for $y from 1 through $numberGridMax+1 {
+        @if $y < $x {
+            .cl-#{$y}-#{$x}{
+                grid-column: #{$y}/#{$x};
+            }
+        }
+        .cl-#{$y}-last{
+            grid-column: #{$y}/-1;
+        }
+    }
+
+    // Tablette en portrait
+    @media screen and (min-width: 768px) {
+        .cl-1-#{$x}-m{
+            grid-column: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .cl-#{$y}-#{$x}-m{
+                    grid-column: #{$y}/#{$x};
+                }
+            }
+            .cl-#{$y}-last-m{
+                grid-column: #{$y}/-1;
+            }
+        }
+    }
+
+    // Tablette en landscape
+    @media screen and (min-width: 1023px) and (max-width: 1200px) {
+        .cl-1-#{$x}-ml{
+            grid-column: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .cl-#{$y}-#{$x}-ml{
+                    grid-column: #{$y}/#{$x};
+                }
+            }
+            .cl-#{$y}-last-ml{
+                grid-column: #{$y}/-1;
+            }
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .cl-1-#{$x}-l{
+            grid-column: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .cl-#{$y}-#{$x}-l{
+                    grid-column: #{$y}/#{$x};
+                }
+            }
+            .cl-#{$y}-last-l{
+                grid-column: #{$y}/-1;
+            }
+        }
+    }
+
+    // Desktop big
+    @media screen and (min-width: 1600px) {
+        .cl-1-#{$x}-xl{
+            grid-column: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .cl-#{$y}-#{$x}-xl{
+                    grid-column: #{$y}/#{$x};
+                }
+            }
+            .cl-#{$y}-last-xl{
+                grid-column: #{$y}/-1;
+            }
+        }
+    }
+
+}
+
+// ----------------------- Grid-Row ----------------------- //
+@for $x from 1 through $numberGridMax+1 {
+    .rw-1-#{$x}{
+        grid-row: 1/#{$x};
+    }
+    @for $y from 1 through $numberGridMax+1 {
+        @if $y < $x {
+            .rw-#{$y}-#{$x}{
+                grid-row: #{$y}/#{$x};
+            }
+        }
+        .rw-#{$y}-last{
+            grid-row: #{$y}/-1;
+        }
+    }
+
+    // Tablette 
+    @media screen and (min-width: 768px) {
+        .rw-1-#{$x}-m{
+            grid-row: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .rw-#{$y}-#{$x}-m{
+                    grid-row: #{$y}/#{$x};
+                }
+            }
+            .rw-#{$y}-last-m{
+                grid-row: #{$y}/-1;
+            }
+        }
+    }
+
+    // Tablette en landscape
+    @media screen and (min-width: 1023px) and (max-width: 1200px) {
+        .rw-1-#{$x}-ml{
+            grid-row: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .rw-#{$y}-#{$x}-ml{
+                    grid-row: #{$y}/#{$x};
+                }
+            }
+            .rw-#{$y}-last-ml{
+                grid-row: #{$y}/-1;
+            }
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .rw-1-#{$x}-l{
+            grid-row: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .rw-#{$y}-#{$x}-l{
+                    grid-row: #{$y}/#{$x};
+                }
+            }
+            .rw-#{$y}-last-l{
+                grid-row: #{$y}/-1;
+            }
+        }
+    }
+
+    // Desktop big
+    @media screen and (min-width: 1600px) {
+        .rw-1-#{$x}-xl{
+            grid-row: 1/#{$x};
+        }
+        @for $y from 1 through $numberGridMax+1 {
+            @if $y < $x {
+                .rw-#{$y}-#{$x}-xl{
+                    grid-row: #{$y}/#{$x};
+                }
+            }
+            .rw-#{$y}-last-xl{
+                grid-row: #{$y}/-1;
+            }
+        }
+    }
+}

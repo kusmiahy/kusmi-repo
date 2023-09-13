@@ -1,0 +1,61 @@
+// ------------------------------ Parametre ---------------------------
+// --------------------------------------------------------------------
+// $minSize => Font la plus petite voulue (taille mobile en général) **
+// $maxSize => Font la plus grande voulue (taille desktop en général) *
+// $minWidth => Petit écran : 375 px **********************************
+// $maxWidth => Ecran max : 1920px ************************************
+// --------------------------------------------------------------------
+
+@function betterClamp($minSize, $maxSize, $minWidth: 375, $maxWidth: 1920) {
+      // convert to rem
+      $minSize: calc($minSize / 16 * 0.9);
+      $maxSize: calc($maxSize / 16 * 1.2);
+      $maxWidth: calc( $maxWidth / 16);
+      $minWidth: calc($minWidth / 16);
+
+      // do calculations
+      $slope: calc(($maxSize - $minSize) / ($maxWidth - $minWidth));
+      $yAxisIntersection: -$minWidth * $slope + $minSize;
+      $preferredValue: calc($yAxisIntersection * 1rem + $slope * 100vw);
+
+      // output as rem
+      $minSize: $minSize * 1rem;
+      $maxSize: $maxSize * 1rem;
+      @return clamp($minSize, $preferredValue, $maxSize);
+}
+
+@function betterClamp-de($minSize, $maxSize, $minWidth: 320, $maxWidth: 1920) {
+      // convert to rem
+      $minSize: calc($minSize / 16);
+      $maxSize: calc($maxSize / 16);
+      $maxWidth: calc( $maxWidth / 16);
+      $minWidth: calc($minWidth / 16);
+      
+      // do calculations
+      $slope: calc(($maxSize - $minSize) / ($maxWidth - $minWidth));
+      $yAxisIntersection: -$minWidth * $slope + $minSize;
+      $preferredValue: calc($yAxisIntersection * 1rem + $slope * 100vw);
+
+      // output as rem
+      $minSize: $minSize * 1rem;
+      $maxSize: $maxSize * 1rem;
+      @return clamp($minSize, $preferredValue, $maxSize);
+}
+
+// --------------------- Exemple -----------------------
+// -----------------------------------------------------
+// font-size : mob => 16px / desktop => 32px ***********
+// line-height : mob => 18px / desktop => 36px *********
+// -----------------------------------------------------
+
+// .testfontSize {
+//       font-size: betterClamp(16, 32);
+//       line-height: betterClamp(18, 36);
+// }
+
+// .marquee-PM{
+//       font-size: betterClamp(15, 14);
+//       font-family: 'Baton Turbo Book';
+//       letter-spacing: 0.1px;
+//       text-transform: uppercase;
+// }

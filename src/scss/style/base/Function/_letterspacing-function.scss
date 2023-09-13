@@ -1,0 +1,56 @@
+// letter-spacing de 00 à 150
+// En em
+// x-letterspac-00{letter-spacing:0}
+// x-letterspac-55{letter-spacing:5.5em}
+// x-letterspac-150{letter-spacing:15em}
+
+// Exemple =>
+// x-letterspac-05{letter-spacing:0.5em} : mobile (tout quand rien d'autre)
+// x-letterspac-05-m{letter-spacing:0.5em} : tablette
+// x-letterspac-05-l{letter-spacing:0.5em} : desktop
+
+// x-letterspac-t-50{letter-spacing:5em} : mobile (tout quand rien d'autre)
+// x-letterspac-t-50-m{letter-spacing:5em} : tablette
+// x-letterspac-t-50-l{letter-spacing:5em} : desktop
+
+@for $i from 0 through 30 {
+
+    $iletter: $i;
+
+    @if $iletter < 10 {
+        $iletter: "0"+ $iletter
+    }
+
+    $i: calc($i / 100);
+
+    .x-letterspac-#{$iletter} {
+        letter-spacing: 1em * $i !important;
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-letterspac-#{$iletter}-m {
+            letter-spacing: 1em * $i !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-letterspac-#{$iletter}-l {
+            letter-spacing: 1em * $i !important;
+        }
+    }
+
+    @media screen and (min-width:1024px) and (max-width:1350px) {
+        .x-letterspac-#{$iletter}-ml {
+            letter-spacing: 1em * $i !important;
+        }
+    }
+
+    // Desktop - Grand écran
+    @media screen and (min-width: 1600px) {
+        .x-letterspac-#{$iletter}-xl {
+            letter-spacing: 1em * $i !important;
+        }
+    }
+}

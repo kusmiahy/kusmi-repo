@@ -1,0 +1,32 @@
+// Fonts-weight de 100 à 900
+
+// x-fweight-100{font-weight:100}
+// x-fweight-200{font-weight:200}
+// x-fweight-300{font-weight:300}
+
+// Exemple =>
+// x-fweight-100{font-weight:100}
+// x-fweight-200-m{font-weight:200} : Tablette
+// x-fweight-300-l{font-weight:300} : Desktop
+
+
+@for $i from 1 through 9 {
+
+    $iletter: $i*100;
+    .x-fweight-#{$iletter}{
+        font-weight: $iletter;
+    }
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-fweight-#{$iletter}-m{
+            font-weight: $iletter;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-fweight-#{$iletter}-l{
+            font-weight: $iletter;
+        }
+    }
+}

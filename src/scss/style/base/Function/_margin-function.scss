@@ -1,0 +1,223 @@
+// Margin de 00 à 100
+// En em
+// x-margin-t-00{margin-top:0}
+// x-margin-t-100{margin-top:10em}
+
+// Exemple =>
+// x-margin-t-05{margin-top:0.5em} : mobile (tout quand rien d'autre)
+// x-margin-t-05-m{margin-top:0.5em} : tablette
+// x-margin-t-05-l{margin-top:0.5em} : desktop
+
+// x-margin-t-50{margin-top:5em} : mobile (tout quand rien d'autre)
+// x-margin-t-50-m{margin-top:5em} : tablette
+// x-margin-t-50-l{margin-top:5em} : desktop
+
+.x-margin-r-200 {
+    margin-right: 20em;
+}
+
+@for $i from 0 through 100 {
+
+    $iletter: calc($i*10/10);
+
+    @if $iletter < 10 {
+        $iletter: "0"+ $iletter
+    }
+
+    $i: calc($i / 10);
+
+    .x-margin-b-#{$iletter} {
+        margin-bottom: 1em * $i;
+    }
+
+    .x-margin-t-#{$iletter} {
+        margin-top: 1em * $i;
+    }
+
+    .x-margin-r-#{$iletter} {
+        margin-right: 1em * $i;
+    }
+
+    .x-margin-l-#{$iletter} {
+        margin-left: 1em * $i;
+    }
+
+    .x-margin-auto {
+        margin: auto;
+    }
+
+    .x-margin-auto2 {
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .x-margin-init {
+        margin: initial;
+    }
+
+    // PWA
+    @media screen and (min-width: 415px) {
+        .x-margin-auto-s {
+            margin: auto;
+        }
+
+        .x-margin-auto2-s {
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .x-margin-init-s {
+            margin: initial;
+        }
+
+        .x-margin-b-#{$iletter}-s {
+            margin-bottom: 1em * $i;
+        }
+
+        .x-margin-t-#{$iletter}-s {
+            margin-top: 1em * $i;
+        }
+
+        .x-margin-r-#{$iletter}-s {
+            margin-right: 1em * $i;
+        }
+
+        .x-margin-l-#{$iletter}-s {
+            margin-left: 1em * $i;
+        }
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-margin-auto-m {
+            margin: auto;
+        }
+
+        .x-margin-auto2-m {
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .x-margin-init-m {
+            margin: initial;
+        }
+
+        .x-margin-b-#{$iletter}-m {
+            margin-bottom: 1em * $i;
+        }
+
+        .x-margin-t-#{$iletter}-m {
+            margin-top: 1em * $i;
+        }
+
+        .x-margin-r-#{$iletter}-m {
+            margin-right: 1em * $i;
+        }
+
+        .x-margin-l-#{$iletter}-m {
+            margin-left: 1em * $i;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-margin-auto-l {
+            margin: auto;
+        }
+
+        .x-margin-auto2-l {
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .x-margin-init-l {
+            margin: initial;
+        }
+
+        .x-margin-b-#{$iletter}-l {
+            margin-bottom: 1em * $i;
+        }
+
+        .x-margin-t-#{$iletter}-l {
+            margin-top: 1em * $i;
+        }
+
+        .x-margin-r-#{$iletter}-l {
+            margin-right: 1em * $i;
+        }
+
+        .x-margin-l-#{$iletter}-l {
+            margin-left: 1em * $i;
+        }
+    }
+
+    // Tablette landscape
+    @media screen and (min-width: 1024px) and (max-width: 1350px) {
+        .x-margin-auto-ml {
+            margin: auto;
+        }
+
+        .x-margin-auto2-ml {
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .x-margin-init-ml {
+            margin: initial;
+        }
+
+        .x-margin-b-#{$iletter}-ml {
+            margin-bottom: 1em * $i;
+        }
+
+        .x-margin-t-#{$iletter}-ml {
+            margin-top: 1em * $i;
+        }
+
+        .x-margin-r-#{$iletter}-ml {
+            margin-right: 1em * $i;
+        }
+
+        .x-margin-l-#{$iletter}-ml {
+            margin-left: 1em * $i;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1600px) {
+        .x-margin-auto-xl {
+            margin: auto;
+        }
+
+        .x-margin-auto2-xl {
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .x-margin-init-xl {
+            margin: initial;
+        }
+
+        .x-margin-b-#{$iletter}-xl {
+            margin-bottom: 1em * $i;
+        }
+
+        .x-margin-t-#{$iletter}-xl {
+            margin-top: 1em * $i;
+        }
+
+        .x-margin-r-#{$iletter}-xl {
+            margin-right: 1em * $i;
+        }
+
+        .x-margin-l-#{$iletter}-xl {
+            margin-left: 1em * $i;
+        }
+    }
+}

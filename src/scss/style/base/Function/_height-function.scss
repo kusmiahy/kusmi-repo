@@ -1,0 +1,51 @@
+// CLasse pour la hauteur =>
+// Si on veut 100%
+// => 
+
+// .x-height-100 : mobile
+// .x-height-100-m : tablette
+// .x-height-100-l : desktop
+
+@for $i from 0 through 100 {
+    .x-height-#{$i} {
+        height: #{percentage(calc($i / 100))} !important;
+    }
+
+    .x-height-auto {
+        height: auto !important;
+    }
+
+    // Tablette
+    @media screen and (min-width: 768px) {
+        .x-height-#{$i}-m {
+            height: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-height-auto-m {
+            height: auto !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-height-#{$i}-l {
+            height: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-height-auto-l {
+            height: auto !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1600px) {
+        .x-height-#{$i}-xl {
+            height: #{percentage(calc($i / 100))} !important;
+        }
+
+        .x-height-auto-xl {
+            height: auto !important;
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+// CLasse pour la hauteur =>
+// Si on veut 100%
+// => 
+
+// .x-rg-100 : mobile
+// .x-rg-100-m : tablette
+// .x-rg-100-l : desktop
+
+@for $i from 0 through 100 {
+
+    @if $i % 5 == 0 {
+
+        .x-rg-#{$i}-rem{
+            row-gap: 0.1rem * $i;
+        }
+        
+        // Tablette
+        @media screen and (min-width: 768px) {
+                .x-rg-#{$i}-rem-m{
+                    row-gap: 0.1rem * $i;
+                }
+        }
+
+        // Desktop
+        @media screen and (min-width: 1024px) {
+                .x-rg-#{$i}-rem-l{
+                    row-gap: 0.1rem * $i;
+                }
+        }
+
+         // Desktop
+         @media screen and (min-width: 1440px) {
+            .x-rg-#{$i}-rem-xl{
+                    row-gap: 0.1rem * $i;
+                }  
+        }
+    }
+}

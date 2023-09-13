@@ -1,0 +1,51 @@
+//z-index 1 à 10 => 
+
+// .x-index-10 : mobile
+// .x-index-10-m : tablette
+// .x-index-10-l : desktop
+
+.x-absolute{
+    position: absolute !important;
+}
+
+.x-relative{
+    position: relative !important;
+}
+
+.x-fixed{
+    position: fixed !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .x-absolute-l{
+        position: absolute !important;
+    }
+    
+    .x-relative-l{
+        position: relative !important;
+    }
+    
+    .x-fixed-l{
+        position: fixed !important;
+    }
+}
+
+@for $i from 1 through 10 {
+    .x-index-#{$i}{
+        z-index: #{$i} !important;
+    }
+
+    // Tablette
+    @media screen and (max-width: 768px) {
+        .x-index-#{$i}-m{
+            z-index: #{$i} !important;
+        }
+    }
+
+    // Desktop
+    @media screen and (min-width: 1024px) {
+        .x-index-#{$i}-l{
+            z-index: #{$i} !important;
+        }
+    }
+}
