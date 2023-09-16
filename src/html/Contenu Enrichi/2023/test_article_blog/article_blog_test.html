@@ -1,0 +1,38 @@
+<!-- 
+   SCSS USE
+   
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/template_article.scss";
+
+    Content asset : rituel-enrichi-video-test 
+
+    Nom de la classe parent : rituel-enrichi-video-test_2023
+
+-->
+
+<!-- CSS Font -->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="rituel-enrichi-video-test_2023">
+    @@include('./components/title.html', {
+        "texte-titre": "En relation";
+    })
+
+    <div class="wrapper">
+        @@include('./components/article.html', {
+            "lien": "",
+            "alt": "",
+            "titre": "Comment améliorer sa qualité de sommeil",
+            "preview": "Inspirée par la nature et guidée par la science, la gamme Rituel de Kusmi Tea® a été imaginée et produite dans ses ateliers français. Grâce à un procédé innovant, elle associe des saveurs originales à la juste dose de principes actifs pour répondre aux besoins du quotidien. Des mélanges aux bienfaits uniques pour prendre soin de soi tout en se faisant plaisir.",
+            "cta": "Découvrir",
+        })
+    </div>
+    
+
+</section>
+

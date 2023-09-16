@@ -1,0 +1,139 @@
+<style>
+    /*------picS------*/
+    .wrapper__blog {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 !important;
+        justify-content: center;
+        padding-top: 20px !important;
+    }
+
+    #encart_blog {
+        max-width: 1500px;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    @media(min-width:1024px) {
+        #encart_blog {
+            margin-top: 2rem;
+        }
+
+        .wrapper__blog {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+    }
+
+    .pic {
+        max-width: 80%;
+        /* padding: 0 15px;*/
+        margin: 8px 15px 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .pic-img {
+        width: 100%;
+    }
+
+    .lien {
+        text-decoration: underline;
+    }
+
+    .lien:hover {
+        text-decoration: none;
+    }
+
+    .pic p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 14px;
+        line-height: initial;
+    }
+
+    .m-pdp__video-content h2.encart-h2 {
+        font-family: 'Barlow', sans-serif;
+        color: black;
+        font-size: 22px;
+        line-height: 1;
+        margin-top: 50px;
+        text-align: center;
+        text-transform: none;
+    }
+
+    .encart-h2 {
+        text-align: center;
+    }
+
+    .pic h4,
+    .pic h3 {
+        font-family: 'Barlow', sans-serif;
+        color: hwb(328 12% 55%);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2em;
+        text-transform: inherit;
+        margin-top: 10px;
+    }
+
+
+    @media(min-width:600px) {
+        .pic {
+            width: 25%;
+        }
+
+    }
+
+    @media(min-width:1024px) {
+        .pic p {
+            font-size: 17px;
+        }
+    }
+
+    /*------FIN picS------*/
+</style>
+
+<section id="encart_blog">
+    <h2 class="encart-h2">En relation</h2>
+    <div class="wrapper__blog">
+        <a href="$url('Page-Show','cgid','l-impacte-de-l-hygiene-de-vie-sur-la-qualite-du-sommeil')$" class="pic">
+            <img src="blog/articles/article_blog_qualite_sommeil.webp?$staticlink$" alt="#" class="pic-img">
+            <h4>L'impact de l'hygiène de vie sur la qualité du sommeil</h4>
+            <p class="descrip-text">Ah, le sommeil ! Ce royaume magique où nous sommes tous les rois et les reines du
+                pays des rêves — Sauf, bien sûr, lorsque votre smartphone émet un bip, que le chien de votre voisin
+                décide d'organiser un concert de minuit ou que votre cerveau veut soudain contempler le sens de la vie à
+                3 heures du matin. La vie moderne n'est-elle pas grandiose ? Qu'est-ce qui joue le rôle du méchant…</p>
+            <p class="lien">
+                En savoir plus
+            </p>
+        </a>
+        <a href="$url('Page-Show','cgid','comment-notre-tisane-rituel-sommeil-aide-a-favoriser-un-sommeil-profond')$"
+            class="pic">
+            <img src="blog/articles/article_blog_tisane_rituel_sommeil.webp?$staticlink$" alt="#" class="pic-img">
+            <h4>Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond</h4>
+            <p class="descrip-text">Dans notre rythme de vie effréné, trouver un sommeil profond et réparateur peut
+                parfois sembler un défi insurmontable. C'est là que notre tisane santé, Rituel Sommeil, entre en scène
+                pour vous offrir une solution naturelle et apaisante. Découvrez comment notre tisane bien-être, composée
+                d'un mélange raffiné de plantes, peut vous aider à transformer vos nuits agitées en périodes de repos
+                et…</p>
+            <p class="lien">
+                En savoir plus
+            </p>
+        </a>
+        <a href="$url('Page-Show','cgid','des-solutions-naturelles-pour-lutter-contre-les-troubles-du-sommeil')$"
+            class="pic">
+            <img src="blog/articles/article_blog_lutter_troubles.webp?$staticlink$" alt="#" class="pic-img">
+            <h4>Des solutions naturelles pour lutter contre les troubles du sommeil</h4>
+            <p class="descrip-text">Se tourner, se retourner, compter les moutons à l'infini — si cela ressemble à votre
+                routine du coucher, vous n'êtes pas le seul. Que vous soyez un noctambule qui lutte contre les lève-tôt
+                ou quelqu'un qui n'arrive tout simplement pas à trouver la position idéale pour roupiller, le sommeil
+                peut souvent ressembler à une énigme enveloppée dans une devinette, cachée sous…</p>
+            <p class="lien">
+                En savoir plus
+            </p>
+        </a>
+    </div>
+</section>

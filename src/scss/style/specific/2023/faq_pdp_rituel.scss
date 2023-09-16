@@ -1,9 +1,9 @@
 .faq {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     @include min1024() {
-        padding-inline: 3rem;
+        padding: 3rem 1rem 0;
     }
     &__element {
         display: flex;
@@ -43,6 +43,9 @@
                 & + .faq__reponse {
                     height: 100%;
                     opacity: 1;
+                    .reponse__text {
+                        margin-bottom: 2rem;
+                    }
                 }
                 .question__svg {
                     transform: rotate(90deg);
@@ -56,6 +59,10 @@
             font-family: 'Barlow', sans-serif;
             font-size: 1rem;
             transition: height .2s ease-in, opacity .2s ease;
+            .reponse__text {
+                margin-bottom: 1rem;
+                letter-spacing: .02rem;
+            }
         }
     }
 }
