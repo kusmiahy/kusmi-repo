@@ -1,0 +1,161 @@
+<!-- 
+   SCSS USE
+   
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/faq_pdp_rituel.scss";
+
+    Content asset : rituel-sommeil-contenu-enrichi
+
+    Nom de la classe parent : faq_pdp_rituel_2023
+
+-->
+
+<!-- CSS Font -->
+<!-- Voir pour les fonts avec Auguste -->
+<!-- <link href="MEDIA/font/Font.css?$staticlink$" rel="stylesheet"> -->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<!-- provisoire -->
+<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="faq_pdp_rituel_2023">
+    <section class="ingredients">
+        <div class="ingredients__title title-wrapper">
+            @@include('./components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--purple",
+                "texte-titre": "With Sleep Ritual, take care of yourself and treat yourself at the same time!",
+            })
+        </div>
+        <div class="ingredients__container container">
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_bienfaits.jpg?$staticlink$?",
+                "alt": "pictogram of a sleeping face",
+                "titre": "Specific benefits",
+                "paragraphe": "Improves sleep quality, shortens the time it takes to fall asleep, and promotes restful sleep",
+            })
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_principe-actif.jpg?$staticlink$?",
+                "alt": "pictogram of two green leaves",
+                "titre": "A recognized active ingredient",
+                "paragraphe": "The rosmarinic acid present in lemon balm extract acts directly on the quality of your sleep",
+            })
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_procede-scientifique.jpg?$staticlink$?",
+                "alt": "pictogram of a bottle with a leaf inside",
+                "titre": "An innovative scientific process",
+                "paragraphe": "Enables the active ingredient to be bound directly to our ingredients, guaranteeing its efficacy",
+            })
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_efficacite.jpg?$staticlink$?",
+                "alt": "pictogram of a tick box being ticked",
+                "titre": "Proven effectiveness",
+                "paragraphe": "The benefits of Sleep Ritual have been proven and recognized by clinical studies",
+            })
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_produit-plaisir.jpg?$staticlink$?",
+                "alt": "pictogram of a cup seen from above with a red heart in the middle of the cup and a shoot with two leaves",
+                "titre": "A product for pleasure",
+                "paragraphe": "Unique taste, easy to integrate into your daily routine",
+            })
+            @@include('./components/ingredient-element.html', {
+                "lien-image": "mediatags/sommbio/picto_sans-theine.jpg?$staticlink$?",
+                "alt": "pictogram of a shoot with two leaves that is crossed out",
+                "titre": "Theine-free",
+                "paragraphe": "To help you relax and fall asleep",
+            })
+        </div>
+    </section> 
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--green",
+                "texte-titre": "Our certifications",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                    "alt": "organic label",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                    "alt": "European organic certification",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                    "alt": "organic farming certification",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                    "alt": "usda organic label",
+                })
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq__title">
+            @@include('./components/title.html', {
+                "texte-titre": "Frequently asked questions",
+            })
+        </div>
+        <div class="faq-container">
+            <div class="faq">
+                @@include('./components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "What is a plant extract?",
+                    "reponse-texte": "The plant world is full of properties, so scientists have developed specific processes to extract the best from it. <br>The term &#34;plant extract&#34; is used to describe a substance obtained from a plant source and containing compounds that are beneficial to health: active ingredients. <br>Plant extracts are a great way to get the benefits of plants into your daily life. <br>And because pleasure remains our No. 1 objective at Kusmi Tea, we've chosen to combine the effectiveness of these extracts with unforgettable flavors!",
+                })
+                @@include('./components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "What is an active ingredient? ",
+                    "reponse-texte": "Active ingredients are molecules found directly in nature: in plants, roots, fruits, vegetable oils and so on. They are particularly interesting for their qualities and properties. <br>Here are some examples of active ingredients you may be familiar with: caffeine in coffee, vitamin C in oranges, and omega-3 in oily fish such as salmon.",
+                })
+                @@include('./components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "What is lemon balm? Why did we decide to use this ingredient for our Sleep blend?",
+                    "reponse-texte": "Lemon balm is a perennial herbaceous plant of the Lamiaceae family native to the Mediterranean basin. Its fresh, slightly lemony fragrance makes it a popular aromatic plant. Its use for its beneficial properties dates back more than 2,000 years.<br>Today, the scientific community recognizes its effects on sleep quality. So we couldn't pass up this natural treasure with its many qualities and properties, and included it in our Rituel Sommeil.",
+                })
+                @@include('./components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "What can we say about rooibos?",
+                    "reponse-texte": "Rooibos means &#34;red bush&#34; in Afrikaans, one of South Africa's official languages. For this reason, and because its infusion is also flamboyant, it's nicknamed &#34;red tea&#34; all over the world, even though it contains no theine. ",
+                })
+                @@include('./components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "What can we say about verbena?",
+                    "reponse-texte": "Verbena is an aromatic plant in the Verbenaceae family. In Roman times, this herb was considered sacred and was said to have magical powers. Verbena was soon used in folk medicine for its relaxing and soothing properties.",
+                })
+            </div>
+            <div class="faq-container__image">
+                @@include('./components/image.html', {
+                    "lien-img": "images/pdp/2023/rituel_sommeil/faq_image.webp?$staticlink$",
+                    "alt": "visual of the ingredients of the sleep ritual infusion product",
+                })
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/faq_pdp_rituel_2023.js
+-->
