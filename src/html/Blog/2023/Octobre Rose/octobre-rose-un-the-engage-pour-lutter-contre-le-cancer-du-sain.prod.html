@@ -1,0 +1,120 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_blog.scss";
+
+    Content asset : octobre-rose-un-the-engage-pour-lutter-contre-le-cancer-du-sain
+
+    Nom de la classe parent : octobre_rose_2023
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<!-- provisoire -->
+<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
+
+<article class="octobre_rose_2023">
+    <div class="article">
+        <div class="article__description description">
+            <!-- DESCRIPTION -->
+            <!-- CTA TEXTE -->
+            @@include('../_components/description-title.html', {
+                "texte": "Kusmi Tea reste mobilisé contre le cancer du sein et reverse à nouveau cette année les bénéfices des ventes de son thé solidaire à l’association Think Pink Belgique.<br> Chez Kusmi Tea, plus des trois quarts des collaborateurs sont des femmes, comme la majeure partie de sa clientèle. C’est donc tout naturellement que, sensible à leurs préoccupations et à leur bien-être, la marque veille à prendre soin d’elles au quotidien et s’engage pour de grandes causes féminines.",
+                "cta-texte": "Découvrez notre thé engagé",
+                "url": "$url('Product-Show','pid','21188A1070')$",
+            })
+        </div>
+        <div class="article__image image">
+            <!-- IMAGE -->
+            @@include('../_components/image.html', {
+                "lien": "/blog/articles/2022/article_blog_octobre_rose.webp?$staticlink$",
+                "alt": "Produit spécial Octobre Rose : Thé vert à la menthe bio à l'arôme naturel de rose ",
+            })
+        </div>
+        <div class="article__paragraphe paragraphe">
+            <!-- Paragraphe -->
+            @@include('../_components/paragraphe.html', {
+                "texte": "Depuis 2021, Kusmi soutient Think Pink Belgique, l’organisation nationale de lutte contre le cancer du sein en Belgique. On vous dit tout sur la cause qu’est la lutte contre le cancer du sein et sur Think Pink Belgique.",
+            })
+        </div>
+        <div class="article__container">
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "Octobre rose, c'est quoi ?",
+                    "texte": "<strong>Octobre Rose</strong> c’est le <strong>mois de sensibilisation</strong> au cancer du sein. Durant cette période, de nombreuses actions sont mises en place et divers événements sont organisés afin d’<strong>informer sur le cancer du sein</strong> mais également sur l’importance de se <strong>faire dépister</strong> et de <strong>s’auto-examiner</strong>. Cette période est aussi le moment pour <strong>récolter des fonds</strong> afin de <strong>soutenir la recherche scientifique</strong> et les <strong>projets d’aide</strong> aux personnes touchées par la maladie.",
+                })
+            </div>
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "Ensemble contre le cancer du sein avec Think Pink.",
+                    "texte": "Dans notre pays, <strong>1 femme sur 8</strong> est aujourd’hui encore touchée par un cancer du sein. Tout le monde connait malheureusement dans son entourage une personne qui est ou a été touchée par cette maladie. C'est pourquoi il est important d'<strong>unir nos forces</strong> afin de <strong>sensibiliser un maximum de personnes</strong> et d'<strong>agir ensemble</strong> pour lutter contre le <strong>cancer le plus fréquent chez la femme</strong> en Belgique. <strong>Porter le ruban rose</strong> est une façon d'<strong>exprimer son soutien</strong> à toutes les personnes touchées par la maladie mais également d’insister sur l’importance de se faire dépister.<br><strong>Think Pink</strong> s’engage chaque jour à apporter une <strong>aide</strong> aux <strong>personnes touchées par un cancer du sein</strong> pendant et après leur traitement afin que chacune d’entre elles puisse bénéficier des <strong>meilleurs soins</strong> et <strong>traitements possibles</strong>, de la <strong>meilleure information</strong> et du <strong>meilleur suivi</strong>. Grâce à l’engagement de plusieurs centaines de particuliers, de bénévoles et d’entreprises, <strong>Think Pink</strong> peut continuer son travail de soutien aux personnes touchées par la maladie. Votre <strong>contribution</strong>, à travers l’achat d’un <strong>ruban rose</strong> dans nos magasins ou de notre « <strong>thé engagé</strong> », est un magnifique geste de générosité et de solidarité envers la lutte contre le cancer du sein. Merci pour votre soutien !",
+                })
+            </div>
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "Think Pink Belgique x Kusmi Tea : une boîte de thé solidaire",
+                    "texte": "Ainsi, le savoureux Thé vert à la menthe à l’arôme naturel de rose de Kusmi Tea sera cette année encore le thé solidaire d’Octobre Rose, mois de lutte contre le cancer du sein. Avouons qu’il ne manque pas d’atouts pour inciter à mêler bonne action et plaisir de la dégustation… La fraîcheur de la menthe, la subtilité de la rose et une base de thé vert des plus délicates en font une recette aussi gourmande qu’engagée. Qui s’est d’ailleurs habillée pour l’occasion d’une nouvelle boîte en édition limitée !",
+                })
+            </div>
+            <div class="container__image image">
+                <!-- IMAGE -->
+                @@include('../_components/image.html', {
+                    "lien": "/blog/articles/2022/article_blog_octobre_rose_2.webp?$staticlink$",
+                    "alt": "Produit spécial Octobre Rose : Thé vert à la menthe bio à l'arôme naturel de rose ",
+                })
+            </div>
+            <div class="container__paragraphe paragraphe">
+                <!-- Paragraphe -->
+                @@include('../_components/paragraphe.html', {
+                    "texte": "À l’affiche ? Un design exclusif à l’allure contemporaine, tout en nuances de rose et en élégantes silhouettes, qui met en lumière et à l’honneur la diversité des femmes. Et bien sûr, 100% des bénéfices issus des ventes de ce thé vert délicieusement bio seront directement reversés à Think Pink Belgique.<br>C’est le moment de s’offrir un succulent tea time sous le signe du partage tout en contribuant à faire progresser la recherche contre le cancer du sein !",
+                })
+            </div>
+        </div>
+        <div class="article__suggestions suggestions">
+            <!-- Titre -->
+            @@include('../_components/title-suggestions.html', {
+                "titre": "À lire aussi sur le sujet",
+            })
+            <!-- Lien -->
+            @@include('../_components/lien-suggestions.html', {
+                "id-ca": "comment-ameliorer-votre-sommeil",
+                "titre": "10 Astuces pour améliorer votre sommeil naturellement, sans médicaments ni somnifère. Dites adieu à l'insomnie.",
+            })
+            <!-- Lien -->
+            @@include('../_components/lien-suggestions.html', {
+                "id-ca": "comment-notre-tisane-rituel-sommeil-aide-a-favoriser-un-sommeil-profond",
+                "titre": "Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond ?",
+            })
+            <!-- Lien -->
+            @@include('../_components/lien-suggestions.html', {
+                "id-ca": "comment-respecter-son-rhytme-naturel",
+                "titre": "Comment respecter son rythme naturel ?",
+            })
+            <!-- Lien -->
+            @@include('../_components/lien-suggestions.html', {
+                "id-ca": "l-impacte-de-l-hygiene-de-vie-sur-la-qualite-du-sommeil",
+                "titre": "L'impact de l'hygiène de vie sur la qualité du sommeil",
+            })
+        </div>
+    </div>
+</article>
+
+<!-- Description
+cta
+
+titre 
+description 
+
+Recommandations de d'autres articles (slider) -> voir pour un max d'articles
+
+Produits qui sont suggestionnés (SQU) -->
