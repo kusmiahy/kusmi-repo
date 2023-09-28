@@ -1,0 +1,132 @@
+$gap-title: 2.5rem;
+$paragraphe-size-mob: .9rem;
+$paragraphe-size-desk: 1.05rem;
+$paragraphe-line-height-mob: 1.4rem;
+$paragraphe-line-height-desk: 1.6rem;
+$title-size-mob: 1.05rem;
+$title-size-desk: 1.5rem;
+$gap-block-mob: 1.5rem;
+$gap-block-desk: 2rem;
+
+
+.article {
+    padding-inline: .5rem;
+    strong {
+        font-weight: 600;
+    }
+}
+
+.description, .image, .paragraphe, .article-container, .block, .suggestions {
+    padding-inline: .5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    align-items: center;
+}
+
+.description__texte, .paragraphe__p, .block__p, .suggestions__lien {
+    text-align: justify;
+    font-size: $paragraphe-size-mob;
+    font-family: 'Barlow', sans-serif;
+    line-height: $paragraphe-line-height-mob;
+    letter-spacing: .01rem;
+    margin-bottom: .5rem;
+
+    @include min1024() {
+        font-size: $paragraphe-size-desk;
+        line-height: $paragraphe-line-height-desk;
+    }
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.block__title, .suggestions__titre {
+    font-family: 'Barlow', sans-serif;
+    font-size: $title-size-mob;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-weight: bold;
+    line-height: $paragraphe-line-height-mob;
+    width: 100%;
+    @include min1024() {
+        font-size: $paragraphe-size-desk;
+    }
+}
+
+.description__cta  {
+    margin-block: 1rem 0;
+    font-size: $paragraphe-size-mob;
+    color: #000;
+    padding: .7rem 1.5rem;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    transition: all .2s ease-in;
+    @include min1024() {
+        font-size: $paragraphe-size-desk;
+    }
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.description {
+    margin-block: 0 1.5rem;
+    @include min1024() {
+        margin-block: 0 2rem;
+    }
+}
+.image {
+    margin-block: .5rem $gap-block-mob;
+    @include min1024() {
+        margin-block: 1rem $gap-block-desk;
+    }
+}
+.paragraphe {
+    &--first {
+        margin-block: 0;
+    }
+    margin-block: 0 1rem;
+}
+
+.block {
+    &:first-child {
+        margin-block: $gap-block-mob;
+        @include min1024() {
+            margin-block: $gap-block-desk;
+        }
+    }
+    &:not(last-child) {
+        margin-bottom: $gap-block-mob;
+        @include min1024() {
+            margin-bottom: $gap-block-desk;
+        }
+    }
+}
+.suggestions{
+    margin-block: $gap-block-mob;
+    @include min1024() {
+        margin-block: $gap-block-desk;
+    }
+}
+
+.suggestions__lien {
+    text-decoration: underline;
+    font-weight: 500;
+    color: #000;
+    &:hover {
+        color: #b60304;
+    }
+}

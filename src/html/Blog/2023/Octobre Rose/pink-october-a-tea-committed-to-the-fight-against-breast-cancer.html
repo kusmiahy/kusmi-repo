@@ -1,0 +1,103 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_blog.scss";
+
+    Content asset : pink-october-a-tea-committed-to-the-fight-against-breast-cancer
+
+    Nom de la classe parent : octobre_rose_2023
+
+    Titre : Pink October : a tea committed to the fight against breast cancer 
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<!-- provisoire -->
+<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+</style>
+
+<article class="octobre_rose_2023">
+    <div class="article">
+        <div class="article__description description">
+            <!-- DESCRIPTION -->
+            <!-- CTA TEXTE -->
+            @@include('../_components/description-title.html', {
+                "texte": "Kusmi Tea remains committed to the fight against breast cancer and is once again donating the profits from its tea sales to the Think Pink Belgium organization. <br>At Kusmi Tea, more than three-quarters of the employees are women, as are most of its customers. It is, therefore, quite natural that, sensitive to their concerns and well-being, the brand takes care of them daily and is committed to major women's causes.",
+                "cta-texte": "Discover our committed tea",
+                "url": "$url('Product-Show','pid','21188A1070')$",
+            })
+        </div>
+        <div class="article__image image">
+            <!-- IMAGE -->
+            @@include('../_components/image.html', {
+                "lien": "/blog/articles/2022/article_blog_octobre_rose_preview.webp?$staticlink$",
+                "alt": "Special Pink October product: Organic mint green tea with natural rose flavouring",
+            })
+        </div>
+        <div class="article__paragraphe paragraphe">
+            <!-- Paragraphe -->
+            @@include('../_components/paragraphe.html', {
+                "class": "paragraphe--first",
+                "texte": "And as since 2021, <strong>100% of the profits</strong> from the sale of our <strong>organic green tea</strong> will be donated to the Think Pink Belgium organization.<br><br>Since 2021, Kusmi has been one of the benefactors of Think Pink, Belgium's national breast cancer organization.<br>We tell you all about the <strong>fight against breast cancer</strong> and the Think Pink Belgium organization.",
+            })
+        </div>
+        <div class="article__container">
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "What is Pink October?",
+                    "texte": "<strong>Pink October</strong> is <strong>a month of commitment</strong> and <strong>prevention</strong> to inform and <strong>raise awareness</strong> about the fight against breast cancer. The aim of this campaign is to raise funds for breast cancer research, but also to raise awareness of the <strong>importance of screening</strong> and to encourage women to self-examine. <br>Today, the <strong>pink ribbon</strong> is much more than just a little piece of <strong>pink</strong>  cloth. It is the international symbol for the fight against breast cancer. Wearing a pink ribbon is a way of showing your <strong>commitment</strong> to the <strong>fight against breast cancer</strong> and your solidarity with patients.",
+                })
+            </div>
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "Prevention for a better cure: the Think Pink organization",
+                    "texte": "In our country, <strong>1 in 8 women</strong> is still affected by breast cancer. Unfortunately, we all know someone around us who is or has been affected by this disease. That's why it's so important to <strong>join forces</strong> to <strong>raise awareness among as many people as possible</strong>, and to <strong>work together</strong> to combat the <strong>most common cancer affecting women</strong> in Belgium. <strong>Wearing the pink ribbon</strong> is a way of <strong>expressing support</strong> for all those affected by the disease, but also of stressing the importance of getting tested.<br>Think Pink is committed every day to <strong>helping people affected by breast cancer</strong> during and after their treatment, so that each and every one of them can benefit from the <strong>best possible care and treatment, information and follow-up</strong>. Thanks to the commitment of several hundred individuals, volunteers and companies, Think Pink is able to continue its work in support of those affected by the disease. Your <strong>contribution</strong>, through the purchase of a <strong>pink ribbon</strong> in our stores or our <strong>&#34committed tea&#34</strong>, is a magnificent gesture of generosity and solidarity in the fight against breast cancer.<br>Thank you for your support!",
+                })
+            </div>
+            <div class="container__block block">
+                <!-- titre -->
+                @@include('../_components/title-paragraphe.html', {
+                    "titre": "Think Pink Belgium x Kusmi Tea: A box of tea for solidarity",
+                    "texte": "The tasty green tea with mint and natural rose flavour from Kusmi Tea will once again be the tea of solidarity for Pink October, the month of the fight against breast cancer. Let's face it, there's no shortage of incentives to combine good deeds with the pleasure of tasting... The freshness of the mint, the subtlety of the rose and the most delicate green tea base make this a recipe that is as greedy as it is committed. And for the occasion, it has been given a new limited edition box!",
+                })
+            </div>
+            <div class="container__image image">
+                <!-- IMAGE -->
+                @@include('../_components/image.html', {
+                    "lien": "/blog/articles/2022/article_blog_octobre_rose_2.webp?$staticlink$",
+                    "alt": "Special Pink October product: Organic mint green tea with natural rose flavouring",
+                })
+            </div>
+            <div class="container__paragraphe paragraphe">
+                <!-- Paragraphe -->
+                @@include('../_components/paragraphe.html', {
+                    "texte": "What's on display? An exclusive design with a contemporary look, all shades of pink and elegant silhouettes, which highlights and honours the diversity of women. And, of course, 100% of the sales profits of this deliciously organic green tea will go directly to Think Pink Belgium.<br>It's time to treat yourself to a delicious tea-time under the sign of sharing while contributing to the progress of research against breast cancer! ",
+                })
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Description
+cta
+
+titre 
+description 
+
+Recommandations de d'autres articles (slider) -> voir pour un max d'articles
+
+Produits qui sont suggestionnés (SQU) -->
