@@ -1,0 +1,96 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : test_aline_2023
+
+    Titre : Pink October : a tea committed to the fight against breast cancer 
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<!-- provisoire -->
+<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="test_aline_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../_components/bannierev3.html', {
+                "lien-img": "blog/articles/2022/article_blog_octobre_rose_preview.webp?$staticlink$",
+                "alt": "",
+    
+                "titre": "What is Pink October?",
+                "date": "15/03/2023",
+                "url-network": "$url('Page-Show','cid','test_aline')$",
+                "url-produit": "$url('Product-Show','pid','21188A1070')$",
+                "lien-categorie": "blog/?filter=pink-october",
+                "tag-texte": "Octobre Rose",
+    
+                "cta-texte": "Découvrez notre thé engagé",
+    
+                "texte": "Kusmi Tea reste mobilisé contre le cancer du sein et reverse à nouveau cette année les bénéfices des ventes de son thé solidaire à l’association Think Pink Belgique. <span class='x-hide-mobile'>Chez Kusmi Tea, plus des trois quarts des collaborateurs sont des femmes, comme la majeure partie de sa clientèle.</span>",
+            })
+        </section>
+        <section class="article__content content">
+            @@include('../_components/paragraphe.html', {
+                "class": "content__p",
+                "texte": "Depuis 2021, Kusmi soutient Think Pink Belgique, l’organisation nationale de lutte contre le cancer du sein en Belgique. On vous dit tout sur la cause qu’est la lutte contre le cancer du sein et sur Think Pink Belgique.",
+            })
+            <article class="block">
+                @@include('../_components/h2.html', {
+                    "titre": "Octobre rose, c'est quoi ?",
+                })
+                @@include('../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Octobre Rose</strong> c’est <strong>le mois de sensibilisation</strong> au cancer du sein. Durant cette période, de nombreuses actions sont mises en place et divers événements sont organisés afin d’informer sur le cancer du sein mais également sur l’importance de se faire dépister et de s’auto-examiner. Cette période est aussi le moment pour récolter des fonds afin de soutenir la recherche scientifique et les projets d’aide aux personnes touchées par la maladie.",
+                })
+            </article>
+            <article class="block">
+                @@include('../_components/h2.html', {
+                    "titre": "Ensemble contre le cancer du sein avec Think Pink.",
+                })
+                @@include('../_components/h3.html', {
+                    "titre": "Lorem ipsum",
+                })
+                @@include('../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans notre pays, 1 femme sur 8 est aujourd’hui encore touchée par un cancer du sein. Tout le monde connait malheureusement dans son entourage une personne qui est ou a été touchée par cette maladie. C'est pourquoi il est important d'unir nos forces afin de sensibiliser un maximum de personnes et d'agir ensemble pour lutter contre le cancer le plus fréquent chez la femme en Belgique. Porter le ruban rose est une façon d'exprimer son soutien à toutes les personnes touchées par la maladie mais également d’insister sur l’importance de se faire dépister.",
+                })
+            </article>
+        </section>
+    </div>
+
+</div>

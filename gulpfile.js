@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.octobre_rose_2023';
+var classParent = '.test_aline_2023';
 
 const {
     series,
