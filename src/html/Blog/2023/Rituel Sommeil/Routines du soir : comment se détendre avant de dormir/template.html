@@ -1,0 +1,161 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : routine-du-soir-comment-se-detendre-avant-de-dormir
+
+    Nom de la classe parent :  routine-du-soir-comment-se-detendre-avant-de-dormir_2023
+
+    Titre : Routines du soir : comment se détendre avant de dormir
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="test_aline_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_sommeil/article_blog_rituel_test.webp?$staticlink$",
+                "alt": "visuel test",
+    
+                "titre": "Routines du soir : comment se détendre avant de dormir",
+                "date": "Publié le 05/10/2023",
+                "url-produit": "$url('Product-Show','pid','21251A1070')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Découvrez notre rituel sommeil",
+    
+                "texte": "À une époque où la frontière entre le jour et la nuit est brouillée par des écrans lumineux et des notifications incessantes, se détendre peut sembler être un art perdu dans le temps. Mais cela a-t-il toujours été aussi difficile ?",
+            })
+        </section>
+        <section class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Imaginez un monde où les routines du soir étaient sacro-saintes et où la lente descente du soleil marquait un temps sacré pour se retirer, réfléchir et se reposer. Nos ancêtres savaient qu'il était profondément important de se détendre dans la nuit, et peut-être que, quelque part entre le bourdonnement des courriels et la lecture automatique de l'épisode suivant, nous l'avons oublié.<br>Rejoignez-nous pour un voyage dans les couloirs apaisants de l'histoire, découvrez les défis modernes de l'heure du coucher et renouez avec les rituels qui pourraient bien vous permettre de faire de beaux rêves. Et, alerte spoiler : il se pourrait bien qu'une tasse de tisane soit de la partie !",
+            })
+            <article class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Les rituels nocturnes d'autrefois",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Avant les écrans hypnotisants de l'ère numérique, le monde avait ses propres "notifications" naturelles pour signaler l'heure du coucher. Les cigales chantaient la sérénade du crépuscule et l'heure dorée baignait tout d'une lueur chaude et somnolente. D'une culture à l'autre, les routines du soir étaient plus que de simples actions, elles étaient des rituels sacrés.<br>Dans la Chine ancienne, les érudits et les poètes buvaient du thé et contemplaient la beauté de la lune, alignant leur paix intérieure sur le rythme du monde. Dans le même temps, en Méditerranée, les gens se tournaient vers les infusions aromatiques, embrassant l'étreinte apaisante d'herbes telles que la lavande et la camomille. Ces rituels ne consistaient pas seulement à se préparer au sommeil, mais aussi à reconnaître la fin de la journée et à célébrer l'arrivée de la nuit.",
+                })
+            </article>
+            <article class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Les défis modernes de l'heure du coucher",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "À notre époque, le chant serein des cigales a été remplacé par le bourdonnement constant de nos appareils. Nos mondes sont de plus en plus interconnectés, tout comme nos horaires, les courriels du travail se faufilant jusque tard dans la nuit et les lignes de temps des médias sociaux refusant de s'endormir.<br>Cette culture du "toujours en marche", combinée à la lumière bleue perturbatrice des écrans, a redéfini nos défis en matière de sommeil.<br>Les recherches indiquent que l'exposition à la lumière bleue peut supprimer la sécrétion de mélatonine, l'hormone responsable de la régulation du sommeil. Et il n'y a pas que la technologie, les pressions de la vie moderne, des échéances imminentes aux angoisses sociales, peuvent raviver notre esprit juste au moment où nous avons besoin de nous détendre.",
+                })
+            </article>
+            <article class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Comment élaborer le meilleur rituel du soir ? Se détendre comme un pro",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Désintoxication numérique - Un terme sophistiqué pour &#34éteindre les écrans&#34",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous souvenez-vous du bon vieux temps où il fallait faire glisser la clé pour la déverrouiller ? Aujourd'hui, notre monde se nourrit de connectivité, mais nos esprits ? Pas tant que ça, surtout quand l'heure du coucher approche. <br>Essayez d'éteindre tous les écrans au moins une heure avant de vous coucher. Au lieu de regarder un nouvel épisode ou de faire défiler d'innombrables memes (nous comprenons, ce chat qui joue du piano est hilarant !), pourquoi ne pas essayer l'art intemporel de la lecture d'un livre ? Vous serez surpris de constater à quel point les personnages se développent lorsque votre esprit n'est pas ébloui par des pixels.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Inspirez, expirez, répétez",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans le tourbillon de la vie moderne, il est presque révolutionnaire de faire une pause et, bien sûr, de respirer. Pas l'habituel halètement "oh mon dieu, j'ai oublié mes clés", mais des respirations profondes et profondes. <br>Ces simples moments de méditation ou de respiration profonde peuvent vous ancrer, créant un pont serein entre le tourbillon de la journée et la tranquillité de la nuit. Et pendant que vous y êtes, faites quelques étirements en douceur. C'est comme si vous envoyiez à votre corps une invitation formelle au pays des rêves, et pour couronner le tout, il répond presque toujours présent.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Le bain n'est pas réservé aux canards en caoutchouc",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Non, nous ne suggérons pas que vous ayez besoin d'une baignoire remplie de pétales de rose, entourée d'une myriade de bougies (bien que cela semble divin). Une simple douche chaude peut faire des miracles. C'est comme si vous donniez à votre journée le rinçage qu'elle mérite et que vous sortiez frais et dispos, prêt à vous blottir sous les draps. Les gels douche à base de lavande ou d'eucalyptus sont une véritable berceuse pour les sens.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "L'initiation à l'infusion de plantes",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "De bonnes herbes. Bien avant que le sommeil ne devienne un bouton sur nos appareils, les cultures du monde entier puisaient dans les ressources naturelles pour induire le sommeil. Vous avez envie d'une boisson qui pourrait vous inviter à la détente à chaque gorgée ? Essayez un mélange à base de camomille, de mélisse ou encore de la valériane. Vous voulez un breuvage qui renvoie doucement aux anciennes techniques de relaxation ? La verveine est pourrait être l'herbe qu'il vous faut.<br><u><i>Nous souhaitons à ce propos attirer l’attention de nos lecteurs sur l’utilisation de ces plantes, car les effets individuels peuvent changer et il est ainsi plus prudent de consulter l’avis d’un médecin avant de les utiliser sous n’importe quelle forme.</i></u><br>Enfin, si ces rituels du soir peuvent contribuer à favoriser le sommeil, la bonne boisson peut en amplifier les effets. À ce propos, il existe une nouvelle tisane du soir qui sera votre alliée pour un sommeil plus efficace. Permettez-nous de vous présenter "Rituel Sommeil" de Kusmi Tea.",
+                })
+            </article>
+            <article class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Rituel Sommeil : Le dernier verre pour les personnes qui cherchent à s'endormir",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rituel sommeil est une tisane (ou infusion sans théine) remplie d’ingrédients naturels aussi savoureux que bénéfiques.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Les Ingrédients minutieusement sélectionnés par Kusmi Tea",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Verveine :</strong> Une herbe polyvalente connue pour ses propriétés relaxantes. Avec des variétés comme la verveine officinale, elle est un favori de la relaxation depuis les temps anciens.<br><strong>Rooibos :</strong> Souvent appelé "thé rouge", ce mélange sans théine provient de la région du Cederberg, en Afrique du Sud. Au-delà de sa teinte emblématique et de son goût délectable, le rooibos est apprécié pour ses propriétés antioxydantes.<br><strong>Feuilles de mélisse :</strong> Ce n'est pas une herbe ordinaire du jardin ! La mélisse est réputée pour favoriser un sommeil réparateur, réduire le temps d'endormissement et lutter contre l'agitation nocturne.<br><strong>Extrait de mélisse :</strong> riche en acide rosmarinique, cet extrait interagit avec les neurotransmetteurs du cerveau, notamment l'acide gamma-aminobutyrique (GABA), qui joue un rôle essentiel dans le déclenchement du sommeil.<br><strong>Notes de mangue :</strong> Cette touche tropicale n'ajoute pas seulement une touche exotique au palais, elle vous transporte sur une île sereine où la détente est à l'ordre du jour (ou de la nuit).",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Bienfaits",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Amélioration de la qualité du sommeil : En combinant la puissance de ses ingrédients, "Rituel Sommeil" est votre allié pour une nuit de sommeil profond et paisible.<br><strong>Efficacité rapide :</strong> La tranquillité s'installe dès la première tasse. Pour les nuits agitées, une seule tasse peut être votre allié pour un sommeil réparateur. Mais pour les troubles réguliers du sommeil, nous recommandons une consommation régulière pendant une quinzaine de jours pour des résultats optimum et une amélioration du sommeil.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Une efficacité prouvée par des études cliniques",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Afin d’apporter la juste dose à nos consommateurs, nous avons fait le choix de sélectionner des extraits végétaux faisant l’objet d’une évaluation par l’EFSA et dont les effets ont été reconnus par des études cliniques. L’extrait de mélisse intégré à notre Rituel Sommeil a ainsi fait l’objet d’un certain nombre d’études qui ont permis de mettre en lumière son effet bénéfique sur la qualité globale du sommeil.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Comment l'utiliser ?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rituel Sommeil peut se consommer à n'importe quelle heure de la journée, elle vous apportera un effet apaisant. Nous vous recommandons cependant une consommation dans la soirée, pour améliorer votre sommeil. L'idéal serait de boire votre deuxième tasse journalière 1h avant d'aller vous coucher.<br><i><u>Merci de noter chers lecteurs, et si "Rituel Sommeil" est un compagnon fantastique pour votre routine nocturne, des troubles du sommeil persistants justifient un entretien avec un médecin. En cas de troubles graves du sommeil, il est préférable de demander l'avis d'un expert — car personne ne connaît mieux le sommeil qu'un spécialiste du sommeil !</u></i>",
+                })
+            </article>
+            
+        </section>
+    </div>
+
+</div>

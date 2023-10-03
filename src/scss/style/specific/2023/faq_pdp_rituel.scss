@@ -24,8 +24,16 @@ $title-size-desk: 1.5rem;
     width: 100%;
 
     @include min1024() {
+        width: 85%;
         font-size: $title-size-desk;
+        line-height: 2rem;
     }
+    @include min1440() {
+        width: 50%;
+        font-size: $title-size-desk;
+        line-height: 2rem;
+    }
+
 
     &--green {
         text-transform: uppercase;
