@@ -1,0 +1,123 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : unser-mandarinen-tee-rezept
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "Mandarinentee: Warum er so subtil ist ... und wie man ihn selbst herstellt",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','noir')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Origineller als Zitronen- oder Orangentee ist die Mandarine die Zitrusfrucht, auf die man setzen sollte, um seine Gäste zu überraschen. ",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Oftmals duftender, süßer und weniger sauer, hat ihr Geschmack alles, um möglichst vielen zu gefallen. Ein weiterer Vorteil: Im Winter hat man sie leicht in seinem Obstkorb...",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Was ist der Unterschied zwischen Mandarine, Orange und Clementine?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Diese drei Früchte gehören zwar zur selben Familie, der Familie der Zitrusfrüchte, stammen aber von unterschiedlichen Bäumen: Die Mandarine ist die Frucht des Mandarinenbaums, die Orange die des Orangenbaums und die Clementine die des Clementinenbaums. Ein (ganz) kleines bisschen komplizierter wird es, wenn man bedenkt, dass der Clementinenbaum ein Hybridbaum ist, der aus der Kreuzung zwischen einem Orangenbaum und einem Mandarinenbaum entstanden ist. Es ist also logisch, dass die Clementine geschmacklich sowohl von der Orange (süß und säuerlich) als auch von der Mandarine (aromatischer, weniger säuerlich) Anleihen nimmt.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Warum ist Tee mit Mandarine eine gute Idee?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die Mandarine ist zwar wegen ihres Geschmacks beliebt, hat aber auch viele Kerne (wie die Zitrone). Das macht den Verzehr nicht immer einfach und angenehm. Das Auspressen des Saftes oder die Verwendung der Schale (der äußeren Schicht) scheint eine gute Möglichkeit zu sein, diesen kleinen Nachteil zu umgehen... Außerdem passen die Süße und Fruchtigkeit der Mandarine besonders gut zu den intensiven und kräftigen Aromen des schwarzen Tees, die sie abschwächen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Welche Vorteile hat die Mandarine?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wie viele andere Früchte hat auch die Mandarine viele gute Seiten. Sie ist reich an Wasser und Ballaststoffen und hat wenig Kalorien. Ihr hoher Gehalt an Vitamin C und Antioxidantien macht sie zu einem Verbündeten bei der Stärkung des Immunsystems. Der regelmäßige Verzehr von Mandarinen kann Winterkrankheiten wie Erkältungen und Grippe vorbeugen und die Verdauung nach einem reichhaltigen oder fettigen Essen verbessern. Schließlich soll die Mandarine eine beruhigende Wirkung haben, so dass ihr ätherisches Öl für Menschen empfohlen wird, die unter Stress oder Schlafstörungen leiden.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Wie bereitet man einen selbstgemachten Mandarinentee zu?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zunächst sollten Sie Mandarinen aus biologischem Anbau verwenden, damit ihre Schalen keine Pestizide enthalten. Je nach Geschmack können Sie sich für einen grünen Tee mit Mandarine oder für einen schwarzen Tee mit Mandarine entscheiden. Um ihn zuzubereiten, müssen Sie zusammen mit Ihrem naturbelassenen Tee (Grün- oder Schwarztee) Mandarinenschalen aufbrühen. Haben Sie Lust auf ein noch fruchtigeres oder aromatisierteres Getränk? Geben Sie den Mandarinensaft hinzu. Liebhaber von hübschen Präsentationen werden sicher eine Mandarinenscheibe in den Tee stecken, während Süßschnäbel einen Löffel Zucker oder Honig hinzufügen. Im Sommer können Sie den Mandarinentee auch als Eistee probieren. Bereiten Sie eine Karaffe vor, die Sie kühl stellen, und geben Sie kurz vor dem Genuss Eiswürfel hinzu.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Wie bereitet man einen selbstgemachten Mandarinentee zu?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Am Ende des Tages, wenn Sie empfindlich auf Teein reagieren, können Sie Mandarinen in Form von Mandarinentee oder Mandarinentee (das ist das Gleiche) zu sich nehmen. Dazu wird ein Teelöffel Mandarinenschale zehn Minuten lang in einer Tasse köchelndem Wasser aufgegossen und anschließend gefiltert.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "In welchen Kusmi-Tees findet man Mandarine?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Außerhalb der Mandarinensaison (von Oktober bis Februar) empfehlen wir Ihnen, mit Mandarine aromatisierte Tees zu probieren. Bei Kusmi enthalten zwei Mischungen Mandarinen: Troïka, ein intensiver und erfrischender schwarzer Tee, der mit Bergamotte, Orange und Mandarine aromatisiert ist, und Bouquet de Fleurs, der erste Kusmi-Tee (vor 150 Jahren kreiert!), ein schwarzer Bio-Tee mit den blumigen und fruchtigen Aromen von Bergamotte, Zitrone, Orange, Mandarine und Ylang-Ylang. Wie alle Kusmi-Tees und Kräutertees enthalten auch diese beiden Rezepte aromatische Pflanzen aus biologischem Anbau (zertifizierte Bio-Bezeichnung), die in Frankreich gemischt, aromatisiert und umweltfreundlich verpackt werden.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

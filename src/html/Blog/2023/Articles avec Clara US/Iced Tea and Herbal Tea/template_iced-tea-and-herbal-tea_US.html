@@ -1,0 +1,93 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "Iced Tea & Herbal Tea",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_et_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What constitutes the ideal Iced Tea? ",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The perfect iced tea is a blend of refreshing flavors, balanced sweetness, and invigorating coolness. It captures the essence of summer relaxation, whether through the briskness of black tea infused with citrus or the delicate notes of green tea paired with mint. Its appeal lies in its ability to quench your thirst on a hot day, offering a satisfying hint of natural sweetness without overpowering the tea's inherent character.  At Kusmi, numerous teas and infusions can be relished both steaming hot and refreshingly cold. Simplifying matters, we've innovated a distinct sachet format tailored for a 1-liter pitcher.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What are the benefits of iced tea? ",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Iced tea is reputed to provide diverse health advantages, encompassing hydration, a source of antioxidant-rich flavonoids, and a lower-calorie substitute for sugary drinks. However, benefits fluctuate contingent on the tea type utilized (black, green, white, etc.) and the quantity of added sugar. Opting for unsweetened iced tea would confer greater health benefits.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How is iced tea prepared?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The conventional method for crafting iced tea involves steeping tea leaves in hot water and subsequently chilling the infusion in the fridge until cold. Alternatively, you can concoct iced tea by steeping tea leaves in cold water, a technique recognized as cold brewing. Both methodologies yield delightful iced tea, although cold brewing may demand more time.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

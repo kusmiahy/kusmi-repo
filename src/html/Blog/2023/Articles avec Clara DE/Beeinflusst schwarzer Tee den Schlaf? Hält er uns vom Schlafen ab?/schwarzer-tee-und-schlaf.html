@@ -1,0 +1,186 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : schwarzer-tee-und-schlaf
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : Enthält grüner Tee Koffein?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "",
+    
+                "texte": "Ob schwarzer oder grüner Tee, er enthält immer Teein. Wenn man jedoch entdeckt, dass Teein und Koffein in Wirklichkeit ein und dasselbe Molekül sind, wird es etwas komplizierter... Und ja, der Koffeingehalt von grünem Tee ist sehr real! ",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Kusmi Tea erklärt Ihnen, welche Wirkung es auf den Organismus hat? Hat er Vorteile für die Gesundheit?",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Woraus besteht grüner Tee?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zunächst einmal besteht grüner Tee aus den Blättern der Teepflanze, die nach der Ernte getrocknet wurden. Wenn man diese Blätter jedoch unter die Lupe nimmt, stellt man fest, dass sie Polyphenole oder Katechine und insbesondere EGCG (organische Moleküle, die in Pflanzen weit verbreitet sind) enthalten, aber auch Vitamine, Spurenelemente und Mineralien? Und von Teein!",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Was ist Teein, ein Molekül, das in allen grünen Tees enthalten ist?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Das in den Blättern des grünen Tees enthaltene Theanin wird freigesetzt, sobald die Blätter in heißes Wasser getaucht werden. Theanin wird dann als der Hauptwirkstoff des Tees angesehen. Es ist ein Alkaloid, eine organische Substanz pflanzlichen Ursprungs. Das Besondere an Alkaloiden ist, dass alle diese Moleküle mindestens ein Stickstoffatom in ihrem Aufbau enthalten. Aber warum sagt man dann, dass Tees Koffein enthalten?",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Sind Teein und Koffein das Gleiche?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Auch wenn man eine Zeit lang das Gegenteil angenommen hat, sind Teein und Koffein ein und dasselbe Molekül. Der Unterschied zwischen den beiden Heißgetränken - die weltweit am meisten getrunken werden - besteht darin, dass Kaffee mehr davon enthält: drei- bis viermal so viel wie eine Tasse Tee. Aus diesem Grund gilt Kaffee als anregend, während Tee nur als Stimulans betrachtet wird. Grüner Tee ist also nicht anregend. Die Wirkung von Tee ist viel diffuser und über einen längeren Zeitraum konstant, während Kaffee für einen "Boost" sorgt. Konzentrationsunterschiede, die auch zwischen den verschiedenen Teesorten festzustellen sind: Schwarzer Tee enthält am meisten Teein (vor allem, weil er es schneller freisetzt), vor grünem und weißem Tee, der als der "leichteste" Tee bekannt ist.<br>Eine Tasse grüner Tee wird Ihnen also den ganzen Tag über eine energische Ruhe verschaffen. So vermeidet man die Nervosität, die eine Tasse Kaffee mit sich bringen kann!",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Wozu dient das Teein/Koffein? Welche Auswirkungen hat dieses Molekül auf die Gesundheit?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "In der Natur, in Samen, Blättern und Früchten, hat Tein/Koffein eine abwehrende Wirkung. Es wirkt wie ein natürliches Insektizid, um Raubtiere zu bekämpfen. Bei uns Menschen wirkt Teein (Koffein) jedoch als Stimulans, das uns Energie gibt. Es ist also aus gesundheitlicher Sicht interessant! Wenn es sechs Stunden lang nach und nach im Körper freigesetzt wird, steigert es die Konzentrationsfähigkeit und das Erinnerungsvermögen. Eine weitere Wirkung von Teein ist diuretisch: Es sorgt dafür, dass der Körper mehr Wasser und Salz ausscheidet als normalerweise. Nicht schlecht, oder?",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Die anregende Wirkung von grünem Tee bei jedem Menschen gleich?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die empfundene Stimulation, die Absorptionsrate von Teein/Koffein und die Verträglichkeit sind für jeden Menschen unterschiedlich. Während die anregende und energiespendende Wirkung von grünem Tee von manchen Menschen als wohltuend empfunden wird, möchten andere vielleicht auf ihn verzichten. Dies ist der Fall bei Menschen, die empfindlich auf Koffein reagieren und Angst vor Einschlafproblemen haben. Schwarzer Tee ist eine gute Alternative für Menschen, die ein Getränk suchen, das eine Mischung aus grünem Tee und Kaffee darstellt.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Wie kann man grünen Tee "entkoffeinieren"?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Natürlich kann man auch andere Heißgetränke ohne Teein/Koffein wie Kräutertees oder Rooibos wählen, aber man kann auch den Teeingehalt in seiner Tasse grünen Tee oder Matcha-Tee verringern. Dazu lässt man den Tee ein erstes Mal eine Minute lang ziehen und schüttet dann dieses erste Wasser, das das meiste Koffein enthält, weg. Anschließend behält man denselben Tee (denselben Beutel, dasselbe Tee-Ei...) und lässt ihn ein weiteres Mal in einem neuen Wasser ziehen. Dieser zweite Aufguss wird viel weniger Teein enthalten, wobei der Geschmack unseres grünen Lieblingstees erhalten bleibt.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Die Vorteile von grünem Tee",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ob aus China, Indien oder Japan, ob Sencha, Matcha, Gyokuro oder Genmaicha, alle grünen Tees besitzen zahlreiche Vorteile für die Gesundheit und den Organismus. Sie sind reich an Antioxidantien und sollen helfen, die Wirkung freier Radikale und die vorzeitige Alterung der Zellen zu bekämpfen. Sie wirken harntreibend und entgiftend und helfen dabei, Giftstoffe aus dem Körper zu entfernen. Grüne Tees sind für ihre positive Wirkung auf die Verdauung bekannt.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Bio-Grüntees von Kusmi Tea sind eine gute Wahl.",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Um die Vorteile des grünen Tees voll auszuschöpfen, empfiehlt Ihnen Kusmi Tea, sich für Bio-Tee zu entscheiden. Die Bezeichnung garantiert Ihnen einen Tee ohne Pestizide und zahlreiche Qualitätskontrollen, die bei der Herstellung des Produkts durchgeführt werden. So können Sie Ihre Tasse mit gutem Gewissen trinken!<br>Grüner und schwarzer Tee enthalten also Koffein/Tein, aber in geringerer Menge als Kaffee. Dieses spielt eine wichtige Rolle für den Organismus und die Gesundheit, indem es eine Dosis Energie in unseren Alltag bringt. Im Gegensatz zu Kaffee, der als anregend gilt, wird Tee hingegen in die Familie der Stimulanzien eingeordnet. Entdecken Sie unser Sortiment an Bio-Grüntees von Kusmi Tea, Sie werden es lieben!<br>Um einen qualitativ hochwertigen schwarzen Tee auszuwählen, empfehlen wir Ihnen, sich für einen Bio-Tee zu entscheiden, wenn möglich im Großformat. Praktisch, umweltfreundlich und nachhaltig! Das Bio-Siegel garantiert Ihnen einen Tee ohne Pestizide, der umweltfreundlich gezüchtet und produziert wurde.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Welche Alternativen gibt es zu schwarzem Tee?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Für Personen, die sehr empfindlich auf Teein reagieren, gibt es mehrere Alternativen, die für jede Tageszeit geeignet sind. Es besteht keine Gefahr, dass sie ihren Schlaf beeinträchtigen oder Ihnen den Schlaf rauben. Hier sind sie:",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "TEE MIT NIEDRIGEM TEEINGEHALT ODER ENTKOFFEINIERTER TEE.",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wenn schwarzer Tee einer Ihrer Lieblingstees ist, Sie aber empfindlich auf Teein reagieren, empfehlen wir Ihnen, sich für einen Tee ohne Teein oder entheatinierten Tee zu entscheiden. So können Sie ihn auch am Abend trinken, ohne Angst haben zu müssen, schlecht zu schlafen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "ROOIBOS FÜR EINEN PERFEKTEN SCHLAF",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der aus Südafrika stammende Strauch Rooibos ist ein teeinfreier Tee mit einem sehr geringen Anteil an Gerbstoffen, was ihn zu einem idealen Getränk für den späten Nachmittag und Abend macht. Es besteht keine Gefahr, dass er Ihren Schlaf oder Ihr Einschlafen negativ beeinflusst. Rooibos wird Sie nicht davon abhalten, in Morpheus' Arme zu fallen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "KRÄUTER- UND FRÜCHTETEES FÜR EINE ENTSPANNENDE NACHT.",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nicht zu vergessen die Klassiker: Kräuter- und Früchtetees sind Ihre Freunde, wenn die Nacht hereinbricht. Eisenkraut, Lindenblüten, Melisse, Lavendel und Kamille begleiten Ihre Entspannungsmomente, indem sie Ihnen helfen, sich zu entspannen und zu beruhigen. Sie helfen Ihnen, einen erholsamen Schlaf zu haben!",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Der beste Zeitpunkt, um schwarzen Tee zu trinken: unsere Meinung",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wenn wir einen Zeitpunkt am Tag empfehlen müssen, trinken wir bei Kusmi am liebsten morgens eine Tasse schwarzen Tee! So wacht man gut auf und hat den ganzen Tag über Energie.<br>Wie seine Verwandten, der grüne und der weiße Tee, hat auch der schwarze Tee zahlreiche Vorteile. Er gilt nicht als anregend, sondern eher als stimulierend. Sein Reichtum an Thein (dasselbe Molekül wie Koffein) und L-Theanin sind die Ursache für die energetisierte Ruhe, mit der Tee so oft in Verbindung gebracht wird. Hält er Sie vom Schlafen ab? Das hängt von Ihrer Toleranz gegenüber Teein ab. Jeder Mensch ist in diesem Punkt anders. Für manche ist es kein Problem, vor dem Schlafengehen eine gute Tasse schwarzen Tee zu trinken. Für andere muss das Aufhören am Nachmittag erfolgen, da dies den Schlaf und das Einschlafen beeinträchtigen kann. Zum Glück gibt es mehrere Alternativen!",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

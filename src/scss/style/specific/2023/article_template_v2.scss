@@ -47,6 +47,10 @@ $gap-block-desk: 2rem;
                 margin-bottom: 0;
                 padding-right: 1rem;
                 border-right: 1px solid #000;
+
+                .date__color {
+                    color: #9b090d;
+                }
             }
 
             &__tag {
@@ -54,6 +58,7 @@ $gap-block-desk: 2rem;
                 padding-left: 1rem;
                 color: #9b090d;
                 font-weight: 500;
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -79,6 +84,7 @@ $gap-block-desk: 2rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             @include min1024() {
                 margin-top: 0;
             }
@@ -159,13 +165,79 @@ $gap-block-desk: 2rem;
 
 }
 
+.network {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    padding-block: 2rem;
+
+    &__texte {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        font-size: $title-size-mob;
+        font-weight: 800;
+        line-height: 2rem;
+        width: 100%;
+
+        @include min1024() {
+            font-size: $title-size-desk;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        &.list .list__item {
+            width: 30px;
+            height: 30px;
+
+            a {
+                text-decoration: none;
+
+                svg {
+                    fill: #000;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &.item__tag {
+                    color: #000;
+                    padding: .3rem .8rem;
+                    border: 1px solid #000;
+                    border-radius: .5rem;
+                    font-size: .8rem;
+                    transition: all .25s ease-in;
+
+                    @include min1024() {
+                        font-size: .9rem;
+                    }
+
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .content {
     padding-block: 1rem 2rem;
     padding-inline: 1.5rem;
+
     @include min1024() {
         padding-block: 2.5rem;
         padding-inline: 2.5rem;
     }
+
     @include min1440() {
         padding-block: 2.5rem;
         padding-inline: 6rem;
@@ -189,6 +261,7 @@ $gap-block-desk: 2rem;
 
 .content__p--first {
     margin-bottom: 1.5rem;
+
     @include min1024() {
         margin-bottom: 2.5rem;
     }
@@ -217,6 +290,7 @@ $gap-block-desk: 2rem;
     font-weight: 600;
     line-height: 2rem;
     width: 100%;
+    letter-spacing: 0.2px;
 
 }
 

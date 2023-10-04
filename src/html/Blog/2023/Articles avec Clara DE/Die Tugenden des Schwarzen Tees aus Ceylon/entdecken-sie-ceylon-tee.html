@@ -1,0 +1,123 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : entdecken-sie-ceylon-tee
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : Die Tugenden des Schwarzen Tees aus Ceylon
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "",
+    
+                "texte": Schwarzer Tee aus Ceylon ist ein charaktervoller Tee, der starke und vielfältige Aromen bietet. Dieser Schwarztee ist nach der ehemaligen Insel Sri Lanka benannt und hat seine ursprüngliche Bezeichnung beibehalten. ",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Welche gesundheitlichen Vorteile haben die Blätter des schwarzen Ceylon-Tees? Zu welcher Tageszeit sollte man ihn genießen? Wie bereitet man ihn richtig zu? Entdecken Sie alle Geheimnisse dieses besonderen schwarzen Tees.<br>Haben Sie Lust, die anderen schwarzen Bio-Tees von Kusmi<br>Tea zu entdecken? Hier geht es lang.",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Wie schmeckt schwarzer Tee aus Ceylon?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Schwarzer Tee aus Ceylon ist ein starker und robuster Tee, der einen kleinen Boost ermöglicht und gleichzeitig unnachahmliche Aromen bietet. Er kann pur genossen werden, mit anderen Teesorten wie English oder Irish Breakfast gemischt oder mit einer Wolke Milch und etwas Zucker serviert werden. Auch bei der Zubereitung von Eistee ist er Ihr bester Verbündeter, so dass für Abwechslung gesorgt ist.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "ZU WELCHER TAGESZEIT SOLLTE MAN SCHWARZEN CEYLON-TEE TRINKEN?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Schwarzer Tee aus Ceylon eignet sich hervorragend zum Frühstück, da er ziemlich stark ist und Sie schnell aufwachen und Ihren Tag gut beginnen können. Seien Sie versichert, dass schwarzer Ceylon-Tee nicht nur für die erste Tasse am Morgen reserviert ist. Sie können ihn den ganzen Tag über genießen, wenn Sie seinen Geschmack schätzen. Variieren Sie die Ziehzeit, um die Intensität Ihres Tees nach Ihren Wünschen anzupassen. Je länger Sie ihn ziehen lassen, desto ausgeprägter werden die Aromen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "WIE BEREITET MAN SCHWARZEN CEYLONESISCHEN TEE ZU?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Je nachdem, wie Sie den Schwarzen Tee aus Ceylon zubereiten, erhalten Sie nicht die gleichen Aromen. Dies ist die Gelegenheit, verschiedene Tees zu probieren, indem Sie nur einen einzigen verwenden! Hier sind unsere Empfehlungen:<br><ul><li>Erhitzen Sie Wasser auf 80 °C oder 85 °C.</li><li>Bereiten Sie je nach Vorliebe zwischen einem und zwei Teelöffeln Teeblätter pro 100 cl Wasser zu.</li><li>Tauchen Sie den schwarzen Tee in das heiße Wasser und lassen Sie ihn 3 Minuten lang ziehen, damit Sie alle seine Aromen genießen können.Wenn Sie einen stärkeren Tee wünschen, lassen Sie ihn länger ziehen. Es wird empfohlen, den Tee nicht länger als 5 Minuten ziehen zu lassen.</li><li>Lassen Sie Ihren Tee 3 Minuten lang ruhen.</li><li>Genießen Sie Ihren köstlichen schwarzen Ceylon-Tee nach Belieben mit einer Wolke aus Milch und Zucker.</li></ul>",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "DIE WOHLTUENDEN EIGENSCHAFTEN VON SCHWARZEM CEYLONESISCHEM TEE",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Schwarzer Tee aus Ceylon besitzt zahlreiche Vorteile für die Gesundheit und den Organismus. Da er reich an Gerbstoffen ist, ist er eine sehr gute Alternative für Menschen, die empfindlich auf Koffein reagieren oder die auf Kaffee verzichten oder ihn reduzieren möchten. Das enthaltene L-Theanin verleiht ihm außerdem eine energiespendende, aber nicht erregende Wirkung. Tatsächlich soll L-Theanin helfen, Stress und Angstzustände zu reduzieren und so die Nervosität, die man normalerweise mit Kaffee verbindet, zu vermeiden.<br>Zweitens ist der Ceylon-Schwarztee, wie seine Kollegen aus der Familie der Schwarztees, reich an Antioxidantien!<br>Antioxidantien sollen helfen, die Entwicklung bestimmter Krankheiten und die vorzeitige Alterung der Zellen zu bekämpfen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Den schwarzen Ceylon-Tee richtig auswählen",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Um sicherzugehen, dass Sie einen hochwertigen Ceylon-Tee wählen, empfiehlt Ihnen Kusmi, sich für einen Bio-Tee zu entscheiden, wenn möglich in loser Schüttung. Auf diese Weise können Sie sicher sein, einen Tee zu erhalten, der keine Pestizide enthält und bei seiner Herstellung die Umwelt respektiert. Diese Bezeichnung setzt nämlich zahlreiche Qualitätskontrollen während der Produktion voraus.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Unsere Expertenmeinung",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bei Kusmi ist der Schwarztee Ceylon ein Muss in der Familie der Schwarztees. Das liegt zum einen an seinem Geschmack, zum anderen aber auch an seinen gesundheitlichen Vorteilen. Er passt perfekt zu Ihrem Morgen- und Frühstücksbuffet und gibt Ihnen den nötigen Boost für den Tag.<br>Schwarzer Tee aus Ceylon ist einer der beliebtesten Teesorten. Er bietet einen exquisiten Geschmack und kann je nach Tageszeit und Geschmack auf verschiedene Arten zubereitet werden. Lassen Sie sich von diesem außergewöhnlichen, robusten und köstlichen Tee verführen. Entdecken Sie unser Sortiment an schwarzem Ceylon-Tee von Kusmi Tea.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

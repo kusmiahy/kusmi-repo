@@ -1,0 +1,90 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

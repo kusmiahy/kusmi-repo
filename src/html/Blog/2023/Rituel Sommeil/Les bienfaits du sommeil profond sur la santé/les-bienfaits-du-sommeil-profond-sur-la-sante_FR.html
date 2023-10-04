@@ -1,0 +1,158 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : les-bienfaits-du-sommeil-profond-sur-la-sante
+
+    Nom de la classe parent : rituel_sommeil_article_2023
+
+    Titre : Les bienfaits du sommeil profond sur la santé
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="rituel_sommeil_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_sommeil/article_blog_rituel_test.webp?$staticlink$",
+                "alt": "visuel test",
+    
+                "titre": "Les bienfaits du<br>sommeil profond sur la santé",
+                "date": "Publié le <span class='date__color'>05/10/2023</span>",
+                "url-produit": "$url('Product-Show','pid','21251A1070')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Découvrez notre rituel sommeil",
+    
+                "texte": "Vous êtes-vous déjà demandé pourquoi huit heures au lit ne se traduisent pas toujours par une sensation de fraîcheur ? En matière de sommeil, toutes les heures ne se valent pas. La clé ne réside pas seulement dans la quantité, mais aussi dans la profondeur de notre sommeil.",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Avez-vous déjà eu l'impression de flotter dans une mer sereine pendant une bonne nuit de sommeil, cette sensation de tranquillité survient souvent au cours de la phase de sommeil profond. C'est dans ce segment mystérieux de notre cycle de sommeil que la magie — oups, on veut dire la science — opère véritablement.<br>Plongez avec nous dans les bienfaits pour la santé du sommeil profond, une partie souvent négligée et pourtant essentielle de notre repos.",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Les étapes du sommeil",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le sommeil, processus biologique complexe et fascinant, se divise en plusieurs stades, chacun ayant des propriétés physiologiques et des avantages uniques. Pour vraiment saisir l'importance du sommeil profond, il faut d'abord comprendre les étapes de l’endormissement.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Stade NREM 1",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La phase de transition. C'est comme si l'on trempait ses orteils dans les eaux du sommeil. Pendant cette courte période, qui ne dure que quelques minutes, vous passez de l'état de veille au sommeil léger. Le rythme cardiaque ralentit, les muscles se détendent et les mouvements oculaires diminuent.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Stade NREM 2",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une relaxation plus profonde s'installe. Pendant environ 20 minutes, la température corporelle baisse et le rythme cardiaque continue de descendre. Ce stade sert de transition vers les phases de sommeil plus profond.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Stade NREM 3 (sommeil profond)",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "C'est à ce stade que la magie - utilisons le terme scientifique de &#34;processus réparateur&#34; - opère véritablement. Il s'agit de la forme de sommeil la plus profonde, qui dure environ 20 à 40 minutes au cours du premier cycle de sommeil, et qui peut s'allonger au cours des cycles suivants. C'est à ce stade que se produisent principalement la régénération cellulaire, le renforcement du système immunitaire et la restauration de l'énergie.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Sommeil paradoxal",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Après le sommeil profond du stade 3 NREM, le cycle de sommeil s'aventure dans la phase REM (Rapid Eye Movement). Généralement associé à des rêves intenses, le sommeil paradoxal joue un rôle crucial dans le fonctionnement du cerveau, contribuant à l'apprentissage, à la mémoire et à la régulation de l'humeur.<br>Le sommeil profond est la pierre angulaire de notre cycle de sommeil, assurant non seulement la quantité, mais aussi la qualité du repos. Sans un sommeil profond adéquat, nous ne faisons qu'effleurer le potentiel de rajeunissement offert par le sommeil. Voyons maintenant plus en détail pourquoi ce stade spécifique est la clé de voûte d'une santé optimale.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Les bienfaits du sommeil profond ",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Renforcement des capacités cérébrales-Clarté mentale et équilibre émotionnel",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le sommeil profond et les fonctions cognitives :</strong> Des recherches menées sur le sommeil démontrent que le sommeil profond (ou sommeil lent) joue un rôle important dans la consolidation de la mémoire. Pendant cette phase, les voies neuronales sont renforcées et optimisées. Les informations et les expériences de la journée sont transférées d'un stockage temporaire dans l'hippocampe à un stockage plus permanent dans le cortex. Ce processus permet d'affiner les fonctions cognitives et de faciliter la rétention de la mémoire.<br><strong>Sommeil et bien-être émotionnel :</strong> Le sommeil, en particulier le sommeil profond, est également crucial pour la santé émotionnelle et psychologique. Le sommeil profond garantit que le cerveau et le corps sont bien reposés, ce qui favorise indirectement l'équilibre émotionnel. Le sommeil paradoxal, la dernière phase du cycle de sommeil, a été associé suivant les études à la régulation des émotions.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Sommeil profond : L'équipe de nuit du corps",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Notre corps peut sembler inactif pendant le sommeil profond, mais en coulisses, il s'agit plutôt d'un atelier de réparation en pleine effervescence. Le sommeil profond, ou sommeil à ondes lentes, est le moment où la libération de l'hormone de croissance. Cette hormone n'est pas seulement indispensable pour grandir quand on est enfant ; elle est aussi cruciale pour réparer et développer les muscles, en particulier après une activité physique intense. En fait, une étude a montré que les athlètes qui augmentaient la durée de leur sommeil amélioraient leurs performances, leur humeur et réduisaient leur fatigue.<br>Le lien entre le sommeil et la santé métabolique est tout aussi convaincant. Un sommeil profond et régulier peut aider à réguler le métabolisme du glucose, ce qui influe sur notre consommation d'énergie et nos choix alimentaires. Une étude a rapporté que les personnes en manque de sommeil avaient tendance à consommer plus de calories le lendemain, en particulier sous forme d'en-cas.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Points d'impulsion : Là où les battements de cœur et l'immunité dansent",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Notre système cardiovasculaire ne fait pas de pause pendant la nuit. Au contraire, le sommeil profond peut être assimilé à un contrôle d'entretien de notre cœur et de nos vaisseaux sanguins. La pression artérielle diminue, ce qui permet à notre cœur de se reposer, ce qui est essentiel pour la santé cardiovasculaire à long terme. L'association Américaine du Coeur souligne l'importance d'un sommeil de qualité pour maintenir un cœur en bonne santé. Un sommeil profond inadéquat a été associé à des risques de maladies cardiaques et d'hypertension artérielle. Il faut donc considérer le sommeil profond comme le gardien méconnu qui maintient silencieusement l'harmonie de nos battements de cœur.<br>En revanche, pendant que vous êtes plongé dans le royaume des rêves, votre système immunitaire est plus alerte que jamais, ce qui vous permet de vous réveiller prêt à affronter une nouvelle journée. ",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "S'imprégner de la science : Le &#34;Rituel Sommeil&#34; de Kusmi Tea",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans notre vie pleine de responsabilités, de distractions, faire une pause est souvent un luxe. Et cette pause, avant de sombrer dans une nuit de sommeil réparateur, peut être magnifiquement ponctuée par la dernière création de Kusmi Tea - Rituel Sommeil.<br>Il s'agit d'une infusion entièrement dépourvue de théine, conçue pour être à la fois un réconfort nocturne et une évasion aromatique.",
+                })
+                @@include('../../_components/h3.html', {
+                    "titre": "Les ingrédients de Rituel Sommeil",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>La verveine :</strong> La verveine, dont les racines remontent à l'Antiquité, occupait une place particulière à l'époque romaine. Considérée comme une herbe sacrée, sa renommée n'était pas seulement fondée sur la légende. Elle s'est rapidement imposée dans la médecine populaire pour ses vertus relaxantes et apaisantes.<br><strong>Rooibos :</strong> Il ne s'agit pas d'un ingrédient comme les autres, mais d'un ingrédient chargé d'histoire, à l'instar de la verveine. Célébré depuis l'Antiquité et tout aussi apprécié à l'époque romaine, ses nuances relaxantes en font un ajout impeccable à ce mélange.<br><strong>Feuilles de mélisse :</strong> Au-delà de son charme citronné, la mélisse est un véritable concentré de puissance. Réputée pour améliorer la qualité du sommeil, accélérer l'endormissement et réduire l'agitation, elle n'est rien de moins qu'un allié nocturne.<br><strong>Notes de mangue :</strong> Pour que chaque gorgée soit non seulement réconfortante, mais aussi intrigante, un soupçon de mangue exotique agrémente ce mélange, faisant de chaque tasse un délice sensoriel.<br>Au-delà de son goût et de son arôme impeccables, Rituel Sommeil témoigne de l'engagement de Kusmi Tea envers la science. <br>L'infusion contient un <strong>extrait de mélisse</strong> qui regorge d'acide rosmarinique. Ce composé influence l'acide gamma-aminobutyrique (GABA), un neurotransmetteur qui joue un rôle essentiel dans l'endormissement. Pour déterminer le dosage exact d’extrait de mélisse nécessaire pour faciliter la relaxation et favoriser le sommeil, Kusmi Tea s'est lancé dans des études cliniques approfondies et évaluées par l'Autorité européenne de sécurité des aliments.<br><strong>Conseils d'utilisation :</strong> Bien que Rituel Sommeil promette d'être un compagnon apaisant à tout moment de la journée, pour stimuler le sommeil, il est préférable de le consommer le soir. Pour obtenir les meilleurs résultats, prenez votre deuxième tasse quotidienne une heure avant de vous coucher.<br>Et n'oubliez pas que, même si ce breuvage pourrait être une aide, les problèmes de sommeil persistants méritent une visite chez un professionnel de la santé.",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Tisane pour le sommeil : Mythes et réalités",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','cinq-pratiques-pour-bien-dormir-en-voyage')$",
+            })
+        </section>
+    </div>
+
+</div>

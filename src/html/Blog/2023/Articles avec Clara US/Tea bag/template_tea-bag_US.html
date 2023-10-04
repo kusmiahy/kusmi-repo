@@ -1,0 +1,84 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "Tea bag",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','the_sachets')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is a tea bag?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "A tea bag is a small, porous, and usually rectangular bag that contains tea leaves or herbal blends. It's commonly used to brew tea conveniently and quickly. The bag contains dried tea leaves, herbs, or fruit, allowing the flavors and aromas to infuse into hot water. Tea bags offer a convenient way to prepare tea without the need for loose tea leaves and strainers.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How do you use a tea bag?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Using a tea bag is quite simple. You heat water to the appropriate temperature for the type of tea you're brewing. Then, place the tea bag in a cup or mug. Pour the hot water over the tea bag and let it steep for the recommended amount of time, which varies depending on the type of tea and desired strength. Once the steeping is done, you can remove the tea bag and enjoy your brewed tea.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

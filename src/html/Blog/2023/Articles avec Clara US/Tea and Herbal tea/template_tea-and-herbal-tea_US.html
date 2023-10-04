@@ -1,0 +1,93 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "Herbal tea",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What are the best organic teas?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "At Kusmi Tea, we take pride in offering some of the finest organic teas, crafted with bases of organic tea, maté, rooibos, matcha, or hibiscus. All our plants, fruits, spices, and flavors are natural, with 100% aromas or essential oils of natural origin. Our organic teas are certified with the &#34;AB&#34; logo for France and the Euroleaf logo for the European Union, reflecting our transparency and commitment to the quality of our environmentally-friendly products. Discover our delicious flavors for an unparalleled organic tea experience with Kusmi Tea.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is the key difference between tea and herbal tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The primary distinction between tea and herbal tea lies in their ingredients and composition. Tea, commonly, is derived from the leaves of the Camellia sinensis plant. It includes various types such as black tea, green tea, white tea, and oolong tea. These teas all contain caffeine and share a common origin. On the other hand, herbal tea, also known as tisane or infusion, is made from an assortment of herbs, spices, flowers, fruits, and botanicals. Unlike tea, herbal infusions do not contain leaves from the Camellia sinensis plant and are therefore naturally caffeine-free. They offer a wide range of flavors, aromas, and potential health benefits based on the specific ingredients used.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Why choose organic tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Organic tea is cultivated without the use of synthetic pesticides, herbicides, or chemical fertilizers. By choosing organic, you're not only safeguarding your health from potential exposure to harmful chemicals but also supporting environmentally-friendly practices. Organic farming methods promote biodiversity, healthier soil, and reduced water pollution. When you savor a cup of organic tea, you're not just enjoying a pure and flavorful brew – you're also contributing to a more sustainable and responsible approach to agriculture and consumption.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

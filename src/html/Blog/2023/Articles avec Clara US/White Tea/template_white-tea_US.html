@@ -1,0 +1,102 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "White tea",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','blanc')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is white tea, and how does it differ from other types of tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "White tea is a type of tea that originates from the Camellia sinensis plant, just like green tea, black tea, and oolong tea. However, what sets white tea apart is its minimal processing. The leaves and buds of the tea plant are plucked in their early stages of growth, usually before they fully unfurl. This limited processing allows white tea to retain a higher amount of its natural compounds, resulting in a subtler and more delicate flavor compared to other tea varieties.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What are the key health benefits associated with white tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "White tea is celebrated for its potential health benefits, primarily due to its abundance of antioxidants. These antioxidants, such as catechins and polyphenols, help combat oxidative stress and reduce the risk of chronic diseases. Studies suggest that white tea may have a positive impact on heart health by improving cholesterol levels and promoting healthy blood vessels. Additionally, its antimicrobial properties might assist in boosting the immune system. White tea's elegant flavor and several health benefits make it a compelling choice for tea enthusiasts and health-conscious individuals alike.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How should white tea be prepared and enjoyed?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "To make the most of white tea's delicate flavor and health benefits, proper preparation is essential. Start by using fresh, filtered water that's not boiling hot—around 175°F (80°C) is ideal. Allow the tea leaves to steep for about 2-3 minutes to bring out their subtle flavors. You can enjoy white tea as it is or add a touch of honey or a slice of lemon for added taste. It's a tea best savored without milk to fully appreciate its nuanced qualities. Its minimal processing and delicate taste set it apart, while its antioxidant properties contribute to overall well-being.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "When is the best time to enjoy white tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "White tea can be enjoyed throughout the day. Its lower caffeine content makes it a great choice for morning consumption, providing a gentle energy boost. It can also be a wonderful accompaniment to afternoon relaxation or even as a soothing evening drink due to its minimal caffeine content. With its delicate taste, numerous health benefits, and versatility in consumption, white tea is not just a beverage – it's an experience that encapsulates the essence of fine tea craftsmanship.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

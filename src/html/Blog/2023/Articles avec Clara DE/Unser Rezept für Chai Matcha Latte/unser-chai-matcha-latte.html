@@ -1,0 +1,101 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : unser-chai-matcha-latte
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : Unser Rezept für Chai Matcha Latte
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "Unser Rezept für Chai Matcha Latte",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Ein hochwertiger Matcha by Kusmi",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wir bei Kusmi lieben es, allen Menschen und Geschmäckern eine Freude zu machen. Deshalb ist es uns wichtig, Ihnen leckere Mischungen anzubieten, die sowohl gut für Sie als auch für unseren Planeten sind. Daher sind alle unsere Mischungen biozertifiziert und werden in unseren Werkstätten in der Normandie aromatisiert, um die Verantwortung für die Umwelt zu übernehmen. <br>So entstand der Grüntee Matcha Bio by Kusmi, ein japanischer Bio-Grüntee in Pulverform, der auf traditionelle Weise genossen werden kann (oder auch nicht!). Ein reiner Tee und keine Mischung, der sich jedoch mit zahlreichen Zutaten für unendlich viele Rezepte kombinieren lässt!<br>Lesen Sie auch: Gesundheitliche Vorteile von Matcha-Tee und Matcha-Tee für die Haut",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Die Matcha Mania ",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Durch die Matcha-Manie wurden zahlreiche Variationen von Matcha-Getränken entwickelt. Wir haben Ihnen unter anderem ein Rezept für Dalgona-Matcha vorgestellt, das vom sehr beliebten südkoreanischen Schlagmilchkaffee inspiriert ist. <br>Für Latte-Liebhaber, aber nicht nur für diese, stellen wir Ihnen heute ein Rezept für Tschai Matcha Latte vor, das Sie Ihren täglichen Morgenkaffee schnell vergessen lässt. Sie sind skeptisch? Wir werden es Ihnen in weniger als fünf Minuten beweisen! <br>Zutaten für die Herstellung Ihres Chai Matcha Latte : <ul><li>- 1 Teelöffel Matcha Grünteepulver aus biologischem Anbau. </li><li>- 1 Beutel schwarzer Tschai Tee, wir empfehlen Ihnen unseren herzerwärmenden Kashmir Tschai.</li><li>- ½ Tasse heißes Wasser </li><li>- ½ Tasse Milch (wir haben auch ein Rezept für vegane Matcha Latte mit Kokosmilch gleich hier) </li><li>- 1 Teelöffel Vanillesirup</li></ul><br>Beginnen Sie damit, einen Beutel schwarzen Tschai Tee in einer halben Tasse heißem Wasser 3 Minuten lang zu ziehen. Sieben Sie einen Teelöffel Bio-Matchapulver in eine Schüssel. So vermeiden Sie, dass Sie auf sehr bittere Matcha-Klumpen stoßen. Gießen Sie dann den heißen schwarzen Tschai Tee dazu und verrühren Sie ihn mit einem Schneebesen, bis Sie eine schaumige dunkelgrüne Flüssigkeit erhalten. <br>Nun liegt es an Ihnen zu entscheiden, ob Sie ein wärmendes Heißgetränk oder einen energiespendenden Kaltgetränk bevorzugen.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Für einen eisgekühlten Chai Matcha Latte :",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nehmen Sie einfach die Milch aus dem Kühlschrank und gießen Sie 300 ml davon in ein Glas (mit Eiswürfeln, wenn Sie möchten). Geben Sie dann die Tschai-Matcha-Mischung, die Sie zuvor zubereitet haben, zusammen mit 1 Teelöffel Vanillesirup hinzu. Mischen Sie alles zusammen und genießen Sie einen ebenso erfrischenden wie nahrhaften Matcha Latte!",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Für einen warmen Matcha Latte :",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Erhitzen Sie die 300 ml Milch und gießen Sie sie in ein Glas. Geben Sie die im vorherigen Schritt zubereitete Tschai-Matcha-Teemischung mit 1 Teelöffel Vanillesirup hinzu. Verrühren Sie alles mit einem Milchaufschäumer und genießen Sie die cremigste Matcha-Latte, die Sie je probiert haben!<br>Und, was denken Sie? Haben wir die Herausforderung angenommen?<br>Sind Sie an unseren anderen Rezepten interessiert? Entdecken Sie unser köstliches Kaffee-Matcha-Getränk und unsere Rezeptideen für die Verwendung von Matcha in der Küche.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

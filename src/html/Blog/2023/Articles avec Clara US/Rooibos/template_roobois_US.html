@@ -1,0 +1,111 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "Roobois",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','rooibos_types_de_the')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What are the benefits provided by Rooibos?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rooibos is recognized for its potential health benefits. Research suggests it might be packed with antioxidants, which could help counteract free radicals in the body. It's also thought to have anti-inflammatory properties that might assist in alleviating certain conditions. Moreover, Rooibos is caffeine-free, making it an ideal choice for those aiming to avoid caffeine. These combined factors make Rooibos a promising option for both health-conscious and caffeine-sensitive individuals.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What benefits are associated with red tea ?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Red tea, also known as Rooibos, has gained popularity as a viable alternative to traditional tea. It is renowned for its numerous benefits, including promoting digestion, improving sleep quality, and providing relief from allergy symptoms. Abundant in antioxidants, this herbal infusion is celebrated for its potential to positively impact overall health and well-being.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Is Rooibos genuinely a tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Strictly speaking, Rooibos isn't a tea since it doesn't originate from the Camellia sinensis plant which is the source of traditional teas like black, green and white tea. Instead, it comes from the Aspalathus linearis plant native to South Africa. However, its preparation method resembles that of traditional tea, leading to its common name as either Rooibos tea or red tea. This herbal infusion from the South African landscape has garnered significant attention for its potential health benefits and refreshing taste. ",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is Rooibos red tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rooibos red tea, often simply referred to as Rooibos tea, is an herbal beverage made from the leaves of the Aspalathus linearis plant, which is native to the Western Cape region of South Africa. Despite its name, Rooibos is not derived from the Camellia sinensis plant like traditional teas (such as black, green, white, and oolong tea), and thus it is not a true tea in the botanical sense. Rooibos tea is naturally caffeine-free and has gained popularity due to its pleasant taste, potential health-promoting properties, and versatility in both hot and cold preparations.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How Rooibos red tea is prepared ?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The leaves of the Rooibos plant are harvested, fermented, and dried, which gives them their distinct reddish-brown color. To prepare Rooibos tea, these dried leaves are steeped in hot water. This herbal infusion from the South African landscape process mirrors the way conventional teas are brewed. The resulting beverage has a mild, naturally sweet flavor with earthy undertones, making it a popular choice for those seeking a caffeine-free and refreshing drink.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

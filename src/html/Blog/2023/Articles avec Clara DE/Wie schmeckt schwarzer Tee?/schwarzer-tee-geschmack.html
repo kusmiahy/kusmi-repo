@@ -1,0 +1,105 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : schwarzer-tee-geschmack
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "Wie schmeckt schwarzer Tee?",
+                "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','noir')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Was für eine komplexe Frage ist es, den Geschmack oder das Aroma eines so einzigartigen Getränks wie Schwarztee zu beschreiben? Zwar gibt es starke Gemeinsamkeiten zwischen den verschiedenen schwarzen Tees, die Ihnen angeboten werden, doch gleichzeitig ist jeder Tee nahezu einzigartig: ",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Je nach Anbaugebiet, Wetter, Ernte, Herstellungsverfahren usw. hat jeder Tee seinen ganz eigenen Geschmack! Und schließlich lässt sich schwarzer Tee auch individuell gestalten, allein schon durch die Art und Weise, wie Sie ihn zubereiten!<br>Entdecken Sie unser Sortiment an schwarzen Bio-Tees Made in Normandie!",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Was ist der charakteristische Geschmack von naturbelassenen schwarzen Teeblättern?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Um ihn von anderen Tees zu unterscheiden, sagt man allgemein über schwarzen Tee, dass er einen intensiven, aromareichen und malzigen Geschmack hat. Das heißt, er erinnert an Malz (ein gekeimtes Getreide), was zu Noten von frischem Brot oder Karamell führen kann. Schwarzer Tee hat auch eine kräftige Seite, die Kaffeeliebhabern gefällt.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Was ist der Unterschied zwischen dem Geschmack der Blätter von schwarzem und grünem Tee?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Während die Teeblätter in beiden Fällen zur gleichen Zeit geerntet und getrocknet werden, unterscheidet sich die Methode danach. Schwarzer Tee bleibt länger an der Luft, um eine natürliche Oxidation zu durchlaufen. Der Kontakt mit Sauerstoff führt zu einer Schwärzung der Teeblätter. Die Oxidation wirkt sich auf die Farbe der Blätter, auf die Farbe des Aufgusses und auf den Geschmack aus. Schwarzer Tee ist in der Regel weniger bitter als grüner Tee, der frischer und pflanzlicher schmeckt. Noch weniger oxidiert ist der weiße Tee, der am leichtesten schmeckt. Er bietet eine weiche, samtige Textur und ist weniger stark als die anderen Teesorten.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Was kann man mit schwarzem Tee genießen?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zum Frühstück ist der früheste der schwarzen Tees, der "English breakfast", ein perfekter Begleiter zu Ihren Marmeladenbroten. Zum Mittagessen passt der schwarze Tee aus Yunnan zu Fleischgerichten wie Kalb, Huhn, Entenbrust oder Gänseleberpastete. Dann folgt die Tea Time mit einem Schwarztee (Earl Grey, Darjeeling, Ceylon) und einem Gebäckstück. In der britischen Tradition werden Scones, die kleinen Brötchen schottischen Ursprungs, serviert. Es können aber auch Toast, Muffins, Crumpets (kleine Pfannkuchen) oder andere Kuchen wie der Battenberg Cake (aus Biskuit und Marzipan) oder Shortbreads (mit Schokolade und Karamell überzogenes Mürbegebäck) sein.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Kann man den Geschmack von schwarzem Tee beeinflussen?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ganz und gar! Es liegt an Ihnen, mit der Intensität des schwarzen Tees zu spielen, je nach Menge des Wassers, des Tees und der Dauer des Aufgusses. Danach können Sie je nach Geschmack Zucker, Honig, Milch, eine Zitronenscheibe oder Ingwer hinzufügen... Schwarzer Tee kann auch als Eistee getrunken werden, der in einer großen Karaffe mit Eiswürfeln gekühlt wird. Dann kann man Früchte der Saison hinzufügen: Zitrusfrüchte, Pfirsiche, Aprikosen, rote Früchte... Sie können sich das beste Rezept ausdenken!<br>Schließlich können wir Ihnen nur raten, sich für einen schwarzen Bio-Tee zu entscheiden, um alle Aromen der Blätter optimal zu nutzen. Die Bezeichnung Bio garantiert ein Qualitätsprodukt, das keine Pestizide enthält und umweltfreundlich hergestellt wurde.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

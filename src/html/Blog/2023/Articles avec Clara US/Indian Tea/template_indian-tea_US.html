@@ -1,0 +1,93 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "Thé indien",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','inde')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is Indian tea known for?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Indian tea is a captivating beverage that holds a significant place in Indian culture and heritage. Revered for its diverse array of flavors, aromatic nuances, and deep-rooted traditions, Indian tea has garnered admiration from tea enthusiasts globally. India boasts a remarkable array of tea varieties, including Darjeeling tea, Assam tea, Nilgiri tea, and more, each with its distinct characteristics and qualities. Whether you're sipping on the delicate notes of Darjeeling or savoring the robustness of Assam, Indian teas offer a world of flavors waiting to be explored.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Are there any health benefits associated with Indian tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Indian tea is associated with potential health benefits. Darjeeling tea, which is a black tea, with its antioxidants, is believed to contribute to overall wellness. The strong Assam tea might provide a dose of energy and alertness. Additionally, the spices in chai tea, such as ginger and cardamom, offer potential digestive and immune-boosting properties. However, it's crucial to remember that individual responses vary, and these potential benefits are best enjoyed as part of a balanced lifestyle. Just like the diverse cultural tapestry of India, its teas bring a medley of flavors and potential well-being to the cup.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How is Indian tea traditionally prepared?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Traditional Indian tea, or &#34;chai,&#34; is a flavorful concoction of black tea leaves, milk, sugar, and a blend of spices like cardamom, cinnamon, and ginger. The preparation involves boiling the tea leaves and spices in water, adding milk and sugar, and simmering the mixture to infuse the flavors. The resulting brew is both aromatic and comforting.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

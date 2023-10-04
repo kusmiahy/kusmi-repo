@@ -1,0 +1,112 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : black-tea
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : Black tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+                "titre": "Black Tea",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','noir')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What are the benefits of Black tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Certainly, black tea is a type of tea that has undergone full oxidation, resulting in its distinct dark color and bold flavor. Black tea offers several health benefits. Its caffeine content serves as a natural stimulant, enhancing energy levels and mental alertness. Moreover, the polyphenols in black tea are believed to support good digestion and intestinal balance. Rich in antioxidants, including polyphenols, it aids in combating free radicals and shields cells from oxidative damage. However, moderate consumption is recommended, especially for individuals sensitive to caffeine, to fully enjoy its benefits as part of a balanced diet.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Which is better, green tea or black tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The choice between green tea and black tea depends on personal taste preferences. Green tea has a delicate and herbaceous flavor, whereas black tea offers a robust taste. If you prefer less caffeine, green tea is a good option, with potential antioxidant benefits. Black tea is more suitable for breakfast or with milk. Ultimately, both types of tea have their own unique characteristics and potential health benefits, so the best choice depends on your personal preferences and needs.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What's the difference between green tea and black tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Green tea and black tea, despite originating from the same plant, Camellia sinensis, undergo distinct processing methods that lead to their contrasting characteristics. Green tea is minimally oxidized, preserving its vibrant green color and delicate, grassy flavor. It contains lower caffeine content compared to black tea and is renowned for its potential antioxidant benefits. On the other hand, black tea is fully oxidized, resulting in its dark color and robust, bold taste. It contains higher caffeine levels and a different set of antioxidants. Ultimately, the choice between the two comes down to personal taste preferences, with green tea offering a lighter and more subtly nuanced experience, while black tea provides a stronger and more intense flavor profile.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "When should you drink black tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Black tea contains caffeine, so it can be useful for boosting energy and attention, especially in the morning or afternoon. However, its consumption should be limited in the evening, as caffeine can disrupt sleep. ",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "How Black tea is prepared ?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Black tea is a type of tea that is more oxidized compared to other tea varieties like green, white, or oolong tea. It originates from the leaves of the Camellia sinensis plant, just like other true teas, but its unique processing gives it distinct characteristics in terms of flavor, color, and aroma. The leaves of black tea undergo a process known as oxidation, during which they are exposed to air and moisture. This process causes the leaves to darken and develop rich flavors. ",
+                })
+            </section>
+            
+            
+        </article>
+    </div>
+
+</div>

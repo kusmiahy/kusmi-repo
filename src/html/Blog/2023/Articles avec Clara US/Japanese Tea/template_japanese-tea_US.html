@@ -1,0 +1,84 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_articles_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="tea_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere_wimg.html', {
+    
+                "titre": "",
+                "date": "Published <span class='date__color'>10/05/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','japon')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover our selection",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "What is Japanese tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Japanese tea refers to a variety of teas that are cultivated and produced in Japan. These teas are known for their unique flavors, aromas, and cultural significance. They are often enjoyed during traditional tea ceremonies and as part of daily life in Japan. Several types of Japanese tea are celebrated worldwide. Among them, Matcha, a powdered green tea, stands out. Its vibrant green color and rich umami taste make it a staple in traditional Japanese tea ceremonies. Sencha, a steamed green tea, is another popular choice known for its refreshing aroma and mild, grassy flavor. Genmaicha, a blend of green tea and roasted brown rice, offers a nutty undertone and a unique visual appeal.",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "Are there health benefits associated with Japanese tea?",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Japanese tea, particularly green tea varieties like Matcha, Sencha, and Genmaicha, offers a range of health benefits. Packed with antioxidants known as catechins, these teas have been linked to potential health-promoting effects. Catechins are believed to contribute to boosting metabolism, aiding in weight management, and supporting cardiovascular health. Regular consumption of Japanese tea is not only a delightful experience for the taste buds but also a way to embrace a beverage that has been associated with potential well-being benefits for generations.",
+                })
+            </section>
+        </article>
+    </div>
+
+</div>

@@ -12,7 +12,7 @@
 
     Content asset : 
 
-    Nom de la classe parent : 
+    Nom de la classe parent : rituel_sommeil_article_2023
 
     Titre : 
 
@@ -42,7 +42,7 @@
     }
 </style>
 
-<div class="test_aline_2023">
+<div class="rituel_sommeil_article_2023">
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
@@ -51,7 +51,7 @@
                 "alt": "visuel test",
     
                 "titre": "",
-                "date": "Publié le 05/10/2023",
+                "date": "Publié le <span class='date__color'>05/10/2023</span>",
                 "url-produit": "$url('Product-Show','pid','21251A1070')$",
                 "lien-categorie": "blog/?filter=infusions-bio",
                 "tag-texte": "Infusions bio",
@@ -61,12 +61,12 @@
                 "texte": "",
             })
         </section>
-        <section class="content">
+        <article class="content">
             @@include('../../_components/paragraphe.html', {
                 "class": "content__p content__p--first",
                 "texte": "",
             })
-            <article class="block">
+            <section class="block">
                 @@include('../../_components/h2.html', {
                     "titre": "",
                 })
@@ -74,20 +74,8 @@
                     "class": "block__p",
                     "texte": "",
                 })
-            </article>
-            <article class="block">
-                @@include('../../_components/h2.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/h3.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "",
-                })
-            </article>
-            <article class="block">
+            </section>
+            <section class="block">
                 @@include('../../_components/h2.html', {
                     "titre": "",
                 })
@@ -98,25 +86,14 @@
                     "class": "block__p",
                     "texte": "",
                 })
-                @@include('../../_components/h3.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "",
-                })
-                @@include('../../_components/h3.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "",
-                })
-            </article>
-            <article class="block">
+            </section>
+            <section class="block">
                 @@include('../../_components/h2.html', {
                     "titre": "",
                 })
+                @@include('../../_components/h3.html', {
+                    "titre": "",
+                })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "",
@@ -128,8 +105,15 @@
                     "class": "block__p",
                     "texte": "",
                 })
-            </article>
-            <article class="block">
+                @@include('../../_components/h3.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+            <section class="block">
                 @@include('../../_components/h2.html', {
                     "titre": "",
                 })
@@ -144,8 +128,8 @@
                     "class": "block__p",
                     "texte": "",
                 })
-            </article>
-            <article class="block">
+            </section>
+            <section class="block">
                 @@include('../../_components/h2.html', {
                     "titre": "",
                 })
@@ -153,8 +137,24 @@
                     "class": "block__p",
                     "texte": "",
                 })
-            </article>
-        </section>
+                @@include('../../_components/h3.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+        </article>
     </div>
 
 </div>
