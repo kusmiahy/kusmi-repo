@@ -8,7 +8,7 @@
 
 // --------------------- Library -------------------------
 
-@import "./style/specific/2023/article_template_v2.scss";
+@import "./style/specific/2023/article_blog_banniere_noimage.scss";
 
     Content asset : black-tea
 
@@ -46,7 +46,7 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
+            @@include('../../_components/banniere_wimg_wtext.html', {
                 "titre": "Black Tea",
                 "date": "Published <span class='date__color'>10/05/2023</span>",
                 "url-produit": "$url('Search-Show','cgid','noir')$",
@@ -54,8 +54,6 @@
                 "tag-texte": "Tea",
     
                 "cta-texte": "Discover our selection",
-    
-                "texte": "",
             })
         </section>
         <article class="content">
@@ -104,9 +102,14 @@
                     "texte": "Black tea is a type of tea that is more oxidized compared to other tea varieties like green, white, or oolong tea. It originates from the leaves of the Camellia sinensis plant, just like other true teas, but its unique processing gives it distinct characteristics in terms of flavor, color, and aroma. The leaves of black tea undergo a process known as oxidation, during which they are exposed to air and moisture. This process causes the leaves to darken and develop rich flavors. ",
                 })
             </section>
-            
-            
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Black Tea",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','black-tea')$",
+            })
+        </section>
     </div>
 
 </div>

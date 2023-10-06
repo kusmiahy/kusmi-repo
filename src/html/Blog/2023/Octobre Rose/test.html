@@ -8,26 +8,22 @@
 
 // --------------------- Library -------------------------
 
-@import "./style/specific/2023/article_template_v2.scss";
+@import "./style/specific/2023/article_blog.scss";
 
-    Content asset : 
+    Content asset : octobre-rose-un-the-engage-pour-lutter-contre-le-cancer-du-sain
 
-    Nom de la classe parent : tea_articles_2023
+    Nom de la classe parent : octobre_rose_2023
 
-    Titre : 
+    Titre : Octobre Rose : un thé engagé pour lutter contre le cancer du sein
 
 -->
 
-<!-- CSS Font -->
-<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 <!-- inject-style src="dist/css/main.min.css" -->
-
+<!-- provisoire -->
+<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
 
 <style>
     .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
-        display: none;
-    }
-    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
         display: none;
     }
     .c-breadcrumb .product-breadcrumb {
@@ -36,27 +32,23 @@
     .c-article-banner {
         display: none;
     }
-    .c-article-text {
-        max-width: 100%;
-        padding: 0;
-    }
 </style>
 
-<div class="tea_articles_2023">
+<div class="pink_october_2023">
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
             @@include('../../_components/banniere.html', {
                 "lien-img": "blog/articles/2023/rituel_sommeil/article_blog_rituel_test.webp?$staticlink$",
-                "alt": "",
-    
-                "titre": "",
-                "date": "Published<span class='date__color'>10/05/2023</span>",
+                "alt": "visuel test",
+
+                "titre": "Octobre Rose : un thé engagé pour lutter contre le cancer du sein",
+                "date": "Publié le <span class='date__color'>05/10/2023</span>",
                 "url-produit": "",
-                "lien-categorie": "blog/?filter=le-the",
-                "tag-texte": "Tea",
+                "lien-categorie": "blog/?filter=pink-october",
+                "tag-texte": "Octobre Rose",
     
-                "cta-texte": "",
+                "cta-texte": "Découvrir",
     
                 "texte": "",
             })
@@ -75,26 +67,24 @@
                     "texte": "",
                 })
             </section>
-            <section class="block">
-                @@include('../../_components/h2.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/h3.html', {
-                    "titre": "",
-                })
-                @@include('../../_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "",
-                })
-            </section>
         </article>
         <section class="block">
             @@include('../../_components/partager.html', {
-                "titre": "Tisane pour le sommeil : Mythes et réalités",
+                "titre": "",
                 "texte": "Partager cet article",
-                "url-network": "$url('Page-Show','cid','cinq-pratiques-pour-bien-dormir-en-voyage')$",
+                "url-network": "$url('Page-Show','cid','')$",
             })
         </section>
     </div>
 
 </div>
+
+<!-- Description
+cta
+
+titre 
+description 
+
+Recommandations de d'autres articles (slider) -> voir pour un max d'articles
+
+Produits qui sont suggestionnés (SQU) -->

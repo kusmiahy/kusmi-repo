@@ -46,7 +46,7 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
+            @@include('../../_components/banniere_wimg_wtext.html', {
     
                 "titre": "White tea",
                 "date": "Published <span class='date__color'>10/05/2023</span>",
@@ -55,8 +55,6 @@
                 "tag-texte": "Tea",
     
                 "cta-texte": "Discover our selection",
-    
-                "texte": "",
             })
         </section>
         <article class="content">
@@ -97,6 +95,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "White tea",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','white-tea')$",
+            })
+        </section>
     </div>
 
 </div>

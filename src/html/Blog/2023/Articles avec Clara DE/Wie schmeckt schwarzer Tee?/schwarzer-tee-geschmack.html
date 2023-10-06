@@ -14,7 +14,7 @@
 
     Nom de la classe parent : tea_articles_2023
 
-    Titre : 
+    Titre : Wie schmeckt schwarzer Tee?
 
 -->
 
@@ -46,8 +46,11 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
-                "titre": "Wie schmeckt schwarzer Tee?",
+            @@include('../../_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_gout_the_noir.webp?$staticlink$",
+                "alt": "schachtel mit teebeuteln kusmi tea anastasia schwarzer tee mit bergamotte und zitrone",
+
+                "titre": "Wie schmeckt<br>schwarzer Tee?",
                 "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
                 "url-produit": "$url('Search-Show','cgid','noir')$",
                 "lien-categorie": "blog/?filter=le-the",
@@ -87,7 +90,7 @@
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Zum Frühstück ist der früheste der schwarzen Tees, der "English breakfast", ein perfekter Begleiter zu Ihren Marmeladenbroten. Zum Mittagessen passt der schwarze Tee aus Yunnan zu Fleischgerichten wie Kalb, Huhn, Entenbrust oder Gänseleberpastete. Dann folgt die Tea Time mit einem Schwarztee (Earl Grey, Darjeeling, Ceylon) und einem Gebäckstück. In der britischen Tradition werden Scones, die kleinen Brötchen schottischen Ursprungs, serviert. Es können aber auch Toast, Muffins, Crumpets (kleine Pfannkuchen) oder andere Kuchen wie der Battenberg Cake (aus Biskuit und Marzipan) oder Shortbreads (mit Schokolade und Karamell überzogenes Mürbegebäck) sein.",
+                    "texte": "Zum Frühstück ist der früheste der schwarzen Tees, der &#34;English breakfast&#34;, ein perfekter Begleiter zu Ihren Marmeladenbroten. Zum Mittagessen passt der schwarze Tee aus Yunnan zu Fleischgerichten wie Kalb, Huhn, Entenbrust oder Gänseleberpastete. Dann folgt die Tea Time mit einem Schwarztee (Earl Grey, Darjeeling, Ceylon) und einem Gebäckstück. In der britischen Tradition werden Scones, die kleinen Brötchen schottischen Ursprungs, serviert. Es können aber auch Toast, Muffins, Crumpets (kleine Pfannkuchen) oder andere Kuchen wie der Battenberg Cake (aus Biskuit und Marzipan) oder Shortbreads (mit Schokolade und Karamell überzogenes Mürbegebäck) sein.",
                 })
             </section>
             <section class="block">
@@ -100,6 +103,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Wie schmeckt schwarzer Tee?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','schwarzer-tee-geschmack')$",
+            })
+        </section>
     </div>
 
 </div>

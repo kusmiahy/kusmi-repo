@@ -46,39 +46,44 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
+            @@include('../../_components/banniere_wimg_wtext.html', {
     
-                "titre": "Chinese tea",
+                "titre": "Tea bag",
                 "date": "Published <span class='date__color'>10/05/2023</span>",
-                "url-produit": "$url('Search-Show','cgid','chine')$",
+                "url-produit": "$url('Search-Show','cgid','the_sachets')$",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tea",
     
                 "cta-texte": "Discover our selection",
-    
-                "texte": "",
             })
         </section>
         <article class="content">
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "What is Chinese tea, and why is it so renowned?",
+                    "titre": "What is a tea bag?",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Chinese tea is a diverse and intricate beverage that holds a special place in Chinese culture and history. Renowned for its rich flavors, aromatic profiles, and centuries-old traditions, Chinese tea has captivated tea enthusiasts worldwide. China has indeed many great vintages and varieties, each with its own particularity and benefits! Green tea, black tea, white tea or oolong tea, all these teas from China will find the appreciation of your palate.",
+                    "texte": "A tea bag is a small, porous, and usually rectangular bag that contains tea leaves or herbal blends. It's commonly used to brew tea conveniently and quickly. The bag contains dried tea leaves, herbs, or fruit, allowing the flavors and aromas to infuse into hot water. Tea bags offer a convenient way to prepare tea without the need for loose tea leaves and strainers.",
                 })
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "Are there any health benefits associated with Chinese tea?",
+                    "titre": "How do you use a tea bag?",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Indeed, Chinese tea is believed to offer various health benefits. Green tea, rich in antioxidants, is associated with improved metabolism and cardiovascular health. Oolong tea may aid in digestion and weight management. Black tea contains compounds that could support heart health. Puerh tea is often connected with digestive benefits and potential cholesterol management. However, it's important to remember that individual responses vary, and these benefits are part of a holistic lifestyle.",
+                    "texte": "Using a tea bag is quite simple. You heat water to the appropriate temperature for the type of tea you're brewing. Then, place the tea bag in a cup or mug. Pour the hot water over the tea bag and let it steep for the recommended amount of time, which varies depending on the type of tea and desired strength. Once the steeping is done, you can remove the tea bag and enjoy your brewed tea.",
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Tea Bag",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','tea-bag')$",
+            })
+        </section>
     </div>
 
 </div>

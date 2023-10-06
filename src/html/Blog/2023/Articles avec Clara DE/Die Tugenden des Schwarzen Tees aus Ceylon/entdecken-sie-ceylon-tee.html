@@ -46,16 +46,15 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
-                "titre": "",
+            @@include('../../_components/banniere_nocta.html', {
+                "lien-img": "blog/articles/2023/blog_the_noir_de_ceylan.webp?$staticlink$",
+                "alt": "landschaft der insel ceylon",
+                "titre": "Die Tugenden des Schwarzen Tees aus Ceylon",
                 "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
-                "url-produit": "",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tees & Aufgüsse",
     
-                "cta-texte": "",
-    
-                "texte": Schwarzer Tee aus Ceylon ist ein charaktervoller Tee, der starke und vielfältige Aromen bietet. Dieser Schwarztee ist nach der ehemaligen Insel Sri Lanka benannt und hat seine ursprüngliche Bezeichnung beibehalten. ",
+                "texte": "Schwarzer Tee aus Ceylon ist ein charaktervoller Tee, der starke und vielfältige Aromen bietet. Dieser Schwarztee ist nach der ehemaligen Insel Sri Lanka benannt und hat seine ursprüngliche Bezeichnung beibehalten. ",
             })
         </section>
         <article class="content">
@@ -87,8 +86,25 @@
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Je nachdem, wie Sie den Schwarzen Tee aus Ceylon zubereiten, erhalten Sie nicht die gleichen Aromen. Dies ist die Gelegenheit, verschiedene Tees zu probieren, indem Sie nur einen einzigen verwenden! Hier sind unsere Empfehlungen:<br><ul><li>Erhitzen Sie Wasser auf 80 °C oder 85 °C.</li><li>Bereiten Sie je nach Vorliebe zwischen einem und zwei Teelöffeln Teeblätter pro 100 cl Wasser zu.</li><li>Tauchen Sie den schwarzen Tee in das heiße Wasser und lassen Sie ihn 3 Minuten lang ziehen, damit Sie alle seine Aromen genießen können.Wenn Sie einen stärkeren Tee wünschen, lassen Sie ihn länger ziehen. Es wird empfohlen, den Tee nicht länger als 5 Minuten ziehen zu lassen.</li><li>Lassen Sie Ihren Tee 3 Minuten lang ruhen.</li><li>Genießen Sie Ihren köstlichen schwarzen Ceylon-Tee nach Belieben mit einer Wolke aus Milch und Zucker.</li></ul>",
+                    "texte": "Je nachdem, wie Sie den Schwarzen Tee aus Ceylon zubereiten, erhalten Sie nicht die gleichen Aromen. Dies ist die Gelegenheit, verschiedene Tees zu probieren, indem Sie nur einen einzigen verwenden! Hier sind unsere Empfehlungen:",
                 })
+                <ul class="block__ul">
+                    @@include('../../_components/li.html', {
+                        "texte": "Erhitzen Sie Wasser auf 80 °C oder 85 °C.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "Bereiten Sie je nach Vorliebe zwischen einem und zwei Teelöffeln Teeblätter pro 100 cl Wasser zu.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "Tauchen Sie den schwarzen Tee in das heiße Wasser und lassen Sie ihn 3 Minuten lang ziehen, damit Sie alle seine Aromen genießen können.Wenn Sie einen stärkeren Tee wünschen, lassen Sie ihn länger ziehen. Es wird empfohlen, den Tee nicht länger als 5 Minuten ziehen zu lassen.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "Lassen Sie Ihren Tee 3 Minuten lang ruhen.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "Genießen Sie Ihren köstlichen schwarzen Ceylon-Tee nach Belieben mit einer Wolke aus Milch und Zucker.",
+                    })
+                </ul>
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
@@ -118,6 +134,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Die Tugenden des Schwarzen Tees aus Ceylon",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','entdecken-sie-ceylon-tee')$",
+            })
+        </section>
     </div>
 
 </div>

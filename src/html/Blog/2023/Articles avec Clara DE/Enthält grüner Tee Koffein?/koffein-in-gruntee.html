@@ -46,16 +46,15 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
-                "titre": "koffein-in-gruntee",
+            @@include('../../_components/banniere_nocta.html', {
+                "lien-img": "blog/articles/2023/blog_the_vert_contient_cafeine.webp?$staticlink$",
+                "alt": "produkt grüner tee ingwer zitrone",
+                "titre": "Enthält grüner Tee Koffein?",
                 "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
-                "url-produit": "",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tees & Aufgüsse",
     
-                "cta-texte": "",
-    
-                "texte": "Ob schwarzer oder grüner Tee, er enthält immer Teein. Wenn man jedoch entdeckt, dass Teein und Koffein in Wirklichkeit ein und dasselbe Molekül sind, wird es etwas komplizierter... Und ja, der Koffeingehalt von grünem Tee ist sehr real! ",
+                "texte": "Ob schwarzer oder grüner Tee, er enthält immer Teein. Wenn man jedoch entdeckt, dass Teein und Koffein in Wirklichkeit ein und dasselbe Molekül sind, wird es etwas komplizierter... Und ja, der Koffeingehalt von grünem Tee ist sehr real!",
             })
         </section>
         <article class="content">
@@ -87,7 +86,7 @@
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Auch wenn man eine Zeit lang das Gegenteil angenommen hat, sind Teein und Koffein ein und dasselbe Molekül. Der Unterschied zwischen den beiden Heißgetränken - die weltweit am meisten getrunken werden - besteht darin, dass Kaffee mehr davon enthält: drei- bis viermal so viel wie eine Tasse Tee. Aus diesem Grund gilt Kaffee als anregend, während Tee nur als Stimulans betrachtet wird. Grüner Tee ist also nicht anregend. Die Wirkung von Tee ist viel diffuser und über einen längeren Zeitraum konstant, während Kaffee für einen "Boost" sorgt. Konzentrationsunterschiede, die auch zwischen den verschiedenen Teesorten festzustellen sind: Schwarzer Tee enthält am meisten Teein (vor allem, weil er es schneller freisetzt), vor grünem und weißem Tee, der als der "leichteste" Tee bekannt ist.<br>Eine Tasse grüner Tee wird Ihnen also den ganzen Tag über eine energische Ruhe verschaffen. So vermeidet man die Nervosität, die eine Tasse Kaffee mit sich bringen kann!",
+                    "texte": "Auch wenn man eine Zeit lang das Gegenteil angenommen hat, sind Teein und Koffein ein und dasselbe Molekül. Der Unterschied zwischen den beiden Heißgetränken - die weltweit am meisten getrunken werden - besteht darin, dass Kaffee mehr davon enthält: drei- bis viermal so viel wie eine Tasse Tee. Aus diesem Grund gilt Kaffee als anregend, während Tee nur als Stimulans betrachtet wird. Grüner Tee ist also nicht anregend. Die Wirkung von Tee ist viel diffuser und über einen längeren Zeitraum konstant, während Kaffee für einen &#34;Boost&#34; sorgt. Konzentrationsunterschiede, die auch zwischen den verschiedenen Teesorten festzustellen sind: Schwarzer Tee enthält am meisten Teein (vor allem, weil er es schneller freisetzt), vor grünem und weißem Tee, der als der &#34;leichteste&#34; Tee bekannt ist.<br>Eine Tasse grüner Tee wird Ihnen also den ganzen Tag über eine energische Ruhe verschaffen. So vermeidet man die Nervosität, die eine Tasse Kaffee mit sich bringen kann!",
                 })
             </section>
             <section class="block">
@@ -110,7 +109,7 @@
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "Wie kann man grünen Tee "entkoffeinieren"?",
+                    "titre": "Wie kann man grünen Tee &#34;entkoffeinieren&#34;?",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
@@ -181,6 +180,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Enthält grüner Tee Koffein?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','koffein-in-gruntee')$",
+            })
+        </section>
     </div>
 
 </div>

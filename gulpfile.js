@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.rituel_sommeil_article_2023';
+var classParent = '.tea_articles_2023';
 
 const {
     series,

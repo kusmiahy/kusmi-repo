@@ -46,16 +46,14 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
-                "titre": "Unser Rezept für Chai Matcha Latte",
+            @@include('../../_components/banniere_nocta_nodescription.html', {
+                "titre": "Unser Rezept für Chai<br>Matcha Latte",
                 "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
-                "url-produit": "",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tees & Aufgüsse",
     
-                "cta-texte": "",
-    
-                "texte": "",
+                "lien-img": "blog/articles/2023/blog_chai_matcha_latte.webp?$staticlink$",
+                "alt": "Matcha Latte Tasse",
             })
         </section>
         <article class="content">
@@ -74,7 +72,28 @@
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Durch die Matcha-Manie wurden zahlreiche Variationen von Matcha-Getränken entwickelt. Wir haben Ihnen unter anderem ein Rezept für Dalgona-Matcha vorgestellt, das vom sehr beliebten südkoreanischen Schlagmilchkaffee inspiriert ist. <br>Für Latte-Liebhaber, aber nicht nur für diese, stellen wir Ihnen heute ein Rezept für Tschai Matcha Latte vor, das Sie Ihren täglichen Morgenkaffee schnell vergessen lässt. Sie sind skeptisch? Wir werden es Ihnen in weniger als fünf Minuten beweisen! <br>Zutaten für die Herstellung Ihres Chai Matcha Latte : <ul><li>- 1 Teelöffel Matcha Grünteepulver aus biologischem Anbau. </li><li>- 1 Beutel schwarzer Tschai Tee, wir empfehlen Ihnen unseren herzerwärmenden Kashmir Tschai.</li><li>- ½ Tasse heißes Wasser </li><li>- ½ Tasse Milch (wir haben auch ein Rezept für vegane Matcha Latte mit Kokosmilch gleich hier) </li><li>- 1 Teelöffel Vanillesirup</li></ul><br>Beginnen Sie damit, einen Beutel schwarzen Tschai Tee in einer halben Tasse heißem Wasser 3 Minuten lang zu ziehen. Sieben Sie einen Teelöffel Bio-Matchapulver in eine Schüssel. So vermeiden Sie, dass Sie auf sehr bittere Matcha-Klumpen stoßen. Gießen Sie dann den heißen schwarzen Tschai Tee dazu und verrühren Sie ihn mit einem Schneebesen, bis Sie eine schaumige dunkelgrüne Flüssigkeit erhalten. <br>Nun liegt es an Ihnen zu entscheiden, ob Sie ein wärmendes Heißgetränk oder einen energiespendenden Kaltgetränk bevorzugen.",
+                    "texte": "Durch die Matcha-Manie wurden zahlreiche Variationen von Matcha-Getränken entwickelt. Wir haben Ihnen unter anderem ein Rezept für Dalgona-Matcha vorgestellt, das vom sehr beliebten südkoreanischen Schlagmilchkaffee inspiriert ist. <br>Für Latte-Liebhaber, aber nicht nur für diese, stellen wir Ihnen heute ein Rezept für Tschai Matcha Latte vor, das Sie Ihren täglichen Morgenkaffee schnell vergessen lässt. Sie sind skeptisch? Wir werden es Ihnen in weniger als fünf Minuten beweisen! <br>Zutaten für die Herstellung Ihres Chai Matcha Latte : ",
+                })
+                <ul class="block__ul">
+                    @@include('../../_components/li.html', {
+                        "texte": "1 Teelöffel Matcha Grünteepulver aus biologischem Anbau.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "1 Beutel schwarzer Tschai Tee, wir empfehlen Ihnen unseren herzerwärmenden Kashmir Tschai.",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "½ Tasse heißes Wasser ",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "½ Tasse Milch (wir haben auch ein Rezept für vegane Matcha Latte mit Kokosmilch gleich hier)",
+                    })
+                    @@include('../../_components/li.html', {
+                        "texte": "1 Teelöffel Vanillesirup",
+                    })
+                </ul>
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Beginnen Sie damit, einen Beutel schwarzen Tschai Tee in einer halben Tasse heißem Wasser 3 Minuten lang zu ziehen. Sieben Sie einen Teelöffel Bio-Matchapulver in eine Schüssel. So vermeiden Sie, dass Sie auf sehr bittere Matcha-Klumpen stoßen. Gießen Sie dann den heißen schwarzen Tschai Tee dazu und verrühren Sie ihn mit einem Schneebesen, bis Sie eine schaumige dunkelgrüne Flüssigkeit erhalten.<br>Nun liegt es an Ihnen zu entscheiden, ob Sie ein wärmendes Heißgetränk oder einen energiespendenden Kaltgetränk bevorzugen.",
                 })
             </section>
             <section class="block">
@@ -96,6 +115,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Unser Rezept für Chai Matcha Latte",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','unser-chai-matcha-latte')$",
+            })
+        </section>
     </div>
 
 </div>

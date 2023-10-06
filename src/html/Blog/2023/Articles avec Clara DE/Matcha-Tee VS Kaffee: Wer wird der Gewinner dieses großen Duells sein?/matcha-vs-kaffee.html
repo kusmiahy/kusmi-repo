@@ -10,11 +10,11 @@
 
 @import "./style/specific/2023/article_template_v2.scss";
 
-    Content asset : 
+    Content asset : matcha-vs-kaffee
 
     Nom de la classe parent : tea_articles_2023
 
-    Titre : 
+    Titre : Matcha-Tee VS Kaffee: Wer wird er Gewinner dieses großen Duells sein?
 
 -->
 
@@ -45,17 +45,14 @@
 <div class="tea_articles_2023">
     <div class="article">
         <section class="article__banniere banniere">
-            <!-- titre -->
-            @@include('../../_components/banniere_wimg.html', {
-                "titre": "Matcha-Tee VS Kaffee: Wer wird der Gewinner dieses großen Duells sein?",
+            @@include('../../_components/banniere_nocta_nodescription.html', {
+                "titre": "Matcha-Tee VS Kaffee: Wer wird er Gewinner dieses großen Duells sein?",
                 "date": "Veröffentlicht am <span class='date__color'>05/10/2023</span>",
-                "url-produit": "",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tees & Aufgüsse",
     
-                "cta-texte": "",
-    
-                "texte": "",
+                "lien-img": "blog/articles/2023/blog_matcha_vs_cafe.webp?$staticlink$",
+                "alt": "Matcha-Tee VS Kaffee",
             })
         </section>
         <article class="content">
@@ -70,34 +67,34 @@
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "1) Die Allgegenwart des Kaffees VS. die Originalität des Matcha. ",
+                    "titre": "1&#41; Die Allgegenwart des Kaffees VS. die Originalität des Matcha.",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Wie wäre es mit einem kleinen Kaffee? Der "kleine Schwarze" oder "Kawa", wie er manchmal genannt wird, hat es geschafft, sich einen festen Platz im Tagesablauf zu erobern. So trinken mehr als acht von zehn Franzosen täglich Kaffee (83 %), manchmal sogar mehrmals am Tag (für 62 %). Im Vergleich dazu ist der Konsum von Matcha viel vertraulicher. Matcha-Tee wurde zunächst von Japan-Kennern angenommen, die ihn manchmal auf Reisen entdeckten, wird aber immer bekannter, vor allem dank der Konditorei, die seinen bitteren, pflanzlichen Geschmack und seine unglaubliche smaragdgrüne Farbe schätzt. Wenn Sie einem Freund auf der Durchreise einen Matcha anbieten, ist das sicher viel origineller! ",
+                    "texte": "Wie wäre es mit einem kleinen Kaffee? Der &#34;kleine Schwarze&#34; oder &#34;Kawa&#34;, wie er manchmal genannt wird, hat es geschafft, sich einen festen Platz im Tagesablauf zu erobern. So trinken mehr als acht von zehn Franzosen täglich Kaffee (83 %), manchmal sogar mehrmals am Tag (für 62 %). Im Vergleich dazu ist der Konsum von Matcha viel vertraulicher. Matcha-Tee wurde zunächst von Japan-Kennern angenommen, die ihn manchmal auf Reisen entdeckten, wird aber immer bekannter, vor allem dank der Konditorei, die seinen bitteren, pflanzlichen Geschmack und seine unglaubliche smaragdgrüne Farbe schätzt. Wenn Sie einem Freund auf der Durchreise einen Matcha anbieten, ist das sicher viel origineller! ",
                 })
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "2) Der Geschmack von Kaffee VS der Geschmack von Matcha ",
+                    "titre": "2&#41; Der Geschmack von Kaffee VS der Geschmack von Matcha ",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Matcha zeichnet sich durch einen einzigartigen pflanzlichen Geschmack im Mund und eine Bitterkeit aus, die leicht sein sollte. Um zu vermeiden, dass sie zu stark hervortritt, sollten Sie sich für zeremoniellen Matcha-Tee entscheiden (der sich vom Matcha-Tee für die Küche unterscheidet). Wenn ein Gleichgewicht zwischen Vegetarität und Bitterkeit besteht, spricht man von einem "Umami-Geschmack", einem japanischen Begriff für einen lang anhaltenden, süßen Nachgeschmack.  Stark und bitter, die Vorliebe für Kaffee ist nicht spontan, sondern muss kultiviert werden (wie beim Wein ist das allererste Mal überraschend!). Es wurden viele Varianten entwickelt, um den Geschmack milder zu machen: gesüßter Kaffee, Milchkaffee, Wiener Kaffee, Cappuccino usw. ",
+                    "texte": "Matcha zeichnet sich durch einen einzigartigen pflanzlichen Geschmack im Mund und eine Bitterkeit aus, die leicht sein sollte. Um zu vermeiden, dass sie zu stark hervortritt, sollten Sie sich für zeremoniellen Matcha-Tee entscheiden (der sich vom Matcha-Tee für die Küche unterscheidet). Wenn ein Gleichgewicht zwischen Vegetarität und Bitterkeit besteht, spricht man von einem &#34;Umami-Geschmack&#34;, einem japanischen Begriff für einen lang anhaltenden, süßen Nachgeschmack.  Stark und bitter, die Vorliebe für Kaffee ist nicht spontan, sondern muss kultiviert werden (wie beim Wein ist das allererste Mal überraschend!). Es wurden viele Varianten entwickelt, um den Geschmack milder zu machen: gesüßter Kaffee, Milchkaffee, Wiener Kaffee, Cappuccino usw. ",
                 })
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "3) Die energiespendende Wirkung von Kaffee VS. die anregende Wirkung von Matcha",
+                    "titre": "3&#41; Die energiespendende Wirkung von Kaffee VS. die anregende Wirkung von Matcha",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Als Energydrink hat Kaffee eine vorübergehende belebende Wirkung, die nach etwa zwei Stunden wieder abfällt. Matcha hat eine ähnliche Wirkung, aber seine stimulierende Wirkung hält länger an. Matcha bleibt bis zu 8 Stunden im Körper aktiv und das darin enthaltene Theanin soll sich positiv auf das Gedächtnis und die Konzentration auswirken. Wenn seine "Boost"-Wirkung intensiver ist als bei anderen Tees, liegt das daran, dass man Matcha zu sich nimmt, während man bei anderen Tees nur den Aufguss trinkt. Schließlich hat Matcha-Tee auch keine der Nebenwirkungen von Kaffee: erhöhter Blutdruck, erhöhte Herzfrequenz, Sodbrennen, gelbe Zähne... Matcha scheint also eine gute Alternative zu Kaffee zu sein, für diejenigen, die versuchen, ihren Kaffeekonsum zu reduzieren. Denn obwohl Kaffee mehr Koffein/Teein enthält als Matcha, hält Matcha Sie länger wach und konzentriert. ",
+                    "texte": "Als Energydrink hat Kaffee eine vorübergehende belebende Wirkung, die nach etwa zwei Stunden wieder abfällt. Matcha hat eine ähnliche Wirkung, aber seine stimulierende Wirkung hält länger an. Matcha bleibt bis zu 8 Stunden im Körper aktiv und das darin enthaltene Theanin soll sich positiv auf das Gedächtnis und die Konzentration auswirken. Wenn seine &#34;Boost&#34;-Wirkung intensiver ist als bei anderen Tees, liegt das daran, dass man Matcha zu sich nimmt, während man bei anderen Tees nur den Aufguss trinkt. Schließlich hat Matcha-Tee auch keine der Nebenwirkungen von Kaffee: erhöhter Blutdruck, erhöhte Herzfrequenz, Sodbrennen, gelbe Zähne... Matcha scheint also eine gute Alternative zu Kaffee zu sein, für diejenigen, die versuchen, ihren Kaffeekonsum zu reduzieren. Denn obwohl Kaffee mehr Koffein/Teein enthält als Matcha, hält Matcha Sie länger wach und konzentriert. ",
                 })
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "4) Der Preis von Kaffee VS. der Preis von Matcha.",
+                    "titre": "4&#41; Der Preis von Kaffee VS. der Preis von Matcha.",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
@@ -106,7 +103,7 @@
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "5) Die Vorteile von Kaffee VS die Vorteile von Matcha-Tee ",
+                    "titre": "5&#41; Die Vorteile von Kaffee VS die Vorteile von Matcha-Tee ",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
@@ -115,7 +112,7 @@
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "6) Der ökologische Fußabdruck von Kaffee VS. der ökologische Fußabdruck von Matcha.",
+                    "titre": "6&#41; Der ökologische Fußabdruck von Kaffee VS. der ökologische Fußabdruck von Matcha.",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
@@ -124,7 +121,7 @@
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "7) Warum sollte man wählen? Entscheiden Sie sich für ein Rezept mit Kaffee und Matcha.",
+                    "titre": "7&#41; Warum sollte man wählen? Entscheiden Sie sich für ein Rezept mit Kaffee und Matcha.",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
@@ -132,6 +129,13 @@
                 })
             </section>
         </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "Matcha-Tee VS Kaffee: Wer wird er Gewinner dieses großen Duells sein?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','matcha-vs-kaffee')$",
+            })
+        </section>
     </div>
 
 </div>
