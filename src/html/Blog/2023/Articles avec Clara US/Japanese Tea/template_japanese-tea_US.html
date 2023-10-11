@@ -46,11 +46,12 @@
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere_wimg_wtext.html', {
-    
-                "titre": "Tea bag",
+            @@include('../../_components/banniere_no_text.html', {
+                "lien-img": "blog/articles/2023/blog_japanese_tea.webp?$staticlink$",
+                "alt": "japanese tea product kusmi tea",
+                "titre": "Japanese Tea",
                 "date": "Published <span class='date__color'>10/05/2023</span>",
-                "url-produit": "$url('Search-Show','cgid','the_sachets')$",
+                "url-produit": "$url('Search-Show','cgid','japon')$",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Tea",
     
@@ -60,28 +61,28 @@
         <article class="content">
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "What is a tea bag?",
+                    "titre": "What is Japanese tea?",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "A tea bag is a small, porous, and usually rectangular bag that contains tea leaves or herbal blends. It's commonly used to brew tea conveniently and quickly. The bag contains dried tea leaves, herbs, or fruit, allowing the flavors and aromas to infuse into hot water. Tea bags offer a convenient way to prepare tea without the need for loose tea leaves and strainers.",
+                    "texte": "Japanese tea refers to a variety of teas that are cultivated and produced in Japan. These teas are known for their unique flavors, aromas, and cultural significance. They are often enjoyed during traditional tea ceremonies and as part of daily life in Japan. Several types of Japanese tea are celebrated worldwide. Among them, Matcha, a powdered green tea, stands out. Its vibrant green color and rich umami taste make it a staple in traditional Japanese tea ceremonies. Sencha, a steamed green tea, is another popular choice known for its refreshing aroma and mild, grassy flavor. Genmaicha, a blend of green tea and roasted brown rice, offers a nutty undertone and a unique visual appeal.",
                 })
             </section>
             <section class="block">
                 @@include('../../_components/h2.html', {
-                    "titre": "How do you use a tea bag?",
+                    "titre": "Are there health benefits associated with Japanese tea?",
                 })
                 @@include('../../_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Using a tea bag is quite simple. You heat water to the appropriate temperature for the type of tea you're brewing. Then, place the tea bag in a cup or mug. Pour the hot water over the tea bag and let it steep for the recommended amount of time, which varies depending on the type of tea and desired strength. Once the steeping is done, you can remove the tea bag and enjoy your brewed tea.",
+                    "texte": "Japanese tea, particularly green tea varieties like Matcha, Sencha, and Genmaicha, offers a range of health benefits. Packed with antioxidants known as catechins, these teas have been linked to potential health-promoting effects. Catechins are believed to contribute to boosting metabolism, aiding in weight management, and supporting cardiovascular health. Regular consumption of Japanese tea is not only a delightful experience for the taste buds but also a way to embrace a beverage that has been associated with potential well-being benefits for generations.",
                 })
             </section>
         </article>
         <section class="block">
             @@include('../../_components/partager.html', {
-                "titre": "Tea Bag",
+                "titre": "Japanese Tea",
                 "texte": "Share this article",
-                "url-network": "$url('Page-Show','cid','tea-bag')$",
+                "url-network": "$url('Page-Show','cid','japanese-tea')$",
             })
         </section>
     </div>
