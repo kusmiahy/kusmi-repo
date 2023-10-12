@@ -1,0 +1,173 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="noel_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_cannelle.webp?$staticlink$",
+                "alt": "bannière représentant des bâtons de cannelle dans une tasse noire",
+    
+                "titre": "La cannelle bio :<br> ingrédient phare du thé",
+                "date": "Publié le <span class='date__color'>13/10/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_selections_cadeaux')$",
+                "lien-categorie": "blog/?filter=christmas",
+                "tag-texte": "Noël",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "La <strong>cannelle</strong> est <strong>l’une des plus anciennes épices</strong> connues, mais aussi l’une des plus appréciées. Elle agrémente avec délicatesse de nombreux mets, sucrés comme salés.",
+            })
+        </section>
+        <article class="content content__img">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Son goût caractéristique inimitable nous plonge instantanément dans les placards de notre grand-mère, les compotes de notre enfance et les effluves de nos <a class='banniere__link' href=\"\$url('Search-Show','cgid','noir')$\"\>thés noirs préférés</a>. Voici tout ce qu’il faut savoir sur la cannelle bio.",
+            })
+            
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "La cannelle bio, une écorce tropicale",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<strong>Le cannelier</strong> est un arbre à feuillage persistant qui requiert beaucoup de soleil. Ses racines et ses feuilles sont comestibles, mais c’est son écorce qui est la plus recherchée : on la prélève sur ses branches ou ses jeunes pousses à la saison des pluies, pour ensuite en ôter la couche supérieure avant de la faire sécher. Ce faisant, l’<strong>écorce de cannelier</strong> s’enroule naturellement sur elle-même pour former de petits tubes, <strong>les bâtonnets de cannelle</strong>. ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Il existe <strong>plusieurs variétés de cannelle</strong>, mais la plus prisée est la <strong>cannelle de Ceylan</strong>. Son goût, bien que puissant, est très délicat et elle est même surnommée « <strong>vraie cannelle</strong> ». On la reconnaît à sa couleur ocre plus claire que les autres et à son écorce plus fine. Comme son nom l’indique, la cannelle de Ceylan est originaire du Sri Lanka (dont il s’agit de l’ancien nom), qui en produit une grande partie. Cependant, elle est également cultivée dans d’autres pays, tels que l’Indonésie ou Madagascar.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_ecorce_tropicale.webp?$staticlink$",
+                        "alt": "bâtons de cannelle vue d'en haut",
+                    })
+                </div>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Salé ou sucré ?",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "L’utilisation de la <strong>cannelle</strong> remonte à l’Antiquité : elle était alors probablement appréciée pour ses vertus médicinales, car elle est <strong>extrêmement riche en antioxydants</strong>. Plus tard au Moyen Âge, toujours très appréciée, cette <strong>savoureuse épice</strong> commença à agrémenter les plats. Mais elle représentait alors une denrée rare et seules les personnes les plus aisées pouvaient s’en permettre l’usage. Au fil du temps, <strong>la cannelle</strong> s’est démocratisée, jusqu’à arriver aujourd’hui dans toutes nos assiettes.",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Les <strong>bâtonnets de cannelle</strong>, très friables, peuvent être employés tels quels ou bien moulus en une très fine poudre. On privilégiera les bâtons entiers pour épicer un plat mijoté ou mariné, tandis qu’on utilisera plutôt de la <strong>cannelle en poudre</strong> pour parfumer un entremet ou une pâtisserie.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_chai.webp?$staticlink$",
+                        "alt": "bâtons de cannelle vue d'en haut",
+                    })
+                </div>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "La cannelle, un ingrédient de fête de Noël",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Vous ne manquez certainement pas d’idées gourmandes pour concocter un bon goûter ou un <strong>savoureux repas à base de cannelle bio</strong>, mais voici pêle-mêle pour vous tenter encore davantage, quelques suggestions de mets auxquels elle se marie particulièrement bien : tajine, curry de poulet, tarte aux pommes, riz au lait, biscuits secs, brioche… Sans oublier le <strong>fameux pain d’épices</strong>, véritable incontournable à la période des fêtes, dont elle est l’ingrédient phare, et bien sûr <strong>le thé</strong> !",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_cinnamon.webp?$staticlink$",
+                        "alt": "roulés à la cannelle",
+                    })
+                </div>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Tsarevna, notre thé de noël bio à la cannelle",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Vous en avez l’eau à la bouche ? Ca tombe bien, chez Kusmi, on aime tellement la <strong>cannelle</strong> qu’on a décidé d’en mettre dans <a class='banniere__link' href=\"\$url('Product-Show','pid','21081A1070')$\"\>notre thé de Noël bio Tsarevna</a>. <strong>Tsarevna</strong> vous embarque dans un tourbillon de saveurs, avec son parfum envoûtant d’écorces d’orange, <strong>d’épices</strong>, et de cannelle, sur une base de thé noir. Le tout, dans une recette labellisée bio !",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
+                        "alt": "produit infusion tsar kusmi tea",
+                    })
+                </div>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Glögg, notre infusion de Noël épicée à la cannelle. ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Une infusion bio épicée hibiscus et cassis : le réconfort venu du Nord ! Adeptes de vin chaud ? On vous comprend si bien ! Chez Kusmi, nous avons réinventé cette recette noëlique en version 100% sans théine pour ravir tout le monde. Le Glögg est une infusion bio aux notes acidulées d’hibiscus et de cassis et aux envoûtantes saveurs de cannelle, de réglisse et de cardamome. On ne s’en lasse pas à l’approche de l’hiver et de Noël.<br>Vous l’aurez compris, <strong>la cannelle est synonyme de partage</strong>, de chaleureux repas de famille, de <strong>cocooning au coin du feu</strong> et de goûters entre amis. Une alliée parfaite pour entrer dans <strong>l’hiver et commencer à préparer Noël !</strong>",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_glogg.webp?$staticlink$",
+                        "alt": "produit infusion glogg kusmi tea",
+                    })
+                </div>
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "La cannelle bio : ingrédient phare du thé",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','the-noir-noel-epices-cannelle-bio')$",
+            })
+        </section>
+    </div>
+
+</div>

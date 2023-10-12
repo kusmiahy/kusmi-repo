@@ -1,0 +1,88 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="rituel_sommeil_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('../../_components/banniere.html', {
+                "lien-img": "",
+                "alt": "",
+    
+                "titre": "",
+                "date": "Publié le <span class='date__color'>13/10/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_selections_cadeaux')$",
+                "lien-categorie": "blog/?filter=christmas",
+                "tag-texte": "Noël",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            @@include('../../_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "",
+            })
+            <section class="block">
+                @@include('../../_components/h2.html', {
+                    "titre": "",
+                })
+                @@include('../../_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('../../_components/partager.html', {
+                "titre": "",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','')$",
+            })
+        </section>
+    </div>
+
+</div>

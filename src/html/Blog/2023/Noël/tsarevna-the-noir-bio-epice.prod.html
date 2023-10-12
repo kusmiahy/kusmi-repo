@@ -1,0 +1,106 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="noel_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
+                "alt": "produit tsarevna kusmi tea",
+    
+                "titre": "Notre emblématique thé noir bio Tsarevna, un thé épicé bio en édition limitée !",
+                "date": "Publié le <span class='date__color'>13/10/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_selections_cadeaux')$",
+                "lien-categorie": "blog/?filter=christmas",
+                "tag-texte": "Noël",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Cette année, faites vos bagages et venez vivre un séjour magique pour les fêtes de fin d’année. Dès votre arrivée, le ton festif est donné dans cet hôtel majestueux tout en rouge et or. ",
+            })
+        </section>
+        <article class="content">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Dans le hall, le groom vous accueille les bras chargés de cadeaux et déroule rien que pour vous un immense tapis rouge. Pour faire de votre séjour un moment d’exception, toute l’équipe Kusmi s’affaire aux derniers préparatifs. Les pièces sont décorées, les sapins sont illuminés, les cadeaux et les coffrets de thé bio sont emballés avec soin. Noël peut enfin commencer ! D’abord, direction le <strong>salon de thé</strong>. De votre tasse fumante s’échappe un ensorcelant parfum d’orange, de vanille et d’épices, augurant mille et un délices. Cardamome, cannelle, réglisse… <strong>C’est Tsarevna, notre thé noir de Noël en édition limitée. Le tout bio et made in Normandie.</strong><br>On vous dit tout sur notre <a class='banniere__link' href=\"\$url('Search-Show','cgid','noir')$\"\>thé noir bio</a> aux écorces d’orange et d’épices.",
+            })
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Tsarevna, le thé de Noël incontournable",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Quoi de plus réconfortant qu’un thé noir épicé pour se réchauffer cet hiver ? Bonne nouvelle, notre emblématique thé noir bio au nom de Tsarevna revient cette année dans un décor d’exception où la frénésie de Noël ne fait que de commencer.<br>Notre iconique thé noir <a class='banniere__link' href=\"\$url('Product-Show','pid','21081A1070')$\"\>Tsarevna</a> vous embarque dans un tourbillon de saveurs toutes plus bio les unes que les autres, avec son parfum envoûtant d’écorces d’<a class='banniere__link' href=\"\$url('Page-Show','cid','thes-epices')$\"\>orange</a>, d<a class='banniere__link' href=\"\$url('Page-Show','cid','orange-fruit-vertus')$\"\>’épices</a>, et de <strong>réglisse</strong>, sur une base de thé noir. Notre thé de Noël se déguste aussi avec son nuage de lait. Une tasse de thé latte ne se refuse jamais en hiver.<br><br><a class='banniere__link' href=\"\$url('Search-Show','cgid','noir')$\"\>Découvrez nos thés noirs</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Notre thé noir Tsarevna en édition limitée est bio",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et parce que plus c’est bio, plus c’est bon, chez Kusmi, on attend Noël dans le respect de la nature avec une nouvelle recette Tsarevna labellisée bio. Quoi de plus naturel.<br>Plutôt <a class='banniere__link' href=\"\$url('Search-Show','cgid','the_vrac')$\"\>thé en vrac</a> ou <a class='banniere__link' href=\"\$url('Search-Show','cgid','the_sachets')$\"\>sachets de thé</a> ? On vous laisse le choix, notre thé noir bio de Noël est disponible en vrac parce que c’est bon pour la planète, ou en sachets en mousseline pour vous suivre partout.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Offrir du thé à Noël ? Nos idées cadeaux Kusmi",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Un Noël délicieusement festif attend toute la famille chez Kusmi ! Besoin d’une idée cadeau ? Et si notre thé noir bio en édition limitée Tsarevna était le cadeau idéal pour votre amateur de thé préféré ?<br>Retrouvez aussi notre Tsarevna dans un coffret de Noël composé du thé noir et de sa gourde nomade assortie. Chez Kusmi, des coffrets en veux-tu en voilà, tous nos coffrets cadeaux sont les bienvenus sous le sapin cette année.<br>Et si l’univers de notre Grand Hotël Kusmi vous plaît, retrouvez-le sur nos <a class='banniere__link' href=\"\$url('Search-Show','cgid','coffrets_personnaliser')$\"\>coffrets personnalisés</a> : <strong>coffrets 3 miniatures</strong>, <strong>coffret 3 KusmiKubes</strong> ou encore <strong>coffret 3 Kubes</strong> à composer parmi une sélection de thés noirs, thés verts, thés blancs ou infusions bio.",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Notre emblématique thé noir bio Tsarevna, un thé épicé bio en édition limitée !",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid', 'tsarevna-the-noir-bio-epice')$",
+            })
+        </section>
+    </div>
+
+</div>
