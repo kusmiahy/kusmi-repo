@@ -1,0 +1,170 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<article class="popin_2023">
+    <div class="popin">
+        @@include('./components/p.html', {
+            "texte": "<u>Rules of the game :</u>  For more information you can click on <span class='popin__open'>this link</span>.",
+        })
+
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/title.html', {
+                    "texte": "Rules of the Contest<br>« Try to win your Kusmi Tea Advent Calendar! »",
+                })
+                <div class="block-container">
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 1 : Organising company",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "ORIENTIS GOURMET, a SAS with a capital of 11,494,590 .79 euros having its registered office at 89 Avenue Niel, 75017 Paris, France, and registered with the Paris Trade and Companies Register under number 350 283 057 &#40;hereinafter the « Organiser » is organising a game with an obligation to purchase (with no minimum) from October 18 to 25, 2023 included. The conditions of the contest are described in these rules.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 2 : Projected Game",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The planned operation consists of a draw for a chance to win the Kusmi Tea Advent Calendar 2023, for all orders (with no minimum purchase) placed on the Kusmi Tea website (<a class='block__link' href='https://www.kusmitea.com/int/'>https://www.kusmitea.com/int/</a>).<br>The operation is entitled : « Try to win your Kusmi Tea Advent Calendar ! ».",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 3 : Conditions and modality of participation",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.1 Conditions of participation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The Game is open to all natural person of legal age, or minors with parental autorisation, who have an Internet connection and a valid e-mail address.<br>The Organiser reserves the right to carry out any necessary verifications concerning the identity, the postal address and/or the e-mail address of the participants.<br>All employees of ORIENTIS GOURMET and its partners, including their families and spouses &#40;wheter or not the are married or have recognize the marital relationship&#41;, are excluded from participating in the Game and from receiving any prize, wheter directly or indirectly&#41;.<br>The sole participation in the game implies full and complete acceptance of the regulations.<br>Any fraudulent participation and/or non-compliance with the regulations and/or containing inaccurate information will not be considered and will result in the nullification of the participation. Any participant thus disqualified will not be entitled to any prize. The Organizer reserves the right to re-enter the prize that would have been unduly awarded to them.",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.2 Modality of participation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The game takes place over eight (8) days from October 18th to October 25th, 2023, inclusive (French connection date and time prevailing). The Organizer reserves the possibility to extend the participation period and postpone any announced date.<br>To participate in the game, all you need to do is:",
+                        })
+                        <ul class="block__ul">
+                            @@include('./components/li.html', {
+                                "texte": "Place an order (with no minimum purchase requirement) on the Kusmi Tea website (<a class='block__link' href='https://www.kusmitea.com/int/'>https://www.kusmitea.com/int/</a>)",
+                            })
+                            @@include('./components/li.html', {
+                                "texte": "Have a valid email address.",
+                            })
+                        </ul>
+                        @@include('./components/p.html', {
+                            "texte": "Placing an order during the game period constitutes participation in the game and acceptance of the regulations.",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.3 Participation Exclusion Terms",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Customers who have placed an order during the game period but do not wish to participate can send an email to <a class='block__link' href='mailto:contactweb@kusmitea.com'>contactweb@kusmitea.com</a> before the end of the game to ensure their purchase is not counted, and they are excluded from the list of participants.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 4: Winner Selection",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "At the end of the period, eight (8) winners will be selected (hereinafter referred to as the &#34;Winners&#34;) by a random draw.<br>Throughout the duration of the game, one (1) winner will be selected each day, totaling eight (8) winners over the entire duration of the game (hereinafter the &#34;Winner&#34; and collectively the &#34;Winners&#34;). <br>The Winners will be selected from customers who have placed online orders during the game period, through eight (8) draws (one (1) per day) conducted by the Organizer, based on the list of valid entries that meet the conditions outlined in this Regulation, using the 'RAND.BETWEEN' function (Excel) to ensure the security of participant information.<br>The draw will take place on October 26, 2023.<br>The Winners will be notified of their win on October 26, 2023, via an email sent to the email address they provided when placing their order.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 5: Prize",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Each Winner will win the following prize (hereafter the &#34;Prize&#34;):<br>One (1) Kusmi Tea Advent Calendar (<a class='block__link' href=\"\$url('Product-Show','pid','21211A2500')$\"\>https://www.kusmitea.com/int/kusmi-tea-organic-advent-calendar-2023-21211A2500.html</a>) valued at €38.90.<br>The Prize is strictly personal and cannot be transferred, assigned, or resold. However, the Organizer reserves the right to replace the Prize described above with other product(s)/service(s) of equivalent value at any time and without prior notice.<br>Winners cannot request to receive the cash or any other form of compensation in place of their Prize. The Prize is non- exchangeable in kind. The Organizer cannot be held responsible for any defects, errors, omissions, or any other issues that may prevent the Winners from enjoying their Prize (this list is not exhaustive).<br>All expenses incurred after the game, particularly those related to the maintenance and use of the Prize, are the sole responsibility of the Winner."
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 6: Winner Notification",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The Winners are selected randomly. The decision of ORIENTIS GOURMET is final<br>Winners will receive an email on October 26, 2023, if they have been drawn to win the Prize.<br>Winners must comply with the regulations. If it turns out that they do not meet the participation requirements, the Prize will not be awarded to them.<br>Participants authorize all verifications regarding their identity, age, postal information, or the fairness and sincerity of their participation. In this regard, the Organizer reserves the right to request a copy of the Winners' identification. Any false statement, false identity or address, will result in the immediate elimination of the participant and, if applicable, the reimbursement of the Prize.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 7: Prize Delivery",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The Prizes will be shipped by postal mail to the address provided by the Winners following the Winners' information email.<br>The Organizer shall not be held liable in the event of any claims or disputes, particularly concerning the compliance or quality of the prizes made available by the participating partner brand.<br>The Prizes are not exchangeable for another item.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 8: Data Processing",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The personal data of the participants collected as part of their participation in the game is recorded and stored in a computer file and used by the Organizer for the purposes of their participation, the allocation, and delivery of their Prize. These data are intended for the marketing and communication services of the Organizer, as well as third-party service providers acting as subcontractors that the Organizer may use for the Prize delivery.<br>This processing is necessary for the legitimate interests pursued by the Organizer, which include managing the participant's participation in the game and contacting the Winner to deliver the Prize. The data that must be provided to the Organizer is mandatory. Failure to provide this information will result in the participation not being accepted, and the Prize will not be awarded.<br>In accordance with the 'Informatique et Libertés' law of January 6, 1978, as amended by Law No. 2018-493 of June 20, 2018, the participant has the right to access, rectify, erase, and port the information concerning them, as well as the right to object to or request the limitation of processing, under the conditions and limits provided by the regulations. These rights can be exercised by contacting the Organizer by mail at the Organizer's address: ORIENTIS GOURMET-Parc du Hode - 76430 Saint Vigor d'Ymonville; or by email at <a class='block__link' href='privacy@orientis.fr'>privacy@orientis.fr</a>. In case of exercising the right to object before the end of the game, the participant forfeits their participation. The participant has the right to lodge a complaint with the <a class='block__link' href='https://www.cnil.fr/fr/plaintes'>CNIL</a>.<br>For more information, our <a class='block__link' href=\"\$url('Page-Show','cid','privacy-policy')$\"\>privacy policy</a> is available at any time.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 9: Responsibility",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The participant acknowledges and accepts that the obligations of the Organizer as they arise from the Regulations are limited to conducting the random draw of compliant participation forms according to the terms and conditions of the Regulations and delivering the Prize to the Winner, based on the criteria and conditions defined in this Regulation.<br>Participation in the game implies knowledge and acceptance of the characteristics and limitations of the internet network, including but not limited to technical performance, response times for accessing, querying, or transmitting information, network congestion, risks of interruption, and connection-related risks.<br>The Organizer shall not be held responsible in case of any technical, hardware, or software failure of any kind, including the risk of virus contamination circulating on the network and the absence of certain data that may be diverted.<br>The Organizer is not responsible for the incorrect reception or non-reception of the confirmation email of the order validating the participants' participation in the game, regardless of the cause.<br>The Organizer cannot be held responsible if, in case of force majeure as defined by French jurisprudence, or in the event of exceptional circumstances beyond its control, it had to cancel, postpone, extend, shorten, or modify the game in whole or in part, with no compensation being paid in such cases.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 10: Litigation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "The Game and the interpretation of the Regulations are exclusively subject to French law.<br>To be considered, any disputes regarding the Game or the Prizes must be made in writing to the following address: <a class='block__link' href='mailto:contactfr@kusmitea.com'>contactfr@kusmitea.com</a>. And no later than ninety (90) days after the participation deadline for the Game as indicated in this Regulation.<br>In case of a persistent disagreement regarding the application and/or interpretation of the Regulations, it is possible to either contact a consumer mediator from the list provided and updated by the Evaluation and Control Commission for Consumer Mediation (<a class='block__link' href='https://www.economie.gouv.fr/mediation-conso/saisir-mediateur'>here</a>), or fill out an automated complaint form that will result in the appointment of a dispute resolution body (<a class='block__link' href='https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home.chooseLanguage'>here</a>) to reach an amicable agreement. In the absence of an amicable settlement, any dispute will be submitted to the competent courts of Paris.<br>In the absence of an amicable settlement between the Parties, any dispute relating to the application or interpretation of the Regulations will fall under the jurisdiction of the Tribunal de Grande Instance de Paris.",
+                        })
+                    </div>
+                </div>
+                
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Close",
+                })
+            </div>
+        </dialog>
+    </div>
+</article>
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->

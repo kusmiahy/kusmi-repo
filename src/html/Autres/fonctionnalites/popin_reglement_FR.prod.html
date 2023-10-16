@@ -1,0 +1,170 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<article class="popin_2023">
+    <div class="popin">
+        @@include('./components/p.html', {
+            "texte": "<u>Réglement du jeu :</u> Pour avoir plus d'informations veuillez cliquer sur <span class='popin__open'>ce lien</span>.",
+        })
+
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/title.html', {
+                    "texte": "Règlement du Jeu<br>« Tentez de remporter votre calendrier de l’Avent Kusmi Tea ! »",
+                })
+                <div class="block-container">
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 1 : Organisation du Jeu",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "ORIENTIS GOURMET, SAS au capital de 11.494.590,79 euros ayant son siège social situé 89 avenue Niel 75017 PARIS et immatriculée au RCS de Paris sous le numéro 350 283 057 (ci-après « l’Organisateur ») organise un jeu avec tirage au sort, gratuit et avec obligation d’achat (ci-après dénommé le « Jeu »), se déroulant du 18 octobre au 25 octobre 2023 inclus, dont les conditions sont décrites dans le présent règlement (ci-après dénommé le « Règlement »).",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 2 : Jeu projeté",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "L’opération projetée consiste en un tirage au sort pour tenter de remporter le calendrier de l’Avent Kusmi Tea 2023 pour toute commande (sans minimum d’achat) passée sur le site Internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr'>https://www.kusmitea.com/fr</a>) livrée en France métropolitaine (Corse inclus)<br>L'opération est intitulée : « <strong>Tentez de remporter votre calendrier de l’Avent Kusmi Tea !</strong> ».",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 3: Conditions et modalités de participation",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.1 Conditions de participation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Le Jeu est ouvert à toutes les personnes physiques majeures, ou mineures avec autorisation parentale, disposantd’une connexion internet et d’une adresse email valide.<br>L’Organisateur se réserve le droit de procéder à toutes les vérifications nécessaires concernant l'identité, l'adressepostale et / ou électronique des participants.<br>Ne sont pas autorisés à participer au Jeu, toutes personnes ayant collaboré à l’organisation du Jeu ainsi que lesmembres de leurs familles directes respectives, les salariés ou sous-traitants de l’Organisateur et les salariés du Groupe ORIENTIS.<br>La seule participation au Jeu implique l’acceptation pleine et entière du Règlement.<br>Toute participation frauduleuse et/ou non-conforme au Règlement et/ou comportant des informations inexactes ne pourra être prise en compte et entraînera la nullité de la participation. Tout participant ainsi disqualifié ne pourraprétendre à aucun gain. L’Organisateur se réserve alors le droit de remettre en jeu le gain qui lui aurait été indûment attribué",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.2 Modalités de participation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Le Jeu se déroule sur huit (8) jours du 18 octobre au 25 octobre 2023 inclus (date et heure française de connexionfaisant foi). L’Organisateur se réserve la possibilité de prolonger la période de participation et de reporter toute date annoncée.<br>Pour participer au Jeu, il suffit de :",
+                        })
+                        <ul class="block__ul">
+                            @@include('./components/li.html', {
+                                "texte": "Passer une commande (sans minimum d’achat) sur le site internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr'>https://www.kusmitea.com/fr</a>) livrée en France métropolitaine (Corse inclus).",
+                            })
+                            @@include('./components/li.html', {
+                                "texte": "Disposer d’une adresse email valide.",
+                            })
+                        </ul>
+                        @@include('./components/p.html', {
+                            "texte": "Le passage d’une commande sur la période du Jeu vaut participation au Jeu et acceptation du Règlement",
+                        })
+                        @@include('./components/h3.html', {
+                            "texte": "3.3 Modalité d’exclusion de participation",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Les clients ayant passé une commande durant la période du Jeu, qui ne souhaiteraient pas participer à celui-ci, ont lapossibilité d’envoyer un mail avant la fin du Jeu à l’adresse <a class='block__link' href='mailto:contactweb@kusmitea.com'>contactweb@kusmitea.com</a> afin que leur achat ne soit pas comptabilisé et qu’ils soient exclus de la liste des participants",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 4 : Désignation des gagnants",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "A l’issu de la période, huit (8) gagnants seront désignés (ci-après les « Gagnants ») par tirage au sort.<br>Pendant toute la durée du Jeu, un (1) gagnant par jour sera désigné, soit huit (8) gagnants sur la durée totale du Jeu (ci-après le « Gagnant » et collectivement les « Gagnants »).<br>Les Gagnants seront désignés parmi les clients ayant passé commande en ligne pendant la durée du Jeu, par tirages au sort réalisés (huit (8) tirages au sort soit un (1) par jour) par l’Organisateur, sur la base de la liste des participations valides répondant aux conditions prévues au présent Règlement en utilisant la fonction « ALEA.ENTRE.BORNES »(Excel) garantissant la sécurité des informations des participants.<br>La date du tirage au sort est le 26 octobre 2023.<br>Les Gagnants seront informés qu’ils ont gagné le Jeu, le 26 octobre 2023, par un email envoyé sur l’adresse email qu’ils auront renseignés lors de la passation de leur commande.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 5 : Gain",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Chaque Gagnant remporta le gain suivant (ci-après le « Gain ») :<br>Un &#40;1&#41; calendrier de l’Avent Kusmi Tea &#40;<a class='block__link' href=\"\$url('Product-Show','pid','21211A2500')$\"\>https://www.kusmitea.com/fr/calendrier-de-l-avent-kusmi-tea-bio-21211A2500.html</a>&#41;, d’une valeur de 38,90 €&#41;, livré à l’adresse de son choix en France métropolitaine (Corse inclus)<br>Le Gain est strictement nominatif et ne peut être ni cédé, ni transféré, ni revendu. Toutefois, l’Organisateur se réserve le droit de remplacer à tout moment et sans préavis le Gain décrit ci-dessus par un/des autre(s) produit(s)/service(s) d’une valeur équivalente.<br>Les Gagnants ne pourront pas demander à recevoir la contrepartie de leur Gain en espèce ou autre. Le Gain n’est pas échangeable en nature. L’Organisateur ne saurait être tenu responsable d’un quelconque défaut, erreur, omission qui empêcherait les Gagnants de jouir de leur Gain (cette liste n’étant pas limitative).<br>Tous les frais exposés postérieurement au Jeu notamment pour l'entretien et l'usage de du Gain sont entièrement à la charge du Gagnant.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 6 : Information des Gagnants",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Les Gagnants sont désignés de manière aléatoire. La décision d’ORIENTIS GOURMET est définitive.<br>Les Gagnants recevront un email, le 26 octobre 2023 s’ils ont été tirés au sort pour remporter le Gain.<br>Les Gagnants devront se conformer au Règlement. S'il s'avérait qu'ils ne répondent pas aux conditions de participation, le Gain ne leur sera pas attribué. <br>Les participants autorisent toutes les vérifications concernant leur identité, leur âge, leurs coordonnées postales ou la loyauté et la sincérité de leur participation. A ce titre, l'Organisateur se réserve le droit de demander une copie de la pièce d'identité des Gagnants. Toute fausse déclaration, indication d'identité ou d'adresse fausse entraîne l'élimination immédiate du participant et le cas échéant le remboursement du Gain.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 7 : Remise du Gain",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Les Gains seront expédiés par email à l’adresse indiquée par les Gagnants lors du passage de sa commande.<br>L’Organisateur n’encourt aucune responsabilité en cas de réclamation ou de contestation portant notamment sur la conformité, la qualité des gains mis à disposition par la marque partenaire participante.<br>Les Gains ne sont pas interchangeables contre un autre objet.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 8 : Traitement des données",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Les données nominatives des participants recueillies dans le cadre de la participation au Jeu sont enregistrées et sauvegardées dans un fichier informatique et utilisées par l’Organisateur pour les nécessités de leur participation, pour l’attribution et l’acheminement de son Gain. Ces données sont destinées aux services marketing et communication de l’Organisateur ainsi qu’à des prestataires de services tiers agissant en qualité de sous-traitants auquel l’Organisateur peut recourir pour l’acheminement du Gain.<br>Ce traitement est nécessaire aux fins des intérêts légitimes poursuivis par l’Organisateur qui consistent notamment en la gestion de la participation du participant au Jeu, et en la prise de contact avec le Gagnant et l’envoi du Gain. Les données devant être adressées à l’Organisateur sont obligatoires. A défaut de communication de ces informations, la participation ne pourra pas être retenue et le Gain ne pourra être remis.<br>Conformément à la loi « informatique et libertés » du 6 janvier 1978, tel que modifiée par la loi n°2018-493 du 20 juin 2018, le participant bénéficie d’un droit d’accès, de rectification, d’effacement et de portabilité des informations qui le concernent, ainsi qu’un droit de d’opposer ou de solliciter la limitation du traitement, dans les conditions et limites prévues par la règlementation. Ces droits peuvent s’exercer en s'adressant à l'Organisateur par courrier à l’adresse de l’Organisateur : ORIENTIS GOURMET-Parc du Hode - 76430 Saint Vigor d'Ymonville; ou par email à <a class='block__link' href='mailto:privacy@orientis.fr'>privacy@orientis.fr</a>. En cas d’exercice du droit d’opposition avant la fin du Jeu, le participant renonce à sa participation. Le participant a le droit d’introduire une réclamation auprès de la <a class='block__link' href='https://www.cnil.fr/fr/plaintes'>CNIL</a>.<br>Pour plus d’information, notre <a class='block__link' href=\"\$url('Page-Show','cid','privacy-policy')$\"\>politique de confidentialité</a> est consultable à tout moment.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 9 : Responsabilité",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Le participant reconnaît et accepte que les obligations de l’Organisateur telles qu’elles découlent du Règlement se limitent à la mise en place du tirage au sort des formulaires de participation conformes aux conditions et modalités de participation du Règlement et à la remise du Gain au Gagnant, selon les critères et modalités définis dans le présent Règlement.<br>La participation au Jeu implique la connaissance et l’acceptation des caractéristiques et des limites du réseau internet, notamment, et sans qu’il s’agisse d’une liste limitative, des performances techniques, des temps de réponse pour consulter, interroger ou transférer les informations, de l’encombrement du réseau, des risques d’interruption, des risques liés à la connexion.<br>L’Organisateur ne saurait voir sa responsabilité engagée en cas de défaillance technique, matérielle ou logicielle de quelque nature que ce soit, notamment des risques de contamination par des virus qui circuleraient sur le réseau, et de l’absence de certaines données susceptibles d’être détournées.<br>L’Organisateur n’engage pas sa responsabilité en cas de mauvaise réception ou de non-réception de l’email de confirmation de la commande validant la participation des participants au Jeu, quelle qu’en soit la cause.<br>L’Organisateur ne pourra être tenu responsable si, en cas de force majeure au sens de la jurisprudence française, ou en cas de circonstances exceptionnelles indépendantes de sa volonté, il était amené à annuler, reporter, prolonger, écourter ou modifier partiellement ou en totalité le Jeu, sa responsabilité ne pouvant être engagée de ce fait. Aucune indemnisation ne sera versée à ce titre.",
+                        })
+                    </div>
+                    <div class="block-container__block block">
+                        @@include('./components/h2.html', {
+                            "texte": "Article 10 : Litiges",
+                        })
+                        @@include('./components/p.html', {
+                            "texte": "Le Jeu et l’interprétation du Règlement sont soumis exclusivement à la loi française.<br>Pour être prises en compte, les éventuelles contestations relatives au Jeu ou aux Gains doivent être formulées sur demande écrite à l’adresse suivante : <a class='block__link' href='contactfr@kusmitea.com'>contactfr@kusmitea.com</a>. Et au plus tard quatre-vingt-dix (90) jours après la date limite de participation au Jeu tel qu’indiqué au présent Règlement. <br>En cas de désaccord persistant relatif à l’application et/ou à l’interprétation du Règlement, il est possible soit de saisir un médiateur de la consommation dans la liste donnée et actualisée par la Commission d’évaluation et de contrôle de la médiation de la consommation (<a class='block__link' href='www.economie.gouv.fr/mediation-conso/saisir-mediateur'>ici</a>), soit de remplir un formulaire de plainte automatisé qui permettra la désignation d’ un organisme de règlement des litiges (<a class='block__link' href='https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=FR'>ici</a>) afin de trouver un accord amiable. A défaut, tout litige sera soumis aux juridictions compétentes de Paris.<br>A défaut de règlement amiable entre les Parties, tout litige relatif à l’application ou à l’interprétation du Règlement relèvera de la compétence du Tribunal de Grande Instance de Paris.",
+                        })
+                    </div>
+                </div>
+                
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Fermer",
+                })
+            </div>
+        </dialog>
+    </div>
+</article>
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->

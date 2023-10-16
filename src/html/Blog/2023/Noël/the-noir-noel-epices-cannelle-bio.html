@@ -28,7 +28,7 @@
         display: none;
     }
     .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
-        display: none;
+        text-align: center;
     }
     .c-breadcrumb .product-breadcrumb {
         display: none;
@@ -129,19 +129,19 @@
             <section class="block block-container block-container--reversed">
                 <div class="block__texte">
                     @@include('.././_components/h2.html', {
-                        "titre": "Tsarevna, notre thé de noël bio à la cannelle",
+                        "titre": "Tsarevna, notre thé de Noël bio à la cannelle",
                     })
                     @@include('.././_components/paragraphe.html', {
                         "class": "block__p",
                         "texte": "Vous en avez l’eau à la bouche ? Ca tombe bien, chez Kusmi, on aime tellement la <strong>cannelle</strong> qu’on a décidé d’en mettre dans <a class='banniere__link' href=\"\$url('Product-Show','pid','21081A1070')$\"\>notre thé de Noël bio Tsarevna</a>. <strong>Tsarevna</strong> vous embarque dans un tourbillon de saveurs, avec son parfum envoûtant d’écorces d’orange, <strong>d’épices</strong>, et de cannelle, sur une base de thé noir. Le tout, dans une recette labellisée bio !",
                     })
                 </div>
-                <div class="block__image">
+                <a href="$url('Product-Show','pid','21081A1070')$" class="block__image">
                     @@include('.././_components/image.html', {
                         "lien": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
                         "alt": "produit infusion tsar kusmi tea",
                     })
-                </div>
+                </a>
             </section>
             <section class="block block-container">
                 <div class="block__texte">
@@ -150,15 +150,15 @@
                     })
                     @@include('.././_components/paragraphe.html', {
                         "class": "block__p",
-                        "texte": "Une infusion bio épicée hibiscus et cassis : le réconfort venu du Nord ! Adeptes de vin chaud ? On vous comprend si bien ! Chez Kusmi, nous avons réinventé cette recette noëlique en version 100% sans théine pour ravir tout le monde. Le Glögg est une infusion bio aux notes acidulées d’hibiscus et de cassis et aux envoûtantes saveurs de cannelle, de réglisse et de cardamome. On ne s’en lasse pas à l’approche de l’hiver et de Noël.<br>Vous l’aurez compris, <strong>la cannelle est synonyme de partage</strong>, de chaleureux repas de famille, de <strong>cocooning au coin du feu</strong> et de goûters entre amis. Une alliée parfaite pour entrer dans <strong>l’hiver et commencer à préparer Noël !</strong>",
+                        "texte": "Une infusion bio épicée hibiscus et cassis : le réconfort venu du Nord ! Adeptes de vin chaud ? On vous comprend si bien ! Chez Kusmi, nous avons réinventé cette recette noëlique en version 100% sans théine pour ravir tout le monde. <a class='banniere__link' href=\"\$url('Search-Show','cgid','21082A1070')$\"\>Le Glögg</a> est une infusion bio aux notes acidulées d’hibiscus et de cassis et aux envoûtantes saveurs de cannelle, de réglisse et de cardamome. On ne s’en lasse pas à l’approche de l’hiver et de Noël.<br>Vous l’aurez compris, <strong>la cannelle est synonyme de partage</strong>, de chaleureux repas de famille, de <strong>cocooning au coin du feu</strong> et de goûters entre amis. Une alliée parfaite pour entrer dans <strong>l’hiver et commencer à préparer Noël !</strong>",
                     })
                 </div>
-                <div class="block__image">
+                <a href="$url('Product-Show','pid','21081A1070')$" class="block__image">
                     @@include('.././_components/image.html', {
                         "lien": "blog/articles/2023/blog_glogg.webp?$staticlink$",
                         "alt": "produit infusion glogg kusmi tea",
                     })
-                </div>
+                </a>
             </section>
         </article>
         <section class="block">

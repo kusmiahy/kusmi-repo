@@ -28,7 +28,7 @@
         display: none;
     }
     .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
-        display: none;
+        text-align: center;
     }
     .c-breadcrumb .product-breadcrumb {
         display: none;
@@ -108,7 +108,7 @@
                         "texte": "Dans ce même saladier, ajoutez la farine et la poudre de matcha en tamisant bien et mélangez jusqu’à ce que la pâte soit homogène. Puis, versez-la sur une plaque recouverte de papier cuisson. Étalez-la uniformément et enfournez à 150°C pendant 20 minutes. Le biscuit matcha est prêt.",
                     })
                 </div>
-                <div class="block__image">
+                <a class="block__image">
                     @@include('.././_components/image.html', {
                         "lien": "blog/articles/2023/blog_matcha.webp?$staticlink$",
                         "alt": "bol avec du matcha à l'intérieur avec une cuillère en bois",
@@ -156,13 +156,15 @@
                             "texte": "Séparément, fouettez la crème liquide en chantilly, puis ajoutez-y la préparation au fromage frais. Mélangez délicatement, puis ajoutez 1 goutte de colorant vert et mélangez à nouveau.",
                         })
                     </ul>
-                    @@include('.././_components/h3.html', {
-                        "titre": "Le dressage",
-                    })
-                    @@include('.././_components/paragraphe.html', {
-                        "class": "block__p",
-                        "texte": "Dans le moule à bûche, placez un tapis de décor si vous le souhaitez. Versez ensuite la mousse en l’étalant bien pour qu’elle recouvre tous les bords. Enfin, placez le biscuit matcha découpé au préalable aux dimensions du moule. Il ne vous reste plus qu’à placer la bûche au congélateur pendant au moins 12 heures.<br>Oui… C’est long… On vous conseille donc de préparer cette recette la veille au soir, pour laisser reposer la bûche toute la nuit. Ôtez le tablier, enfilez votre tenue de soirée et surtout à table car il est temps de goûter enfin <strong>cette bûche à base de matcha.</strong><br>Et pourquoi ne pas accompagner cette bûche avec <a class='banniere__link' href=\"\$url('Search-Show','cgid','infusions')$\"\>une infusion bio</a> ? 100% sans théine, gourmande et bien chaude, la tisane Kusmi est parfaite en fin de repas.",
-                    })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Le dressage",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans le moule à bûche, placez un tapis de décor si vous le souhaitez. Versez ensuite la mousse en l’étalant bien pour qu’elle recouvre tous les bords. Enfin, placez le biscuit matcha découpé au préalable aux dimensions du moule. Il ne vous reste plus qu’à placer la bûche au congélateur pendant au moins 12 heures.<br>Oui… C’est long… On vous conseille donc de préparer cette recette la veille au soir, pour laisser reposer la bûche toute la nuit. Ôtez le tablier, enfilez votre tenue de soirée et surtout à table car il est temps de goûter enfin <strong>cette bûche à base de matcha.</strong><br>Et pourquoi ne pas accompagner cette bûche avec <a class='banniere__link' href=\"\$url('Search-Show','cgid','infusions')$\"\>une infusion bio</a> ? 100% sans théine, gourmande et bien chaude, la tisane Kusmi est parfaite en fin de repas.",
+                })
             </section>
         </article>
         <section class="block">
