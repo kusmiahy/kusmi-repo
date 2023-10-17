@@ -30,9 +30,11 @@
 
 <article class="popin_2023">
     <div class="popin">
-        @@include('./components/p.html', {
-            "texte": "<u>Rules of the game :</u>  For more information you can click on <span class='popin__open'>this link</span>.",
-        })
+        <div class="popin__p">
+            @@include('./components/p.html', {
+                "texte": "<u><strong>Rules 1 free Calendar a day :</strong></u>  For more information, please click on <span class='popin__open'>this link</span>.",
+            }) 
+        </div>
 
         <dialog id="popin" class="popin__dialog">
             @@include('./components/cta.html', {

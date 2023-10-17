@@ -161,6 +161,34 @@
                 </a>
             </section>
         </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tsarevna-the-noir-bio-epice')$",
+                    "lien-img": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Notre emblématique thé noir bio Tsarevna, un thé épicé bio en édition limitée !",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','thes-epices')$",
+                    "lien-img": "blog/epices.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Tous les secrets sur les thés épicés",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','gingembre-epice-vertus-the-epice')$",
+                    "lien-img": "blog/articles/2023/blog_buche.webp?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Recette : Bûche de Noël glacée au matcha et au chocolat",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
         <section class="block">
             @@include('.././_components/partager.html', {
                 "titre": "La cannelle bio : ingrédient phare du thé",

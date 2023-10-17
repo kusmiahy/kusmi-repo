@@ -30,9 +30,11 @@
 
 <article class="popin_2023">
     <div class="popin">
-        @@include('./components/p.html', {
-            "texte": "<u>Réglement du jeu :</u> Pour avoir plus d'informations veuillez cliquer sur <span class='popin__open'>ce lien</span>.",
-        })
+        <div class="popin__p">
+            @@include('./components/p.html', {
+                "texte": "<u><b>Règlement 1 Calendrier offert par jour : </b></u>Pour plus d'informations veuillez cliquer sur <span class='popin__open'>ce lien</span>.",
+            })
+        </div>
 
         <dialog id="popin" class="popin__dialog">
             @@include('./components/cta.html', {
@@ -57,7 +59,7 @@
                             "texte": "Article 2 : Jeu projeté",
                         })
                         @@include('./components/p.html', {
-                            "texte": "L’opération projetée consiste en un tirage au sort pour tenter de remporter le calendrier de l’Avent Kusmi Tea 2023 pour toute commande (sans minimum d’achat) passée sur le site Internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr'>https://www.kusmitea.com/fr</a>) livrée en Suisse.<br>L'opération est intitulée : « <strong>Tentez de remporter votre calendrier de l’Avent Kusmi Tea !</strong> ».",
+                            "texte": "L’opération projetée consiste en un tirage au sort pour tenter de remporter le calendrier de l’Avent Kusmi Tea 2023 pour toute commande (sans minimum d’achat) passée sur le site Internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr'>https://www.kusmitea.com/fr</a>) livrée en France métropolitaine (Corse inclus)<br>L'opération est intitulée : « <strong>Tentez de remporter votre calendrier de l’Avent Kusmi Tea !</strong> ».",
                         })
                     </div>
                     <div class="block-container__block block">
@@ -78,7 +80,7 @@
                         })
                         <ul class="block__ul">
                             @@include('./components/li.html', {
-                                "texte": "Passer une commande (sans minimum d’achat) sur le site internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr-ch'>https://www.kusmitea.com/fr-ch</a>) livrée en France métropolitaine (Corse inclus).",
+                                "texte": "Passer une commande (sans minimum d’achat) sur le site internet Kusmi Tea (<a class='block__link' href='https://www.kusmitea.com/fr'>https://www.kusmitea.com/fr</a>) livrée en France métropolitaine (Corse inclus).",
                             })
                             @@include('./components/li.html', {
                                 "texte": "Disposer d’une adresse email valide.",
@@ -107,7 +109,7 @@
                             "texte": "Article 5 : Gain",
                         })
                         @@include('./components/p.html', {
-                            "texte": "Chaque Gagnant remporta le gain suivant (ci-après le « Gain ») :<br>Un &#40;1&#41; calendrier de l’Avent Kusmi Tea &#40;<a class='block__link' href=\"\$url('Product-Show','pid','21211A2500')$\"\>https://www.kusmitea.com/fr-ch/calendrier-de-l-avent-kusmi-tea-bio-21211A2500.html</a>&#41;, d’une valeur de 38,90 €&#41;, livré en Suisse.<br>Le Gain est strictement nominatif et ne peut être ni cédé, ni transféré, ni revendu. Toutefois, l’Organisateur se réserve le droit de remplacer à tout moment et sans préavis le Gain décrit ci-dessus par un/des autre(s) produit(s)/service(s) d’une valeur équivalente.<br>Les Gagnants ne pourront pas demander à recevoir la contrepartie de leur Gain en espèce ou autre. Le Gain n’est pas échangeable en nature. L’Organisateur ne saurait être tenu responsable d’un quelconque défaut, erreur, omission qui empêcherait les Gagnants de jouir de leur Gain (cette liste n’étant pas limitative).<br>Tous les frais exposés postérieurement au Jeu notamment pour l'entretien et l'usage de du Gain sont entièrement à la charge du Gagnant.",
+                            "texte": "Chaque Gagnant remporta le gain suivant (ci-après le « Gain ») :<br>Un &#40;1&#41; calendrier de l’Avent Kusmi Tea &#40;<a class='block__link' href=\"\$url('Product-Show','pid','21211A2500')$\"\>https://www.kusmitea.com/fr/calendrier-de-l-avent-kusmi-tea-bio-21211A2500.html</a>&#41;, d’une valeur de 38,90 €&#41;, livré à l’adresse de son choix en France métropolitaine (Corse inclus)<br>Le Gain est strictement nominatif et ne peut être ni cédé, ni transféré, ni revendu. Toutefois, l’Organisateur se réserve le droit de remplacer à tout moment et sans préavis le Gain décrit ci-dessus par un/des autre(s) produit(s)/service(s) d’une valeur équivalente.<br>Les Gagnants ne pourront pas demander à recevoir la contrepartie de leur Gain en espèce ou autre. Le Gain n’est pas échangeable en nature. L’Organisateur ne saurait être tenu responsable d’un quelconque défaut, erreur, omission qui empêcherait les Gagnants de jouir de leur Gain (cette liste n’étant pas limitative).<br>Tous les frais exposés postérieurement au Jeu notamment pour l'entretien et l'usage de du Gain sont entièrement à la charge du Gagnant.",
                         })
                     </div>
                     <div class="block-container__block block">

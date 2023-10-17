@@ -30,9 +30,11 @@
 
 <article class="popin_2023">
     <div class="popin">
-        @@include('./components/p.html', {
-            "texte": "<u>Rules of the game :</u>  For more information you can click on <span class='popin__open'>this link</span>.",
-        })
+        <div class="popin__p">
+            @@include('./components/p.html', {
+                "texte": "<u><strong>Rules 1 free Calendar a day :</strong></u>  For more information, please click on <span class='popin__open'>this link</span>.",
+            })
+        </div>
 
         <dialog id="popin" class="popin__dialog">
             @@include('./components/cta.html', {
@@ -57,7 +59,7 @@
                             "texte": "Article 2 : Projected Game",
                         })
                         @@include('./components/p.html', {
-                            "texte": "The planned operation consists of a draw for a chance to win the Kusmi Tea Advent Calendar 2023, for all orders (with no minimum purchase) placed on the Kusmi Tea websites (<a class='block__link' href='https://www.kusmitea.com/fr-ch'>https://www.kusmitea.com/fr-ch</a> or <a class='block__link' href='https://www.kusmitea.com/de-ch'>https://www.kusmitea.com/de-ch</a>) and delivered in Switzerland.<br>The operation is entitled : « Try to win your Kusmi Tea Advent Calendar ! ».",
+                            "texte": "The planned operation consists of a draw for a chance to win the Kusmi Tea Advent Calendar 2023, for all orders (with no minimum purchase) placed on the Kusmi Tea websites (<a class='block__link' href='https://www.kusmitea.com/fr-ch'>https://www.kusmitea.com/fr-ch</a> or <a class='block__link' href='https://www.kusmitea.com/de-ch'>https://www.kusmitea.com/de-ch</a>) and delivered in Switzerland.<br>The operation is entitled : « <strong>Try to win your Kusmi Tea Advent Calendar !</strong> ».",
                         })
                     </div>
                     <div class="block-container__block block">

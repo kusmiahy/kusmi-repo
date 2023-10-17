@@ -15,6 +15,10 @@ $paragraphe-line-height-desk: 1.6rem;
         }
     }
 
+    &__p {
+        
+    }
+
     &__dialog {
         border: 0;
         border-radius: .3rem;
@@ -95,52 +99,55 @@ $paragraphe-line-height-desk: 1.6rem;
         height: calc(55vh - 2rem - 105px);
         padding-left: 1rem;
     }
-}
-
-.block {
-    &:not(:last-child) {
-        margin-block-end: 1rem;
-        // @include min1024() {
-        //     margin-block-end: 1rem;
-        // }
-    }
-
-    &__ul {
-        list-style-type: disc;
-    }
-
-    &__link {
-        text-decoration: underline;
-        color: $lien;
-        cursor: pointer;
-        &:hover {
-            text-decoration: none;
+    .block {
+        &:not(:last-child) {
+            margin-block-end: 1rem;
+            // @include min1024() {
+            //     margin-block-end: 1rem;
+            // }
+        }
+    
+        &__ul {
+            list-style-type: disc;
+        }
+    
+        &__link {
+            text-decoration: underline;
+            color: $lien;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    
+        &__h2 {
+            font-weight: 500;
+            font-size: 1rem;
+            text-decoration: underline;
+            margin-bottom: 1rem;
+        }
+        &__h3 {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    
+        &__p , &__ul li {
+            text-align: justify;
+            font-size: $paragraphe-size-mob;
+            line-height: $paragraphe-line-height-mob;
+            letter-spacing: .01rem;
+            margin-bottom: .5rem;
+    
+            @include min1024() {
+                font-size: $paragraphe-size-desk;
+                line-height: $paragraphe-line-height-desk;
+            }
+        }
+    
+        strong {
+            font-weight: 600;
         }
     }
-
-    &__h2 {
-        font-weight: 500;
-        font-size: 1.2rem;
-        text-decoration: underline;
-        margin-bottom: 1.5rem;
-    }
-    &__h3 {
-        font-weight: 500;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    &__p , &__ul li {
-        text-align: justify;
-        font-size: $paragraphe-size-mob;
-        font-family: 'Barlow', sans-serif;
-        line-height: $paragraphe-line-height-mob;
-        letter-spacing: .01rem;
-        margin-bottom: .5rem;
-
-        @include min1024() {
-            font-size: $paragraphe-size-desk;
-            line-height: $paragraphe-line-height-desk;
-        }
-    }
 }
+
