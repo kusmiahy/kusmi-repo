@@ -1,0 +1,154 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix <a href=\"$url('Product-Show','pid','21142A1400')$\"\>d'un coffret signé Alain Ducasse</a> proposé comme une idée de cadeau pour les amateurs de thés bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "59,00 € pour <a href=\"$url('Product-Show','pid','21648A21142A14001070')$\"\>le Coffret La Collection Alain Ducasse bio.</a>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau bio pour un amateur de thé. Avez-vous des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, <a href=\"$url('Product-Show','pid','21142A1400')$\"\>le Coffret La Collection Alain Ducasse bio</a> <span class='hide__text hide__fadeout'>avec des thés bio nature est une excellente idée.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûte <a href=\"$url('Product-Show','pid','5000000320')$\"\>la théière automatique Cha Dao Expert Riviera & Bar</a> pour préparer la tasse parfaite?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Elle coûte 279,99 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour ceux qui apprécient <a href=\"\$url('Search-Show','cgid','mate')$\"\>le maté</a>, quel thé bio est disponible ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21691A1070')$\"\>Le Petit déjeuner à l'Elysée bio</a> comprend du thé vert, maté, et citron.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est l'option de cadeau avec un infuseur intégré pour un amateur de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','20213N')$\"\>La théière fonte Arare</a> de 1,15L d'IWACHU est une excellente option.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les prix des boîtes de <a href=\"$url('Product-Show','pid','21687A1210')$\"\>Thé Blanc Alain Ducasse Bio</a> et du <a href=\"$url('Product-Show','pid','21695A1040')$\"\>Matcha bio ?</a>",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le <a href=\"$url('Product-Show','pid','21687A1210')$\"\>Thé Blanc Alain Ducasse Bio</a> est à 26,40 € pour 120 g, et le <a href=\"$url('Product-Show','pid','21695A1040')$\"\>Matcha bio</a> est à 32,90 € pour 30 g.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Si je veux offrir <a href=\"$url('Product-Show','pid','21081A1260')$\"\>un coffret de thés et infusions épicées</a> comme cadeau, quel est votre recommandation ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21081A1260')$\"\>Le Coffret Les épicés</a>, contenant des thés et infusions épicées, est une excellent choix.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "À quel prix puis-je obtenir <a href=\"$url('Product-Show','pid','5000000355')$\"\>une bouteille isotherme</a> de 50Cl pour garder ma tasse de thé au chaud ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','5000000355')$\"\>La bouteille isotherme QWETCH</a> de 50Cl est disponible à partir de 27,00 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que tous les produits listés sont un excellent choix de cadeau pour les amateurs de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, tous ces produits sont des <a href=\"\$url('Search-Show','cgid','idees_cadeaux')$\"\>idées-cadeaux</a> exceptionnels pour les amateurs de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour quel montant puis-je obtenir <a href=\"$url('Product-Show','pid','5000000495')$\"\>une théière en porcelaine avec un filtre intégré ?</a>",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','5000000495')$\"\>La théière en porcelaine 1L Sonoko d'ASA SELECTION</a> est à 62,00 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour un cadeau authentique pour noël, est-ce que le <a href=\"$url('Product-Show','pid','21010A1050')$\"\>Thé noir du Népal</a> est une option bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le <a href=\"$url('Product-Show','pid','21010A1050')$\"\>Thé noir du Népal</a>, Jardin de Guranse est certifié bio.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle option de cadeau pour les amateurs de thé proposez-vous avec des sachets ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21704A1340')$\"\>Le Coffret bio Les voyages d'Ines</a> propose des thés et infusions bio en sachet.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Si je recherche une boîte de thé à la rose comme cadeau, que recommandez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous recommandons <a href=\"$url('Product-Show','pid','21687A1210')$\"\>Le Thé Blanc Alain Ducasse Bio</a> qui est un thé à la rose.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix de <a href=\"$url('Product-Show','pid','5000000545')$\"\>la théière automatique de Riviera & Bar</a> en verre trempé pour offrir à un amateur de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','5000000545')$\"\>La théière automatique 1L Riviera & Bar Fujian</a> en verre trempé est à 139,99 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour les amateurs de thé qui aiment infuser leurs thés en vrac, quel infuseur intégré dans une théière recommandez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les théières fonte d'IWACHU, telles que <a href=\"$url('Product-Show','pid','20212N')$\"\>Arare</a> et <a href=\"$url('Product-Show','pid','5000000021')$\"\>Sakura</a>, sont équipées d'un filtre et sont parfaites pour infuser des thés en vrac.  <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

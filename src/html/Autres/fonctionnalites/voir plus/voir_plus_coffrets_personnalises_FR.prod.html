@@ -1,0 +1,138 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Vous cherchez un cadeau unique pour le thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi propose un coffret cadeau 100% personnalisé, vous permettant de composer le mélange parfait pour vos proches. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je créer un coffret de thé Kusmi personnalisé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Vous pouvez choisir la taille de votre boîte à thé et les thés ou infusions spécifiques que vous souhaitez inclure. Kusmi propose différentes options, des miniatures aux KusmiKubes, pour répondre à tous les budgets et à tous les goûts.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelles sont les options disponibles pour les boîtes à thé personnalisées chez Kusmi ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous offrons 3 possibilités principales : la boîte de 3 miniatures, les boîtes de 3 KusmiKubes et de 6 KusmiKubes, et la boîte spéciale de 125g et 25g qui revient chaque année à Noël. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau de thé avec une touche d'élégance pour Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos boîtes de thé personnalisées sont habillées des couleurs festives de notre gamme de Noël, ce qui en fait un cadeau élégant pour les fêtes de fin d'année. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous besoin d'accessoires pour le thé avec votre coffret ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos coffrets cadeaux peuvent inclure des accessoires utiles tels que la pince à thé pour faciliter l'infusion et la cuillère à thé Kusmi pour mesurer le thé avec précision.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la particularité de la BOÎTE CADEAU ÉDITION LIMITÉE ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il associe une boîte de 100 g de thé vert à la menthe rafraîchissant à une bouteille nomade en verre borosilicate de 58 cl, parfaite pour les amateurs de thé en déplacement. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Puis-je offrir une variété de thés dans des sachets emballés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, vous pouvez opter pour le coffret de 3 KusmiKubes ou le coffret de 6 KusmiKubes, offrant respectivement 30 ou 60 sachets de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le coffret le plus abordable pour offrir à une fête ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Celui de 3 miniatures" à 18,00 € est une option abordable et personnalisable pour une fête.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Si je veux offrir un coffret cadeau avec une variété de thés, combien devrais-je dépenser ? Pour une variété, le "Coffret 6 KusmiKubes" à 37,90 € serait idéal avec 60 sachets.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un cadeau d'anniversaire unique, est-il possible de personnaliser les infusions dans l'un de vos coffrets ? Oui, avec le "Coffret 3 miniatures", vous pouvez personnaliser la sélection avec 3 boîtes de 20gr.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que tous vos thés dans les coffrets sont bio ? La liste ne spécifie pas explicitement si tous les thés sont bio, il est donc recommandé de vérifier les détails du produit.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour quel événement recommanderiez-vous le "Coffret 6 KusmiKubes" ? Il serait parfait pour un anniversaire ou une fête spéciale, grâce à sa large sélection de sachets de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel coffret serait idéal pour offrir en guise de cadeau d'anniversaire ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret cadeau" à 27,90 € serait une option parfait pour un anniversaire.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien de sachets de thé contient le Coffret 3 KusmiKubes ? Il contient 30 sachets enveloppés.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Si je veux offrir un cadeau personnalisé avec une sélection de thés, quel produit me recommandez-vous ? Le "Coffret 3 miniatures" est idéal car il permet de choisir 3 boîtes de 20gr au choix pour une touche personnalisée.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour la fête des mères, quel thé serait le plus approprié ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret 6 KusmiKubes" avec 60 sachets enveloppés serait un beau cadeau pour la fête des mères.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

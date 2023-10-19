@@ -1,0 +1,218 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le thème sous-jacent de cette collection ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour Noël, nous vous invitons à offrir des cadeaux qui font écho à l'héritage, à la qualité et à la durabilité, afin <span class='hide__text hide__fadeout'>que chaque tasse et chaque moment aient un sens.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est l'idée de cadeau responsable pour soutenir une noble cause à Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un cadeau à la fois gourmand, écologique et solidaire, offrez le Thé vert à la menthe bio à l'arôme naturel de rose de Kusmi Tea. C'est une excellente manière de faire plaisir tout en soutenant la Recherche sur le cancer du sein pendant le mois d'Octobre Rose.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une idée de cadeau traditionnel pour les amateurs de thé. Des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un vrai plaisir des sens, offrez la théière en fonte Kiku, fabriquée à la main au Japon. Avec son design authentique et son filtre inox, elle est à la fois écolo et naturellement belle, un véritable trésor pour tout amateur de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des cadeaux écolo pour ceux qui sont toujours en mouvement ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, la théière nomade en verre de Eigenart est le cadeau idéal. Équipée d'une double paroi et d'un filtre inox, elle garantit un usage simple et écologique pour savourer son thé partout.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche des idées cadeaux naturelles pour des moments de détente. Des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La tisanière T.TOTEM en porcelaine est parfaite pour infuser le thé directement dans votre tasse. Avec son design sobre et son filtre en acier inoxydable, elle allie modernité et plaisir pour un moment de détente naturel.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des suggestions de cadeaux écologiques pour transporter ses boissons ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, la bouteille isotherme QWETCH est une idée de cadeau écolo exceptionnelle. Fabriquée en inox, elle conserve vos boissons chaudes ou froides tout en affichant un engagement écologique.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour un amateur de thé, quel cadeau naturel serait approprié pour Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un cadeau naturel et élégant, la tisanière Ouessant de La Rochère, fabriquée en France, est idéale. Alliant verre trempé, bambou et filtre inox, elle est parfaite pour les dégustations de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite offrir un cadeau écolo qui peut être utilisé quotidiennement. Des idées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un usage quotidien, la Tisanière en verre trempé avec couvercle en bambou est un choix responsable. Sa robustesse et son design inspiré des canots bretons en font un cadeau naturel et authentique.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle serait une idée de cadeau responsable pour quelqu'un qui aime le thé moderne ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Tisanière T.TOTEM est une combinaison parfaite de design moderne et de matériaux écolo comme la porcelaine et l'inox. C'est le cadeau idéal pour un Noël responsable.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je combiner un amour pour le thé et un engagement écolo dans un cadeau ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La bouteille isotherme QWETCH est le parfait compromis entre écologie et style. Avec son revêtement en acier inoxydable, c'est un cadeau qui reflète un amour pour le thé et un engagement envers l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une idée de cadeau authentique pour Noël. Des recommandations ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Optez pour la tisanière Ouessant de La Rochère. Inspirée des traditions françaises et fabriquée avec des matériaux naturels comme le verre trempé et le bambou, elle offre une expérience de thé authentique et naturelle.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est une option éco-responsable pour savourer mon thé vert bio ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour une expérience éco-responsable, le Thé vert à la menthe à l'arôme naturel de rose de Kusmi Tea est un choix idéal. En plus d'être bio, il soutient activement la lutte contre le cancer du sein lors du mois d'Octobre Rose.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis à la recherche d'une théière éco-traditionnelle. Des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! La théière en fonte Kiku est un excellent choix. Fabriquée à la main au Japon, elle allie tradition et éco-responsabilité, garantissant une expérience de thé authentique.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je m'assurer que mon thé est toujours chaud en déplacement de manière éco-responsable ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La théière nomade en verre Eigenart est une solution éco-friendly pour garder votre thé au chaud en déplacement, grâce à sa double paroi. De plus, sa fabrication en verre en fait un choixrespectueux de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est un moyen éco-chic de préparer mon thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La tisanière T.TOTEM en porcelaine offre une méthode éco-chic. Sa fabrication en porcelaine et son filtre en acier inoxydable sont à la fois élégants et éco-responsables.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite réduire ma consommation de plastique. Quelle est une alternative éco-responsable pour transporter mes boissons ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour une solution éco-friendly, optez pour la bouteille isotherme QWETCH en acier inoxydable. Non seulement elle est écologique, mais elle maintient aussi vos boissons à la température souhaitée.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je profiter d'un moment de thé authentique tout en étant éco-conscient ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La tisanière Ouessant de La Rochère, en verre trempé, est une excellente option éco-responsable pour savourer votre thé. Elle évoque l'authenticité tout en étant respectueuse de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est une option éco-responsable pour infuser mon thé au bureau ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Tisanière en verre trempé avec couvercle en bambou est un choix parfait. Elle est à la fois pratique pour un usage quotidien au bureau et éco-responsable grâce à ses matériaux naturels.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche un produit éco-tendance pour boire mon thé en déplacement. Des idées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Tisanière T.TOTEM est une combinaison parfaite d'élégance moderne et de responsabilité éco-responsable. Elle est pratique pour les déplacements tout en étant respectueuse de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite investir dans un accessoire de thé éco-durable. Avez-vous des recommandations ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! La théière en fonte Kiku est à la fois traditionnelle et éco-durable. Elle est fabriquée avec soin au Japon, ce qui garantit sa durabilité et son respect de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je introduire une touche éco-nomade à mon rituel de thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La bouteille isotherme QWETCH est l'option éco-nomade par excellence. Elle est portable, durable et écologique, vous permettant de déguster votre thé chaud ou froid en déplacement tout en étant conscient de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche des idées de cadeaux responsables pour un amateur de thé. Des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un cadeau responsable, le Thé vert à la menthe à l'arôme naturel de rose de Kusmi Tea est une excellente idée. Il est non seulement bio, mais son achat soutient également la lutte contre le cancer du sein. Combiné avec la tisanière Ouessant de La Rochère en verre trempé, ce serait un cadeau à la fois pratique et respectueux de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite offrir un cadeau éco-chic à mon ami qui adore le thé. Avez-vous des idées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! La théière en fonte Kiku, fabriquée à la main au Japon, est un cadeau éco-chic parfait. Elle allie tradition, esthétique et éco-responsabilité. Pour ajouter une touche nomade à votre cadeau, la bouteille isotherme QWETCH en acier inoxydable serait un excellent complément, lui permettant d'emporter son thé préféré partout. <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

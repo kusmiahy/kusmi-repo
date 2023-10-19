@@ -1,0 +1,138 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "De quoi ai-je besoin pour un Tea Time parfait ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un Tea Time authentique, vous aurez besoin <a href=\"\$url('Search-Show','cgid','accessories_m')$\"\>d'accessoires</a> essentiels pour préparer votre thé selon la tradition ancestrale. Un bon point de départ est une <a href=\"$url('Product-Show','pid','5000000321')$\"\>bouilloire</a>, idéalement réglable en température. Les différents thés ont des températures d'infusion distinctes, et le fait de veiller à ce que le niveau de chaleur soit correct <span class='hide__text hide__fadeout'>permet de libérer les riches arômes des feuilles de thé.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment dois-je infuser les différents types de thés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Une fois que vous avez de l'eau chaude, placez votre thé dans <a href=\"$url('Product-Show','pid','5000000631')$\"\>une boule à thé</a> ou <a href=\"$url('Product-Show','pid','5000000288')$\"\>une théière</a>. La durée d'infusion varie en fonction du thé : <a href=\"\$url('Search-Show','cgid','noir')$\"\>Thé noir :</a> 4-5 minutes <a href=\"\$url('Search-Show','cgid','vert')$\"\>Thé vert :</a> 3-4 minutes <a href=\"\$url('Search-Show','cgid','blanc')$\"\>Thé blanc :</a> 7 minutes <a href=\"\$url('Search-Show','cgid','infusions_tisanes_types_de_the')$\"\>Tisanes :</a> 5 minutes <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>Roiboos :</a> 4-5 minutes Il est également essentiel d'utiliser la bonne quantité. En général, on utilise 2 à 3 grammes de thé pour 15 cl d'eau.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les <a href=\"\$url('Search-Show','cgid','accessories_m')$\"\>accessoires</a> de thé proposés par Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea propose une vaste gamme d'accessoires pour améliorer votre expérience du thé. <a href=\"\$url('Search-Show','cgid','theieres_deguster')$\"\>Des théières en fonte</a> et <a href=\"\$url('Search-Show','cgid','accessoires_porcelaines')$\"\>en porcelaine</a>, <a href=\"\$url('Search-Show','cgid','Accessoires_isothermes')$\"\>des bouteilles isothermes</a>, <a href=\"\$url('Product-Show','pid','5000000631')$\"\>des boules à thé</a>, <a href=\"\$url('Search-Show','cgid','tasses_et_mugs_deguster')$\"\>des mugs</a> et <a href=\"\$url('Search-Show','cgid','bouilloires_preparer')$\"\>des bouilloires à température réglable</a>. Les designs sont élégants, faisant écho à l'esthétique scandinave, et sont créés dans un souci de fonctionnalité et de préparation optimale du thé. La qualité, la praticité et le design sont nos principes fondamentaux",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Parlez-moi de la bouilloire Artisan de Kitchenaid.",
+            })
+            @@include('./components/p.html', {
+                "texte": "La bouilloire Artisan de Kitchenaid à température réglable vous permet de chauffer l'eau entre 50 et 100 °C, garantissant ainsi une température d'infusion précise pour n'importe quel thé. Elle est conçue avec une cavité à double paroi pour rester froide au toucher, et elle conserve la chaleur pendant de longues périodes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je préserver la fraîcheur de mes feuilles de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea propose d'élégantes boîtes métalliques. Elles présentent un design contemporain, une grande capacité et sont exceptionnellement faciles à utiliser. De plus, nos boîtes personnalisées sont un moyen agréable de découvrir notre vaste sélection de thés.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des suggestions de cadeaux pour quelqu'un qui aime le thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement ! Nous avons une gamme <a href=\"\$url('Search-Show','cgid','accessories_m')$\"\>d'accessoires indispensables</a> pour le thé. Que vous soyez un nouveau venu dans le monde du thé ou un aficionado chevronné, vous avez frappé à la bonne porte.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une manière pratique d'infuser mon thé dans ma tasse habituelle. Quels accessoires choisir pour cela ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous proposons plusieurs options, comme <a href=\"\$url('Product-Show','pid','5000000595')$\"\>l'Infuseur pour mug</a> à 8,90 €, <a href=\"\$url('Product-Show','pid','5000000630')$\"\>l'Infuseur à thé en acier inoxydable T.TOTEM</a> à 9,90 €, et <a href=\"\$url('Product-Show','pid','40301')$\"\>la Pince pour filtre à thé en inox FINUM</a> à 2,60 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis souvent en déplacement. Quelle option Kusmi Tea recommande-t-elle pour emporter mon thé chaud avec moi ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous vous recommandons nos mugs de voyage, tels que <a href=\"\$url('Product-Show','pid','5000000799')$\"\>le Mug de Voyage 50Cl ETNA de KAMBUKKA</a> à 39,00 € ou <a href=\"\$url('Product-Show','pid','5000000528')$\"\>le Mug de Voyage 30Cl OLYMPUS</a> à 28,00 €",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je préfère infuser mon thé avec des méthodes traditionnelles. Quels types de pinces et infuseurs manuels avez-vous en stock ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous avons <a href=\"\$url('Product-Show','pid','31380')$\"\>une Pince à thé Kusmi Tea</a> à 4,90 €, <a href=\"\$url('Product-Show','pid','31386')$\"\>un Infuseur cuillère pour 1 tasse</a> à 7,90 € et <a href=\"\$url('Product-Show','pid','5000000631')$\"\>une Boule à thé</a> pour 1 tasse à 6,00 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'ai récemment acheté une bouteille isotherme. Proposez-vous un accessoire d'infusion spécialement conçu pour les bouteilles ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, nous avons le <a href=\"\$url('Product-Show','pid','5000000476')$\"\>Bouchon infuseur QWETCH</a> spécialement conçu pour les bouteilles isothermes à 12,00 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis à la recherche d'une boîte ou d'un ensemble pour filtrer mon thé en vrac. Quels produits me suggérez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous suggérons <a href=\"\$url('Product-Show','pid','40298')$\"\>nos filtres à thé en papier de la marque Finum</a>, disponibles à partir de 4,40 € ou <a href=\"\$url('Product-Show','pid','40306')$\"\>notre Filtre à thé permanent de FINUM</a> à 8,50 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour une expérience de dégustation optimale, quel type de tasse ou mug en verre me conseillez-vous chez Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Lorem ipsum",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'aimerais contrôler le temps d'infusion de mon thé précisément. Avez-vous des accessoires comme un minuteur ou un sablier adapté à cela ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, nous proposons <a href=\"\$url('Product-Show','pid','67065')$\"\>un Minuteur Sablier</a> qui mesure des durées de 3, 5 et 7 minutes, disponible à 10,50 €. <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

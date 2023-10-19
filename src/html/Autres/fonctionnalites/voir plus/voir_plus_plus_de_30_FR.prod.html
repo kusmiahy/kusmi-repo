@@ -1,0 +1,194 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est un bon cadeau de Noël pour quelqu'un qui adore le thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Une excellente idée de cadeau est le "Coffret La Collection Alain Ducasse" de Kusmi Tea. Il offre une sélection de thés de haute qualité pour le plaisir de chaque amateur de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Mon budget est supérieur à 30 euros. Des recommandations ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bien sûr! Vous pourriez opter pour "La Collection bio Kusmi Tea" au prix de 94,50 €. C'est un choix idéal pour une personne qui souhaite découvrir une variété de thés.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau design pour un amateur de thé, des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La "Théière fonte Arare" avec son design traditionnel est parfaite. Disponible en différentes capacités, son design en fonte est à la fois élégant et fonctionnel.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Mon amie voyage souvent. Quel cadeau lui offrir ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Mug de Voyage ETNA" de Kusmi Tea est idéal. Pratique et élégant, c'est le choix parfait pour quelqu'un en déplacement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que Kusmi Tea propose des thés verts ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, par exemple le "Matcha Kusmi Tea" est un thé vert bio du Japon. C'est une idée cadeau raffinée pour les fêtes de Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je veux un cadeau unique pour Noël, des idées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La "Théière automatique Cha Dao Expert Riviera & Bar" est à la fois unique et luxueuse. Avec un prix de 279,99 €, c'est un cadeau exceptionnel pour un amateur de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est l'avis général sur la "Bouteille isotherme 75Cl" de Kusmi Tea ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La bouteille a reçu une note de 4.79/5, ce qui indique que les clients sont très satisfaits de ce produit.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel cadeau de Noël serait idéal pour une femme qui aime le thé noir ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret La Sélection Alain Ducasse" est une excellente option. Il comprend un assortiment de thés bio natures, dont certains sont des thés noirs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que Kusmi Tea a des offres pour des théières en porcelaine ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, la "Théière 1,1L en porcelaine" à 42,50 € est un choix élégant. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une boite de thé comme cadeau. Des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret Kusmi Infusions " est une excellente idée. Il offre un assortiment de tisanes en sachet pour un moment de détente.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix moyen des cadeaux de Noël listés ici ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix varient considérablement, mais la plupart des articles sont dans la fourchette de 30 € à 100 €. Il y a également quelques options plus luxueuses, comme la théière automatique à 279,99 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je veux offrir un cadeau du matcha pour Noël, des idées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Matcha Kusmi Tea" est un choix parfait. C'est un thé vert du Japon, idéal pour les amateurs de thé soucieux de leur santé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des mugs avec filtre inclus ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le "Mug de Voyage 50Cl" d'EIGENART est équipé d'un filtre. Il est parfait pour infuser son thé en déplacement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "La "Théière fonte Kiku" est-elle bien notée par les clients ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument. Elle a une excellente note de 5.00/5, ce qui indique une grande satisfaction de la part des clients.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis intéressé par la théière en fonte. Combien de choix y a-t-il ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il y a plusieurs modèles de théières en fonte, comme les théières "Arare" de différentes capacités et les théières "Kiku" et "Nami".",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour quelqu'un qui aime le thé noir, quelle serait la meilleure sélection ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret La Sélection Alain Ducasse" est un excellent choix car il contient un assortiment de thés bio, y compris des thés noirs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que les produits de Kusmi Tea sont principalement biologiques ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Beaucoup des produits listés ici sont labellisés "bio", ce qui indique que Kusmi Tea met l'accent sur la qualité et la production durable.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel cadeau est le plus luxueux pour un amateur de thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "La "Théière automatique 1,2L Cha Dao Expert Riviera & Bar" à 279,99 € est l'une des options les plus luxueuses et serait un cadeau impressionnant.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des idées de cadeaux qui sont actuellement indisponibles ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, quelques produits comme le "Matcha bio Kusmi Tea" et le "Coffret Les voyages d Ines" sont actuellement indisponibles.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour un budget de moins de 50 euros, quel serait le meilleur cadeau de thé pour Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le "Coffret Kusmi Infusions" à 37,90 € est un choix parfait. Il offre un assortiment de tisanes en sachet, parfait pour une soirée de détente en hiver.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

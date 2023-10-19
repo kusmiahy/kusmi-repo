@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Puis-je obtenir un coffret cadeau avec des thés épicés de Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement, le "coffret de thés épicés" est conçu pour les amateurs de saveurs audacieuses et épicées, combinant des thés épicés et des infusions aromatiques. Je souhaite vivre une expérience de thé luxueuse. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Kusmi Tea a-t-elle des suggestions à me faire ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le coffret "Sélection Alain Ducasse" propose un assortiment de thés biologiques naturels, vous offrant une touche de luxe dans chaque tasse.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'est ce que la La Collection Bio de Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre coffret La Collection porte bien son nom ! Il réunit 15 miniatures de thés et infusions emblématiques de notre maison, le tout accompagné d'une boîte de 100 filtres à thé ainsi que d'une jolie cuillère pour faciliter la dégustation de nos mélanges. C'est sans doute le plus incontournable des coffrets à offrir !",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les avis sur le Coffret Kusmi Infusions bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Kusmi Infusions a reçu un avis positif de 4.79/5.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau bien noté pour un anniversaire, quel est l'avis sur le Coffret Les Earl Grey Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il a reçu un excellent avis avec une note de 5.00/5.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'hésite entre plusieurs coffrets pour un cadeau de fête. Pourriez-vous me dire les avis sur La Sélection Alain Ducasse avec une pince à thé Kusmi Tea ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bien sûr ! Les avis laissés ont noté le produit à 4.73/5.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

@@ -1,0 +1,149 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'y a-t-il de spécial dans les fêtes de fin d'année qui approchent chez Kusmi Tea ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "À l'approche de Noël, Kusmi Tea propose une sélection triée sur le volet de thés de Noël biologiques exceptionnels, allant du <a href=\"\$url('Search-Show','cgid','noir')$\"\>thé noir</a> au <a href=\"\$url('Search-Show','cgid','vert')$\"\>thé vert</a>, en passant par le <span class='hide__text hide__fadeout'><a href=\"\$url('Search-Show','cgid','blanc')$\"\>thé blanc</a>, le <a href=\"\$url('Search-Show','cgid','matcha')$\"\>matcha</a>, le <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a> et <a href=\"\$url('Search-Show','cgid','mate')$\"\>le maté</a>.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des saveurs traditionnelles ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Tout à fait ! Vous pouvez déguster nos mélanges traditionnels imprégnés de la richesse aromatique de la <a href=\"\$url('Search-Show','cgid','cannelle')$\"\>cannelle</a>, des <a href=\"\$url('Search-Show','cgid','the_epices')$\"\>épices</a>, de la <a href=\"\$url('Search-Show','cgid','cardamome')$\"\>cardamome</a> et des <a href=\"\$url('Search-Show','cgid','fruits-rouges')$\"\>fruits rouges.</a>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'en est-il d'une saveur plus moderne ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour ceux qui recherchent quelque chose de différent, nous avons également des assortiments innovants qui promettent une expérience délicieuse.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quand ces thés doivent-ils être dégustés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Ils sont parfaits pour une froide matinée d'hiver, un petit-déjeuner copieux ou un dîner au coin du feu.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des offres exclusives pour Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, pour découvrir <a href=\"\$url('Search-Show','cgid','nos_selections_cadeaux')$\"\>nos coffrets cadeaux et nos accessoires</a>, rendez-vous dans notre <a href=\"\$url('Search-Show','cgid','boutique_noel')$\"\>boutique de Noël.</a>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pouvez-vous nous citer quelques-uns des thés de la saison ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement ! En voici quelques exemples : ",
+            })
+            <ul class="block__ul">
+                @@include('./components/li.html', {
+                    "texte": "<a href=\"$url('Product-Show','pid','21703A1070')$\"\>Earl Grey Intense biologique :</a> Un mélange robuste de thé noir avec de fortes notes de bergamote et de citron.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "<a href=\"$url('Product-Show','pid','21718A1070')$\"\>St-Pétersbourg bio :</a> Ce mélange allie le charme du thé noir Earl Grey à de délicieuses notes de caramel et de fruits.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "<a href=\"$url('Product-Show','pid','21648A1070')$\"\>Label Imperial bio :</a> Un mélange harmonieux de thé vert, d'épices et de cannelle.",
+                })
+            </ul>
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix du thé &#34;Anastasia&#34; ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21642A1070')$\"\>Le thé Anastasia</a>, qui a des notes de thé noir earl grey et de citron, coûte 15,90 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la différence entre le thé &#34;<a href=\"$url('Product-Show','pid','21642A1070')$\"\>Earl Grey</a>&#34; et &#34;<a href=\"$url('Product-Show','pid','21703A1070')$\"\>Earl Grey Intense</a>&#34; pour les fêtes de Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour Noël, le thé &#34;<a href=\"$url('Product-Show','pid','21642A1070')$\"\>Earl Grey</a>&#34; contient du thé noir et de la bergamote, tandis que &#34;<a href=\"$url('Product-Show','pid','21703A1070')$\"\>Earl Grey Intense</a>&#34; est renforcé avec du citron.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche un thé avec une note de caramel pour Noël, en avez-vous un?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, pour Noël, nous avons le &#34;<a href=\"$url('Product-Show','pid','21718A1070')$\"\>St-Pétersbourg</a>&#34; qui combine le thé noir earl grey avec du caramel et des fruits. Il coûte 15,90 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel thé est le mieux noté pour Noël?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;<a href=\"$url('Product-Show','pid','21648A1070')$\"\>Label Imperial bio</a>&#34;, un mélange de thé vert, épices, et cannelle, a une note de 4.84/5, ce qui en fait un choix populaire pour Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que vous avez des promotions pour les thés de Noël?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, pour ce Noël, nous offrons jusqu'à -25% sur le thé &#34;<a href=\"$url('Product-Show','pid','21672A1050')$\"\>Troïka bio&#34;</a>, un thé noir earl grey aux agrumes. Vous pouvez l'ajouter à votre panier pour seulement 12,50 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis à la recherche d'un thé blanc pour Noël, que recommandez-vous?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour Noël, nous recommandons le &#34;<a href=\"$url('Product-Show','pid','21095A1070')$\"\>White Berries bio</a>&#34;, un thé blanc bio aromatisé à la fraise, mûre et cassis. Il est disponible pour 19,90 €.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que tous les thés Kusmi tea sont des thés biologiques ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument, tous nos thés et infusions sont biologiques et sont produits sous les strictes normes AB (Agriculture Biologique) <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

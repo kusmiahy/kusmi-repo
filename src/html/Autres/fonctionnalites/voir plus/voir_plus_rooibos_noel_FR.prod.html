@@ -1,0 +1,162 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "À l'approche de Noël, qu'est-ce que Kusmi Tea réserve aux amateurs de tisane ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea est heureux de présenter une délicieuse gamme d'infusions et de rooibos biologiques de Noël, <span class='hide__text hide__fadeout'>soigneusement élaborés pour les fêtes de fin d'année.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quand ces tisanes doivent-elles être consommées ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"\$url('Search-Show','cgid','rooibos_types_de_the')$\"\>Nos sélections d'infusions et de rooibos</a> sont parfaites pour les matinées et les soirées d'hiver, en particulier à l'heure du thé près d'une cheminée confortable.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la suggestion de Kusmi Tea pour les amateurs de fenouil, <a href=\"\$url('Search-Show','cgid','reglisse')$\"\>réglisse</a> et anis ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea propose le produit &#34;<a href=\"$url('Product-Show','pid','21678A1070')$\"\>Only Spices</a>&#34; qui est certifié bio. Ce mélange est une combinaison délicieuse de fenouil, <a href=\"\$url('Search-Show','cgid','reglisse')$\"\>réglisse</a> et anis, parfait pour les moments de détente. Sa boîte de 100 g est vendue à 15,90 €, faisant de ce produit un choix idéal pour se faire plaisir ou offrir.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel mélange de Kusmi Tea est idéal pour les fêtes de Noël combinant <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>, honeybush et tilleul? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour les festivités de Noël, Kusmi Tea a conçu &#34;<a href=\"$url('Product-Show','pid','21679A1070')$\"\>Lovely Night</a>&#34;, un mélange bio mêlant <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>, honeybush et tilleul. Ces ingrédients ont été soigneusement choisis pour leur saveur et leur capacité à favoriser la détente. Disponible en boîte de 100 g pour 15,90 €, c'est une excellente option pour profiter des fêtes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche une boisson douce et apaisante à base de verveine. Que propose Kusmi Tea pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea a ce qu'il vous faut avec &#34;<a href=\"$url('Product-Show','pid','21654A1070')$\"\>Be Cool bio</a>&#34;. Un produit doux et apaisant à base de verveine, spécialement conçu pour les moments de relaxation. Disponible en boîte de 90 g pour 15,90 €, c'est le mélange parfait pour une pause détente.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel rooibos chez Kusmi Tea est agrémenté de saveur d'amande ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea vous présente &#34;<a href=\"$url('Product-Show','pid','21665A1070')$\"\>Rooibos Amande</a>&#34;. C'est un rooibos exquis, agrémenté d'une touche d'amande, offrant une expérience gustative douce et agréable. Vendu en boîte de 100 g au prix de 14,90 €, c'est l'option idéale pour ceux qui aiment les goûts doux et gourmands.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel produit Kusmi Tea est recommandé pour une dégustation pure de Rooibos bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;<a href=\"$url('Product-Show','pid','21665A1070')$\"\>Rooibos bio</a>&#34; de Kusmi Tea est la solution parfaite pour les amateurs de rooibos en quête de saveurs authentiques. Ce rooibos naturel, vendu en recharge vrac de 100 g au prix de 5,90 €, est certifié bio, garantissant une qualité optimale. Idéal pour une pause saine et revigorante.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il un mélange chez Kusmi Tea qui combine le rooibos avec la vanille ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, Kusmi Tea a conçu le &#34;<a href=\"$url('Product-Show','pid','21666A1070')$\"\>Rooibos Vanille</a>&#34;. Ce mélange bio mêle la douceur du rooibos au parfum envoûtant de la vanille. C'est une option gourmande pour ceux qui aiment les goûts doux et parfumés. Proposé en boîte de 100 g au tarif de 14,90 €, il saura ravir vos papilles.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une boisson qui évoque l'hiver avec du rooibos et des épices, des idées ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea vous suggère &#34;<a href=\"$url('Product-Show','pid','21663A1070')$\"\>Winter Delight</a>&#34;. Ce mélange riche, combinant rooibos, épices et cacao, est parfait pour réchauffer vos soirées hivernales. Son association de saveurs vous rappellera les douceurs de Noël. Offert en boîte de 100 g pour 15,90 €, c'est un incontournable de la saison froide.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il un coffret chez Kusmi Tea pour découvrir une variété de tisanes bio ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument, le &#34;<a href=\"$url('Product-Show','pid','21220A1220')$\"\>Coffret Kusmi Infusions bio</a>&#34; est ce qu'il vous faut. Kusmi Tea a soigneusement sélectionné un assortiment de tisanes en sachets, permettant une découverte gustative riche. Au prix de 37,90 €, c'est un cadeau idéal pour les fêtes ou pour vous initier à différentes goûts.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis fan de saveurs <a href=\"\$url('Search-Show','cgid','the_epices')$\"\>épicées</a>. Que propose Kusmi Tea dans cette catégorie ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;<a href=\"$url('Product-Show','pid','21220A1220')$\"\>Coffret Les épicés</a>&#34; de Kusmi Tea saura répondre à vos attentes. Ce coffret rassemble une sélection de thés et de tisanes aux notes <a href=\"\$url('Search-Show','cgid','the_epices')$\"\>épicées</a>. Malheureusement, ce produit est actuellement indisponible, mais il reste un choix prisé par ceux qui aiment les saveurs chaudes et relevées.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel mélange de Kusmi Tea est particulièrement recommandé pour se plonger dans l'ambiance de Noël avec du <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos ?</a>",
+            })
+            @@include('./components/p.html', {
+                "texte": "&#34;<a href=\"$url('Product-Show','pid','21679A1070')$\"\>Lovely Night</a>&#34; de Kusmi Tea est le choix idéal pour les fêtes de Noël. Ce mélange bio mêle subtilement <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>, honeybush et tilleul. Ces ingrédients ont été choisis pour leur capacité à évoquer l'atmosphère chaleureuse des fêtes de fin d'année. Disponible en boîte de 100 g pour 15,90 €, c'est une boisson parfaite pour partager un moment convivial autour du sapin.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle option Kusmi Tea offre une sensation chaleureuse et gourmande évoquant les délices de Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "&#34;<a href=\"$url('Product-Show','pid','21663A1070')$\"\>Winter Delight</a>&#34; est la réponse à votre recherche. Ce mélange de <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>, <a href=\"\$url('Search-Show','cgid','the_epices')$\"\>épices</a> et cacao est un véritable délice hivernal qui rappelle les doux moments passés au coin du feu pendant la période de Noël. Avec sa boîte de 100 g au prix de 15,90 €, &#34;<a href=\"$url('Product-Show','pid','21663A1070')$\"\>Winter Delight</a>&#34; vous transporte dans une ambiance festive dès la première gorgée.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite déguster ces merveilleux mélanges de Kusmi Tea en boutique pour vraiment apprécier leur saveur. Comment puis-je trouver la boutique Kusmi Tea la plus proche de chez moi ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour trouver la boutique Kusmi Tea la plus proche, il vous suffit de cliquer sur l'onglet &#34;<a href='https://boutique.kusmitea.com/'>Boutique</a>&#34; en haut de la page. Vous y trouverez toutes les adresses des boutiques ainsi que d'autres informations utiles pour préparer votre visite.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'envisage d'acheter un cadeau de Noël chez Kusmi Tea et j'aimerais le faire en magasin. Où puis-je trouver les adresses des boutiques Kusmi Tea ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "C'est très simple ! Sur le site officiel de Kusmi Tea, cliquez sur l'onglet &#34;<a href='https://boutique.kusmitea.com/'>Boutique</a>&#34; situé en haut de la page. Vous y découvrirez la liste complète des boutiques Kusmi Tea ainsi que leurs coordonnées. Cela vous permettra de vivre une expérience d'achat en magasin et de profiter de conseils personnalisés.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis à la recherche d'un mélange combinant <a href=\"\$url('Search-Show','cgid','rooibos')$\"\>rooibos</a> et <a href=\"\$url('Search-Show','cgid','pomme')$\"\>pomme</a>. ",
+            })
+            @@include('./components/p.html', {
+                "texte": "&#34;<a href=\"$url('Product-Show','pid','21677A1070')$\"\>Feel Zen</a>&#34; sera un choix qui correspond parfaitement à ce que vous cherchez. <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

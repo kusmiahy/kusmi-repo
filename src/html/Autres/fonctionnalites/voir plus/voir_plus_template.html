@@ -1,0 +1,48 @@
+
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<style>
+.voir_plus_2023 main{display:block}.voir_plus_2023 code{font-family:monospace,monospace;font-size:1em}.voir_plus_2023 a{background-color:transparent}.voir_plus_2023 b{font-weight:bolder}.voir_plus_2023 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}.voir_plus_2023{width:100%}.voir_plus_2023 .category-bottom-content{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%}.voir_plus_2023 .category-bottom-content__block--not-display{display:none}.voir_plus_2023 .category-bottom-content__block--display{display:flex;flex-direction:column}.voir_plus_2023 .category-bottom-content__block{width:85%;margin-bottom:.5rem}.voir_plus_2023 .category-bottom-content__block h2{font-size:.75rem;text-align:center;color:#000;letter-spacing:.025em;font-weight:700;margin-bottom:.2rem}.voir_plus_2023 .category-bottom-content__block .block__ul li,.voir_plus_2023 .category-bottom-content__block p{font-size:.75rem;font-weight:400;text-align:center;color:#000;letter-spacing:.025em}.voir_plus_2023 .category-bottom-content__block .block__ul,.voir_plus_2023 .category-bottom-content__block p{margin-bottom:0}.voir_plus_2023 .category-bottom-content__block a{color:#731f4b;text-decoration:underline}.voir_plus_2023 .category-bottom-content__block a:hover{text-decoration:none}.voir_plus_2023 .hide__cta{text-decoration:underline;font-weight:700;cursor:pointer}.voir_plus_2023 .hide__cta.hide__cta--view-more{display:initial}.voir_plus_2023 .hide__fadeout{background:#000;background:linear-gradient(90deg,#000 0,#000 30%,#dbdbdb 85%,#fff 97%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.voir_plus_2023 .hide__fadeout a{text-decoration-color:#fff}@media screen and (min-width:1024px){.voir_plus_2023 .category-bottom-content__block{width:635px}}
+</style>
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <!-- premier bloc à ne jamais supprimer -->
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            <h2 class="font-lato">
+                <!-- titre du premier paragraphe -->
+            </h2>
+            <p class="font-lato">
+                <!-- insérer ici le paragraphe -->
+                <span class='hide__text hide__fadeout'>
+                    <!-- insérer ici les 9 derniers mots du paragraphe en laissant un espace -->
+                </span> 
+                <span class='hide__cta hide__cta--view-more'>Voir plus</span>
+            </p>
+        </section>
+        <!-- le bloc à copier coller -->
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            <h2 class="font-lato">
+                <!-- titre -->
+            </h2>
+            <p class="font-lato">
+                <!-- texte -->
+            </p>
+        </section>
+        <!-- dernier bloc à ne jamais supprimer -->
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            <h2 class="font-lato">
+                <!-- titre -->
+            </h2>
+            <p class="font-lato">
+                <!-- texte en laissant un espace -->
+                <span class='hide__cta hide__cta--view-less'>Voir moins</span>
+            </p>
+        </section>
+    </article>
+</div>
+
+
+<script
+    type="text/javascript">
+    "use strict"; var jschecker; function init() { if (jschecker = checkLoaded()) { console.log("Script started"); var e = document.querySelector(".hide__text"), t = document.querySelector(".hide__cta--view-more"), o = document.querySelector(".hide__cta--view-less"), c = document.querySelectorAll(".category-bottom-content__block"); t.addEventListener("click", function () { e.classList.remove("hide__fadeout"), c.forEach(function (e) { e.classList.remove("category-bottom-content__block--not-display") }), t.style.display = "none" }), o.addEventListener("click", function () { e.classList.add("hide__fadeout"), c.forEach(function (e) { e.classList.add("category-bottom-content__block--not-display") }), c[0].classList.remove("category-bottom-content__block--not-display"), t.style.display = "initial", window.scrollTo({ top: document.querySelector(".category-bottom-content__block--display").offsetTop - 110, behavior: "smooth" }) }) } else setTimeout(init) } function checkLoaded() { return console.log("page is fully loaded"), !0 } init();
+</script>
