@@ -45,3 +45,5 @@ This README would normally document whatever steps are necessary to get your app
 <a href="$url('Search-Show','cgid','vestes')$">Lien vers ma catégorie dont l'id = vestes</a>
 <!-- Lien vers une page de contenu -->
 <a href="$url('Page-Show','cid','cart-topbanner')$">Lien vers l'url de mon content asset dont l'id = cart-topbanner</a>
+<!-- Lien vers une page seasonal show (noël) -->
+<a href="$url('Seasonal-Show','cid','')$">Lien vers ma catégorie dont l'id = vestes</a>
