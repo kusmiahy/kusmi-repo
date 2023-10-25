@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'est-ce qui fait de cette Tisanière de La Rochère un cadeau idéal pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Fabriquée en France, cette Tisanière incarne l'artisanat local, ce qui en fait une idée de cadeau de Noël parfaite pour ceux qui apprécient les produits biologiques, authentiques et respectueux de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment le design de la Tisanière s'inscrit-il dans l'esprit d'un cadeau écologique et responsable ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Inspirée des canoës bretons, la Tisanière reflète la beauté naturelle de la France, mettant en valeur un design écologique qui représente à la fois la robustesse naturelle et l'authenticité pure.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pourquoi devrait-on considérer les produits La Rochère comme des idées de cadeaux responsables ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Rochère fabrique des produits authentiques depuis 1475, en mettant l'accent sur les traditions et les terroirs français intemporels. Son attachement à l'authenticité garantit que ses produits sont à la fois élégants et responsables, ce qui en fait d'excellents cadeaux pour toute personne soucieuse de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pouvez-vous nous en dire plus sur les matériaux utilisés et leur signification écologique ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Tisanière est fabriquée en verre trempé, en acier inoxydable 304 et en bambou - une ressource renouvelable et organique connue pour sa nature écologique. Elle représente une approche zéro déchet, mettant l'accent sur la durabilité et le développement durable.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment la Tisanière contribue-t-elle à un mode de vie responsable et respectueux de l'environnement ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Conçus pour durer, la tasse et le filtre peuvent être lavés au lave-vaisselle et la tasse peut être utilisée au micro-ondes. Cela favorise un mode de vie "zéro déchet" en réduisant le besoin de remplacements et de produits jetables.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pourquoi cette tasse est-elle l'une des meilleures idées de cadeaux écologiques et "écolos" pour les amateurs de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Équipée d'un filtre microperforé, la Tisanière permet d'infuser tous les types de thé, ce qui en fait un cadeau de choix pour les amateurs de thé. De plus, son couvercle en bambou assure la chaleur pendant l'infusion, ce qui correspond à un mode de vie "écolo" qui valorise les produits biologiques et responsables.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

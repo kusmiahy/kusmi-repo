@@ -1,0 +1,98 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est une bonne idée de cadeau de Noël pour un amateur de thé blanc ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Thé Blanc Alain Ducasse Bio est une excellente option à CHF 33,15.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau de Noël pour un amateur de thé à la rose, des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre Thé à la rose, en recharge vrac de 120 g est parfait pour cela, à CHF 33,15.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des idées cadeaux pour Noël qui incluent des accessoires pour le thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Coffret Kusmi Moments avec une pince à thé est une option à CHF 36,30.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite offrir une théière pour Noël, des recommandations ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre Théière nomade en verre 35Cl de EIGENART est une belle idée à CHF 41,30.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle bouteille isotherme recommanderiez-vous pour un cadeau de Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Bouteille Isotherme 50Cl de QWETCH est une excellente option à CHF 33,80.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous une idée cadeau pour quelqu'un qui aime les tisanes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Tisanière double paroi 25Cl d'EIGENART est parfaite pour cela, à CHF 36,10.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une idée cadeau unique en lien avec le thé pour Noël, des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Gobelet en fonte 10Cl d'IWACHU est original et coûte CHF 31,40.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je veux offrir une bouteille en verre comme cadeau de Noël. Des recommandations ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Optez pour la Bouteille en verre 75Cl avec Anse cuir de EQUA, à CHF 37,40.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'est-ce qui rend la collection &#34;Coffret cadeau thé&#34; unique ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret cadeau thé, offre une sélection raffinée des meilleurs thés pour les véritables amateurs. C'est un cadeau de choix pour les occasions spéciales.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûte le Coffret cadeau thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret cadeau thé est proposé à un prix de 124,99 C$. Une véritable offre premium pour les connaisseurs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des options bio parmi vos offres ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! tous nos thés sont des thés bio.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Que contient le Coffret bio Les voyages d'Ines ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Ce coffret présente une variété de thés et d'infusions bio en sachet, soigneusement sélectionnés pour leur qualité et leur goût exceptionnels.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "À quel prix est proposé le Coffret bio Les voyages d'Ines ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret bio Les voyages d'Ines est disponible à 71,99 C$, offrant un excellent rapport qualité-prix pour des produits bio.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les thés sont-ils livrés dans une &#34;boîte&#34; spéciale ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! Chaque coffret est présenté dans une boîte élégante, conçue pour protéger et mettre en valeur les thés à l'intérieur.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des offres &#34;promotionnelles&#34; disponibles pour les coffrets ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous proposons régulièrement des offres promotionnelles sur nos coffrets. Restez à l'écoute de nos annonces ou inscrivez-vous à notre newsletter pour ne rien manquer!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels autres &#34;cadeaux&#34; recommandez-vous pour les amateurs de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Outre nos coffrets de thé, nous proposons une gamme de cadeaux sur le site, tels que des tasses spéciales, des bouilloires et des accessoires pour le thé. Chaque article est pensé pour améliorer l'expérience de dégustation.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment déterminez-vous le &#34;prix&#34; de chaque produit sur votre site ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre prix reflète la qualité, l'origine, et la rareté des thés que nous proposons. Nous veillons à offrir un excellent rapport qualité-prix pour nos clients",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les prix sur le site sont-ils tous en CAD ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, tous les prix indiqués sur notre site sont en CAD pour faciliter la compréhension et la transparence pour notre clientèle principalement canadienne.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des fluctuations de prix en fonction des saisons ou des promotions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix peuvent varier selon les promotions saisonnières ou les offres spéciales que nous proposons. Il est toujours bon de vérifier notre site régulièrement pour les dernières mises à jour ouy s'inscrire à notre newletter.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What kinds of tea are featured in this collection? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "The collection features a range of teas including Earl Grey, green teas, herbal blends, and more.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the average price for the teas in this range? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Prices vary depending on the blend and size, but they start as low as $9.80 and go up to $52.30.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are these teas suitable to be given as a gift? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! These sustainable teas make perfect gifts, especially for those who appreciate eco-friendly products.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I buy a set or sampler of these teas? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "While each product is listed individually, you can easily create your own set or sampler by adding multiple teas to your cart.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a sale going on for these teas? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, many of these teas are currently on sale with up to 25% off!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you offer any green tea options in loose leaf form? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, options like the &#34;BB Detox&#34; and &#34;Spearmint green tea&#34; are available as loose leaf green teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are all teas available in loose form instead of tea bags? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Most of the teas in this collection are available in loose form, promoting plastic-free and sustainable packaging.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How can I view the total range of products available in the shop? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Simply scroll through the product listing page (PLP) to view the total collection of sustainable teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any herbal tea blends in this collection? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, there are several herbal blends available, such as the &#34;Detox&#34; which includes green tea, yerba mate, and lemon.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "If I find a tea I like, how do I add it to my cart? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Just click on the &#34;ADD TO CART&#34; button below the product you wish to purchase.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a box or regular packaging option if I want to gift a tea? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "While many teas come in refill bags, products like &#34;Tchaï of the Tiger&#34; are available in a loose tea tin, making it a great gifting option.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

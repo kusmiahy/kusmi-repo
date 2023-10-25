@@ -1,0 +1,146 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What is included in the Wellness Gift Set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Wellness Gift Set offers 24 premium tea bags that include a mix of green teas, mate, and black teas. Priced at C$25.90, it's a refreshing gift for any tea lover.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Does the Wellness Teas gift set come with an infuser?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, there's a version of the Wellness Teas gift set priced at C$31.99 that includes an infuser. It features a mix of green tea, mate, and herbal tea.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which tea sets come with an infuser?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Several sets, including the Wellness, Black Teas, Green Teas, and La Sélection Alain Ducasse gift sets, offer an included tea infuser.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How many tea bags does the Discover Kusmi Gift Set offer?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Discover Kusmi Gift Set includes 45 enveloped tea bags, offering an array of flavors and priced at C$44.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the price range of these tea gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The gift sets on this PLP page range from C$30 to C$60, offering a versatile selection for gifting.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any tea sets exclusively focused on green tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Green Teas gift set, priced at C$26.90 and C$31.99 (with an infuser), focuses exclusively on organic loose leaf green teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do any sets offer a mix of different types of teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Essentials gift set offers a mix of black, white, and green teas, letting one explore various flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How many varieties of the Wellness Teas gift set are available?",
+            })
+            @@include('./components/p.html', {
+                "texte": "There are multiple versions of the Wellness Teas gift set, with both priced at C$26.90 and another variant at C$31.99 that comes with an infuser.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any gift sets exclusively focused on black tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Black Teas gift set offers a deep dive into black tea, specifically organic loose leaf Earl Grey.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which tea sets are ideal for those new to tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Discover Kusmi Gift Set and the Essentials gift set are great for introducing someone to a variety of tea flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Where can I buy these premium tea products?",
+            })
+            @@include('./components/p.html', {
+                "texte": "You can purchase these premium tea products directly from our online shop. Each product is curated for quality and taste, ensuring you get the best for your money.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a list of all the teas available in the Essentials gift box?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, there's a detailed list available. The Essentials gift box includes a combination of organic black, white, and green teas, providing a comprehensive tea experience for enthusiasts.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm new to the world of teas; which product would be perfect for me?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Discover Kusmi Gift Box is ideal for newcomers. Priced at C$44.90, it includes 45 enveloped tea bags, giving you a broad introduction to various tea flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How do I know which product is in stock?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our online shop keeps an updated inventory list, ensuring real-time stock information for every tea box. This way, you're always informed before making a purchase.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

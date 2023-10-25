@@ -1,0 +1,183 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Looking for Christmas gifts on a budget? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Explore Kusmi's range of tea accessories, gift sets, and unique blends, perfect for budgets between $30 to $60. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's special about the Tsarevna organic black tea? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our limited-edition Tsarevna tea is a deliciously spiced Christmas blend, presented in an enchanted fair-themed tin this year.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Where can I find inexpensive gift ideas for men at Kusmi? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Check out our low-budget gift set aisle, featuring sets like the Earl Grey and the Detox gift set. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is it possible to benefit from Free shipping?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, if your order exceeds 60 dollars ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any caffeine-free gift options? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! The Kusmi Herbal teas gift set offers caffeine-free tea bags, priced at $38.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How much is the La Sélection Alain Ducasse gift set? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "This tea set, which comes with a tea infuser, is priced at $44.90. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What does the Afternoon Teas gift set offer? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "It provides loose leaf black and green teas with a tea infuser, priced at $34.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I introduce someone to Kusmi with a gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Definitely! The Collection gift set, which comes with a tea infuser, is a great introduction to our iconic Kusmi teas. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Looking for a gift for mate tea lovers?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Detox gift set from our low-budget gift set aisle is an excellent choice.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do the gift sets come with multiple samples? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes! Our loose leaf tea gift sets feature 5 different samples, offering a variety. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any gift sets with infusers? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes La sélection Alain Ducasse gift set.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "From the listed products above, which one would make a perfect gift to accompany a Christmas card? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "The &#34;Kusmi Tea Organic Advent Calendar&#34; would be a perfect gift to accompany a Christmas card, offering a festive touch and daily surprises leading up to the holiday.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which tea gift set has the highest price?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The most expensive gift set from the displayed products is the &#34;Tsarevna gift set&#34; priced at $49.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which gift from the displayed products specifically mention being &#34;organic&#34; tea? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The &#34;Kusmi Tea Organic Advent Calendar&#34;, &#34;Discover Kusmi Gift Set (Organic)&#34;, &#34;Organic Tsarevna gift set&#34;, and &#34;Kusmi Herbal teas gift set (Organic)&#34; all specifically mention being organic tea.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any gift from Kusmi that offer a variety of tea flavors or blends? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the &#34;Discover Kusmi Gift Set (Organic)&#34; and the &#34;Kusmi Herbal teas gift set (Organic)&#34; both offer a variety of tea flavors or blends.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "From the products listed, which gift set from Kusmi is the most expensive?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Lorem Ipsum",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which product from the list above has received a perfect 5-star rating? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The &#34;Kusmi Herbal teas gift set (Organic)&#34; has received a perfect 5/5 star rating. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/p.html', {
+                "texte": "A tea gift set is more than just a beverage; it's a warm embrace in a cup. Each sip of tea tells a story, evoking memories and emotions. Gifting tea is sharing a moment, an experience, and a tradition that spans cultures. There's truly no gesture as special as presenting someone with the rich tapestry of tea.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "If I order for 59 dollars can I have free shipping? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "No, free shipping is possible for orders exceeding 60 dollars ",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

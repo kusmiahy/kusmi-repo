@@ -1,0 +1,186 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What's in the Kusmi Tea Herbal Teas gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Kusmi Tea Herbal Teas gift set boasts a beautiful mix of organic teas including linden, hibiscus, and rooibos, priced at just C$ 25.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Looking for a refreshing organic tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Spearmint green tea, packed in a 100 g tea-filled tin, offers a rejuvenating experience for C$ 19.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's a recommended herbal tea with unique spices?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Glögg, an organic herbal tea, is a delightful mix of hibiscus with spices, presented in a 125 g tea-filled tin, priced at C$ 29.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which tea accessory helps measure the perfect amount of tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Copper Measuring Tea Spoon, priced at C$ 11.25, ensures you get the ideal amount of tea for brewing.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a tool for easy tea infusing?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Kusmi Tea Spoon Infuser, priced at just C$ 7.50, offers a hassle-free way to steep your favorite teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you have a timer to ensure the perfect brew?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our Sand timer, indicating 3-4-5 minutes, ensures your tea brews to perfection for the best flavor.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which tea has an invigorating combination of green tea and yerba mate?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Lovely Morning blend combines green tea with yerba mate and lemon, available in a 100 g tea-filled tin for C$ 21.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any matcha teas included in the under 30 C$ range?",
+            })
+            @@include('./components/p.html', {
+                "texte": "While our &#34;Gifts under 30 C$&#34; selection primarily focuses on various tea blends, we invite you to explore our dedicated matcha collection for premium matcha offerings.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which product would make the best gift for someone new to teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "For someone new to teas, the Kusmi Tea Herbal Teas gift set is a wonderful introduction to herbal teas, offering linden, hibiscus, and rooibos blends at a great price of C$ 25.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a sale on any of the teas listed?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our &#34;Gifts under 30 C$&#34; is a curated collection offering premium teas at competitive prices. While not on sale, these teas provide excellent value for their quality.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How can I be sure I'm getting the best price on your teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "We pride ourselves on offering premium teas at competitive prices. Rest assured, our curated &#34;Gifts under 30 C$&#34; selection offers some of the best-priced teas considering their organic quality.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any tea accessories that will complement these tea gifts?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! Our Copper Measuring Tea Spoon and Kusmi Tea Spoon Infuser are fantastic accessories that will enhance the tea-drinking experience and make for perfect add-on gifts.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm looking to shop for multiple tea gifts. Do you offer any bundles or sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, among our top picks is the Kusmi Tea Herbal Teas gift set. It's a well-curated collection, perfect for gifting. You can also mix and match individual teas to create your own gift bundles.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is the &#34;Gifts under 30 C$&#34; category a limited-time offer or a permanent feature on the shop?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The &#34;Gifts under 30 C$&#34; is a permanent feature, ensuring that our customers always have access to premium teas at an affordable price point.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "For someone who loves trying new flavors, which tea would you recommend as a gift?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The &#34;Tchaï of the Tiger&#34; blend, priced at C$ 28.99, is a unique blend of Indian tea with spices, making it an adventurous gift choice for those looking to explore new flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do any of the teas come in a special gift box?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, many of our curated teas, like the Kusmi Tea Herbal Teas gift set, come in beautifully designed boxes, making them perfect for gifting. These boxes not only ensure the tea remains fresh but also present a touch of elegance to your gift.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there any promotion where I can get free shipping or a free sample with my purchase?",
+            })
+            @@include('./components/p.html', {
+                "texte": "We often run promotions where customers can avail of free shipping on certain order values or receive free samples with their purchases. We recommend checking our website's promotion section or subscribing to our newsletter to stay updated on such offers!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "is it possible to customize a gift box with a selection of teas ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "While our teas have their designated packaging, we offer premium gift boxes that you can purchase separately. This way, you can create a personalized tea box with your chosen blends for a unique and thoughtful present.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How are the teas packaged inside the box to ensure freshness?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our teas are meticulously packed in airtight containers or sealed bags within the box, ensuring they retain their aroma and freshness. Whether you're gifting or indulging yourself, you can be confident of receiving the finest quality with every box.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

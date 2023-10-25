@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis nouveau aux thés Kusmi, quel coffret me recommandez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Kusmi Découverte est idéal pour vous. À 44,90 C$, il offre un mélange de thés et infusions pour vous faire découvrir la gamme Kusmi.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'en est-il du Coffret Les Bien-Être bio Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Ce coffret à 26,90 C$ est pour ceux qui cherchent une expérience bien-être. Avec du thé vert, du maté et des infusions, il est conçu pour détente et revitalisation.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les coffrets sont-ils tous bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, tous les coffrets mentionnés ici sont certifiés biologiques, garantissant une qualité et une production respectueuse de l'environnement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Peut-on offrir ces coffrets en cadeau ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument ! Ces coffrets sont parfaits pour les cadeaux grâce à leur emballage élégant et leur sélection de thés de qualité.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les thés en vrac nécessitent-ils un accessoire spécifique ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, il est recommandé d'utiliser une boule à thé ou un infuseur pour profiter au mieux de ces thés en vrac.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la durée de conservation de ces thés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Chaque coffret possède sa propre date d'expiration, mais en général, les thés bien conservés dans leurs emballages d'origine peuvent durer plusieurs années.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

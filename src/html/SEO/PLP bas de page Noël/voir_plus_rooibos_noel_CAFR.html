@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelles tisanes de Noël avez-vous disponibles ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nous avons une variété de tisanes, y compris Rooibos Vanille, Be Cool, et Lovely Night, parmi d'autres.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les thés sont-ils disponibles en sachets ou en vrac ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Kusmi Infusions offre des tisanes en sachets. Les autres sont disponibles en boîtes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les prix des tisanes présentées ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix varient; par exemple, Rooibos Vanille est à 19,90 C$, tandis que le Coffret Kusmi Infusions est à 44,90 C$.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Les tisanes sont-elles faites de feuilles entières ou sont-elles broyées ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos tisanes sont préparées à partir de feuilles de qualité, assurant une infusion parfaite.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des cadeaux ou des ensembles de tisanes pour les fêtes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Coffret Kusmi Infusions serait un excellent choix comme cadeau de Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "La tisane à la menthe est-elle disponible ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Parmi les options présentées, nous n'avons pas de tisane spécifiquement à la menthe, mais nous avons d'autres variétés délicieuses.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est votre thé noir le plus populaire pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Dans cette sélection, tous sont des Rooibos et tisanes, et non des thés noirs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-il possible d'acheter ces tisanes en vente ou y a-t-il des réductions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix sont tels qu'indiqués, mais nous avons parfois des promotions spéciales pendant la saison des fêtes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Le produit &#34;Winter Delight&#34; est-il épuisé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, actuellement, le produit &#34;Winter Delight&#34; est indisponible.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Où puis-je lire les reviews ou les avis des clients sur ces tisanes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Vous pouvez consulter les avis des clients sur notre site web sous chaque produit.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est ce que la livraison des produits est gratuite ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La livraison est offerte à partir d'achats de 70C$.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

@@ -1,0 +1,74 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the regular price for the Tsarevna (Organic) tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The regular price for Tsarevna (Organic) is C$ 31.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm interested in the Glögg (Organic) herbal tea. Can you tell me its price?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! The regular price for Glögg (Organic) herbal tea is C$ 31.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is the St-Petersburg (Organic) tea priced the same as the Anastasia (Organic) tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, both the St-Petersburg (Organic) and Anastasia (Organic) teas have a regular price of C$ 19.90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How does the price of the Organic Prince Vladimir tea compare to the regular teas featured?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Organic Prince Vladimir tea is priced at C$ 19.90, which is consistent with some of the other regular teas featured.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I noticed the Tsarevna Gift Set (Organic) on the page. Is its price higher than the regular Tsarevna (Organic) tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Tsarevna Gift Set (Organic) is priced at C$ 64.90, which is higher than the regular Tsarevna (Organic) tea priced at C$ 31.90, simply because the gift contains also a teapoty and an infuser,",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

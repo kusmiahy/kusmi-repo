@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour un cadeau de Noël, quelles options de thé blanc à moins de CHF 30 recommandez-vous ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre thé &#34;White Berries bio&#34;, associant fraise, mûre et cassis, est une excellente option de cadeau à CHF 25,00.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis à la recherche d'un thé vert comme cadeau de Noël. Quelles sont vos suggestions à moins de CHF 30 ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bien sûr, comme idées cadeaux, nous avons le &#34;Thé vert à la menthe bio&#34; à CHF 18,70 et &#34;Vert rose bio&#34; avec une touche de rose à CHF 19,95.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des infusions de fruits idéales comme cadeaux à moins de CHF 30 ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, l'&#34;AquaRosa&#34;, une infusion d'hibiscus aux fruits rouges, est une excellente idée de cadeau à CHF 19,95.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels thés noirs fruités à moins de CHF 30 me suggérez-vous comme cadeaux pour Noël ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Comme cadeaux, notre &#34;Quatre Fruits Rouges bio&#34; et &#34;Anastasia bio&#34; sont des choix parfaits à CHF 18,70 et CHF 19,95 respectivement.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite offrir une infusion sans théine comme cadeau. Avez-vous des suggestions à moins de CHF 30 ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pour un cadeau relaxant, nous proposons le &#34;Rooibos Amande&#34; et &#34;Rooibos Vanille&#34; à CHF 18,70 chacun.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des thés épicés à offrir en cadeau pour Noël, et qui coûtent près de CHF 30 ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le &#34;Winter Delight&#34; à CHF 19,95 est une infusion bio idéale comme cadeau, associant rooibos, épices et cacao.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

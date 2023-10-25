@@ -1,0 +1,114 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une idée de cadeau originale. Avez-vous des suggestions ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "R : Offrir une boîte de thé est toujours un choix délicieux pour toute occasion, que ce soit un anniversaire, Noël, la Saint-Valentin ou tout autre jour spécial !",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Depuis combien de temps Kusmi Tea existe-t-il ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea crée des recettes originales et emblématiques depuis 150 ans.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'est-ce qui rend Kusmi Tea unique ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos thés et infusions ont des saveurs originales, cultivés dans le monde entier dans les meilleures traditions et sélectionnés méticuleusement. Avec les mélanges de Kusmi Tea, vous offrez plus qu'un simple thé, c'est une expérience sensorielle authentique.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des coffrets cadeaux spéciaux ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument ! Par exemple, le Coffret Kusmi Originals peut vous transporter au cœur de la Russie.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelles sont les options classiques pour offrir du thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "R : Pensez au traditionnel Thé Vert à la Menthe ou au Darjeeling Makaibari. Ce sont des classiques que les amateurs de thé adorent.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des recommandations à faire aux gourmets ou à ceux qui recherchent quelque chose de différent ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos thés Rooibos sont parfaits pour ceux qui ont envie d'un goût unique et de changer d'air.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Et si je cherche un cadeau rafraîchissant ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Découvrez nos coffrets bien-être, en particulier les mélanges emblématiques comme le trio Détox.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Que diriez-vous d'un cadeau pour un connaisseur de thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Optez pour le coffret Thé Blanc Alain Ducasse, un thé blanc exquis enrichi d'arômes de framboise et de rose.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "D'autres gourmandises pour agrémenter l'expérience du thé ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Ne manquez pas nos délicieux sablés parfumés au thé pour un tea time parfait.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'ai besoin d'un cadeau pour un ami, un collègue ou un être cher. Kusmi Tea peut-il m'aider ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement ! Quel que soit votre besoin, notre sélection de cadeaux Kusmi Tea a quelque chose pour tout le monde.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

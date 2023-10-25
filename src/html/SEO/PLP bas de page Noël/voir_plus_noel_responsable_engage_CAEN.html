@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What types of tea are available as sustainable gifts from Kusmi Tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Kusmi Tea offers a variety of teas including green, black, and blended options, making them perfect for eco-friendly gifts.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How does the price of these sustainable teas compare to regular teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The price of sustainable teas may vary, but considering their eco-friendly nature and premium quality, they offer great value for money.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a set of loose leaf teas available for gifting?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, Kusmi Tea offers sets of loose leaf teas, allowing you to gift a variety of flavors to your loved ones.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any sale promotions available for these tea gifts?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea occasionally offers sales on their products. It's best to check their shop regularly or sign up for their newsletter to stay updated.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Why are green teas considered a popular choice for sustainable gifts?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Green teas are not only delicious but also have a lower environmental impact in their production, making them a favorite among eco-conscious consumers.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How does the taste of the loose leaf teas compare to regular teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Loose leaf teas tend to have a fresher and more authentic flavor profile compared to regular teas, enhancing the tea-drinking experience.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you suggest some top gifts from Kusmi Tea for this Christmas season?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Some top picks for Christmas include "Tchai of the Tiger", "Organic Prince Vladimir", and "BB Detox", among others.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Where can I read reviews on these sustainable tea gifts?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Reviews for these teas can be found on the Kusmi Tea shop website. It's a great way to see what other customers think before making a purchase.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any teas specifically curated as Christmas specials?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, Kusmi Tea often releases special Christmas blends, offering unique flavors perfect for the festive season.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Why should I consider loose leaf teas over tea bags for gifting?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Loose leaf teas are often more eco-friendly as they eliminate the need for tea bags, aligning with the sustainable gift theme.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How can I stay updated on the latest tea gifts and promotions from Kusmi Tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Subscribing to Kusmi Tea's newsletter or frequently visiting their shop is the best way to stay updated on the latest teas and promotions.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

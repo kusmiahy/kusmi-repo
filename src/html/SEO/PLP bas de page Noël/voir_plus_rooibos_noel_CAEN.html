@@ -1,0 +1,74 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What's the dominant flavor in Vanilla Rooibos tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our Vanilla Rooibos offers a creamy vanilla profile, creating a comforting organic herbal infusion perfect for chilly evenings.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm curious about Be Cool tea's ingredients.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Be Cool is a unique mix of herbal tea with verbena and a hint of licorice. A calming and sweet blend to relax with.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What makes Feel Zen a special choice?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Feel Zen combines Rooibos with apple and lemon balm. A soothing blend designed to bring tranquility to your cup.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you describe the Lovely Night tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Lovely Night is a serene blend of Rooibos, honeybush, and linden. It's the ideal organic tea for winding down during winter nights.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's included in the Kusmi Herbal teas gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "This organic set offers a curated selection of caffeine-free tea bags. The perfect gift for herbal tea enthusiasts seeking a variety.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

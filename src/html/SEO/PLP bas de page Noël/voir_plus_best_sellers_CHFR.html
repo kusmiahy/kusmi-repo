@@ -1,0 +1,58 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les produits étiquetés comme étant de nouvelles éditions pour la saison des fêtes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les produits étiquetés &#34;EDITIONS SPECIALES NOËL&#34; sont de nouvelles éditions pour les fêtes de fin d'année.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûte le Calendrier de l'Avent Kusmi Tea Bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;Calendrier de l'Avent Kusmi Tea Bio&#34; est vendu au prix de 48,85 Francs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des produits spécifiquement marqués comme biologiques ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, plusieurs produits portent le label &#34;BIO&#34;, indiquant qu'ils sont biologiques.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

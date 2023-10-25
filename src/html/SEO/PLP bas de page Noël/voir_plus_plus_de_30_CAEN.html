@@ -1,0 +1,162 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What's featured in the Collection tea gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our Collection tea gift set is a tea lover's dream! It includes a range of 15 diverse loose leaf teas, specially designed filters for the best brew, and a measuring spoon to ensure consistency in every cup.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How many teas are included in the Collection tea gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Collection tea gift set boasts 15 unique and delightful loose leaf teas, allowing one to explore a world of flavors and aromas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What accessories come with the Collection tea gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Alongside the selection of teas, the Collection gift set provides filters and a spoon to aid in brewing your perfect cup every time.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How much does the Collection tea gift set cost?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Collection tea gift set, complete with its assortment of teas and accessories, is priced at C$ 124.99.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's unique about the Gift set A journey with Ines?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Gift set 'A journey with Ines' is an organic treasure trove, featuring a sampler of 40 different organic tea bags, catering to a wide array of taste preferences.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How many tea bags are included in the Gift set A journey with Ines?",
+            })
+            @@include('./components/p.html', {
+                "texte": "This exceptional gift set includes a generous offering of 40 organic tea bags, each carefully curated for its distinct flavor and character.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is the Gift set A journey with Ines organic?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Every tea bag in 'A journey with Ines' is 100% organic, ensuring that you enjoy the purest and most authentic tea experience.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How much does the Gift set A journey with Ines cost?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The organic splendor of 'A journey with Ines', with its 40 diverse tea bags, is priced at C$ 71.99.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which gift set is ideal for someone new to tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Both sets cater to varied tastes. However, 'A journey with Ines' with its wide range of tea bags might be especially suitable for someone eager to explore different flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I gift the tea sets on special occasions?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, both our tea gift sets are beautifully packaged and make for exquisite gifts for birthdays, anniversaries, holidays, or any special occasion.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do I need additional equipment to brew the teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Collection tea gift set comes equipped with filters and a spoon. Just add hot water! For 'A journey with Ines', simply use a teapot or cup.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any limited-time teas in these gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our gift sets feature a carefully curated selection, which might include seasonal or limited-time teas. They're perfect for those looking to taste unique flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are the gift sets returnable?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Please refer to our return and exchange policy for details. We aim for complete customer satisfaction.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I customize the teas in the gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "While our gift sets come with a pre-selected assortment of teas, do explore our website for options to create custom tea collections or for any ongoing offers.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What makes these tea sets standout gifts for tea lovers?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our tea gift sets are meticulously curated to offer a comprehensive tea experience. They are not just products but thoughtful gifts that resonate with the heart of every tea enthusiast, reflecting sophistication and a genuine appreciation for quality.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "If I'm looking for premium gifts over 60 C$, are these sets a good choice?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Our tea gift sets are ideal gifts for those looking to spend over 60 C$. They not only exude luxury with their selection but also promise an unforgettable tea journey, making them perfect for those you wish to impress or treat.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

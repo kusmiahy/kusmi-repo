@@ -1,0 +1,146 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix moyen des coffrets pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Le prix varie en fonction du contenu et de la marque du coffret, mais vous pouvez consulter notre site pour les prix exacts de chaque coffret.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que ces coffrets peuvent être offerts comme cadeau pour d'autres occasions que Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument ! Bien qu'ils soient présentés comme des cadeaux de Noël, ces coffrets peuvent être de parfaits cadeaux pour d'autres fêtes aussi.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien de temps habituel la livraison prend-elle pour ces coffrets ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Habituellement, la livraison prend entre 3 à 5 jours ouvrés.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y aura-t-il des soldes sur ces coffrets après les fêtes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, il est possible que certains coffrets soient en solde après les fêtes, selon les stocks restants.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels produits sont inclus dans le coffret &#34;Les Essentiels&#34; ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le coffret &#34;Les Essentiels&#34; comprend une variété de thés noirs et thés verts. Consultez le descriptif produit pour plus de détails.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que je peux voir des avis des clients sur ces coffrets avant de faire un achat ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bien sûr ! Les avis des clients sont disponibles sur notre site, sous chaque description de produit.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "La boite du coffret est-elle réutilisable ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, la boite est conçue pour être robuste et élégante, vous pouvez donc la réutiliser comme vous le souhaitez.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il une collection spéciale de coffrets pour cette année ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, chaque année nous lançons une nouvelle collection de coffrets en fonction des tendances et des préférences de nos clients.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la politique de livraison pour ces coffrets pendant la période des fêtes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pendant les fêtes, nous nous efforçons de livrer dans les délais habituels, mais il est conseillé de commander à l'avance pour éviter tout retard.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment puis-je connaître la qualité des produits inclus dans le coffret ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "En plus des avis des clients, nous fournissons des détails sur la provenance et la qualité de chaque produit dans nos descriptions.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'offre le Coffret Les Essentiels ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il combine le meilleur des thés noirs et verts pour une dégustation variée. Quelle est la particularité du Coffret Les Bien-être ?",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Il contient un mélange de thé vert, maté et thé noir pour une expérience bien-être. Cherchez-vous une collection d'infusions bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre Coffret Kusmi Infusions bio offre un assortiment de tisanes en sachet. Qu'inclut le Coffret La Sélection Alain Ducasse ?",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "C'est un assortiment de thés bio natures avec une pince à thé élégante. À quoi s'attendre avec le Coffret Kusmi Découverte ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Ce coffret vous fera découvrir une variété de thés et infusions en sachet. Quelle est la spécificité du Coffret bio Les voyages d'Ines ?",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Il embarque pour un voyage gustatif avec des thés et infusions bio en sachet. Quel coffret recommandez-vous pour un amateur de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Les Essentiels est idéal pour ceux qui souhaitent savourer à la fois thé noir et thé vert.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

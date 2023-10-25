@@ -1,0 +1,87 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/p.html', {
+                "texte": "Certainly! As winter's icy grip takes hold, enveloping the world in its frosty embrace, a steaming cup of tea becomes a beacon of warmth and comfort. With every sip, the chill of winter retreats, replaced by a comforting warmth that spreads through every limb, creating a sanctuary from the cold. In the heart of winter's harshest days, tea stands as a steadfast companion, its steam rising like the breath of warmth against the cold, and its flavors offering a reprieve from the relentless chill outside.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I find something spicy in the collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, our Kashmir Tchai, Sweet Love, and Tchaï of the Tiger feature aromatic spices. Enjoy a kick of flavors, from cinnamon to a medley of Indian spices.<br><br>Pure herbal infusions: like Only Spices brings you the aromatic trio of fennel, licorice, and anise. Discover the perfect brew to complement chilly evenings. All in 3.5 oz tins, with selected variants in refill bags or different sizes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's special about our Rooibos? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our Rooibos selections come in both classic and flavored varieties like almond and vanilla. They're caffeine-free, making them perfect for evening sipping.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any with floral notes?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bouquet of Flowers N°108 boasts a floral essence paired with Earl Grey black tea. Its aromatic profile offers a fragrant and serene tea experience.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you share the ingredients and flavor profile of the Only Spices?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! It is crafted from organically grown ingredients including anise, fennel, licorice, cardamom, ginger, cinnamon, pepper, and cloves. The predominant flavor notes are aniseed, cardamom, fennel, and licorice.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you provide information about the &#34;White Anastasia&#34; blend?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! &#34;White Anastasia&#34; is a delicate white tea blend infused with the aromatic notes of bergamot. It comes in a 3.1oz loose tea tin, ensuring freshness and quality with every brew. This tea offers a refined and refreshing taste, perfect for those who appreciate the subtleties of white tea combined with the classic scent of bergamot.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which blend do you consider would be the best for the upcoming winter?",
+            })
+            @@include('./components/p.html', {
+                "texte": "It depends on people's preferences, but we would consider Almond Rooibos to be a good choice since it is rated 5 out of 5.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

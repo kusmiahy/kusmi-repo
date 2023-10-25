@@ -1,0 +1,194 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le cadeau idéal pour un amateur de thés bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret La Collection Alain Ducasse bio offre une variété de thés bio avec une cuillère, parfait pour une dégustation raffinée.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il une option pour les amoureux du thé blanc ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, Le Thé Blanc Alain Ducasse Bio à la rose est un choix élégant, disponible en recharge vrac de 120 g.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il un coffret avec un outil pratique ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument! Le Coffret La Sélection Alain Ducasse est livré avec une pince à thé, idéale pour une préparation facile.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche une théière de qualité, des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les théières en fonte IWACHU, notamment Arare et Kiku, sont réputées pour leur durabilité et leur capacité à conserver la chaleur.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Un thé pour le matin ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Petit déjeuner à l'Elysée bio est un mélange vivifiant de thé vert, maté et citron.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment garder mon thé chaud en déplacement ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Bouteille Isotherme 50Cl de QWETCH est la solution idéale pour savourer votre thé où que vous soyez.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il une option automatique pour préparer mon thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, la Théière automatique 1L Riviera & Bar Fujian est un appareil moderne avec verre trempé, garantissant une préparation optimale.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel thé serait parfait pour une soirée détente ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les Perles de Jade au Jasmin bio, un thé vert de Chine infusé au jasmin, sont apaisantes et aromatiques.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je suis amateur de thés épicés, une recommandation ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Les épicés, avec ses thés et infusions épicées, est parfait pour les amateurs de saveurs robustes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il un thé vert unique du Japon ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Matcha bio est un thé vert du Japon offert en boîte de 30 g, idéal pour les amateurs de saveurs authentiques.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la meilleure théière pour une grande quantité de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Théière fonte Arare 1,15L d'IWACHU est idéale, avec une capacité impressionnante et un filtre intégré.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pour une touche d'élégance à la table, quelle théière recommanderiez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Théière en porcelaine 1L Sonoko d'ASA SELECTION combine esthétique et fonctionnalité, parfaite pour impressionner vos invités.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Un thé noir exceptionnel dans la liste ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Thé noir du Népal, Jardin de Guranse bio est un choix délicat et raffiné pour les amateurs de thés noirs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il une offre spéciale actuellement ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les Perles de Jade au Jasmin bio sont actuellement offertes avec une remise de 25%, une occasion à ne pas manquer!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une théière au design floral, des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Théière fonte 0,55L Sakura d'IWACHU présente un design floral élégant, alliant beauté et fonctionnalité.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la particularité du Coffret Les épicés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret Les épicés rassemble une variété de thés et infusions épicées, parfaits pour ceux qui cherchent une explosion de saveurs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment mesurer précisément ma quantité de thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les coffrets Alain Ducasse, comme la Collection ou la Sélection, incluent des outils comme la cuillère ou la pince pour une mesure précise.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il un thé vert avec une touche exotique ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Matcha bio est un thé vert bio du Japon qui offre une expérience gustative unique, différente des thés verts traditionnels.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche un accessoire pour transporter mon thé, une idée ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Bouteille Isotherme 50Cl de QWETCH est non seulement élégante, mais elle conserve également la température de votre boisson, idéale pour les déplacements.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix moyen des thés proposés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix varient en fonction de la rareté et de la qualité, allant d'un thé à CHF 19,10 pour le Petit déjeuner à l'Elysée bio à CHF 236,30 pour la théière fonte Arare 1,15L",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

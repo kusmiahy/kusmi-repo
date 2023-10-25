@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What types of tea are available in the featured collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The featured collection offers a variety of teas, including black, green, and herbal, both in loose leaf and teabags.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How is the price of the limited edition teas compared to regular teas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The limited edition teas are specially curated and may have a slightly higher price than the regular teas due to their exclusivity.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are the teas available in tins or just as loose leaves?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Most of our featured teas are available in beautifully designed tins, ensuring freshness and making them perfect for gifting.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a sale currently ongoing for any of the products?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, some of our special edition teas are on sale. You can check the product listings for the discounted prices.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can customers buy the teas in teabags or only as loose leaves?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Customers have the option to choose between loose leaves and teabags for most of our featured products.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How do the reviews and ratings look for the limited edition collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our limited edition collection has received positive reviews and ratings from our customers. We encourage potential buyers to read through the customer feedback on our website.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a special gift set available in this collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we have curated gift sets in our special edition collection, perfect for tea enthusiasts and gifting during special occasions.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any teas in the Earl Grey variety in the featured selection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, our selection includes some variants of Earl Grey as part of the special edition teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How do I add a product to my cart?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Simply click on the ADD TO CART&#34; button next to the product of your choice, and it will be added to your shopping cart.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any promotions where customers can get a free product with their purchase?",
+            })
+            @@include('./components/p.html', {
+                "texte": "We occasionally run promotions offering free products or samples with certain purchase amounts. Keep an eye on our website for such deals!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I read the detailed reviews and ratings for each product?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Just click on the product of interest, and you will find detailed customer reviews and ratings for each item.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

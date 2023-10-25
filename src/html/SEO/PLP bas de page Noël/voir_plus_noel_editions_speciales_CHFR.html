@@ -1,0 +1,125 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelles idées de cadeaux de Noël avez-vous tirées des articles présentés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Nos articles vedettes présentent une gamme de thés de Noël en édition spéciale, parfaits pour les cadeaux de Noël des amateurs de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûte le calendrier de l'Avent de Kusmi Tea Bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Calendrier de l'Avent Kusmi Tea Bio est vendu au prix de CHF 48,85.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Existe-t-il des coffrets cadeaux comprenant plusieurs thés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Coffret Kusmi Découverte bio et &#34;Les Iconiques bio&#34; sont d'excellents choix avec une sélection de thés et d'infusions différents.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche une idée de cadeau de Noël unique. Que me recommandez-vous ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Calendrier de l'Avent Kusmi Tea Bio est un cadeau unique, offrant une surprise pour chaque jour précédant Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel est le prix du Tsarevna Bio par rapport à celui du Glögg (Infusion Bio) ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Tsarevna Bio et Glögg (Infusion Bio) sont tous deux vendus au prix de 28,75 CHF.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des cadeaux spécialement conçus pour les fêtes de l'Avent ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Calendrier de l'Avent Kusmi Tea Bio est un calendrier de l'Avent conçu pour célébrer l'approche de Noël avec une surprise quotidienne.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien de cadeaux sont répertoriés dans les éditions spéciales de Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il y a 22 idées cadeaux répertoriés dans les éditions spéciales de Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'ai un budget limité. Quelles sont les idées de cadeaux à moins de 30 CHF ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Glögg (Infusion Bio), le Tsarevna Bio et le Coffret Les Iconiques bio sont tous proposés à moins de 30 francs.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Comment faire un choix dans la liste des cadeaux pour un ami qui aime l'art et le thé ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Pensez au Calendrier de l'Avent Kusmi Tea Bio ou au &#34;Kusmi Infusions bio&#34; pour un mélange d'art et de thé.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Pouvez-vous dresser la liste des 3 cadeaux les plus chers ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement ! Les 3 cadeaux les plus chers sont les suivants :",
+            })
+            <ul class="block__ul">
+                @@include('./components/li.html', {
+                    "texte": "Coffret La Collection Alain D. à CHF 74,05.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "Calendrier de l'Avent Kusmi Tea Bio à CHF 48,85.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "Coffret Kusmi Découverte bio à CHF 47,60.",
+                })
+            </ul>
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

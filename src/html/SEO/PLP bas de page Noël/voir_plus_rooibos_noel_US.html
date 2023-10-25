@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What type of tea is prominently featured in the Christmas herbal collection on the Kusmi Tea website? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: Rooibos.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How would you describe the &#34;Only Spices&#34; tea in terms of its ingredients? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: The &#34;Only Spices&#34; tea contains flavors of fennel, licorice, and anise.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Considering the holiday season, which product would be apt for someone looking for a Christmas-themed tea? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: The Christmas tea collection on the Kusmi Tea website would be perfect for someone looking for a festive blend.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What are the average reviews of the teas listed in the Christmas tea collection? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: The reviews vary, with ratings such as 4.86/5, 4.87/5, and 5.00/5, indicating a generally high customer satisfaction.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "If I'm interested in a tea with green ingredients for the holiday shop, which tea should I consider from the list? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: While the list doesn't specify any &#34;green&#34; ingredients, teas like &#34;Feel Zen&#34; with apple and lemon balm might be close to what you're looking for.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What are some of the unique blends or ingredients featured in the teas from this collection? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Answer: Some unique blends and ingredients include honeybush, linden, verbena, and licorice.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

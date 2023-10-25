@@ -1,0 +1,106 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Je veux offrir un coffret de thés et infusions bio. Des suggestions ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret bio Les voyages d'Ines est parfait à CHF 62,65.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche une théière en porcelaine pour un cadeau.",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Théière 1,1L en porcelaine de T.TOTEM à CHF 53,10 est un choix élégant.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des carafes à thé comme idées cadeau ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Carafe à thé EVE 1,25L de EIGENART à CHF 74,90 est sublime.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je souhaite offrir une bouteille isotherme stylée.",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Bouteille isotherme 60Cl de STELTON à CHF 43,70 est très chic.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est votre théière fonte la plus luxueuse comme idée cadeau ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "La Théière fonte 0,55L Sakura avec Filtre de IWACHU à CHF 123,80 est l'une des meilleures.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel cadeau recommandez-vous pour un budget autour de CHF 50 ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Mug de Voyage 50Cl ETNA de KAMBUKKA à CHF 48,80 est une excellente option.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des coffrets cadeaux spécifiques pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le Coffret La Sélection Alain Ducasse et le Coffret bio Les voyages d'Ines sont parfaits pour l'occasion.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je recherche une idée de cadeau durable.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les Bouteilles isothermes de QWETCH et STELTON sont non seulement élégantes, mais aussi durables.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel cadeau est idéal pour une personne qui aime les thés d'exception ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le Coffret bio Les voyages d'Ines avec ses thés et infusions bio en sachet à CHF 62,65 serait parfait.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

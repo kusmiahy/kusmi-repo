@@ -1,0 +1,115 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les principaux thés noirs présentés dans cette sélection ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Parmi les thés noirs, nous avons &#34;Kashmir Tchaï&#34;, &#34;Anastasia&#34;, &#34;Earl Grey Intense&#34;, &#34;Earl Grey&#34;, et &#34;St-Pétersbourg&#34;.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûte le thé &#34;White Berries bio&#34; en CHF ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Le thé &#34;White Berries bio&#34; est affiché à CHF 25,00.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'adore les thés avec des épices. Lequel me recommanderiez-vous parmi ces produits ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;Kashmir Tchaï bio&#34; et &#34;Label Imperial bio&#34; sont tous deux des thés avec des épices. Vous pourriez les apprécier!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que l'un de ces thés contient de la cannelle ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Oui, le &#34;Label Imperial bio&#34; contient des épices et de la cannelle.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Avez-vous des thés en sachets parmi cette sélection ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Les images montrent des boites de thé, probablement en vrac. Les sachets ne sont pas explicitement mentionnés.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les avis ou notes sur le &#34;Bouquet de Fleurs N°108 bio&#34; ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Je n'ai pas les avis ou notes actuels, mais c'est un thé earl grey avec fleur Ylang-Ylang, ce qui pourrait plaire à beaucoup!",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Lequel de ces thés serait le mieux pour une soirée détente ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "L'infusion &#34;Lovely Night&#34; avec rooibos, honeybush et tilleul pourrait être idéale pour une soirée détente.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien de boites de thés sont affichées avec un prix en-dessous de CHF 20,00 ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Plusieurs boites de thés sont affichées à un prix en-dessous de CHF 20,00, dont &#34;Kashmir Tchaï bio&#34;, &#34;Bouquet de Fleurs N°108 bio&#34;, &#34;Anastasia bio&#34;, &#34;Earl Grey Intense bio&#34;, &#34;Earl Grey bio&#34;, &#34;St-Pétersbourg bio&#34;",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Combien coûtent les thés verts de cette sélection en CHF ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le &#34;Label Imperial bio&#34; est un thé vert affiché à CHF 22,45.",
+            })
+        </section>
+        
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des infusions sans théine parmi ces produits ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, le &#34;Roiboos Amande&#34; et &#34;Lovely Night&#34; sont des infusions bio sans théine.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

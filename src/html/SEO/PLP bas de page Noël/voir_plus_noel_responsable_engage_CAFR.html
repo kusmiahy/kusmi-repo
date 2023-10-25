@@ -1,0 +1,130 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les avantages d'offrir un cadeau écolo pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Offrir un cadeau écolo est à la fois une belle idée pour faire palaisir et un geste responsable pour la planète.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "À quel prix sont proposés ces thés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Les prix varient selon le type de thé et la collection, mais ils sont tous abordables et représentent un excellent rapport qualité-prix.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Ces thés sont-ils disponibles sans sachets pour réduire les déchets ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolument ! Nous proposons ces thés en vrac, sans sachets, pour une expérience plus écologique.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-ce que ces produits sont disponibles à la vente en ligne ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, cette  collection de produits responsables est disponible à la vente en ligne pour faciliter vos achats de Noël.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Y a-t-il des accessoires écolos disponibles pour accompagner ces thés ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement ! Nous avons une gamme d'accessoires écolos, comme les infuseurs réutilisables, parfaits pour nos thés en vrac.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quelle est la meilleure idée de cadeau pour un amateur de thé soucieux de l'environnement ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Un cadeau de cette collections de produits serait parfait, combinant qualité et conscience environnementale.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Est-il possible d'ajouter une carte cadeau avec ma commande ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Oui, vous pouvez ajouter une carte cadeau personnalisée à votre commande pour rendre votre cadeau de Noël encore plus spécial.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Vos thés sont-ils en promotion pour Noël ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certains de nos thés ou sinon accessoires peuvent être en remise vous devez vérifier s'il y a une note précisant une remise en cours; sur la description du produit. Pour être informé des dernière remises et offres merci de vous inscrire à notre newlettre.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel thé évoque les saveurs épicées de l'Inde ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Tchaï of the Tiger est un thé noir bio aux épices d'Inde. Recherchez-vous un thé noir avec une touche sucrée ?",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "St-Pétersbourg bio allie le thé noir earl grey à des notes de caramel et de fruit. Quel thé représente la combinaison d'agrumes ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Prince Vladimir est un thé noir bio agrémenté d'agrumes.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Cherchez-vous une option detox bio ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "BB Detox combine thé vert, maté et pamplemousse pour une sensation rafraîchissante.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quel thé est offert sans théine mais avec des agrumes ? Earl Grey déthéiné aux agrumes est disponible en recharge vrac de 100 g.",
+            })
+            @@include('./components/p.html', {
+                "texte": "Existe-t-il un thé noir bio avec du citron ? Anastasia bio est un thé noir earl grey rehaussé de citron.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->
