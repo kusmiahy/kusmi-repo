@@ -1,0 +1,122 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What accessories can I get for under €20? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "We offer the Tea Spoon Infuser at €4,90, Steel Mesh for €8,90, Sand timer at €14,90, Tea Ball for €6,00, Permanent tea filter at €8,50, Spoon infuser for €7,90, a Tea spoon priced at €7,50, and the Copper Measuring Tea Spoon for €7,50.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which black teas are available under €20? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our range includes Earl Grey, Earl Grey Intense, English Breakfast, Prince Vladimir, Earl Grey Polish blend N°18, Tchaï of the Tiger, Darjeeling N°37, Bouquet of Flowers N°108, Four Red Fruits, Anastasia, Troika, St-Petersburg, Ceylon OP, and Tsarevna. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you offer any green teas in this price range?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we have many of them as listed on the page, Sencha, Detox, Spearmint and many others. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any teas priced under €20?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! We offer AquaRosa, Almond Rooibos, Vanilla Rooibos, Be Cool, Glögg, Winter Delight, and Pu Erh, all within your budget. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What special flavors or blends are unique to Kusmi under €20?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Some distinct flavors include Green rose, White Berries, Petit déjeuner à l'Elysée, and Winter Delight. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you recommend any other unique teas under €20?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! We'd suggest trying our unique blends like Prince Vladimir, Ceylon OP, or St-Petersburg for a delightful tea experience.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you have any tools or accessories that can help me measure or brew my tea? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Copper Measuring Tea Spoon at €7,50, Spoon infuser at €7,90, and Sand timer at €14,90 are perfect for brewing the ideal cup of tea. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm a fan of fruity teas. Do you have any recommendations under €20?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Definitely! Four Red Fruits, AquaRosa, and White Berries offer delightful fruity notes, perfect for those who prefer a fruity infusion. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I often drink tea in the evenings and prefer non-caffeinated options. What do you suggest?",
+            })
+            @@include('./components/p.html', {
+                "texte": "AquaRosa, Almond Rooibos, and Vanilla Rooibos are caffeine-free, making them a great choice for evening relaxation.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm buying winter delight as a gift for one of my relatives who adores tea, can I leave her a kind message with it ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes absolutely, at Kusmi Tea we want each gift to be a heartwarming surprise so we help you to make your gift even more special a custom message in a cute gift card.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I would like to offer my mother a tea gift set? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "On this page there is no tea gift set, however you can check our best tea gift sets by clicking on &#34;gift sets and samplers&#34; on the top of the page.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

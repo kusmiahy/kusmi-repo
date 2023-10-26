@@ -1,0 +1,66 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What does the &#34;Gift Set - Tweezers & Teaspoon + 100g BB Detox Box&#34; contain?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Priced at €27.90, this set combines handy tools with a refreshing BB Detox tea.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you describe the &#34;Earl Grey Teas Gift Set&#34;?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A specialized set offering 24 tea bags of our signature black teas, predominantly Earl Grey.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How luxurious is the &#34;Gift Set - Nomadic Tea Pot 32cl + 100g Aqua Rosa Box&#34;?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Priced at €42.90, this set provides a nomadic tea pot and our Aqua Rosa tea, ensuring elegance on the go.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What stands out in the &#34;Organic Tsarevna gift set&#34;?",
+            })
+            @@include('./components/p.html', {
+                "texte": "It's a luxurious pairing of organic black tea and an isothermal bottle, perfect for tea lovers who appreciate quality and convenience.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->
