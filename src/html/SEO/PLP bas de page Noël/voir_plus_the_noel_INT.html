@@ -1,0 +1,162 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "For those who enjoy classic blends during the holiday season, which Kusmi Tea offers the traditional flavors of organic black tea paired with bergamot?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21641A1120')$\"\>Earl Grey (Organic)</a> Kusmi Tea is a delightful choice.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "As Christmas approaches, many tea enthusiasts look for robust flavors. Which variant of the Kusmi <a href=\"$url('Product-Show','pid','21641A1120')$\"\>Earl Grey</a> series <span class='hide__text hide__fadeout'>adds a zesty touch of lemon to its composition?</span> <span class='hide__cta hide__cta--view-more'>See more</span>",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Earl Grey Intense (Organic)</a> Kusmi Tea captures that zest with <a href=\"$url('Search-Show','cgid','bergamote')$\"\>bergamot</a> and <a href=\"$url('Search-Show','cgid','citron')$\"\>lemon</a>.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "The holidays are a time for relaxation and tranquility. Which herbal blend from Kusmi offers a soothing combination of <a href=\"$url('Search-Show','cgid','rooibos')$\"\>Rooibos</a>, honeybush, and linden?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21703A1050')$\"\>Lovely Night (Organic herbal tea)</a> Kusmi Tea is perfect for serene evenings.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "To bring a twist to traditional holiday brews, which tea combines the classic <a href=\"$url('Product-Show','pid','21641A1120')$\"\></a>Earl Grey with a hint of <a href=\"$url('Search-Show','cgid','orange')$\"\>orange</a>?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21642A1070')$\"\></a>Organic Prince Vladimir Kusmi Tea offers this delightful fusion.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Rose flavors are reminiscent of blooming gardens, even during winter. Which Kusmi Tea allows one to reminisce summer during the Christmas season?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Green rose (Organic)</a> Kusmi Tea provides that summer touch.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "For those who desire a richer, dessert-like tea for their holiday table, which Kusmi blend brings together <a href=\"$url('Product-Show','pid','21641A1120')$\"\>Earl Grey</a>, caramel, and berry?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>St-Petersburg (Organic)</a> Kusmi Tea is a perfect blend.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "During the festive season, spices become a staple in many dishes. Which tea offers a robust blend of <a href=\"$url('Search-Show','cgid','indien')$\"\>Indian</a> black tea with spices?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Tchaï of the Tiger (Organic)</a> Kusmi Tea provides a spicy kick.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Nothing says Christmas like a warm blend of spices and cinnamon. Which <a href=\"$url('Search-Show','cgid','vert')$\"\>green tea</a> variant from Kusmi encapsulates this festive feeling?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Imperial Label (Organic)</a> Kusmi Tea embodies the holiday spirit.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Flowers often brighten up Christmas décor. Which Kusmi Tea incorporates <a href=\"$url('Product-Show','pid','21641A1120')$\"\>Earl Grey</a> with flowers for a floral sip during the holidays?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Bouquet of Flowers N°108 (Organic)</a> Kusmi Tea is your floral haven.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "While many opt for tins, which spicy Kusmi Tea offers the convenience of a refill bag for a seamless holiday experience?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21703A1050')$\"\>Kashmir Tchai</a> Kusmi Tea is available in a refill bag.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Vanilla notes often accompany holiday desserts. Which <a href=\"$url('Search-Show','cgid','rooibos')$\"\>rooibos tea</a> from Kusmi offers this vanilla touch for a comforting brew?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21666A1070')$\"\>Vanilla Rooibos</a> (herbal tea) Kusmi Tea is an ideal match.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "With the snow falling, which luxurious Kusmi Tea offers the lightness of white tea perfect for a white Christmas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21666A1070')$\"\></a>White Berries Kusmi Tea sets the mood.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Citrus is often associated with festive treats. Which Kusmi Tea combines <a href=\"$url('Product-Show','pid','21641A1120')$\"\>Earl Grey</a> black tea with refreshing citrus notes?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The <a href=\"$url('Product-Show','pid','21666A1070')$\"\>Troika</a> Kusmi Tea offers a zesty sip.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Red berries bring festive colors and flavors to the holiday table. Which Kusmi Tea provides a rich combination of black tea and red berries?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Four Red Fruits Kusmi Tea is your berry delight.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Considering a Christmas gift that encapsulates the essence of winter spices, which Kusmi set offers a curated collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Spices Tea Bags Gift Set Kusmi Tea is the perfect holiday present.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I have free samplers of your products ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "If you order from our online store and you check the &#34;I agree to receive samples with my order&#34; box, you agree to receive at least two (2) free samples in your order. Perfect to taste new recipes...or to share your favorite blends with your loved-ones! <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

@@ -1,0 +1,154 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What kind of tea gifts do you have over €30? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: We have a luxurious range including The Collection gift set, Nami cast iron teapot, and more, perfect for those who appreciate premium tea products. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "How many teas are included in The Collection gift set? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Collection gift set includes 15 organic loose leaf teas, complete with filters and a spoon. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any reviews available for the La Sélection Alain Ducasse gift set? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the La Sélection Alain Ducasse gift set has received a rating of 4.17/5 based on customer reviews. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you offer any sales or discounts during Christmas for tea gifts? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, during Christmas, we often have special promotions and sales on select tea gift sets and items. Stay tuned for our festive offers! ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I love green teas. Do you have any special green tea gifts? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Our Matcha is an organic green tea from Japan, beautifully presented in a 30g tea-filled tin. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm looking for a gift set with a variety of teas. Any recommendations? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Gift set &#34;A journey with Ines&#34; would be a great choice. It includes a sampler of 40 organic tea bags. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can you tell me more about the flavoured teas in the gift sets? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our premium gift sets often include a mix of both classic and flavoured teas, allowing the recipient to explore a delightful range of aromas and tastes. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's the price of the Kiku cast iron teapot? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The Kiku cast iron teapot is priced at €99,00. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there free shipping available for the Serena Riviera & Bar electric kettle? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Shipping details vary based on location and promotions. You can check our shop details or contact our support for specifics about free shipping offers. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any herbal tea options in the premium gift sets? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, our premium gift sets often feature a variety of teas, including herbal blends for those who enjoy caffeine-free options. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I prefer tea bags over loose leaf. Are there any gift sets that cater to this preference? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! The Gift set &#34;A journey with Ines&#34; features 40 organic tea bags, making it perfect for those who prefer bagged teas. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How long is the sale on the Glass teapot OGO 1,20L going to last, as it's currently unavailable? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "The availability and sale periods can vary. It's best to check back frequently or sign up for notifications to stay updated on restocks and sale durations. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I read the reviews for the EVE tea pitcher before purchasing? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the EVE tea pitcher has received a 5.00/5 rating based on customer reviews. You can read them on our shop page to get insights from our tea-loving community. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What's the best time to enjoy the teas from the Gift set &#34;A journey with Ines&#34;? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Anytime is tea time! Whether it's a refreshing green tea in the morning, a soothing herbal in the evening, or a classic Earl Grey in the afternoon, this set has something for every moment. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is the Porcelain teapot 1L Sonoko suitable for brewing black teas? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, the Porcelain teapot 1L Sonoko is versatile and perfect for brewing both black and other varieties of teas. ",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

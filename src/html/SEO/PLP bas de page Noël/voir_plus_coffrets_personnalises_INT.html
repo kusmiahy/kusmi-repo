@@ -1,0 +1,138 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any discounts or sales available for the custom tea sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The provided details don't mention a sale currently. It's always a good idea to check the Kusmi Tea website for ongoing promotions or discounts. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How can I get more details about the Boost (Organic) tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: For more intricate details about the Boost (Organic) tea, you can click on the "Learn More" option next to the product. It provides in-depth information about the tea's profile, ingredients, and more. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there an option to get free samples with my 3 KusmiKubes gift set order?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: While the provided list doesn't specify free samples for this particular set, Kusmi Tea often has promotions. Checking the option to receive samples during checkout might entitle you to some delightful free teas. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm looking for a more expansive personalized tea gift. Is there an option larger than the 3 KusmiKubes gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Absolutely! You can opt for the "6 KusmiKubes gift set", allowing you to select six teas from a wide range of options, ensuring a completely customized experience. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How many products can I select for the 6 KusmiKubes gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: With the "6 KusmiKubes gift set", you can select up to six different teas, creating a custom gift set tailored to your preferences. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are the teas in the 6 KusmiKubes gift set organic?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Yes, all the teas listed, like the Green Ginger-Lemon and Earl Grey, are organic, ensuring a premium and healthy tea experience. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How is the taste profile of the St-Petersburg (Organic) tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The St-Petersburg (Organic) tea has received a rating of 4.67/5, suggesting a favorable taste profile and high customer satisfaction. You can click on the "Learn More" option for detailed flavor profiles. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a sale or discount available for the 6 KusmiKubes gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The provided details don't specify any ongoing sales. However, Kusmi Tea might have periodic promotions, so it's a good idea to check their website for any available discounts. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'd like to add the Boost (Organic) tea to my set. Can you share more details?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Certainly! The Boost (Organic) tea is available with 10 enveloped tea bags and has received an excellent rating of 4.93/5. It's priced at €6,00. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I want to gift a customized tea set for Christmas. Will the 6 KusmiKubes set be a good choice?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Absolutely! The 6 KusmiKubes gift set is designed for tea enthusiasts and allows for a detailed selection, making it an ideal personalized gift for Christmas. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are the teas in this set suitable for travel?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Yes, all teas in the 6 KusmiKubes gift set come in enveloped tea bags, making them convenient and travel-friendly. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there an option to get a free sample with the 6 KusmiKubes gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: The given details don't specify free samples with this set. However, Kusmi Tea often runs promotions, so always check during checkout or contact their customer service for sample options. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I mix and match teas from different categories in the 6 KusmiKubes gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A: Yes, you have the flexibility to select your preferred teas from the provided options, ensuring a personalized and diverse tea experience.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

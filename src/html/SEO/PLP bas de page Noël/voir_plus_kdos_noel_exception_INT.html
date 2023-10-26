@@ -1,0 +1,254 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the best green tea you have in your collection?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Our best-seller is the &#34;Petit déjeuner à l'Elysée&#34; which combines green tea with yerba maté and lemon for a refreshing taste.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm looking for a comprehensive tea gift set. Any recommendations?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! &#34;The Collection gift set&#34; is perfect for tea lovers. It comes with 15 loose leaf teas, filters, and a spoon.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm looking for a holiday gift for a tea lover. Does Kusmi Tea offer any advent calendars?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Kusmi Tea understands the joy of anticipation during the holiday season. For the ultimate tea lover, our specially curated advent calendar offers a delightful journey through our finest blends. Each day reveals a new flavour, making it the perfect way to countdown to the holidays and discover new favourites. It's a gift that keeps on giving, warming the heart and soul of any tea enthusiast.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm a fan of Alain Ducasse. Do you have any special tea selections associated with him?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we have the &#34;Le Thé Blanc Alain Ducasse&#34; and the &#34;La Sélection Alain Ducasse gift set&#34; which comes with a tea infuser. ",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the price of the La Collection Alain Ducasse gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The &#34;La Collection Alain Ducasse gift set&#34; is priced at €59,00.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What's the capacity of the Kiku cast iron teapot?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Kiku cast iron teapot has a capacity of 65Cl.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm searching for a tea with jasmine notes. Any suggestions?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Our &#34;Jasmine Jade Pearls&#34; is a great option that blends rolled Chinese green tea with jasmine.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What teas are included in the &#34;Gift set A journey with Ines&#34;?",
+            })
+            @@include('./components/p.html', {
+                "texte": "This set is a sampler containing 40 tea bags offering a variety of flavors.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any Matcha teas available for purchase?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we have an &#34;Organic Matcha&#34; green tea from Japan, but currently, it's marked as unavailable.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I heard about a special collaboration between KUSMI and ALAIN DUCASSE. Can you tell more about it?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Indeed! We have the exclusive &#34;ALAIN DUCASSE X KUSMI&#34; range which includes products like &#34;La Collection Alain Ducasse gift set&#34; and &#34;Le Thé Blanc Alain Ducasse.&#34;",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm in search of a gift set for the holidays. Any teas with spice notes?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Definitely! Our &#34;The Spices Tea Bags Gift Set&#34; offers a delightful assortment of spiced teas and herbal teas.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Do you have any teas sourced from the Guranse Tea Estate?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we offer a &#34;Nepalese black tea&#34; which is sourced directly from the Guranse Tea Estate.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which teapot would you recommend for a tea lover that values both function and aesthetics?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The porcelain teapots we carry, like the &#34;Porcelain teapot 1L Sonoko&#34;, combine both functionality with elegant design.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I prefer brewing loose teas. Are there any teapots with built-in filters?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainly! Products like our &#34;Sakura cast iron teapot&#34; and &#34;Kiku cast iron teapot&#34; come with built-in filters for convenient brewing.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How do your tea prices compare in terms of loose tea and tea bags?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The prices vary based on the tea type and its origin. For example, our &#34;Petit déjeuner à l'Elysée&#34; loose tea is priced at €17,90, while &#34;The Spices Tea Bags Gift Set&#34; is at €21,90.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there any special tea sets available for sale during the Christmas season?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, we have several options like the &#34;Gift set A journey with Ines&#34; and the &#34;The Collection gift set&#34;, perfect for gifting during the holiday season.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What makes the Kusmi Tea collections stand out as outstanding gifts for the holidays?",
+            })
+            @@include('./components/p.html', {
+                "texte": "The Kusmi Tea collections are carefully curated with a blend of tradition and innovation, making them outstanding gifts that both surprise and delight during the festive season.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm searching for outstanding gifts for my tea-loving friend this Christmas. Which Kusmi Tea products would you recommend?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea offers a range of outstanding gifts, from premium tea blends to beautifully designed accessories. Their Christmas collections are particularly festive and sure to impress any tea enthusiast.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How does Kusmi Tea ensure the quality of their outstanding gifts for Christmas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea is renowned for its dedication to quality. Each of their outstanding gifts, be it a tea blend or accessory, undergoes meticulous quality checks to ensure you're gifting nothing but the best.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can I personalize the outstanding gifts from Kusmi Tea to make them even more special?",
+            })
+            @@include('./components/p.html', {
+                "texte": "While Kusmi Tea already offers a curated selection of outstanding gifts, many choose to add a personal touch by pairing their tea choices with complementary accessories or a heartfelt note.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What feedback have customers given about the outstanding gifts from Kusmi Tea during the Christmas season?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Customers have consistently praised Kusmi Tea's outstanding gifts for their quality, presentation, and unique flavors. Many have mentioned that these gifts have become a treasured part of their holiday traditions.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "When it comes to the best quality teas, how does Kusmi Tea balance that with competitive pricing?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea prides itself on offering the best teas sourced from premium gardens worldwide. By maintaining close relationships with tea producers and optimizing its supply chain, Kusmi ensures top-notch quality without compromising on price, giving tea lovers the best value for their money.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I'm on a budget but want to gift the best from Kusmi Tea. Are there outstanding gifts available at a friendly price point?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely! Kusmi Tea offers a diverse range of products catering to various budgets. While their commitment to the best quality remains unwavering, you'll find outstanding gifts at different price points, ensuring you can share the magic of Kusmi Tea without breaking the bank.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Which flavour of Kusmi Tea is a crowd favourite and why?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Kusmi Tea boasts an array of exquisite blends, but some flavours inevitably stand out as favourites among our loyal customers. The choice of a favourite often depends on individual palates, but many gravitate towards our unique blends that harmoniously combine tradition with innovation. If you're looking for a universally loved flavour, we recommend trying our bestsellers or consulting with our in-store experts who can guide you based on popular choices.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "I've noticed in your home page, that Kusmi Tea has a new Advent calendar with a storybook theme. What's inside, and how does it reflect the fairytale ambiance?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely, Kusmi Tea's storybook-themed Advent calendar is a magical journey through the world of teas. Behind its 24 fairy-tale panels, it unfolds enchanting tales with each day. As you progress from one chapter to the next, you'll uncover a delightful array of surprises. These include:",
+            })
+            <ul class="block__ul">
+                @@include('./components/li.html', {
+                    "texte": "A diverse range of tea bags, spanning from rich black teas like Anastasia and Prince Vladimir to refreshing green teas such as Imperial Label and Green Ginger-Lemon. There are also exquisite white teas, including Tropical White and White Anastasia.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "For those seeking a relaxing sip, our theine-free organic herbal teas like AquaRosa and Feel Zen await.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "Two miniature loose tea tins bring festive joy with our iconic Christmas blends: Tsarevna and Glögg.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "The experience isn't just limited to teas; there's also a unique tea infuser designed like a fir tree to make your brewing sessions more whimsical.",
+                })
+                @@include('./components/li.html', {
+                    "texte": "And for a sweet touch, we've included a delectable jelly infused with our iconic Anastasia black tea.",
+                })
+            </ul>
+            @@include('./components/p.html', {
+                "texte": "This Advent calendar is a celebration of the fairytale world, allowing you to savor the festive season in the most charming way.",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->
