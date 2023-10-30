@@ -400,6 +400,12 @@ $gap-block-desk: 2rem;
             flex-direction: row-reverse;
         }
     }
+    .block__texte {
+        margin-bottom: 1rem;
+        @include min1024() {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .slider {
@@ -453,6 +459,7 @@ $gap-block-desk: 2rem;
             transition: transform .1s ease-in;
 
             &:hover {
+                border-radius: .25rem;
                 transform: scale(1.015);
             }
 

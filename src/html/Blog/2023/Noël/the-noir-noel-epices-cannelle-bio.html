@@ -10,11 +10,11 @@
 
 @import "./style/specific/2023/article_template_v2.scss";
 
-    Content asset : 
+    Content asset : the-noir-noel-epices-cannelle-bio
 
     Nom de la classe parent : noel_article_2023
 
-    Titre : 
+    Titre : noel_articles_2023
 
 -->
 
@@ -42,7 +42,7 @@
     }
 </style>
 
-<div class="noel_articles_2023">
+<div class="noel_article_2023">
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
@@ -52,7 +52,7 @@
     
                 "titre": "La cannelle bio :<br> ingrédient phare du thé",
                 "date": "Publié le <span class='date__color'>13/10/2023</span>",
-                "url-produit": "$url('Search-Show','cgid','nos_selections_cadeaux')$",
+                "url-produit": "$url('Search-Show','cgid','new')$",
                 "lien-categorie": "blog/?filter=christmas",
                 "tag-texte": "Noël",
     
@@ -150,10 +150,10 @@
                     })
                     @@include('.././_components/paragraphe.html', {
                         "class": "block__p",
-                        "texte": "Une infusion bio épicée hibiscus et cassis : le réconfort venu du Nord ! Adeptes de vin chaud ? On vous comprend si bien ! Chez Kusmi, nous avons réinventé cette recette noëlique en version 100% sans théine pour ravir tout le monde. <a class='banniere__link' href=\"\$url('Search-Show','cgid','21082A1070')$\"\>Le Glögg</a> est une infusion bio aux notes acidulées d’hibiscus et de cassis et aux envoûtantes saveurs de cannelle, de réglisse et de cardamome. On ne s’en lasse pas à l’approche de l’hiver et de Noël.<br>Vous l’aurez compris, <strong>la cannelle est synonyme de partage</strong>, de chaleureux repas de famille, de <strong>cocooning au coin du feu</strong> et de goûters entre amis. Une alliée parfaite pour entrer dans <strong>l’hiver et commencer à préparer Noël !</strong>",
+                        "texte": "Une infusion bio épicée hibiscus et cassis : le réconfort venu du Nord ! Adeptes de vin chaud ? On vous comprend si bien ! Chez Kusmi, nous avons réinventé cette recette noëlique en version 100% sans théine pour ravir tout le monde. <a class='banniere__link' href=\"\$url('Product-Show','pid','21082A1070')$\"\>Le Glögg</a> est une infusion bio aux notes acidulées d’hibiscus et de cassis et aux envoûtantes saveurs de cannelle, de réglisse et de cardamome. On ne s’en lasse pas à l’approche de l’hiver et de Noël.<br>Vous l’aurez compris, <strong>la cannelle est synonyme de partage</strong>, de chaleureux repas de famille, de <strong>cocooning au coin du feu</strong> et de goûters entre amis. Une alliée parfaite pour entrer dans <strong>l’hiver et commencer à préparer Noël !</strong>",
                     })
                 </div>
-                <a href="$url('Product-Show','pid','21081A1070')$" class="block__image">
+                <a href="$url('Product-Show','pid','21082A1070')$" class="block__image">
                     @@include('.././_components/image.html', {
                         "lien": "blog/articles/2023/blog_glogg.webp?$staticlink$",
                         "alt": "produit infusion glogg kusmi tea",
@@ -181,7 +181,7 @@
                     "cta": "En savoir plus",
                 })
                 @@include('.././_components/article.html', {
-                    "lien": "$url('Page-Show','cid','gingembre-epice-vertus-the-epice')$",
+                    "lien": "$url('Page-Show','cid','recette-buche-noel-matcha')$",
                     "lien-img": "blog/articles/2023/blog_buche.webp?$staticlink$",
                     "alt": "Cliquez pour accéder à l'article",
                     "titre": "Recette : Bûche de Noël glacée au matcha et au chocolat",

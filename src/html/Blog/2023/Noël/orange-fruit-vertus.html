@@ -1,0 +1,158 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : orange-fruit-vertus
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_vertues_de_l_orange.webp?$staticlink$",
+                "alt": "orange coupé sur un plateau avec un couteau gris sur le côté",
+    
+                "titre": "L’orange, un fruit aux multiples vertus ",
+                "date": "Publié le <span class='date__color'>23/01/2020</span>",
+                "url-produit": "$url('Search-Show','cgid','new')$",
+                "lien-categorie": "blog/?filter=Les-ingredients",
+                "tag-texte": "Les ingrédients",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Présente sur les étals tout au long de l’année, <strong>l’orange</strong> reste cependant un fruit hivernal, naturellement disponible dans nos contrées de décembre à avril.",
+            })
+        </section>
+        <article class="content content__img">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Elle fait partie <strong>des fruits les plus cultivés au monde</strong>, mais aussi des plus appréciés et consommés en France, avec la pomme et la banane. Envie d’en savoir un peu plus sur <strong>les vertus et bienfaits de cet agrume</strong> bien rond que nous affectionnons tant ?",
+            })
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Un agrume de luxe",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Ce n’est un secret pour personne, <strong>l’orange appartient à la famille des agrumes</strong>, comme le citron, le pamplemousse, la clémentine ou encore la bergamote . Elle s’en distingue cependant par sa taille et sa couleur, ainsi que par <strong>sa saveur à la fois sucrée et légèrement acidulée</strong>. Vraisemblablement originaire de Chine et précédée dans le temps par <strong>sa cousine l’orange amère</strong> (issue d’un autre type d’oranger, le bigaradier), <strong>l’orange douce</strong> fait son apparition en Europe autour du XVe siècle avec grand succès : <strong>ses bénéfices, sa douceur et son goût zesté</strong> séduisent tous les palais et notamment ceux des aristocrates et des rois, qui vont même jusqu’à faire bâtir des orangeries pour la cultiver dans des bacs. Avant de se démocratiser au milieu du XXe siècle, <strong>l’orange était un fruit de luxe</strong>, notamment considéré comme un magnifique cadeau de Noël. ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_peau_orange.webp?$staticlink$",
+                        "alt": "orange où on enlève la peau d'une manière circulaire",
+                    })
+                </div>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Une multitude de déclinaisons",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<strong>Cet agrume juteux</strong> offre de nombreuses possibilités d’utilisation. Délicieux nature, seul ou en salade de fruits, il agrémente aussi à la perfection les plats salés – des viandes aux poissons en passant par les légumes – comme sucrés (pensez entremets et autres pâtisseries). C’est aussi <strong>le fruit le plus consommé au monde</strong> sous la forme de jus. Le saviez-vous ? Pour cuisiner <strong>les quartiers d’ orange</strong> et les couper en ce que l’on appelle des « suprêmes », on les dénude de leur peau, mais aussi de la mince couche blanche et amère qui les entoure, baptisée pour sa part <strong>le « zist »</strong>. L’orange se marie harmonieusement à la menthe et aux fruits secs, comme les dattes et les pruneaux. Et que dire de son accord irrésistible avec le chocolat, notamment <strong>confite et déclinée en orangettes ?</strong> ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_planche_oranges.webp?$staticlink$",
+                        "alt": "plusieurs rondelles d'oranges sur une planche",
+                    })
+                </div>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Confite ou confiture, l’orange révèle ses bienfaits",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Pour réaliser <strong>ces fameux fruits confits</strong>, sous forme de tranches entières ou de bâtonnets, on prend bien soin de toujours conserver <strong>l’écorce de l’orange</strong>. Réputée <strong>pour ses nutriments et ses bienfaits</strong>, elle ajoute à la friandise une légère touche d’amertume qui s’équilibre délicatement avec le côté sucré des orangettes. <strong>L’écorce d’orange</strong>, également idéale pour fabriquer <strong>des marmelades</strong> et autres confitures (en prenant soin d’y laisser de succulents morceaux), peut elle aussi être utilisée sous différentes formes : juste séchée, râpée, réduite en poudre et même infusée. Irrésistible dans certains thés, elle vient sublimer <a class='banniere__link' href=\"\$url('Search-Show','cgid','noir')$\"\>le mélange Euphoria de Kusmi Tea</a> (accompagnée de maté et de chocolat), ainsi que <strong>le célèbre</strong> <a class='banniere__link' href=\"\$url('Product-Show','pid','21081A1070')$\"\>Tsarevna</a>, la recette de Noël emblématique de la maison (où elle est accompagnée de vanille, d’amandes et d’épices). Et si on mettait l’orange à l’honneur sur nos tables, pour vitaminer nos soirées festives et nous offrir un concentré de soleil en attendant le retour des beaux jours ? ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21081A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
+                        "alt": "produit infusion tsar kusmi tea",
+                    })
+                </a>
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bienfaits-thes-fruits-exotiques')$",
+                    "lien-img": "blog/fruits-exotiques-bienfaits1.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Bienfaits des thés et des infusions aux fruits exotiques",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-noir-vanille')$",
+                    "lien-img": "blog/vanille.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Thé noir et vanille, un mariage iconique ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bergamote-bienfaits-vertus')$",
+                    "lien-img": "blog/2022-04_ARTICLE_bergamote-2.png?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "À la découverte de la bergamote : bienfaits, vertus, préparation",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "L’orange, un fruit aux multiples vertus",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','orange-fruit-vertus')$",
+            })
+        </section>
+    </div>
+
+</div>

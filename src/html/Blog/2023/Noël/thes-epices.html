@@ -1,0 +1,202 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : thes-epices
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
+        display: none;
+    }
+    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
+        display: none;
+    }
+    .c-breadcrumb .product-breadcrumb {
+        display: none;
+    }
+    .c-article-banner {
+        display: none;
+    }
+    .c-article-text {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_thes_epices.webp?$staticlink$",
+                "alt": "vue de haut d'une tasse de thé en verre avec une étoile d'anis à l'intérieur et des amandes sur la table",
+    
+                "titre": "Tous les secrets sur les thés épicés",
+                "date": "Publié le <span class='date__color'>15/01/2020</span>",
+                "url-produit": "$url('Search-Show','cgid','new')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Fort d’un savoir-faire authentique de plus de 150 ans, Kusmi Tea a créé une large variété de <strong>mélanges épicés à base de thé noir</strong>, <strong>de thé vert</strong> ou <strong>de thé blanc</strong>, <strong>de rooibos</strong> ou <strong>de maté</strong>…",
+            })
+        </section>
+        <article class="content content__img">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Aux accents très subtils ou plus prononcés, <a class='banniere__link' href=\"\$url('Search-Show','cgid','the_epice')$\"\>nos thés épicés</a> ne laissent jamais indifférents.<strong> Cap sur ces thés épicés</strong> qui nous réchauffent et nous réconfortent.",
+            })
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Les épices : des ingrédients surprenants",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Le mot épice fait partie de ces termes dont le sens a beaucoup évolué au fil des époques. Étymologiquement, il provient du latin species, qui signifie de manière assez large une denrée, voire une marchandise. Mais dans son usage le plus courant, l’épice est utilisée pour aromatiser les plats ou les boissons, auxquels elle apporte une saveur à la fois puissante et subtile. Les épices peuvent être issues de diverses parties des végétaux : de leur écorce à leurs racines, en passant par leurs feuilles ou leurs graines. Nécessitant beaucoup de soleil, elles sont principalement cultivées dans les régions tropicales. Décidément bien étonnantes, les épices se marient parfaitement bien au thé ! ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tasse_the_epices_table_nappe_jaune.webp?$staticlink$",
+                        "alt": "tasse de thé avec des étoiles d'anis et des amandes sur la table vue de haut",
+                    })
+                </div>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Le thé et les épices, une alliance savoureuse",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "L’automne et l’hiver sont des saisons idéales pour déguster des thés aux épices. D’abord, car les épices nous apportent ce petit coup de peps qui nous encourage à lutter contre la baisse des températures et les jours qui raccourcissent. Ensuite, parce que ces mélanges s’unissent particulièrement bien aux plats hivernaux, gourmands ou mijotés. Enfin, les thés épicés sont souvent synonymes d’ambiance festive, de moments de partage autour d’un bon goûter ou au coin du feu. Certaines épices remplissent à merveille ces trois critères ! ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_cuilleres_epices.webp?$staticlink$",
+                        "alt": "plusieurs cuillères avec des épices (curry, paprika par exemple) sur les cuillères",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le thé au gingembre",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "C’est le cas du gingembre, qui a la particularité d’être cultivé pour son « rhizome », c’est-à-dire sa racine. Séché et broyé, le rhizome du gingembre se révèle véritablement savoureux. En plus, le thé au gingembre procurerait de nombreux bienfaits. Les antioxydants du gingembre et du thé s’uniraient notamment pour revitaliser l’organisme. Le thé au gingembre est idéal pour s’initier aux thés épicés. Le saviez-vous ? Il se marie également très bien à la cannelle. ",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Le thé à la cannelle",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Nous nous devons de citer l’incontournable cannelle, issue pour sa part de l’écorce intérieure du cannelier, un arbuste ressemblant à un laurier. Le thé à la cannelle présente lui aussi de bonnes vertus. Au-delà de ses antioxydants, la cannelle contiendrait des composées aux propriétés apparentées à l’insuline. Elle serait ainsi potentiellement favorable à la lutte contre le diabète. On peut applaudir. ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_ecorce_tropicale.webp?$staticlink$",
+                        "alt": "écorces de cannelles vue de haut",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le thé à la cardamome",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Moins connue, mais toute aussi délicieuse, la cardamome est elle aussi une plante à rhizome. Elle appartient d’ailleurs à la même famille que le gingembre. Cependant, ce n’est pas sa racine qui est utilisée, mais ses gousses, qui abritent des graines très odorantes. Plein de saveurs, le thé à la cardamome saura également vous surprendre par ses bienfaits sur la santé. Elle soulagerait ainsi efficacement les douleurs de la bouche et de la gorge. Elle apporterait aussi de la fraîcheur à l’haleine.  ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Le thé à l’anis",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Enfin, l’anis vert vient harmonieusement parfumer les mélanges de thé : l’anis, plante aromatique dont on utilise aussi bien les feuilles que les graines, au goût si caractéristique. Le thé à l’anis stimulerait les glandes digestives et lutterait contre les ballonnements. L’anis aiderait à dégager les mucosités obstruant les voies respiratoires. Retrouvez ces quatre excellents ingrédients dans les thés aux épices de Kusmi Tea. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21648A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_label_imperial.webp?$staticlink$",
+                        "alt": "Cliquer pour accéder au produit Label Impérial de Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les thés épicés de Kusmi",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Voici quelques exemples de recettes Kusmi Tea irrésistiblement épicées… La star de Noël n’est autre que Tsarevna, le thé aux épices de Noël signé Kusmi. Son parfum envoûtant provient de sa base de thé noir bio, de la profondeur de ses épices (gingembre, cardamome, cannelle et anis) et de la rondeur des écorces d’orange bio associées à la vanille, l’amande et la réglisse. Envie d’une petite dose de peps ? Sirotez Boost et son alliance parfaite entre maté, thé vert, cannelle, gingembre et cardamome. Pour un plongeon au cœur de l’histoire impériale, choisissez Prince Wladimir, un mélange créé en 1888 et associant thés noirs, agrumes, vanille et épices. Ou bien découvrez le thé aux épices Kashmir Tchaï, l’un des plus anciens mélanges de Kusmi, qui contient des épices, mais aussi des clous de girofle et du laurier. Sans oublier le légendaire Label Impérial, un thé vert subtil à base d’orange, de cannelle et de réglisse ! C’est le moment de pimenter vos tea-times ! Choisissez votre thé épicé préféré, il sera votre compagnon idéal au moins jusqu’au printemps prochain… et certainement bien plus longtemps encore. ",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-chai-epice-cardamome')$",
+                    "lien-img": "blog/cardamome.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Découvrez la cardamome, idéale dans le thé",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-chai-poivre-epice')$",
+                    "lien-img": "blog/poivre.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Le poivre, une épice associée au thé noir",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','gingembre-epice-vertus-the-epice')$",
+                    "lien-img": "blog/2022_03-VESTUS-gingembre.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Tout savoir sur le gingembre et ses vertus",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Tous les secrets sur les thés épicés",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','thes-epices)$",
+            })
+        </section>
+    </div>
+
+</div>
