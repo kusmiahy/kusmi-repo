@@ -1,0 +1,112 @@
+<style type="text/css">
+    /* /!\ À ne surtout pas toucher */
+    .l-promo-bar {
+        min-height: auto;
+    }
+
+    .l-promo-bar__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        z-index: 5;
+        height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        margin-bottom: 0;
+        animation: floatBar 15s linear infinite;
+    }
+
+    .l-promo-bar__text {
+        font-size: 0.7rem;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .l-promo-bar__text a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .l-promo-bar__text .text__desktop {
+        display: none;
+    }
+
+    @media screen and (min-width:1024px) {
+        .l-promo-bar__text .text__desktop {
+            display: block;
+        }
+
+        .l-promo-bar__text .text__mobile {
+            display: none;
+        }
+    }
+</style>
+
+<ul class="l-promo-bar__content">
+    <li class="l-promo-bar__text l-promo-bar__text--display">
+        <a class="text__mobile" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message MOBILE -->
+            <!-- Message 1 Message 1 Message 1 -> la longueur max sur mobile -->
+            <strong>Boîte à thé offerte</strong> pour l'achat de 300g de thé en vrac !
+        </a>
+        <a class="text__desktop" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message DESKTOP -->
+            <!-- Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1  -> la longueur max sur desktop -->
+            <strong>Boîte à thé offerte</strong> pour l'achat de 300g de thé en vrac !
+        </a>
+    </li>
+    <li class="l-promo-bar__text">
+        <a class="text__mobile" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message MOBILE -->
+            <!-- Message 1 Message 1 Message 1 -> la longueur max sur mobile -->
+            amet consectetur adipisicing
+        </a>
+        <a class="text__desktop" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message DESKTOP -->
+            <!-- Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1  -> la longueur max sur desktop -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat natus dolores
+        </a>
+    </li>
+    <li class="l-promo-bar__text">
+        <a class="text__mobile" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message MOBILE -->
+            <!-- Message 1 Message 1 Message 1 -> la longueur max sur mobile -->
+            Lorem, ipsum dolor sit
+        </a>
+        <a class="text__desktop" href="/fr/nos-thes-infusions">
+            <!-- Insérer ici le premier message DESKTOP -->
+            <!-- Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1 Message 1  -> la longueur max sur desktop -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat natus dolores
+        </a>
+    </li>
+</ul>
+
+<script>
+
+    // /!\ À ne surtout pas toucher
+    document.addEventListener('DOMContentLoaded', function () {
+        const promoMessages = document.querySelectorAll('.l-promo-bar__text');
+        let currentIndex = 0;
+
+        function showNextMessage() {
+            promoMessages.forEach((message, index) => {
+                if (index === currentIndex) {
+                    message.style.opacity = 1;
+                    message.style.height = '100%';
+                } else {
+                    message.style.opacity = 0;
+                    message.style.height = '0%';
+                }
+            });
+
+            currentIndex = (currentIndex + 1) % promoMessages.length;
+        }
+
+        showNextMessage();
+        setInterval(showNextMessage, 5000);
+    });
+</script>

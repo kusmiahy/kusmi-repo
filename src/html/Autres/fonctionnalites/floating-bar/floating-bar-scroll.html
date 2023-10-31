@@ -1,0 +1,174 @@
+<style>
+    @keyframes floatingScroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes floatingScrollInfinite {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    .l-promo-bar__content--3 {
+        --nbItem: 3;
+    }
+
+    .l-promo-bar__content--4 {
+        --nbItem: 4;
+    }
+
+    .l-promo-bar__content--5 {
+        --nbItem: 5;
+    }
+
+    .l-promo-bar__content--6 {
+        --nbItem: 6;
+    }
+
+    .l-promo-bar__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 20.5px;
+        margin-bottom: 0;
+        background-color: #9b090d;
+        position: relative;
+    }
+
+    .l-promo-bar__content::before {
+        content: "";
+        height: 100%;
+        width: 2vw;
+        position: absolute;
+        background: linear-gradient(90deg, #9b090d 0%, rgba(0, 0, 0, 0) 100%);
+        z-index: 2;
+        left: 0;
+    }
+
+    .l-promo-bar__content::after {
+        content: "";
+        height: 100%;
+        width: 2vw;
+        position: absolute;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #9b090d 100%);
+        z-index: 2;
+        right: 0;
+    }
+
+    .l-promo-bar__content .l-promo-bar__text {
+        position: absolute;
+        display: flex;
+        font-size: .8rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .l-promo-bar__content .l-promo-bar__text .l-promo-bar__item {
+        white-space: nowrap;
+        color: #fff;
+        width: 100vw;
+    }
+
+    .l-promo-bar__content .l-promo-bar__text .l-promo-bar__item--under {
+        text-decoration: underline;
+    }
+
+    .l-promo-bar__content .scroll {
+        left: 0;
+        animation: floatingScroll 25s linear 0s forwards;
+        text-align: center;
+    }
+
+    .l-promo-bar__content .scroll--2 {
+        left: calc((100vw) * var(--nbItem));
+        animation: floatingScrollInfinite 50s linear 0s infinite;
+        text-align: center;
+    }
+
+    .l-promo-bar__content .scroll--3 {
+        left: calc((100vw) * var(--nbItem));
+        animation: floatingScrollInfinite 50s linear 25s infinite;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .l-promo-bar__content .l-promo-bar__text .l-promo-bar__item {
+            width: calc((100vw / 3));
+        }
+
+        .l-promo-bar__content .scroll {
+            animation: floatingScroll 40s linear 0s forwards;
+        }
+
+        .l-promo-bar__content .scroll--2 {
+            left: calc(((100vw / 3) * var(--nbItem)));
+            animation: floatingScrollInfinite 80s linear 0s infinite;
+        }
+
+        .l-promo-bar__content .scroll--3 {
+            left: calc(((100vw / 3) * var(--nbItem)));
+            animation: floatingScrollInfinite 80s linear 40s infinite;
+        }
+    }
+</style>
+
+
+<style>
+    /* Couleur du texte */
+    .l-promo-bar__text {
+        color: #FFFFFF;
+    }
+</style>
+
+<ul class="l-promo-bar__content l-promo-bar__content--4">
+
+    <li class="l-promo-bar__text scroll">
+        <!-- Message 1 -->
+        <a href="" class="l-promo-bar__item body-03">Halloween Offer: Buy 3 Tins</a>
+        <!-- Message 2 -->
+        <a href="" class="l-promo-bar__item body-03">Eine Teedose geschenkt*</a>
+
+        <!-- Message 3 -->
+        <a href="" class="l-promo-bar__item body-03">Halloween Offer: Buy 3 Tins</a>
+        <!-- Message 2 -->
+        <a href="" class="l-promo-bar__item body-03">Eine Teedose geschenkt*</a>
+    </li>
+
+    <li class="l-promo-bar__text scroll--2">
+        <!-- Message 4 -->
+        <a href="" class="l-promo-bar__item body-03">Boîte à thé offerte pour l'achat de 300g de thé en vrac !</a>
+        <!-- Message 5 -->
+        <a href="" class="l-promo-bar__item body-03">Scoprite la nostra selezione di doni magici</a>
+
+        <!-- Message 6 -->
+        <a href="" class="l-promo-bar__item body-03">Boîte à thé offerte</a>
+        <!-- Message 2 -->
+        <a href="" class="l-promo-bar__item body-03">Il negozio di Natale Kusmi</a>
+    </li>
+
+    <li class="l-promo-bar__text scroll--3">
+        <!-- Message 7 -->
+        <a href="" class="l-promo-bar__item body-03">EINE TEEDOSE GESCHENKT* ab dem Kauf von 300g desselben losen
+            Tees</a>
+        <!-- Message 2 -->
+        <a href="" class="l-promo-bar__item body-03">Enjoy 4 refill bags of 100g for only C$ 60</a>
+
+        <!-- Message 8 -->
+        <a href="" class="l-promo-bar__item body-03">EINE TEEDOSE GESCHENKT* </a>
+        <!-- Message 2 -->
+        <a href="" class="l-promo-bar__item body-03">Free shipping from C$ 70</a>
+    </li>
+
+</ul>
