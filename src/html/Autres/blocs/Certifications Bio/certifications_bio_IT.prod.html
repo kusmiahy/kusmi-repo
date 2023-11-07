@@ -1,0 +1,117 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+
+    Content asset : 
+
+    Nom de la classe parent : certifs_bio_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .m-pdp__images-container {
+        position: relative;
+    }
+
+    .c-product-details__logos-bios {
+        display: none;
+    }
+
+    @media screen and (min-width:1024px) {
+        .c-product-details__logos-bios {
+            margin-bottom: 1rem;
+            height: 30px;
+            display: flex;
+            gap: .5rem;
+        }
+    }
+
+    .logos-bio__image {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .m-pdp__images-container__logos-bios {
+        position: absolute;
+        bottom: 0%;
+        right: 3%;
+        display: flex;
+        gap: 0rem;
+        z-index: 2;
+        height: 50px;
+        gap: .5rem;
+    }
+
+    .logos-bio__image {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    @media screen and (min-width:1024px) {
+        .m-pdp__images-container__logos-bios {
+            display: none;
+        }
+    }
+</style>
+
+<div class="certifs_bio_2023">
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./components/subtitle.html', {
+            "class-color": "title-wrapper__subtitle--green",
+            "texte-titre": "Le nostre certificazioni",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                "alt": "marchio biologico",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                "alt": "certificazione biologica europea",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                "alt": "certificazione agricoltura biologica",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./components/image.html', {
+                "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                "alt": "etichetta biologica usda",
+                })
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/certifs_bio.js
+-->

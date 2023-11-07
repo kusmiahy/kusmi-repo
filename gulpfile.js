@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.voir_plus_2023';
+var classParent = '.certifs_bio_2023';
 
 const {
     series,
@@ -78,6 +78,9 @@ const styleInject = require('gulp-style-inject');
 /* Inject JS in HTML */
 // https://www.npmjs.com/package/gulp-inject-in-html
 const injectJS = require('gulp-inject-in-html');
+
+// https://www.npmjs.com/package/gulp-strip-comments
+const htmlmin = require('htmlmin');
 
 
 

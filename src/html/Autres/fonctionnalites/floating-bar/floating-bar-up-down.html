@@ -1,0 +1,53 @@
+<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<style>
+    .l-promo-bar {
+        min-height: auto;
+    }
+
+    .splide__slide {
+        font-family: 'Barlow', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+</style>
+
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide font-barlow">Boîte à thé offerte pour l'achat de 300g de thé en vrac !</li>
+            <li class="splide__slide font-barlow">Scoprite la nostra selezione di doni magici</li>
+            <li class="splide__slide font-barlow">Enjoy 4 refill bags of 100g for only C$ 60</li>
+        </ul>
+    </div>
+</section>
+
+<script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            arrows: false,
+            direction: 'ttb',
+            autoplay: true,
+            height: '21px',
+            pagination: false,
+            speed: 1000,
+            easing: 'ease',
+            drag: false,
+            breakpoints: {
+                640: {
+                    height: '35px',
+                },
+            }
+
+        });
+        splide.mount();
+
+    });
+</script>

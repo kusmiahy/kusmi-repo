@@ -41,7 +41,7 @@ $title-size-desk: 1.5rem;
     padding-block-end: $padding-block-mob;
 
     @include min1024() {
-        padding-block-end: $padding-block-desk;
+        padding-block: 2.5rem 0;
     }
 
     &__title {
