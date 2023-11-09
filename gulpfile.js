@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.certifs_bio_2023';
+var classParent = '.black_friday_push_2023';
 
 const {
     series,

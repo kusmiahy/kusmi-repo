@@ -1,0 +1,70 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : dans Akineo
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+    <div class="popin">
+            @@include('./components/p-did-you-know.html', {
+                "texte": "At Kusmi Tea, we've chosen to add lemon balm extract to our formulation to concentrate all the benefits of this plant. Lemon balm is a unique plant, made up of numerous phytonutrients (tannins, flavonoids, etc.) and particularly rich in rosmarinic acid. This not only reduces anxiety, but also improves sleep quality. In fact, three separate clinical studies involving over 250 people concluded that lemon balm significantly reduced anxiety and stress, as well as sleep disorders. [2] [3] [4] <br>A 4th study showed a proven relaxing effect from 300 mg (i.e., one sachet of Rituel Sommeil) one hour after intake. [5] <br>Finally, a 5th study showed that 95% of subjects responded positively to treatment. Among them, 70% achieved complete remission for anxiety and 85% for insomnia. [6] <br>But not all lemon balm extracts are created equal! Rituel Sommeil offers a top-quality extract that guarantees just the right dose of rosmarinic acid.<br><span class='popin__open'>Click the link to access our sources</span>.",
+            })
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/p-did-you-know.html', {
+                    "texte": "<strong>Information sources:</strong>",
+                })
+                <ul>
+                    @@include('./components/li.html', {
+                        "texte": "[1] <a href='https://www.inserm.fr/dossier/sommeil/'>Sommeil · Inserm, La science pour la santé</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[2] <strong>Soltanpour A, Alijaniha F, Naseri M, Kazemnejad A, Heidari MR.</strong> Effects of Melissa officinalis on anxiety and sleep quality in patients undergoing coronary artery bypass surgery: A double-blind randomized placebo controlled trial. European Journal of Integrative Medicine, Volume 28, 2019, Pages 27-32",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[3] <strong>Heydari N, Dehghani M, Emamghoreishi M, Akbarzadeh M.</strong> Effect of Melissa officinalis capsule on the mental health of female adolescents with premenstrual syndrome: a clinical trial study. Int J Adolesc Med Health. 2018 Jan 25;31(3):/j/ijamh.2019.31.issue-3/ijamh-2017-0015/ijamh-2017-0015.xml.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[4] <strong>Haybar H, Javid AZ, Haghighizadeh MH, Valizadeh E, Mohaghegh SM, Mohammadzadeh A.</strong> The effects of Melissa officinalis supplementation on depression, anxiety, stress, and sleep disorder in patients with chronic stable angina. Clin Nutr ESPEN. 2018 Aug;26:47-52.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[5] <strong>Kennedy DO, Scholey AB, Tildesley NT, Perry EK, Wesnes KA.</strong> Modulation of mood and cognitive performance following acute administration of Melissa officinalis (lemon balm). Pharmacol Biochem Behav. 2002 Jul;72(4):953-64",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[6] <strong>Cases J, Ibarra A, Feuillère N, Roller M, Sukkar SG.</strong> Pilot trial of Melissa officinalis L. leaf extract in the treatment of volunteers suffering from mild-to-moderate anxiety disorders and sleep disturbances. Med J Nutrition Metab. 2011 Dec;4(3):211-218. ",
+                    })
+                </ul>
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Close",
+                })
+            </div>
+        </dialog>
+    </div>
+
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->

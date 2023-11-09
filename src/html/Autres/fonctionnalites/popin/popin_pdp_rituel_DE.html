@@ -1,0 +1,73 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : dans Akineo
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+    <div class="popin">
+            @@include('./components/p-did-you-know.html', {
+                "texte": "Bei Kusmi Tea haben wir uns dafür einschieden, einen Extrakt aus Melisse in unsere Rezeptur hinzuzufügen, um alle Vorteile dieser Pflanze zu bündeln. Die Melisse ist eine einzigartige Pflanze, die aus zahlreichen Phytonährstoffen (Tanninen, Flavonoiden...) besteht und besonders reich an Rosmarinsäure ist. Dadurch werden in erster Linie innere Unruhegefühle abgebaut, aber auch die Schlafqualität verbessert.<br>Drei separate klinische Studien mit mehr als 250 Personen kamen zu dem Schluss, dass Melisse zu einer deutlichen Verringerung von Unruhe und Stress sowie zu einer deutlichen Verringerung von Schlafstörungen führt. [2] [3] [4]<br>Bei einer vierten Studie wurde nachgewiesen, dass bereits 1 Stunde nach der Einnahme von 300 mg (d. h. 1 Beutel Schlaf-Ritual) eine entspannende Wirkung eintritt. [5]<br>Schließlich belegte eine fünfte Studie, dass 95% der Probanden positiv auf die Wirkung der Schlafkur reagierten. Von ihnen erreichten 70% vollständige Linderung der Angstzustände und 85% vollständige Besserung der Schlaflosigkeit. [6]<br>Jedoch sind nicht alle Melissenextrakte gleich! Einschlaf Ritual enthält einen qualitativ sehr hochwertigen Extrakt, der die richtige Dosis Rosmarinsäure verspricht.<br><span class='popin__open'>Klicken Sie auf diesen Link, um zu unseren Referenzen zu gelangen.</span>.",
+            })
+
+
+
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/p-did-you-know.html', {
+                    "texte": "<strong>Quellen:</strong>",
+                })
+                <ul>
+                    @@include('./components/li.html', {
+                        "texte": "[1] <a href='https://www.inserm.fr/dossier/sommeil/'>Sommeil · Inserm, La science pour la santé</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[2] <strong>Soltanpour A, Alijaniha F, Naseri M, Kazemnejad A, Heidari MR.</strong> Effects of Melissa officinalis on anxiety and sleep quality in patients undergoing coronary artery bypass surgery: A double-blind randomized placebo controlled trial. European Journal of Integrative Medicine, Volume 28, 2019, Pages 27-32",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[3] <strong>Heydari N, Dehghani M, Emamghoreishi M, Akbarzadeh M.</strong> Effect of Melissa officinalis capsule on the mental health of female adolescents with premenstrual syndrome: a clinical trial study. Int J Adolesc Med Health. 2018 Jan 25;31(3):/j/ijamh.2019.31.issue-3/ijamh-2017-0015/ijamh-2017-0015.xml.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[4] <strong>Haybar H, Javid AZ, Haghighizadeh MH, Valizadeh E, Mohaghegh SM, Mohammadzadeh A.</strong> The effects of Melissa officinalis supplementation on depression, anxiety, stress, and sleep disorder in patients with chronic stable angina. Clin Nutr ESPEN. 2018 Aug;26:47-52.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[5] <strong>Kennedy DO, Scholey AB, Tildesley NT, Perry EK, Wesnes KA.</strong> Modulation of mood and cognitive performance following acute administration of Melissa officinalis (lemon balm). Pharmacol Biochem Behav. 2002 Jul;72(4):953-64",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[6] <strong>Cases J, Ibarra A, Feuillère N, Roller M, Sukkar SG.</strong> Pilot trial of Melissa officinalis L. leaf extract in the treatment of volunteers suffering from mild-to-moderate anxiety disorders and sleep disturbances. Med J Nutrition Metab. 2011 Dec;4(3):211-218. ",
+                    })
+                </ul>
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Schließen",
+                })
+            </div>
+        </dialog>
+    </div>
+
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->
