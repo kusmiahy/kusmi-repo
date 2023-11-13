@@ -1,0 +1,61 @@
+<!-- Le style pour la pastille Rituel Immunitaire -->
+<style>
+    .m-pdp__video-content{max-width:100%;padding:0}.pastille-pdp__container{position:absolute;z-index:5;left:11%;top:2%;height:70px;width:70px}@media screen and (min-width:768px){.pastille-pdp__container{left:20%}}@media screen and (min-width:1024px){.pastille-pdp__container{left:3%;top:3%;height:90px;width:90px}}.pastille-pdp__container img{width:100%;height:100%;object-fit:contain}
+</style>
+
+<!-- Le style pour la pastille Rituel Sommeil -->
+<style>
+    .m-pdp__video-content{max-width:100%;padding:0}.pastille-pdp__container{position:absolute;z-index:5;left:11%;top:1%;height:70px;width:70px}@media screen and (min-width:768px){.pastille-pdp__container{left:20%}}@media screen and (min-width:1024px){.pastille-pdp__container{left:5%;top:3%;height:90px;width:90px}}.pastille-pdp__container img{width:100%;height:100%;object-fit:contain}
+</style>
+
+<!-- Javascript / c'est ici qu'il faut modifier les valeurs pour changer l'image de la pastille -->
+<script type="text/javascript">"use strict";
+    // C'est ici que le JavaScript est injecté
+    var jschecker; 
+    function init() {
+        if (jschecker = checkLoaded()) {
+            var e = function (e, i, t) {
+                var n = document.createElement("div");
+                n.classList.add("pastille-pdp__container"),
+                    n.innerHTML = '\n <img src="'.concat(i, '" class="pastille-pdp__container__image" alt="').concat(t, '"/>');
+                var c = document.querySelector(e); c && c.appendChild(n)
+            };
+            console.log("Script started"), document.addEventListener("DOMContentLoaded", function () {
+                // c'est ici qu'il faut changer le lien des images, le premier lien correspond au contenu fr et le deuxième lien au reste des pays en anglais
+                window.location.href.includes("com/fr") ? e(".m-pdp__images-container", "images/pdp/2023/rituel_immunitaire/picto-vitamine-c_FR.svg?$staticlink$", "Pastille Enrichi en vitamine C") : e(".m-pdp__images-container", "images/pdp/2023/rituel_immunitaire/picto-vitamine-c_EN.svg?$staticlink$", "Sticker enriched with vitamin C")
+            })
+        } else setTimeout(init)
+    }
+    function checkLoaded() {
+        return console.log("page is fully loaded"), !0
+    } init();
+</script>
+
+<!-- 
+FAQ Flemme Rituel à modifier dans le javascript de Rituel
+<script type="text/javascript">
+    "use strict"; var jschecker;
+    function init() {
+        if (jschecker = checkLoaded()) {
+            var i = function (e, i, c) {
+                var t = document.createElement("div");
+                t.classList.add("pastille-pdp__container"),
+                t.innerHTML = '\n <img src="'.concat(i, '" class="pastille-pdp__container__image" alt="').concat(c, '"/>');
+                var s = document.querySelector(e); s && s.appendChild(t)
+            };
+            console.log("Script started");
+            var t = document.querySelectorAll(".faq__question");
+            document.addEventListener("DOMContentLoaded", function () {
+                var e = window.location.href; t.forEach(function (e) {
+                    e.addEventListener("click", function () {
+                        console.log("click"),
+                            e.classList.contains("faq__question--toggled") ? e.classList.remove("faq__question--toggled") : e.classList.add("faq__question--toggled")
+                    })
+                }),
+                    e.includes("com/fr") ? i(".m-pdp__images-container", "images/pdp/2023/rituel_sommeil/pastille_melisse_fr.svg?$staticlink$", "Pastille Enrichi en extrait de mélisse") : i(".m-pdp__images-container", "images/pdp/2023/rituel_sommeil/pastille_melisse_en.svg?$staticlink$", "Sticker enriched with lemon balm extract")
+            })
+        } else setTimeout(init)
+    } function checkLoaded() {
+        return console.log("page is fully loaded"), !0
+    } init();
+</script> -->

@@ -4,7 +4,7 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
-        // =require specific/2023/popin.js
+        // =require specific/2023/certifs_bio.js
     } else {
         setTimeout(init);
     }
