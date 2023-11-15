@@ -1,0 +1,58 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : (code dans un content-slot)
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+
+<article class="popin_2023">
+    <div class="popin">
+        <div class="popin__p">
+            @@include('./components/p.html', {
+                "texte": "<u><b>Règlement 1 Calendrier offert par jour : </b></u>Pour plus d'informations veuillez cliquer sur <span class='popin__open'>ce lien</span>.",
+            })
+        </div>
+
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/title.html', {
+                    "texte": "Sources»",
+                })
+                
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Fermer",
+                })
+            </div>
+        </dialog>
+    </div>
+</article>
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->
