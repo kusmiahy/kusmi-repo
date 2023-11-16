@@ -1,0 +1,39 @@
+
+    <article class="hero">
+        <picture>
+            <source srcset="hero/2023/secret_santa/2023_11-secret-santa_HP.webp?$staticlink$" media="(min-width: 1023px)" />
+            <source srcset="hero/2023/secret_santa/2023_11-secret-santa_HP_TAB.webp?$staticlink$" media="(min-width: 767px)" />
+            <img src="hero/2023/secret_santa/2023_11-secret-santa_HP_MOB.webp?$staticlink$" alt="@@alt" />
+        </picture>
+        <div class="hero__container">
+            <div class="texte-container">
+                <div class="title-container">
+                    <h2 class="font-sophillia">
+                        @@title
+                    </h2>
+                    <h3 class="font-barlow">
+                        @@subtitle
+                    </h3>
+                </div>
+                <div class="price__container">
+                    <div class="price__subcontainer">
+                        <p class="font-barlows">@@prix</p>
+                        <div class="svg-container">
+                            <svg width="46" height="39" viewBox="0 0 46 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M46 0C46 21.5049 28.9229 39 7.92796 39H0L0 37.6971H7.92796C28.2201 37.6971 44.728 20.7883 44.728 0H46Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ctas-container">
+                <a class="cta" href="$url('Product-Show','pid','@@first-link')$">
+                    @@first-text-link
+                </a>
+                <a class="cta" href="$url('Product-Show','pid','@@second-link')$">
+                    @@second-text-link
+                </a>
+            </div>
+        </div>
+        
+    </article>
