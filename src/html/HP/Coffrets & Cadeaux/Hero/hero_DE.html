@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/coffrets_et_cadeaux.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="coffrets_et_kdos_hero_2023">
+    @@include('../components/slot.html', {
+        "alt": "Weihnachtskiste auf beigem Hintergrund. Klicken Sie auf eine Schaltfläche, um zu unserer Auswahl an Geschenkboxen und Geschenken weitergeleitet zu werden.",
+        "title": "Unsere Auswahl<span class='x-hide-mobile'><br></span>an Geschenksets",
+        "subtitle": "Lassen Sie sich von uns inspirieren!",
+        "link": "coffrets_et_cadeaux",
+        "text-link": "Jetzt entdecken",
+     })
+</section>

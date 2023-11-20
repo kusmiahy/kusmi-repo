@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/coffrets_et_cadeaux.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="coffrets_et_kdos_hero_2023">
+    @@include('../components/slot.html', {
+        "alt": "Coffret de Noël sur un fond beige. Cliquez sur un bouton pour être redirigée vers notre sélection de coffrets et cadeaux",
+        "title": "Notre sélection<span class='x-hide-mobile'><br></span>de coffrets & cadeaux",
+        "subtitle": "Laissez-nous vous inspirer !",
+        "link": "tous_nos_coffrets",
+        "text-link": "Je découvre",
+     })
+</section>
