@@ -1,32 +1,62 @@
-<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 
 <style>
     .l-promo-bar {
         min-height: auto;
+        /* Pour modifier le fond de la header-promo / floating-bar c'est ici */
+        /* background-color: #93173B; */
     }
 
     .splide__slide {
-        font-family: 'Barlow', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* Pour modifier la couleur du texte c'est ici */
         color: white;
     }
+
+    @media screen and (max-width:768px){.hide-mobile{display:none}}@media screen and (min-width:769px){.hide-desktop{display:none}}
 </style>
 
 <section class="splide" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
         <ul class="splide__list">
-            <li class="splide__slide font-barlow">Boîte à thé offerte pour l'achat de 300g de thé en vrac !</li>
-            <li class="splide__slide font-barlow">Scoprite la nostra selezione di doni magici</li>
-            <li class="splide__slide font-barlow">Enjoy 4 refill bags of 100g for only C$ 60</li>
+            <li class="splide__slide font-barlow">
+                <span class="hide-desktop">
+                    <!-- Wording mobile -->
+                    <strong>BLACK FRIDAY</strong> |  jusqu'à -50% sur une sélection exclusive & -10% dès 80€
+                </span>
+                <span class="hide-mobile">
+                    <!-- Wording desktop -->
+                    <strong>BLACK FRIDAY</strong> |  jusqu'à -50% sur une sélection exclusive & -10% dès 80€
+                </span>
+            </li>
+            <li class="splide__slide font-barlow">
+                <span class="hide-desktop">
+                    <!-- Wording mobile -->
+                    Livraison OFFERTE dès 35€ d'achat
+                </span>
+                <span class="hide-mobile">
+                    <!-- Wording desktop -->
+                    Livraison OFFERTE dès 35€ d'achat
+                </span>
+            </li>
+            <!-- Vous pouvez rajouter autant de messages que vous le souhaitez il suffit de copier/coller ce bloc et le décommenter en enlevant les <!--- -->
+            <!-- <li class="splide__slide font-barlow">
+                <span class="hide-desktop">
+                    Ce texte apparait sur mobile
+                </span>
+                <span class="hide-mobile">
+                    Ce texte apparait sur desktop
+                </span>
+            </li> -->
         </ul>
     </div>
 </section>
 
+<!-- à ne surtout pas modifier -->
 <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const splide = new Splide('.splide', {
@@ -45,9 +75,7 @@
                     height: '35px',
                 },
             }
-
         });
         splide.mount();
-
     });
 </script>

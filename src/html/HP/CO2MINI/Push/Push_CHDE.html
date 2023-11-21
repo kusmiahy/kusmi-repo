@@ -1,0 +1,37 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : co2mini_push_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Product-Show','pid','21215A1430')$" class="co2mini_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        <div class="push__image">
+            <img src="hero/2023/secret_santa/2023_11-secret-santa_PUSH.jpg?$staticlink$" alt="Coffret Tsarevna & Glögg sur un fond beige. Cliquez sur un des deux boutons pour être redirigé vers le coffret ou vers notre sélection Secret Santa">
+        </div>
+        @@include('../components/push.html', {
+            "texte-h2": "Weihnachtsangebot",
+            "texte-h3": "Für 3 gekaufte Sets, das 4. geschenkt*",
+            "texte-link": "Jetzt nutzen",
+         })
+         @@include('../components/price-container.html', {
+            "prix": "CHF 16,20",
+         })
+    </div>
+    
+</a>

@@ -73,7 +73,7 @@
                     text-align: left;
                     line-height: 1.1;
                     margin-bottom: 0;
-                    // color: #fff;
+                    color: #fff;
 
                     @include min768() {
                         font-size: 40px;
@@ -94,7 +94,7 @@
                     font-weight: 600;
                     letter-spacing: 0.325px;
                     text-align: left;
-                    // color: #fff;
+                    color: #fff;
 
                     @include min768() {
                         font-size: 20px;
@@ -186,7 +186,7 @@
                 width: auto;
                 line-height: 10px;
                 background-color: #141414;
-                // color: #fff;
+                color: #fff;
                 text-align: center;
                 font-size: 12px;
                 font-style: normal;

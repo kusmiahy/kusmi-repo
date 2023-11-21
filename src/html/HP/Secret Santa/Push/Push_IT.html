@@ -1,0 +1,38 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Product-Show','pid','21215A1430')$" class="secret_santa_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        <div class="push__image">
+            <img src="hero/2023/secret_santa/2023_11-secret-santa_PUSH.jpg?$staticlink$" alt="Scatola Tsarevna & Glögg su sfondo beige. Cliccate su uno dei due pulsanti per essere reindirizzati alla scatola o alla nostra selezione di Babbo Natale segreto.">
+        </div>
+        @@include('../components/push.html', {
+            "texte-h2": "Il nostro cofanetto di Natale a prezzi scontati",
+            "texte-h3": "Ideale per il tuo Babbo Natale segreto",
+            "texte-link": "Scopri ora",
+         })
+         @@include('../components/price-container.html', {
+            "prix": "12,90€",
+            "class": "",
+         })
+    </div>
+    
+</a>

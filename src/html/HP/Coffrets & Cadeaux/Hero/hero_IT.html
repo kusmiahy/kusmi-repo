@@ -20,11 +20,12 @@
 <!-- inject-style src="dist/css/main.min.css" -->
 
 <section class="coffrets_et_kdos_hero_2023">
-    @@include('../components/slot.html', {
-        "alt": "Coffret de Noël sur un fond beige. Cliquez sur un bouton pour être redirigée vers notre sélection de coffrets et cadeaux",
-        "title": "La nostra selezione<span class='x-hide-mobile'><br></span>di cofanetti e regali",
-        "subtitle": "Lasciati ispirare da noi!",
-        "link": "coffrets_et_cadeaux",
-        "text-link": "Scopri ora",
-     })
+    <a href="$url('Search-Show','cgid','coffrets_et_cadeaux')$">
+        @@include('../components/slot.html', {
+            "alt": "Scatola di Natale su sfondo beige. Fare clic su un pulsante per essere reindirizzati alla nostra selezione di scatole e regali",
+            "title": "La nostra selezione<span class='x-hide-mobile'><br></span>di cofanetti e regali",
+            "subtitle": "Lasciati ispirare da noi!",
+            "text-link": "Scopri ora",
+        })
+    </a>
 </section>

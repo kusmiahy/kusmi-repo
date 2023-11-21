@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : co2mini_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="co2mini_hero_2023">
+    @@include('../components/slot.html', {
+        "alt": "Cliquez sur les boutons pour être redirigée vers notre offre de Noël qu'on a faite pour vous",
+        "title": "Offre de Noël",
+        "subtitle": "Pour 3 coffrets achetés, le 4e offert",
+        "first-link": "21215A1430",
+        "first-text-link": "J'en profite",
+        "prix": "12,90 €",
+     })
+</section>
