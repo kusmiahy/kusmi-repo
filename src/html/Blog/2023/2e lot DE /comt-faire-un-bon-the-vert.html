@@ -1,0 +1,172 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : comment-ameliorer-sa-qualite-de-sommeil
+
+    Nom de la classe parent : blog_article_2023
+
+    Titre : Wie kann man grünen Tee selbst pflanzen? 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": ".webp?$staticlink$",
+                "alt": "",
+    
+                "titre": "Wie macht man einen guten hausgemachten grünen Tee? ",
+                "date": "",
+                "url-produit": "$url('Search-Show','cgid','vert')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Alle Grüntee-Aficionados träumen davon, die perfekte Kombination aus Wassertemperatur und Ziehzeit zu finden. Natürlich hängt dies alles von der Art des Grüntees ab, den Sie verwenden, aber auch von Ihrem persönlichen Geschmack. Hier sind unsere Geheimnisse für einen perfekt zubereiteten hausgemachten grünen Tee. ",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Welchen grünen Tee sollte man wählen? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zuallererst bestimmt die Wahl des Grüntees die Qualität Ihres Getränks. Bei Kusmi empfehlen wir Ihnen, sich für einen losen Bio-Grüntee zu entscheiden: <a href=\"$url('Product-Show','pid','21702A1050')$\"\>Sencha</a>, Genmaicha, Gyokuro, Bancha - jeder Grüntee hat seine Besonderheiten. Die Bezeichnung Bio garantiert Ihnen einen hochwertigen Tee ohne Pestizide.<br>Entdecken Sie hier unser <strong>Sortiment an Bio-Grüntees</strong> Made in Normandie!",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Welche Wassertemperatur braucht man für einen gelungenen grünen Tee?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der erste Schritt ist natürlich das Erhitzen von Wasser, aber schon bei diesem Schritt wird es kompliziert. Welche Temperatur soll es haben? Wie soll man sein Wasser aufheizen? Keine Panik, hier sind unsere kleinen Tipps. <br>Am besten benutzt man einen Wasserkocher, mit dem man schnell Wasser erhitzen kann. Um in einer Pause einen Tee zu trinken, ist dies die ideale Lösung. Einige <strong>Wasserkocher</strong> bieten die Möglichkeit, die Erhitzungstemperatur genau zu wählen. In diesem Fall sollten Sie sich für 80 °C entscheiden. Wenn Sie einen Wasserkocher ohne Thermostat oder einen Kochtopf verwenden, ist der ideale Zeitpunkt zum Abstellen des Wassers der, an dem kleine Bläschen am Boden des Gefäßes erscheinen, die Siedetemperatur. <br>Achtung, nicht vorher: Das Kochen sorgt dafür, dass das Kohlendioxid entweicht, dadurch wird Ihr Wasser weniger sauer und Ihr grüner Tee klarer. <br>Lassen Sie das Wasser dann einige Minuten stehen und geben Sie dann Ihre grünen Teeblätter aus dem Teebeutel oder aus loser Schüttung hinzu. Es ist wichtig, dass Sie Ihren Tee in simmerndem, aber nicht kochendem Wasser aufgießen. Auf diese Weise laufen Sie nicht Gefahr, die Qualität der Blätter zu beeinträchtigen oder die Vorteile des Getränks zu verlieren.  ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie lange sollte man seinen grünen Tee ziehen lassen? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dies ist ein wichtiger Schritt zum Gelingen Ihres Tees. Sie fragen sich, warum man Tee nicht zu lange ziehen lassen sollte? Weil sich, wenn grüner Tee zu lange zieht, sein Geschmack und Aroma ganz einfach verändert.<br>Wenn Sie sich für losen grünen Tee entschieden haben, geben Sie ihn in das Tee-Ei und geben es dann in Ihre Tasse. Lassen Sie den Tee ohne Umrühren ziehen, mindestens 2 Minuten und höchstens 5 Minuten, je nach Ihrem Geschmack. Seien Sie jedoch vorsichtig: Wenn Sie grünen Tee zu lange ziehen lassen, setzt er Bitterstoffe frei. Um die ideale Zeit für Ihre Vorlieben herauszufinden, müssen Sie ein wenig experimentieren: Das ist eine gute Ausrede, um noch öfter Tee zu trinken. Für einen ersten Versuch: Beachten Sie die Empfehlungen auf Ihrer Kusmi Tea-Packung. <br>Nehmen Sie anschließend den Tee heraus und lassen Sie es sich schmecken. JEder Grüntee eignet sich auch als Eistee-Variante gut.  ",
+                })
+                
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie dosiert man grünen Tee? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Auch hier ist alles eine Frage des Geschmacks. Die perfekte Dosierung schwankt zwischen 2 Gramm und 3 Gramm für eine Tasse. Sie sollten einige Tests durchführen, um das ideale Gramm für Ihren Geschmack herauszufinden. <br>Lust, es auszuprobieren? Hier sind unsere liebsten Grüntee-Rezepte! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Rezept für selbstgemachten grünen Tee mit Minze ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pfefferminztee ist der perfekte Snack für zwischendurch und erfreut den Gaumen vieler Menschen. Die Zubereitung ist jedoch eine Kunst für sich! Dazu benötigen Sie grünen Tee, einen Bund frische Minzblätter, Wasser und Zucker: ",
+                })
+                <ol class="block__ul">
+                    @@include('./components/li.html', {
+                        "texte": "Kochen Sie Wasser auf 80 °C.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Parallel dazu schneiden und waschen Sie die frischen Minzblätter. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Geben Sie 1 bis 2 Teelöffel grünen Tee in eine Teekanne und gießen Sie das Wasser auf. Passen Sie die Teedosis je nach Geschmack an. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Rühren Sie so, dass Sie alles vorsichtig vermischen. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Die Minzblätter hinzufügen. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Geben Sie je nach Vorliebe zwischen 1 und 3 Teelöffel Zucker hinzu. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Lassen Sie den Tee ziehen und genießen Sie ihn!",
+                    })
+                </ol>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Im Sommer werden Sie auch die <strong><u>eiskalte Variante</u></strong> als Eistee zu schätzen wissen! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Rezept für grünen Tee mit Zitrone ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dieses Rezept für grünen Tee mit Zitrone ist ein 100%iges Detox-Rezept! ",
+                })
+                <ol class="block__ul">
+                    @@include('./components/li.html', {
+                        "texte": "Kochen Sie Wasser auf 80 °C.",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Parallel dazu putzen und schneiden Sie 1 Zitronenscheibe. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Geben Sie 1 bis 2 Teelöffel grünen Tee in eine Teekanne und gießen Sie das Wasser auf. Passen Sie die Teedosis je nach Geschmack an. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Geben Sie 1 bis 2 Teelöffel grünen Tee in eine Teekanne und gießen Sie das Wasser auf. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "Probieren Sie! ",
+                    })
+                </ol>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Auch die Eistee version ist herrlich erfrischend! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Was ist mit Matcha-Tee? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<a href=\"$url('Search-Show','cgid','matcha')$\"\>Matcha-Tee</a> ist ein besonderer grüner Tee, da er zu einem sehr feinen Pulver zerkleinert wird. Matcha-Tee lässt man nicht ziehen. Wenn die Wassertemperatur gut ist, zwischen 70° und 80°, gießt man etwa einen Teelöffel Matcha auf und rührt sofort um. Wenn das Wasser die schöne Farbe des Tees angenommen hat, können Sie ihn genießen. Sehen Sie sich unser Tutorial an, wie Sie <strong>Ihren Matcha-Tee perfekt hinbekommen.</strong> ",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','')$",
+            })
+        </section>
+    </div>
+
+</div>

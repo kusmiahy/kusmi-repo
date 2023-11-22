@@ -16,21 +16,41 @@
         color: white;
     }
 
-    @media screen and (max-width:768px){.hide-mobile{display:none}}@media screen and (min-width:769px){.hide-desktop{display:none}}
+    .splide__slide a {
+        /* Pour modifier la couleur du texte c'est ici */
+        color: white;
+    }
+
+    @media screen and (max-width:768px) {
+        .hide-mobile {
+            display: none
+        }
+    }
+
+    @media screen and (min-width:769px) {
+        .hide-desktop {
+            display: none
+        }
+    }
 </style>
 
 <section class="splide" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide font-barlow">
-                <span class="hide-desktop">
-                    <!-- Wording mobile -->
-                    <strong>BLACK FRIDAY</strong> |  jusqu'à -50% sur une sélection exclusive & -10% dès 80€
-                </span>
-                <span class="hide-mobile">
-                    <!-- Wording desktop -->
-                    <strong>BLACK FRIDAY</strong> |  jusqu'à -50% sur une sélection exclusive & -10% dès 80€
-                </span>
+                <!-- insérer dans l'attribut href le lien  -->
+                <a href="">
+                    <span class="hide-desktop">
+                        <!-- Wording mobile -->
+                        <strong>BLACK FRIDAY</strong> | jusqu'à -50% sur une sélection exclusive & -10% dès 80€ <u>J'en
+                            profite</u>
+                    </span>
+                    <span class="hide-mobile">
+                        <!-- Wording desktop -->
+                        <strong>BLACK FRIDAY</strong> | jusqu'à -50% sur une sélection exclusive & -10% dès 80€ <u>J'en
+                            profite</u>
+                    </span>
+                </a>
             </li>
             <li class="splide__slide font-barlow">
                 <span class="hide-desktop">
@@ -43,13 +63,15 @@
                 </span>
             </li>
             <!-- Vous pouvez rajouter autant de messages que vous le souhaitez il suffit de copier/coller ce bloc et le décommenter en enlevant les <!--- -->
-            <!-- <li class="splide__slide font-barlow">
-                <span class="hide-desktop">
-                    Ce texte apparait sur mobile
-                </span>
-                <span class="hide-mobile">
-                    Ce texte apparait sur desktop
-                </span>
+            <!-- <li href="" class="splide__slide font-barlow">
+                <a href="">
+                    <span class="hide-desktop">
+                        Livraison OFFERTE dès 35€ d'achat
+                    </span>
+                    <span class="hide-mobile">
+                        Livraison OFFERTE dès 35€ d'achat
+                    </span>
+                </a>
             </li> -->
         </ul>
     </div>
