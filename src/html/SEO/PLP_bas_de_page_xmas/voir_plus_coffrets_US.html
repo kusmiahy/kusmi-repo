@@ -1,0 +1,74 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : coffrets-cat-landing-description-m 
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What makes a tea gift set a suitable present for Christmas?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Tea gift sets are a thoughtful and elegant present for Christmas, appealing to those who enjoy warm, comforting beverages during the winter season. They often come in festive packaging and can include a variety of flavors suited for the <span class='hide__text hide__fadeout'>holiday mood, making them a delightful and versatile gift.</span> <span class='hide__cta hide__cta--view-more'>See more</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Can tea gift sets cater to different taste preferences?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, tea gift sets typically feature an assortment of flavors, ranging from classic black and green teas to herbal and fruit infusions. This variety ensures that there's something for everyone, whether they prefer traditional tastes or are eager to try unique and exotic blends.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How can I ensure the freshness of the tea in a gift set?",
+            })
+            @@include('./components/p.html', {
+                "texte": "When choosing a tea gift set, look for packaging that seals tightly to preserve freshness. Store the set in a cool, dry place until it's time to gift it. If the set includes loose leaf tea, check for vacuum-sealed packaging which helps in retaining the tea's aroma and flavor.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What should I consider when selecting a tea gift set for someone who is new to tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "For a newcomer to tea, select a gift set that offers a range of mild and approachable flavors. Sets that include tasting notes or brewing instructions can also be helpful, providing guidance and enhancing their tea discovery experience.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What is the best way to choose a tea gift set for a seasoned tea enthusiast? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "For an experienced tea lover, look for gift sets that offer a variety of premium or rare teas. Sets that include single-origin teas, limited edition blends, or teas with unique flavor profiles can provide a new and exciting tasting experience. Additionally, sets that offer a story or background about the tea's origin or cultivation methods can add an extra layer of appreciation for a connoisseur. <span class='hide__cta hide__cta--view-less'>See less</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

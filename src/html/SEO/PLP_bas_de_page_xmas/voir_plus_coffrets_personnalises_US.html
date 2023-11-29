@@ -1,0 +1,66 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : coffrets_a_personnaliser-cat-landing-description-m
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What should I consider when selecting teas for a personalizable sampler for someone new to tea drinking?",
+            })
+            @@include('./components/p.html', {
+                "texte": "When selecting teas for a personalizable sampler intended for someone new to tea, it's a good idea to include a variety of basic types such as black, green, and herbal teas. This provides an introductory range that covers different flavors and strengths. Additionally, consider adding a few unique blends or flavored teas to introduce them to the wider <span class='hide__text hide__fadeout'>world of tea in an accessible and enjoyable way.</span> <span class='hide__cta hide__cta--view-more'>See more</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What are customizable tea samplers?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Customizable tea samplers are collections of various tea types that can be personally selected based on individual preferences. Customers have the flexibility to choose from a range of flavors, tea types, and blends to create a sampler that suits their taste or the taste of the person they are gifting.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What makes a customizable tea sampler a unique gift?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A customizable tea sampler is a thoughtful gift because it allows the giver to tailor the selection to the recipient's specific tastes. This personal touch shows consideration and awareness of the recipient's preferences, making it a more meaningful and appreciated present.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What are the benefits of choosing a personalizable tea sampler over a pre-made one?",
+            })
+            @@include('./components/p.html', {
+                "texte": "A personalizable tea sampler offers the advantage of customization, allowing individuals to select exactly what they want or need. This can be particularly beneficial for those with specific tastes or for creating a more thoughtful and tailored gift. Personalizable samplers provide the freedom to experiment with different flavors and blends, making the tea-drinking experience more personalized and enjoyable. <span class='hide__cta hide__cta--view-less'>See less</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

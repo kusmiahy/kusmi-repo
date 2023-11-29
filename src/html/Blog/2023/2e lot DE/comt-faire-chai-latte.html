@@ -10,11 +10,11 @@
 
 @import "./style/specific/2023/article_template_v2.scss";
 
-    Content asset : comment-ameliorer-sa-qualite-de-sommeil
+    Content asset : chai-latte-rezept
 
     Nom de la classe parent : blog_article_2023
 
-    Titre : Wie kann man grünen Tee selbst pflanzen? 
+    Titre : Wie man Chai Latte macht: Das Kusmi-Rezept
 
 -->
 
@@ -32,14 +32,14 @@
         <section class="article__banniere banniere">
             <!-- titre -->
             @@include('.././_components/banniere.html', {
-                "lien-img": ".webp?$staticlink$",
-                "alt": "",
+                "lien-img": "blog/articles/2023/chai_latte_rezept.webp?$staticlink$",
+                "alt": "chai latte rezept",
     
                 "titre": "Wie man Chai Latte macht: Das Kusmi-Rezept",
-                "date": "",
+                "date": "27.11.2023",
                 "url-produit": "$url('Search-Show','cgid','vert')$",
                 "lien-categorie": "blog/?filter=le-the",
-                "tag-texte": "Le thé",
+                "tag-texte": "Tees & Aufgüsse",
     
                 "cta-texte": "Entdecken",
     
@@ -57,7 +57,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "2 Löffel Ihrer bevorzugten Gewürzmischung. <a href=\"$url('Product-Show','pid','21685A1070')$\"\>Chai des Tigers</a>, <a href=\"$url('Product-Show','pid','21722A1120')$\"\>Kaschmir Chai</a> oder <strong>auch</strong> <a href=\"$url('Product-Show','pid','21716A1070')$\"\>Prinz Wladimir</a> : 1L Wasser 1 Teelöffel Honig oder Agavensirup 10cl Milch 1 Prise Zimt oder ein anderes Gewürz Ihrer Wahl Und, ein Chai Latte für Tisch 3, einen! ",
+                    "texte": "2 Löffel Ihrer bevorzugten Gewürzmischung. <a class='banniere__link' href=\"$url('Product-Show','pid','21685A1070')$\"\>Chai des Tigers</a>, <a class='banniere__link' href=\"$url('Product-Show','pid','21722A1120')$\"\>Kaschmir Chai</a> oder <strong>auch</strong> <a class='banniere__link' href=\"$url('Product-Show','pid','21716A1070')$\"\>Prinz Wladimir</a> : 1L Wasser 1 Teelöffel Honig oder Agavensirup 10cl Milch 1 Prise Zimt oder ein anderes Gewürz Ihrer Wahl Und, ein Chai Latte für Tisch 3, einen! ",
                 })
             </section>
             <section class="block">
@@ -73,7 +73,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Wenn Sie Ihren <a href=\"$url('Search-Show','cgid','the_epice')$\"\>würzigen Schwarztee</a> ausgewählt haben, bringen Sie Wasser zum Kochen und gießen Sie es bis zu 2/3 Ihrer Tasse auf, um den Tee zu ziehen. Lassen Sie den Tee je nach Geschmack länger oder kürzer ziehen. Unsere Empfehlung: 3 bis 5 Minuten, um alle Aromen eines schwarzen Tees zu entfalten! <a href=\"$url('Search-Show','cgid','theieres_deguster')$\"\>Entdecken Sie unsere Kusmi Teekannen</a>",
+                    "texte": "Wenn Sie Ihren <a class='banniere__link' href=\"$url('Search-Show','cgid','the_epice')$\"\>würzigen Schwarztee</a> ausgewählt haben, bringen Sie Wasser zum Kochen und gießen Sie es bis zu 2/3 Ihrer Tasse auf, um den Tee zu ziehen. Lassen Sie den Tee je nach Geschmack länger oder kürzer ziehen. Unsere Empfehlung: 3 bis 5 Minuten, um alle Aromen eines schwarzen Tees zu entfalten! <a class='banniere__link' href=\"$url('Search-Show','cgid','theieres_deguster')$\"\>Entdecken Sie unsere Kusmi Teekannen</a>",
                 })
                 @@include('.././_components/h3.html', {
                     "titre": "Schritt 2: milch giessen ",
@@ -101,7 +101,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Seien wir ehrlich: Nicht jeder ist ein Fan von Gewürzen. Genauso trendy und aufmunternd wie Chai Latte ist <a href=\"$url('Page-Show','cid','artmm-1')$\"\>Matcha Latte</a>.",
+                    "texte": "Seien wir ehrlich: Nicht jeder ist ein Fan von Gewürzen. Genauso trendy und aufmunternd wie Chai Latte ist <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-1')$\"\>Matcha Latte</a>.",
                 })
                 @@include('.././_components/h3.html', {
                     "titre": "Wir zeigen Ihnen, wie Sie Ihren Matcha zubereiten",
@@ -117,7 +117,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Wenn Sie Ihren <a href=\"$url('Search-Show','cgid','the_epice')$\"\>würzigen Schwarztee</a> ausgewählt haben, bringen Sie Wasser zum Kochen und gießen Sie es bis zu 2/3 Ihrer Tasse auf, um den Tee zu ziehen. Lassen Sie den Tee je nach Geschmack länger oder kürzer ziehen. Unsere Empfehlung: 3 bis 5 Minuten, um alle Aromen eines schwarzen Tees zu entfalten! <a href=\"$url('Search-Show','cgid','theieres_deguster')$\"\>Entdecken Sie unsere Kusmi Teekannen</a>",
+                    "texte": "Wenn Sie Ihren <a class='banniere__link' href=\"$url('Search-Show','cgid','the_epice')$\"\>würzigen Schwarztee</a> ausgewählt haben, bringen Sie Wasser zum Kochen und gießen Sie es bis zu 2/3 Ihrer Tasse auf, um den Tee zu ziehen. Lassen Sie den Tee je nach Geschmack länger oder kürzer ziehen. Unsere Empfehlung: 3 bis 5 Minuten, um alle Aromen eines schwarzen Tees zu entfalten! <a class='banniere__link' href=\"$url('Search-Show','cgid','theieres_deguster')$\"\>Entdecken Sie unsere Kusmi Teekannen</a>",
                 })
                 
             </section>
@@ -152,28 +152,28 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Bei Kusmi ist der <a href=\"$url('Product-Show','pid','21722A1070')$\"\>Kashmir Tschai</a> wahrscheinlich einer der ältesten Tees der Gruppe. Dieser <strong>schwarze Tee mit Gewürzen</strong> ist eine der ältesten Teemischungen. Sein Ursprung geht wahrscheinlich auf die Zeit der Teekarawanen zurück, die auf dem Landweg durch ganz Asien bis nach Russland zogen. Für einen authentischen Chai Latte wird unser <strong>Kashmir Tschai</strong> den Unterschied ausmachen, da dieser Klassiker aus den traditionellen <strong>Gewürzen</strong> und Pflanzen besteht, die mit dem Chai in Verbindung gebracht werden: <strong>Kardamom</strong>, <strong>Zimt</strong>, <strong>Ingwer</strong>, <strong>Nelke</strong> und ein Hauch von <strong>Lorbeer</strong>. ",
+                    "texte": "Bei Kusmi ist der <a class='banniere__link' href=\"$url('Product-Show','pid','21722A1070')$\"\>Kashmir Tschai</a> wahrscheinlich einer der ältesten Tees der Gruppe. Dieser <strong>schwarze Tee mit Gewürzen</strong> ist eine der ältesten Teemischungen. Sein Ursprung geht wahrscheinlich auf die Zeit der Teekarawanen zurück, die auf dem Landweg durch ganz Asien bis nach Russland zogen. Für einen authentischen Chai Latte wird unser <strong>Kashmir Tschai</strong> den Unterschied ausmachen, da dieser Klassiker aus den traditionellen <strong>Gewürzen</strong> und Pflanzen besteht, die mit dem Chai in Verbindung gebracht werden: <strong>Kardamom</strong>, <strong>Zimt</strong>, <strong>Ingwer</strong>, <strong>Nelke</strong> und ein Hauch von <strong>Lorbeer</strong>. ",
                 })
                 @@include('.././_components/h3.html', {
                     "titre": "Tchaï of the tiger, ein schwarzer tee bio mit gewürzen ",
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "<a href=\"$url('Product-Show','pid','21685A1070')$\"\>Tschai of the Tiger</a> ist <strong>unser schwarzer Bio-Tee mit Gewürzen</strong>, der ideal für Ihre <strong>würzigen</strong> Zubereitungen ist. Dieser <strong>Bio-Schwarztee</strong> zeichnet sich durch seine Gewürzmischung aus: <strong>Chai: Ingwer, Kardamom, Zimt,</strong> aber auch schwarzer und <strong>rosa Pfeffer</strong>. Diese <strong>Bio-Gewürze</strong> verleihen der Mischung ein erstaunliches Gleichgewicht zwischen Stärke und Süße.<br>Dieser Schwarztee mit Gewürzen ist unser erstes <strong>Bio-Rezept in Zusammenarbeit mit dem WWF</strong>, der zum <strong>Schutz der wilden Tiger</strong> beiträgt, einer vom Aussterben bedrohten Tierart, die ein Symbol für die Teeanbaugebiete ist. ",
+                    "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21685A1070')$\"\>Tschai of the Tiger</a> ist <strong>unser schwarzer Bio-Tee mit Gewürzen</strong>, der ideal für Ihre <strong>würzigen</strong> Zubereitungen ist. Dieser <strong>Bio-Schwarztee</strong> zeichnet sich durch seine Gewürzmischung aus: <strong>Chai: Ingwer, Kardamom, Zimt,</strong> aber auch schwarzer und <strong>rosa Pfeffer</strong>. Diese <strong>Bio-Gewürze</strong> verleihen der Mischung ein erstaunliches Gleichgewicht zwischen Stärke und Süße.<br>Dieser Schwarztee mit Gewürzen ist unser erstes <strong>Bio-Rezept in Zusammenarbeit mit dem WWF</strong>, der zum <strong>Schutz der wilden Tiger</strong> beiträgt, einer vom Aussterben bedrohten Tierart, die ein Symbol für die Teeanbaugebiete ist. ",
                 })
                 @@include('.././_components/h3.html', {
                     "titre": "Prince vladimir, ein schwarzer tee aromatisiert mit zitrusfrüchten, vanille und gewürzen ",
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Möchten Sie den Geschmack variieren? Die <strong>Chai Latte</strong> kann genauso gut mit dem ikonischen <a href=\"$url('Product-Show','pid','21716A1070')$\"\>Prince Vladimir</a> mit seinen Zitrus- und Vanillenoten zubereitet werden. Dieser ikonische russische Tee des Hauses gehört zu unseren zahlreichen Earl Grey-Tees. ",
+                    "texte": "Möchten Sie den Geschmack variieren? Die <strong>Chai Latte</strong> kann genauso gut mit dem ikonischen <a class='banniere__link' href=\"$url('Product-Show','pid','21716A1070')$\"\>Prince Vladimir</a> mit seinen Zitrus- und Vanillenoten zubereitet werden. Dieser ikonische russische Tee des Hauses gehört zu unseren zahlreichen Earl Grey-Tees. ",
                 })
                 @@include('.././_components/h3.html', {
                     "titre": "Sweet love, ein schwarzer tee mit aufregenden noten von gewürzen, guarana, lakritze und rosa pfeffer. ",
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "<a href=\"$url('Product-Show','pid','21084A1070')$\"\>Sweet Love</a> wird mit seiner <strong>Mischung aus Gewürzen, Guarana, Lakritze</strong> und <strong>rosa Pfeffer</strong> zum Erwachen der Sinne einladen. Und welche <strong>würzige Mischung würden Sie für</strong> Ihren <strong>Chai Latte wählen?</strong>",
+                    "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21084A1070')$\"\>Sweet Love</a> wird mit seiner <strong>Mischung aus Gewürzen, Guarana, Lakritze</strong> und <strong>rosa Pfeffer</strong> zum Erwachen der Sinne einladen. Und welche <strong>würzige Mischung würden Sie für</strong> Ihren <strong>Chai Latte wählen?</strong>",
                 })
             </section>
         </article>
@@ -181,7 +181,7 @@
             @@include('.././_components/partager.html', {
                 "titre": "Wie man Chai Latte macht: Das Kusmi-Rezept",
                 "texte": "Diesen Artikel teilen",
-                "url-network": "$url('Page-Show','cid','')$",
+                "url-network": "$url('Page-Show','cid','chai-latte-rezept')$",
             })
         </section>
     </div>

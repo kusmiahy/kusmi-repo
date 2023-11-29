@@ -1,0 +1,177 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : boire-un-matcha-le-soir
+
+    Nom de la classe parent : matcha_article_2023
+
+    Titre : Recette : Boire un thé matcha le soir : bonne ou mauvaise idée ? 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="matcha_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_matcha_fouet.webp?$staticlink$",
+                "alt": "produit fouet matcha Kusmi Tea",
+    
+                "titre": "Boire un thé matcha le soir : bonne ou mauvaise idée ? ",
+                "date": "Publié le <span class='date__color'>01/03/2022</span>",
+                "url-produit": "$url('Product-Show','pid','21695A1040')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Pour préparer <strong>un thé matcha</strong> dans les règles de l’art, suivez la cérémonie <strong>japonaise traditionnelle</strong> ou revisitez-la de manière plus originale. Avec de l’eau pour la version classique ou du lait pour la version latte, les recettes pour préparer matcha ne manquent pas. En manque d’inspiration ? Kusmi vous partage tous les secrets de préparation de la <strong>poudre de thé vert</strong> !",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Quand on aime ça, le thé matcha nous rend tellement addict qu’on serait prêt(e) à en boire à longueur de journée ! D’autant que la présence de théine dans cette poudre verte nous fournit un regain d’énergie. Pour autant, faut-il arrêter d’en consommer en fin de journée, histoire de trouver le sommeil ? On vous répond. ",
+                })
+                @@include('.././_components/h2.html', {
+                    "titre": "Le thé matcha empêche-t-il de dormir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cela dépendra des personnes ! Comme pour les autres thés ou pour le café, <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-13')$\"\>l'impact de la théine</a> (ou de la caféine, car il s'agit de la même molécule) sur le sommeil varie en fonction de la sensibilité de chacun.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi le thé matcha peut-il nuire au sommeil de certains ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si certains ont du mal à trouver le sommeil, c’est à cause de la théine présente dans les feuilles de thé. Même si celles-ci sont broyées et transformées en poudre de thé vert matcha, la théine est toujours là. Elle se libère au contact de l’eau chaude. Servant d’insecticide naturel chez les plantes (théier, cacaoyer, caféier…) la théine a des effets heureusement plus favorables sur l’organisme humain : elle diminue la somnolence et augmente notre concentration.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi le thé matcha est-il bénéfique au sommeil, pour d’autres ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href=\"$url('Product-Show','pid','21695A1040')$\"\>thé matcha</a> ne comprend pas seulement de la théine, mais aussi tout un tas de vitamines, d’anti-oxydants, d'oligo-éléments et d’acides aminés… dont la L-théanine, une molécule connue pour son effet relaxant, calmant. Pour les personnes souffrant de stress et d’anxiété, la L-théanine présente dans le thé matcha pourrait améliorer la qualité du sommeil. Vous l’aurez donc compris, cette poudre de thé vert venue du Japon possède de nombreux bienfaits sur la santé !",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi le thé matcha est-il plus énergisant qu’un thé vert classique ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Comme ses cousins du Japon, le matcha a des effets stimulants. Si l’effet “coup de boost” ou “coup de fouet” du matcha est plus intense que les autres thés, cela s’explique par la différence de consommation. Quand on boit un thé matcha, on ingère intégralement la feuille de thé, alors que l’on boit seulement l’infusion des feuilles des autres thés.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Jusqu’à quelle heure peut-on boire un thé matcha ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Là encore cela dépendra de la sensibilité de chacun. D’autant que la teneur en caféine ou théine précise est toujours incertaine, elle varie d’un thé ou d’un café à l’autre en fonction des caractéristiques propres à sa culture et à la préparation de la boisson. Si vous optez pour un <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-1')$\"\>matcha latte</a>, qui comprend très peu de thé matcha, arrosé de beaucoup de lait, la concentration en théine sera moindre que pour un gros bol de thé matcha pur. D’une façon générale, on estime que la théine reste active dans l’organisme pendant 8 heures. Ainsi, si vous êtes sensible à la théine et que vous vous couchez à 23h, il vous faudrait arrêter de boire du thé matcha après 15h. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Par quoi peut-on remplacer le thé matcha avant de dormir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si vous découvrez que le thé matcha, dégusté l’après-midi, gène votre sommeil, veillez à le consommer uniquement le matin. Puis, l’après-midi, privilégiez des thés plus légers, moins concentré en théine, tels que le thé vert classique ou le thé blanc. Sinon, vous pouvez aussi opter pour des <a class='banniere__link' href=\"$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$\"\>infusions 100 % sans théine</a>, comme le <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>rooibos</a> ou les tisanes de plantes, qui favorisent tout autant la concentration et/ou la relaxation.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Comment choisir un thé matcha de qualité ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Assurez-vous tout d’abord que la poudre de thé vert provient bien du Japon. L’origine du thé est importante. Ensuite, attardez vous sur la couleur : celle-ci doit en effet être d’un vert vif et non kaki. L’appellation bio est un gros plus car elle vous assure de consommer un thé de qualité ! Enfin, le <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-2')$\"\>prix du thé</a>… Un matcha trop bon marché peut-être un indicateur d’un produit de qualité modeste. Car oui le thé matcha est un produit premium ! Pour découvrir notre guide d’achat complet pour choisir un thé matcha de qualité, c’est <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-12')$\"\>par ici</a> !<br><br>Chez Kusmi, cette poudre de thé vert venue du Japon n’a plus à faire ses preuves. Pour profiter au mieux de tous <a class='banniere__link' href=\"$url('Page-Show','cid','matcha-the-vertus')$\"\>ses bienfaits sur la santé et l’organisme</a>, nous vous recommandons d’opter pour un matcha bio. L’appellation garantit en effet un thé de qualité sans pesticide et élevé dans le respect de l’environnement.",
+                })
+            </section>
+        </article>
+        <section class="slider-scroll">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-5')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "“Matcha bleu” ou “Blue matcha” : de quoi s’agit-il ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-13')$",
+                    "lien-img": "blog/1_MATCHA-cafe-1.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Le thé matcha, riche en théine, est-il un excitant ? ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bien-preparer-son-matcha')$",
+                    "lien-img": "blog/articles/2023/blog_matcha_produit_coffret.webp?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Comment bien préparer son thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-2')$",
+                    "lien-img": "blog/1_MATCHA-prix.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Quel est le prix du thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-2')$",
+                    "lien-img": "blog/1-AJEUN.png?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Faut-il boire son thé matcha le matin à jeun ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-17')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Provenance et origine : de quelle plante provient le thé matcha ? ",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Boire un thé matcha le soir : bonne ou mauvaise idée ? ",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','boire-un-matcha-le-soir')$",
+            })
+        </section>
+    </div>
+
+</div>
+

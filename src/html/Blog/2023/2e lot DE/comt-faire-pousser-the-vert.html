@@ -10,7 +10,7 @@
 
 @import "./style/specific/2023/article_template_v2.scss";
 
-    Content asset : comment-ameliorer-sa-qualite-de-sommeil
+    Content asset : grünen_tee_zu_hause_anbauen
 
     Nom de la classe parent : blog_article_2023
 
@@ -32,38 +32,46 @@
         <section class="article__banniere banniere">
             <!-- titre -->
             @@include('.././_components/banniere.html', {
-                "lien-img": ".webp?$staticlink$",
-                "alt": "",
+                "lien-img": "blog/articles/2023/grünen_tee_zu_hause_anbauen.webp?$staticlink$",
+                "alt": "grünen tee zu hause anbauen",
     
-                "titre": "Wie kann man grünen Tee selbst pflanzen? ",
-                "date": "",
+                "titre": "Wie kann man grünen Tee selbst pflanzen?",
+                "date": "27.11.2023",
                 "url-produit": "$url('Search-Show','cgid','vert')$",
                 "lien-categorie": "blog/?filter=le-the",
-                "tag-texte": "Le thé",
+                "tag-texte": "Tees & Aufgüsse",
     
-                "cta-texte": "",
+                "cta-texte": "Entdecken",
     
                 "texte": "Tee ist nach Wasser das am häufigsten konsumierte Getränk der Welt. Er bietet nicht nur zahlreiche Geschmacksrichtungen, sondern schmeckt sowohl im Sommer eisgekühlt als auch im Winter heiß. Aber wie wird diese weltweit so beliebte Pflanze (Camellia sinensis) dann angebaut? Und vor allem, wie kann man sie zu Hause anbauen, um selbstgemachten grünen Tee herzustellen? ",
             })
         </section>
-        <article class="content">
+        <article class="content content__img">
             <section class="block">
                 @@include('.././_components/h2.html', {
                     "titre": "Die Teepflanze, ein aus Asien stammender Strauch ",
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Die Teepflanze (Camellia sinensis), der Teebaum, kann in der Natur über 10 Meter hoch werden. Auf Teeplantagen lässt man sie nicht so hochwachsen, sondern beschneidet sie so, dass sie etwa auf einem Meter Höhe bleiben. Dies vereinfacht die Ernte der Blätter, die in der Regel von Hand durchgeführt wird. Der Teestrauch blüht zweimal im Jahr, seine Blätter sind dunkelgrün und glänzend mit gezackten Rändern. <br>Wussten Sie, dass grüner und <a href=\"\$url(Search-Show','cgid','noir')$\"\>schwarzer Tee</a> von derselben Pflanze stammen? Und ja! Der einzige Unterschied besteht darin, dass sich <a href=\"\$url(Page-Show','cid','tee-ohne-tein')$\"\>das Teein</a> über den Tag verteilt, während das Koffein einen fast sofortigen Energieschub liefert. Deshalb sagt man auch, dass Tee ein Aufputschmittel und Kaffee ein Erregungsmittel ist. ",
+                    "texte": "Die Teepflanze (Camellia sinensis), der Teebaum, kann in der Natur über 10 Meter hoch werden. Auf Teeplantagen lässt man sie nicht so hochwachsen, sondern beschneidet sie so, dass sie etwa auf einem Meter Höhe bleiben. Dies vereinfacht die Ernte der Blätter, die in der Regel von Hand durchgeführt wird. Der Teestrauch blüht zweimal im Jahr, seine Blätter sind dunkelgrün und glänzend mit gezackten Rändern. <br>Wussten Sie, dass grüner und <a class='banniere__link' href=\"\$url(Search-Show','cgid','noir')$\"\>schwarzer Tee</a> von derselben Pflanze stammen? Und ja! Der einzige Unterschied besteht darin, dass sich <a class='banniere__link' href=\"\$url(Page-Show','cid','tee-ohne-tein')$\"\>das Teein</a> über den Tag verteilt, während das Koffein einen fast sofortigen Energieschub liefert. Deshalb sagt man auch, dass Tee ein Aufputschmittel und Kaffee ein Erregungsmittel ist. ",
                 })
             </section>
-            <section class="block">
-                @@include('.././_components/h2.html', {
-                    "titre": "Der Zeitpunkt der Ernte ",
-                })
-                @@include('.././_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "Der Zeitpunkt der Ernte richtet sich nach den Stunden, in denen die Teepflanzen dem Tageslicht ausgesetzt sind. Diese erstreckt sich in China oder Japan von November bis März. In einigen Regionen der Welt wie Indien oder Sri Lanka kann Tee jedoch auch das ganze Jahr über geerntet werden. ",
-                })
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Der Zeitpunkt der Ernte ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Der Zeitpunkt der Ernte richtet sich nach den Stunden, in denen die Teepflanzen dem Tageslicht ausgesetzt sind. Diese erstreckt sich in China oder Japan von November bis März. In einigen Regionen der Welt wie Indien oder Sri Lanka kann Tee jedoch auch das ganze Jahr über geerntet werden. ",
+                    })
+                </div>
+                <a class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/Gemüse_auf_einer_Schaufel.webp?$staticlink$",
+                        "alt": "Gemüse auf einer Schaufel",
+                    })
+                </a>
             </section>
             <section class="block">
                 @@include('.././_components/h2.html', {
@@ -73,16 +81,23 @@
                     "class": "block__p",
                     "texte": "Nachdem die Teeblätter geerntet wurden, sind sie nicht sofort bereit für den Aufguss. Sie müssen erst &#34;welken&#34;, d. h. sie müssen einen Teil ihres Wassers verlieren. Die Blätter werden im Freien oder in Räumen mit Gebläse getrocknet. Anschließend erfolgt das &#34;Rollen&#34;: Eine Maschine rollt die Blätter, um die Zellen zu zerbrechen, wodurch der nächste Schritt, die &#34;Oxidation&#34;, eingeleitet wird. Grüner Tee durchläuft nur eine kurze Oxidationszeit, was ihm ganz besondere Nährstoffe und Vorteile verleiht. Die Blätter bleiben einige Zeit in einer feuchten Umgebung bei Raumtemperatur liegen. Anschließend werden sie mindestens zwei Tage in der Sonne getrocknet. Dabei müssen sie gelegentlich bewegt werden: Durch diesen Schritt wird ihre Oxidation gestoppt, damit sie nicht verfaulen. Während dieses Prozesses erhält der grüne Tee seine antioxidative Kraft! ",
                 })
-                
             </section>
-            <section class="block">
-                @@include('.././_components/h2.html', {
-                    "titre": "Wie viele Teeblätter braucht man für ein Kilogramm Tee? ",
-                })
-                @@include('.././_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "Die Blätter der Grünteepflanze durchlaufen viele Schritte, bevor sie zu dem Tee werden, den man aufbrühen kann. In der Regel werden 5 Kilogramm geerntete Teeblätter benötigt, um am Ende ein Kilogramm aufgussfertigen Tee zu erhalten. ",
-                })
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Wie viele Teeblätter braucht man für ein Kilogramm Tee? ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Die Blätter der Grünteepflanze durchlaufen viele Schritte, bevor sie zu dem Tee werden, den man aufbrühen kann. In der Regel werden 5 Kilogramm geerntete Teeblätter benötigt, um am Ende ein Kilogramm aufgussfertigen Tee zu erhalten. ",
+                    })
+                </div>
+                <a class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/Hände_in_der_Erde.webp?$staticlink$",
+                        "alt": "Hände in der Erde",
+                    })
+                </a>
             </section>
             <section class="block">
                 @@include('.././_components/h2.html', {
@@ -99,7 +114,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Auch wenn die Teepflanze Ihnen nur ein paar Blätter pro Jahr liefert, sollten Sie sich daran erinnern. Die Knospen und Triebe können für die Herstellung von selbstgemachtem grünem Tee verwendet werden, wenn die Pflanze ökologisch und biologisch angebaut wurde! Achten Sie auf Pestizide, die gesundheitsschädlich sind! Entscheiden Sie sich bei der Ernte für die kaiserliche Pflückmethode und wählen Sie nur die langen Knospen aus, die geschmacklich reicher sind. <br>Lassen Sie Ihre Ernte an einem trockenen, schattigen Ort 1 bis 2 Tage lang trocknen, indem Sie die Knospen und Triebe auf einer Matte ausbreiten. Danach müssen Sie Ihren grünen Tee nur noch 2 Minuten lang in 80°C heißem Wasser ziehen lassen, um ihn zu genießen und von seinen Vorteilen zu profitieren. <br>Zusammenfassend lässt sich sagen, dass Sie durchaus eine Teepflanze bei sich zu Hause anbauen und Ihren grünen Tee selbst herstellen können. Tee anzubauen und ihn zu verarbeiten erfordert viel Arbeit und Know-how. Entdecken Sie unser Sortiment an <a href=\"\$url(Search-Show','cgid','vert')$\"\>Bio-Grüntees!</a> ",
+                    "texte": "Auch wenn die Teepflanze Ihnen nur ein paar Blätter pro Jahr liefert, sollten Sie sich daran erinnern. Die Knospen und Triebe können für die Herstellung von selbstgemachtem grünem Tee verwendet werden, wenn die Pflanze ökologisch und biologisch angebaut wurde! Achten Sie auf Pestizide, die gesundheitsschädlich sind! Entscheiden Sie sich bei der Ernte für die kaiserliche Pflückmethode und wählen Sie nur die langen Knospen aus, die geschmacklich reicher sind. <br>Lassen Sie Ihre Ernte an einem trockenen, schattigen Ort 1 bis 2 Tage lang trocknen, indem Sie die Knospen und Triebe auf einer Matte ausbreiten. Danach müssen Sie Ihren grünen Tee nur noch 2 Minuten lang in 80°C heißem Wasser ziehen lassen, um ihn zu genießen und von seinen Vorteilen zu profitieren. <br>Zusammenfassend lässt sich sagen, dass Sie durchaus eine Teepflanze bei sich zu Hause anbauen und Ihren grünen Tee selbst herstellen können. Tee anzubauen und ihn zu verarbeiten erfordert viel Arbeit und Know-how. Entdecken Sie unser Sortiment an <a class='banniere__link' href=\"\$url(Search-Show','cgid','vert')$\"\>Bio-Grüntees!</a> ",
                 })
             </section>
         </article>
@@ -107,7 +122,7 @@
             @@include('.././_components/partager.html', {
                 "titre": "Wie kann man grünen Tee selbst pflanzen?",
                 "texte": "Diesen Artikel teilen",
-                "url-network": "$url('Page-Show','cid','')$",
+                "url-network": "$url('Page-Show','cid','grünen-tee-zu-hause-anbauen')$",
             })
         </section>
     </div>

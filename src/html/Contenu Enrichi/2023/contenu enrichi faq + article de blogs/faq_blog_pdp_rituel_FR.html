@@ -16,48 +16,14 @@
 -->
 
 <!-- CSS Font -->
-<!-- Voir pour les fonts avec Auguste -->
-<!-- <link href="MEDIA/font/Font.css?$staticlink$" rel="stylesheet"> -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 
 <!-- inject-style src="dist/css/main.min.css" -->
-<!-- provisoire -->
-<link href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap' rel='stylesheet' type='text/css'>
-
 <style>
     .m-pdp__video-content {
         max-width: 100%;
         padding: 0;
     }
-    .rituel-pastille-melisse {
-        position: absolute;
-        z-index: 5;
-        left: 11%;
-        top: -2%;
-        height: 70px;
-        width: 70px;
-    }
-
-    @media screen and (min-width:768px) {
-        .rituel-pastille-melisse {
-            left: 16%;
-        }
-    }
-
-    @media screen and (min-width:1024px) {
-        .rituel-pastille-melisse {
-            left: -3%;
-            top: 0%;
-            height: 90px;
-            width: 90px;
-        }
-    }
-
-    .rituel-pastille-melisse img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
 </style>
 
 <div class="faq_pdp_rituel_2023">
@@ -179,48 +145,6 @@
                 "titre": "Des solutions naturelles pour lutter contre les troubles du sommeil",
                 "cta": "En savoir plus",
             })
-        </div>
-    </section>
-    <section class="bio">
-        <div class="bio__title title-wrapper">
-            @@include('./components/subtitle.html', {
-                "class-color": "title-wrapper__subtitle--green",
-                "texte-titre": "Nos certifications",
-            })
-        </div>
-        <div class="certifications">
-            <div class="certifications__image">
-                @@include('./components/image.html', {
-                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
-                    "alt": "label bio",
-                })
-            </div>
-            <div class="certifications__image">
-                @@include('./components/image.html', {
-                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
-                    "alt": "certification européenne bio",
-                })
-            </div>
-            <div class="certifications__image">
-                @@include('./components/image.html', {
-                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
-                    "alt": "certification agriculture biologique",
-                })
-            </div>
-            <div class="certifications__image">
-                @@include('./components/image.html', {
-                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
-                    "alt": "usda organic label",
-                })
-            </div>
-        </div>
-        <div class="planet">
-            <div class="planet__image">
-                @@include('./components/image.html', {
-                    "lien-img": "images/pdp/2023/rituel_sommeil/1_logo.svg?$staticlink$",
-                    "alt": "logo 1% for the planet member",
-                })
-            </div>
         </div>
     </section>
 

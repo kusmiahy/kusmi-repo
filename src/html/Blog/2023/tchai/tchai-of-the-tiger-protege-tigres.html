@@ -1,0 +1,146 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : tchai-of-the-tiger-protege-tigres
+
+    Nom de la classe parent : tchai_articles_2023
+
+    Titre : Tchaï of the Tiger - Protégeons ensemble les tigres sauvages
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="tchai_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_produit_tchai.webp?$staticlink$",
+                "alt": "bannière représentant le produit Tchaï of the Tiger de Kusmi Tea, un thé noir d'Inde aux épices et arômes naturels",
+    
+                "titre": "Tchaï of the Tiger - Protégeons ensemble les tigres sauvages",
+                "date": "Publié le <span class='date__color'>04/03/20</span>",
+                "url-produit": "$url('Product-Show','pid','21685A1070')$",
+                "lien-categorie": "blog/?filter=tchai-of-the-tiger",
+                "tag-texte": "Tchaï of the Tiger",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Nous sommes fiers de vous présenter <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a>, notre première recette bio, un thé noir bio fort et épicé inspiré par la boisson traditionnelle indienne, le chaï. Ce mélange exquis combine du thé noir provenant du jardin de Thiashola, un producteur éthique et biologique renommé situé dans le sud-ouest de l'Inde, avec un assortiment d'épices bio telles que le gingembre, la cardamome, la cannelle et le poivre pour créer un équilibre parfait entre la force et la douceur. ",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Tchaï of the Tiger, un thé noir bio aux épices",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "À l’image du <strong>chaï</strong>, boisson traditionnelle de l’Inde, Tchaï of the Tiger <strong>mêle divinement thé noir et épices parfumées</strong>. La recette s’appuie sur un cru provenant de <strong>Thiashola</strong>, un <strong>jardin de thé bio et éthique</strong> renommé, situé au sud-ouest de l’Inde dans la région du Nilgiri. Nous reviendrons plus en détail cet endroit hors du temps où nous nous sommes rendus quelques jours. Ce <strong>thé noir</strong> prend toute sa puissance grâce à une <strong>association d’épices, bio</strong> elles aussi : gingembre, <a class='banniere__link' href=\"\$url('Page-Show','cid','the-chai-epice-cardamome')$\"\>cardamome</a>, cannelle, <a class='banniere__link' href=\"\$url('Page-Show','cid','the-chai-poivre-epice')$\"\>poivres noir</a> et rose apportent au mélange un délicieux équilibre entre force et douceur à l’image de l’envoûtant félin qu’il protège. Tchaï of the Tiger est parfait pour un <strong>moment de partage épicé</strong>. A tester en version Latté pour encore plus de gourmandise !",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_1.webp?$staticlink$",
+                        "alt": "produit Tchaï of the Tiger Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Une boite de thé respectueuse de l’environnement",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Pour <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a>, notre studio créa a imaginé une <strong>magnifique boîte mettant l’Inde et les tigres à l’honneur</strong>, au travers d’un décor évocateur inspiré des mandalas. Une maman tigre et son petit symbolisent la reproduction nécessaire de cette espèce en danger, dans des tons fauves qui contrastent avec le vert de la nature. Le plus : <strong>un packaging zéro plastique</strong> pour un respect grandissant de l’environnement.",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_2.webp?$staticlink$",
+                        "alt": "produit Tchaï of the Tiger Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Le jardin de thé Thiashola Tea Estate",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Comme nous vous le disions plus haut, nos équipes se sont rendues en septembre dernier sur <strong>la plantation de thé Thiashola</strong>, un jardin <strong>100%</strong> bio depuis 2006, situé en Inde du Sud, niché à 2000 mètres d’altitude, dans les montagnes des Nilgiris aussi appelées « Montagnes Bleues ». On peut y retrouver le <strong>premier théier planté en Inde du Sud</strong> en 1853, ce qui fait de Thiashola l’une des plus anciennes plantations de cette région. Dans des paysages à couper le souffle, une équipe de 350 personnes s’implique chaque jour pour récolter et produire un <strong>thé reconnu pour son caractère unique</strong>, qui reflète aussi des engagements éthiques et responsables. En effet, la plantation œuvre au quotidien pour améliorer les conditions de vie de ses employé(e)s et leurs familles, notamment en leur assurant une rémunération juste, en les aidant à équiper leur logement et en mettant à disposition un système éducatif pour les enfants. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_3.webp?$staticlink$",
+                        "alt": "produit Tchaï of the Tiger Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Retrouvez notre thé <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a> dans toutes nos boutiques et sur notre site internet !<br>Partagez vos moments de gourmandises sur Instagram en nous taggant, nous avons hâte de découvrir vos tea-time autour d’un thé <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a> !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','thes-epices')$",
+                    "lien-img": "blog/articles/2023/blog_thes_epices.webp?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Tous les secrets sur les thés épicés",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-chai-poivre-epice')$",
+                    "lien-img": "blog/poivre.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Le poivre, une épice associée au thé noir ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttn-15')$",
+                    "lien-img": "blog/1_VERTUS-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Les vertus diurétiques du thé noir",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Tchaï of the Tiger - Protégeons ensemble les tigres sauvages",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','tchai-of-the-tiger-protege-tigres')$",
+            })
+        </section>
+    </div>
+
+</div>
+

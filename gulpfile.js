@@ -18,7 +18,7 @@
  *
  * @tag This is a tag named 'tag'
  *
- * TODO: This is a todo statement that describes an atomic task to be completed
+ * TODO: This is a todo statement that describes an astomic task to be completed
  *   at a later date. It wraps after 80 characters and following lines are
  *   indented by 2 spaces.
  */
@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.black_friday_push_2023';
+var classParent = '.faq_pdp_rituel_2023';
 
 const {
     series,

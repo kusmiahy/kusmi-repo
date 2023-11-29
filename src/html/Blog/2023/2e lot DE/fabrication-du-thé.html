@@ -10,7 +10,7 @@
 
 @import "./style/specific/2023/article_template_v2.scss";
 
-    Content asset : comment-ameliorer-sa-qualite-de-sommeil
+    Content asset : herstellung-von-schwarztee
 
     Nom de la classe parent : blog_article_2023
 
@@ -32,14 +32,14 @@
         <section class="article__banniere banniere">
             <!-- titre -->
             @@include('.././_components/banniere.html', {
-                "lien-img": ".webp?$staticlink$",
-                "alt": "",
+                "lien-img": "blog/articles/2023/herstellung_von_schwarztee.webp?$staticlink$",
+                "alt": "Tassse grüner Tee",
     
                 "titre": "Die Schritte zur Herstellung von Schwarztee und alle ihre Geheimnisse",
-                "date": "",
+                "date": "27.11.2023",
                 "url-produit": "$url('Search-Show','cgid','vert')$",
                 "lien-categorie": "blog/?filter=le-the",
-                "tag-texte": "Le thé",
+                "tag-texte": "Tees & Aufgüsse",
     
                 "cta-texte": "Entdecken",
     
@@ -53,7 +53,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Der Legende nach entstand der schwarze Tee im 17e Jahrhundert in England. Als die Briten im Laderaum eines aus China kommenden Schiffes eine Kiste mit grünem Tee öffneten, fanden sie darin zu ihrer Überraschung schwarzen Tee aus <a href=\"$url('Product-Show','pid','21613A1070')$\"\>Darjeeling</a>, <a href=\"$url('Product-Show','pid','21612A1070')$\"\>Ceylon</a> oder <a href=\"$url('Product-Show','pid','21610A1050')$\"\>Assam</a>. Letzterer wäre während der langen Überfahrt oxidiert. Nachdem sie diesen unerwarteten und einzigartigen Tee probiert hatten, waren sie von diesem neuen, charaktervollen Getränk begeistert. ",
+                    "texte": "Der Legende nach entstand der schwarze Tee im 17e Jahrhundert in England. Als die Briten im Laderaum eines aus China kommenden Schiffes eine Kiste mit grünem Tee öffneten, fanden sie darin zu ihrer Überraschung schwarzen Tee aus <a class='banniere__link' href=\"$url('Product-Show','pid','21613A1070')$\"\>Darjeeling</a>, <a class='banniere__link' href=\"$url('Product-Show','pid','21612A1070')$\"\>Ceylon</a> oder <a class='banniere__link' href=\"$url('Product-Show','pid','21610A1050')$\"\>Assam</a>. Letzterer wäre während der langen Überfahrt oxidiert. Nachdem sie diesen unerwarteten und einzigartigen Tee probiert hatten, waren sie von diesem neuen, charaktervollen Getränk begeistert. ",
                 })
             </section>
             <section class="block">
@@ -70,22 +70,22 @@
                     "titre": "Wie man schwarzen Tee herstellt: die Herstellungsschritte ",
                 })
                 <ol class="block__ul">
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "<strong>Welken:</strong> Die Teeblätter werden gepflückt und sofort in einem Raum mit Umluft von Ventilatoren oder natürlicher Luftzirkulation ausgelegt. Die Temperatur sollte zwischen 20° und 24° betragen. Die Blätter bleiben zwischen 18 und 32 Stunden auf den Horden (horizontale Gestelle) liegen. Durch diesen Prozess werden sie weicher, so dass sie sich leichter rollen lassen.",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "<strong>Das Rollen: Ziel des Rollens ist es</strong>, die Zellen der Teeblätter aufzubrechen, was die Reaktion der Enzyme und damit die Oxidation beschleunigt. Das Rollen dauert etwa 30 Minuten und kann von Hand oder maschinell durchgeführt werden.",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "<strong>Oxidation (oder Fermentation):</strong> Nachdem die Blätter gerollt wurden, werden sie in einen Raum mit einer Luftfeuchtigkeit von 90-95 % gelegt. Die Feuchtigkeit beschleunigt die Oxidation in Verbindung mit Temperaturen zwischen 20° und 22°. Die Teeblätter ruhen in diesem Raum für ein bis drei Stunden.",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "<strong>Trocknen:</strong> Die Blätter werden dann so schnell wie möglich 10-15 Minuten lang auf Temperaturen um 90° erhitzt, um sie kontrolliert zu dehydrieren.",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "<strong>Sortieren:</strong> Wird durch Sieben durchgeführt. Das Sortieren der Teeblätter kann von Hand oder mit einer Maschine erfolgen. Ziel ist es, die zerbrochenen Blätter von den intakten Blättern zu trennen.",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "Die Verpackung:<strong></strong> Dies ist der letzte Schritt, der bei der Herstellung von schwarzem Tee sehr wichtig ist. Die Verpackung dient dazu, die Blätter davor zu bewahren, wieder feucht zu werden.",
                     })
                 </ol>
@@ -103,13 +103,13 @@
                     "texte": "Wie ist es möglich, verschiedene Sorten schwarzen Tees mit unterschiedlichen Geschmäckern herzustellen, wenn alle Blätter von derselben Teepflanze stammen",
                 })
                 <ul class="block__ul">
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "Die <strong>Art und Weise, wie die Blätter gerollt werden</strong>, kann dem schwarzen Tee einen unterschiedlichen Geschmack verleihen. Leicht gerollte Blätter bieten einen milderen Tee, während stärker gerollte Blätter ein kräftigeres Aroma bieten. ",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "Je nachdem, wie <strong>lange die Blätter</strong> im Oxidationsraum liegen, variiert der Geschmack des schwarzen Tees: Je länger er oxidiert wird, desto stärker ist er. ",
                     })
-                    @@include('./components/li.html', {
+                    @@include('.././_components/li.html', {
                         "texte": "Auch die <strong>Region, die</strong> Erntezeit und die <strong>Qualität der Blätter</strong> variieren den Geschmack des schwarzen Tees. ",
                     })
                 </ul>
@@ -120,7 +120,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Die Blätter des Schwarzen Tees besitzen zahlreiche <a href=\"$url('Page-Show','cid','schwarzer-bio-tee-vorzuge')$\"\>Tugenden und Vorteile für die Gesundheit</a>. Angefangen bei ihren anregenden, aber nicht erregenden Eigenschaften. So können Sie am Morgen sanft aufwachen und die nötige Energie für Ihren Tag erhalten. Außerdem soll schwarzer Tee aufgrund seines hohen Anteils an Antioxidantien dazu beitragen, die Entwicklung bestimmter Herz-Kreislauf-Erkrankungen und die vorzeitige Alterung der Zellen zu bekämpfen. Schließlich soll er auch eine positive Wirkung auf die Verdauung und den Blutzuckerspiegel haben, indem er diesen reguliert. ",
+                    "texte": "Die Blätter des Schwarzen Tees besitzen zahlreiche <a class='banniere__link' href=\"$url('Page-Show','cid','schwarzer-bio-tee-vorzuge')$\"\>Tugenden und Vorteile für die Gesundheit</a>. Angefangen bei ihren anregenden, aber nicht erregenden Eigenschaften. So können Sie am Morgen sanft aufwachen und die nötige Energie für Ihren Tag erhalten. Außerdem soll schwarzer Tee aufgrund seines hohen Anteils an Antioxidantien dazu beitragen, die Entwicklung bestimmter Herz-Kreislauf-Erkrankungen und die vorzeitige Alterung der Zellen zu bekämpfen. Schließlich soll er auch eine positive Wirkung auf die Verdauung und den Blutzuckerspiegel haben, indem er diesen reguliert. ",
                 })
             </section>
             <section class="block">
@@ -129,7 +129,7 @@
                 })
                 @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": Wenn Sie einen hochwertigen Schwarztee ohne Pestizide wählen möchten, sollten Sie sich für einen Bio-Tee entscheiden, der möglichst in loser Schüttung angeboten wird. Die Bezeichnung Bio garantiert Ihnen nämlich zahlreiche Kontrollen während der Produktion und Herstellung des Produkts sowie den Respekt vor der Umwelt. Entdecken Sie unser <a href=\"$url('Search-Show','cgid','noir')$\"\>Sortiment an Bio-Schwarztees Made in Normandie!</a><br><strong>Die Herstellung von Schwarztee</strong> erfordert ein hohes Maß an Fachwissen, um seinen ganz besonderen Geschmack zu erhalten. Die verschiedenen Schritte seiner Herstellung werden sorgfältig ausgeführt und kontrolliert, damit Sie alle Geschmacksrichtungen, die er bietet, genießen können. ",
+                    "texte": "Wenn Sie einen hochwertigen Schwarztee ohne Pestizide wählen möchten, sollten Sie sich für einen Bio-Tee entscheiden, der möglichst in loser Schüttung angeboten wird. Die Bezeichnung Bio garantiert Ihnen nämlich zahlreiche Kontrollen während der Produktion und Herstellung des Produkts sowie den Respekt vor der Umwelt. Entdecken Sie unser <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>Sortiment an Bio-Schwarztees Made in Normandie!</a><br><strong>Die Herstellung von Schwarztee</strong> erfordert ein hohes Maß an Fachwissen, um seinen ganz besonderen Geschmack zu erhalten. Die verschiedenen Schritte seiner Herstellung werden sorgfältig ausgeführt und kontrolliert, damit Sie alle Geschmacksrichtungen, die er bietet, genießen können. ",
                 })
                 
             </section>
@@ -138,7 +138,7 @@
             @@include('.././_components/partager.html', {
                 "titre": "Wie man Chai Latte macht: Das Kusmi-Rezept",
                 "texte": "Diesen Artikel teilen",
-                "url-network": "$url('Page-Show','cid','')$",
+                "url-network": "$url('Page-Show','cid','herstellung-von-schwarztee')$",
             })
         </section>
     </div>

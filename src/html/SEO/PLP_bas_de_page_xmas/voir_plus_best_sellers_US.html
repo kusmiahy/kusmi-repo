@@ -1,0 +1,90 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : coffrets_a_personnaliser-cat-landing-description-m
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "What are the most popular types of tea included in best-selling tea gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Best-selling tea gift sets often include a variety of teas like Earl Grey, Green tea, and Assam or Darjeeling black teas. These selections cater to a wide <span class='hide__text hide__fadeout'>range of preferences, offering both classic and exotic flavors.</span> <span class='hide__cta hide__cta--view-more'>See more</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are organic tea gifts popular among tea enthusiasts?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, organic tea gifts are increasingly popular due to their natural cultivation methods and perceived health benefits. These gifts are especially appreciated by those who are health-conscious or environmentally aware.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "What additional items are commonly found in top-selling tea gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Alongside tea, these gift sets could often include accessories like infusers, tea strainers, and special tea cups or mugs. Some may also come with tea pairing snacks like biscuits or chocolates.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Is there a demand for specialty or rare teas ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Absolutely. Specialty teas like, Oolong, Pu-erh, or Matcha are sought after by connoisseurs. These rare teas offer unique flavors and are often presented in luxurious packaging.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Do best-selling tea gifts cater to specific health or wellness themes?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, many popular tea gifts focus on health and wellness themes, like detox, and relaxation. These often include herbal teas with ingredients known for their potential health benefits.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Are there tea gift sets designed for beginners or those new to tea?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Yes, there are gift sets specifically designed for beginners, featuring a selection of classic teas like black and green tea, and easy-to-use brewing accessories.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "How important is packaging in the popularity of tea gift sets?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Packaging plays a significant role in the appeal of tea gifts. Elegant, sustainable, or creatively designed packaging can greatly enhance the perceived value and attractiveness of the gift set. <span class='hide__cta hide__cta--view-less'>See less</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

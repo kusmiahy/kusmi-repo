@@ -20,7 +20,6 @@ function addLogos(id, altEuro, altAb, classLogos) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('yoshi');
     const currentURL = window.location.href;
     if (currentURL.includes('com/fr')) {
         addLogos('.m-pdp__main-details', 'certification européenne bio', 'certification agriculture biologique', 'c-product-details__logos-bios');

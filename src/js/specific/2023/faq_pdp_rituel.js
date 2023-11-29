@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
             !question.classList.contains('faq__question--toggled') ? question.classList.add('faq__question--toggled') : question.classList.remove('faq__question--toggled');
         })
     })
-    currentURL.includes('com/fr') ? addPastille('#pdpCarousel-21251A1070', 'images/pdp/2023/rituel_sommeil/pastille_melisse_fr.svg?$staticlink$') : addPastille('#pdpCarousel-21251A1070', 'images/pdp/2023/rituel_sommeil/pastille_melisse_en.svg?$staticlink$');
+    // currentURL.includes('com/fr') ? addPastille('#pdpCarousel-21251A1070', 'images/pdp/2023/rituel_sommeil/pastille_melisse_fr.svg?$staticlink$') : addPastille('#pdpCarousel-21251A1070', 'images/pdp/2023/rituel_sommeil/pastille_melisse_en.svg?$staticlink$');
 })
