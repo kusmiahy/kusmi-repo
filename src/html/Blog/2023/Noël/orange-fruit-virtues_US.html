@@ -1,0 +1,110 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : orange-fruit-vertus
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Orange, a fruit bursting with benefits! 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_vertues_de_l_orange.webp?$staticlink$",
+                "alt": "orange cut on a tray with a grey knife on the side",
+    
+                "titre": "Orange, a fruit bursting with benefits!",
+                "date": "Published the <span class='date__color'>12/03/2020</span>",
+                "url-produit": "$url('Search-Show','cgid','new')$",
+                "lien-categorie": "blog/?filter=Les-ingredients",
+                "tag-texte": "Ingredients",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "Sold at stores and markets throughout the year, <strong>oranges</strong> are in fact a winter fruit naturally available in France from December through April. They are some of the world’s most grown fruits, but also the most consumed in France along with apples and bananas. Read on to find out more about the properties and benefits of this <strong>spherical fruit</strong> we love so much! ",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "A luxury fruit ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "As everyone knows, <strong>oranges</strong> are citrus fruits just like lemons, grapefruits, and bergamots. However, what makes it different is its size, color, and sweet but also slightly sour flavor. Originally grown in China and preceded by another variety, the bitter orange, sweet oranges first appeared in Europe around the 15th century. They were an instant hit. Their benefits, sweetness and zesty flavor had everyone in agreement, particularly the aristocracy and the royal family, who even grew orange gardens at their homes. Before spreading to the people in the mid-20th century, oranges were a luxury fruit and long considered a fine Christmas present. ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_peau_orange.webp?$staticlink$",
+                        "alt": "orange où on enlève la peau d'une manière circulaire",
+                    })
+                </div>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "A multitude of possibilities",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<strong>This juicy citrus</strong> fruit can be used in countless ways. Delicious on its own or in fruit salads, it is also a great accompaniment to savory dishes with meat, fish, and vegetables, and is used in desserts such as cakes and pastries. It is also <strong>the world’s most consumed fruit juice</strong>. Did you know? To cook orange segments and cut them into “supremes,” you remove the peel but also the thin, white, bitter layer known as the “pith.” Oranges also pair wonderfully with mint and dried fruits such as dates and prunes. And chocolate offers an irresistible match, especially when used as a dip for candied “<strong>orangettes</strong>”.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_planche_oranges.webp?$staticlink$",
+                        "alt": "plusieurs rondelles d'oranges sur une planche",
+                    })
+                </div>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Candied or preserved, orange reveals its benefits",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "To make <strong>this renowned candied delicacy</strong> in full slices or sticks, make sure you keep the orange peel to one side. Famed for its nutrients and healthy properties, it adds a bitter touch to this sweet treat and balances the sugary side of the orangettes. The peel is also excellent for making <strong>marmalades</strong> and other preserves (always better with tasty chunks left in), and can be enjoyed in other forms such as dried, grated, powdered, and even infused. Mouthwatering in certain teas, it offers <strong>a perfect addition to Euphoria by Kusmi Tea</strong> (along with maté and chocolate), as well as <strong>the famous</strong> <a class='banniere__link' href=\"\$url('Product-Show','pid','21137A1070')$\"\>Tsarevna</a>, the brand’s iconic Christmas blend combined with vanilla, almonds, and spices.",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21137A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tsarevna.webp?$staticlink$",
+                        "alt": "product infusion Tsarevna Kusmi Tea",
+                    })
+                </a>
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Orange, a fruit bursting with benefits!",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','orange-fruit-virtues')$",
+            })
+        </section>
+    </div>
+
+</div>

@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2023">
+    @@include('../components/slot_non_connecte.html', {
+        "alt": "Inscrivez-vous ou connectez-vous pour accéder à nos ventes privilèges",
+        "title": "Vente privilège",
+        "until": "Jusqu'à",
+        "number": "-50%",
+        "subtitle": "sur une sélection exclusive",
+        "texte-link1": "Je me connecte",
+        "texte-link2": "Je m'inscris",
+        "link1": "$url('Login-Show','cid','')$",
+        "link2": "login/?activeTab=register&activateLoyalty=true",
+    })
+</section>

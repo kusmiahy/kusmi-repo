@@ -1,0 +1,137 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : die-infusionen-bio-hiver
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Der Glögg von Kusmi Tea, der Trost aus dem Norden, in limitierter Auflage! 
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_glogg_6.webp?$staticlink$",
+                "alt": "Glögg product Kusmi Tea",
+    
+                "titre": "Der Glögg von Kusmi Tea, der Trost aus dem Norden, in limitierter Auflage!",
+                "date": "Veröffentlicht am <span class='date__color'>23/09/2022</span>",
+                "url-produit": "$url('Product-Show','pid','21150A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Sie müssen zugeben, dass die nordischen Feierlichkeiten einen einzigartigen Charme haben! Natürlich sind da die Rentiere mit ihren Mützen, ihren fröhlichen Glöckchen und ihren Schlitten mit den kuscheligen Decken, die fröhlich durch den unberührten Schnee tollen. Und dann die kleinen, abgelegenen Dörfer mit ihren hübschen, bunten Häusern, in denen man unwiderstehliche Zimtkekse teilt und plaudert ... Aber was die wahre Wärme dieser kalten Länder ausmacht, sind die Tassen, die sich treffen und aneinanderstoßen, während man auf Freundschaft und Geselligkeit anstößt. Diesen Winter nimmt uns Kusmi also mit nach Skandinavien. Wir brauchen so dringend etwas Süßes!",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Glögg, ein wärmender Früchtetee",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Um uns mit einer Tasse Herz und Körper zu wärmen, hat unser Teehaus das traditionelle Rezept des <strong>Glögg</strong>, eines würzigen skandinavischen Glühweins, überarbeitet, um daraus einen köstlichen Früchtetee zu machen, den man den ganzen Winter über genießen kann, selbst bei der polaren Kälte. Das Ergebnis ist ein <strong>Bio-Glögg</strong> in der Version von Kusmi Tea mit einem warmen Bernsteinlikör, dessen säuerliche Noten von Hibiskus, schwarzer Johannisbeere und Weintrauben sich großzügig mit den betörenden Aromen von Zimt, Kardamom und Lakritz vermischen. Ein reiner Gewürzgenuss, der Innovation und Tradition vereint, <strong>frei von Teein</strong> (und Alkohol) ist und ohne jede Mäßigung getrunken und wieder getrunken werden kann. In dieser Saison gibt es also keinen Kamin ohne Feuer und keine märchenhafte Stimmung mit Freunden ohne <strong>Glögg</strong> von Kusmi!",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Was ist Glögg?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wussten Sie es schon? Der Geschichte nach wärmte Glögg im 16. Jahrhundert die skandinavischen Boten, die bei großer Kälte zu Pferd unterwegs waren. Dieser Glühwein, dem zahlreiche therapeutische Eigenschaften zugeschrieben wurden, wurde damals Hypocras genannt, in Anlehnung an Hippokrates, den berühmten &quot;Vater der Medizin&quot;. Erst im 19. Jahrhundert erhielt er seinen heutigen Namen, da &quot;glögg&quot; auf Schwedisch &quot;Wärme, Glanz&quot; bedeutet. Sind Sie also auch bereit zu strahlen? Der Kusmi Tea Glögg Bio-Früchtetee wird Sie garantiert zum Schmelzen bringen, denn er bietet Ihnen Wärme aus dem Norden!",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Unsere klassischen tees",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wer könnte besser geeignet sein, Ihnen bei der Bewältigung eines <strong>harten Winters</strong> zu helfen, als die Klassiker? Und ganz besonders unsere legendären <strong>historischen Tees</strong>! Wie Sie wissen, hat Kusmi seine Wurzeln in Russland, bevor wir zum französischen Staatsbürger wurden. Deshalb sollten Sie sich in diesem Winter unseren klassischen Tees zuwenden, um Ihre Hände und Ihren Geist zu wärmen.<br>An kalten Tagen greift man gerne auf Klassiker und Must-Haves zurück. Deshalb ist es für uns selbstverständlich, Ihnen vom Earl Grey Tee zu erzählen, diesem schwarzen Tee mit Bergamotte. Wir kommen jeden Winter gerne darauf zurück und können nie widerstehen, uns eine zweite Tasse dieses kräftigen Schwarztees zu gönnen, vor allem während der fröstelnden Morgenstunden. Zwei Rezepte für Kusmis Earl Grey werden Ihnen helfen, das winterliche Energietief zu überwinden. Auf der einen Seite finden Sie Anastasia, unseren Bio-Schwarztee mit Bergamotte und Zitrone, und auf der anderen Seite unseren Prinz Wladimir, einen Schwarztee, der mit Zitrusfrüchten, Vanille und Gewürzen aromatisiert ist. Diese beiden Earl Grey gehören zu den unverzichtbaren Rezepten aus dem Hause Kusmi.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Aufmunternde bio-kräuter- und früchtetees",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bisher haben wir Ihnen von unseren <strong>Charaktertees</strong> erzählt, die den Raum mit dem würzigen Duft von Zimt, Vanille oder Ingwer erfüllen. Wir kennen Sie jedoch und wenn wir Ihnen vom Winter erzählen, denken Sie ganz bestimmt an lange Abende unter der Bettdecke mit Netflix. Liegen wir da falsch? Keine Sorge, wir bei Kusmi lieben unsere Winterabende umso mehr mit unserem brandneuen Sortiment an Bio-Kräutertees, die zu <strong>100 % teeinfrei</strong> sind.<br>Und glauben Sie nicht, dass Kräutertee nur aus Lindenblüten und Kamille besteht! Weit gefehlt, bei Kusmi wollen wir Feinschmecker und <strong>wärmende Aromen</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Welchen kräuter- oder früchtetee sollte man für einen netflix-abend wählen?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi Tea hat diesen <strong>traditionellen Glühwein</strong> aus dem Norden in Form von Früchtetee neu interpretiert. Das Ergebnis: eine <strong>Gewürzmischung mit säuerlichen Noten von Hibiskus und schwarzer Johannisbeere</strong> und betörenden Aromen von Zimt, Lakritz und Kardamom. Die zur Feier des Weihnachtsfestes in einer wunderschönen Schachtel in limitierter Auflage erscheint!<br><br>So lecker und dank seiner Biskuitnoten eignet sich unser Früchtetee <strong>Sweet Break</strong> ganz besonders für einen Netflix- und Chill-Abend. Warum ist das so? Weil man abends nach dem Essen gerne auf einer süßen Note endet, oder? Nun, hier ist der richtige Bio-Früchtetee für Sie. Wir haben eindeutig keinen tröstlicheren Früchtetee als unseren <strong>Sweet Break</strong>, den Bio-Gourmet-Früchtetee mit Keksnoten.<br><br>Und tagsüber ist unser Bio-Früchtetee <strong>Sweet Break</strong> der Verbündete für die Snackpause. Wie wir bei Kusmi gerne sagen, ist die Zwischenmahlzeit heilig und im Winter wichtig, um neue Energie zu tanken. Es ist also ganz natürlich, dass <strong>Sweet Break</strong>, unsere Bio-Hibiskusmischung mit dem Geschmack von roten Früchten und Keks, zu unserer Winterauswahl gehört.<br><br>Bei den Gewürzliebhabern muss man sie nicht mehr vorstellen: unsere Bio-Teemischung mit 7 Gewürzen <strong>Only Spices</strong>. Eine Bio-Mischung ohne Teein, die nach Wunsch gewürzt und dank der subtilen Noten von Anis gesüßt ist. Kurzum, ein Bio-Kräutertee, der uns an den Süden erinnert, an einen Aperitif in der Sonne und an das Meer... was gibt es  Schöneres, wenn die Temperaturen im Keller sind?",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Die Köstlichkeit von Bio-Rooibos",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Mmmmhhhh, im Winter wünschen wir uns etwas Aufmunterndes, Besinnliches, Sanftes... kurzum etwas KÖSTLICHES. Was gibt es Besseres als einen milden Bio-Rooibos-Tee für Ihre Winterabende? Rooibos ist ein roter Tee ohne Teein, den wir besonders wegen seines runden, weichen und natürlich süßen Geschmacks im Mund lieben. Da sie kein Teein enthalten, können Kräutertees aus Bio-Rooibos den ganzen Tag und von allen getrunken werden: von Klein und Groß und sogar von schwangeren Frauen. Und wenn Sie unsere Bio-Rooibostees testen, werden Sie feststellen, dass ein Aufguss aus Rooibos auf den ersten Blick an den feinen, abgeschnittenen roten Nadeln zu erkennen ist.Also ist es gut, sind Sie dem Charme dieses roten, teeinfreien Tees aus Südafrika verfallen? Bei Kusmi ist der Rooibos bio und in vielen Mischungen enthalten. <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>Entdecken Sie unsere Bio-Rooibos</a>",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Eher ein Fan von Mandeln? Entdecken Sie den Rooibos Mandel",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die Mandel, die Mandel, die Mandel, wir lieben sie und sie erinnert uns an die Snacks unserer Kinder. Sie werden es verstanden haben, sie ist die regressive Zutat par excellence, die in unserem Bio-Tee Rooibos Mandel enthalten ist. Bei Kusmi ist der Bio-Rooibos-Tee mit Mandel eine echte Madeleine de Proust.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Eher in Vanille verliebt? Entdecken Sie den Rooibos Vanille",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zwischen Ihnen und Vanille besteht seit Ihrer Kindheit eine &quot;Liebe auf den ersten Blick&quot;? Wir können Sie so gut verstehen! Ein Glück, dass sich der runde Bio-Rooibos und die süße Vanille in unserem teeinfreien Bio-Kräutertee von Kusmi das Ja-Wort gegeben haben. Sind Sie auch in unseren Bio-Rooibos Vanille verliebt?",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Bio-Rooibos und mehr, wenn Sie mögen",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bio-Rooibos ist auch im Bio-Kräutertee Feel Zen mit Früchten und Karamell enthalten: der Kräutertee, der Sie entspannen oder vom Alltag entstressen wird.",
+                })
+                
+
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Der Glögg von Kusmi Tea, der Trost aus dem Norden, in limitierter Auflage! ",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','glogg-skandinavisches-wintergetrank')$",
+            })
+        </section>
+    </div>
+
+</div>
+

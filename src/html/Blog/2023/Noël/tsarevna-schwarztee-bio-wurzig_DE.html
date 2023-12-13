@@ -1,0 +1,96 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : die-infusionen-bio-hiver
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Unser ikonischer Bio-Schwarztee Tsarevna, unser Weihnachtstee in limitierter Auflage!
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_tsarevna_5.webp?$staticlink$",
+                "alt": "Tsarevna product Kusmi Tea",
+    
+                "titre": "Unser ikonischer Bio-Schwarztee Tsarevna, unser Weihnachtstee in limitierter Auflage!",
+                "date": "Veröffentlicht am <span class='date__color'>23/09/2022</span>",
+                "url-produit": "$url('Product-Show','pid','21150A1070')$",
+                "lien-categorie": "blog/?filter=christmas",
+                "tag-texte": "Christmas",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Packen Sie dieses Jahr Ihre Koffer und erleben Sie eine magische Weihnachtszeit. Schon bei Ihrer Ankunft wird in diesem majestätischen Hotel, das ganz in Rot und Gold gehalten ist, der festliche Ton angeschlagen. In der Lobby empfängt Sie der Page mit Geschenken und rollt nur für Sie einen riesigen roten Teppich aus. Das gesamte Kusmi-Team ist mit den letzten Vorbereitungen beschäftigt, um Ihren Aufenthalt zu einem außergewöhnlichen Erlebnis zu machen. Die Räume werden dekoriert, die Bäume beleuchtet, die Geschenke und die Bio-Tee-Sets werden sorgfältig verpackt. Weihnachten kann endlich beginnen!",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Glögg, ein wärmender Früchtetee",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Zunächst geht es in den Teesalon. Aus Ihrer dampfenden Tasse strömt ein betörender Duft von Orangen, Vanille und Gewürzen, der tausend und eine Köstlichkeit verheißt. Kardamom, Zimt, Lakritz... <strong>Das ist Tsarevna, unser schwarzer Weihnachtstee in limitierter Auflage. Alles bio und made in Normandie</strong>. Wir verraten Ihnen alles über unseren <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>Bio-Schwarztee</a> mit Orangenschalen und Gewürzen.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Tsarevna, der unverzichtbare Weihnachtstee",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Was könnte diesen Winter wärmender sein als ein würziger Schwarztee? Gute Nachrichten: Unser ikonischer Bio-Schwarztee mit dem Namen Tsarevna kehrt dieses Jahr in einer außergewöhnlichen Umgebung zurück, in der der Weihnachtsrummel gerade erst begonnen hat.<br>Unser ikonischer Schwarztee <a class='banniere__link' href=\"$url('Product-Show','pid','21081A1070')$\"\>Tsarevna</a> entführt Sie mit seinem betörenden Duft von Orangenschalen, Gewürzen und Lakritz auf einer Basis von Schwarztee in einen Strudel von Aromen, von denen einer biologischer als der andere ist. Unser Weihnachtstee wird auch mit seiner Milchwolke genossen. Eine Tasse Latte-Tee kann man im Winter nie ablehnen. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Unser schwarzer Tee Tsarevna in limitierter Auflage ist bio",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Und weil je biologischer, desto besser, erwartet man bei Kusmi Weihnachten im Respekt für die Natur mit einem neuen Tsarevna-Rezept mit Bio-Siegel. Was könnte natürlicher sein?<br>Eher <a class='banniere__link' href=\"$url('Search-Show','cgid','the_vrac')$\"\>loser Tee</a> oder <a class='banniere__link' href=\"$url('Search-Show','cgid','the_sachets')$\"\>Teebeutel</a>? Wir lassen Ihnen die Wahl, unser schwarzer Bio-Weihnachtstee ist lose erhältlich, weil es gut für den Planeten ist, oder in Musselin-Beuteln, um Ihnen überallhin zu folgen.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Tee zu Weihnachten verschenken? Unsere Geschenkideen von Kusmi",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ein herrlich festliches Weihnachtsfest erwartet die ganze Familie bei Kusmi! Brauchen Sie eine Geschenkidee? Wie wäre es, wenn unser limitierter Bio-Schwarztee Tsarevna das perfekte Geschenk für Ihren Lieblingstee Liebhaber wäre?<br>Finden Sie unseren Tsarevna auch in einer <strong>Weihnachtsbox</strong>, die aus dem schwarzen Tee und einer passenden Nomadenflasche besteht. Bei Kusmi gibt es Geschenksets in Hülle und Fülle, alle unsere Geschenksets sind dieses Jahr unter dem Baum willkommen. Entdecken Sie unsere Sets und Geschenke.<br>Und wenn Ihnen das Universum unseres Grand Hotël Kusmi gefällt, finden Sie es auch in unseren personalisierten Geschenksets wieder: Set 3 Miniaturen, Set 3 KusmiKubes oder auch Set 3 Kubes, die Sie aus einer Auswahl an schwarzen Tees, grünen Tees, weißen Tees oder Bio-Kräutertees zusammenstellen können",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Unser ikonischer Bio-Schwarztee Tsarevna, unser Weihnachtstee in limitierter Auflage!",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','glogg-skandinavisches-wintergetrank')$",
+            })
+        </section>
+    </div>
+
+</div>
+

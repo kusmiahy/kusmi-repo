@@ -1,0 +1,203 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : winter-teas-and-infusions
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Our suggestions for teas and herbal infusions to give at Christmas 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_tsarevna_4.webp?$staticlink$",
+                "alt": "Tsarevna product Kusmi Tea",
+    
+                "titre": "The best teas and infusions for getting through the winter",
+                "date": "Published on <span class='date__color'>12/09/2020</span>",
+                "url-produit": "$url('Search-Show','cgid','noir')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "Ah… the fragrance of <strong>cinnamon</strong>, <strong>vanilla</strong>, and other <strong>spices</strong> fill the room… Which is exactly what we want in <strong>winter</strong>. Imagine yourself with a <strong>spiced tea</strong>, <strong>green tea</strong>, or <strong>black tea</strong> by the fire… or at least sat next to your radiator.<br>When winter rears its head, Kusmi has one piece of advice: stay hydrated and keep cozy with hot beverages. What’s more, everyone knows that a delicious <strong>herbal tea</strong> with <strong>a drop of honey</strong>, <strong>lemon</strong>, and <strong>ginger</strong> is the best home remedy for soothing a sore throat.",
+            })
+        </section>
+        <article class="content content__img">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Aside from the <strong>winter blues</strong>, you can always count on a warming cup of hot tea to get yourself back in the game. <strong>Whether cinnamon tea</strong>, the roundness of <strong>organic</strong>, <strong>spiced tea</strong> or delicious <strong>vanilla</strong>, which Kusmi tea or infusion will you be warming up with this winter? Here is a closer look at our <strong>5 teas and infusions for getting through the winter in style</strong>.<br><a class='banniere__link' href=\"$url('Search-Show','cgid','thes_hiver')$\"\>Discover our winter blends</a>",
+            })
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Organic spiced teas: your allies for getting through the winter",
+                    })
+                    @@include('.././_components/h3.html', {
+                        "titre": "Christmas-colored tea",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "How could we possible tell you about <strong>winter teas</strong> without talking about our <strong>limited-edition Tsarevna Christmas tea</strong>? Every year, Kusmi reveals a new limited-edition of its <strong>Tsarevna Christmas spiced tea</strong>. In 2020, <strong>Tsarevna</strong> is adorned in beautiful green and has gone <strong>organic</strong>.",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21137A1070')$\"\>Tsarevna 120G</a>: this is the unmissable <strong>Christmas tea</strong> from Kusmi Tea. Make your way to the fairground, buy a ticket for the <strong>Tsarevna</strong> carrousel and set off on a whirlwind of <strong>flavors</strong>. With a heady aroma of <strong>orange peel</strong>, <strong>spices</strong>, and <strong>licorice</strong>, all underpinned by an <strong>organic black tea</strong> base, our <strong>organic-label recipe</strong> will delight your taste buds and is also available <strong>loose</strong>!",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21137A1070')$\"\>The 24-bag tin</a>: our <strong>Tsarevna organic black tea</strong> is of course available in <strong>tea bags</strong>. Ideal for bringing your <strong>Christmas tea</strong> to the office and making all your colleagues dream of going on a winter holiday.",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Lucky you! Every year, you can find our <strong>organic Christmas tea</strong> in our <strong>Tsarevna gift set</strong> accompanied by its matching green <strong>mug</strong>. So, will you be giving this <strong>Tsarevna gift set</strong> to someone this Christmas, or keeping it for yourself?",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21137A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tsarevna_6.webp?$staticlink$",
+                        "alt": "Tsarevna product Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Teas for your home-made chai latte",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Along with trendy <strong>matcha latte</strong>, here at Kusmi we love chai latte – <strong>THE hot drink</strong> from India you just have to try, renowned for its energizing properties. With that in mind, we had to concoct a selection of <a class='banniere__link' href=\"$url('Search-Show','cgid','the_epice')$\"\>spiced teas</a> for your <strong>latte recipes</strong>.<br>First of all, let us introduce one of our oldest spiced black tea recipes, our <strong>Kashmir Tchaï</strong>. <a class='banniere__link' href=\"$url('Product-Show','pid','21722A1070')$\"\>Kashmir Tchaï</a>, as its name indicates, is a <strong>black chai tea</strong> enhanced with an incredible blend of <strong>spices</strong>: <strong>cardamom</strong>, <strong>cinnamon</strong>, <strong>ginger</strong> and <strong>clove</strong>. Everything that makes this black tea PERFECT for mixing with your <strong>milk</strong> and <strong>milk foam</strong>.<br>For those of you who want to give back, we recommend our <a class='banniere__link' href=\"$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a>, an <strong>organic spiced black tea</strong>This peppery, spiced black tea with ginger, cardamom, and cinnamon is sure to delight those who like things a little spicy.<br>Fancy varying the pleasure? You can also make a <strong>chai latte</strong> with the iconic <a class='banniere__link' href=\"$url('Product-Show','pid','21716A1070')$\"\>Prince Vladimir</a>, a <strong>black te</strong>a with notes of <strong>citrus</strong> and <strong>vanilla</strong>. And the <a class='banniere__link' href=\"$url('Product-Show','pid','21084A1070')$\"\>Sweet Love</a> <strong>black tea</strong> will awaken all your senses with its <strong>spice blend</strong> of guarana, <strong>licorice</strong>, and <strong>pink pepper</strong>.<br>Have you decided on one of our different <strong>spiced black teas</strong>? If so, we’ll meet you in the kitchen to teach you how to make your very own delicious <strong>chai latte</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "The Chai Latte Recipe",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "The recipe for our <strong>Chai Latte</strong> is very simple. All you have to do is brew two spoonfuls of your favorite <strong>spiced tea</strong> in a <strong>teapot</strong> for 5 minutes. When the <strong>infusion</strong> is ready, pour the desired amount into a <strong>mug</strong>, leaving enough room for the milk. Add a drop of honey or agave syrup. Finally, whisk your milk until it becomes nice and creamy, and pour it into your <strong>chai tea</strong>.<br>And as <strong>cinnamon</strong> lovers always want a little more spice, sprinkle some <strong>cinnamon</strong> or a spice of your choosing over the top. You can now enjoy your <strong>chai latte</strong>. And we promise, it will be perfect for warming your hands and your heart this <strong>winter</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "How can black tea be both diuretic and hydrating?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Yes, it can! Although it may seem paradoxical at first glance - to provide the body with water and at the same time encourage its elimination - the two beneficial effects complement each other. By drinking black tea, the body receives the water it needs to function properly, and then the water is eliminated (along with the toxins!) when the body no longer needs it.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Our Russian teas",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Who better than the Russians to help you get through a <strong>harsh winter</strong>? And especially our <strong>legendary Russian teas</strong>! Fortunately, as you know, Kusmi was originally founded in Russia before becoming a <strong>naturalized French citizen</strong>. This is why you can count on our <a class='banniere__link' href=\"$url('Search-Show','cgid','russe')$\"\>Russian teas</a> to warm your hands, body, and mind this winter.<br>When it starts getting cold, we turn to all things classic and iconic. Which is why we just had to tell you about our <a class='banniere__link' href=\"$url('Product-Show','pid','21641A1070')$\"\>Earl Grey</a> <strong>tea</strong>, a <strong>black tea with bergamot</strong>. We like coming back to it every winter, and can never resist pouring a second mug of this <strong>strong black tea</strong>, especially on chilly mornings.<br>Two of the <strong>Kusmi Earl Grey blends</strong> will help you get over that winter fatigue. Firstly, there is <a class='banniere__link' href=\"$url('Product-Show','pid','21642A1070')$\"\>Anastasia</a>, our <strong>organic black tea with bergamot and lemon</strong>. Secondly, there is our <a class='banniere__link' href=\"$url('Product-Show','pid','21716A1070')$\"\>Prince Vladimir</a>, a <strong>black tea</strong> flavored with <strong>citru</strong>s, <strong>vanilla</strong>, and <strong>spices</strong>. These <strong>Earl Grey</strong>s are two of the iconic recipes by Kusmi.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Comforting organic infusions",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "So far, we have talked to you about our <strong>strong teas</strong>, those with spiced aromas of <strong>cinnamon</strong>, <strong>vanilla</strong>, and <strong>ginger</strong> that delicately perfume the room. However, we know you, and when you hear the word “winter” you immediately think about long, lazy evenings cuddled up under the duvet in front of Netflix. Are we wrong? No need to worry: at Kusmi, we love our <strong>winter evenings</strong> even more thanks to our brand-new range of <strong>caffeine-free organic infusions</strong>.<br>And don’t think that herbal teas just mean <strong>linden</strong> and <strong>chamomile</strong>! Far from it! At Kusmi, we want delicious, comforting flavors from start to finish.<br>What infusion will you choose for your next evening in with Netflix?<br>Thanks to its <strong>biscuit notes</strong>, our delicious <strong>Sweet Break</strong> infusion is perfectly suited to an evening of Netflix and Chill. Why? Because after dinner, we always like to finish with something sweet! Well here is just the organic infusion for the job. Nothing is more comforting than our Sweet Break, a delicious <strong>organic herbal tea</strong> with <strong>biscuit notes</strong>.<br>During the day, our Sweet Break organic herbal tea is also ideal for taking a break. As we like to say at Kusmi, breaks are sacred – and essential for recharging our batteries in <strong>winter</strong>.<br>It was therefore an obvious choice to include Sweet Break, our <strong>organic blend of hibiscus with red fruit and biscuit flavors</strong>, in our winter selection.",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Spice buffs</strong> will already be in love with our <a class='banniere__link' href=\"$url('Product-Show','pid','21678A1070')$\"\>Only Spices</a> <strong>organic infusion with 7 spices</strong>. An <strong>organic</strong>, <strong>caffeine-free blend</strong> packing a spicy punch and a certain sweetness thanks to subtle notes of <strong>aniseed</strong>. In a word, an <strong>organic infusion</strong> that reminds us of the south, drinks on the beach, the sun, and the sea… What could be better when the temperature plummets?",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Comforting organic infusions",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "So far, we have talked to you about our <strong>strong teas</strong>, those with spiced aromas of <strong>cinnamon</strong>, <strong>vanilla</strong>, and <strong>ginger</strong> that delicately perfume the room. However, we know you, and when you hear the word “winter” you immediately think about long, lazy evenings cuddled up under the duvet in front of Netflix. Are we wrong? No need to worry: at Kusmi, we love our <strong>winter evenings</strong> even more thanks to our brand-new range of <strong>caffeine-free organic infusions</strong>.<br>And don’t think that herbal teas just mean <strong>linden</strong> and <strong>chamomile</strong>! Far from it! At Kusmi, we want delicious, comforting flavors from start to finish.<br>What infusion will you choose for your next evening in with Netflix?<br>Thanks to its <strong>biscuit notes</strong>, our delicious <strong>Sweet Break</strong> infusion is perfectly suited to an evening of Netflix and Chill. Why? Because after dinner, we always like to finish with something sweet! Well here is just the organic infusion for the job. Nothing is more comforting than our Sweet Break, a delicious <strong>organic herbal tea</strong> with <strong>biscuit notes</strong>.<br>During the day, our Sweet Break organic herbal tea is also ideal for taking a break. As we like to say at Kusmi, breaks are sacred – and essential for recharging our batteries in <strong>winter</strong>.<br>It was therefore an obvious choice to include Sweet Break, our <strong>organic blend of hibiscus with red fruit and biscuit flavors</strong>, in our winter selection.",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Spice buffs</strong> will already be in love with our <a class='banniere__link' href=\"$url('Product-Show','pid','21678A1070')$\"\>Only Spices</a> <strong>organic infusion with 7 spices</strong>. An <strong>organic</strong>, <strong>caffeine-free blend</strong> packing a spicy punch and a certain sweetness thanks to subtle notes of <strong>aniseed</strong>. In a word, an <strong>organic infusion</strong> that reminds us of the south, drinks on the beach, the sun, and the sea… What could be better when the temperature plummets?",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Indulgent organic rooibos",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Yum, yum, yum! In <strong>winter</strong>, we want coziness, childhood comforts, and softness. In a word, INDULGENCE. And so what better than a sweet <strong>organic rooibos</strong> for your <strong>winter evenings</strong>? <strong>Rooibos</strong> is a <strong>caffeine-free red tea</strong> that we really love, especially for its round, gentle, and naturally sweet flavors. As it is caffeine-free, <strong>infusions</strong> with <strong>organic rooibos</strong> can be enjoyed throughout the day by everyone – children, adults, and even pregnant women. And if you try our organic rooibos, you will notice that a <strong>rooibos herbal tea</strong> can be easily recognized by its fine red needles.<br>So, have you been charmed by this caffeine-free <strong>red tea</strong> from <strong>South Africa</strong>? At Kusmi, our <strong>rooibos</strong> is <strong>organic</strong> and used in a large number of blends. <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>Discover our organic rooibos</a>",
+                    })
+                </div>
+                <a href="$url('Search-Show','cgid','rooibos')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_rooibos_amande_2.webp?$staticlink$",
+                        "alt": "Almond Rooibos Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Do you adore almonds? Then discover our almond rooibos!",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "We can’t get enough of almonds, which remind us of snack breaks as children. You guessed it: almond is the irresistible ingredient that sends us back to our childhood in our <strong>organic almond rooibos infusion</strong>. At Kusmi, our herbal tea with <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>organic rooibos</a> and almonds is nothing short of a Proustian madeleine!",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Do you love vanilla? Then discover our vanilla rooibos!",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Was it “love at first bite” between you and <strong>vanilla</strong> when you were a child? We totally understand! It was hardly surprising that the roundness of <strong>organic rooibos</strong> and the sweetness of <strong>vanilla</strong> said “I do” in our <strong>caffeine-free organic infusion</strong> by Kusmi. So, have you tried our <a class='banniere__link' href=\"$url('Product-Show','pid','21666A1070')$\"\>organic vanilla rooibos</a> ?",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Organic rooibos and maybe more… ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Organic rooibos</strong> is also used in the <a class='banniere__link' href=\"$url('Product-Show','pid','21677A1120')$\"\>Feel Zen</a> organic infusion with <strong>fruits</strong> and <strong>caramel</strong>: an herbal tea that is sure to relax and destress you after a busy day.<br>Meanwhile, our <a class='banniere__link' href=\"$url('Product-Show','pid','21679A1070')$\"\>Lovely Night</a> organic infusion is <strong>the perfect herbal tea for falling asleep</strong>, and will have you out like a light in no time. Made with <strong>rooibos</strong>, <strong>linden</strong>, and <strong>verbena</strong>, the <a class='banniere__link' href=\"$url('Product-Show','pid','21679A1070')$\"\>Lovely Night</a> organic infusion can also calm you throughout the day.",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "The best teas and infusions for getting through the winter",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','winter-teas-and-infusions')$",
+            })
+        </section>
+    </div>
+
+</div>
+

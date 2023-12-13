@@ -1,0 +1,117 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : teas-herbal-infusions-for-christmas
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Our suggestions for teas and herbal infusions to give at Christmas 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_tsarevna_6.webp?$staticlink$",
+                "alt": "Tsarevna product Kusmi Tea",
+    
+                "titre": "Our suggestions for teas and herbal infusions to give at Christmas ",
+                "date": "Published on <span class='date__color'>12/06/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_thes_infusions')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "Christmas is a great time to introduce your friends and family to uniquely original, high-quality products. At Kusmi, we love to give you new experiences by offering <strong>teas and organic herbal infusions</strong> that revolutionise the art of blending. Spices, flowers, fruits, citrus fruits: every recipe is audaciously daring and surprising. Just for you, we've put together a list of teas and herbal infusions to give as gifts at Christmas!",
+            })
+        </section>
+        <article class="content content__img">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "For full details of our blends, visit our <a class='banniere__link' href=\"$url('Search-Show','cgid','thes_hiver')$\"\>Christmas teas and herbal infusions</a> page! There's something to suit every taste, with a range of <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>Christmas black teas</a>, <a class='banniere__link' href=\"$url('Search-Show','cgid','blanc')$\"\>Christmas white teas</a> and <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>festive herbal teas and infusions</a> to choose from.",
+            })
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Spiced organic tea for the magic of Christmas",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "What would Christmas be without a good chai tea? As well as an integral part of the magic of the festive period, it's also for us an essential item to have on the Christmas present list. This is <a class='banniere__link' href=\"$url('Product-Show','pid','21685A1070')$\"\>Tchaï of the Tiger</a>. Its remarkable taste comes accompanied by an equally remarkable cause. For two years now, Kusmi has been a patron of WWF France's Tx2 project, which is aimed at protecting the tiger, a species that is both endangered and emblematic of the tea-producing regions. Prefer opting for THE Christmas classic instead? How could we not mention <a class='banniere__link' href=\"$url('Product-Show','pid','21137A1070')$\"\>Tsarevna</a>, especially when talking about spicy organic tea? Tsarevna is the perfect Christmas gift for friends who like cinnamon and liquorice.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Organic floral tea for a bouquet of flavours",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Brightening up your home interior, saying thanks, declaring your love to someone: flowers are there for all the big important moments in our lives! So why not give them as a Christmas present? At Kusmi, we say yes to the idea! Orange blossom or ylang-ylang more your thing? For floral tea fans, we've selected two organic black teas flavoured with bergamot : <a class='banniere__link' href=\"$url('Product-Show','pid','21642A1070')$\"\>Anastasia</a> and <a class='banniere__link' href=\"$url('Product-Show','pid','21671A1070')$\"\>Flower Bouquet n°108</a>. On the one hand you have the comforting flavours of orange blossom, with a tea reflecting the strong personality of Princess Anastasia, daughter of Tsar Nicholas II. And on the other hand, the surprising presence of the essential oil of the ylang-ylang flower in Flower Bouquet n°108. This floral tea has a special place in our hearts, as it was Kusmi's very first tea. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21671A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_bouquet_de_fleurs_4.webp?$staticlink$",
+                        "alt": "Bouquet de Fleurs n°108 Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Gourmet organic tea for pleasurable indulgence",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Red berry tart to follow the Yule log? Or how about some almonds to nibble? We have something even better: two super gourmet recipes to enjoy guilt-free! They may be minimalist, but they've already proved their success multiple times. First up, <a class='banniere__link' href=\"$url('Product-Show','pid','21665A1070')$\"\>Almond Rooibos</a>. This organic herbal infusion offering a taste of childhood playfully blends the sweetness of rooibos with the gourmet flavour of almonds. If you want to give a 100% caffeine-free hot drink with a flavour that's sweet, round, smooth and perfumed all at the same time as a gift, you've just found it. If you'd prefer red berries, go for the simplicity of our <a class='banniere__link' href=\"$url('Product-Show','pid','21715A1070')$\"\>Four Red Fruits black tea</a>. Strawberries, raspberries, redcurrants and cherries combined in a delicious and delicately refine gourmet recipe…",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21715A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_quatre_fruits_rouges2.webp?$staticlink$",
+                        "alt": "Four Red Fruits Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "A gift set for the complete all-round present",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Because Kusmi has put together a range of lovely gift ideas for the ones you love. The <strong>Voyages with Inès</strong> tea and herbal infusion gift set, carefully put together by fashion designer <strong>Inès de la Fressange</strong>, who has also included a pretty cotton scarf as a bonus, is just the gift for the cool and trendy globe-trotting mum. <strong>KusmiKube</strong>s – mini boxes of fruity, floral or spicy tea to combine how you like… No need to be Hemingway to put your creativity on display and personalise your gift box! A foodie aunt? She'll adore the delicious <a class='banniere__link' href=\"$url('Product-Show','pid','21690A1150')$\"\>Alain Ducasse White Tea</a>, with its sweet notes of rose and raspberry. Unless the jazzy blends of the brand new <a class='banniere__link' href=\"$url('Search-Show','cgid','coffrets_de_the_en_sachets')$\"\>The Spices gift set</a> gets her dancing instead… Want to introduce your best friend to the flavours of the Japanese tea ceremony without having to book a flight from London to Kyoto? The <strong>Matcha green tea</strong> is just the ticket! A cousin who avoids caffeine? Make it <a class='banniere__link' href=\"$url('Product-Show','pid','21707A1220')$\"\>an assortment of flavoured organic herbal teas</a> that she'll be able to enjoy all night long at the dance club! As for the <strong>Tsarevna gift set</strong>, which this year comes with a simply must-have art-deco flask, that will be for dad! (and he'll lend it to me, of course!)<br>We hope these ideas for teas to give at Christmas will help you in your search. All our teas are organic and made in Normandy.",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Our suggestions for teas and herbal infusions to give at Christmas",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','teas-herbal-infusions-for-christmas')$",
+            })
+        </section>
+    </div>
+
+</div>
+

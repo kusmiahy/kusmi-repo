@@ -31,6 +31,13 @@
   }
 }
 
+//Desktop 2K
+@mixin min2160 {
+  @media screen and (min-width: 2160px) {
+    @content;
+  }
+}
+
 
 // Desktop demi ecran
 @mixin min1280 {

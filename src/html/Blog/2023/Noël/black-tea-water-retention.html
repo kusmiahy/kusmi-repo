@@ -1,0 +1,181 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : black-tea-water-retention
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Our suggestions for teas and herbal infusions to give at Christmas 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_earl_grey.webp?$staticlink$",
+                "alt": "Earl Grey product Kusmi Tea",
+    
+                "titre": "The diuretic properties of black tea : good for water retention?",
+                "date": "Published on <span class='date__color'>01/11/2022</span>",
+                "url-produit": "$url('Search-Show','cgid','noir')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tea",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "If green tea is known for its draining and hydrating properties, the good news is that black tea is just as good! Composed essentially of infused water - drunk hot or cold - <a class='banniere__link' href=\"$url('Page-Show','cid','organic-black-tea-benefits')$\"\>black tea has many health benefits</a>. It hydrates the body, stimulates the kidneys and helps to eliminate toxins. Not a bad effect on the body for a single drink, is it?<br>Quickly, discover <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>our range of organic black teas made in Normandy!</a>",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Black tea, a natural diuretic",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "But what are we talking about when we talk about diuretic properties? It is a substance that has the capacity to increase the elimination of sodium (a mineral salt) and water by the kidneys. More concretely, diuretics help the body to eliminate more water and salt than usual. This elimination takes place via urinary secretions. As a result of this avoidance of salt, blood pressure is lowered, which is beneficial to our cardiovascular system. If several foods are known to be effective diuretics (artichoke, asparagus, aubergine, spinach...), black tea is added to the list, thanks to the presence of theine and theobromine.... and it is much easier to prepare! Just brew for a few minutes and it's good!",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Black tea, a source of hydration",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Far too many of us still do not drink the 1.5 to 2 litres of water per day that our bodies need to function properly. This amount varies according to our physical exertion, our morphology... and the weather! Throughout the day, particularly in the morning when we wake up or after a sports class, it is important to rehydrate the body to ensure that our body and brain function properly. The trick to drinking more is to add tea, hot or iced, to your usual water intake.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "How can black tea be both diuretic and hydrating?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Yes, it can! Although it may seem paradoxical at first glance - to provide the body with water and at the same time encourage its elimination - the two beneficial effects complement each other. By drinking black tea, the body receives the water it needs to function properly, and then the water is eliminated (along with the toxins!) when the body no longer needs it.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Black tea, a source of hydration",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Far too many of us still do not drink the 1.5 to 2 litres of water per day that our bodies need to function properly. This amount varies according to our physical exertion, our morphology... and the weather! Throughout the day, particularly in the morning when we wake up or after a sports class, it is important to rehydrate the body to ensure that our body and brain function properly. The trick to drinking more is to add tea, hot or iced, to your usual water intake.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Black tea to combat water retention",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Drinking water or black tea regularly and in good quantities will help to combat water retention. In the event of dehydration, even slight, the body holds on to the remaining liquids, storing water in the tissues. The result is an accumulation of water and swelling in various parts of the body (heavy legs). As liquids accumulate, excess fat is also less easily eliminated by the lymphatic system, which can encourage the development of cellulite. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Black tea, a slimming ally?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Far be it from us to make miraculous promises, but drinking black tea could encourage weight loss. Combined with a balanced diet and regular exercise, black tea, rich in catechins (polyphenols) and theine, promotes hydration and elimination. With few or no calories (it also depends on whether you sweeten it or not!), black tea can also be used to limit snacking. If you have a craving, make yourself a cup of black tea instead of opening a packet of cake! What do we have to lose by trying?",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "The health benefits of black tea",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Still not convinced? Black tea leaves have multiple health and body benefits. Rich in theine and L-Theanine, it is considered a natural stimulant, whereas coffee and caffeine are more of an exciter. Packed with antioxidants, it also helps to combat the development of certain diseases and premature ageing of cells. It is also said to have beneficial properties for digestion and stomach aches.<br>You will have understood that at Kusmi Tea we are fans of black tea. A cup of black tea will help you eliminate thanks to its diuretic properties. To drink a quality tea, we opt for organic leaves.",
+                })
+            </section>
+        </article>
+        <section class="slider-scroll">
+            @@include('.././_components/h2-section.html', {
+                "titre": "Related",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-breastfeeding')$",
+                    "lien-img": "blog/1_ALLAITEMENT-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "Can you drink black tea while breastfeeding?",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','how-much-black-tea-to-drink')$",
+                    "lien-img": "blog/1_MAX_NOIR.png?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "How much black tea should I drink per day?",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-antioxidants')$",
+                    "lien-img": "blog/1_THE_NOIR_ANTIOXYDANT.png?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "Black tea, an effective antioxidant?",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-stomach')$",
+                    "lien-img": "blog/1_DIGESTION-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": " The benefits of black tea on digestion and stomach",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-anxiety')$",
+                    "lien-img": "blog/1_STRESS-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "What is the effect of black tea on stress and anxiety?",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-pregnancy')$",
+                    "lien-img": "blog/1_GROSSESSE-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "Black tea and pregnancy: what pregnant women should know",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','black-tea-breastfeeding')$",
+                    "lien-img": "blog/1_MINCEUR-THE-NOIR.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "Black tea for weight loss: good idea?",
+                    "cta": "See more",
+                })
+                
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "The diuretic properties of black tea : good for water retention?",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','black-tea-water-retention')$",
+            })
+        </section>
+    </div>
+
+</div>
+

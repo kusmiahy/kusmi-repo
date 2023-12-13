@@ -1,0 +1,142 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : recipes-cinnamon-tea-infusion
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Organic cinnamon tea and infusion recipes
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="noel_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_orange_cinammon.webp?$staticlink$",
+                "alt": "cinnamon sticks with a mug next to id, filled with tea and a slice of orange in the mug",
+    
+                "titre": "Organic cinnamon tea and infusion recipes",
+                "date": "Published on <span class='date__color'>12/08/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_thes_infusions')$",
+                "lien-categorie": "blog/?filter=recette",
+                "tag-texte": "Recipes",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "Ah, cinnamon. A spice found in baked goods, sweets and hot drinks, and often considered a Christmas essential. Since ancient times, it has mostly been grown in Indonesia, China and Vietnam. But the most prized cinnamon of all is found in Sri Lanka. And at Kusmi, we like adding the spice to some of our Christmas tea recipes. We've created a selection to guide you, depending on your tastes. Check out all the recipes!",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Tsarevna: for lovers of Christmassy black tea",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21137A1070')$\"\>Tsarevna</a> is our infamous Christmas classic. The daughter, sister or wife of a Tsar, Tsarevna perfectly embodies our Russian heritage. Try this organic recipe as loose-leaf tea or in teabags: it's a limited edition for the Christmas period. Savour the delicious blend of cinnamon black tea with notes of ginger, cardamom, orange peel and liquorice. For best results, leave Tsarevna to infuse for 4 minutes in water at 90 degrees, and then enjoy!",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21137A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_tsarevna_6.webp?$staticlink$",
+                        "alt": "Tsarevna product Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Imperial Label: for a spicy green tea that lives up to its name",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Continuing with the Russian heritage theme, discover the emperor's tea. <a class='banniere__link' href=\"$url('Product-Show','pid','21648A1070')$\"\>Imperial Label</a> is the tea of choice for a spicy flavour. Imagine looking out at the snow coming down on the palace square, while you're cosy inside with the emperor's party in full swing! Try a cup of hot tea and discover the wild combination of cinnamon (of course), aniseed, liquorice, ginger, cardamom...and delicious orange peel. All this is underpinned by organic green tea to create a combination of &quot;citrus and spice&quot; flavours. Infuse for 3-4 minutes at 80 degrees for a delicious and comforting cuppa.",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21648A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_label_imperial_1.webp?$staticlink$",
+                        "alt": "Imperial Label product Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Glogg: for a comforting infusion from the north",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Do you love all the magic of a Scandinavian Christmas? If so, choose <strong>Glogg</strong>. With this organic infusion, we revisit traditional Scandinavian mulled wine. Try this tea based on spices (including our dear friend cinnamon) and grapes (for that winey taste), carefully accompanied by hibiscus, lemon peel, blackcurrant and liquorice. Leave to infuse for 5 minutes at 95 degrees. Share with loved ones by the fireside. And if you enjoy it so much you want to have it a new way, turn it into an iced drink. <a class='banniere__link' href=\"$url('Product-Show','pid','21150A1070')$\"\>Discover our two Glogg infusion cocktail recipes!</a>",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21150A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_glogg_5.webp?$staticlink$",
+                        "alt": "Glogg product Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Boost: for a triple-spiced maté",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "In need of a little cinnamon <a class='banniere__link' href=\"$url('Product-Show','pid','21634A1070')$\"\>Boost</a>? This organic maté is just the thing to help you tackle jam-packed days. It has a delicate maté base accompanied by a delicious trio of spices: cinnamon, ginger and cardamom. Perfect if you fancy some tingles on your tongue. Infuse for 4-5 minutes at 80 degrees and top up on energy ready for the madness the day has in store!",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "Related",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','spiced-teas')$",
+                    "lien-img": "blog/epices.jpg?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "The secrets behind spiced teas",
+                    "cta": "See more",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','how-to-make-your-chai-latte')$",
+                    "lien-img": "blog/chai-latte.png?$staticlink$",
+                    "alt": "Click to read the article",
+                    "titre": "Making your own Chai Latte: the Kusmi recipe Tea",
+                    "cta": "See more",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Organic cinnamon tea and infusion recipes",
+                "texte": "Share this article",
+                "url-network": "$url('Page-Show','cid','recipes-cinnamon-tea-infusion')$",
+            })
+        </section>
+    </div>
+
+</div>
+
