@@ -1,0 +1,39 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2023">
+    @@include('../components/slot_connecte.html', {
+        "alt": "Cliccate su uno dei pulsanti per accedere alle nostre offerte speciali di vendita",
+        "title": "Vendite<span class='x-hide-desktop'><br></span> Esclusive",
+        "until": "Fino al",
+        "number": "50% di sconto",
+        "subtitle": "su una selezione di articoli",
+        "texte-link1": "Tè e Infusi",
+        "texte-link2": "Cofanetti e regali",
+        "texte-link3": "Accessori da tè",
+        "texte-link4": "Tutta la selezione",
+        "link1": "vendite-esclusive",
+        "link2": "vendite-esclusive-te-infusi",
+        "link3": "vendite-esclusive-cofanetti",
+        "link4": "vendite-esclusive-accessori",
+        "class-cta": "hero__ctas-container--4-ctas",
+    })
+</section>

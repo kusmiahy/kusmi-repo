@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/vente_privilege.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : vente_privilege_push_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="vente_privilege_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push_connecte.html', {
+            "alt": "Click on the button &quot;J'en profite&quot; to access our privileged sales",
+            "texte-h2": "Private Sale",
+            "until": "Up to",
+            "number": "50% off",
+            "texte-h3": "a premium selection",
+            "texte-link1": "Shop now",
+            "link1": "$url('Search-Show','cgid','private-sale')$",
+            "class": "",
+        })
+    </div>
+</div>

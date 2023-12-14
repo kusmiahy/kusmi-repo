@@ -24,6 +24,9 @@ $color-bg: #08281C;
         @include min768() {
             width: 50%;
         }
+        @include min1920() {
+            height: 520px;
+        } 
         img {
             width: 100%;
             height: 100%;
@@ -48,6 +51,9 @@ $color-bg: #08281C;
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
+            @include min1024() {
+                margin-bottom: 1.5rem;
+            }
             @include min1920() {
                 gap: 1.5rem;
             }
@@ -84,6 +90,7 @@ $color-bg: #08281C;
                     }
                     @include min1024() {
                         font-size: 1.5rem;
+                        line-height: 1.5rem;
                     }
                 }
 
@@ -91,6 +98,7 @@ $color-bg: #08281C;
                     font-weight: 800;
                     font-size: 1.5rem;
                     line-height: 1.5rem;
+                    text-transform: uppercase;
                     @include min768() {
                         font-size: 2.5rem;
                         line-height: 2.5rem;
@@ -98,6 +106,18 @@ $color-bg: #08281C;
                     @include min1920() {
                         font-size: 3.5rem;
                         line-height: 3.5rem;
+                    }
+                    &--it {
+                        font-size: 1.3rem;
+                        line-height: 1.3rem;
+                        @include min768() {
+                            font-size: 2rem;
+                            line-height: 2rem;
+                        }
+                        @include min1920() {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                        }
                     }
                 }
             }
@@ -274,6 +294,11 @@ $color-bg: #08281C;
                     font-size: 2rem;
                     line-height: 2rem;
                     font-weight: 800;
+                    text-transform: uppercase;
+                    &.reduction__number--it {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
                 }
             }
         }

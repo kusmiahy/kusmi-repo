@@ -1,0 +1,39 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/secret_santa.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : black_friday_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2023">
+    @@include('../components/slot_connecte.html', {
+        "alt": "Click on one of the buttons to access our special sales offers",
+        "title": "Private Sale",
+        "until": "Up to",
+        "number": "50% off",
+        "subtitle": "a premium selection",
+        "texte-link1": "Tea and herbal tea",
+        "texte-link2": "Tea gift sets",
+        "texte-link3": "Tea accessory",
+        "texte-link4": "All selection",
+        "link1": "private-sale",
+        "link2": "private-sale-teas-herbal-teas",
+        "link3": "private-sale-gift-sets",
+        "link4": "private-sale-accessories",
+        "class-cta": "hero__ctas-container--4-ctas",
+    })
+</section>

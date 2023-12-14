@@ -1,23 +1,28 @@
 <article class="hero">
     <section class="hero__container container">
         <div class="container__texte">
-            <h2 class="font-barlow">
-                @@title
-            </h2>
-            <div class="reduction">
-                <p class="reduction__texte">@@until</p>
-                <p class="reduction__number @@class-reduction">@@number</p>
+            <div class="title-container">
+                <h2 class="font-barlow">
+                    @@title
+                </h2>
+                <div class="reduction">
+                    <p class="reduction__texte">@@until</p>
+                    <p class="reduction__number">@@number</p>
+                </div>
+                <h3 class="font-barlow">
+                    @@subtitle
+                </h3>
             </div>
-            <h3 class="font-barlow">
-                @@subtitle
-            </h3>
         </div>
-        <div class="hero__ctas-container">
-            <a class="cta--hero" href="@@link1">
+        <div class="hero__ctas-container @@class-cta">
+            <a class="cta--hero" href="$url('Search-Show','cgid','@@link1')$">
                 @@texte-link1
             </a>
-            <a class="cta--hero" href="@@link2">
+            <a class="cta--hero" href="$url('Search-Show','cgid','@@link2')$">
                 @@texte-link2
+            </a>
+            <a class="cta--hero" href="$url('Search-Show','cgid','@@link3')$">
+                @@texte-link3
             </a>
         </div>
     </section>
