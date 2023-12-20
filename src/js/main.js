@@ -4,7 +4,7 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
-        // =require specific/2023/voir_plus.js
+        // =require specific/2023/rituel_immunitaire.js
     } else {
         setTimeout(init);
     }

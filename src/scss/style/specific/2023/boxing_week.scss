@@ -1,7 +1,7 @@
 $color-text: #DCC183;
 $color-bg: #08281C;
 
-.vente_privilege_push_2023 {
+.boxing_day_push_2023 {
     width: 100%;
     margin-block: 5px;
 
@@ -10,7 +10,7 @@ $color-bg: #08281C;
     }
 }
 
-.vente_privilege_hero_2023 {
+.boxing_day_hero_2023 {
     width: 100%;
 }
 
@@ -192,7 +192,8 @@ $color-bg: #08281C;
 .push {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     background-color: $color-bg;
 

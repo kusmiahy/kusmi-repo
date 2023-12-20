@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/boxing_week.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : boxing_day_push_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="boxing_day_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur le bouton J'en profite pour accéder à notre sélection",
+            "texte-h2": "Boxing<br>Week",
+            "until": "Jusqu'à",
+            "number": "-50%",
+            "texte-h3": "sur une sélection de thés, infusions et coffrets",
+            "texte-link1": "J'en profite",
+            "link1": "$url('Search-Show','cgid','boxing_week')$",
+            "class": "",
+        })
+    </div>
+</div>
