@@ -1,0 +1,39 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP-SOLO
+
+    Nom de la classe parent : soldes_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2023">
+    @@include('../components/slot_ctas.html', {
+        "alt": "Cliccate sui diversi pulsanti per accedere alle nostre vendite",
+        "title": "Saldi",
+        "until": "Fino al",
+        "number": "50% di sconto",
+        "subtitle": "su una selezione di tè, infusi, <span class='x-hide-mobile'><br></span>cofanetti e accessori",
+        "texte-link1": "Tè & Infusi",
+        "link1": "the-infusion-soldes",
+        "texte-link2": "Cofanetti",
+        "link2": "coffrets-cadeaux-soldes",
+        "texte-link3": "Accessori",
+        "link3": "Accessoires-soldes",
+        "texte-link4": "Tutti i prodotti",
+        "link4": "saldi",
+        "class-cta": "hero__ctas-container--4-ctas-it",
+    })
+</section>

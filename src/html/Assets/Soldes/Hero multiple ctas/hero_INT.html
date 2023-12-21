@@ -1,0 +1,39 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP-SOLO
+
+    Nom de la classe parent : soldes_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2023">
+    @@include('../components/slot_ctas.html', {
+        "alt": "Click on the differents buttons to access our Winter Sales",
+        "title": "Winter Sale",
+        "until": "Up to",
+        "number": "50% off",
+        "subtitle": "a selection of teas, <span class='x-hide-mobile'><br></span>gift sets and accessories",
+        "texte-link1": "Teas & Herbal Teas",
+        "link1": "tea-infusion-sale",
+        "texte-link2": "Gift Sets",
+        "link2": "sampler-gift-set-sale",
+        "texte-link3": "Accessories",
+        "link3": "teaware-on-sale",
+        "texte-link4": "All discounted products",
+        "link4": "sale",
+        "class-cta": "hero__ctas-container--4-ctas",
+    })
+</section>

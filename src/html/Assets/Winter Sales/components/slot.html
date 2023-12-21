@@ -1,0 +1,38 @@
+<article class="hero">
+    <section class="hero__container container">
+        <div class="container__texte">
+            <div class="title-container">
+                <h2 class="font-barlow">
+                    @@title
+                </h2>
+                <div class="reduction">
+                    <p class="reduction__texte">@@until</p>
+                    <p class="reduction__number">@@number</p>
+                </div>
+                <h3 class="font-barlow">
+                    @@subtitle
+                </h3>
+            </div>
+        </div>
+        <div class="hero__ctas-container @@class-cta">
+            <a href="$url('Search-Show','cgid','@@link1')$" class="cta--hero">
+                @@texte-link1
+            </a>
+            <a href="$url('Search-Show','cgid','@@link2')$" class="cta--hero">
+                @@texte-link2
+            </a>
+            <a href="$url('Search-Show','cgid','@@link3')$" class="cta--hero">
+                @@texte-link3
+            </a>
+        </div>
+    </section>
+    <section class="hero__picture">
+        <picture>
+            <source srcset="anim/ope/2023_12_HP.jpg?$staticlink$"
+                media="(min-width: 1023px)" />
+            <source srcset="anim/ope/2023_12_HP_TAB.jpg?$staticlink$"
+                media="(min-width: 767px)" />
+            <img src="anim/ope/2023_12_HP_MOB.jpg?$staticlink$" alt="@@alt" />
+        </picture>
+    </section>
+</article>
