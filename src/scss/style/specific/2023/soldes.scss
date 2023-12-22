@@ -1,7 +1,7 @@
 $color-text: #fff;
 $color-bg: #D13A52;
 
-.boxing_day_push_2023 {
+.soldes_push_2023 {
     width: 100%;
     margin-block: 5px;
 
@@ -10,13 +10,34 @@ $color-bg: #D13A52;
     }
 }
 
-.boxing_day_hero_2023 {
+.soldes_hero_2023 {
     width: 100%;
 }
 
 .hero {
     display: flex;
     background-color: $color-bg;
+
+    &.hero--one-cta {
+        @include min1024() {
+            height: 323px;
+        }
+        @include min1440() {
+            height: auto;
+        } 
+        .hero__picture {
+            width: 86%;
+            @include min768() {
+                width: 47.5%;
+            }
+            @include min1440() {
+                width: 50%;
+            }
+            @include min1920() {
+                height: auto;
+            } 
+        }
+    }
 
     &__picture {
         display: flex;
@@ -129,9 +150,11 @@ $color-bg: #D13A52;
                 text-transform: none;
                 letter-spacing: normal;
                 font-size: 1rem;
+                line-height: 1.3rem;
                 font-weight: 500;
                 @include min1024() {
                     font-size: 1.5rem;
+                    line-height: 1.7rem
                 }
             }
         }
@@ -216,7 +239,7 @@ $color-bg: #D13A52;
 
     &__picture {
         height: 45%;
-
+        width: 100%;
         img {
             height: 100%;
             width: 100%;
@@ -253,10 +276,6 @@ $color-bg: #D13A52;
             }
 
             h2 {
-                background: url('hero/2023/black_friday/texture_golden.webp?$staticlink$');
-                background-size: cover;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 font-weight: 700;
                 text-transform: uppercase;
                 font-size: 1.7rem;
@@ -299,10 +318,6 @@ $color-bg: #D13A52;
                     line-height: .9rem;
                     font-weight: 600;
                     margin-bottom: .2rem;
-                    background: url('hero/2023/black_friday/texture_golden.webp?$staticlink$');
-                    background-size: cover;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                     @include min768() {
                         line-height: 1rem;
                         font-size: 1rem;

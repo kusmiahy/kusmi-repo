@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_immunitaire.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : rituel_immunitaire_homepromo_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Product-Show','pid','21153A1070')$" class="rituel_immunitaire_homepromo_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="homepromo">
+        @@include('../components/homepromo.html', {
+            "alt": "Click on &quot;Discover now&quot; to discover our new product &quot;Immune System green tea&quot;",
+            "texte-h2": "Boost your<span class='x-hide-mobile'><br></span>immune system",
+            "texte-h3": "Green tea enriched with vitamin C",
+            "texte-link": "Discover now",
+        })
+    </div>
+    
+</a>

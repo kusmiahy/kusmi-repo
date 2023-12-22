@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.soldes_hero_2023';
+var classParent = '.rituel_immunitaire_homepromo_2023';
 
 const {
     series,
