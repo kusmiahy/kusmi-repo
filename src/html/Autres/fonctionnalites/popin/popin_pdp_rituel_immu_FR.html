@@ -1,0 +1,101 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : dans Akineo
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+    <div class="popin">
+            @@include('./components/p-did-you-know.html', {
+                "texte": "Certaines périodes sont plus difficiles que d’autres et personne n’est à l’abri d’une petite « baisse de régime ». Rhumes ou autres petites infections sont autant d’attaques extérieures auxquelles doit faire face notre organisme notamment en période hivernale. Dans ces moments-là, notre système immunitaire en charge de protéger l’organisme des agents infectieux tels que les bactéries, les virus ou les champignons se retrouve très sollicité et a besoin d’un petit coup de pouce. Le Rituel Défenses Immunitaires devient dès lors votre allié du quotidien grâce à la vitamine C, reconnue pour être un atout majeur pour soutenir les défenses immunitaires [1] [2] [3].",
+            })
+            @@include('./components/h3.html', {
+                "texte": "Un extrait d’acérola qui ne manque pas de peps au service du système immunitaire",
+            })
+            @@include('./components/p-did-you-know.html', {
+                "texte": "Chez Kusmi Tea, nous avons fait le choix d’incorporer un extrait d’acérola bio à notre formulation afin de concentrer la vitamine C naturellement présente dans ce superfruit. Cette petite baie rouge caractérisée par son goût acidulé, possède une teneur en vitamine C exceptionnelle pouvant être jusqu’à 80 fois plus élevée que celle des agrumes tels que les oranges et les citrons [4].<br>Un extrait de très haute qualité, qui a effet positif sur vos défenses immunitaires dès la 1ère tasse, voilà ce que propose Rituel Défenses Immunitaires. Dans le cadre d’une alimentation variée et équilibrée, 2 tasses complètent efficacement votre alimentation.  Sachez par ailleurs que si vous voulez être totalement reboosté, notre recette vous apporte 100% des apports journaliers recommandés en vitamine C (80mg) en seulement 3 tasses par jour !<br>Star parmi les vitamines, la vitamine C est un antioxydant naturel. Autrement dit c’est un agent de protection à l’échelle cellulaire contre des molécules, dont on entend de plus en plus parler, que sont les radicaux libres. Des scientifiques ont mis en évidence que les radicaux libres seraient responsables d’un certain nombre de processus métaboliques délétères pour l’organisme tels que l’accélération des processus de vieillissement cellulaire.  Outre sa capacité à piéger les radicaux libres, la vitamine C va augmenter la réactivité des globules blancs qui font partie des premières cellules mobilisées lors d’une infection.<br>Le saviez-vous ? Non synthétisée par le corps humain, cette vitamine essentielle à de nombreux processus de l’organisme doit donc être apportée par le biais d'une alimentation variée et équilibrée. En prenant, régulièrement votre Rituel Défenses Immunitaires, vous offrez donc à votre corps la possibilité de mieux résister aux agressions extérieures. ",
+            })
+            @@include('./components/h3.html', {
+                "texte": "Une validation des effets santé par l’EFSA",
+            })
+            @@include('./components/p-did-you-know.html', {
+                "texte": "Les effets de la vitamine C sur les défenses naturelles de l’organisme ont été validés par l’Autorité Européenne de Sécurité des Aliments (EFSA). En effet, cette institution en charge de rendre des avis scientifiques a conclu qu’une relation de cause à effet est bien établie entre l’apport alimentaire en vitamine C et le bon fonctionnement du système immunitaire [5].<br>De nombreuses études scientifiques démontrent que la vitamine C stimule la migration des globules blancs vers le site de l'infection, améliore le processus de destruction des virus ainsi que la destruction microbienne [2] [6] [7] [8].<br>Une étude clinique menées sur 28 sujets démontre que la prise de vitamine C conduit à une réduction de 59% de la durée d’épisode de rhume [9]. Une étude épidémiologique cette fois-ci menée sur 120 personnes a conclu que l’immunité est positivement affectée par la consommation d’aliments naturellement riches en vitamine C [10]. ",
+            })
+            @@include('./components/h3.html', {
+                "texte": "La juste dose en vitamine C à chaque tasse",
+            })
+            @@include('./components/p-did-you-know.html', {
+                "texte": "Afin de nous assurer de la qualité de notre extrait d’acérola, nous avons fait appel à un laboratoire spécialisé dans l’analyse de plantes et dirigé par un pharmacien expert en pharmacologie. Les analyses récurrentes réalisées permettent de contrôler que les actifs de notre extrait sont présents à la juste dose. Nous garantissons ainsi la pleine efficacité de notre produit.<br><span class='popin__open'>Cliquez sur ce lien pour accéder à nos sources</span>.",
+            })
+            
+        <dialog id="popin" class="popin__dialog">
+            @@include('./components/cta.html', {
+                "class": "dialog__close",
+                "texte": " &#x2715;",
+            })
+            <div class="dialog">
+                @@include('./components/p-did-you-know.html', {
+                    "texte": "<strong>Sources :</strong>",
+                })
+                <ul>
+                    @@include('./components/li.html', {
+                        "texte": "[1] <strong>Jacques Buxeraud, Sébastien Faure</strong>, La vitamine C, Actualités Pharmaceutiques, Volume 60, Issue 604, Supplement, 2021, Pages S24-S26, ISSN 0515-3700, <a href='https://doi.org/10.1016/j.actpha.2021.01.025'>https://doi.org/10.1016/j.actpha.2021.01.025. </a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[2] <strong>Abdullah Al Mahmud,  Shafayet Ahmed Siddiqui, Md Rezaul Karim, Muhammad Rakib Al-Mamun, Shammi Akhter, Md Sohel, Mahedi Hasan, Sm Faysal Bellah, Mohammad Nurul Amin</strong>, Clinically proven natural products, vitamins and mineral in boosting up immunity: A comprehensive review, Heliyon, Volume 9, Issue 4, 2023, e15292, ISSN 2405-8440, <a href='https://doi.org/10.1016/j.heliyon.2023.e15292'>https://doi.org/10.1016/j.heliyon.2023.e15292. </a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[3] <strong>Gasmi A, Shanaida M, Oleshchuk O, Semenova Y, Mujawdiya PK, Ivankiv Y, Pokryshko O, Noor S, Piscopo S, Adamiv S, Bjørklund G.</strong> Natural Ingredients to Improve Immunity. Pharmaceuticals (Basel). 2023 Apr 1;16(4):528. doi: 10.3390/ph16040528. PMID: 37111285; PMCID: PMC10143734. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[4] <strong>Rafaela de Aquino Souza Miskinis, Lucas Ávila do Nascimento, Rosana Colussi.</strong> Bioactive compounds from acerola pomace: A review, Food Chemistry, Volume 404, Part A, 2023, 134613, ISSN 0308-8146, <a href='https://doi.org/10.1016/j.foodchem.2022.134613'>https://doi.org/10.1016/j.foodchem.2022.134613. </a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[5] <strong>EFSA  Panel  on  Dietetic  Products,  Nutrition  and  Allergies  (NDA)</strong>;  Scientific  Opinion  on  the substantiation  of  health  claims  related  to  vitamin  C  and  protection  of  DNA,  proteins  and  lipids  from  oxidative  damage  (ID 129,  138,  143,  148),  antioxidant  function  of  lutein  (ID  146),  maintenance  of  vision  (ID  141,  142),  collagen  formation  (ID 130, 131, 136, 137, 149), function of the nervous system (ID 133), function of the immune system (ID 134), function of the immune  system  during  and  after  extreme  physical  exercise  (ID  144),  non-haem  iron  absorption  (ID  132,  147),  energy-yielding metabolism (ID 135), and relief in case of irritation in the upper respiratory tract (ID 1714, 1715) pursuant to Article 13(1) of Regulation (EC) No 1924/2006 on request from the European Commission. EFSA Journal 2009; 7(9):1226. [28 pp.]. doi:10.2903/j.efsa.2009.1226. Available online: <a href='www.efsa.europa.eu'>www.efsa.europa.eu</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[6] <strong>Carr AC, Maggini S.</strong> Vitamin C and Immune Function. Nutrients. 2017; 9(11):1211. <a href='https://doi.org/10.3390/nu9111211'>https://doi.org/10.3390/nu9111211</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[7] <strong>Eva S. Wintergerst, Silvia Maggini, Dietrich H. Hornig</strong>; Immune-Enhancing Role of Vitamin C and Zinc and Effect on Clinical Conditions. Ann Nutr Metab 1 February 2006; 50 (2): 85–94. <a href='https://doi.org/10.1159/000090495'>https://doi.org/10.1159/000090495</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[8] <strong>Gasmi A, Shanaida M, Oleshchuk O, Semenova Y, Mujawdiya PK, Ivankiv Y, Pokryshko O, Noor S, Piscopo S, Adamiv S, Bjørklund G.</strong> Natural Ingredients to Improve Immunity. Pharmaceuticals (Basel). 2023 Apr 1;16(4):528. doi: 10.3390/ph16040528. PMID: 37111285; PMCID: PMC10143734. ",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[9] <strong>Johnston CS, Barkyoumb GM</strong>, Schumacher SS. Vitamin C Supplementation Slightly Improves Physical Activity Levels and Reduces Cold Incidence in Men with Marginal Vitamin C Status: A Randomized Controlled Trial. Nutrients. 2014; 6(7):2572-2583. <a href='https://doi.org/10.3390/nu6072572'>https://doi.org/10.3390/nu6072572</a>",
+                    })
+                    @@include('./components/li.html', {
+                        "texte": "[10]<strong> Polak E, Stępień AE, Gol O, Tabarkiewicz J.</strong> Potential Immunomodulatory Effects from Consumption of Nutrients in Whole Foods and Supplements on the Frequency and Course of Infection: Preliminary Results. Nutrients. 2021 Apr 1;13(4):1157. doi: 10.3390/nu13041157. PMID: 33915705; PMCID: PMC8065427. ",
+                    })
+                </ul>
+                @@include('./components/cta.html', {
+                    "class": "dialog__cta",
+                    "texte": "Fermer",
+                })
+            </div>
+        </dialog>
+    </div>
+
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/popin.js
+-->

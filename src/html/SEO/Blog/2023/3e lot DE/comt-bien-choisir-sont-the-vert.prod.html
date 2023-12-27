@@ -1,0 +1,281 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : wie-wahlt-man-den-richtigen-grunen-tee
+
+    Nom de la classe parent : blog_article_2023
+
+    Titre : Wie wählt man den richtigen grünen Tee?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_detox_1.webp?$staticlink$",
+                "alt": "Detox-Produkt Kusmi Tea",
+    
+                "titre": "Wie wählt man den richtigen grünen Tee?",
+                "date": "Veröffentlicht am <span class='date__color'>09/07/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','vert')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Während die Franzosen lange Zeit mehr schwarzen als <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>grünen Tee</a> getrunken haben, kehrt sich der Trend nun um. Der grüne Tee wird immer beliebter und gewinnt die Beliebtheitsskala. Testen Sie ihn in Ihrer Umgebung, Sie werden sehen! Ob für Sie selbst oder zum Verschenken, oder sagt Ihnen, welchen grünen Tee Sie wählen sollten. ",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Grüner Tee - ein beliebter und jahrtausendealter Erfolg ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>Grüner Tee</a> wird in Asien schon seit Jahrtausenden getrunken. Tee hat die Welt im Sturm erobert (Tee ist nach Wasser das am zweithäufigsten konsumierte Getränk), und der Trend zum grünen Tee hält an. Und das aus gutem Grund, denn er gefällt wegen seines Images als gesundes Getränk mit vielen positiven Eigenschaften. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie wird grüner tee hergestellt?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Japan, Indien, China, Sri Lanka... Unabhängig davon, wo auf der Welt er produziert wird, ist <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>grüner Tee</a> ein Tee, dessen natürliche Oxidation nach dem Pflücken gestoppt wird. Die Blätter der Teepflanze werden getrocknet, um den natürlichen Fermentationsprozess zu unterbrechen. Nachdem die Blätter gewelkt und gerollt wurden, um die Säfte zu extrahieren, werden sie der Hitze ausgesetzt, damit sie &quot;gegriffen&quot; werden und ihre Eigenschaften intakt bleiben. Die Teeblätter werden dann gesiebt, um Stängel und Staub zu entfernen, bevor sie in Dosen oder Beutel abgefüllt werden. Nun sind sie bereit für den Aufguss. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Was ist der unterschied zwischen grünem tee aus china und grünem tee aus japan? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die Methode des Trocknens von Teeblättern ist nicht dieselbe. In Japan werden die Blätter feuchter Hitze ausgesetzt: Sie werden einem Dampfbad unterzogen. In China, der Wiege des Tees und dem größten Exporteur der Welt, werden sie trockener Hitze ausgesetzt: Sie werden einige Minuten lang in großen Kupferschüsseln &quot;gegriffen&quot;, die direkt über dem Feuer stehen. ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Was sind die vorteile von grünem tee?",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "In der traditionellen japanischen Medizin werden die <a class='banniere__link' href=\"$url('Page-Show','cid','bio-gruntee-vorzuge')$\"\>Vorteile von grünem Tee</a> seit langem beobachtet. Da das Land die höchste Lebenserwartung der Welt hat, wird der regelmäßige Konsum von grünem Tee als einer der vielen Gründe dafür angeführt. Grüner Tee, dessen Oxidation schnell gestoppt wurde, ist der Tee mit dem höchsten Anteil an Antioxidantien. Sein hoher Gehalt an Polyphenolen (auch Catechine genannt) soll helfen, das Immunsystem zu stärken, den Alterungsprozess zu bekämpfen und gleichzeitig die Gewichtsabnahme zu fördern. Außerdem soll das enthaltene Theanin Stress abbauen und eine entspannende Wirkung haben. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21645A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/grüner_Tee_Ingwer_Zitrone_Kusmi_Tea.webp?$staticlink$",
+                        "alt": "grüner Tee Ingwer Zitrone Kusmi_Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Welcher grüne tee ist der beste?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Japanischer Grüntee ist besonders beliebt. Und das aus mehreren Gründen. Erstens, weil die japanische Methode, bei der die Oxidation durch Dampf gestoppt wird, die Eigenschaften und den Geschmack der Teeblätter besser bewahrt. Zweitens, weil das ganze Land den Teekonsum zu einer wahren Kunstform erhoben hat und die Teezeremonie dem Tee seinen Adelsbrief verleiht. Und drittens, weil die Binnennachfrage hoch ist und das Land eher von großen Megastädten als von Teeplantagen bewohnt wird, halten sich die Exporte in Grenzen. Dadurch ist japanischer Grüntee selten und daher im Durchschnitt teurer als chinesischer oder indischer Tee. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Welche grünen tees sind besonders berühmt? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "In jedem Land, das Tee produziert, gibt es gewöhnliche Tees für den Alltag, aber auch außergewöhnliche Tees, die zu besonderen Anlässen getrunken werden. In Japan ist dies der Fall beim grünen Tee &quot;Gyokuro&quot; (&quot;Tauperle&quot;). Was ist seine Besonderheit? Es handelt sich um einen &quot;Schattentee&quot;. Einige Wochen vor dem Pflücken werden die Pflanzen mit Planen abgedeckt, wodurch der Chlorophyllgehalt erhöht wird. Mit dem Ergebnis, dass der Geschmack von Algen sehr mild ist und von den Japanern sehr geschätzt wird. Ein weiterer grüner Tee, der in Japan sehr berühmt ist, ist der Matcha-Tee, der in grandiosen Zeremonien gefeiert wird. Dieses smaragdgrüne Pulver wird in einer Schüssel aufgeschlagen, bis ein Schaum entsteht. In China sind es zwei grüne Tees, die sich hervorheben. Der <a class='banniere__link' href=\"$url('Product-Show','pid','21007A1050')$\"\>Bio-Long Jing</a>, auch &quot;Drachenbrunnen&quot; genannt. Er wird im Frühling geerntet und mit seinen leichten Noten von Haselnuss und Kastanie macht seinen Geschmack bei Teeliebhabern sehr beliebt. Der Grüntee <a class='banniere__link' href=\"$url('Product-Show','pid','21005A1050')$\"\>Jadeperlen</a> schließlich besteht aus silbernen Knospen, die mit Jasminblütenblättern aromatisiert sind. Als Symbol für Raffinesse sind die <a class='banniere__link' href=\"$url('Product-Show','pid','21007A1050')$\"\>Jadeperlen</a> überraschend: Sie werden nicht nur einmal, nicht zweimal, sondern bis zu fünf- bis sechsmal hintereinander aufgegossen.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Wie bereite ich meinen grünen Tee richtig zu?",
+                    })
+                    @@include('.././_components/h3.html', {
+                        "titre": "Welche teekanne für grünen tee wählen?",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Wenn Sie nicht nur grünen, sondern auch weißen oder schwarzen Tee trinken, sollten Sie sich für eine Teekanne &quot;ohne Gedächtnis&quot; entscheiden, was bei den allermeisten der Fall ist (Teekannen aus Glas, Gusseisen, Keramik...). Nur die unglasierten Teekannen aus Terrakotta behalten die Aromen von einem Aufguss zum nächsten. Sie sind nur empfehlenswert, wenn Sie immer denselben Tee trinken, da die Gerbstoffe des schwarzen Tees, die sich an den Wänden festgesetzt haben, die Zartheit des grünen Tees überlagern könnten. Weitere Informationen finden Sie in unserem Leitfaden für Teekannen.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_schwarzer_Wasserkocher_mit_einer_Zitrone.webp?$staticlink$",
+                        "alt": "schwarzer Wasserkocher mit einer Zitrone auf einem Tisch",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h3.html', {
+                    "titre": "Welche ziehzeit für grünen tee? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Experten empfehlen eine Ziehzeit von 5 bis 8 Minuten. Nicht ausreichend aufgegossen? Grüne Tees können fade schmecken und keinen Geschmack haben. Zu stark aufgegossen? Dann entfalten sie im Übermaß Adstringenz und Bitterkeit. Tauchen Sie den Tee in heißes, aber nicht kochendes Wasser: zwischen 70 und 80 Grad. Eine höhere Aufgusstemperatur könnte die Teeblätter beschädigen und würde die Stärke der Aromen und das Vorhandensein von Vitaminen verringern. Da nicht alle grünen Tees gleich sind und einige mit anderen Aromen gemischt werden, ist es am einfachsten, wenn Sie die Empfehlungen auf der Teedose befolgen.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Zu welcher Tageszeit sollte man grünen Tee trinken?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Grüner Tee kann Sie zu jeder Tageszeit begleiten. Schon am Morgen, zum Frühstück, zum Brunch, aber auch zur Tea-Time oder um sich am Ende des Tages neu zu stärken und zu konzentrieren. Man genießt ihn im Sommer wie im Winter, als heißen Tee oder als Eistee. Dazu lassen Sie den Tee in heißem Wasser ziehen, bevor Sie ihn mit Eiswürfeln kühlen und je nach Vorliebe Pfirsichspalten, Zitronenscheiben oder Minzblätter hinzufügen.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Hindert grüner Tee am Schlafen?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ja und nein und vor allem &quot;es kommt darauf an&quot;. Genau wie die Wirkung von Koffein ist auch die Wirkung von Teein individuell. Einige werden sagen, dass sie keinen Schlaf finden können, wenn sie nach 17 Uhr grünen Tee getrunken haben, andere schlafen wie ein Baby. Wenn Sie zu den Menschen gehören, die empfindlich auf Teein reagieren, empfehlen wir Ihnen, am Ende des Tages weißen Tee zu trinken, der weniger Teein enthält, oder Kräutertees zu trinken. Manche helfen Ihnen sogar beim Einschlafen...",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Welcher Kusmi Grüntee bio ist für mich geeignet?",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Haben Sie Lust, sich von einem unbekannten grünen Tee überraschen zu lassen? Hier sind die verschiedenen Grünteemischungen, die das Haus Kusmi anbietet. Die gute Nachricht ist, dass sie alle biologisch angebaut, aromatisiert, in Frankreich abgefüllt und umweltfreundlich verpackt sind.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_Set_grüner_Tee_Kusmi_Tea.webp?$staticlink$",
+                        "alt": "Set grüner Tee Kusmi Tea",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Grüner tee ist bei kusmi tea immer bio",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi hat sich für Bio entschieden. Ob Tee, Pflanzen, Gewürze... alle Zutaten stammen aus biologischem Anbau und sind nach einem strengen, von der Europäischen Union festgelegten Lastenheft zertifiziert. Es werden regelmäßig Kontrollen und Analysen durchgeführt, um die Einhaltung der Qualitätsstandards zu überprüfen. Dies ermöglicht uns, von Ecocert zertifiziert zu werden, einer unabhängigen Organisation, die unsere Produktionsstätten jährlich überprüft. All diese Schritte ermöglichen es unseren Teedosen, das AB-Logo für Frankreich und das Eurofeuille-Logo für die Europäische Union zu tragen. Ziel: die Verbraucher bestmöglich über die Qualität unserer Produkte zu informieren.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Der abgepackten und aromatisierten grünen tees in frankreich ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wie alle unsere anderen Tees und Kräutertees beruhen auch die grünen Tees von Kusmi Tea auf einem Know-how aus der Tricolore. Der Name Kusmi stammt zwar aus Russland, aber unsere Marke (die seit 2003 französisch ist) denkt, kreiert, mischt, aromatisiert und verpackt den Tee in der Normandie. Genauer gesagt in Saint-Vigor d'Ymonville, ganz in der Nähe von Le Havre im Departement Seine-Maritime. Auch unsere Metalldosen werden im Hexagon hergestellt. Denn weniger Kilometer bedeuten weniger Umweltverschmutzung und mehr Arbeit in unseren Regionen. Wenn es Ihnen am Herzen liegt, die Wirtschaft made in France zu unterstützen, sind Sie hier genau richtig! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Umweltfreundlich verpackte grüne tees",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi Tea setzt sich für Recycling und Abfallvermeidung ein, sowohl bei unseren losen Tees als auch bei unseren Tees in Beuteln. Unsere losen Bio-Tees werden in Dosen aus Metall verpackt, einem Material, das unendlich oft recycelt werden kann. Unsere Teebeutel werden in Frankreich aus Polymilchsäure (PLA), einem biobasierten und zu 100 % biologisch abbaubaren Material, hergestellt und in Schachteln aus recycelbarem Karton verpackt. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Die von Kusmi Tea ausgewählten Bio-Grüntees",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Obwohl es bei Kusmi Tea ein Dutzend aromatisierter Grünteemischungen gibt (fruchtig, exotisch, blumig, mit Gewürzen...), stellen wir Ihnen hier die <a class='banniere__link' href=\"$url('Search-Show','cgid','the_nature')$\"\>naturbelassenen Grüntees</a> vor, die die Grundlage all unserer Rezepte bilden. Die gute Nachricht ist, dass sie sowohl lose (weil es gut für den Planeten ist!) als auch in Beuteln erhältlich sind, damit sie Sie überall hin begleiten können.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner tee gunpowder bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der aus der chinesischen Provinz Zhejiang stammende Gunpowder wird traditionell zur Zubereitung von Pfefferminztee verwendet. Seine Blätter werden nach der Ernte getrocknet, um eine Fermentation zu verhindern, und dann zu Kugeln gerollt - daher der Name &quot;Schießpulver&quot; (Gunpowder). ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner tee gunpowder bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der aus der chinesischen Provinz Zhejiang stammende Gunpowder wird traditionell zur Zubereitung von Pfefferminztee verwendet. Seine Blätter werden nach der Ernte getrocknet, um eine Fermentation zu verhindern, und dann zu Kugeln gerollt - daher der Name &quot;Schießpulver&quot; (Gunpowder). ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner Darjeeling-Tee bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die Teepflanzen, die seit über 150 Jahren in der Bergregion Darjeeling in Indien angebaut werden, wachsen durch den Wechsel von Regen und Sonne sowie durch die im Nebel enthaltene Feuchtigkeit. Da in dieser Region jährlich nur äußerst geringe Mengen produziert werden, ist Darjeeling-Tee ein echtes Luxusprodukt. ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Genmaicha Grüntee bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Entdecken Sie den Genmaicha-Tee bio, eine atypische Mischung, die grünen Sencha-Tee aus Japan mit gerösteten und gepufften Reiskörnern verbindet. Die Frische des grünen Tees in Verbindung mit dem ausgeprägten Geschmack der Reiskörner, die einen leicht nussigen Geschmack mitbringen, machen diese Mischung zu einem idealen Verbündeten für eine entspannende und genussvolle Pause. ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner Sencha tee bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Er ist der grüne Tee des Alltags und ein Muss im Land der aufgehenden Sonne, wo er vor fast 300 Jahren entstand. In Ihrer Tasse nimmt der Grüne Sencha bio eine helle Färbung an und bietet Ihnen erfrischende jodhaltige Akzente. Ein subtiler Duft mit pflanzlichen Noten, der an den Duft von frisch gemähtem Gras erinnert. ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner Tee Long Jing bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dieser grüne Tee wird auch &quot;Drachenbrunnen&quot; genannt und im Frühjahr in der Nähe der Stadt Hangzhou in China geerntet. Die Legende besagt, dass es in dem Dorf, aus dem dieser Tee stammt, einen Brunnen gab, der selbst in Dürrezeiten immer Wasser spendete. Was war sein Geheimnis? Der Drache, der dort leben soll. Der Drache unterscheidet sich stark vom westlichen Drachen und ist ein starkes Symbol der chinesischen Mythologie: Er lebt im Wasser und steht für Stärke, Glück und Wohlwollen. ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Hojicha Grüntee bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dieser Tee wird auf der Insel Kyushu (&quot;Insel der Vulkane&quot;) im Südwesten Japans angebaut. Er gedeiht in einem tropischen Klima, das seine Einzigartigkeit ausmacht. Die bei sehr hohen Temperaturen gerösteten Teeblätter nehmen eine schöne braune Färbung an und bieten nach dem Aufguss einen holzigen Auftakt und Röstnoten. Ein reiner Genuss! ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Bio Grüntee Jadeperlen ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Im Südosten Chinas wird seit mehr als hundert Jahren ein Know-how weitergegeben: die sorgfältige Formung des chinesischen Grüntees in zarte kleine Perlen, die bereit zum Aufgießen sind. Die silbernen Knospen dieses naturbelassenen Bio-Grüntees werden mit frisch gepflückten Jasminblütenblättern aromatisiert. Sie werden dann Trieb für Trieb, Perle für Perle gerollt. Ein wahres Kunstwerk! ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Grüner Matcha-Tee bio ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der aus Japan stammende Matcha Grüntee bio ist selten und einzigartig. Nur die schönsten Blätter werden mit größter Sorgfalt gepflückt. Dann werden sie flach getrocknet, bevor sie zwischen zwei Granitblöcken sanft zu feinem Pulver zermahlen werden. Eine echte Goldschmiedearbeit! Was seine smaragdgrüne Farbe betrifft, so ist sie unnachahmlich.  Was man wissen muss, ist, dass er der einzige Tee ist, dessen Blatt vollständig von Wasser aufgenommen wird. So ist es seine Essenz selbst, die man trinkt, und nicht nur sein Aufguss! Mit einem unvergleichlichen Mundgefühl! <br>Möchten Sie herausfinden, anhand welcher Kriterien Sie qualitativ hochwertigen grünen Tee erkennen können? Hier geht es lang. ",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Wie wählt man den richtigen grünen Tee?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','wie-wählt-man-den-richtigen-grünen-tee')$",
+            })
+        </section>
+    </div>
+
+</div>
