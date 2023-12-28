@@ -1,0 +1,217 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv1 -> acerola-cerise-vitaminee-des-barbades
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : L’acérola, la "cerise des Barbades" vitaminée ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_14.webp?$staticlink$",
+                "alt": "produit Rituel Immunitaire Kusmi Tea focus sur l'acérola",
+    
+                "titre": "L’acérola, la &quot;cerise des Barbades&quot; vitaminée ?",
+                "date": "Publié le <span class='date__color'>28/12/2023</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Tout droit venue de l’île des Barbades, aujourd’hui on vous parle de l’acérola, ce <strong>fruit vitaminé</strong> aux <strong>bienfaits remarquables</strong>, ressemblant à s’y méprendre à une cerise. En plus de son goût acidulé qui rend tout le monde dingue, l’acérola, <strong>riche en vitamine C</strong>, possède des vertus pour la santé, notamment celle de <strong>booster nos défenses immunitaires</strong>. C’est d’ailleurs une des raisons pour lesquelles l’acérola a une place de maître dans notre <strong>Rituel Défenses Immunitaires bio</strong>. Un thé vert bio enrichi qui stimule votre vitalité. On vous dit pourquoi et comment intégrer l’acérola, et sa forte teneur en vitamine C, à votre alimentation pour profiter au mieux de tous les bienfaits de ce fruit vitaminé.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "L'acérola, un fruit pas si commun",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Il est vrai que dans l’Hexagone, l’acérola n’est pas un fruit si typique que ça. Rares sont ceux qui en consomment au quotidien, qui connaissent la valeur nutritionnelle et l’incroyable teneur en vitamine C de ce fruit des Barbades. Heureusement, Kusmi est là pour vous faire découvrir <strong>l'acérola, un superfruit aux vertus et à l’effet inouïs sur la santé.</strong> ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_11.webp?$staticlink$",
+                        "alt": "produit Rituel Immunitaire Kusmi Tea focus sur l'acérola",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": D’où vient l’acérola, la « cerise des Barbades » ? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L’acérola est un arbuste originaire des <strong>zones tropicales des caraïbes</strong>. Il produit un fruit juteux et acidulé appelé aussi « cerise des Barbades ». Il est consommé depuis des millénaires par les Indiens d’Amazonie pour ses <strong>effets et propriétés sur l’organisme</strong>.<br>Le fruit se récolte de juillet à décembre, période pendant laquelle sa consommation est à privilégier, l'acérola étant très fragile. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le goût de l’acérola ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si les baies d’acérola possèdent bien plus de <strong>vitamine C qu’une orange</strong>, qu’en est-il du goût ? À l’image de la cerise, l’acérola possède une chair juteuse et un goût naturellement plus acidulé. ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Les bienfaits de l’Acérola",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Comme les <a class='banniere__link' href=\"$url('Page-Show','cid','bienfaits-baies-de-goji')$\"\>baies de goji</a>, l’acérola est un <a class='banniere__link' href=\"$url('Page-Show','cid','infusions-bio-super-ingredients-super-aliments')$\"\>« super » ingrédient</a> intéressant sur le plan nutritionnel notamment grâce à sa <strong>teneur en vitamine C.</strong>" ,
+                    })
+                    @@include('.././_components/h2.html', {
+                        "titre": "L’acérola, un fruit riche en vitamine C",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<strong>Les baies d’acérola sont des fruits source de vitamine C naturelle.</strong> Ces petites baies rouges sont extrêmement riches en vitamine C. <strong>Presque 30 à 40 fois plus qu’une orange !</strong> En raison de sa richesse en vitamine C, les bienfaits de l’acérola sur la santé sont donc nombreux.<br>Lire aussi :  <a class='banniere__link' href=\"$url('Page-Show','cid','vitamine-c-dans-le-the-vert')$\"\>Tout savoir sur la vitamine C</a>" ,
+                    })
+                    <ul class="block__ul">
+                        @@include('.././_components/li.html', {
+                            "texte": "Grâce à sa teneur en vitamine C, <strong>l’acérola contribue au fonctionnement normal du système immunitaire</strong>. Pour booster ses défenses immunitaires et sa santé, rien de tel que la vitamine C. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "La vitamine C présente dans l’acérola est aussi connue pour son action antioxydante. Tout comme la vitamine E, le sélénium ou encore le zinc, elle possède des <strong>propriétés antioxydantes</strong> très intéressantes qui pourraient lutter contre les radicaux libres et a un véritable effet contre le vieillissement prématuré des cellules. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "La vitamine C présente dans l’acérola permettrait aussi de lutter contre les coups de mou de l’hiver et favoriserait vitalité et tonus. De quoi vous donner de l’énergie et réduire la fatigue ! ",
+                        })
+                    </ul>
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_7.webp?$staticlink$",
+                        "alt": "produit Rituel Immunitaire Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et si on vous disait que même le corps a besoin d’un coup de main de temps en temps ? Il est parfois nécessaire d’apporter une aide extérieure lorsque le corps ou l’esprit est fatigué afin de garder la forme et la santé. Essentiel à notre équilibre, il est important et même conseillé de se supplémenter en vitamine C toute l’année, notamment grâce aux fruits et légumes. <br>La vitamine C a de multiples fonctions sur notre organisme. En activant nos défenses naturelles, la vitamine C apporte une sensation de bien-être à notre corps. Pour bénéficier des bienfaits de la vitamine C, il est important d’apporter une quantité suffisante à notre organisme. Comment ? Grâce à l’alimentation principalement !<br>Lire aussi : <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$\"\>le thé vert : un puissant antioxydant</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Comment consommer l’acérola ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Comme tout <strong>“super-aliment”</strong>, l’acérola ne se cuit pas si vous voulez conserver les bons nutriments de ce fruit. Et choisissez-le bio de préférence, votre santé vous remerciera !<br>Vous pouvez profiter des <strong>bienfaits et vertus de l’acérola</strong> en le consommant : ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Au petit déjeuner",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En salade de fruit, vous pouvez consommer l’acérola frais. Attention car il se conserve très peu de temps : 48 heures. Le plus souvent, on trouve l’acérola sous forme de jus ou de poudre de fruits. Vous pouvez vous-même faire votre jus vitaminé par exemple. Sinon, consommez les baies d'acérola entières dans votre bol de muesli ou de porridge, comme vous le feriez avec des cerises. Enfin, pour varier les plaisirs, l’acérola peut être intégré aux confitures de fruits pour apporter un peu d’originalité aux recettes traditionnelles. ",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Recette d’un porridge à l’acérola 100% vitaminé :",
+                })
+                <ol class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Pour un porridge réussi : sur feu doux, mélangez une portion de flocon d’avoine pour 2 portions d’eau (ou de lait) pour plus d’onctuosité. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Ajoutez une cuillère à café de graine de chia. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Pour les plus gourmands : ajoutez une cuillère à café de beurre de cacahuète. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Servez dans un bol et ajoutez vos fruits rouges et votre acérola. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Pour un bonus de super-aliment : ajoutez à votre guise des <strong>baies de goji</strong> pour son goût légèrement sucré. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "    À déguster à l’occasion d’une pause thé vitaminé. ",
+                    })
+                </ol>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>L’acérola est aussi l’ingrédient majeur de notre Rituel Défenses immunitaires bio</strong>, un thé vert bio 100% vitaminé et enrichi en acérola. <br>Avec <strong>Rituel Défenses immunitaires bio</strong>, on a ajouté du bien-être dans votre rituel du matin. Quand une simple pause thé est aussi bénéfique : comment refuser ?<br><strong>Rituel Défenses Immunitaires bio</strong>, c’est un <strong>thé vert bio enrichi à l’acérola et aromatisé à l’orange, au cassis et aux fruits tropicaux</strong>. 3 minutes d’infusion, pour booster votre apport en vitamine C au quotidien et stimuler votre système immunitaire. <strong>Faire rimer plaisir, santé et bio ? Kusmi l’a fait !</strong> ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi un thé bio ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour allier plaisir et santé, <strong>faites confiance au naturel et au bio avant tout</strong>. C’est pourquoi notre <strong>Rituel à base de vitamine C enrichie en acérola</strong> est composée d’un <strong>thé vert bio</strong>. Chez Kusmi, nous accordons une grande importance à notre approvisionnement : nous favorisons un <strong>thé bio respectueux de l’environnement et des producteurs</strong>, sous le patronage bienveillant du WWF France. Nous ne nous approvisionnons qu’auprès de pays producteurs sans <strong>faire aucun compromis sur la qualité</strong> de nos mélanges, avec pour ligne directrice : le bio afin de garantir le respect de votre santé. Aujourd’hui, la base de nos thés et infusions est bio et nos arômes sont naturels. Et comme le bio appelle le bio, nous vous conseillons de toujours rester attentif à la provenance et aux conditions de production des produits que vous consommez ! ",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$",
+                    "lien-img": "blog/1-Antioxyadant-the-vert.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert, un puissant antioxydant ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusions-bio-super-ingredients-super-aliments')$",
+                    "lien-img": "blog/super-ingredient2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Infusion bio : on vous dit tout sur les super-ingrédients ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-du-soir')$",
+                    "lien-img": "blog/1-VITAMINE.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert contient-il de la vitamine C ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "L’acérola, la &quot;cerise des Barbades&quot; vitaminée ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','acerola-cerise-vitaminee-des-barbades')$",
+            })
+        </section>
+    </div>
+
+</div>
+

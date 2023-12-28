@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/infusion_elysee.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : infusion_elysee_homepromo_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Product-Show','pid','21199A1010')$" class="infusion_elysee_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Click on &quot;Discover&quot; to discover our new product &quot;Infusion de l'Elysée&quot;",
+            "texte-h2": "L'infusion de l'Elysée",
+            "texte-h3": "Discover our new fruit tea, an exclusive and Made in France recipe.",
+            "texte-link": "Discover now",
+        })
+    </div>
+    
+</a>

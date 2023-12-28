@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/infusion_elysee.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : infusion_elysee_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="infusion_elysee_homepromo_2023">
+    <a href="$url('Product-Show','pid','21199A1010')$">
+        @@include('../components/homepromo.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt entdecken&quot;, um unser neues Produkt &quot;Infusion de l'Elysée&quot; kennenzulernen;",
+            "title": "L'infusion de l'Elysée",
+            "subtitle": "Entdecken Sie den neuen Früchtetee, ein exklusives Rezept Made in France.",
+            "text-link": "<span class='x-hide-mobile'>Jetzt entdecken</span><span class='x-hide-desktop'>Handeln Sie für Ihr Wohlbefinden ></span>",
+        })
+    </a>
+</section>

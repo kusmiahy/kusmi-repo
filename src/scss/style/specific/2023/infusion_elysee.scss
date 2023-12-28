@@ -1,8 +1,8 @@
 $color-text: #fff;
-$color-bg: #182A67;
-$color-text-hero-push: #303030;
+$color-bg: #01357d;
+$color-text-hero-push: #fff;
 
-.gamme_rituel_push_2023 {
+.infusion_elysee_push_2023 {
     width: 100%;
     margin-block: 5px;
 
@@ -11,12 +11,12 @@ $color-text-hero-push: #303030;
     }
 }
 
-.gamme_rituel_hero_2023,
-.gamme_rituel_homepromo_2023 {
+.infusion_elysee_hero_2023,
+.infusion_elysee_homepromo_2023 {
     width: 100%;
 }
 
-.gamme_rituel_homepromo_2023 {
+.infusion_elysee_homepromo_2023 {
     @include min1024() {
         width: 50%;
     }
@@ -33,79 +33,6 @@ $color-text-hero-push: #303030;
 
         img {
             object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .pastille--proven-efficacy {
-        position: absolute;
-        bottom: 34%;
-        width: 20%;
-        right: 11%;
-
-        &.pastille-efficacite--de {
-            width: 22%;
-
-            @include min768() {
-                width: 15%;
-            }
-
-            @include min1024() {
-                width: 13%;
-            }
-
-            @include min1920() {
-                width: 11%;
-            }
-        }
-
-        &.pastille-efficacite--int {
-            bottom: 33%;
-            right: 25%;
-            width: 16%;
-
-            @include min768() {
-                right: 27%;
-                width: 11%;
-            }
-
-            @include min1024() {
-                bottom: auto;
-                right: 37%;
-                width: 9%;
-                top: 14%;
-            }
-
-            @include min1440() {
-                right: 38%;
-                width: 7%;
-                top: 19%;
-            }
-        }
-
-        @include min768() {
-            bottom: 48%;
-            right: 25%;
-            width: 13%;
-        }
-
-        @include min1024() {
-            bottom: auto;
-            right: 35%;
-            width: 9%;
-            top: 15%;
-        }
-
-        @include min1440() {
-            bottom: auto;
-            right: 37%;
-            width: 7%;
-            top: 15%;
-        }
-
-        img {
-            object-fit: contain;
             width: 100%;
             height: 100%;
         }
@@ -209,6 +136,15 @@ $color-text-hero-push: #303030;
                         width: auto;
                     }
                 }
+                .pastille--new {
+                    width: 50px;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
             }
         }
 
@@ -306,6 +242,20 @@ $color-text-hero-push: #303030;
         display: flex;
         flex-direction: column;
         gap: .8rem;
+
+        .pastille--new {
+            width: 60px;
+            height: auto;
+            @include min768() {
+                width: 65px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
 
         &__title {
             display: flex;

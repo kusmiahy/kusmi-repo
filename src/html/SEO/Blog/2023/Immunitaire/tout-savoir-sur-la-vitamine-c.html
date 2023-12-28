@@ -1,0 +1,187 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset :artti-18 -> tout-savoir-sur-la-vitamine-c
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : Tout savoir sur la vitamine C
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_17.webp?$staticlink$",
+                "alt": "produit Rituel Immunitaire Kusmi Tea focus sur l'orange",
+    
+                "titre": "Tout savoir sur la vitamine C",
+                "date": "Publié le <span class='date__color'>28/12/2023</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Une <strong>cure de vitamine C</strong>, le super acide bon pour notre corps, et de bonnes vitamines avant l’hiver et les moutons seront bien gardés. Et si cet adage existait vraiment ? Pour le savoir, Kusmi décrypte pour vous <strong>le rôle et les bienfaits de la vitamine C sur la santé</strong>. Comment éviter les carences de vitamine C grâce aux aliments et à l’alimentation de façon globale ? Est-ce nécessaire de faire une cure de vitamine C ? Comment est-il possible de faire une évaluation des effets ? Est-elle à privilégier en hiver ou tout au long de l’année ? Kusmi vous dit tout. ",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le rôle de la vitamine C, l’acide aux super-pouvoirs",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "On ne vous apprend rien : <strong>la vitamine C</strong>, ou acide ascorbique, à l’image des autres vitamines, est un nutriment essentiel à notre <strong>bien-être et à notre santé</strong>. Elle fait partie des apports indispensables à offrir à votre corps pour éviter une quelconque carence. Pourquoi ? Comment et où agit-elle dans notre corps ? Comment faire une évaluation des bienfaits ? <br>Les propriétés antioxydantes de la vitamine C expliquent une grande partie de ses effets biologiques. En effet, la vitamine C contribue au bon fonctionnement du <strong>système immunitaire</strong>. Elle stimule les lymphocytes et la production d’anticorps. Elle agit ainsi sur les <strong>défenses naturelles</strong> et c’est pour cela qu’elle est fortement recommandée en hiver car elle aide à lutter contre certaines maladies, tels que le fameux rhume hivernal.<br>La vitamine C contribue également à protéger les cellules contre le stress oxydatif. Son action peut être intéressante dans les situations où l’organisme en a le plus besoin, notamment en cas d’activité physique intense, de pollution, ou d’exposition au soleil. ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "De manière générale, la vitamine C a de multiples fonctions et bienfaits sur notre corps",
+                    })
+                    <ul class="block__ul">
+                        @@include('.././_components/li.html', {
+                            "texte": "La vitamine C, connue aussi sous le nom d’acide ascorbique, apporte une sensation de bien-être à notre corps, d’autant plus si elle est couplée à une nutrition saine. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "Elle contribue à réduire la fatigue et favorise tonus et vitalité. Une insuffisance d’apport en vitamine C peut entraîner un épuisement général ou une carence. C’est pourquoi, <strong>L’Agence nationale de sécurité sanitaire Alimentaire Nationale (ANSES) recommande un apport de 110 mg / jour de vitamine C</strong>, évaluation effectuée pour un adulte. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "Elle aide à protéger l’organisme contre le stress oxydatif.",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "Elle retarde le vieillissement de la peau. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "Elle régule le stress et l’humeur. ",
+                        })
+                    </ul>
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "En bref, <strong>la vitamine C</strong>, ou acide ascorbique, est le <strong>B.A.-BA de notre bien-être</strong> et l’une de nos meilleures alliées dans notre alimentation globale. Mine de rien, elle booste nos défenses, préserve notre vitalité et stimule la production d’anticorps : rien que ça ! Elle participe ainsi au fait de rester en bonne santé. Mais pour en profiter pleinement, et vous permettre une bonne évaluation des effets, il faut veiller à en procurer une quantité suffisante à notre organisme. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_5.webp?$staticlink$",
+                        "alt": "produit Rituel Immunitaire Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Car oui, si la vitamine C est aussi importante, elle n’est pourtant pas synthétisée naturellement par l’organisme mais doit être apportée par la nutrition de manière générale, des habitudes alimentaires et l’alimentation (fruits, légumes…) afin d’éviter une carence. La nature n’est pas toujours bien faite, n’est-ce pas ? Pour bénéficier des <strong>bienfaits de la vitamine C</strong> il est donc important d’apporter une quantité suffisante à notre organisme via la nutrition.<br>Comment ? Grâce à notre alimentation et à nos routines alimentaires (suffisamment de fruits et légumes riches en bons nutriments et vitamines) mais aussi grâce à ce que l’on boit pour faire le plein de vitamines. Et si un <strong>thé vert vitaminé</strong> pouvait vous aider à contribuer à votre <strong>dose journalière en vitamine C</strong>, appelée également acide ascorbique ? ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les super-aliments gorgés de vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Quand on pense vitamine C, on pense à... l’orange. Et si d’autres aliments bien plus riches en vitamine C et aux super-pouvoirs discrets, agissaient dans l’ombre ? Heureusement Kusmi est là pour leur rendre justice. Fruits ou légumes, on vous dresse la liste. <br>L’acérola, un superfruit aux pouvoirs inouïs.<br>C’est un arbuste originaire des zones tropicales des Caraïbes, dont les petites baies rouges ont un bon goût à la fois acidulé et riche en vitamine C. Mais vraiment très riches : près de 30 à 40 fois plus qu’une orange. Victoire cuisante pour l’acérola qui vous aide à faire le plein de vitamines ! ",
+                })
+                <ul class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Le guarana : dont les graines ont des vertus énergisantes et stimulantes. Le guarana permet entre autrede réduire la fatigue. En plus, il est délicieux associé à du thé noir comme dans notre mélange <a class='banniere__link' href=\"$url('Product-Show','pid','21084A1070')$\"\>Sweet Love bio</a>.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "La goyave, le fruit exotique qui allie plaisir et vitamines au cœur de notre nutrition<br>La goyave, fruit tropical originaire d'Amérique centrale est l’un des fruits les plus riches en vitamine C et en bonnes vitamines. Après évaluation, c’est d’ailleurs la peau comestible qui est très riche : près de cinq fois plus qu'une orange. Maintenant, vous savez quoi répondre aux moqueries quand vous commanderez un jus de goyave à l'apéritif. Pas si superficiel que ça ! Et c’est parfait si vous aimez allier l’acide, le sucré et la gourmandise.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Le persil, la plante (sur)-vitaminée à adopter dans son alimentation<br>Le persil divise le peuple... presque autant que la coriandre. Et pourtant, il vous fera du bien et s'invitera parfaitement dans tous vos plats avec ses bonnes vitamines. Avec 190mg de vitamine C aux 100g, <strong>le persil est une herbe survitaminée</strong> dont il serait dommage de se passer au quotidien et dans sa nutrition.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Le poivron rouge, une des meilleures sources de vitamine C dans votre nutrition<br>Le poivron rouge est un piment doux, non acide et savoureux, faisant partie des aliments les plus appréciés dans les recettes mexicaines. En plus d’être particulièrement savoureux en bouche, ce légume-fruit est riche en fibres, en vitamines A et C et constitue une importante source d'antioxydants. ",
+                    })
+                </ul>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "La révolution Kusmi : Rituel Défenses Immunitaires ",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<strong>L’acérola</strong> est très rare sur les marchés alimentaires. Et si on vous aidait à en faire une cure ? Et pour une fois on ne parle pas de compléments alimentaires ! On a imaginé pour vous un <strong>thé 100% vitaminé</strong>, naturellement <strong>enrichi en vitamine C</strong> à intégrer d’urgence à votre nutrition : <strong>le thé bio Défenses Immunitaires</strong>, conçu pour booster votre immunité et lui apporter la juste dose de vitamine C journalière. Un mélange innovant, mais non pas moins gourmand, grâce à ses délicieuses notes fruitées d’orange, de fruits tropicaux et de cassis. De quoi faire le plein de bonnes vitamines et ensoleiller votre alimentation ! Le thé vert à base de baies d’acérola peut être une solution naturelle qui contribue au fonctionnement normal du corps et permet de booster nos défenses immunitaires, le tout couplé à une bonne nutrition et des habitudes alimentaires saines. Envie de faire une <strong>cure de vitamine C</strong> (aussi appelée vitamine L-ascorbique) et de vitamines sans contrainte ? Pensez dorénavant à notre thé vert bio <strong>Rituel Défenses Immunitaires</strong> et dites exit aux compléments alimentaires. ",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_14.webp?$staticlink$",
+                        "alt": "produit Rituel Immunitaire Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Mission nutrition boostée grâce à la vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que ce soit via des compléments alimentaires ou simplement grâce à l’alimentation, il est toujours bon de faire attention à son apport journalier en <strong>vitamine C</strong>, connue aussi sous le nom scientifique d’acide ascorbique : votre bien-être en dépend grandement. C’est pourquoi, chez Kusmi, on a décidé d’allier plaisir et santé avec notre <strong>Rituel Défenses immunitaires</strong>, un <strong>thé vert vitaminé</strong> qui permet de participer à l’apport journalier recommandé en vitamine C, pour aider votre corps à activer vos défenses immunitaires. Objectif ? Inspiré par la nature et guidé par la science, ce nouveau thé innovant repousse une fois de plus les limites de l’inventivité grâce à un procédé avant-gardiste unique. Nos feuilles de thé bio, aux vertus antioxydantes, sont enrichies en extrait d’acérola, l’un des fruits les plus riches en vitamine C, pour des effets prouvés et reconnus par des essais cliniques. Notre thé Rituel a passé toutes les évaluations pour vous satisfaire !<br>Parfois méconnu parmi les aliments riches en vitamines, ce petit fruit, originaire des Caraïbes, regorge de bienfaits insoupçonnés pour notre santé. Kusmi Tea n’a pas hésité, à les concentrer afin de vous en faire bénéficier au cœur d’un thé aussi savoureux que bénéfique pour votre corps. Le système est simple, un procédé scientifique unique et innovant qui permet de fixer le principe actif directement sur les ingrédients composant le mélange afin d’en garantir l’efficacité. En somme, un rituel à intégrer au plus vite à votre alimentation pour faire le plein de vitamines et ne pas se lancer dans une cure de compléments alimentaires !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$",
+                    "lien-img": "blog/1-Antioxyadant-the-vert.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert, un puissant antioxydant ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','booster-son-systeme-immunitaire')$",
+                    "lien-img": "blog/articles/2023/blog_legumes_booster.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment booster son système immunitaire ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','acerola-cerise-vitaminee-des-barbades')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_14.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "L’acérola, la &quot;cerise des Barbades&quot; vitaminée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Tout savoir sur la vitamine C",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$",
+            })
+        </section>
+    </div>
+
+</div>
+
