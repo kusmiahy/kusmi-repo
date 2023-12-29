@@ -1,0 +1,132 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : mate-abends-am-einschlafen
+
+    Nom de la classe parent : blog_article_2023
+
+    Titre : Hindert Mate abends am Einschlafen?  
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_mate_3.webp?$staticlink$",
+                "alt": "Mate",
+    
+                "titre": "Hindert Mate abends am Einschlafen? ",
+                "date": "Veröffentlicht am <span class='date__color'>29/12/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','mate')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Yerba Mate ist ein traditionelles Tee-Getränk aus Lateinamerika, das in Argentinien sehr beliebt ist und aus dem Aufguss der Blätter des Ilex paraguariensis-Baumes gewonnen wird. Diese werden getrocknet und gemahlen, um Yerba Mate zu erhalten. Mate-Tee hat einen hohen Koffeingehalt und ist ein wirksames Stimulans, das den Schlaf stören kann.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Mate und Schlaf, sind sie vereinbar?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Der Konsum von Mate-Tee kann sich aufgrund seines Koffeingehalts auf Ihren Schlaf auswirken. Das liegt daran, dass jeder Mensch eine andere Toleranz und Empfänglichkeit für dieses Molekül hat. Es wird allgemein behauptet, dass Mate in zu großen Mengen getrunken, den Schlaf verhindern würde. Warum ist das so? <br>Welche anregenden Wirkstoffe sind in Mate enthalten : <br>Koffein: Hauptwirkstoff des Kaffees, Mate enthält etwas weniger davon. <br>Teein: Als natürlicher Bestandteil von Tee (auch als Tee-Koffein bezeichnet) kann es die Konzentration fördern. <br>Theobromin: Ein entspannendes Molekül, das für gute Laune sorgt und auch in Kakao vorkommt. <br>Wie Kaffee ist auch Yerba Mate ein Energiebooster! Mate kann tagsüber getrunken werden, kann aber das Einschlafen stören. <br>Gut zu wissen: <br>Wussten Sie, dass Teein und Koffein eigentlich aus demselben Molekül stammen? Nur haben sie nicht die gleichen Auswirkungen auf den Körper. Koffein ist bioverfügbar und geht fast sofort in den Körper über, während sich Teein den ganzen Tag über verteilt. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Können Sie vor dem Schlafengehen oder am Abend einen Mate-Tee trinken?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Natürlich kann man einen Mate-Tee auch vor dem Schlafengehen oder am Abend trinken. Da er weniger Koffein enthält als ein Tee oder Espresso2, ist seine anregende Wirkung weniger stark. <br>Mögliche Schlafstörungen hängen aber vor allem davon ab, wie empfindlich Sie auf Koffein reagieren! Manche Menschen werden Schwierigkeiten haben, in den Schlaf zu finden, während andere einen Mate-Tee am Abend durchaus vertragen. <br>Genießen Sie die Vorteile dieses köstlichen Getränks mit seinen vielen positiven Eigenschaften. Mate enthält: <br>Antioxidantien mit antibakterieller und entzündungshemmender Wirkung2. <br>Aminosäuren, die die Verdauung fördern und Ängste lindern2. <br>Vitamin A, C, E und B2, um Energie zu tanken! <br>Die Kombination dieser Wirkstoffe mit Theobromin kann beim Mate-Trinker ein Gefühl der Entspannung auslösen. Beachten Sie, dass dies die dynamisierende Wirkung des Koffeins einschränken kann. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie konsumiert man Mate? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Die Zubereitung von Mate ist ein echtes Ritual und eine Institution in Südamerika. Traditionell in einer Kalebasse zubereitet, gibt es zahlreiche &quot;Kürbisse&quot; aus Holz, Keramik oder Metall, die sich perfekt eignen, um seinen Mate darin zuzubereiten. <br>Wie bereitet man einen hochwertigen Mate-Tee zu? Sie benötigen: ",
+                })
+                <ul class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Ein Qualitätsmate von Kusmi Tea ; ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Eine Schüssel oder Kalebasse ; ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Eine Bombilla (Strohhalm, der als Filter dient) ; ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "70 °C heißes Wasser (nur köchelnd). ",
+                    })
+                </ul>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Lassen Sie den Tee einige Minuten ziehen, vier Minuten für den Mate Euphoria. Sie werden den Geschmack von Kakao und Orange in vollen Zügen genießen.<br>Für eine genussvolle und entspannende Pause verwandeln ein Löffel Honig und ein paar Prisen Gewürze Ihren Mate in ein unvergleichliches Getränk!<br>Weiterlesen: Ziehzeit: Wie bereitet man Mate richtig zu? ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Kusmi Tea, ein Bio-Mate & Made in France ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Im Sinne einer nachhaltigen und ökologisch verantwortungsbewussten Landwirtschaft tragen alle unsere Produkte das Bio-Siegel und sind Made in Normandie. Unser Mate-Sortiment garantiert Ihnen somit einen vielfältigen und unvergleichlichen Genuss! Bei Kusmi bieten wir traditionellen und aromatisierten Mate an: ",
+                })
+                <ul class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21049A1070')$\"\>Detox:</a> Mischung aus Mate, grünem Tee und Zitrone ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21049A1070')$\"\>BB Detox:</a> Mischung aus Mate, grünem Tee und Grapefruit ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','EXIN20S')$\"\>Blue Detox:</a> Mischung aus Mate, grünem Tee und Ananas ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "<a class='banniere__link' href=\"$url('Product-Show','pid','21634A1070')$\"\>Boost:</a> Mischung aus Mate, grünem Tee und Ingwer ",
+                    })
+                </ul>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wie bei allen koffeinhaltigen Getränken kann ein übermäßiger Konsum von Mate zu Einschlafstörungen führen. Zwar wird nicht davon abgeraten, Mate vor dem Schlafengehen zu trinken, aber einige werden sich durch die anregende Wirkung gestört fühlen. <br>Sind Sie von Mate-Tee überzeugt? Dann lassen Sie sich von dem fruchtigen Geschmack unseres Kusmi Bio Detox Mate Grüntees verführen und pflegen Sie sich. ",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Hindert Mate abends am Einschlafen?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','mate-abends-am-einschlafen')$",
+            })
+        </section>
+    </div>
+
+</div>

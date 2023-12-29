@@ -1,0 +1,118 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : tchai-tea-to-protect-wild-tigers
+
+    Nom de la classe parent : tchai_articles_2023
+
+    Titre : Tchai of the Tiger – Let’s Protect Wild Tigers, Together
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="tchai_articles_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_produit_tchai.webp?$staticlink$",
+                "alt": "banner featuring Kusmi Tea's Tchaï of the Tiger, an Indian black tea with natural spices and flavours",
+    
+                "titre": "Tchai of the Tiger – Let’s Protect Wild Tigers, Together",
+                "date": "Published on <span class='date__color'>04/03/20</span>",
+                "url-produit": "$url('Product-Show','pid','21685A1070')$",
+                "lien-categorie": "blog/?filter=tchai-of-the-tiger",
+                "tag-texte": "Tchaï of the Tiger",
+    
+                "cta-texte": "Discover",
+    
+                "texte": "We are proud to present <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchai of the Tiger</a>.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Tchai of the Tiger, the First Fuly Organic Tea by Kusmi Tea",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Just like <strong>chai</strong>, a traditional beverage in India, Tchai of the Tiger <strong>divinely combines black tea and fragrant spices</strong>. The recipe is based on a tea variety from Thiashola, a renowned organic, ethical tea estate in southwest India in the Nilgiri region. We visited this timeless destination for a few days, and will cover it in more detail later. This <strong>black tea</strong> reveals its full strength when <strong>mixed with organic spices. Ginger, cardamom, cinnamon, and black and pink pepper</strong> all add an astonishing balance of power and sweetness to the blend, inspired by the enchanting cat it helps protect. <strong>Tchai of the Tiger</strong> is perfect for a spicy, <strong>delicious moment shared with others</strong>. You can also try it as a Latte version for an even more moreish experience!",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_1.webp?$staticlink$",
+                        "alt": "Tchaï of the Tiger Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "An Eco-Friendly Tin",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "For <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchai of the Tiger</a>, our studio designed a <strong>magnificent tin showcasing India and tigers using a mandala-inspired design</strong>. A mother tiger and her cub symbolize the necessary reproduction of this endangered species, featured in tawny shades that contrast with the green of nature. What’s more, the <strong>packaging is plastic-free</strong> to reflect a growing respect for the environment.",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_2.webp?$staticlink$",
+                        "alt": "Tchaï of the Tiger Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "The Thiashola Tea Estate",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "As we mentioned above, last September our teams traveled to the <strong>Thiashola Tea Estate</strong>, which went <strong>fully organic</strong> in 2006. The site is located in Southern India at 6,500 feet of altitude in the Nilgiri Mountains, also known as the “Blue Mountains.” This was where <strong>the first tea bush was planted in South India</strong> in 1853, making Thiashola one of the oldest tea estates in the region. Against the backdrop of breathtaking landscapes, a 350-person team works every day to harvest and produce a <strong>tea renowned for its unique character</strong> and its role in reflecting ethical, responsible commitments. The estate strives tirelessly to improve the living conditions of its employees and their families by paying fair wages, helping them furnish their homes, and providing an education system for their children.",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21685A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_produit_tchai_3.webp?$staticlink$",
+                        "alt": "Tchaï of the Tiger Kusmi Tea product",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "You can find our <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchai of the Tiger tea</a> in all our stores and on our website!<br>Share your favorite tea experiences on Instagram and tag us – we can’t wait to see your tea times with <a class='banniere__link' href=\"\$url('Product-Show','pid','21685A1070')$\"\>Tchai of the Tiger</a>!",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Tchaï of the Tiger - Protégeons ensemble les tigres sauvages",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','tchai-of-the-tiger-protege-tigres')$",
+            })
+        </section>
+    </div>
+
+</div>
+

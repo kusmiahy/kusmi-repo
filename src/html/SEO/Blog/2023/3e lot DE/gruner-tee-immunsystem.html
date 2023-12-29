@@ -1,0 +1,129 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : gruner-tee-immunsystem
+
+    Nom de la classe parent : blog_article_2023
+
+    Titre : Die Wirkung von grünem Tee auf unser Immunsystem 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_the_vert_menthe_concombre.webp?$staticlink$",
+                "alt": "Grüntee mit Minze und Gurke bio-Produkt Kusmi Tea",
+    
+                "titre": "Die Wirkung von grünem Tee auf unser Immunsystem  ",
+                "date": "Veröffentlicht am <span class='date__color'>29/12/2023</span>",
+                "url-produit": "$url('Product-Show','pid','21105A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Grüner Tee hat viele Vorteile für unsere Gesundheit: Er ist ein natürlicher Stresskiller, <strong>reich an Vitamin C</strong> und Antioxidantien (Polyphenole). Was gibt es sonst noch? Was kann man noch von ihm verlangen? ",
+            })
+        </section>
+        <article class="content">
+            @@include('.././_components/paragraphe.html', {
+                "class": "content__p content__p--first",
+                "texte": "Kann sich die Immunität in einem Beutel grünen Tee verstecken? Wenn dieser Cocktail an <strong>Vorteilen des grünen Tees</strong> mehrere Funktionen des Menschen optimiert, scheint er auch ein Verbündeter für unser <strong>Immunsystem zu sein</strong>. Warum genau ist das so? Wir verraten Ihnen alles über die positiven Eigenschaften von grünem Tee auf unser Immunsystem und unsere Gesundheit.<br><a class='banniere__link' href=\"$url('Product-Show','pid','21153A1070')$\"\>Entdecken Sie auch: Enthält grüner Tee Vitamin C?</a>",
+            })
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Stärkt grüner Tee unser Immunsystem?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ja, als Ergänzung zu einem gesunden und aktiven Lebensstil ist <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>grüner Tee</a> nützlich für unser <strong>Immunsystem</strong> und um unsere Zellen zu stärken.<br>Konkret: Warum ist grüner Tee gut für unsere Gesundheit?<br>Grüner Tee verfügt über interessante Eigenschaften für unser Immunsystem : ",
+                })
+                <ul class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Sein Gehalt an Polyphenolen (und insbesondere an EGCG) verleiht ihm mehrere positive Eigenschaften. Diese Wirkstoffe sind nämlich nicht nur für ihre <strong>antioxidativen Eigenschaften</strong> bekannt, sondern auch für ihre Rolle in unserem <strong>Immunsystem</strong>. Sie fördern tatsächlich die Immunität gegen fremde Krankheitserreger und helfen, gegen die Wirkung freier Radikale anzukämpfen.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Andererseits schützt es das Gewebe und die Zellen des Körpers vor <strong>oxidativen Schäden</strong>.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Außerdem unterstützt es unseren Stoffwechsel.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Die antioxidativen Eigenschaften von grünem Tee ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Grüner Tee ist sehr reich an Polyphenolen und <strong>ein starkes Antioxidans</strong>. Die Rolle der Antioxidantien ist für unser Wohlbefinden von entscheidender Bedeutung: Sie ermöglichen die Vorbeugung zahlreicher Krankheiten, indem sie unseren Körper <strong>vor der Wirkung freier Radikale und vorzeitiger Zellalterung</strong> schützen. Antioxidantien sind also für unseren Körper nützlich, um unsere Gesundheit und unser Wohlbefinden langfristig zu erhalten. <br>Kurz gesagt: Zusammen mit einer ausgewogenen und abwechslungsreichen Ernährung, die reich an guten Nährstoffen ist, und regelmäßigem Sport hilft grüner Tee, die <strong>Immunabwehr auf</strong> natürliche Weise zu stärken. Deshalb ist eine <strong>Teepause</strong> immer eine gute Idee. Noch dazu, wenn es sich um einen <strong>Bio-Grüntee</strong> von Kusmi handelt. Oder etwa nicht? ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Warum sollte man sich um sein Immunsystem kümmern? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Das Immunsystem besteht aus Zellen und Organen, die zusammenarbeiten, um den Körper zu schützen und auf Infektionen und Krankheiten zu reagieren. Im Alltag ist die Pflege des Immunsystems entscheidend für das Wohlbefinden: um Erkältungen im Winter und Müdigkeitsmomente im Alltag zu vermeiden und um Spannkraft und Vitalität zu erhalten. Wie kann man sein Immunsystem auf natürliche Weise stärken? Viel einfacher als man denkt: Sport, frische und abwechslungsreiche Lebensmittel auf dem Teller ... und warum nicht einen <strong>Beutel Vitamintee?</strong> ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Zoom auf Matcha-Tee ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Grüner Tee Sencha, Gunpowder, Genmaicha..., egal, woher Ihr grüner Tee kommt, es ist sehr wahrscheinlich, dass sie alle mehr oder weniger die gleichen Eigenschaften und Vorzüge haben. Ist Matcha-Pulver signifikant anders? Der Reichtum von Matcha an Catechinen, insbesondere an EGCG (Epigallocatechingallat), würde diesen grünen Tee für Ihr Immunsystem etwas interessanter machen. Tatsächlich ist dieses starke Antioxidans in <strong>Matcha</strong> in viel größeren Mengen vorhanden als in anderen grünen Tees. Gute Nachrichten für Matcha-Latte- oder Matcha-Eis-Fans. ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "28-Tage-Ritual Immunabwehr von Kusmi Tea ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Weil sich um sich selbst zu kümmern vor allem bedeutet, sich etwas Gutes zu gönnen, hat Kusmi <a class='banniere__link' href=\"$url('Product-Show','pid','21720A1350')$\"\>Bio Immunabwehr Ritual</a> kreiert, einen <strong>Bio-Tee, der vor Einfallsreichtum nur so dampft</strong>. Das Prinzip: 4 Wochen lang genießen wir jeden Tag einen Beutel grünen Sencha-Tee, der natürlich mit Vitamin C angereichert ist und mit Orange aromatisiert wurde. Ein reiner Genuss, den unsere Geschmacksknospen genießen, während unsere <strong>Immunabwehr</strong> aktiviert wird! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Reimen Sie sich Genuss und Nutzen mit einem vitaminreichen grünen Tee zusammen. ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Und damit sich jeder mit nur wenigen Schlucken Entspannung und Wohltaten gönnen kann, hat Kusmi auf eine einfache Anwendung gesetzt. Ein Beutel, etwas heißes Wasser und nichts weiter... Das ist alles, was Sie für diese neuartige, 100% natürliche Kur benötigen.<br>Um dieses 28-Tage-Ritual für die Immunabwehr zu kreieren, hat Kusmi die Grenzen des Erfindungsreichtums überschritten und ein einzigartiges und 100% natürliches Verfahren entwickelt, um die <strong>Teeblätter mit Acerola anzureichern</strong>, bevor die Wissenschaft ans Werk ging. Das Ergebnis ist ein <strong>Bio-Grüntee, der mit Kreativität aufgegossen wird, um Spannkraft und Vitalität zu</strong> bewahren! ",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Die Wirkung von grünem Tee auf unser Immunsystem ",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','gruner-tee-immunsystem')$",
+            })
+        </section>
+    </div>
+
+</div>

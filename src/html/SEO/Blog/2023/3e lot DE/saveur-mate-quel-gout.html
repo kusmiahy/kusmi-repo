@@ -1,0 +1,152 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : mate-geschmack DE -> FR artmm-8
+
+    Nom de la classe parent : blog_article_2023
+
+    Titre : Mate-Geschmack: Wie schmeckt das traditionelle Getränk aus Südamerika?  
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_mate_1.webp?$staticlink$",
+                "alt": "Mate",
+    
+                "titre": "Mate-Geschmack: Wie schmeckt das traditionelle Getränk aus Südamerika? ",
+                "date": "Veröffentlicht am <span class='date__color'>29/12/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','mate')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Tees & Aufgüsse",
+    
+                "cta-texte": "Entdecken",
+    
+                "texte": "Die aus der Familie der Stechpalmengewächse stammende Yerba Mate ist ein Strauch, der der Teepflanze überhaupt nicht ähnelt. Aber es gibt eine Gemeinsamkeit zwischen den beiden Pflanzen: Der Aufguss ihrer Blätter ist genauso köstlich. Auch wenn es schwierig ist, einen Geschmack oder ein Aroma zu beschreiben, versuchen wir uns der Herausforderung zu stellen, um Sie zu ermutigen, das jahrtausendealte Getränk Yerba Mate zu testen...",
+            })
+        </section>
+        <article class="content content_img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Was ist Mate?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Während Südafrika für den Rooibos (manchmal auch &quot;Rotbusch&quot; genannt) berühmt ist, ist Lateinamerika stolz auf eine andere einheimische Pflanze: die Yerba Mate oder Ilex paraguariensis, die vor allem im Nordosten Argentiniens, in Paraguay und im Süden Brasiliens wächst. Die Geschichte besagt, dass diese Pflanze bereits von den Guarani-Indianern gegessen wurde, die sie kauten oder in ihren Feldflaschen mit frischem Wasser einweichen ließen. Die Pflanze wuchs zwar wild, wurde aber später kultiviert, so dass sie auch in anderen lateinamerikanischen Ländern (Chile, Uruguay, Bolivien usw.) konsumiert wurde und schließlich auf der ganzen Welt Anhänger fand. Heute wird Mate meist heiß getrunken, aufgegossen in einer Art Feldflasche, der sogenannten Kalebasse. Die Kalebasse ist ein Metallrohr (Bombilla), das sowohl als Filter als auch als Strohhalm dient.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie schmeckt Mate?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Diese Frage ist schwer zu beantworten. Es ist ein bisschen so, als würde man nach dem Geschmack von Tee fragen, obwohl es verschiedene Arten von Tee gibt (weißer, grüner, schwarzer Tee), deren Geschmack je nach Anbaugebiet, Aufguss oder ob sie aromatisiert sind oder nicht, variiert. Beim Mate-Tee ist es ähnlich, auch hier gibt es verschiedene Sorten. Wenn man seinen allgemeinen Geschmack zusammenfassen müsste, würde man von einem pflanzlichen, leicht bitteren Geschmack sprechen. Der klassische/traditionelle Mate, der in Lateinamerika getrunken wird, ist sehr bitter, während der grüne Mate (der nicht gereift ist), der in Europa häufiger vorkommt, süßer und aromatischer ist, manchmal mit karamellisierten Aromen. Auch die Zubereitung des Mate-Tees beeinflusst seinen Geschmack. Um ein zu bitteres Getränk zu vermeiden, sollten Sie darauf achten, nicht zu heißes Wasser (70-80°) zu verwenden und den Mate nicht zu lange ziehen zu lassen.<br>Auch zu lesen : Die verschiedenen Geschmäcker und Aromen des Mate-Tees",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Kann man den Geschmack des Mate-Tees beeinflussen?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Wie bei Tee kann man den Geschmack durch Verzierung beeinflussen. Je nach Vorliebe kann man dem Mate Milch, Honig, Zucker, Ahornsirup, Gewürze (Zimt, Kardamom, Anis...), Kaffeebohnen, Minze, Ingwer oder auch Schalen von Zitrusfrüchten hinzufügen.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Wie bereite ich meinen Mate richtig zu?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Um Mate auf traditionelle Weise richtig zuzubereiten, brauchen Sie nur eine Kalebasse und eine Bombilla. Die Kalebasse ist ein speziell für Mate entworfenes Gefäß und die Bombilla ist ein Filterstrohhalm, mit dem man trinken kann, ohne dass die Blätter durchsickern.<br>Hier sind die Schritte:",
+                })
+                <ol class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Erhitze Wasser in einem Wasserkocher, ohne es zu kochen, die Temperatur sollte zwischen 70° und 80° C liegen.  ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Fülle die Kalebasse bis zum ⅔ mit Bio-Mate-Tee. Umrühren, damit der Staub nach unten fällt. Achte darauf, dass die Blätter an der Seite einen Haufen bilden. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Die Bombilla in die Kalebasse legen. ",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Heißes Wasser aufgießen und den Mate-Tee einige Sekunden ziehen lassen. ",
+                    })
+                </ol>
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<a class='banniere__link' href=\"$url('Page-Show','cid','argentinisches-drink-mate-rezept')$\"\>Mate kann</a> je nach Geschmack und Lust mehrmals aufgegossen <strong>werden</strong>. ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Was sind die Vorteile von Mate?",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Mate wird immer beliebter und ist <strong>dank seiner zahlreichen Vorteile</strong> ein großer Erfolg. Zunächst einmal ist er ein anregendes Getränk mit Koffein (1 %), das einen kleinen &quot;Boost&quot; verleiht. Zweitens ist Mate ein Konzentrat aus Antioxidantien, Mineralien (Kalium, Magnesium) und Vitaminen, das die Konzentration fördert, die Immunabwehr stärkt und gleichzeitig den Cholesterinspiegel und den Blutdruck senkt. Ein weiterer Vorteil des Mate-Tees ist seine appetitzügelnde Wirkung, die den Körper dazu zwingt, auf seine Reserven zurückzugreifen. Der Mate-Tee wird daher bei bestimmten Diäten zur Gewichtsreduktion empfohlen. ",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/blog_mate_2.webp?$staticlink$",
+                        "alt": "mate",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Für ein hochwertiges Getränk entscheidet man sich für",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Bio-Matetee",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bei Kusmi ist <a class='banniere__link' href=\"$url('Search-Show','cgid','mate')$\"\>Mate</a> in mehreren unserer wichtigsten Rezepte enthalten, die alle bio sind und in Frankreich zusammengestellt und abgefüllt werden. Die Bio-Bezeichnung garantiert Ihnen zahlreiche Qualitätskontrollen während der Produktion und der Verarbeitung des Tees, der umweltfreundlich und ohne Pestizide hergestellt wird. <br>Auf unserer Speisekarte steht die Mischung <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>Euphoria</a> die gerösteten Mate, Kakao und Orange vereint, <a class='banniere__link' href=\"$url('Product-Show','pid','21049A1070')$\"\>Detox</a> mit einer Mischung aus Mate, grünem Tee und Zitrone, oder <a class='banniere__link' href=\"$url('Product-Show','pid','21049A1070')$\"\>BB Detox</a> (Mate, grüner Tee und Grapefruit), <a class='banniere__link' href=\"$url('Product-Show','pid','21684A1070')$\"\>Lovely Morning</a> (grüner Tee, Mate und Zitrusfrüchte), <strong>Lov is pure</strong> (Grüntee, Mate, Brennnessel), <a class='banniere__link' href=\"$url('Product-Show','pid','21634A1070')$\"\>Boost</a> (Grüntee, Mate, Ingwer), <a class='banniere__link' href=\"$url('Product-Show','pid','EXIN20S')$\"\>Blue detox</a> (Grüntee und Mate). Beachten Sie, dass wir Sie mit Bombilla versorgen können, diesem Trinkhalm aus rostfreiem Stahl, der speziell für den Genuss Ihres Mate-Tees entwickelt wurde.  <br>Und wenn Sie es zu Hause zubereiten möchten, finden Sie <a class='banniere__link' href=\"$url('Page-Show','cid','rgentinisches-drink-mate-rezept')$\"\>hier unsere Rezeptideen</a>! ",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Unsere Meinung zu Yerba Mate ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Unsere Meinung zu diesem Getränk? Wenn Sie nach etwas anderem suchen, ist Yerba Mate genau das Richtige für Sie! Egal zu welcher Tageszeit, er wird Ihnen einen Energieschub verleihen. Er hat viele gesundheitliche Vorteile, ist reich an Vitaminen und Mineralien und ein starkes natürliches Stimulans. Er ist ein bitteres Getränk, aber seine Bitterkeit hängt von der Qualität der Blätter ab. Um sicherzugehen, dass Sie qualitativ hochwertigen Mate kaufen, sollten Sie sich für eine grün-gelbe Farbe entscheiden. Beachten Sie auch, dass sich der Geschmack von Mate je nach Sorte unterscheidet.<br>Yerba Mate ist ein untypisches, aber sehr verführerisches Getränk, das Gaumen auf der Suche nach Exotik begeistern wird. Da er viele positive Eigenschaften besitzt, können wir Sie nur ermutigen, ihn zu probieren. Vorausgesetzt, Sie entscheiden sich für einen Bio-Matetee! Mate ist ein uraltes südamerikanisches Getränk, das eine Mischung aus Tee und Kräutertee darstellt und Sie begeistern wird. ",
+                })
+            </section>
+        </article>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Mate-Geschmack: Wie schmeckt das traditionelle Getränk aus Südamerika?",
+                "texte": "Diesen Artikel teilen",
+                "url-network": "$url('Page-Show','cid','mate-geschmack')$",
+            })
+        </section>
+    </div>
+
+</div>
