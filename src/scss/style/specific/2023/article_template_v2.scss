@@ -224,12 +224,12 @@ $article-title: #731f4b;
 
     @include min1024() {
         padding-block: 2.5rem;
-        padding-inline: 10rem;
+        padding-inline: 3rem;
     }
 
     @include min1440() {
         padding-block: 2.5rem;
-        padding-inline: 16rem;
+        padding-inline: 8rem;
     }
     @include min1920() {
         padding-block: 2.5rem;

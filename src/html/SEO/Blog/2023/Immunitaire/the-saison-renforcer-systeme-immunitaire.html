@@ -1,0 +1,160 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : the-saison-renforcer-systeme-immunitaire
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : Les thés de saison : comment renforcer votre système immunitaire tout au long de l'année ? 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2024/immunite/blog_the_immunite_2.webp?$staticlink$",
+                "alt": "du thé et une theière marron en argile sur une table",
+    
+                "titre": "Les thés de saison : comment renforcer votre système immunitaire tout au long de l'année ? ",
+                "date": "Publié le <span class='date__color'>02/01/2024</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Avec les changements saisonniers, il est essentiel de prendre soin de notre santé et de renforcer notre système immunitaire. Une approche naturelle et délicieuse consiste à intégrer des produits et thés de saison spécifiques dans votre routine quotidienne afin de booster votre immunité. Découvrez vite comment ces boissons chaudes peuvent jouer un rôle essentiel pour fortifier votre organisme tout au long de l'année ! ",
+            })
+        </section>
+        <article class="content content_img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi opter pour le thé afin de renforcer le système immunitaire ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé est depuis longtemps reconnu pour ses nombreux bienfaits pour la santé et l’organisme, mais saviez-vous qu'il peut également jouer un rôle dans le renforcement de votre système immunitaire ? Pour chaque saison, et notamment en hiver, <a class='banniere__link' href=\"$url('Search-Show','cgid','thes_hiver')$\"\>il existe des thés adaptés</a>, chargés de propriétés bénéfiques pour votre corps.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Système immunitaire : le rôle crucial du thé ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour maintenir un système immunitaire fort, il est essentiel de choisir les bons produits. Les thés, riches en vitamines, en particulier ceux gorgés de <a class='banniere__link' href=\"$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$\"\>vitamine C</a>, et en éléments naturels, ont une action directe sur vos défenses immunitaires et un effet certain sur votre immunité. Ils contribuent à renforcer l'organisme et à le préparer aux défis saisonniers.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Les meilleurs thés pour renforcer l'immunité et l’organisme ",
+                    })
+                    <ul class="block__ul">
+                        @@include('.././_components/li.html', {
+                            "texte": "<strong>Thé vert :</strong> <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$\"\>riche en antioxydants</a>, le thé vert est célèbre pour son action bénéfique sur la santé. Il est particulièrement efficace pour <a class='banniere__link' href=\"$url('Page-Show','cid','booster-son-systeme-immunitaire')$\"\>renforcer le système immunitaire</a> grâce à ses propriétés naturelles et détoxifiantes. Testez l’une de nos dernières innovations à base de thé vert : <a class='banniere__link' href=\"$url('Product-Show','pid','21153A1070')$\"\>Rituel Défenses Immunitaires</a> vous apportant la juste dose de vitamine C journalière recommandée !",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "<strong>Thé à la camomille :</strong> en hiver, la camomille sera l’une de vos meilleurs alliés. Elle apaise le corps et l'esprit tout en renforçant vos défenses immunitaires. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "<strong>Thé au gingembre et au citron :</strong> associant les bienfaits du gingembre et de la vitamine du citron, ce thé est idéal pour lutter contre les maux hivernaux. Découvrez notre <a class='banniere__link' href=\"$url('Product-Show','pid','21645A1070')$\"\>Thé vert gingembre-citron</a>. ",
+                        })
+                        @@include('.././_components/li.html', {
+                            "texte": "<strong>Thé à l'échinacée :</strong> connue pour ses propriétés médicinales, l'échinacée est un choix plus que judicieux pour stimuler le système immunitaire et l’immunité. ",
+                        })
+                    </ul>
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_18.webp?$staticlink$",
+                        "alt": "ingrédients du produit Rituel Immunitaire Kusmi Tea (orange, maté, acérola)",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Thés de saison : une boisson riche en eau et en vitamines ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Saviez-vous que votre choix de boisson peut également contribuer à votre apport quotidien en eau ? Les thés, consommés chauds ou froids, vous aident à rester hydraté tout en renforçant votre immunité. Les vitamines présentes dans certains thés sont un complément précieux pour maintenir une santé optimale. A savoir, qu’il est recommandé de boire 2 à 3 litres d’eau par jour, alors à vos thés et tisanes !",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les compléments alimentaires naturels : le zinc et les plantes ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En plus des thés, il est important de souligner l'importance des compléments alimentaires naturels. Le zinc, présent dans certains thés, joue un rôle crucial dans le renforcement du système immunitaire et de l’immunité. De plus, l'ajout de plantes médicinales à vos thés peut offrir des bienfaits supplémentaires pour la santé.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "En conclusion : boire pour la santé ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En résumé, choisir les bons thés tout au long de l'année peut être une stratégie délicieuse pour renforcer efficacement votre système immunitaire et votre immunité. Prenez soin de votre santé en intégrant ces boissons riches en eau et en bienfaits naturels dans votre routine quotidienne. N'oubliez pas que la clé d'un corps fort et en santé réside dans des choix simples, tels que boire les thés adaptés à chaque saison et boire suffisamment d’eau. Alors, pourquoi ne pas commencer aujourd'hui ? Votre organisme vous remerciera !",
+                })
+            </section>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tisane-immunite')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_11.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boostez votre immunité avec une tisane antioxydante",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusions-bio-super-ingredients-super-aliments')$",
+                    "lien-img": "blog/super-ingredient2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Infusion bio : on vous dit tout sur les super-ingrédients ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_17.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tout savoir sur la vitamine C",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Les thés de saison : comment renforcer votre système immunitaire tout au long de l'année ? ",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','the-saison-renforcer-systeme-immunitaire')$",
+            })
+        </section>
+    </div>
+
+</div>
+

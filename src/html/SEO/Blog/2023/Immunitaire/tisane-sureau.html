@@ -1,0 +1,115 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : tisane-sureau
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : La tisane au sureau
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2024/immunite/blog_tisane_sureau_1.webp?$staticlink$",
+                "alt": "tisane au sureau",
+    
+                "titre": "La tisane au sureau",
+                "date": "Publié le <span class='date__color'>02/01/2024</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "La tisane au sureau, confectionnée à partir de la plante Sambucus nigra, est une plante référence chez les amateurs de bien-être en raison de ses vertus pour la santé et de ses nombreuses propriétés. Ce type d’infusion, méticuleusement élaboré à partir de fleurs et de baies de sureau bio, ne se contente pas d'être une boisson, elle peut aussi se targuer de véritables propriétés venues de la phytothérapie. La phytothérapie, c’est quoi ? C’est une approche thérapeutique utilisant des extraits de plantes et des principes actifs à des fins médicinales.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Qu’est-ce que le sureau ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'histoire du sureau est inscrite dans les annales de la phytothérapie depuis des siècles. Cette plante est, en effet, particulièrement prisée pour ses fameuses baies, appelées Sambucus nigra. Les fleurs de sureau noir, cultivées dans le respect des normes bio, s'imposent comme des éléments incontournables dans la composition de tisanes et infusions à base de plantes. <br>La tisane au sureau noir, grâce à ses composants naturels, contribue au <a class='banniere__link' href=\"$url('Page-Show','cid','booster-son-systeme-immunitaire')$\"\>soutien du système immunitaire</a>. Les fleurs et les baies de sureau noir, récoltées avec soin, se marient harmonieusement dans une <a class='banniere__link' href=\"$url('Search-Show','cgid','infusions')$\"\>infusion bio</a> pour offrir l’ensemble de ses bienfaits à votre corps. Les antioxydants présents naturellement dans la fleur et les feuilles de sureau sont des alliés précieux dans la lutte contre les radicaux libres, contribuant ainsi à renforcer la résistance de l'organisme.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Quelle préparation et utilisation pour une infusion au sureau noir ? ",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est tout d’abord bon à savoir que, contrairement aux thés, une tisane ne contient pas de théine. Elle a ainsi un effet davantage relaxant pour votre organisme et contribue à votre bien-être global. Pour préparer cette tisane, les fleurs et les baies de sureau bio sont infusées dans de l'eau chaude, libérant ainsi leurs arômes et leurs bienfaits. Vous bénéficiez des vertus des plantes infusées dès la première tasse dégustée. L’idéal étant également de choisir une infusion bio et composée d’ingrédients eux-mêmes bio afin de respecter votre santé.<br>Si les fleurs jouent le rôle principal dans cette infusion, les feuilles et l'écorce de sureau noir ajoutent une dimension supplémentaire à la richesse des saveurs et des bienfaits. Ces éléments complémentaires apportent une profondeur et une complexité qui séduisent les amateurs de tisanes sophistiquées. La tisane au sureau a généralement un goût très doux, floral et légèrement sucré. L’<a class='banniere__link' href=\"$url('Page-Show','cid','infusion-hibiscus-bienfaits')$\"\>hibiscus</a> est souvent utilisé pour compléter les mélanges à base de sureau afin d’amener une touche d’acidité rappelant des arômes de fruits. Ce mariage avec l’hibiscus crée une teinte rouge vif dans la tasse et à la tisane, donnant à cette infusion une composition et un goût savoureux à souhait.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Quels sont les bienfaits de la tisane au sureau noir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane au sureau, bien au-delà d'une simple boisson, se distingue par <a class='banniere__link' href=\"$url('Page-Show','cid','artti-5')$\"\>ses propriétés détoxifiantes</a>. Son utilisation contribue ainsi à l'élimination des toxines du corps, tout en vous aidant à boire davantage d’eau dans la journée. Elle devient ainsi une alliée précieuse dans la quête d'un équilibre intérieur, dans l’élimination du stress et pour une santé digestive optimale grâce à sa fleur, ses baies et son écorce. Au-delà des bienfaits physiques, cette tisane bio au sureau incarne une philosophie de vie axée sur respect de la nature et des plantes. Elle attire ceux qui cherchent à intégrer des produits naturels et bio dans leur routine, une tendance aujourd’hui de plus en plus marquée dans le domaine du bien-être. En conclusion, la tisane au sureau bio, façonnée avec soin à partir de fleurs et de baies bio, vous offre une expérience sensorielle et thérapeutique, en particulier si vous aimez les boissons à base de plantes.",
+                })
+            </section>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tisane-immunite')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_11.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boostez votre immunité avec une tisane antioxydante",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusions-bio-super-ingredients-super-aliments')$",
+                    "lien-img": "blog/super-ingredient2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Infusion bio : on vous dit tout sur les super-ingrédients ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_17.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tout savoir sur la vitamine C",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "La tisane au sureau",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','tisane-sureau')$",
+            })
+        </section>
+    </div>
+
+</div>
+
