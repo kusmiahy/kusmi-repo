@@ -40,4 +40,23 @@ document.addEventListener("DOMContentLoaded", function () {
         addLogos('.m-pdp__main-details', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'm-pdp__images-container__logos-bios');
     }
+
+    const splide = new Splide('.splide--pdp-bundle-rituel', {
+        type: 'loop',
+            perPage: 4,
+            drag: false,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                767: {
+                    perPage: 1,
+                    arrows: true,
+                    autoplay: true,
+                    speed: 1000,
+                    easing: 'ease',
+                    drag: true,
+                },
+            }
+        });
+    splide.mount();
 })

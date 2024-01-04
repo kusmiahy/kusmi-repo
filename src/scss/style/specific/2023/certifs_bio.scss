@@ -67,6 +67,38 @@ $title-size-desk: 1.5rem;
                 height: 90px;
             }
 
+            &:first-child {
+                width: 80px;
+
+                @include min1024() {
+                    width: 110px;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 97px;
+
+                @include min1024() {
+                    width: 134.5px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 46px;
+
+                @include min1024() {
+                    width: 64px;
+                }
+            }
+
+            &:last-child {
+                width: 65px;
+
+                @include min1024() {
+                    width: 90px;
+                }
+            }
+
             img {
                 width: 100%;
                 height: 100%;

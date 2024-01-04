@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.pdp_rituel_2023';
+var classParent = '.certifs_bio_2023';
 
 const {
     series,
