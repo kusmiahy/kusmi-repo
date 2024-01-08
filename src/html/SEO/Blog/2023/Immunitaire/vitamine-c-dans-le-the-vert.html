@@ -1,0 +1,190 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : vitamine-c-dans-le-the-vert
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : Le thé vert contient-il de la vitamine C
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_9.webp?$staticlink$",
+                "alt": "produit Rituel Défenses Immunitaire Kusmi Tea",
+    
+                "titre": "Le thé vert contient-il de la vitamine C",
+                "date": "Publié le <span class='date__color'>20/08/2021</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Essentiel pour notre bien-être, la <strong>vitamine C</strong> is the key pour notre tonus, notre bonne humeur, éviter le petit rhume de l’automne et pour notre santé en général. Encore faut-il savoir où la trouver. Car oui, la vitamine C ne se trouve pas seulement dans les oranges. Cette vitamine, essentielle à notre système immunitaire et à notre organisme, est présente dans beaucoup d’autres aliments. Pesto, poivron, <strong>acérola</strong>, goyave... Qu’en est-il du thé vert ? En plus de ses nombreuses vertus, <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>le thé vert</a> contient-il de la vitamine C ? Une tasse de thé vert peut-elle vraiment contribuer à notre apport quotidien en vitamine C ? Kusmi vous dit tout.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Que contiennent les feuilles de thé vert ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Parlons peu, parlons composition. Le thé vert est <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-bio-bienfaits')$\"\>une boisson aux propriétés bénéfiques</a> pour notre santé, mais que contient-il exactement ?",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "De la théine, un stimulant naturel",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé vert contient de la théine, évidemment. Différente à certains égards de la caféine, la théine est responsable de l’effet stimulant du thé.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Des antioxydants, aux vertus insoupçonnées",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé vert contient également des antioxydants comme les polyphénols, les flavonoïdes et les catéchines (EGCG). Si tous ces mots semblent compliqués, sachez qu’ils ne vous veulent que du bien. La teneur en polyphénols du thé vert lui confère plusieurs propriétés bénéfiques. Ces actifs sont reconnus pour leurs <strong>effets antioxydants</strong> mais aussi pour leur rôle sur notre <strong>système immunitaire</strong>. Ils favorisent effectivement l’immunité contre des agents pathogènes étrangers. D’autres part, il protège les tissus et cellules du corps contre les dommages oxydatifs et aident à lutter contre l’action des radicaux libres et le développement de certaines maladies. Enfin, il s'agit également d’un soutien pour notre métabolisme. En savoir plus ? Par ici, le thé vert : <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$\"\>un puissant antioxydant</a>. Saviez-vous qu’il est le thé qui contient le plus d’antioxydants ?",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Des vitamines, aux multiples bienfaits",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Enfin, les feuilles de thé vert contiennent des vitamines comme la vitamine C mais également de la vitamine P, des vitamines du groupe B et des minéraux comme le potassium et le fluor.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les feuilles de thé vert contiennent-elles vraiment de la vitamine C ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le thé vert est-il vitaminé ? La réponse est oui, les feuilles de thé vert contiennent de la vitamine C.</strong> Cependant, les bienfaits et actifs de la vitamine C sont totalement réduits à néant dès lors qu'elle est infusée dans une eau supérieure à 30°C. Ce sera le cas pour tous les thés verts, même pour le matcha. Le <strong>thé vert nature</strong> ne peut donc pas se prévaloir d'un <strong>apport en vitamine C</strong>. De plus, les thés verts natures ne peuvent pas être considérés comme une source primaire de vitamine C en raison de la faible quantité qu’ils contiennent naturellement (contrairement à d’autres aliments).<br>C’était sans compter <strong>l’innovation Kusmi !</strong>",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "La poudre de thé matcha, elle aussi riche en vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Qu’en est-il de la poudre de thé matcha ? Si la “matcha mania” n’est pas calmée, c’est parce que la poudre de matcha venue du Japon est bien réputée pour ses nombreuses vertus (détox, calmante et antioxydante) et son goût très gourmand. On aime se dire que le matcha est différent car il est réduit en poudre cependant les propriétés du matcha sont semblables à celles du thé vert. Si bien que la poudre de matcha contient, elle aussi, de la vitamine C. Tout comme le thé vert, la vitamine C du matcha perd son efficacité dans une eau chauffée. Pour profiter au mieux de ses bienfaits, on opte donc pour un thé froid ou glacé. Rappelons qu’un thé matcha préparé dans les règles de l’art est mélangé dans une eau frémissante et battu énergiquement avec le traditionnel fouet en bambou. Oui, même pour un matcha glacé.<br>Pour découvrir le <a class='banniere__link' href=\"$url('Product-Show','pid','21695A1040')$\"\>thé matcha Kusmi Tea</a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Et le thé noir dans tout ça ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et bien non, c’est bel et bien le thé vert qui gagne la bataille de la teneur la plus élevée en vitamine C. Pourquoi ? Car il n’est pas fermenté ! Les feuilles de thé noir possèdent elles d’autres vertus mais pas celle-ci.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Découvrez RITUEL 28 jours Défenses Immunitaires, le nouveau thé vert bio Kusmi Tea, naturellement source de vitamine C",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Kusmi repousse les limites de l'inventivité avec <strong>Rituel Défenses immunitaires</strong>, un <strong>thé vert vitaminé et bio</strong> naturellement enrichi en acérola, l’un des fruits les plus riches en vitamine C. Le principe : <strong>pendant 4 semaines</strong> (soit <strong>28 jours de cure</strong>), on déguste chaque jour un sachet de thé vert Sencha naturellement enrichi en vitamine C et aromatisé à l’orange. Un pur délice, dont nos papilles se délectent tandis que nos <strong>défenses immunitaires</strong> s’activent !",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_18.webp?$staticlink$",
+                        "alt": "ingrédients du produit Rituel Immunitaire Kusmi Tea (orange, maté, acérola)",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi faire une cure de vitamine C de 28 jours ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour les <strong>cures de vitamines en général</strong>, il faut savoir s’armer de patience ! Une durée de 4 semaines nous semble être le minimum afin de permettre au corps d’assimiler la vitamine. Vous pouvez bien sûr renouveler cette cure de vitamine C autant de fois que souhaité. La clé c’est de tenir sur la durée.<br>Gardez à l’esprit que cette <strong>cure de vitamine C</strong> doit s’accompagner d’un mode de vie sain et d’une alimentation équilibrée. La vitamine C étant présente dans de nombreux fruits et légumes, consommez-en 5 à 6 par jour. Vous connaissez la chanson à présent. Notre <strong>thé vitaminé</strong> sera simplement la cerise sur le gâteau de votre régime.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Tout savoir sur la vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si nous avons imaginé un <strong>thé vert naturellement enrichi en vitamine C</strong>, c’est parce que nous savons à quel point la vitamine C est essentielle à notre bien-être et notre santé. Les humains ne produisent qu’une petite quantité de vitamine C. Ils peuvent donc compter sur l’alimentation pour compléter leurs besoins journaliers. L’<strong>Agence nationale de sécurité sanitaire Alimentaire Nationale</strong> recommande un apport de <strong>110 mg / jour de vitamine C</strong> pour un adulte. Un apport insuffisant de vitamine C peut d’ailleurs entraîner une fatigue au quotidien. En plus d’éviter les coups de mou, la consommation de vitamine C est essentielle pour le bon fonctionnement de notre <strong>système immunitaire</strong> et de notre organisme. Des <strong>défenses immunitaires</strong> boostées nous permettent d’éviter les coups de froid l’hiver. Par ailleurs, la vitamine C faciliterait également l’absorption du fer par l’organisme. Attention cependant à cette information communément admise dont les preuves empiriques sont contradictoires.<br>On vous dit tout sur le rôle de la vitamine C dans notre dernier article.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les autres aliments riches en vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Saviez-vous que l’orange n'a pas le monopole de la vitamine C ? Eh oui, la vitamine C se retrouve dans de nombreux aliments comme les fruits et les légumes. Parmi les <strong>20 meilleures sources de vitamine C</strong>, on retrouve : la goyave, le poivron, la papaye, la kiwi, le brocoli, la fraise… Notre préféré à nous ? <strong>L’acérola, l’un des fruits les plus riches en vitamine C</strong>. L’acérola est un arbuste originaire des zones tropicales des Caraïbes, dont les petites baies rouges ont le bon goût d’être à la fois acidulées et riches en vitamine C. Mais vraiment très riches : sa consommation présente une teneur en vitamine C près de 30 à 40 fois plus qu’une orange. La nature fait si bien les choses que l’on ne peut que s’en inspirer ! Notre cure de vitamine 28 jours Défenses immunitaire est d’ailleurs enrichi en acérola pour vous permettre de contribuer à votre apport journalier recommandé en vitamine C .<br>Vous êtes plutôt infusion ? Essayez les tisanes au fenouil, orange, ginseng, cassis, cannelle…<br>Vous êtes convaincus par tous ces bienfaits ? On vous invite à goûter notre Rituel 28 jours composé de thé vert sencha et d’acérola. De quoi avoir un coop de boost au réveil ou dans la journée !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_17.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tout savoir sur la vitamine C",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','booster-son-systeme-immunitaire')$",
+                    "lien-img": "blog/articles/2023/blog_legumes_booster.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment booster son système immunitaire ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','acerola-cerise-vitaminee-des-barbades')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_14.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "L’acérola, la &quot;cerise des Barbades&quot; vitaminée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Le thé vert contient-il de la vitamine C",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','vitamine-c-dans-le-the-vert')$",
+            })
+        </section>
+    </div>
+
+</div>
+

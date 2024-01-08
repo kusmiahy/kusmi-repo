@@ -1,0 +1,180 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv20
+
+    Nom de la classe parent : immunitaire_article_2023
+
+    Titre : Les vertus du thé vert sur notre système immunitaire 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="immunitaire_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_5.webp?$staticlink$",
+                "alt": "produit Rituel Défenses Immunitaire Kusmi Tea",
+    
+                "titre": "Les vertus du thé vert sur notre système immunitaire ",
+                "date": "Publié le <span class='date__color'>05/11/2021</span>",
+                "url-produit": "$url('Product-Show','pid','21153A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Les <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-bio-bienfaits')$\"\>bienfaits du thé vert</a> sur notre santé sont nombreux : anti-stress naturel, riche en <strong>vitamine C</strong> et en antioxydants (polyphénols). What else ? Que peut-on lui demander de plus ? L’immunité peut-elle se cacher dans un sachet de thé vert ? Si ce cocktail de <strong>bienfaits du thé vert</strong> optimise plusieurs fonctions de l’être humain, il semblerait qu’il serait aussi un allié pour notre <strong>système immunitaire</strong>. Pourquoi exactement ? On vous dit tout sur les vertus du thé vert sur notre système immunitaire et notre santé.<br>A découvrir aussi : <a class='banniere__link' href=\"$url('Page-Show','cid','vitamine-c-dans-le-the-vert')$\"\>Le thé vert contient-il de la vitamine C ?</a>",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le thé vert renforce-t-il notre système immunitaire ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Oui, en complément d’une vie saine et active, le <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>thé vert</a> est utile à pour notre système immunitaire et pour booster nos cellules. Concrètement, pourquoi le thé vert est-il bénéfique pour notre santé ? Le thé vert dispose de vertus intéressantes pour notre système immunitaire :",
+                })
+                <ol class="block__ul">
+                    @@include('.././_components/li.html', {
+                        "texte": "Sa teneur en polyphénols (et notamment en EGCG) lui confère plusieurs propriétés bénéfiques. En effet, ces actifs sont reconnus pour leur <strong>propriétés antioxydantes</strong> mais aussi pour leur rôle sur notre <strong>système immunitaire</strong>. Ils favorisent effectivement l’immunité contre des agents pathogènes étrangers et aident à lutter contre l’action des radicaux libres.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "D’autres part, il protège les tissus et cellules du corps contre les <strong>dommages oxydatifs</strong>.",
+                    })
+                    @@include('.././_components/li.html', {
+                        "texte": "Il s’agit également d’un soutien pour notre métabolisme.",
+                    })
+                </ol>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les propriétés antioxydantes du thé vert",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Très riche en polyphénols, <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-un-puissant-antioxydant')$\"\>le thé vert est un puissant antioxydant</a>. Le rôle des antioxydants est primordial à notre bien-être : ils permettent la prévention de nombreuses maladies en protégeant notre organisme <strong>contre l’action des radicaux libres et le vieillissement prématuré des cellules</strong>. Les antioxydants sont donc utiles à notre corps pour notre santé et notre bien-être sur le long terme.<br>En bref, accompagné d’une alimentation équilibrée et variée riche en bons nutriments et une activité sportive régulière, le thé vert aide à booster <strong>ses défenses immunitaires naturellement</strong>. Voilà pourquoi <strong>une pause thé</strong> est toujours une bonne idée. Encore plus quand on parle d’un <strong>thé vert bio signé Kusmi</strong>. N’est-ce pas ?",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi prendre soin de son système immunitaire ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le système immunitaire est constitué de cellules et d'organes qui travaillent ensemble pour protéger le corps et réagir aux infections et aux maladies. Au quotidien, prendre soin de son système immunitaire est primordial pour son bien-être : pour éviter les <strong>coups de froid en hiver</strong>, les moments de fatigue au quotidien et pour garder tonus et vitalité. Comment peut-on booster son système immunitaire naturellement ? Bien plus simple qu’on ne le pense : du sport, des aliments frais et variés dans son assiette… et pourquoi pas <strong>un sachet de thé vitaminé ?</strong>",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Zoom sur le thé matcha",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Thé vert Sencha, Gunpowder, Genmaicha..., qu’importe la provenance de votre thé vert, il est fort probable qu’ils aient tous plus ou moins les mêmes propriétés et les mêmes vertus. La poudre de matcha est-elle significativement différente ? La richesse du matcha en catéchines, et plus particulièrement en EGCG (épigallocatéchine gallate) rendrait ce thé vert un peu plus intéressant pour votre système immunitaire. En effet, cet antioxydant puissant est présent dans le <strong>matcha</strong> dans des quantités beaucoup plus importantes que dans le reste des thés verts. Bonne nouvelle pour les aficionados du matcha latte, ou matcha glacé.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('.././_components/h2.html', {
+                        "titre": "Rituel 28 Jours Défenses immunitaires de Kusmi Tea",
+                    })
+                    @@include('.././_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Parce que prendre soin de soi, c’est avant tout se faire plaisir, Kusmi créé Rituel 28 Jours Défenses immunitaires, un thé bio fumant d’inventivité. Le principe : pendant 4 semaines, on déguste chaque jour un sachet de thé vert sencha naturellement enrichi en vitamine C et aromatisé à l’orange. Un pur délice, dont nos papilles se délectent tandis que nos défenses immunitaires s’activent !",
+                    })
+                </div>
+                <a href="$url('Product-Show','pid','21153A1070')$" class="block__image">
+                    @@include('.././_components/image.html', {
+                        "lien": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_7.webp?$staticlink$",
+                        "alt": "produit Rituel Défenses Immunitaire Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Faire rimer plaisir et bienfaits avec un thé vert vitaminé",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour que chacun puisse s’offrir détente et bienfaits en seulement quelques gorgées, Kusmi a misé sur une utilisation facilitée. Un sachet, un peu d’eau chaude et rien d’autre… C’est tout ce que nécessite cette cure inédite 100% naturelle.<br>Afin de créer ce Rituel 28 Jours spécial Défenses Immunitaires, Kusmi a repoussé les limites de l’inventivité et imaginé un procédé avant-gardiste unique et 100% naturel pour <strong>enrichir ses feuilles de thé d’acérola</strong>, avant de laisser la science opérer. Résultat, un <strong>thé vert bio infusé de créativité</strong> pour garder <strong>tonus et vitalité !</strong>",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Tout savoir sur la vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si nous avons imaginé un <strong>thé vert naturellement enrichi en vitamine C</strong>, c’est parce que nous savons à quel point la vitamine C est essentielle à notre bien-être et notre santé. Les humains ne produisent qu’une petite quantité de vitamine C. Ils peuvent donc compter sur l’alimentation pour compléter leurs besoins journaliers. L’<strong>Agence nationale de sécurité sanitaire Alimentaire Nationale</strong> recommande un apport de <strong>110 mg / jour de vitamine C</strong> pour un adulte. Un apport insuffisant de vitamine C peut d’ailleurs entraîner une fatigue au quotidien. En plus d’éviter les coups de mou, la consommation de vitamine C est essentielle pour le bon fonctionnement de notre <strong>système immunitaire</strong> et de notre organisme. Des <strong>défenses immunitaires</strong> boostées nous permettent d’éviter les coups de froid l’hiver. Par ailleurs, la vitamine C faciliterait également l’absorption du fer par l’organisme. Attention cependant à cette information communément admise dont les preuves empiriques sont contradictoires.<br>On vous dit tout sur le rôle de la vitamine C dans notre dernier article.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Les autres aliments riches en vitamine C",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Saviez-vous que l’orange n'a pas le monopole de la vitamine C ? Eh oui, la vitamine C se retrouve dans de nombreux aliments comme les fruits et les légumes. Parmi les <strong>20 meilleures sources de vitamine C</strong>, on retrouve : la goyave, le poivron, la papaye, la kiwi, le brocoli, la fraise… Notre préféré à nous ? <strong>L’acérola, l’un des fruits les plus riches en vitamine C</strong>. L’acérola est un arbuste originaire des zones tropicales des Caraïbes, dont les petites baies rouges ont le bon goût d’être à la fois acidulées et riches en vitamine C. Mais vraiment très riches : sa consommation présente une teneur en vitamine C près de 30 à 40 fois plus qu’une orange. La nature fait si bien les choses que l’on ne peut que s’en inspirer ! Notre cure de vitamine 28 jours Défenses immunitaire est d’ailleurs enrichi en acérola pour vous permettre de contribuer à votre apport journalier recommandé en vitamine C .<br>Vous êtes plutôt infusion ? Essayez les tisanes au fenouil, orange, ginseng, cassis, cannelle…<br>Vous êtes convaincus par tous ces bienfaits ? On vous invite à goûter notre Rituel 28 jours composé de thé vert sencha et d’acérola. De quoi avoir un coop de boost au réveil ou dans la journée !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tout-savoir-sur-la-vitamine-c')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_17.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tout savoir sur la vitamine C",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','booster-son-systeme-immunitaire')$",
+                    "lien-img": "blog/articles/2023/blog_legumes_booster.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment booster son système immunitaire ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','acerola-cerise-vitaminee-des-barbades')$",
+                    "lien-img": "blog/articles/2023/rituel_immunitaire/blog_rituel_immunitaire_14.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "L’acérola, la &quot;cerise des Barbades&quot; vitaminée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Les vertus du thé vert sur notre système immunitaire ",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttv20')$",
+            })
+        </section>
+    </div>
+
+</div>
+
