@@ -38,6 +38,9 @@ $article-title: #731f4b;
         @include min1024() {
             width: 50%;
         }
+        @include min2160() {
+            width: 42%;
+        }
 
         .container {
             justify-content: center;
@@ -164,6 +167,16 @@ $article-title: #731f4b;
             padding-inline: 2rem;
             width: 50%;
             display: flex;
+        }
+        @include min1440() {
+            padding-inline: 4rem;
+        }
+        @include min1920() {
+            height: 500px;
+            padding-inline: 2rem;
+        }
+        @include min2160() {
+            width: 42%;
         }
 
         img {

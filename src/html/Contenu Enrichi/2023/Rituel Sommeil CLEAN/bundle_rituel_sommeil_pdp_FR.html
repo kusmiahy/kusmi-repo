@@ -1,0 +1,129 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/bundle_rituel.scss";
+
+    Content asset : bundle-rituel-sommeil-contenu-enrichi
+
+    Nom de la classe parent : pdp_rituel_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+<!-- Le style pour les logos injectés -->
+<style>
+    .m-pdp__images-container{position:relative}.c-product-details__logos-bios{display:none}@media screen and (min-width:1024px){.c-product-details__logos-bios{margin-bottom:1rem;height:30px;display:flex;gap:.5rem}}.logos-bio__image{width:auto;height:100%;object-fit:contain}.m-pdp__images-container__logos-bios{position:absolute;bottom:0;right:3%;display:flex;gap:0rem;z-index:2;height:35px;gap:.5rem}.logos-bio__image{width:auto;height:100%;object-fit:contain}@media screen and (min-width:1024px){.m-pdp__images-container__logos-bios{display:none}}
+</style>
+<div class="pdp_rituel_2023">
+    <section class="ingredients ingredients--somm">
+        <div class="ingredients__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--violet",
+                "texte-titre": "Avec Rituel Sommeil, prenez soin de vous tout en vous faisant plaisir !",
+            })
+        </div>
+        <div class="ingredients__container container">
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/bienfaits.svg?$staticlink$",
+                "alt": "pictogramme d'un visage dormant",
+                "titre": "Des bienfaits spécifiques",
+                "paragraphe": "Améliore la qualité du sommeil, réduit le temps d’endormissement, favorise un sommeil réparateur",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/actif.svg?$staticlink$",
+                "alt": "pictogramme de deux feuilles vertes",
+                "titre": "Un principe actif reconnu",
+                "paragraphe": "L’acide rosmarinique présent dans l’extrait de mélisse agit directement sur la qualité de votre sommeil",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/scientifique.svg?$staticlink$",
+                "alt": "pictogramme d'un flacon avec une feuille à l'intérieur",
+                "titre": "Un procédé scientifique innovant",
+                "paragraphe": "Permettant de fixer le principe actif directement sur nos ingrédients et garantissant son efficacité",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/efficacite.svg?$staticlink$",
+                "alt": "pictogramme d'une case à cocher qui est cochée",
+                "titre": "Une efficacité prouvée",
+                "paragraphe": "Les bienfaits de Rituel Sommeil ont été prouvés et reconnus par des études cliniques",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/plaisir.svg?$staticlink$",
+                "alt": "pictogramme d'une tasse vue d'en haut avec un coeur rouge au milieu de la tasse avec une pousse qui a deux feuilles",
+                "titre": "Un produit plaisir",
+                "paragraphe": "Au goût unique, facile à intégrer dans votre routine quotidienne",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/sanstheine.svg?$staticlink$",
+                "alt": "pictogramme d'une pousse avec deux feuilles qui est barrée",
+                "titre": "Sans théine",
+                "paragraphe": "Pour favoriser la relaxation et faciliter l’endormissement",
+            })
+        </div>
+    </section>
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--green",
+                "texte-titre": "Nos certifications",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                    "alt": "label bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                    "alt": "certification européenne bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                    "alt": "certification agriculture biologique",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                    "alt": "usda organic label",
+                })
+            </div>
+        </div>
+        <div class="planet">
+            <div class="planet__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/2023/rituel_sommeil/1_logo.svg?$staticlink$",
+                    "alt": "logo 1% for the planet member",
+                })
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/bundle_rituel_sommeil.js
+-->

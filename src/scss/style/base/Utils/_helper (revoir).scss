@@ -151,13 +151,13 @@
 }
 
 
-.x-hide-mobile {
+.hide-mobile {
     @media (max-width: 767px) {
         display: none !important;
     }
 }
 
-.x-hide-desktop {
+.hide-desktop {
     @media (min-width: 768px) {
         display: none !important;
     }
