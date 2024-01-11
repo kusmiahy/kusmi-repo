@@ -1,7 +1,7 @@
 $color-text: #fff;
-$color-bg: #D13A52;
+$color-bg: #E58192;
 
-.st_valentin_push_2023 {
+.st_valentin_push_2024 {
     width: 100%;
     margin-block: 5px;
 
@@ -11,12 +11,12 @@ $color-bg: #D13A52;
 }
 
 
-.st_valentin_hero_2023,
-.st_valentin_homepromo_2023 {
+.st_valentin_hero_2024,
+.st_valentin_homepromo_2024 {
     width: 100%;
 }
 
-.st_valentin_homepromo_2023 {
+.st_valentin_homepromo_2024 {
     @include min1024() {
         width: 50%;
     }
@@ -26,38 +26,37 @@ $color-bg: #D13A52;
     display: flex;
     background-color: $color-bg;
 
-    &.hero--one-cta {
-        @include min1024() {
-            height: 323px;
-        }
-        @include min1440() {
-            height: auto;
-        } 
-        .hero__picture {
-            width: 86%;
-            @include min768() {
-                width: 47.5%;
-            }
-            @include min1440() {
-                width: 50%;
-            }
-            @include min1920() {
-                height: auto;
-            } 
-        }
+    @include min768() {
+        height: 383px;
+    }
+
+    @include min1024() {
+        height: 323px;
+    }
+
+    @include min1440() {
+        height: auto;
     }
 
     &__picture {
         display: flex;
-        width: 60%;
+        width: 86%;
+
         @include min768() {
-            width: 50%;
+            width: 47.5%;
         }
+
+        @include min1024() {
+            width: 60%;
+        }
+
         @include min1920() {
-            height: 520px;
-        } 
+            height: auto;
+        }
+
         picture {
             width: 100%;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -72,23 +71,40 @@ $color-bg: #D13A52;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         @include min768() {
             width: 50%;
         }
+
         @include min1024() {
-            padding-block: 5rem;
+            padding-block: 0;
+            width: 40%;
         }
+
         .container__texte {
             gap: .5rem;
             display: flex;
             flex-direction: column;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            margin-inline: 1rem;
+
+            @include min768() {
+                margin-inline: 2rem;
+                margin-bottom: 2.5rem;
+            }
+
             @include min1024() {
-                margin-bottom: 1.5rem;
+                margin-bottom: 2rem;
             }
-            @include min1920() {
-                gap: 1.5rem;
+            @include min1440() {
+                margin-bottom: 4rem;
+                width: 70%;
             }
+            @include min1440() {
+                width: 60%;
+            }
+            
+
             h2,
             h3,
             .reduction__texte,
@@ -100,57 +116,17 @@ $color-bg: #D13A52;
 
             h2 {
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 18px;
                 font-weight: 700;
+                margin-bottom: .5rem;
+
                 @include min768() {
-                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
                 }
+
                 @include min1024() {
-                    font-size: 3rem;
-                }
-            }
-
-            .reduction {
-                &__texte {
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 14px;
-                    margin-bottom: .3rem;
-                    @include min768() {
-                        font-size: 1rem;
-                        line-height: 1rem;
-                    }
-                    @include min1024() {
-                        font-size: 1.5rem;
-                        line-height: 1.5rem;
-                    }
-                }
-
-                &__number {
-                    font-weight: 800;
-                    font-size: 1.5rem;
-                    line-height: 1.5rem;
-                    text-transform: uppercase;
-                    @include min768() {
-                        font-size: 2.5rem;
-                        line-height: 2.5rem;
-                    }
-                    @include min1920() {
-                        font-size: 3.5rem;
-                        line-height: 3.5rem;
-                    }
-                    &--it {
-                        font-size: 1.3rem;
-                        line-height: 1.3rem;
-                        @include min768() {
-                            font-size: 2rem;
-                            line-height: 2rem;
-                        }
-                        @include min1920() {
-                            font-size: 2.5rem;
-                            line-height: 2.5rem;
-                        }
-                    }
+                    font-size: 2rem;
                 }
             }
 
@@ -160,9 +136,10 @@ $color-bg: #D13A52;
                 font-size: 1rem;
                 line-height: 1.3rem;
                 font-weight: 500;
+
                 @include min1024() {
-                    font-size: 1.5rem;
-                    line-height: 1.7rem
+                    font-size: 20px;
+                    line-height: 1.5rem
                 }
             }
         }
@@ -173,26 +150,31 @@ $color-bg: #D13A52;
             justify-content: center;
             align-items: center;
             gap: .5rem;
+
             @include min1024() {
                 flex-direction: row;
             }
+
             &.hero__ctas-container--4-ctas {
                 @include min1024() {
                     flex-wrap: wrap;
                 }
+
                 @include min1440() {
                     width: 500px;
                 }
             }
+
             &.hero__ctas-container--4-ctas-it {
                 @include min1024() {
                     flex-wrap: wrap;
                 }
+
                 @include min1440() {
                     width: 445px;
                 }
             }
-            
+
             .cta--hero {
                 background-color: #1C1C1B;
                 line-height: 10px;
@@ -248,6 +230,7 @@ $color-bg: #D13A52;
     &__picture {
         height: 45%;
         width: 100%;
+
         img {
             height: 100%;
             width: 100%;
@@ -326,6 +309,7 @@ $color-bg: #D13A52;
                     line-height: .9rem;
                     font-weight: 600;
                     margin-bottom: .2rem;
+
                     @include min768() {
                         line-height: 1rem;
                         font-size: 1rem;
@@ -338,6 +322,7 @@ $color-bg: #D13A52;
                     line-height: 2rem;
                     font-weight: 800;
                     text-transform: uppercase;
+
                     &.reduction__number--it {
                         font-size: 1.5rem;
                         line-height: 1.5rem;
@@ -499,6 +484,7 @@ $color-bg: #D13A52;
                 text-transform: none;
                 width: auto;
                 margin: 0;
+
                 &:hover {
                     text-decoration: underline;
                 }

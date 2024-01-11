@@ -10,7 +10,9 @@
             @@text-link
         </p>
     </div>
-    <div class="homepromo__image">
-        <img src="anim/ope/INFUSION_ELYSEE_2023_HOME_PROMO.jpg?$staticlink$" alt="@@alt" />
-    </div>
+    <picture class="homepromo__image">
+        <source srcset="@@lien-img"
+                media="(min-width: 767px)" />
+            <img src="@@lien-img-tab" alt="@@alt" />
+    </picture>
 </div>
