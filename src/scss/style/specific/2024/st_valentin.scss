@@ -26,32 +26,20 @@ $color-bg: #E58192;
     display: flex;
     background-color: $color-bg;
 
-    @include min768() {
-        height: 383px;
-    }
-
-    @include min1024() {
-        height: 323px;
-    }
-
-    @include min1440() {
-        height: auto;
-    }
-
     &__picture {
         display: flex;
-        width: 86%;
+        width: 82%;
 
         @include min768() {
-            width: 47.5%;
+            width: 56.6%;
         }
 
         @include min1024() {
-            width: 60%;
+            width: 63.7%
         }
 
-        @include min1920() {
-            height: auto;
+        @include min1440() {
+            width: 63.74%;
         }
 
         picture {
@@ -258,9 +246,7 @@ $color-bg: #E58192;
             gap: .7rem;
 
             h2,
-            h3,
-            .reduction__texte,
-            .reduction__number {
+            h3 {
                 color: $color-text;
                 text-align: center;
                 margin-bottom: 0;
@@ -269,19 +255,16 @@ $color-bg: #E58192;
             h2 {
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1.7rem;
-                line-height: 2rem;
-
-                @include min768() {
-                    font-size: 2rem;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                margin-inline: 1.3rem;
+                @include max375() {
+                    margin-inline: .5rem;
                 }
 
-                &.title--smaller {
-                    font-size: 1.5rem;
-
-                    @include min768() {
-                        font-size: 1.4rem;
-                    }
+                @include min768() {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
                 }
             }
 
@@ -289,44 +272,22 @@ $color-bg: #E58192;
                 font-weight: 500;
                 text-transform: none;
                 letter-spacing: normal;
-                line-height: .9rem;
+                line-height: 1rem;
                 font-size: .9rem;
+                margin-inline: 1.2rem;
+                @include max375() {
+                    margin-inline: .5rem;
+                }
 
                 @include min768() {
-                    line-height: 1rem;
+                    line-height: 1.2rem;
                     font-size: 1rem;
-                    margin-bottom: .5rem;
+                    margin-inline: .5rem;
                 }
 
                 @include min1024() {
-                    line-height: 1.2rem;
-                }
-            }
-
-            .reduction {
-                &__texte {
-                    font-size: .9rem;
-                    line-height: .9rem;
-                    font-weight: 600;
-                    margin-bottom: .2rem;
-
-                    @include min768() {
-                        line-height: 1rem;
-                        font-size: 1rem;
-                        margin-bottom: .5rem;
-                    }
-                }
-
-                &__number {
-                    font-size: 2rem;
-                    line-height: 2rem;
-                    font-weight: 800;
-                    text-transform: uppercase;
-
-                    &.reduction__number--it {
-                        font-size: 1.5rem;
-                        line-height: 1.5rem;
-                    }
+                    font-size: 18px;
+                    line-height: 21.6px;
                 }
             }
         }
@@ -342,7 +303,7 @@ $color-bg: #E58192;
             }
 
             .cta--push {
-                font-size: 14px;
+                font-size: .9rem;
                 color: $color-text;
                 text-decoration: underline;
 
@@ -352,6 +313,10 @@ $color-bg: #E58192;
 
                 @include min768() {
                     font-size: 1rem;
+                }
+
+                @include min1024() {
+                    font-size: 18px;
                 }
             }
         }

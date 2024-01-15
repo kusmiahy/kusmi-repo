@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentURL.includes('com/de')) {
         addLogos('.m-pdp__main-details', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'm-pdp__images-container__logos-bios');
-        // addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_immunitaire/picto-vitamine-c_DE.svg?$staticlink$', 'Pastille Angereichert mit Vitamin C')
-        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_immunitaire/picto-vitamine-c_EN.svg?$staticlink$', 'Sticker enriched with vitamin C')
+        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_immunitaire/picto-vitamine-c_DE.svg?$staticlink$', 'Pastille Angereichert mit Vitamin C')
+        // addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_immunitaire/picto-vitamine-c_EN.svg?$staticlink$', 'Sticker enriched with vitamin C')
     }
     if (currentURL.includes('com/int') || currentURL.includes('com/us') || currentURL.includes('com/en-ca')) {
         addLogos('.m-pdp__main-details', 'European organic certification', 'organic farming certification', 'c-product-details__logos-bios');

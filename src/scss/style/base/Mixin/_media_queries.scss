@@ -109,9 +109,8 @@
   }
 }
 
-// Mathias
-@mixin max1023 {
-  @media screen and (max-width: 1023px) {
+@mixin max375 {
+  @media screen and (max-width: 375px) {
     @content;
   }
 }
