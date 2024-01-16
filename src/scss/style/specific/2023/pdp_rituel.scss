@@ -23,6 +23,12 @@ $title-size-desk: 1.5rem;
 .pdp_rituel_2023 strong {
     font-weight: 600;
 }
+.orange-rituel {
+    color: $orange-rituel;
+}
+.bleu-rituel {
+    color: $violet-rituel;
+}
 
 .title-wrapper__subtitle {
     font-family: 'Barlow', sans-serif;
@@ -73,6 +79,40 @@ $title-size-desk: 1.5rem;
 .ingredients {
     padding: $padding-block-mob 1.5rem;
     background-color: $background-rituel;
+    &.ingredients--somm {
+        background-color: $bg-rituel-somm;
+
+        .component:nth-child(2),
+        .component:nth-child(4) {
+            .component__image {
+                padding: .5rem;
+            }
+        }
+
+        .component:nth-child(5) {
+            .component__image {
+                margin-right: .6rem;
+            }
+        }
+
+        .component:last-child {
+            .component__image {
+                padding: .2rem;
+            }
+        }
+
+        .container .component .component__texte .texte__titre {
+            color: $violet-rituel;
+        }
+    }
+
+    &.ingredients--immu {
+        background-color: $bg-rituel-immu;
+
+        .container .component .component__texte .texte__titre {
+            color: $orange-rituel;
+        }
+    }
 
     @include min1024() {
         padding-block: $padding-block-desk;
@@ -128,7 +168,6 @@ $title-size-desk: 1.5rem;
 
                 .texte__titre {
                     font-family: 'Barlow', sans-serif;
-                    color: $couleur-texte;
                     font-weight: 600;
                     font-size: $paragraphe-size-desk;
                     margin-block: .5rem;

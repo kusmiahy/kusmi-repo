@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.st_valentin_push_2024';
+var classParent = '.soldes_push_2023';
 
 const {
     series,

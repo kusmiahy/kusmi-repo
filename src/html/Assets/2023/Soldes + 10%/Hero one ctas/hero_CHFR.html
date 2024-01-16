@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes_dix.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP
+
+    Nom de la classe parent : soldes_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2023">
+    @@include('../components/slot_one_cta.html', {
+        "alt": "Clique sur le bouton &quot;J'en profite&quot; pour accéder à nos soldes",
+        "title": "Soldes",
+        "until": "jusqu'à",
+        "number": "50%",
+        "texte-extra": "+ EXTRA <span class='rotation'>-10%</span>",
+        "texte-extra2": "<span>sur tout le site dès 80€ d’achats<sup>*</sup></span>",
+        "texte-link": "J'en profite",
+        "link": "soldes",
+        "class-cta": "",
+    })
+</section>

@@ -4,7 +4,6 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
-        
     } else {
         setTimeout(init);
     }
