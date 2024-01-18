@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.soldes_push_2023';
+var classParent = '.baisse_de_prix_homepromo_2024';
 
 const {
     series,

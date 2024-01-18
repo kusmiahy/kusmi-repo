@@ -1,7 +1,8 @@
 $color-text: #fff;
-$color-bg: #E58192;
+$color-bg: #C8B7E1;
 
-.st_valentin_push_2024 {
+
+.baisse_des_prix_push_2024 {
     width: 100%;
     margin-block: 5px;
 
@@ -11,170 +12,154 @@ $color-bg: #E58192;
 }
 
 
-.st_valentin_hero_2024,
-.st_valentin_homepromo_2024 {
+.baisse_des_prix_hero_2024,
+.baisse_des_prix_homepromo_2024 {
     width: 100%;
 }
 
-.st_valentin_homepromo_2024 {
+.baisse_des_prix_homepromo_2024 {
     @include min1024() {
         width: 50%;
     }
 }
 
 .hero {
-    display: flex;
-    background-color: $color-bg;
+    width: 100%;
+    height: 100%;
+    position: relative;
 
-    &__picture {
-        display: flex;
-        width: 82%;
+    picture {
+        width: 100%;
+        height: 100%;
 
-        @include min768() {
-            width: 90%;
-        }
-
-        @include min1024() {
-            width: 63.7%
-        }
-
-        @include min1440() {
-            width: 63.74%;
-        }
-
-        picture {
+        img {
+            object-fit: cover;
             width: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
+            height: 100%;
         }
     }
 
     &__container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 2rem;
 
         @include min768() {
-            width: 50%;
+            padding: .8rem 2.3rem 3rem;
         }
 
         @include min1024() {
-            padding-block: 0;
-            width: 40%;
+            padding: 1.2rem 2.6rem 3rem;
+            justify-content: flex-start;
         }
 
-        .container__texte {
-            gap: .5rem;
+        @include min1440() {
+            padding: 2.5rem 5rem 4.5rem;
+        }
+
+        @include min1920() {
+            padding: 5.5rem 5.5rem 11.5rem;
+        }
+
+        .texte-container {
             display: flex;
-            flex-direction: column;
-            margin-bottom: 1.5rem;
-            margin-inline: 1rem;
 
             @include min768() {
-                margin-inline: 2rem;
-                margin-bottom: 2.5rem;
+                width: 460px;
             }
 
             @include min1024() {
-                margin-bottom: 2rem;
-            }
-            @include min1440() {
-                margin-bottom: 4rem;
-                width: 70%;
-            }
-            @include min1440() {
-                width: 60%;
-            }
-            
-
-            h2,
-            h3,
-            .reduction__texte,
-            .reduction__number {
-                color: $color-text;
-                margin-bottom: 0;
-                text-align: center;
+                height: 100%;
+                justify-content: space-between;
             }
 
-            h2 {
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: 700;
-                margin-bottom: .5rem;
+            @include min1120() {
+                width: auto;
+            }
 
-                @include min768() {
-                    margin-bottom: 1rem;
-                    font-size: 2rem;
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5rem;
+
+                h2,
+                h3 {
+                    color: $color-text;
                 }
 
-                @include min1024() {
-                    font-size: 2rem;
+                h2 {
+                    font-size: 1.5rem;
+                    text-align: left;
+                    line-height: 1.1;
+                    margin-bottom: 0;
+
+                    @include min768() {
+                        font-size: 40px;
+                    }
+
+                    @include min1024() {
+                        font-size: 37px;
+                    }
+
+                    @include min1440() {
+                        font-size: 3rem;
+                    }
                 }
-            }
 
-            h3 {
-                text-transform: none;
-                letter-spacing: normal;
-                font-size: 1rem;
-                line-height: 1.3rem;
-                font-weight: 500;
+                h3 {
+                    text-transform: none;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    letter-spacing: 0.325px;
+                    text-align: left;
+                    width: 90%;
+                    line-height: 1.2rem;
 
-                @include min1024() {
-                    font-size: 20px;
-                    line-height: 1.5rem
+                    @include min768() {
+                        font-size: 20px;
+                        line-height: 1.5rem;
+                    }
+
+                    @include min1440() {
+                        width: auto;
+                    }
                 }
             }
         }
 
-        .hero__ctas-container {
+        .ctas-container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             gap: .5rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
 
             @include min1024() {
                 flex-direction: row;
             }
 
-            &.hero__ctas-container--4-ctas {
-                @include min1024() {
-                    flex-wrap: wrap;
-                }
-
-                @include min1440() {
-                    width: 500px;
-                }
-            }
-
-            &.hero__ctas-container--4-ctas-it {
-                @include min1024() {
-                    flex-wrap: wrap;
-                }
-
-                @include min1440() {
-                    width: 445px;
-                }
-            }
-
-            .cta--hero {
-                background-color: #1C1C1B;
+            .cta {
+                margin-block: 0;
+                width: auto;
                 line-height: 10px;
+                background-color: #141414;
                 color: #fff;
                 text-align: center;
                 font-size: 12px;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 text-transform: uppercase;
-                padding: 12px;
+                padding: 15px 25px;
                 border: 1px solid #fff;
                 transition: .2s ease-in;
+
 
                 @include min768() {
                     padding: 15px 20px;
@@ -188,139 +173,110 @@ $color-bg: #E58192;
 
                 &:hover {
                     background-color: #fff;
-                    color: #1C1C1B;
+                    color: #141414;
                 }
             }
         }
     }
+
 }
 
 .push {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 100%;
-    background-color: $color-bg;
+    position: relative;
 
-    @include min768() {
-        height: 461px;
+    &:hover {
+        .text .cta {
+            text-decoration: none;
+        }
     }
 
-    @include min1024() {
-        height: 507px;
-    }
-
-    @include min1440() {
-        height: 510px;
-    }
-
-    &__picture {
-        height: 45%;
+    &__image {
         width: 100%;
+        height: 100%;
 
         img {
-            height: 100%;
-            width: 100%;
             object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+            @include min768() {
+                object-position: right
+            }
+
+            @include min1024() {
+                object-position: center
+            }
         }
     }
 
     &__text {
-        height: 55%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem .5rem;
+
+        @include min1024() {
+            padding: 1.5rem 1rem;
+        }
+    }
+
+    .text {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: .5rem;
+        gap: .8rem;
 
-        @include min768() {
-            line-height: 1rem;
-            font-size: 1rem;
-        }
-
-        .text__title {
+        &__title {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: .7rem;
+            align-items: flex-start;
+            gap: .3rem;
+
+            @include min1024() {
+                gap: .5rem;
+            }
 
             h2,
             h3 {
                 color: $color-text;
-                text-align: center;
-                margin-bottom: 0;
             }
 
             h2 {
-                font-weight: 700;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                line-height: 1.4rem;
-                margin-inline: 1.3rem;
-                @include max375() {
-                    margin-inline: .5rem;
-                }
-
-                @include min768() {
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                }
+                font-size: 21px;
+                margin-bottom: 0;
+                line-height: 1.1;
             }
 
             h3 {
-                font-weight: 500;
                 text-transform: none;
-                letter-spacing: normal;
-                line-height: 1rem;
                 font-size: .9rem;
-                margin-inline: 1.2rem;
-                @include max375() {
-                    margin-inline: .5rem;
-                }
-
-                @include min768() {
-                    line-height: 1.2rem;
-                    font-size: 1rem;
-                    margin-inline: .5rem;
-                }
+                letter-spacing: normal;
+                margin-bottom: 0;
+                line-height: 1.15;
+                font-weight: 500;
 
                 @include min1024() {
-                    font-size: 18px;
-                    line-height: 21.6px;
+                    font-size: 1rem;
                 }
+
             }
         }
 
-        .text__cta-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .cta {
+            text-decoration: underline;
+            font-size: .9rem;
+            font-weight: 600;
+            color: $color-text;
 
-            @include min768() {
-                gap: .5rem;
-            }
-
-            .cta--push {
-                font-size: .9rem;
-                color: $color-text;
-                text-decoration: underline;
-
-                &:hover {
-                    text-decoration: none;
-                }
-
-                @include min768() {
-                    font-size: 1rem;
-                }
-
-                @include min1024() {
-                    font-size: 18px;
-                }
+            @include min1024() {
+                font-size: 1rem;
             }
         }
     }
+
 }
 
 .homepromo {
@@ -381,8 +337,8 @@ $color-bg: #E58192;
         }
 
 
-        h2.title--st-valentin,
-        h3.subtitle--st-valentin {
+        h2.title--baisse-des-prix,
+        h3.subtitle--baisse-des-prix {
             display: none;
 
             @media screen and (min-width:652px) {
@@ -390,11 +346,11 @@ $color-bg: #E58192;
                 text-align: left;
                 letter-spacing: normal;
                 display: block;
-                color: $color-text;
+                color: #303030;
             }
         }
 
-        .title--st-valentin {
+        .title--baisse-des-prix {
             line-height: 1em;
             font-weight: 700;
             text-transform: none;
@@ -416,7 +372,7 @@ $color-bg: #E58192;
             }
         }
 
-        .subtitle--st-valentin {
+        .subtitle--baisse-des-prix {
             font-weight: 400;
             font-size: 1.38rem;
             line-height: 1.38rem;
@@ -439,6 +395,7 @@ $color-bg: #E58192;
             }
 
             @media screen and (min-width:652px) {
+                color: #303030;
                 letter-spacing: normal;
                 font-size: 1.4rem;
                 text-decoration: underline;

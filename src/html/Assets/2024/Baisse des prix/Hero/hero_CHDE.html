@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/baisse_de_prix.scss";
+
+    Content asset : PRIXENBAISSE_2024_HP
+
+    Nom de la classe parent : baisse_de_prix_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="baisse_de_prix_hero_2024">
+    @@include('../components/slot.html', {
+        "alt": "Klicken Sie auf die Schaltfläche &quot;Jetzt entdecken&quot;, um zu unseren preisreduzierten Beuteln zu gelangen.",
+        "title": "Preissenkung auf unsere Teebeutel",
+        "subtitle": "Unsere Auswahl wiederentdecken",
+        "link": "the_sachets",
+        "text-link": "Jetzt entdecken",
+        "class": "",
+
+        "link-img-mob": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP_MOBILE-ch.jpg?$staticlink$",
+        "link-img-tab": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP_TAB-ch.jpg?$staticlink$",
+        "link-img-desk": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP-ch.jpg?$staticlink$",
+    })
+</section>

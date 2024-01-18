@@ -162,6 +162,16 @@
         display: none !important;
     }
 }
+.hide-desktop-homepromo {
+    @media (min-width: 652px) {
+        display: none !important;
+    }
+}
+.hide-mobile-homepromo {
+    @media (max-width: 651px) {
+        display: none !important;
+    }
+}
 .x-hide-mobile {
     @media (max-width: 767px) {
         display: none !important;

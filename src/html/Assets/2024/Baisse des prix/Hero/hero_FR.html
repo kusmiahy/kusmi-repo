@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/baisse_de_prix.scss";
+
+    Content asset : PRIXENBAISSE_2024_HP
+
+    Nom de la classe parent : baisse_de_prix_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="baisse_de_prix_hero_2024">
+    @@include('../components/slot.html', {
+        "alt": "Cliquez sur le bouton &quot;Je découvre&quot; pour accéder à nos sachets en baisse de prix",
+        "title": "Prix en baisse sur nos sachets !",
+        "subtitle": "(re)Découvrez notre sélection de sachets, dès 6,50€",
+        "link": "the_sachets",
+        "text-link": "Je découvre",
+        "class": "",
+
+        "link-img-mob": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP_MOBILE_FR.jpg?$staticlink$",
+        "link-img-tab": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP_TAB_FR.jpg?$staticlink$",
+        "link-img-desk": "images/assets/2024/baisse_des_prix/2024-01-baisse-de-prix_HP_FR.jpg?$staticlink$",
+    })
+</section>

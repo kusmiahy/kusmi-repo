@@ -1,0 +1,25 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/baisse_de_prix.scss";
+
+    Content asset : PRIXENBAISSE_2024_PUSH_NAV
+
+    Nom de la classe parent : baisse_de_prix_navpush_2024
+
+-->
+
+<section class="baisse_de_prix_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez pour accéder à nos sachets en baisse de prix",
+        "texte": "Notre sélection sachets",
+        "lien": "$url('Search-Show','cgid','the_sachets')$",
+        "lien-img": "images/assets/2024/baisse_des_prix/baisse_des_prix_navpush.webp?$staticlink$",
+    })
+</section>

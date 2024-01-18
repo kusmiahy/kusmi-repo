@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/baisse_de_prix.scss";
+
+    Content asset : PRIXENBAISSE_2024_HOME_PROMO
+
+    Nom de la classe parent : baisse_de_prix_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 baisse_de_prix_homepromo_2024">
+    <a href="$url('Search-Show','cgid','the_sachets)$">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez sur le bouton &quot;Je découvre&quot; pour accéder à nos sachets en baisse de prix",
+            "title": "Prix en baisse sur nos sachets !",
+            "subtitle": "(re)Découvrez notre sélection de sachets, dès 6,50€",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Notre sélection sachets ></span>",
+        })
+    </a>
+</section>
