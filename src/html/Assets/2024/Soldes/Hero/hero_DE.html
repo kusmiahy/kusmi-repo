@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/select_green_hotels.scss";
+
+    Content asset : SELECT_GREEN_HOTEL_HERO
+
+    Nom de la classe parent : select_green_hotels_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="select_green_hotels_hero_2024">
+    @@include('../components/slot.html', {
+        "alt": "Klicke auf den Button &quot;Zum Anmeldeformular&quot;, um zu unserem KUSMI X SELECT GREEN HOTELS Gewinnspiel zu gelangen.",
+        "title": "Gewinnspiel<span class='hide-mobile'><br></span> Kusmi x Select Green Hotels",
+        "subtitle": "Ritual-Produktreihe entdecken und ein Feel-Good-Wochenende in der Alpenloge gewinnen*",
+        "texte-link": "Zum Anmeldeformular",
+        "link": "",
+    })
+</section>

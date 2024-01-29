@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes_dix.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP
+
+    Nom de la classe parent : soldes_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2023">
+    @@include('../components/slot_one_cta_sans.html', {
+        "alt": "Clique sur le bouton &quot;Toute la sélection&quot; pour accéder à nos soldes",
+        "title": "Soldes",
+        "subtitle": "sur une sélection de thés, infusions, <span class='x-hide-mobile'><br></span>coffrets et accessoires",
+        "texte-link": "Toute la sélection",
+        "link": "Soldes",
+        "texte-extra": "+ EXTRA <span class='rotation'>-10%</span><span class='x-hide-desktop'><br></span><span>sur tout le site dès 80€ d’achats<sup>*</sup></span>",
+        "class-cta": "",
+    })
+</section>

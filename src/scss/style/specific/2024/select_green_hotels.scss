@@ -1,7 +1,7 @@
 $color-text: #fff;
-$color-bg: #D13A52;
+$color-bg: #5F7154;
 
-.soldes_push_2023 {
+.select_green_hotels_push_2024 {
     width: 100%;
     margin-block: 5px;
 
@@ -10,130 +10,102 @@ $color-bg: #D13A52;
     }
 }
 
-.soldes_hero_2023 {
+.select_green_hotels_hero_2024 {
     width: 100%;
 }
 
 .hero {
     display: flex;
     background-color: $color-bg;
+    justify-content: space-between;
 
     &.hero--one-cta {
         @include min1440() {
             height: auto;
-        } 
+        }
+
         .hero__picture {
-            width: 86%;
+            width: 52.5%;
+
             @include min768() {
-                width: 47.5%;
+                width: 39.5%;
             }
+
             @include min1024() {
                 width: 50%;
             }
+
             @include min1920() {
                 height: auto;
-            } 
-        }
-    }
-
-    &__picture {
-        display: flex;
-        width: 60%;
-        @include min768() {
-            width: 50%;
-        }
-        picture {
-            width: 100%;
+            }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: center;
             }
+        }
+    }
+
+    .container {
+        @include min768() {
+            margin-inline: 0;
         }
     }
 
     &__container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
         flex-direction: column;
+        padding: 1rem 1rem 3rem;
+
         @include min768() {
+            padding: .8rem 2.3rem 3rem;
             width: 50%;
         }
+
+        @include min1024() {
+            padding: 1.2rem 2.6rem 3rem;
+        }
+
+        @include min1440() {
+            padding: 2.5rem 5rem 4.5rem;
+        }
+
+        @include min1920() {
+            padding: 5.5rem 5.5rem 11.5rem;
+        }
+
         .container__texte {
             gap: .5rem;
             display: flex;
             flex-direction: column;
-            margin-bottom: 1rem;
-            @include min1024() {
-                margin-bottom: 1.5rem;
-            }
+
             @include min1920() {
                 gap: 1.5rem;
             }
+
             h2,
-            h3,
-            .reduction__texte,
-            .reduction__number {
+            h3 {
                 color: $color-text;
                 margin-bottom: 0;
-                text-align: center;
+                text-align: left;
             }
 
             h2 {
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 18px;
                 font-weight: 700;
+                margin-bottom: 1rem;
+
                 @include min768() {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
                 }
                 @include min1024() {
-                    font-size: 3rem;
+                    margin-bottom: .5rem;
                 }
-            }
-
-            .reduction {
-                &__texte {
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 14px;
-                    margin-bottom: .3rem;
-                    @include min768() {
-                        font-size: 1rem;
-                        line-height: 1rem;
-                    }
-                    @include min1024() {
-                        font-size: 1.5rem;
-                        line-height: 1.5rem;
-                    }
-                }
-
-                &__number {
-                    font-weight: 800;
-                    font-size: 1.5rem;
-                    line-height: 1.5rem;
-                    text-transform: uppercase;
-                    @include min768() {
-                        font-size: 2.5rem;
-                        line-height: 2.5rem;
-                    }
-                    @include min1920() {
-                        font-size: 3.5rem;
-                        line-height: 3.5rem;
-                    }
-                    &--it {
-                        font-size: 1.3rem;
-                        line-height: 1.3rem;
-                        @include min768() {
-                            font-size: 2rem;
-                            line-height: 2rem;
-                        }
-                        @include min1920() {
-                            font-size: 2.5rem;
-                            line-height: 2.5rem;
-                        }
-                    }
+                @include min1440() {
+                    margin-bottom: 1rem;
                 }
             }
 
@@ -143,51 +115,36 @@ $color-bg: #D13A52;
                 font-size: 1rem;
                 line-height: 1.3rem;
                 font-weight: 500;
+
                 @include min1024() {
-                    font-size: 1.5rem;
-                    line-height: 1.7rem
+                    font-size: 20px;
+                    line-height: 1.5rem;
+                }
+
+                @include min1440() {
+                    width: 60%;
                 }
             }
         }
 
         .hero__ctas-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: .5rem;
-            @include min1024() {
-                flex-direction: row;
-            }
-            &.hero__ctas-container--4-ctas {
-                @include min1024() {
-                    flex-wrap: wrap;
-                }
-                @include min1440() {
-                    width: 500px;
-                }
-            }
-            &.hero__ctas-container--4-ctas-it {
-                @include min1024() {
-                    flex-wrap: wrap;
-                }
-                @include min1440() {
-                    width: 445px;
-                }
-            }
-            
+
             .cta--hero {
-                background-color: #1C1C1B;
+                margin-block: 0;
+                width: auto;
                 line-height: 10px;
+                background-color: #141414;
                 color: #fff;
                 text-align: center;
                 font-size: 12px;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
                 text-transform: uppercase;
-                padding: 12px;
+                padding: 15px 25px;
                 border: 1px solid #fff;
                 transition: .2s ease-in;
+                text-transform: uppercase;
+
 
                 @include min768() {
                     padding: 15px 20px;
@@ -195,13 +152,9 @@ $color-bg: #D13A52;
                     line-height: 13px;
                 }
 
-                @include min1024() {
-                    font-size: 18px;
-                }
-
                 &:hover {
                     background-color: #fff;
-                    color: #1C1C1B;
+                    color: #141414;
                 }
             }
         }
@@ -231,6 +184,7 @@ $color-bg: #D13A52;
     &__picture {
         height: 45%;
         width: 100%;
+
         img {
             height: 100%;
             width: 100%;
@@ -256,11 +210,14 @@ $color-bg: #D13A52;
             justify-content: center;
             align-items: center;
             gap: .7rem;
+            margin-inline: .5rem;
+
+            @include min768() {
+                margin-inline: 1rem;
+            }
 
             h2,
-            h3,
-            .reduction__texte,
-            .reduction__number {
+            h3 {
                 color: $color-text;
                 text-align: center;
                 margin-bottom: 0;
@@ -269,20 +226,8 @@ $color-bg: #D13A52;
             h2 {
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1.7rem;
-                line-height: 2rem;
-
-                @include min768() {
-                    font-size: 2rem;
-                }
-
-                &.title--smaller {
-                    font-size: 1.5rem;
-
-                    @include min768() {
-                        font-size: 1.4rem;
-                    }
-                }
+                font-size: 1.2rem;
+                line-height: 1.5rem;
             }
 
             h3 {
@@ -309,6 +254,7 @@ $color-bg: #D13A52;
                     line-height: .9rem;
                     font-weight: 600;
                     margin-bottom: .2rem;
+
                     @include min768() {
                         line-height: 1rem;
                         font-size: 1rem;
@@ -321,6 +267,7 @@ $color-bg: #D13A52;
                     line-height: 2rem;
                     font-weight: 800;
                     text-transform: uppercase;
+
                     &.reduction__number--it {
                         font-size: 1.5rem;
                         line-height: 1.5rem;
@@ -352,6 +299,167 @@ $color-bg: #D13A52;
                     font-size: 1rem;
                 }
             }
+        }
+    }
+}
+
+.homepromo {
+    height: 300px;
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width:652px) {
+        height: 400px;
+    }
+
+    @include min1024() {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width:1650px) {
+        flex-direction: row;
+    }
+
+    &__content {
+        padding-inline: 2.45rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        @media screen and (min-width:652px) {
+            position: static;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: .5rem;
+            width: 50%;
+            height: 100%;
+            background-color: $color-bg;
+            padding-bottom: 0;
+        }
+
+        @include min768() {
+            padding: 2.5rem 2.3rem 0;
+        }
+
+        @include min1024() {
+            width: 100%;
+            padding: .6rem 1.5rem 0;
+        }
+
+        @include min1440() {
+            padding: .8rem 1.5rem 0;
+        }
+
+        @media screen and (min-width:1650px) {
+            width: 50%;
+            padding: 3.7rem 2rem 0;
+        }
+
+
+        h2.title--custom,
+        h3.subtitle--custom {
+            display: none;
+
+            @media screen and (min-width:652px) {
+                margin-bottom: 0;
+                text-align: left;
+                letter-spacing: normal;
+                display: block;
+                color: $color-text;
+            }
+        }
+
+        .title--custom {
+            line-height: 1em;
+            font-weight: 700;
+            text-transform: none;
+
+            @media screen and (min-width:652px) {
+                font-size: 1.85rem;
+            }
+
+            @include min1440() {
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width:1650px) {
+                font-size: 2.3rem;
+            }
+
+            @include min1920() {
+                font-size: 2.5rem;
+            }
+        }
+
+        .subtitle--custom {
+            font-weight: 400;
+            font-size: 1.38rem;
+            line-height: 1.38rem;
+            text-transform: none;
+        }
+
+        .cta {
+            width: 100%;
+            background-color: #000;
+            padding: 12px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: .8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 2;
+
+            @media screen and (min-width:500px) {
+                padding: 5px;
+            }
+
+            @media screen and (min-width:652px) {
+                color: $color-text;
+                letter-spacing: normal;
+                font-size: 1.4rem;
+                text-decoration: underline;
+                background-color: transparent;
+                padding: 0;
+                font-weight: 500;
+                border: none;
+                text-transform: none;
+                width: auto;
+                margin: 0;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (min-width:652px) {
+            width: 50%;
+        }
+
+        @include min1024() {
+            width: 100%;
+            height: 225px;
+        }
+
+        @media screen and (min-width:1649px) {
+            width: 50%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

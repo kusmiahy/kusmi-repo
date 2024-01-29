@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/select_green_hotels.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : select_green_hotels_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="select_green_hotels_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Klicke auf den Button &quot;Zum Anmeldeformular&quot;, um zu unserem KUSMI X SELECT GREEN HOTELS Gewinnspiel zu gelangen.",
+            "texte-h2": "Gewinnspiel Kusmi x Select Green Hotels",
+            "texte-h3": "Ritual-Produktreihe entdecken und ein Feel-Good-Wochenende in der Alpenloge gewinnen*",
+            "texte-link": "Zum Anmeldeformular",
+            "link": "$url('Search-Show','cgid','')$",
+        })
+    </div>
+</div>

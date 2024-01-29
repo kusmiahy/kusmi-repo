@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_NAV_PUSH
+
+    Nom de la classe parent : soldes_navpush_2023
+
+-->
+
+<section class="soldes_navpush_2023">
+    @@include('../components/navpush.html', {
+        "alt": "Klicken Sie, um zu unserem Ausverkauf zu gelangen",
+        "texte": "Bis zu -50% auf eine Auswahl an Artikeln",
+        "lien": "$url('Search-Show','cgid','sale')$",
+    })
+</section>

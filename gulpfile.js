@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.baisse_de_prix_homepromo_2024';
+var classParent = '.select_green_hotels_push_2024';
 
 const {
     series,
