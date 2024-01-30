@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_tisaniere.scss";
+
+    Content asset : OFFRE_TISANIERE_RITUEL_PUSH
+
+    Nom de la classe parent : offre_tisaniere_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Search-Show','cgid','nos_thes_infusions')$" class="offre_tisaniere_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;J'en profite&quot; pour découvrir notre nouvelle &quot;Offre Tisanière&quot;",
+            "texte-h2": "Infusez<br>avec style !",
+            "texte-h3": "Votre tisanière à 5€ dès 50€ d'achat",
+            "texte-link": "J'en profite",
+        })
+    </div>
+    
+</a>
