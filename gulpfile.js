@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.gen_recharge_the_homepromo_2024';
+var classParent = '.offre_tisaniere_homepromo_2024';
 
 const {
     series,
