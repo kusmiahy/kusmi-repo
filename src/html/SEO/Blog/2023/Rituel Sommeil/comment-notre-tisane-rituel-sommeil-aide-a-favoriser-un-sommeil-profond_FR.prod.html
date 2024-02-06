@@ -24,137 +24,150 @@
 
 
 <style>
-    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md {
-        display: none;
-    }
-    .m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md {
-        display: none;
-    }
-    .c-breadcrumb .product-breadcrumb {
-        display: none;
-    }
-    .c-article-banner {
-        display: none;
-    }
-    .c-article-text {
-        max-width: 100%;
-        padding: 0;
-    }
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
 </style>
 
 <div class="rituel_sommeil_article_2023">
     <div class="article">
         <section class="article__banniere banniere">
             <!-- titre -->
-            @@include('../../_components/banniere.html', {
+            @@include('.././_components/banniere.html', {
                 "lien-img": "blog/articles/2023/rituel_sommeil/blog_comment_notre_tisane_rituel_sommeil_aide_a_favoriser_un_sommeil_profond.webp?$staticlink$",
                 "alt": "Thé en vrac Rituel Sommeil de Kusmi Tea avec une tasse d'infusion à côté et une fiole scientifique avec de la verveine à l'intérieur sur un fond étoilé",
     
                 "titre": "Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond ?",
                 "date": "Publié le <span class='date__color'>18/10/2023</span>",
-                "url-produit": "$url('Product-Show','pid','21251A1070')$",
+                "url-produit": "rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070",
                 "lien-categorie": "blog/?filter=infusions-bio",
                 "tag-texte": "Infusions bio",
     
-                "cta-texte": "Découvrez notre rituel sommeil",
+                "cta-texte": "Découvrez notre tisane Rituel Sommeil",
     
                 "texte": "<em>Une recette d'infusion qui mêle la verveine et la mélisse, à la rondeur du rooibos et à l'exotisme des notes de mangue ! </em>Dans notre rythme de vie effréné, trouver un sommeil profond et réparateur peut parfois sembler un défi insurmontable. C'est là que <strong>notre tisane santé</strong>, <strong>Rituel Sommeil</strong>, entre en scène pour vous offrir une solution naturelle et apaisante. Découvrez comment notre tisane bien-être, composée d'un mélange raffiné de plantes, peut vous aider à transformer vos nuits agitées en périodes de repos et de régénération.",
             })
         </section>
         <article class="content">
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "L'Alliance harmonieuse des plantes : Mélisse, Verveine et Rooibos pour une nuit paisible ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Au cœur de notre Rituel Sommeil se trouvent trois ingrédients clés : la mélisse, la verveine et le rooibos. La mélisse, plante herbacée vivace originaire du bassin méditerranéen, est reconnue depuis des siècles pour ses vertus apaisantes. Son parfum frais et légèrement citronné crée une atmosphère relaxante, propice à un sommeil paisible. Associée à la verveine et au rooibos, deux autres plantes réputées pour leurs propriétés calmantes et leur absence de théine, notre tisane devient une invitation au relâchement et à la tranquillité. ",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "La Mélisse : le secret de Rituel Sommeil ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Au cœur de notre infusion apaisante, Rituel Sommeil, se trouve un ingrédient clé : la mélisse. Cette plante, connue sous le nom scientifique melissa officinalis et appartenant à la famille des Lamiacées, est originaire du bassin méditerranéen. Depuis des siècles, elle est prisée pour ses nombreuses vertus bienfaisantes. Son nom grec, signifiant littéralement &#34;feuille à abeilles&#34;, met en évidence son rôle essentiel pour les abeilles butineuses qui apprécient son nectar. La mélisse offre une variété d'utilisations, allant de ses tiges fraîches aux feuilles, fleurs et graines.<br>Dans notre Rituel Sommeil, nous utilisons un extrait de mélisse obtenu à partir de ses feuilles. Cette plante aux multiples bienfaits contribue à améliorer la qualité du sommeil, favoriser un repos réparateur, réduire le temps nécessaire pour s'endormir et apaiser les moments d'agitation. Convaincus de ses propriétés bénéfiques, nous avons choisi d'intégrer <strong>un extrait de mélisse</strong> en plus des feuilles, pour concentrer les bienfaits de <strong>l'acide rosmarinique</strong>, responsable de <strong>l'impact positif sur le sommeil</strong>. Chaque tasse de Rituel Sommeil vous offre ainsi les bienfaits apaisants de la mélisse, enveloppant vos nuits d'un doux sommeil réparateur. ",
+                    "texte": "Au cœur de notre infusion apaisante, Rituel Sommeil, se trouve un ingrédient clé : la mélisse. Cette plante, connue sous le nom scientifique melissa officinalis et appartenant à la famille des Lamiacées, est originaire du bassin méditerranéen. Depuis des siècles, elle est prisée pour ses nombreuses vertus bienfaisantes. Son nom grec, signifiant littéralement &#34;feuille à abeilles&#34;, met en évidence son rôle essentiel pour les abeilles butineuses qui apprécient son nectar. La mélisse offre une variété d'utilisations, allant de ses tiges fraîches aux feuilles, fleurs et graines.<br>Dans notre Rituel Sommeil, nous utilisons un extrait de mélisse obtenu à partir de ses feuilles. Cette plante aux multiples bienfaits contribue à améliorer la qualité du sommeil, favoriser un repos réparateur, réduire le temps nécessaire pour s'endormir et apaiser les moments d'agitation. Convaincus de ses propriétés bénéfiques, nous avons choisi d'intégrer <strong>un extrait de mélisse</strong> en plus des feuilles, pour concentrer les bienfaits de <strong>l'acide rosmarinique</strong>, responsable de <strong>l'impact positif</strong> sur le sommeil. Chaque tasse de notre <a class='banniere__link' href=\"rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070\"\>tisane Rituel Sommeil</a> vous offre ainsi les bienfaits apaisants de la mélisse, enveloppant vos nuits d'un doux sommeil réparateur.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Le rôle clé de l'Extrait de Mélisse pour une nuit paisible et sereine ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Et en quoi consiste cet extrait de mélisse ? Riche en acide rosmarinique, <strong>un ingrédient actif</strong> qui agit sur les neurotransmetteurs GABA (acide gamma-aminobutyrique), connus pour leur rôle dans le sommeil, il complète ce mélange. L'interaction harmonieuse entre la mélisse, les autres plantes et ces neurotransmetteurs favorise une transition en douceur vers un sommeil profond et revitalisant. Profitez de ces bienfaits pour vous offrir <strong>une nuit de sommeil apaisante</strong>, grâce à notre Rituel Sommeil.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Un produit plaisir facile à intégrer dans votre routine du soir : La mangue",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Aux côtés des feuilles de mélisse, notre infusion marie la verveine, le rooibos et les notes tropicales de la mangue, pour un goût aussi raffiné que ses effets. Chaque gorgée vous transporte dans un moment de détente, idéal pour les soirées calmes où la caféine et la théine ne sont plus les bienvenues. Préparez-vous à savourer une tisane délicieuse et bienfaisante qui accompagnera en douceur votre soirée et favorisera un sommeil réparateur.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Une efficacité prouvée : l'assurance d'une tisane bienfaisante ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Mais comment pouvons-nous être certains de l'efficacité de ce mélange ? Soutenu par la science, Kusmi s’est basé sur des études cliniques menées par des laboratoires de recherche pour déterminer la dose optimale de cet ingrédient actif. L'acide rosmarinique présent dans l'extrait de mélisse agit directement sur la qualité de votre sommeil. Un <strong>principe actif reconnu</strong> qui trouve sa place au cœur de notre Rituel Sommeil, grâce à un procédé scientifique innovant. Celui-ci permet de fixer le principe actif directement sur nos ingrédients, garantissant ainsi son efficacité. <strong>Le résultat ? Un mélange minutieusement élaboré pour favoriser pleinement un meilleur sommeil</strong>. Chaque gorgée de Rituel Sommeil est une étape vers une nuit plus apaisante et un réveil plus énergisé. Faites confiance à notre tisane pour vous aider à retrouver un sommeil réparateur dès ce soir. ",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Une routine apaisante : utilisation de Rituel Sommeil pour des soirées relaxantes ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Comment devrions-nous utiliser le Rituel Sommeil de Kusmi Tea ? Rituel Sommeil peut être savouré à tout moment de la journée pour un effet apaisant. Il est toutefois recommandé de le consommer avant l’heure du coucher pour améliorer votre sommeil. Idéalement, vous devriez boire votre deuxième tasse quotidienne 1 heure avant d'aller vous coucher. Instaurez une routine réparatrice pour préparer votre corps et votre esprit à une nuit de sommeil profond. Détendez-vous en dégustant cette tisane bienfaisante et laissez le sommeil vous envelopper doucement.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "L'importance de la préparation : évitez la caféine pour une nuit calme ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Pour optimiser les bienfaits de notre Rituel Sommeil, il est recommandé de prendre des mesures pour favoriser une nuit calme. En particulier, réduire la consommation de thés et de caféine en soirée peut grandement contribuer à améliorer la qualité de votre sommeil. Les effets stimulants de ces substances peuvent interférer avec votre capacité à vous endormir paisiblement. Optez plutôt pour des moments de détente en savourant une tisane apaisante comme le Rituel Sommeil, qui vous prépare en douceur à une nuit de sommeil réparateur.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Un engagement envers le bien-Être : un sommeil réparateur grâce à Rituel Sommeil ",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "Le Rituel Sommeil de Kusmi Tea n'est pas simplement un produit, mais un engagement envers le bien-être. S'il invite à la détente et favorise un goût savoureux, il offre un sommeil réparateur tiré des bienfaits de la plante de mélisse. Offrez-vous le cadeau d'une nuit paisible avec notre Rituel Sommeil et découvrez comment la nature peut vous accompagner vers un sommeil profond et régénérant. Profitez de cette tisane apaisante pour des soirées relaxantes et des nuits sereines, où les bienfaits des plantes agissent en harmonie pour favoriser un sommeil apaisé et réparateur.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Le concept derrière la gamme Rituel de Kusmi Tea",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Plongez-vous dans un univers de bien-être et de saveurs apaisantes avec la gamme Rituel de Kusmi Tea®. Inspirée par la nature et guidée par la science, cette gamme a été conçue pour répondre à vos besoins quotidiens, en associant des saveurs originales à des principes actifs bien dosés. Au cœur de cette gamme, découvrez notre infusion phare : le Rituel Sommeil. Une fusion harmonieuse de plantes apaisantes, cette infusion exquise a été créée pour favoriser un sommeil profond et réparateur, tout en vous offrant un moment de plaisir gustatif.",
+                    "texte": "Plongez-vous dans un univers de bien-être et de saveurs apaisantes avec la gamme de <a class='banniere__link' href=\"$url('Search-Show','cgid','the_infusion_sante')$\"\>thé et infusion santé Rituel</a> de Kusmi Tea®. Inspirée par la nature et guidée par la science, cette gamme a été conçue pour répondre à vos besoins quotidiens, en associant des saveurs originales à des principes actifs bien dosés. Au cœur de cette gamme, découvrez notre infusion phare : la <a class='banniere__link' href=\"rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070\"\>tisane Rituel Sommeil</a>. Une fusion harmonieuse de plantes apaisantes, cette infusion exquise a été créée pour favoriser un sommeil profond et réparateur, tout en vous offrant un moment de plaisir gustatif.",
                 })
             </section>
             <section class="block">
-                @@include('../../_components/h2.html', {
+                @@include('.././_components/h2.html', {
                     "titre": "Rituel, des produits aux bienfaits prouvés",
                 })
-                @@include('../../_components/paragraphe.html', {
+                @@include('.././_components/paragraphe.html', {
                     "class": "block__p",
                     "texte": "La gamme Rituel de Kusmi Tea® incarne une approche holistique du bien-être, où chaque mélange est conçu pour répondre à un besoin spécifique. Imaginée et produite dans nos ateliers français, cette gamme allie tradition et innovation pour offrir des mélanges uniques et bienfaisants. Chaque produit de la gamme Rituel est soigneusement élaboré en combinant des ingrédients de qualité avec la juste dose de principes actifs. Cela permet de créer des expériences sensorielles exceptionnelles tout en apportant des bienfaits tangibles à votre quotidien.",
                 })
             </section>
         </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bouger-pour-mieux-dormir-l-impact-de-l-exercice-sur-le-sommeil')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_bouger_pour_mieux_dormir.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Bouger pour mieux dormir : l'impact de l'exercice sur le sommeil",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv2')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_5_pratiques_pour_bien_dormir.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "5 pratiques pour bien dormir en voyage",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','pourquoi-notre-infusion-sante-est-la-boisson-parfaite-avant-le-coucher')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_les_bienfaits_du_sommeil_profond_sur_la_sante.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Pourquoi notre infusion santé est la boisson parfaite avant le coucher ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
         <section class="block">
-            @@include('../../_components/partager.html', {
+            @@include('.././_components/partager.html', {
                 "titre": "Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond ?",
                 "texte": "Partager cet article",
                 "url-network": "$url('Page-Show','cid','comment-notre-tisane-rituel-sommeil-aide-a-favoriser-un-sommeil-profond')$",
