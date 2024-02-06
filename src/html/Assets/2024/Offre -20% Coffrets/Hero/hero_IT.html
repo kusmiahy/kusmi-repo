@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_20_coffrets.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : offre_20_coffrets_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_20_coffrets_hero_2024">
+    @@include('../components/slot.html', {
+        "alt": "Cliccare sul pulsante &quot;Tutti i prodotti&quot; per accedere alle nostre vendite.",
+        "title": "Saldi",
+        "subtitle": "su una selezione di tè, infusi, <span class='x-hide-mobile'><br></span>cofanetti e accessori",
+        "texte-link": "Tutti i prodotti",
+        "link": "saldi",
+        "class-cta": "",
+    })
+</section>
