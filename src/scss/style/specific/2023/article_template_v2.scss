@@ -324,12 +324,22 @@ $article-title: #731f4b;
 
 .block__subtitle {
     text-transform: none;
-    font-family: 'Lato', sans-serif;
     font-size: $subtitle-size;
     margin-bottom: .5rem;
     text-align: left;
     font-weight: 600;
     line-height: 2rem;
+    width: 100%;
+    letter-spacing: 0.2px;
+
+}
+.block__susubbtitle {
+    text-transform: none;
+    font-size: 1.05rem;
+    margin-bottom: .25rem;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.7rem;
     width: 100%;
     letter-spacing: 0.2px;
 

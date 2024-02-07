@@ -1,0 +1,136 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : tisane-pour-dormir-infusion-thym
+
+    Nom de la classe parent : rituel_sommeil_article_2023
+
+    Titre : La tisane de thym : une infusion à boire le soir
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rituel_sommeil_article_2023">
+    <div class="article">
+        <section class="article__banniere banniere">
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_tisane_pour_dormir.webp?$staticlink$",
+                "alt": "Découvrez nos thés et tisanes pour le soir",
+    
+                "titre": "La tisane de thym : une infusion à boire le soir",
+                "date": "Publié le <span class='date__color'>31/08/2023</span>",
+                "url-produit": "$url('Search-Show','cgid','soir')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Découvrez nos thés et tisanes pour le soir",
+    
+                "texte": "Oui bonjour, c’est l'insomnie ! S’il y a bien une visite que l’on souhaite éviter, c’est bien celle de l’insomnie ! Toutes personnes sensibles aux troubles du sommeil vous le diront : lutter contre l’insomnie est compliqué. Et si vous tentiez les méthodes naturelles ? Aujourd’hui, on vous parle du thym, cette plante aux mille bienfaits, très souvent utilisée en tisane et infusion.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "La tisane de thym : bienfaits et origines",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thym est une plante aromatique originaire du bassin méditerranéen qui pousse et s'épanouit généralement dans les régions sèches et ensoleillées d’Europe. Herbe aromatique fortement appréciée par les Français, le thym rappelle le Sud, l’accent chantant et la garrigue. Le thym est généralement utilisé en cuisine pour <strong>relever le goût de certains plats</strong> ou assaisonner pommes de terre, poissons, pains ou pâtes brisées. En dehors de la cuisine, savez-vous que le thym pouvait aussi être utilisé pour ses <strong>bienfaits et vertus</strong> ?",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Quels sont les bienfaits de la tisane de thym ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Symbole de courage, le thym a longtemps été utilisé pour purifier l’air. C’est à partir du Moyen Âge, que les vertus médicinales du thym ont été découvertes. Quels sont donc les bienfaits du thym et par extension les vertus de l’infusion au thym ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de thym est surtout réputée pour soulager les maux liés au froid comme le rhume, les grippes ou angines bien connus pour gâcher nos hivers. Riche en phénol, un antiseptique puissant, la tisane de thym pourrait aussi aider à apaiser les gorges irritées. Les remèdes de grand-mère contre le mal de gorge ont la peau dure : une tisane de thym, du miel et du citron et ça repart.",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Estomac sensible ? Testez la tisane de thym. En infusion, le thym pourrait également améliorer la digestion. En effet, son action anti-bactérienne et antispasmodique pourrait restaurer la flore intestinale et aider le foie et la vésicule biliaire à bien fonctionner. En bref, le thym aide à détoxifier l’organisme. Bien plus surprenant, le thym pourrait aussi être bon pour… votre bouche. Composé de thymol,le thym pourrait avoir une action contre les caries et d’autres bactéries. On comprend mieux pourquoi le thymol fait partie des ingrédients des bains de bouche antiseptiques.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "La tisane de thym fait-elle dormir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nous vous parlions dans un précédent article de nos infusions pour dormir. La verveine ou encore la camomille sont les stars des tisanes pour dormir. Et si le thym rejoignait la pyjama party ?<br>Le saviez-vous ? Le thym contient un principe anxiolytique qui pourrait être bénéfique au sommeil. Ainsi la tisane de thym pourrait avoir des effets relaxants sur les personnes anxieuses à l’instar de la verveine. À boire le soir, après le repas pour espérer pouvoir <a class='banniere__link' href=\"lovely-night-infusion-bio-LONIBIOMASTER.html?v=21679A1070\"\>danser avec Morphée</a>.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Comment faire une tisane de thym ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "On aime associer le thym avec d’autres épices comme l’origan, le clou de girofle ou la cannelle pour prévenir la grippe ou autres maladies virales et bactériennes. Avec une pointe de miel ou de citron, la tisane de thym pourrait soulager les maux de gorge. Enfin, le thym, mélangé à du curcuma ou du gingembre, pourrait aussi renforcer l’immunité et la vitalité.",
+                })
+                @@include('.././_components/h3.html', {
+                    "titre": "Quelle tisane pour le soir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si chacun a une sensibilité différente à la théine, le soir, préférez la tisane. <a class='banniere__link' href=\"$url('Page-Show','cid','the-sans-theine')$\"\>100% sans théine</a>, <a class='banniere__link' href=\"$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$\"\>l’infusion bio Kusmi</a> vous permettra de vous hydrater d’une boisson chaude sans pour autant vous “exciter” après le repas. Le choix est large parmi nos infusions bio. Pour trouver le sommeil, on aime se tourner vers les infusions à base de <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>rooibos bio</a>, verveine, tilleul, mélisse ou camomille. Comme le thym, ces plantes sont connues pour leurs bienfaits apaisants et relaxants.<br>Chez Kusmi, testez notre <a class='banniere__link' href=\"rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070\"\>tisane Rituel Sommeil</a>, <a class='banniere__link' href=\"lovely-night-infusion-bio-LONIBIOMASTER.html?v=21679A1070\"\>Lovely Night</a>, <a class='banniere__link' href=\"be-cool-infusion-bio-COOLBIOMASTER.html?v=21654A1120\"\>Be Cool</a> ou encore <a class='banniere__link' href=\"feel-zen-infusion-bio-FEELBIOMASTER.html?v=21677A1120\"\>Feel Zen</a> pour vous apaiser le soir. D’autres préféreront la gourmandise de nos <a class='banniere__link' href=\"rooibos-amande-infusion-bio-ROAMBIOMASTER.html?v=21665A1070\"\>rooibos à l’amande</a> et à la <a class='banniere__link' href=\"rooibos-vanille-infusion-bio-ROVABIOMASTER.html?v=21666A1070\"\>vanille</a> et on les comprend.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-du-soir')$",
+                    "lien-img": "blog/articles/2023/lovely_night/blog_lovely_night_4.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "À la recherche de Morphée : cinq infusions bio pour dormir",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','rooibos-afrique-du-sud')$",
+                    "lien-img": "blog/2022_05-rooibos.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le rooibos, tout savoir sur le &quot;thé rouge&quot; d’Afrique du Sud et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','reutilisation-boite-the-kusmi')$",
+                    "lien-img": "blog/1_testV3.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Réutilisation : comment donner une deuxième vie à sa boîte de thé Kusmi ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "La tisane de thym : une infusion à boire le soir",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','tisane-pour-dormir-infusion-thym')$",
+            })
+        </section>
+    </div>
+
+</div>
