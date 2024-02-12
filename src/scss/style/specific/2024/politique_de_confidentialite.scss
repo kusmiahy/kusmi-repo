@@ -2,6 +2,7 @@
     background-color: #F8F1F1;
     width: 100%;
     padding-block: 4rem;
+    overflow: hidden;
 }
 
 .policy__title {
@@ -12,7 +13,7 @@
     margin-bottom: 1.5rem;
 
     @include min1024() {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     &::after {
@@ -26,11 +27,16 @@
 }
 .policy-paragraph-container {
     margin-block: 2.5rem;
+    margin-inline: 1rem;
+    @include min1440() {
+        margin-inline: 0;
+    }
     .policy__paragraph {
         margin: 0 auto;
         max-width: 75rem;
         font-size: 1rem;
         margin-bottom: .75rem;
+        text-align: justify;
         &:last-child {
             margin-bottom: 0rem;
         }
@@ -49,11 +55,13 @@
 .container-accordeon {
     background-color: white;
     max-width: 75rem;
-    padding: 3rem;
+    padding: 1.5rem;
     margin: 0 auto;
+    @include min1024() {
+        padding: 3rem;
+    }
 
     &__single {
-        padding-block: 1rem .5rem;
         &:first-child {
             border-bottom: 1px solid #E4E4E4;
             border-top: 1px solid #E4E4E4;
@@ -62,12 +70,11 @@
         border-bottom: 1px solid #E4E4E4;
 
         .single__title-container {
-            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 10px;
-            z-index: 3;
+            padding-block: 1rem;
+            position: relative;
 
             &--toggled {
                 &+.single__texte-container {
@@ -81,20 +88,29 @@
                 }
             }
             .single__title {
+                cursor: pointer;
                 font-weight: 600;
                 font-size: 18px;
                 color: #93173B;
                 margin-bottom: 0;
+                width: 80%;
     
                 @include min1024() {
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
+                    width: auto;
                 }
             }
     
             .single__svg {
                 display: flex;
                 height: 20px;
+                width: 20px;
                 transition: transform .3s ease;
+
+                @include min1024() {
+                    font-size: 1.2rem;
+                    width: auto;
+                }
 
                 svg {
                     width: 100%;
@@ -106,18 +122,36 @@
             height: 0;
             opacity: 0;
             transition: height .2s ease-in, opacity .2s ease;
+            
+            a {
+                z-index: 3;
+                position: relative;
+                color: #93173B;
+                text-decoration: underline;
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
             .single__texte {
                 font-size: 1rem;
                 margin-bottom: .75rem;
+                text-align: justify;
+                strong {
+                    font-weight: 600;
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
             }
             .accordeon__h3 {
-                font-size: 1.25rem;
+                font-size: 1.15rem;
                 font-weight: 600;
                 text-transform: none;
                 letter-spacing: normal;
+                @include min1024() {
+                    font-size: 1.25rem;
+                }
             }
             .accordeon__h4 {
                 font-size: 1.1rem;
@@ -129,7 +163,12 @@
                 margin-bottom: .5rem;
                 .single__li {
                     font-size: 1rem;
+                    text-align: justify;
                 }
+            }
+            .single__container-center {
+                margin: 0 auto;
+
             }
         }
 

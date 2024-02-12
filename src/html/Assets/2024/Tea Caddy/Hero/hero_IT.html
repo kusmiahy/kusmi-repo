@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/tea_caddy.scss";
+
+    Content asset : GEN_offre-tea-caddy_HP
+
+    Nom de la classe parent : tea_caddy_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="tea_caddy_hero_2024">
+    <a href="$url('Search-Show','cgid','the_vrac')$" title="Cliccate su &quot;Scopri ora&quot; per approfittare della nostra offerta del 20% di sconto e di una scatola di tè Kusmi in omaggio con l'acquisto di 300gr">
+        @@include('../components/slot.html', {
+            "alt": "Cliccate su &quot;J'en profite&quot; per approfittare della nostra offerta del 20% di sconto e di una scatola di tè Kusmi in omaggio con l'acquisto di 300gr.",
+            "title": "Festeggiate la pasqua con i nostri tè gourmet e approfittate:",
+            "subtitle": "-20% e Scatola di tè Kusmi in omaggio per 300gr di tè sfuso acquistato della stessa miscela di tè sfusi. *",
+            "text-link": "Scopri ora",
+        })
+    </a>
+</section>									
