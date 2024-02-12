@@ -24,22 +24,24 @@
         margin: 1.5rem auto 0;
     }
 }
-
-.policy__paragraph {
-    margin: 0 auto;
-    max-width: 75rem;
-    font-size: 1rem;
-
-    &:not(:last-child) {
+.policy-paragraph-container {
+    margin-block: 2.5rem;
+    .policy__paragraph {
+        margin: 0 auto;
+        max-width: 75rem;
+        font-size: 1rem;
         margin-bottom: .75rem;
-    }
-
-    a {
-        color: #93173B;
-        text-decoration: underline;
-
-        &:hover {
-            text-decoration: none;
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+    
+        a {
+            color: #93173B;
+            text-decoration: underline;
+    
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -47,13 +49,17 @@
 .container-accordeon {
     background-color: white;
     max-width: 75rem;
-    padding: 4rem 3rem;
+    padding: 3rem;
     margin: 0 auto;
 
     &__single {
-        padding-block: 10px;
+        padding-block: 1rem .5rem;
+        &:first-child {
+            border-bottom: 1px solid #E4E4E4;
+            border-top: 1px solid #E4E4E4;
+        }
+
         border-bottom: 1px solid #E4E4E4;
-        border-top: 1px solid #E4E4E4;
 
         .single__title-container {
             cursor: pointer;
@@ -61,11 +67,24 @@
             justify-content: space-between;
             align-items: center;
             padding-bottom: 10px;
-            border-bottom: 1px solid #E4E4E4;
+            z-index: 3;
+
+            &--toggled {
+                &+.single__texte-container {
+                    height: 100%;
+                    opacity: 1;
+                    margin-block: .5rem;
+                }
+
+                .single__svg {
+                    transform: rotate(90deg);
+                }
+            }
             .single__title {
                 font-weight: 600;
                 font-size: 18px;
                 color: #93173B;
+                margin-bottom: 0;
     
                 @include min1024() {
                     font-size: 1.5rem;
@@ -75,6 +94,7 @@
             .single__svg {
                 display: flex;
                 height: 20px;
+                transition: transform .3s ease;
 
                 svg {
                     width: 100%;
@@ -82,9 +102,35 @@
                 }
             }
         }
-        .single__texte {
-            font-size: 1rem;
-            margin-top: 15px;
+        .single__texte-container {
+            height: 0;
+            opacity: 0;
+            transition: height .2s ease-in, opacity .2s ease;
+            .single__texte {
+                font-size: 1rem;
+                margin-bottom: .75rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .accordeon__h3 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                text-transform: none;
+                letter-spacing: normal;
+            }
+            .accordeon__h4 {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            .single__ul {
+                list-style-position: inside;
+                list-style-type: circle;
+                margin-bottom: .5rem;
+                .single__li {
+                    font-size: 1rem;
+                }
+            }
         }
 
     }
