@@ -343,6 +343,7 @@ $color-bg: #5F7154;
             height: 100%;
             background-color: $color-bg;
             padding-bottom: 0;
+            padding-top: 3rem;
         }
 
         @include min768() {
@@ -379,7 +380,7 @@ $color-bg: #5F7154;
 
         .title--custom {
             line-height: 1em;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: none;
 
             @media screen and (min-width:652px) {
@@ -454,7 +455,7 @@ $color-bg: #5F7154;
             height: 225px;
         }
 
-        @media screen and (min-width:1649px) {
+        @media screen and (min-width:1650px) {
             width: 50%;
             height: 100%;
         }

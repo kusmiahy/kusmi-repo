@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/_programme_de_fidelite.scss";
+
+    Content asset : (à voir le nom du content-asset)
+
+    Nom de la classe parent : programme-de-fid_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    @media screen and (max-width:652px) {.ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}}
+</style>
+<section class="programme-de-fid_2024">
+    @@include('_components/hero.html', {
+        "alt": "Rejoignez notre programme de fidélité Kusmi Klub, dès que vous atteignez 70 points vous avez un bon d'achat de 5€",
+        "titre": "C'est simple :<span class='hide-mobile'><br></span> achetez, cumulez, profitez",
+        "login-texte": "Je me connecte",
+        "signin-texte": "Je m'inscris",
+    })
+</section>

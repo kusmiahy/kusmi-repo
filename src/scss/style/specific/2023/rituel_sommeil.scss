@@ -1,7 +1,7 @@
-$color-text: #000;
-$color-bg: #c1e5d4;
-$color-bg-ca: #0e7163;
-
+$color-text-hero: #fff;
+$color-text-push: #fff;
+$color-text-homepromo: #fff;
+$color-bg: #1e2d74;
 
 .homepromo {
     height: 300px;
@@ -38,13 +38,9 @@ $color-bg-ca: #0e7163;
             gap: .5rem;
             width: 50%;
             height: 100%;
-            background-color: #c1e5d4;
+            background-color: $color-bg;
             padding-bottom: 0;
             padding-top: 3rem;
-
-            &.homepromo__content--ca {
-                background-color: #0e7163;
-            }
         }
 
         @include min768() {
@@ -62,7 +58,7 @@ $color-bg-ca: #0e7163;
 
         @media screen and (min-width:1650px) {
             width: 50%;
-            padding: 3.7rem 1.85rem 0;
+            padding: 3.7rem 2rem 0;
         }
 
 
@@ -75,24 +71,11 @@ $color-bg-ca: #0e7163;
                 text-align: left;
                 letter-spacing: normal;
                 display: block;
-                color: #000;
-            }
-        }
-        &.homepromo__content--ca {
-            h2.title--custom,
-            h3.subtitle--custom {
-                @media screen and (min-width:652px) {
-                    color: #fff;
-                }
-            }
-            .cta {
-                @media screen and (min-width:652px) {
-                    color: #fff;
-                }
+                color: $color-text-homepromo;
             }
         }
 
-        .title--custom {
+        .title--st-valentin {
             line-height: 1em;
             font-weight: 600;
             text-transform: none;
@@ -114,7 +97,7 @@ $color-bg-ca: #0e7163;
             }
         }
 
-        .subtitle--custom {
+        .subtitle--st-valentin {
             font-weight: 400;
             font-size: 1.38rem;
             line-height: 1.38rem;
@@ -137,7 +120,6 @@ $color-bg-ca: #0e7163;
             }
 
             @media screen and (min-width:652px) {
-                color: #000;
                 letter-spacing: normal;
                 font-size: 1.4rem;
                 text-decoration: underline;

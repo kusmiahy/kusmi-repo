@@ -344,6 +344,7 @@ $color-text-hero-push: #fff;
             height: 100%;
             background-color: $color-bg;
             padding-bottom: 0;
+            padding-top: 3rem;
         }
 
         @include min768() {
@@ -365,8 +366,8 @@ $color-text-hero-push: #fff;
         }
 
 
-        h2.title--rituel-immu,
-        h3.subtitle--rituel-immu {
+        h2.title--infusion-elysee,
+        h3.subtitle--infusion-elysee {
             display: none;
 
             @media screen and (min-width:652px) {
@@ -378,9 +379,9 @@ $color-text-hero-push: #fff;
             }
         }
 
-        .title--rituel-immu {
+        .title--infusion-elysee {
             line-height: 1em;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: none;
 
             @media screen and (min-width:652px) {
@@ -400,7 +401,7 @@ $color-text-hero-push: #fff;
             }
         }
 
-        .subtitle--rituel-immu {
+        .subtitle--infusion-elysee {
             font-weight: 400;
             font-size: 1.38rem;
             line-height: 1.38rem;
@@ -453,7 +454,7 @@ $color-text-hero-push: #fff;
             height: 225px;
         }
 
-        @media screen and (min-width:1649px) {
+        @media screen and (min-width:1650px) {
             width: 50%;
             height: 100%;
         }

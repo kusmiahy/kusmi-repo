@@ -394,6 +394,7 @@ $color-text-hero-push: #303030;
             height: 100%;
             background-color: $color-bg;
             padding-bottom: 0;
+            padding-top: 3rem;
         }
 
         @include min768() {
@@ -430,7 +431,7 @@ $color-text-hero-push: #303030;
 
         .title--rituel-immu {
             line-height: 1em;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: none;
 
             @media screen and (min-width:652px) {
@@ -500,7 +501,7 @@ $color-text-hero-push: #303030;
             height: 225px;
         }
 
-        @media screen and (min-width:1649px) {
+        @media screen and (min-width:1650px) {
             width: 50%;
             height: 100%;
         }

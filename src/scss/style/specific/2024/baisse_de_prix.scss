@@ -316,6 +316,7 @@ $color-bg: #C8B7E1;
             height: 100%;
             background-color: $color-bg;
             padding-bottom: 0;
+            padding-top: 3rem;
         }
 
         @include min768() {
@@ -352,7 +353,7 @@ $color-bg: #C8B7E1;
 
         .title--baisse-des-prix {
             line-height: 1em;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: none;
 
             @media screen and (min-width:652px) {
@@ -427,7 +428,7 @@ $color-bg: #C8B7E1;
             height: 225px;
         }
 
-        @media screen and (min-width:1649px) {
+        @media screen and (min-width:1650px) {
             width: 50%;
             height: 100%;
         }
