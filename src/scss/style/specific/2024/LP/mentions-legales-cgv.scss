@@ -1,0 +1,209 @@
+.mentions-legales-cgv_2024 {
+    background-color: #F8F1F1;
+    width: 100%;
+    padding-block: 4rem;
+    overflow: hidden;
+}
+
+.cgv__title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+
+    @include min1024() {
+        font-size: 2.5rem;
+    }
+
+    &::after {
+        content: '';
+        height: 1px;
+        width: 100px;
+        display: block;
+        background-color: #000;
+        margin: 1.5rem auto 0;
+    }
+}
+
+.cgv__subtitle {
+    margin: 0 auto;
+    max-width: 75rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-block: 1.5rem;
+    text-align: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-block: 2.5rem;
+    }
+    
+
+    @include min1024() {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+}
+.cgv-paragraph-container {
+    margin-block: 2.5rem;
+    margin-inline: 1rem;
+    @include min1440() {
+        margin-inline: 0;
+    }
+    
+    .cgv__paragraph {
+        margin: 0 auto;
+        max-width: 75rem;
+        font-size: 1rem;
+        margin-bottom: .75rem;
+        text-align: justify;
+        .cgv__title--center {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        &.cgv__paragraph--last {
+            margin-bottom: 1rem;
+            @include min1024() {
+                margin-bottom: 1.5rem;
+            }
+        }
+    
+        a {
+            color: #93173B;
+            text-decoration: underline;
+    
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.container-accordeon {
+    background-color: white;
+    max-width: 75rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+    @include min1024() {
+        padding: 3rem;
+    }
+
+    &__single {
+        &:first-child {
+            border-bottom: 1px solid #E4E4E4;
+            border-top: 1px solid #E4E4E4;
+        }
+
+        border-bottom: 1px solid #E4E4E4;
+
+        .single__title-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 1rem;
+            position: relative;
+
+            &--toggled {
+                &+.single__texte-container {
+                    height: 100%;
+                    opacity: 1;
+                    margin-block: .5rem;
+                }
+
+                .single__svg {
+                    transform: rotate(90deg);
+                }
+            }
+            .single__title {
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 18px;
+                color: #93173B;
+                margin-bottom: 0;
+                width: 80%;
+    
+                @include min1024() {
+                    font-size: 1.2rem;
+                    width: auto;
+                }
+            }
+    
+            .single__svg {
+                display: flex;
+                height: 20px;
+                width: 20px;
+                transition: transform .3s ease;
+
+                @include min1024() {
+                    font-size: 1.2rem;
+                    width: auto;
+                }
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .single__texte-container {
+            height: 0;
+            opacity: 0;
+            transition: height .2s ease-in, opacity .2s ease;
+            
+            a {
+                z-index: 3;
+                position: relative;
+                color: #93173B;
+                text-decoration: underline;
+        
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .single__texte {
+                font-size: 1rem;
+                margin-bottom: .75rem;
+                text-align: justify;
+                strong {
+                    font-weight: 600;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .accordeon__h3 {
+                font-size: 1.15rem;
+                font-weight: 600;
+                text-transform: none;
+                letter-spacing: normal;
+                @include min1024() {
+                    font-size: 1.25rem;
+                }
+            }
+            .accordeon__h4 {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            .single__ul {
+                list-style-position: inside;
+                list-style-type: circle;
+                margin-bottom: .5rem;
+                .single__li {
+                    font-size: 1rem;
+                    text-align: justify;
+                }
+            }
+            .single__container-center {
+                margin: 0 auto;
+
+            }
+        }
+
+    }
+}

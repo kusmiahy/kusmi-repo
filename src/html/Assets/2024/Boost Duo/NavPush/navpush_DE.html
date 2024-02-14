@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_boost_duo.scss";
+
+    Content asset : DUO_OFFRE_BOOST_RITUEL_PUSH_NAV
+
+    Nom de la classe parent : offre_boost_navpush_2024
+
+-->
+
+<section class="offre_boost_navpush_2024">
+    @@include('../_components/navpush.html', {
+        "alt": "Klicken Sie auf &quot;Jetzt nutzen&quot; und profitieren Sie von -20% auf unsere Ritual Wellness-Duos in der Dose oder im Beutel. *",
+        "texte": "-20% auf Ritual Wellness-Duos *",
+        "lien": "$url('Search-Show','cgid','gesundheit_tee_krautertee')$",
+    })
+</section>

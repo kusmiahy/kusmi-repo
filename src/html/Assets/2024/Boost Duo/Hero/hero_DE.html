@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_boost_duo.scss";
+
+    Content asset : DUO_OFFRE_BOOST_RITUEL_HERO
+
+    Nom de la classe parent : offre_boost_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_boost_hero_2024">
+    <a href="$url('Search-Show','cgid','gesundheit_tee_krautertee')$" title="Klicken Sie auf &quot;Jetzt entdecke&quot;, um unsere neue Produktreihe &quot;Ritual-Sortiment, Tee und Kräutertee mit nachgewiesenen Vorteilen&quot; zu entdecken;">
+        @@include('../_components/slot.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt nutzen&quot; und profitieren Sie von -20% auf unsere Ritual Wellness-Duos in der Dose oder im Beutel. *",
+            "title": "Schnupperangebot<span class='hide-mobile'><br></span> Ritual Wellness-Duo",
+            "subtitle": "Nutzen Sie -20% auf unsere Ritual Wellness-Duos im Dosen- oder Beutelformat.*",
+            "text-link": "Jetzt nutzen",
+            "pastille-efficacite": "images/assets/2023/rituel_immunitaire/efficacite_prouve_de.svg?$staticlink$",
+            "alt-efficacite": "Pastille erwiesenermaßen wirksam",
+            "class-pastille-efficacite": "pastille-efficacite--de",
+        })
+    </a>
+</section>
