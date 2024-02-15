@@ -28,22 +28,32 @@
     })
     <div class="policy-paragraph-container">
         @@include('_components/paragraph.html', {
+            "texte": "<span class='policy__title--center'>Mise à jour le 15/02/2024</span>",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
             "texte": "L’inscription au KUMISKLUB ainsi que la navigation et l’utilisation des fonctionnalités offertes par le Site Internet <a href='http://www.kusmitea.com/' target='_blank'> www.kusmitea.com </a> (ci-après le « Site KUSMI TEA ») est susceptible d’entrainer de la part de l’utilisateur une communication de données le concernant.",
+            "class": "",
         })
         @@include('_components/paragraph.html', {
             "texte": "Pour cette raison, la présente politique de protection des données personnelles (la « Politique ») a pour objet d’informer de manière claire, simple et complète toute personne concernée (« vous », « votre/vos ») sur la manière dont la société ORIENTIS GOURMET (« ORIENTIS GOURMET ») et ses filiales (collectivement désignées le « Groupe ORIENTIS GOURMET » ou « nous », « nos » et « nôtre ») en leur qualité de responsable de traitement, collectent et utilisent des données vous concernant et sur les moyens dont vous disposez pour contrôler cette utilisation et exercer vos droits s’y rapportant.",
+            "class": "",
         })
         @@include('_components/paragraph.html', {
             "texte": "Des mentions spécifiques figurent, par ailleurs, sur chaque formulaire de collecte afin de vous assurer une information complète avant tout traitement de vos données.",
+            "class": "",
         })
         @@include('_components/paragraph.html', {
             "texte": "Sauf indication contraire, cette Politique s’applique à l’ensemble des données personnelles collectées sur le Site et lors de votre inscription au KUSMIKLUB mais également à tous les autres services et activités en ligne associés à notre marque KUSMI TEA, et plus largement au Groupe ORIENTIS GOURMET.",
+            "class": "",
         })
         @@include('_components/paragraph.html', {
-            "texte": "Site hébergé par : Salesforce.com France SAS au capital de 37.000 euros, Adresse : 3 avenue Octave Gréard 75007 Paris (France) Numéro d'enregistrement au Registre du Commerce et des Sociétés de Paris : 483 993 226, Téléphone: <a href='tel:+33172109400'>+33 1 72 10 94 00</a>, TVA Intracommunautaire : FR76483993226.",
+            "texte": "Site hébergé par : <a href='https://www.salesforce.com/fr/'>Salesforce.com</a> France SAS au capital de 37.000 euros, Adresse : 3 avenue Octave Gréard 75007 Paris (France) Numéro d'enregistrement au Registre du Commerce et des Sociétés de Paris : 483 993 226, Téléphone: <a href='tel:+33172109400'>+33 1 72 10 94 00</a>, TVA Intracommunautaire : FR76483993226.",
+            "class": "",
         })
         @@include('_components/paragraph.html', {
-            "texte": "Le Site a été créé par Salesforce.com EMEA Ltd.",
+            "texte": "Le Site a été créé par <a href='https://www.salesforce.com/fr/'>Salesforce.com</a> EMEA Ltd.",
+            "class": "policy__paragraph--last",
         })
     </div>
     <div class="container-accordeon">
@@ -56,13 +66,13 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
             <div class="single__texte-container">
                 @@include('_components/texte_accordeon.html', {
-                    "texte": "Le responsable de traitement des données personnelles est la société ORIENTIS GOURMET, société par actions simplifiées au capital de 11.494.590,79 euros, dont le siège social est situé 89 avenue Niel 75017 Paris, enregistrée au RCS Paris sous le numéro 350 283 057.",
+                    "texte": "<strong>Le responsable de traitement des données personnelles</strong> est la société ORIENTIS GOURMET, société par actions simplifiées au capital de 11.494.590,79 euros, dont le siège social est situé 89 avenue Niel 75017 Paris, enregistrée au RCS Paris sous le numéro 350 283 057.",
                 })
             </div>
         </div>
@@ -75,7 +85,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -288,9 +298,6 @@
                 @@include('_components/undertitle_accordeon.html', {
                     "texte": "En ce qui concerne la publicité ciblée :",
                 })
-                @@include('_components/texte_accordeon.html', {
-                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
-                })
                 <ul class="single__ul">
                     @@include('_components/li.html', {
                         "texte": "<u>Sur les plateformes de réseaux sociaux :</u> en cas d’accord exprès de votre part, votre adresse email pourra être partagée sous forme hachée avec Facebook, à des fins de communication d’offres promotionnelles via le service d’audience personnalisée Facebook (« Facebook Custom Audiences »). Ce service nous permet de collecter des informations anonymisées notamment âge, sexe, plateforme device et centres d’intérêts ainsi que de créer des listes de clients afin de leur soumettre des publicités ciblées y compris sur leur page Facebook. Les informations hachées ne permettent pas à Facebook de les utiliser autrement que pour identifier un client existant déjà sur Facebook et lui adresser des publicités ciblées. Vous pouvez vous opposer à tout moment à ce traitement en configurant les paramètres relatifs à la publicité de votre compte ou en nous contactant selon les modalités décrites à l’article 7 ci-après.",
@@ -319,7 +326,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -355,7 +362,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -383,7 +390,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -468,7 +475,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -580,12 +587,12 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
             <div class="single__texte-container">
-                @@include('_components/undertitle_accordeon.html', {
+                @@include('_components/texte_accordeon.html', {
                     "texte": "Vous disposez, dans les conditions et limites prévues par la réglementation en vigueur, de plusieurs droits à l’égard du traitement de vos données :",
                 })
                 <ul class="single__ul">
@@ -659,13 +666,13 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
             <div class="single__texte-container">
                 @@include('_components/texte_accordeon.html', {
-                    "texte": "L’ensemble de vos données à caractère personnel sont conservées sur les serveurs de l’hébergeur Salesforce.com France SAS situés en Union Européenne.",
+                    "texte": "L’ensemble de vos données à caractère personnel sont conservées sur les serveurs de l’hébergeur <a href='https://www.salesforce.com/fr/'>Salesforce.com</a> France SAS situés en Union Européenne.",
                 })
                 @@include('_components/texte_accordeon.html', {
                     "texte": "Le Groupe ORIENTIS GOURMET a mis en œuvre des mesures techniques et organisationnelles pour préserver la confidentialité et la sécurité de vos données et empêcher notamment que celles-ci ne soient déformées, endommagées, détruites ou que des tiers non-autorisés y aient accès.",
@@ -688,7 +695,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -710,7 +717,7 @@
                     <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
-                            fill="#93173B" />
+                            fill="#000" />
                     </svg>
                 </div>
             </div>
@@ -723,9 +730,6 @@
                 })
                 @@include('_components/texte_accordeon.html', {
                     "texte": "<strong>ORIENTIS GOURMET SAS - 89 avenue Niel 75017 Paris (France) - RCS Paris 350 283 057.</strong>",
-                })
-                @@include('_components/texte_accordeon.html', {
-                    "texte": "<strong>Date de dernière modification :</strong> 12/02/2024.</p>",
                 })
             </div>
         </div>

@@ -1,19 +1,20 @@
 .privacy-policy_2024 {
-    background-color: #F8F1F1;
     width: 100%;
     padding-block: 4rem;
     overflow: hidden;
 }
 
 .policy__title {
+    padding-inline: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 
     @include min1024() {
-        font-size: 2.5rem;
+        padding-inline: 0;
+        font-size: 2.3rem;
     }
 
     &::after {
@@ -37,12 +38,23 @@
         font-size: 1rem;
         margin-bottom: .75rem;
         text-align: justify;
+        .policy__title--center {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
         &:last-child {
             margin-bottom: 0rem;
         }
-    
+        &.policy__paragraph--last {
+            margin-bottom: 1rem;
+            @include min1024() {
+                margin-bottom: 1.5rem;
+            }
+        }
         a {
-            color: #93173B;
+            color: -webkit-link;
             text-decoration: underline;
     
             &:hover {
@@ -53,13 +65,8 @@
 }
 
 .container-accordeon {
-    background-color: white;
     max-width: 75rem;
-    padding: 1.5rem;
     margin: 0 auto;
-    @include min1024() {
-        padding: 3rem;
-    }
 
     &__single {
         &:first-child {
@@ -75,6 +82,11 @@
             align-items: center;
             padding-block: 1rem;
             position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(247,247,247);
+            }
 
             &--toggled {
                 &+.single__texte-container {
@@ -88,10 +100,9 @@
                 }
             }
             .single__title {
-                cursor: pointer;
                 font-weight: 600;
                 font-size: 18px;
-                color: #93173B;
+                color: #000;
                 margin-bottom: 0;
                 width: 80%;
     
@@ -126,7 +137,7 @@
             a {
                 z-index: 3;
                 position: relative;
-                color: #93173B;
+                color: -webkit-link;
                 text-decoration: underline;
         
                 &:hover {
@@ -141,7 +152,7 @@
                     font-weight: 600;
                 }
                 &:last-child {
-                    margin-bottom: 0;
+                    margin-bottom: 1.5rem;
                 }
             }
             .accordeon__h3 {
@@ -167,7 +178,11 @@
                 }
             }
             .single__container-center {
-                margin: 0 auto;
+                .single__texte {
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-block: .5rem 1rem;
+                }
 
             }
         }
