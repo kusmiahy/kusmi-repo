@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/flash_sale.scss";
+
+    Content asset : 2021_10-20-des-80_HP
+
+    Nom de la classe parent : flash_sale_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="flash_sale_hero_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="-20% da 80€ di acquisto">
+        @@include('../components/slot.html', {
+            "alt": "-20% da 80€ di acquisto",
+            "title": "Offerta Flash",
+            "subtitle": "-20% sul tuo ordine da 80€ di acquisto",
+            "text-link": "Approfitto ora",
+        })
+    </a>
+</section>									

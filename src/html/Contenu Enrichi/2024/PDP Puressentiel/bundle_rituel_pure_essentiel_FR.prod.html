@@ -1,0 +1,73 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/bundle_rituel.scss";
+
+    Content asset : bundle-rituel-puressentiel-contenu-enrichi
+
+    Nom de la classe parent : pdp_rituel_puressentiel_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- CSS Splide -->
+<link href="script/splide.min.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {max-width: 100%;padding: 0;}
+</style>
+<style>
+.splide--pdp-bundle-rituel .splide__arrow svg {height: 30px;width: 30px;fill: #fff;}.splide--pdp-bundle-rituel .splide__arrow {background: none;opacity: 1;}
+</style>
+
+<div class="pdp_rituel_puressentiel_2024">
+    <section class="splide-container">
+        <div class="splide splide--pdp-bundle-rituel" role="group">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                        @@include('./_components/image.html', {
+                            "lien-img": "images/pdp/2024/pure_essentiel/contenu_enrichi_bundle_puressentiel_1.webp?$staticlink$",
+                            "alt": "Duo Nuit Paisible Puressentiel x Kusmi Tea - 1 infusion Rituel Sommeil de Kusmi Tea (18 sachets) + 1 Spray Aérien Sommeil de Puressentiel (75 ml)",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                        @@include('./_components/image.html', {
+                            "lien-img": "images/pdp/2024/pure_essentiel/contenu_enrichi_bundle_puressentiel_2.webp?$staticlink$",
+                            "alt": "Duo Nuit Paisible Puressentiel x Kusmi Tea - 1 infusion Rituel Sommeil de Kusmi Tea (18 sachets) + 1 Spray Aérien Sommeil de Puressentiel (75 ml)",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                        @@include('./_components/image.html', {
+                            "lien-img": "images/pdp/2024/pure_essentiel/contenu_enrichi_bundle_puressentiel_3.webp?$staticlink$",
+                            "alt": "Duo Nuit Paisible Puressentiel x Kusmi Tea - 1 infusion Rituel Sommeil de Kusmi Tea (18 sachets) + 1 Spray Aérien Sommeil de Puressentiel (75 ml)",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                        @@include('./_components/image.html', {
+                            "lien-img": "images/pdp/2024/pure_essentiel/contenu_enrichi_bundle_puressentiel_4.webp?$staticlink$",
+                            "alt": "Duo Nuit Paisible Puressentiel x Kusmi Tea - 1 infusion Rituel Sommeil de Kusmi Tea (18 sachets) + 1 Spray Aérien Sommeil de Puressentiel (75 ml)",
+                        })
+                    </div>
+                </ul>
+            </div>
+          </div>
+    </section>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+<!-- JS Splide -->
+<script src="script/splide.min.js?$staticlink$"></script>
+
+<!-- 
+    JS USE
+    // =require specific/2024/simple_carousel.js
+-->

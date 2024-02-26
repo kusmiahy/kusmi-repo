@@ -4,7 +4,7 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
-        // =require specific/2024/politique_de_confidentialite.js
+        // =require specific/2024/simple_carousel.js
     } else {
         setTimeout(init);
     }

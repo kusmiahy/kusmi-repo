@@ -1,0 +1,88 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/mate_contenu.scss";
+
+    Content asset : mate-enrichi-video
+
+    Nom de la classe parent : the-origine-contenu-enrichi-2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+<!-- Le style pour les logos injectés -->
+<style>
+    .m-pdp__images-container{position:relative}.c-product-details__logos-bios{display:none}@media screen and (min-width:1024px){.c-product-details__logos-bios{margin-bottom:1rem;height:30px;display:flex;gap:.5rem}}.logos-bio__image{width:auto;height:100%;object-fit:contain}.m-pdp__images-container__logos-bios{position:absolute;bottom:0;right:3%;display:flex;gap:0rem;z-index:2;height:35px;gap:.5rem}.logos-bio__image{width:auto;height:100%;object-fit:contain}@media screen and (min-width:1024px){.m-pdp__images-container__logos-bios{display:none}}
+</style>
+<div class="the-origine-contenu-enrichi-2024">
+    <div class="fresque">
+        <div class="fresque__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "",
+                "texte-titre": "Les notes de nos thés d’origine",
+            })
+        </div>
+        <picture class="fresque__image">
+            <source srcset="mediatags/thes-origines/thes-origine_notes_FR_DESK.jpg?$staticlink$"
+                    media="(min-width: 767px)" />
+                <img src="mediatags/thes-origines/thes-origine_notes_FR_MOB.jpg?$staticlink$" alt="Fresque des arômes des thés d'origines de végétales, à florales, de corsées à boisées, de fumées à gourmandes" />
+        </picture>
+    </div>
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--green",
+                "texte-titre": "Nos certifications",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                    "alt": "label bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                    "alt": "certification européenne bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                    "alt": "certification agriculture biologique",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                    "alt": "usda organic label",
+                })
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/certifs_bio.js
+-->

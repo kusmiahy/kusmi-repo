@@ -1,0 +1,25 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/pure_essentiel.scss";
+
+    Content asset : PURESSENTIEL_PUSH_NAV
+
+    Nom de la classe parent : pure_essentiel_navpush_2024
+
+-->
+
+
+<section class="pure_essentiel_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez sur &quot;Je découvre&quot; découvrir le nouveau Duo Nuit Paisible",
+        "texte": "Duo Nuit Paisible",
+        "lien": "$url('Product-Show','pid','BUNDLEPURESSENTIEL')$",
+    })
+</section>

@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.mentions-legales-cgv_2024';
+var classParent = '.pdp_rituel_puressentiel_2024';
 
 const {
     series,
