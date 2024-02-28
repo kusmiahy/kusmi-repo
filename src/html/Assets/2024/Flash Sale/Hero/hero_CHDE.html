@@ -20,12 +20,12 @@
 <!-- inject-style src="dist/css/main.min.css" -->
 
 <section class="flash_sale_hero_2024">
-    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="-20% auf Ihre Bestellung ab CHF 100">
-        @@include('../components/slot.html', {
-            "alt": "-20% auf Ihre Bestellung ab CHF 100",
-            "title": "Flash Angebot",
-            "subtitle": "<span class='reduction__texte'>-20%</span><br>Rabatt auf Ihre<span class='hide-desktop'><br></span> Bestellung ab CHF 100*",
-            "text-link": "Jetzt nutzen",
-        })
-    </a>
+    @@include('../components/slot.html', {
+        "link": "$url('Search-Show','cgid','nos_thes_infusions')$",
+        "title-link": "-20% auf Ihre Bestellung ab CHF 100",
+        "alt": "-20% auf Ihre Bestellung ab CHF 100",
+        "title": "Flash Angebot",
+        "subtitle": "<span class='reduction__texte'>-20%</span><span>ab <strong> CHF 100 Einkaufswert!</strong></span>*nur bis einschließlich diesen Sonntag.",
+        "texte-link": "Jetzt Shoppen",
+    })
 </section>									

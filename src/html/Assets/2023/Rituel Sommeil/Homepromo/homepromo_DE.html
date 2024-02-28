@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_sommeil.scss";
+
+    Content asset : RITUEL_SOMMEIL_HOME_PROMO 
+
+    Nom de la classe parent : rituel_sommeil_homepromo_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 rituel_sommeil_homepromo_2023">
+    <a href="$url('Product-Show','pid','21251A1460')$" title="Klicken Sie hier, um unser Produkt &quot;Bio Einschlaf Ritual&quot; zu entdecken;">
+        @@include('../components/homepromo.html', {
+            "alt": "Klicken Sie hier, um unser Produkt &quot;Bio Einschlaf Ritual&quot; zu entdecken;",
+            "title": "Neu",
+            "subtitle": "Schlafen Sie (wieder) ein<br>Endecken Sie unser neues &quot;Bio Einschlaf Ritual&quot; mit nachgewiesenen Vorteilen.",
+            "text-link": "<span class='hide-mobile-homepromo'>Ich entdecke</span><span class='hide-desktop-homepromo'>Neu Bio Einschlaf Ritual ></span>",
+        })
+    </a>
+</section>

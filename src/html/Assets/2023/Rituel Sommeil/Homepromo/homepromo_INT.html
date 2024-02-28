@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_sommeil.scss";
+
+    Content asset : RITUEL_SOMMEIL_HOME_PROMO 
+
+    Nom de la classe parent : rituel_sommeil_homepromo_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 rituel_sommeil_homepromo_2023">
+    <a href="$url('Product-Show','pid','21251A1460')$" title="Click to discover our product &quot;Sleep Ritual&quot;">
+        @@include('../components/homepromo.html', {
+            "alt": "Click to discover our product &quot;Sleep Ritual&quot;",
+            "title": "New",
+            "subtitle": "Get back to sleep<br>Discover our new infusion Sleep Ritual enriched with proven benefits.",
+            "text-link": "<span class='hide-mobile-homepromo'>Discover now</span><span class='hide-desktop-homepromo'>New Sleep Ritual ></span>",
+        })
+    </a>
+</section>

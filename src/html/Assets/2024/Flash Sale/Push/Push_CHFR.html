@@ -19,14 +19,16 @@
 <link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 <!-- inject-style src="dist/css/main.min.css" -->
 
-<a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès CHF 100 d'achats*" class="flash_sale_push_2024 col-xs-6 col-sm-4 col-lg-3">
+<div class="flash_sale_push_2024 col-xs-6 col-sm-4 col-lg-3">
     <div class="push">
         @@include('../components/push.html', {
             "alt": "Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès CHF 100 d'achats*",
-            "texte-h2": "Offre Flash",
-            "texte-h3": "<span class='reduction__texte'>-20%</span><br> sur votre commande dès CHF 100 d'achats*",
+            "texte-h2": "Offre<span class='hide-desktop'><br></span> Flash",
+            "texte-h3": "dès <strong>CHF 100 d'achats </strong><br>jusqu’à ce dimanche seulement",
             "texte-link": "J'en profite",
+            "number": "-20%",
+            "link": "$url('Search-Show','cgid','nos_thes_infusions')$",
         })
     </div>
     
-</a>
+</div>

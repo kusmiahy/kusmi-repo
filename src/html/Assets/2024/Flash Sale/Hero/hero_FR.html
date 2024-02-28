@@ -20,12 +20,12 @@
 <!-- inject-style src="dist/css/main.min.css" -->
 
 <section class="flash_sale_hero_2024">
-    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès 80€ d'achats">
-        @@include('../components/slot.html', {
-            "alt": "Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès 80€ d'achats",
-            "title": "Offre Flash",
-            "subtitle": "<span class='reduction__texte'>-20%</span><br>sur votre commande<span class='hide-desktop'><br></span>dès 80€ d'achats*",
-            "text-link": "J'en profite",
-        })
-    </a>
+    @@include('../components/slot.html', {
+        "link": "$url('Search-Show','cgid','nos_thes_infusions')$",
+        "title-link": "Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès 80€ d'achats",
+        "alt": "Cliquez sur &quot;J'en profite&quot; pour bénéficier de -20% dès 80€ d'achats",
+        "title": "Offre Flash",
+        "subtitle": "<span class='reduction__texte'>-20%</span><span>dès <strong>80€ d'achats</strong></span>jusqu’à ce dimanche seulement",
+        "texte-link": "J'en profite",
+    })
 </section>									

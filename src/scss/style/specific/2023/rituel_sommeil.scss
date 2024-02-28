@@ -62,8 +62,8 @@ $color-bg: #1e2d74;
         }
 
 
-        h2.title--custom,
-        h3.subtitle--custom {
+        h2.title--rituel,
+        h3.subtitle--rituel {
             display: none;
 
             @media screen and (min-width:652px) {
@@ -71,11 +71,11 @@ $color-bg: #1e2d74;
                 text-align: left;
                 letter-spacing: normal;
                 display: block;
-                color: $color-text-homepromo;
+                color: #fff;
             }
         }
 
-        .title--st-valentin {
+        .title--rituel {
             line-height: 1em;
             font-weight: 600;
             text-transform: none;
@@ -97,7 +97,7 @@ $color-bg: #1e2d74;
             }
         }
 
-        .subtitle--st-valentin {
+        .subtitle--rituel {
             font-weight: 400;
             font-size: 1.38rem;
             line-height: 1.38rem;
