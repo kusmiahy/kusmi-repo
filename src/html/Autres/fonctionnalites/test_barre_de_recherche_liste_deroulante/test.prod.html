@@ -1,0 +1,107 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/search.scss";
+
+
+    Content asset : 
+
+    Nom de la classe parent : 
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<section class="test_countries_2024">
+  <div class="search-bar">
+    <h2 class="font-barlow">Test pour page de livraison</h2>
+    <div class="search-input__container">
+      <input type="text" id="search-input" placeholder="Rechercher" title="Rechercher des informations sur le pays souhaité">
+    </div>
+  </div>
+  <div class="results">
+
+  </div>
+</section>
+
+<script>
+    const data = {
+      pays: [
+        {
+          "nom": "Afghanistan",
+          "cout": "28,90",
+          "methode": "DHL",
+          "temps_preparation": "1-2",
+          "temps_livraison": "4"
+        },
+        {
+          "nom": "Allemagne",
+          "cout": "6,00",
+          "methode": "Colissimo",
+          "temps_preparation": "1-2",
+          "temps_livraison": "4-5"
+        },
+        {
+          "nom": "Belize",
+          "cout": "28,90",
+          "methode": "DHL",
+          "temps_preparation": "1-2",
+          "temps_livraison": "3"
+        },
+        {
+          "nom": "France",
+          "cout": "4,50",
+          "methode": "Colissimo",
+          "temps_preparation": "1",
+          "temps_livraison": "2-3"
+        },
+        {
+          "nom": "Irlande",
+          "cout": "9,90",
+          "methode": "DHL",
+          "temps_preparation": "1-2",
+          "temps_livraison": "1"
+        }
+      ]
+    }
+    
+    // Sélection d'éléments dans le DOM
+    const searchContainer = document.querySelector(".search-input__container");
+    const searchBar = document.getElementById("search-input");
+    const resultsContainer = document.querySelector('.results');
+    // Variable qui va contenir les données à afficher dans la gallerie
+    let resultsData = "";
+    // Méthode qui va gérer l'événement de recherche
+    searchBar.addEventListener("input", (e) => {
+      console.log("hello depuis l'input")
+      // Supprimer les anciens résultats
+      searchContainer.innerHTML = "";
+      const resultsCountries = data.pays.filter((pays) =>
+        pays.nom
+          .toLowerCase()
+          .startsWith(e.target.value.toLowerCase().trimStart())
+      );
+      // Pour chaque recherche, cette partie du code va permettre de mettre les résultats en forme
+      resultsCountries.forEach((resultat) => {
+        const listResults = document.createElement("ul");
+        listResults.className = "search-input__list";
+        searchContainer.appendChild(listResults);
+        listResults.innerHTML = 
+        `<li class="search-input__name">
+          ${resultat.nom}
+        </li>
+        `
+      })
+      console.log(resultsCountries);
+    });
+
+    console.log(data.pays);
+
+</script>
