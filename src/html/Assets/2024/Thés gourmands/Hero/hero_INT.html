@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/thes_gourmands.scss";
+
+    Content asset : GEN_thes_gourmands_HP
+
+    Nom de la classe parent : thes_gourmands_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="thes_gourmands_hero_2024">
+    <a href="$url('Search-Show','cgid','the_gourmand')$" title="Click on &quot;View the selection&quot; to discover our gourmet teas">
+        @@include('../components/slot.html', {
+            "alt": "Click on &quot;View the selection&quot; to discover our gourmet teas",
+            "title": "Starter, main course...<br>Gourmet tea​!",
+            "subtitle": "- Discover our two new black<span class='hide-desktop'><br></span> teas inspired by lemon meringue<span class='hide-desktop'><br></span> pie and coffee-vanilla.",
+            "text-link": "View the selection",
+            "bottom-texte": "Exclusively in loose tea",
+        })
+    </a>
+</section>

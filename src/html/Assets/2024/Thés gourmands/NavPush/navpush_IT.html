@@ -1,0 +1,23 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+    Content asset : GEN_thes_gourmands_NAV_PUSH
+
+    Nom de la classe parent : thes_gourmands_navpush_2024
+
+-->
+
+<section class="thes_gourmands_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Clicca per scoprire i nostri tè gourmet",
+        "texte": "I nostri tè gourmet",
+        "lien": "$url('Search-Show','cgid','the_gourmand')$",
+    })
+</section>

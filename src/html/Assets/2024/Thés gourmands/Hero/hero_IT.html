@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/thes_gourmands.scss";
+
+    Content asset : GEN_thes_gourmands_HP
+
+    Nom de la classe parent : thes_gourmands_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="thes_gourmands_hero_2024">
+    <a href="$url('Search-Show','cgid','the_gourmand')$" title="Cliccare su &quot;Visualizza la selezione&quot; per scoprire i nostri tè gourmet">
+        @@include('../components/slot.html', {
+            "alt": "Cliccare su &quot;Visualizza la selezione&quot; per scoprire i nostri tè gourmet",
+            "title": "Antipasto, piatto principale...<br>Tè gourmet!",
+            "subtitle": "- Scoprite i nostri due<span class='hide-desktop'><br></span> nuovi tè neri ispirati<span class='hide-desktop'><br></span> alla torta al limone<span class='hide-desktop'><br></span> meringata e al<span class='hide-desktop'><br></span> caffè-vaniglia.",
+            "text-link": "Visualizza la selezione",
+            "bottom-texte": "Esclusività di massa",
+        })
+    </a>
+</section>
