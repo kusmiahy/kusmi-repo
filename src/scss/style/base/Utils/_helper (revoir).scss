@@ -185,8 +185,13 @@
 }
 
 .x-hide-desktop-gap {
-    @media (min-width: 768px) and (max-width: 1600px) {
+    @media (min-width: 1024px) and (max-width: 14400px) {
         display: none;
+    }
+}
+.hide-before-xl-desktop {
+    @media (min-width: 1440px) {
+        display: none !important;
     }
 }
 

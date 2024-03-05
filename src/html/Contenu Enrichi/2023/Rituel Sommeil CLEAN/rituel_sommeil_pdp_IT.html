@@ -1,0 +1,130 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./_style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./_style/specific/2023/pdp_rituel.scss";
+
+    Content asset : rituel-sommeil-contenu-enrichi
+
+    Nom de la classe parent : pdp_rituel_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+<!-- Le style pour les logos injectés -->
+<style>
+    .m-pdp__images-container{position:relative}.c-product-details__logos-bios{display:none}@media screen and (min-width:1024px){.c-product-details__logos-bios{margin-bottom:1rem;height:30px;display:flex;gap:.5rem}}.logos-bio__image{width:auto;height:100%;object-fit:contain}.m-pdp__images-container__logos-bios{position:absolute;bottom:0;right:3%;display:flex;gap:0rem;z-index:2;height:35px;gap:.5rem}.logos-bio__image{width:auto;height:100%;object-fit:contain}@media screen and (min-width:1024px){.m-pdp__images-container__logos-bios{display:none}}
+</style>
+<!-- Le style pour la pastille -->
+<style>
+    .m-pdp__video-content{max-width:100%;padding:0}.pastille-pdp__container{position:absolute;z-index:5;left:11%;top:6%;height:70px;width:70px}@media screen and (min-width:768px){.pastille-pdp__container{left:18%;top:8%;}}@media screen and (min-width:1024px){.pastille-pdp__container{left:8%;height:90px;width:90px}}.pastille-pdp__container img{width:100%;height:100%;object-fit:contain}
+</style>
+
+<div class="pdp_rituel_2023">
+    <section class="faq-wrapper">
+        <div class="faq__title">
+            @@include('./_components/title.html', {
+                "texte-titre": "Domande su Rituale Sonno",
+            })
+        </div>
+        <div class="faq-container">
+            <div class="faq">
+                @@include('./_components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "Cos'è un estratto vegetale? ",
+                    "reponse-texte": "Il mondo vegetale è ricco di virtù, gli scienziati hanno quindi sviluppato processi specifici per estrarne il meglio. Parliamo di estratto vegetale per descrivere una sostanza ottenuta da fonte vegetale e che contiene composti benefici per la salute: i principi attivi. Gli estratti vegetali sono un ottimo modo per ottenere i benefici delle piante ogni giorno. E poiché, da Kusmi Tea, il piacere rimane il nostro obiettivo numero uno, abbiamo scelto di unire l'efficacia di questi estratti a sapori indimenticabili!",
+                })
+                @@include('./_components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "Cos'è un principio attivo? ",
+                    "reponse-texte": "I principi attivi sono molecole che si trovano direttamente in natura: nelle piante, nelle radici, nei frutti, negli oli vegetali, ecc. Sono particolarmente interessanti per le loro virtù e le loro proprietà.<br>Ecco alcuni esempi di principi attivi che conosci: caffeina nel caffè, vitamina C nelle arance, omega 3 nei pesci grassi come il salmone.",
+                })
+                @@include('./_components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "Cos'è la melissa?",
+                    "reponse-texte": "La melissa è una pianta erbacea perenne della famiglia delle Lamiaceae originaria del bacino del Mediterraneo. Il suo odore fresco e leggermente agrumato la rende una pianta aromatica molto apprezzata. Il suo utilizzo per le sue proprietà benefiche risale a più di 2000 anni fa. Oggi, la comunità scientifica ne riconosce gli effetti sulla qualità del sonno. Non potevamo quindi lasciarci sfuggire questo tesoro della natura dalle molteplici virtù e lo abbiamo perciò integrato nel nostro Rituale Sonno. ",
+                })
+                @@include('./_components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "Cos'è il rooibos?",
+                    "reponse-texte": "Rooibos significa &quot;cespuglio rosso&quot; in afrikaans, una delle lingue ufficiali del Sud Africa. Per questo motivo e perché il suo infuso è anch'esso color rosso fiamma, è soprannominato &quot;tè rosso&quot; in tutto il mondo, anche se non contiene teina.",
+                })
+                @@include('./_components/faq-element.html', {
+                    "class": "",
+                    "question-texte": "Cos'è la verbena?",
+                    "reponse-texte": "La verbena è una pianta aromatica che fa parte della famiglia delle Verbenacee. In epoca romana quest'erba era considerata sacra e si credeva avesse poteri magici. Ben presto la verbena venne utilizzata anche nella medicina popolare, soprattutto per le sue proprietà rilassanti e lenitive. ",
+                })
+            </div>
+            <div class="faq-container__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/2023/rituel_sommeil/faq_image.webp?$staticlink$",
+                    "alt": "visuale degli ingredienti del prodotto infuso per il rituale del sonno",
+                })
+            </div>
+        </div>
+    </section>
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--green",
+                "texte-titre": "Le nostre certificazioni",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                    "alt": "marchio biologico",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                    "alt": "certificazione biologica europea",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                    "alt": "certificazione agricoltura biologica",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                    "alt": "etichetta biologica usda",
+                })
+            </div>
+        </div>
+        <div class="planet">
+            <div class="planet__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/2023/rituel_sommeil/1_logo.svg?$staticlink$",
+                    "alt": "logo 1% per il membro del pianeta",
+                })
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/rituel_sommeil.js
+-->
