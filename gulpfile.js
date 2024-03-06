@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.lindt_navpush_2024';
+var classParent = '.cloture_kk_push_2024';
 
 const {
     series,

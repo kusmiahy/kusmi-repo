@@ -9,7 +9,7 @@
 // --------------------- Library -------------------------
 @import "./style/specific/2024/tea_caddy.scss";
 
-    Content asset : GEN_offre-tea-caddy_HOME_PROMO
+    Content asset : GEN_offre-tea-caddy_PUSH
 
     Nom de la classe parent : tea_caddy_push_2024
 
@@ -19,14 +19,16 @@
 <link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 <!-- inject-style src="dist/css/main.min.css" -->
 
-<a href="$url('Search-Show','cgid','nos_thes_infusions')$" class="tea_caddy_push_2024 col-xs-6 col-sm-4 col-lg-3">
+<a href="$url('Search-Show','cgid','the_vrac')$" class="tea_caddy_push_2024 col-xs-6 col-sm-4 col-lg-3" title="Cliquez sur &quot;J'en profite&quot; pour profiter de notre offre de -20% et une Boîte à thé Kusmi offerte pour l'achat de 300g">
     <div class="push">
         @@include('../components/push.html', {
-            "alt": "Cliquez sur &quot;J'en profite&quot; pour découvrir notre nouvelle &quot;Offre Tisanière&quot;",
-            "texte-h2": "Infusez<br>avec style !",
-            "texte-h3": "Votre tisanière à 5€ dès 50€ d'achat",
+            "alt": "Cliquez sur &quot;J'en profite&quot; pour profiter de notre offre de -20% et une Boîte à thé Kusmi offerte pour l'achat de 300g",
+            "texte-h2": "Offre thé en vrac",
+            "texte-h3": "<span class='highlight-text'>-20%</span> et votre <span class='highlight-text'>boîte à thé offerte</span> dès 300g*",
             "texte-link": "J'en profite",
+            "link-img": "images/assets/2024/tea_caddy/offre_tea_caddy_push.webp?$staticlink$",
+            "class": "",
         })
     </div>
-    
 </a>
+

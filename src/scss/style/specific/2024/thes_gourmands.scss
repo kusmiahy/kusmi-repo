@@ -111,11 +111,8 @@ $color-text-homepromo: #000;
 
             @include min1024() {
                 height: 100%;
-                justify-content: space-between;
-            }
-
-            @include min1440() {
                 width: 100%;
+                justify-content: space-between;
             }
 
             .title-container {

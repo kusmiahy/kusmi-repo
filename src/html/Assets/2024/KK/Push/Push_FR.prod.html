@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kk_fid_assets.scss";
+
+    Content asset : CLOTURE_KK_PUSH
+
+    Nom de la classe parent : cloture_kk_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Loyalty-Program')$" title="Le Kusmiklub évolue ! Retrouvez bientôt un tout nouveau programme fidélité. Utilisez vos points jusqu’au 28 avril en cliquant sur le lien" class="cloture_kk_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Le Kusmiklub évolue ! Retrouvez bientôt un tout nouveau programme fidélité. Utilisez vos points jusqu’au 28 avril en cliquant sur le lien",
+            "texte-h2": "Le Kusmiklub évolue !",
+            "texte-h3": "Utilisez vos points jusqu’au 28 avril",
+            "texte-link": "J'utilise mes points",
+        })
+    </div>
+    
+</a>

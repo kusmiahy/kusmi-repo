@@ -36,3 +36,5 @@ This README would normally document whatever steps are necessary to get your app
 $url('Account-Show')$
 * Pour se connecter
 $url('Login-Show', 'activeTab', 'register', 'activateLoyalty', 'true')$
+* Pour aller sur la page de fidélité
+$url('Loyalty-Program')$
