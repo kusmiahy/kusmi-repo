@@ -21,14 +21,60 @@
         align-items: center;
         input {
             border: none;
-            width: 500px;
+            width: 260px;
+            @include min1024 {
+                width: 500px;
+            }
             &:focus {
                 outline: none;
             }
         }
         background-color: white;
         border: 1.5px solid grey;
-        border-radius: 1rem;
         padding: .7rem 1.5rem;
+    }
+}
+.results {
+    width: 100%;
+    .search-input__name {
+        cursor: pointer;
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        padding: .5rem 1.5rem;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        &:first-child {
+            padding-top: 1rem;
+        }
+        &:last-child {
+            border-bottom: 1px solid grey;
+            padding-bottom: 1rem;
+        }
+    }
+}
+.pays {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__card {
+        background-color: white;
+        padding: 2rem 4rem;
+        border: 1px solid grey;
+    }
+}
+.card {
+    &__nom {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    &__cout,
+    &__methode,
+    &__tps-preparation,
+    &__tps-livraison {
+        font-size: 1rem;
     }
 }

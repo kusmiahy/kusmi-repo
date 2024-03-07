@@ -25,83 +25,140 @@
     <div class="search-input__container">
       <input type="text" id="search-input" placeholder="Rechercher" title="Rechercher des informations sur le pays souhaité">
     </div>
+    <ul class="results"></ul>
   </div>
-  <div class="results">
-
-  </div>
+  <div class="pays"></div>
+  
 </section>
 
 <script>
-    const data = {
-      pays: [
-        {
-          "nom": "Afghanistan",
-          "cout": "28,90",
-          "methode": "DHL",
-          "temps_preparation": "1-2",
-          "temps_livraison": "4"
-        },
-        {
-          "nom": "Allemagne",
-          "cout": "6,00",
-          "methode": "Colissimo",
-          "temps_preparation": "1-2",
-          "temps_livraison": "4-5"
-        },
-        {
-          "nom": "Belize",
-          "cout": "28,90",
-          "methode": "DHL",
-          "temps_preparation": "1-2",
-          "temps_livraison": "3"
-        },
-        {
-          "nom": "France",
-          "cout": "4,50",
-          "methode": "Colissimo",
-          "temps_preparation": "1",
-          "temps_livraison": "2-3"
-        },
-        {
-          "nom": "Irlande",
-          "cout": "9,90",
-          "methode": "DHL",
-          "temps_preparation": "1-2",
-          "temps_livraison": "1"
-        }
-      ]
-    }
-    
-    // Sélection d'éléments dans le DOM
-    const searchContainer = document.querySelector(".search-input__container");
-    const searchBar = document.getElementById("search-input");
-    const resultsContainer = document.querySelector('.results');
-    // Variable qui va contenir les données à afficher dans la gallerie
-    let resultsData = "";
-    // Méthode qui va gérer l'événement de recherche
-    searchBar.addEventListener("input", (e) => {
-      console.log("hello depuis l'input")
-      // Supprimer les anciens résultats
-      searchContainer.innerHTML = "";
-      const resultsCountries = data.pays.filter((pays) =>
-        pays.nom
-          .toLowerCase()
-          .startsWith(e.target.value.toLowerCase().trimStart())
-      );
-      // Pour chaque recherche, cette partie du code va permettre de mettre les résultats en forme
-      resultsCountries.forEach((resultat) => {
-        const listResults = document.createElement("ul");
-        listResults.className = "search-input__list";
-        searchContainer.appendChild(listResults);
-        listResults.innerHTML = 
-        `<li class="search-input__name">
-          ${resultat.nom}
-        </li>
-        `
-      })
-      console.log(resultsCountries);
-    });
+  const data = {
+    pays: [
+      {
+        "nom": "Afghanistan",
+        "cout": "28,90",
+        "methode": "DHL",
+        "temps_preparation_debut": 1,
+        "temps_preparation_fin": 2,
+        "temps_livraison_debut": 4,
+        "temps_livraison_fin": 0,
+        "from": false,
+      },
+      {
+        "nom": "Allemagne",
+        "cout": "6,00",
+        "methode": "Colissimo",
+        "temps_preparation_debut": 1,
+        "temps_preparation_fin": 2,
+        "temps_livraison_debut": 4,
+        "temps_livraison_fin": 5,
+        "from": false,
+      },
+      {
+        "nom": "Belize",
+        "cout": "28,90",
+        "methode": "DHL",
+        "temps_preparation_debut": 1,
+        "temps_preparation_fin": 2,
+        "temps_livraison_debut": 3,
+        "temps_livraison_fin": 0,
+        "from": true,
+      },
+      {
+        "nom": "France",
+        "cout": "4,50",
+        "methode": "Colissimo",
+        "temps_preparation_debut": 1,
+        "temps_preparation_fin": "",
+        "temps_livraison_debut": 2,
+        "temps_livraison_fin": 3,
+        "from": false,
+      },
+      {
+        "nom": "Irlande",
+        "cout": "9,90",
+        "methode": "DHL",
+        "temps_preparation_debut": 1,
+        "temps_preparation_fin": 2,
+        "temps_livraison_debut": 1,
+        "temps_livraison_fin": 0,
+        "from": false,
+      }
+    ]
+  }
 
-    console.log(data.pays);
+
+// Sélection d'éléments dans le DOM
+const searchContainer = document.querySelector(".search-input__container");
+const searchBar = document.getElementById("search-input");
+const resultsContainer = document.querySelector('.results');
+const paysContainer = document.querySelector('.pays');
+
+
+// Variable qui va contenir les données à afficher dans les résultats
+let resultsData = "";
+
+// Méthode qui va gérer l'événement de recherche
+searchBar.addEventListener("input", (e) => {
+
+  // Supprimer les anciens résultats
+  resultsContainer.innerHTML = "";
+  let searchValue = e.target.value;
+  resultsData = data.pays.filter((pays) =>
+    pays.nom
+      .toLowerCase()
+      .startsWith(e.target.value.toLowerCase().trimStart())
+  );
+  // Pour chaque recherche, cette partie du code va permettre de mettre les résultats en forme
+  resultsData.forEach((resultat) => {
+    let resultLi = document.createElement("li");
+    resultsContainer.appendChild(resultLi);
+    addingElements(resultLi, resultsContainer, "search-input__name", resultat.nom);
+
+    // Ici c'est la gestion de si un résultat de la search-bar est cliqué alors il apparaît en dessous dans la div paysContainer
+    resultLi.addEventListener("click", () => {
+      let card = document.createElement("div");
+      addingElements(card, paysContainer, "pays__card card",
+        `<h3 class="card__nom font-barlow">
+            ${resultat.nom}
+        </h3>
+        <p class="card__cout font-barlow">
+            <strong>Coût de livraison :</strong> ${!resultat.from ? resultat.cout : "A partir de " + resultat.cout}€
+        </p>
+        <p class="card__methode font-barlow">
+            <strong>Méthode de livraison :</strong> ${resultat.methode}
+        </p>
+        <p class="card__tps-preparation font-barlow">
+            <strong>Temps de préparation :</strong> ${resultat.temps_preparation_debut >= 2 && resultat.temps_preparation_fin >= 2 ? resultat.temps_preparation_debut + "-" + resultat.temps_preparation_fin + " jours" : resultat.temps_preparation_debut + " jour"}  
+        </p>
+        <p class="card__tps-livraison font-barlow">
+            <strong>Temps de livraison :</strong> ${resultat.temps_livraison_debut >= 2 && resultat.temps_livraison_fin === 0 ? resultat.temps_livraison_debut + " jours" : resultat.temps_livraison_debut >= 2 && resultat.temps_livraison_fin >= 2 ? resultat.temps_livraison_debut + "-" + resultat.temps_livraison_fin + " jours" : resultat.temps_livraison_debut + " jour"}  
+        </p>
+        `
+    );
+
+      const paysChildren = paysContainer.querySelectorAll(".pays__card");
+      searchBar.value = "";
+      resultsContainer.innerHTML = "";
+      paysContainer.appendChild(card)
+
+      if (paysChildren.length >= 1) {
+        paysContainer.removeChild(paysChildren[0]); // Enleve le premier élement
+      }
+    })
+    if (searchValue.length === 0) {
+      resultsContainer.innerHTML = "";
+    } 
+
+  })
+});
+
+function addingElements(element, container, nameClass, htmlElement) {
+  element.className = nameClass;
+  element.innerHTML = htmlElement;
+}
+
+
+
 
 </script>
