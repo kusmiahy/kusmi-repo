@@ -1,0 +1,161 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : the-vert-avant-de-dormir
+
+    Nom de la classe parent : the_vert_article_2024
+
+    Titre : Quel est le meilleur moment pour boire du thé vert ? 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="the_vert_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('.././_components/banniere.html', {
+                "lien-img": "blog/articles/2024/lovely_morning/blog_lovely_morning_1.webp?$staticlink$",
+                "alt": "produit Lovely Morning Kusmi Tea",
+    
+                "titre": "Quel est le meilleur moment pour boire du thé vert ? ",
+                "date": "Publié le <span class='date__color'>20/08/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','vert')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrez nos thés verts bio",
+    
+                "texte": "Si vous êtes, comme nous, convaincu que le <a class='banniere__link' href=\"$url('Product-Show','pid','vert')$\"\>thé vert</a> est aussi savoureux que bon pour votre bien-être et votre santé, vous serez tenté d’en boire tout au long de la journée. Est-ce une bonne idée ? Certains moments sont-ils plus recommandés que d’autres : le matin, à jeun, en après-repas ? Faut-il mieux boire le thé vert en journée qu’avant de dormir ou au coucher ? Le thé vert a-t-il réellement une incidence sur le sommeil ? On vous explique tout !",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi est-il recommandé de boire un thé vert le matin à jeun ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "“Il faut boire de l’eau dès le réveil” : en voilà une phrase que l’on a pas cessé d’entendre. Et elle tombe sous le sens. Après une bonne nuit de sommeil, cela fait plusieurs heures que notre corps n’a pas été hydraté. Comme après une bonne séance de sport, il est important de réhydrater “le système lymphatique”, essentiel au bon fonctionnement de l'organisme. Boire dès le matin permet aussi de se réveiller plus facilement. En buvant, nous réveillons notre estomac... et donc notre cerveau. Si boire un grand verre d’eau à jeun est parfois désagréable, l’astuce, c’est de remplacer l’eau par une tasse de son thé vert préféré. De quoi allier l’utile et l’agréable !",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Quel thé vert boire le matin au petit déjeuner ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Parmi les thés verts susceptibles de vous faire oublier votre couette bien chaude et votre oreiller moelleux, on ne saurait vous recommander mieux que la gamme Kusmi (car, ils sont bios, aromatisés et conditionnés en France, emballés de façon éco-responsable). Surtout, qu’il y en a pour tous les goûts : <a class='banniere__link' href=\"/fr/vert-gingembre-citron-VGICBIOMASTER.html?v=21645A1070\"\>thé vert gingembre-citron bio</a>, <a class='banniere__link' href=\"/fr/the-vert-a-la-menthe-VMENBIOMASTER.html?v=21651A1070\"\>thé vert à la menthe</a>, <a class='banniere__link' href=\"/fr/vert-jasmin-VJASBIOMASTER.html?v=21615A1070\"\>thé vert au jasmin</a>, <a class='banniere__link' href=\"/fr/genmaicha-VGENMASTER.html?v=VGEN100D\"\>thé vert genmaicha</a>, thé vert-maté-citron pour le <a class='banniere__link' href=\"/fr/petit-dejeuner-a-elysee-bio-ELYSEEBIOMASTER.html?v=21691A1070\"\>“Petit déjeuner à l’Elysée”</a>, ou thé vert-maté-agrumes pour “le <a class='banniere__link' href=\"/fr/lovely-morning-LOMOBIOMASTER.html?v=21684A1070\"\>Lovely Morning</a>”. À vous de réinventer et de chambouler votre routine matinale !",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Quel thé vert boire après les repas ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Chez Kusmi, on consomme le thé vert principalement en après-repas en raison de ses vertus bénéfiques sur la digestion. Une à deux tasses de thé vert après un repas permettrait de diminuer l’inconfort intestinal, les ballonnements, et d’éliminer les toxines. La meilleure association possible, c’est le thé vert à la menthe, car celle-ci est réputée pour faciliter la digestion et apaiser les crampes liées au système digestif.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Peut-on boire du thé vert pendant sa journée de travail ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Oui, c’est une très bonne idée de s’accorder des pauses thé au bureau. Contrairement au café qui est un excitant, le thé est un stimulant. Son action s’inscrit plus doucement, mais plus longtemps dans la durée. Libérée progressivement dans l’organisme pendant 6 heures, la théine boosterait ainsi la concentration et nos facultés de mémorisation. Les thés verts les plus riches en théine sont : le Matcha, le Sencha, le Gyokuro et le Tencha. Associés à du gingembre ou du citron, effet de boost garanti ! Autre molécule présente dans le thé, la L-théanine aurait, elle, le pouvoir de nous apaiser. Cet actif naturel serait reconnu pour favoriser la détente, la relaxation, en atténuant les symptômes d'anxiété. Peu, voire pas calorique, le thé vert peut aussi être utilisé pour calmer les fringales et limiter le grignotage.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Le thé vert nuit-il au sommeil ? Peut-on le consommer avant de dormir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Oui et non, et surtout “ça dépend”. L’effet de la caféine sur l’organisme est propre à chacun. La stimulation ressentie, le taux d’absorption de la caféine, et sa tolérance varie d’une personne à l’autre. Certains diront qu’il leur est impossible de trouver le sommeil après avoir bu une tasse de thé vert le soir, s’ils ont consommé du thé vert après 17 heures, que le thé vert provoque des insomnies... quand d’autres dormiront comme des bébés.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Pourquoi le thé vert empêche-t-il de dormir ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Oui, à cause de la présence de théine/caféine, qui peut nuire au sommeil. Si on a, pendant un temps, pensé le contraire, théine et caféine sont la même molécule. La différence entre les deux boissons chaudes - les plus consommées au monde - vient du fait que le café en contient beaucoup plus : trois à quatre fois plus que dans une tasse de thé. C’est ce qui explique l’effet excitant du café, et l’effet simplement stimulant du thé. Présente dans les feuilles de thé, la théine se libère lorsque celles-ci sont plongées dans l’eau chaude. C’est pourquoi les personnes sensibles évitent de boire du thé après une certaine heure, afin d’éviter tout risque d’insomnie…",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "Quel thé boire avant de dormir ou au coucher ?",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si vous faites partie des gens sensibles à la théine, on vous conseille d’opter, en fin de journée, pour du thé blanc, qui contient moins de théine. Autre possibilité : privilégier le “thé rouge” ou <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>. Il ne contient pas de théine, et pour cause : il ne s’agit pas de feuilles de théier, mais d’un arbuste le “rooibos bush”, appartenant à la famille des légumineuses. Découvrez notre <a class='banniere__link' href=\"/fr/rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070\"\>tisane pour dormir</a> Rituel Sommeil, un rooibos enrichi en mélisse au bon goût de mangue. Dernière option : plébisciter le soir les tisanes, sans théine, composées de plantes bienfaitrices. Certaines infusions anti-stress vous aideront même à vous apaiser ou vous endormir, comme <a class='banniere__link' href=\"/fr/be-cool-infusion-bio-COOLBIOMASTER.html?v=21654A1070\"\>Be Cool</a> à base de verveine et menthe poivrée ou encore <a class='banniere__link' href=\"/fr/lovely-night-infusion-bio-LONIBIOMASTER.html?v=21679A1070\"\>Lovely Night</a>, mélange tilleul et de verveine.",
+                })
+            </section>
+            <section class="block">
+                @@include('.././_components/h2.html', {
+                    "titre": "On peut boire du thé vert le soir, en le déthéinant",
+                })
+                @@include('.././_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour préparer un thé “allégé en théine”, il suffit de le faire infuser une première fois pendant une minute, puis de jeter cette première eau, qui contient le plus de théine. On garde ensuite le même thé (le même sachet, la même boule à thé...) qu’on fait infuser une nouvelle fois, dans une nouvelle eau frémissante. Cette deuxième infusion sera alors beaucoup plus légère en théine, tout en conservant les saveurs de notre thé favori.<br>A lire aussi : <a class='banniere__link' href=\"$url('Page-Show','cid','arttv18')$\"\>Faut-il boire son thé matcha le matin à jeun ?</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('.././_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-de-chine')$",
+                    "lien-img": "blog/oriento-gy_DN08336U-unsplash.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "L’incontournable et très populaire thé vert de Chine ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-the-vert-sencha-the-genmaicha')$",
+                    "lien-img": "blog/1-gen.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Connaissez-vous le thé Genmaicha ? Ce thé vert sencha aux mille vertus ",
+                    "cta": "En savoir plus",
+                })
+                @@include('.././_components/article.html', {
+                    "lien": "$url('Page-Show','cid','5-habitudes-matinales-pour-un-reveil-rafraichissant')$",
+                    "lien-img": "blog/articles/2024/gamme_rituel/blog_gamme_rituel_1.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "5 habitudes matinales pour un réveil rafraîchissant ",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('.././_components/partager.html', {
+                "titre": "Quel est le meilleur moment pour boire du thé vert ? ",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','the-vert-avant-de-dormir')$",
+            })
+        </section>
+    </div>
+
+</div>
+
