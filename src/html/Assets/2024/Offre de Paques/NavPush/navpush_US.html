@@ -1,0 +1,25 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/paques.scss";
+
+    Content asset : 20S_THE_NOIRS_EASTER_PUSH_NAV
+
+    Nom de la classe parent : paques_navpush_2024
+
+-->
+
+
+<section class="paques_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Click to buy 2 black tea tins, get a FREE gift !",
+        "texte": "Easter Offer,
+        "lien": "$url('Search-Show','cgid','noir')$",
+    })
+</section>

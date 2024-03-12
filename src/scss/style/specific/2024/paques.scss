@@ -3,7 +3,7 @@ $color-bg: #D7A858;
 $color-text-push: #000;
 $color-text-homepromo: #000;
 
-.lindt_push_2024 {
+.paques_push_2024 {
     width: 100%;
     margin-block: 5px;
 
@@ -12,12 +12,12 @@ $color-text-homepromo: #000;
     }
 }
 
-.lindt_hero_2024,
-.lindt_homepromo_2024 {
+.paques_hero_2024,
+.paques_homepromo_2024 {
     width: 100%;
 }
 
-.lindt_homepromo_2024 {
+.paques_homepromo_2024 {
     @include min1024() {
         width: 50%;
     }

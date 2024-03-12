@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/paques.scss";
+
+    Content asset : 20S_THE_NOIRS_EASTER_HP
+
+    Nom de la classe parent : paques_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="paques_hero_2024">
+    <a href="$url('Search-Show','cgid','paques')$" title="Click to buy 2 black tea tins, get a FREE gift !">
+        @@include('../components/slot.html', {
+            "alt": "Click to buy 2 black tea tins, get a FREE gift !",
+            "title": "Easter offer",
+            "subtitle": "Buy 2 black tea tins, get a FREE gift !",
+            "text-link": "Shop now",
+        })
+    </a>
+</section>									
