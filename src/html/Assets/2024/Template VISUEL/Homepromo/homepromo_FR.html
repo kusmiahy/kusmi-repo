@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : 
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 template_homepromo_2024">
+    <a href="$url('Search-Show','cgid','CGID')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre",
+            "title": "Titre",
+            "subtitle": "<span class='hide-desktop'>Sous-titre</span><span class='hide-mobile'>Sous-titre</span>",
+            "text-link": "<span class='hide-mobile-homepromo'>CTA texte desktop</span><span class='hide-desktop-homepromo'>CTA texte mobile ></span>",
+        })
+    </a>
+</section>

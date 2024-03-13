@@ -4,10 +4,10 @@
 
 // -------------------- Style.css ------------------------
 
-@import "./_style/base/**/*.scss";
+@import "./style/base/**/*.scss";
 
 // --------------------- Library -------------------------
-@import "./_style/specific/2023/pdp_rituel.scss";
+@import "./style/specific/2023/pdp_rituel.scss";
 
     Content asset : rituel-sommeil-contenu-enrichi
 
@@ -35,6 +35,52 @@
 </style>
 
 <div class="pdp_rituel_2023">
+    <section class="ingredients ingredients--somm">
+        <div class="ingredients__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--violet",
+                "texte-titre": "Con Rituale Sonno, prenditi cura di te mentre ti coccoli! ",
+            })
+        </div>
+        <div class="ingredients__container container">
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/bienfaits.svg?$staticlink$",
+                "alt": "pittogramma di un volto addormentato",
+                "titre": "Benefici mirati ",
+                "paragraphe": "Migliora la qualità del sonno, riduce il tempo necessario per addormentarsi, favorisce un sonno ristoratore ",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/actif.svg?$staticlink$",
+                "alt": "pittogramma di due foglie verdi",
+                "titre": "Principio attivo riconosciuto ",
+                "paragraphe": "L'acido rosmarinico presente nell'estratto di melissa agisce direttamente sulla qualità del sonno ",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/scientifique.svg?$staticlink$",
+                "alt": "pittogramma di una bottiglia con una foglia all'interno",
+                "titre": "Processo scientifico innovativo ",
+                "paragraphe": "Permette di fissare il principio attivo direttamente sui nostri ingredienti e ne garantisce l'efficacia ",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/efficacite.svg?$staticlink$",
+                "alt": "pittogramma di una casella di spunta che viene barrata",
+                "titre": "Efficacia provata",
+                "paragraphe": "I benefici di Rituel Sommeil sono stati dimostrati e riconosciuti da studi clinici ",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/plaisir.svg?$staticlink$",
+                "alt": "pittogramma di una tazza vista dall'alto con un cuore rosso al centro della tazza e un germoglio con due foglie",
+                "titre": "Prodotto gustoso ",
+                "paragraphe": "Gusto unico, facile da integrare nella tua routine quotidiana ",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/sanstheine.svg?$staticlink$",
+                "alt": "pittogramma di un germoglio con due foglie che viene barrato",
+                "titre": "Senza teina ",
+                "paragraphe": "Per favorire il rilassamento e facilitare l'addormentamento",
+            })
+        </div>
+    </section> 
     <section class="faq-wrapper">
         <div class="faq__title">
             @@include('./_components/title.html', {

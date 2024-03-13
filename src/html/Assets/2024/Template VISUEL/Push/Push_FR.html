@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : 
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="template_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','CGID')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre",
+            "texte-h2": "Titre",
+            "texte-h3": "<span class='hide-desktop'>Sous-titre</span><span class='hide-mobile'>Sous-titre</span>",
+            "texte-link": "CTA texte",
+        })
+    </div>
+    
+</a>

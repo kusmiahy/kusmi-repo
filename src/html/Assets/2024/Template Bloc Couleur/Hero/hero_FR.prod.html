@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template_bloc.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : template_2_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="template_2_hero_2024">
+    <a href="$url('Search-Show','cgid','CGID')$" class="hero hero--one-cta" title="Cliquez pour voir notre offre">
+        @@include('../components/slot.html', {
+            "alt": "Cliquez pour voir notre offre",
+            "title": "Titre",
+            "subtitle": "Sous-titre <span class='hide-desktop'>Sous-titre</span><span class='hide-mobile'>Sous-titre</span>",
+            "texte-link": "CTA Texte",
+            "class-cta": "",
+        })
+
+        <!-- hero__ctas-container--4-ctas pour pouvoir mettre 4 ctas dans ce template il faut rajouter cette class-->
+    </a>
+</section>
