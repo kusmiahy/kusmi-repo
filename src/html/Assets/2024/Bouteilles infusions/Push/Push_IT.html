@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/bouteilles_infusions.scss";
+
+    Content asset : BOUTEILLE_KT_PUSH
+
+    Nom de la classe parent : bouteilles_infusions_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="bouteilles_infusions_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','bottiglie-termiche')$" title="Cliccate su &quot;Scopri ora&quot; per scoprire le nostre coloratissime Bottiglie per infusione.">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliccate su &quot;Scopri ora&quot; per scoprire le nostre coloratissime Bottiglie per infusione.",
+            "texte-h2": "Bottiglie per infusione",
+            "texte-h3": "Scopri le nostre bottiglie colorate, ispirate alle tue miscele preferite",
+            "texte-link": "Scopri ora",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_it.svg?$staticlink$",
+            "alt-new": "Adesivo nuovo",
+            "class-pastille": "",
+        })
+    </div>
+    
+</a>

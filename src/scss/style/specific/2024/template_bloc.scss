@@ -28,7 +28,7 @@ $color-bg: #E58192;
 
     &__picture {
         display: flex;
-        width: 47.5%;
+        width: 45.15%;
 
         @include min768() {
             width: 50%;
@@ -51,7 +51,7 @@ $color-bg: #E58192;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 57.89%;
+        width: 54.85%;
 
         @include min768() {
             width: 50%;

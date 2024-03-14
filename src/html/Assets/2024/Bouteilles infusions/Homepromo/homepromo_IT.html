@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/bouteilles_infusions.scss";
+
+    Content asset : BOUTEILLE_KT_HOME_PROMO
+
+    Nom de la classe parent : bouteilles_infusions_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 bouteilles_infusions_homepromo_2024">
+    <a href="$url('Search-Show','cgid','bottiglie-termiche')$" title="Cliccate su &quot;Scopri ora&quot; per scoprire le nostre coloratissime Bottiglie per infusione.">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliccate su &quot;Scopri ora&quot; per scoprire le nostre coloratissime Bottiglie per infusione.",
+            "title": "Bottiglie per infusione",
+            "subtitle": "Scopri le nostre bottiglie colorate, ispirate alle tue miscele preferite",
+            "text-link": "<span class='hide-mobile-homepromo'>Scopri ora</span><span class='hide-desktop-homepromo'>Bottiglie per infusione ></span>",
+        })
+    </a>
+</section>

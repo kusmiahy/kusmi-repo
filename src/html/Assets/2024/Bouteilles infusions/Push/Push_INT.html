@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/bouteilles_infusions.scss";
+
+    Content asset : BOUTEILLE_KT_PUSH
+
+    Nom de la classe parent : bouteilles_infusions_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="bouteilles_infusions_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','isothermal_accessories')$" title="Click on &quot;Discover now&quot; to discover our colorful Kusmi Tea Bottles">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Click on &quot;Discover now&quot; to discover our colorful Kusmi Tea Bottles",
+            "texte-h2": "Herbal Tea bottle",
+            "texte-h3": "Discover our colored bottles, inspired from your favorite blends",
+            "texte-link": "Discover now",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_en.svg?$staticlink$",
+            "alt-new": "Sticker new",
+            "class-pastille": "",
+        })
+    </div>
+    
+</a>

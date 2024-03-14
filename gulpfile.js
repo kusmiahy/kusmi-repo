@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.template_2_hero_2024';
+var classParent = '.pdp_rituel_2023';
 
 const {
     series,
