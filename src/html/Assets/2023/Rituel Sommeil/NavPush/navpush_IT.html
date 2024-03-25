@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : RITUEL_SOMMEIL_NAV_PUSH
+
+    Nom de la classe parent : rituel_sommeil_navpush_2024
+
+-->
+
+<section class="rituel_sommeil_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Clicca per scoprire il nostro prodotto &quot;Riprendere sonno&quot;",
+        "texte": "Riprendere sonno",
+        "lien": "$url('Product-Show','pid','21251A1070')$",
+    })
+</section>

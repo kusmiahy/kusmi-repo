@@ -44,6 +44,12 @@ $color-text-hero-push: #303030;
         right: 11%;
         width: 20%;
 
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
         &.pastille-efficacite--de {
             width: 25%;
 
@@ -113,12 +119,6 @@ $color-text-hero-push: #303030;
             top: 10%;
             width: 7%;
         }
-
-        img {
-            object-fit: contain;
-            width: 100%;
-            height: 100%;
-        }
     }
 
     &__container {
@@ -157,12 +157,9 @@ $color-text-hero-push: #303030;
             }
 
             @include min1024() {
+                width: 515px;
                 height: 100%;
                 justify-content: space-between;
-            }
-
-            @include min1440() {
-                width: 515px;
             }
 
             @include min1920() {
@@ -183,13 +180,13 @@ $color-text-hero-push: #303030;
                     }
 
                     &.pastille-nouveau--int {
-                        width: 12%;
+                        width: 14%;
                     }
 
                     img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: contain;
                     }
                 }
 

@@ -1,0 +1,37 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_immunitaire.scss";
+
+    Content asset : RITUEL_IMMUNITAIRE_HERO
+
+    Nom de la classe parent : rituel_immunitaire_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="rituel_immunitaire_hero_2023">
+    <a href="$url('Product-Show','pid','21153A1070')$" title="Cliccate su &quot;Scopri ora&quot; per scoprire il nostro nuovo prodotto &quot;Rituale Difese Immunitarie&quot;">
+        @@include('../components/slot.html', {
+            "alt": "Cliccate su &quot;Scopri ora&quot; per scoprire il nostro nuovo prodotto &quot;Rituale Difese Immunitarie&quot;",
+            "title": "Potenzia le tue difese immunitarie",
+            "subtitle": "Innovazione: scoprite il nostro Rituale Difese Immunitarie al tè verde arricchito con vitamina C",
+            "text-link": "Scopri ora",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_it.svg?$staticlink$",
+            "pastille-efficacite": "images/assets/2023/rituel_immunitaire/efficacite_prouve_en.svg?$staticlink$",
+            "alt-new": "Adesivo nuovo",
+            "alt-efficacite": "Efficacia comprovata degli adesivi",
+            "class-pastille": "pastille-nouveau--int",
+            "class-pastille-efficacite": "pastille-efficacite--int",
+        })
+    </a>
+</section>

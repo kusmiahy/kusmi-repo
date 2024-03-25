@@ -1,0 +1,197 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : vertus-infusions-camomille
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Les nombreux bienfaits de la camomille
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/camomille-bienfaits.webp?$staticlink$",
+                "alt": "Les nombreux bienfaits de la camomille",
+    
+                "titre": "Les nombreux bienfaits de la camomille",
+                "date": "Publié le <span class='date__color'>20/08/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_et_infussions_bio')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Nos infusions & tisanes bio",
+    
+                "texte": "Tous les projecteurs sont désormais braqués sur… la <strong>camomille</strong> ! Partons à la découverte d’une des <strong>plantes</strong> les plus vendues au monde en raison de tous les <strong>bienfaits</strong> qu’elle nous apporte, notamment en <strong>infusion</strong>.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment reconnaître la camomille ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La plante est originaire des régions de la façade atlantique de l'Europe et d'Afrique du Nord. Sans le savoir, vous la croisez peut-être lors de vos promenades ! Comment la reconnaître les prochaines fois que vous la croiserez ? La <strong>camomille</strong> est une plante qui mesure entre 10 et 30 cm de haut. Elle se compose de petites feuilles vertes très fines et de <strong>fleurs</strong> solitaires jaunes à pétales blancs qui ressemblent à celles des marguerites. La floraison a lieu entre juillet et septembre. C’est d’ailleurs à cette saison que l’on peut profiter de l’agréable parfum que ses fleurs dégagent. Au-delà de sa beauté en <strong>bouquet</strong> et de ses réjouissants <strong>arômes</strong> (doux et fruité, avec des notes d'ananas), la camomille <strong>recèle de très bonnes vertus en infusion</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les principaux bienfaits de la camomille pour la santé",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille est un trésor de bienfaits pour notre santé, dévoilant une multitude d'effets positifs à la fois doux et puissants. <strong>Elle est notamment reconnue pour ses vertus apaisantes</strong>, qui en font un allié incontestable contre le stress et l'anxiété. Sa capacité à promouvoir un sommeil réparateur en fait une solution naturelle pour ceux qui cherchent à améliorer la qualité de leurs nuits. La camomille agit aussi comme un baume pour l'estomac, soulageant indigestions et douleurs gastro-intestinales, tout en facilitant la digestion. Ses propriétés anti-inflammatoires et antispasmodiques sont particulièrement bénéfiques pour les femmes, réduisant les douleurs menstruelles. La beauté de la peau n'est pas en reste : les composés de la camomille apaisent les irritations cutanées, favorisent la guérison et protègent l'épiderme grâce à une puissante action antioxydante. <strong>L'ensemble de ces propriétés contribue à renforcer le système immunitaire</strong>, créant une barrière protectrice contre les pathogènes courants comme ceux responsables des rhumes. Ce véritable don de la nature s'avère être un incontournable pour préserver et améliorer notre santé globale. Découvrez notre nouvelle <a class='banniere__link' href=\"$url('Product-Show','pid','')$\"\>tisane à la camomille</a>, <a class='banniere__link' href=\"$url('Product-Show','pid','')$\"\>thym citronnée et feuilles d’oranger</a>.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "1&#41; Camomille et détente : un antidote naturel contre le stress et l'anxiété",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille est reconnue depuis longtemps comme une <strong>source de sérénité</strong> et une allyée incontournable dans la <strong>réduction du stress et de l'anxiété</strong>. Cette plante médicinale douce, avec ses fleurs délicates et son parfum apaisant, détient des composants naturels capables de privilégier la détente et le calme. Ses propriétés relaxantes sont d'une aide précieuse pour apaiser l'esprit et facilite une attitude zen face aux tumultes du quotidien. En infusion, elle devient une boisson réconfortante, idéale pour s'accorder une pause bienfaisante et régénératrice.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "2&#41; Le rôle de la camomille dans l'amélioration de la qualité du sommeil",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille, reconnue pour ses effets sédatifs naturels, est un véritable cadeau de la nature pour tous ceux en quête d'une meilleure qualité de sommeil. Son pouvoir apaisant facilite l'endormissement et favorise un sommeil réparateur, essentiel à une santé optimale. En se mêlant aux rituels du coucher, une tasse d'infusion de camomille contribue à réduire les insomnies, offrant un repos bien mérité après une longue journée. Les composés actifs tels que l'apigénine, lient les récepteurs dans le cerveau qui promeuvent la somnolence et diminuent le temps nécessaire pour s’endormir. Des études suggèrent qu'en consommant régulièrement de la camomille, la qualité globale du sommeil s'en trouve significativement améliorée, faisant d'elle un incontournable pour qui aspire à des nuits paisibles. Alors, dites bonjour aux longues nuits réparatrices !",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "3&#41; Camomille en tant qu'alliée digestive : soulager les maux d'estomac et plus",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Reconnue pour ses vertus apaisantes, la <strong>camomille est une véritable alliée pour le système digestif</strong>. Elle agit comme un baume naturel en cas de maux d'estomac, favorisant ainsi une digestion plus aisée et contribuant à réduire les ballonnements inconfortables. Ses propriétés antispasmodiques offrent également un soulagement en cas de crampes intestinales. En outre, la camomille peut accompagner efficacement les traitements des inflammations gastro-intestinales grâce à son <strong>effet anti-inflammatoire naturel</strong>. Certaines études semblent suggérer que la <strong>camomille</strong> est favorable à la bonne digestion. Grâce à ses propriétés anti-inflammatoires, elle pourrait aussi vous protéger contre les petites maladies digestives. L’<strong>infusion de camomille</strong> refroidie combattrait également les infections de la bouche et les maux de dents. Fini les aphtes ! En plus, <strong>la camomille en infusion</strong> calmerait les ballonnements et les maux de ventre. Avec la <strong>tisane de camomille</strong>, on peut donc dire bye bye aux gargouillis en public. Une tasse d'infusion de camomille après les repas n'est pas juste un geste de détente, mais aussi un moyen préventif et curatif pour maintenir un confort digestif au quotidien.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "4&#41; Camomille et soulagement des douleurs menstruelles",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille est depuis longtemps une alliée précieuse pour les femmes qui affrontent les désagréments des douleurs menstruelles. Grâce à ses propriétés antispasmodiques et anti-inflammatoires, cette plante miracle <strong>apaise les crampes et diminue l'inflammation</strong>, procurant ainsi un soulagement naturel et bienvenu. Boire une infusion de camomille chaude peut aussi aider à <strong>détendre l'utérus</strong> et tout le corps, ce qui contribue à une réduction sensible de la douleur et de l'inconfort pendant cette période souvent pénible.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "5&#41; L'effet anti-inflammatoire de la camomille sur la peau et les muqueuses",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille est reconnue pour ses vertus apaisantes, mais saviez-vous qu'elle détient aussi un <strong>pouvoir anti-inflammatoire exceptionnel</strong> pour la peau et les muqueuses ? Cette plante médicinale, utilisée depuis des millénaires, contient de précieux flavonoïdes et des huiles essentielles capables de réduire les irritations et les inflammations. En application locale sous forme de crèmes ou de lotions, elle soulage l'épiderme, traite les rougeurs et accélère la guérison des petites blessures. <strong>Les gargarismes à base d'infusion de camomille</strong> apaisent également les muqueuses de la gorge, offrant un remède naturel en cas de toux ou d'angine. Ajoutez à cela son action réparatrice sur les peaux sensibles et vous avez un allié beauté et santé incontournable.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "6&#41; Les propriétés antioxydantes de la camomille et la prévention du vieillissement",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La camomille regorge <strong>d'antioxydants puissants</strong> qui jouent un rôle clé dans la <strong>prévention du vieillissement</strong> prématuré. Ces molécules combattent efficacement les radicaux libres responsables de la dégradation des cellules, offrant ainsi un bouclier protecteur à notre peau. On retrouve aussi la <strong>camomille</strong> dans de nombreux produits de beauté : dans les shampoings pour blondir vos cheveux ou encore dans les crèmes, masques et lotions pour le visage. Pour le visage, la <strong>camomille pourrait améliorer la qualité de la peau</strong>, effacer les rougeurs et les imperfections. Elle unifierait le teint pour le rendre plus éclatant. Le petit truc en plus : la <strong>camomille</strong> aiderait à dégonfler les cernes sous les yeux ! Votre <strong>tisane de camomille</strong> peut vous servir à préparer des compresses qu’il faut alors appliquer sur les yeux durant une vingtaine de minutes. Leurs actions bénéfiques pour l'épiderme se traduisent par une atténuation des rides et une amélioration de la fermeté et de l'élasticité cutanée, conservant ainsi une apparence plus jeune et dynamique. Incorporez la camomille à votre routine bien-être et observez un véritable renouveau de votre peau, tout en baignant dans une atmosphère de tranquillité et de détente.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "7&#41; L'action de la camomille sur le système immunitaire et la lutte contre les rhumes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et si un simple remède floral pouvait être votre allié pour booster le système immunitaire? La camomille, connue pour ses nombreuses vertus, joue un rôle clé dans la <strong>stimulation des défenses naturelles</strong> de l’organisme. Consommer de la camomille sous forme d’infusion peut contribuer à mieux armer le corps contre les infections telles que les rhumes. <strong>Les flavonoïdes</strong>, puissants composants de la camomille, possèdent des propriétés antivirales et peuvent fournir un soutien précieux durant la saison froide. C’est une manière douce et naturelle de renforcer son bouclier immunitaire tout en se délectant d'une boisson apaisante.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment infuser la camomille ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour préparer une <strong>tisane aux fleurs de camomille</strong>, suivez ces quelques étapes :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Mettez une cuillère à soupe de fleurs séchées en vrac dans une boule à thé.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Avec une bouilloire, faites chauffer 225 ml d’eau jusqu’à ébullition, puis coupez le feu.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez l’eau chaude dans une tasse ou un autre récipient.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Placez la boule à thé de <strong>camomille</strong> et faites infuser 5 minutes.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Dégustez nature ou bien ajoutez du miel, du sucre, du lait, des fruits ou du citron.",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le miel joindra notamment à l’<strong>infusion</strong> ses propriétés antimicrobiennes, antibactériennes et antifongiques.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Combien de fois par jour peut-on consommer de la camomille ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de camomille peut être un véritable élixir pour l'apaisement de l'esprit et l'amélioration de la digestion, mais il est essentiel de trouver le bon équilibre. Une à deux tasses d'infusion de camomille par jour peuvent suffire pour profiter de ses bienfaits sans risque de surconsommation. <strong>Il est conseillé de boire la tisane en fin de journée ou avant le coucher</strong>, pour bénéficier de ses effets relaxants et favoriser un sommeil récupérateur. <strong>Toutefois, il faut rester vigilant et ne pas excéder quatre tasses par jour</strong>, car un excès peut entraîner des effets indésirables. En écoutant votre corps et en respectant ces directives, la camomille peut devenir un allié précieux de votre bien-être quotidien.<br>Pour tester dès maintenant cette simple recette, découvrez nos infusions et nos <a class='banniere__link' href=\"$url('Search-Show','cgid','rooibos')$\"\>rooibos</a>.<br>Et pour les amateurs de théine, nous avons une large sélection de <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>thé noir</a>, <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>thé vert</a>, <a class='banniere__link' href=\"$url('Search-Show','cgid','mate')$\"\>maté</a> et <a class='banniere__link' href=\"$url('Search-Show','cgid','matcha')$\"\>matcha.</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-verveine')$",
+                    "lien-img": "blog/2022_05-infusion-verveine.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "La verveine, star des infusions relaxantes",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-du-soir')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_rituel_sommeil_1.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Top 6 des tisanes et infusions pour dormir ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv19')$",
+                    "lien-img": "blog/1-GINGEMBRE.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment faire du thé au gingembre ? Quels bienfaits ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Les nombreux bienfaits de la camomille",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','vertus-infusions-camomille')$",
+            })
+        </section>
+    </div>
+
+</div>
+

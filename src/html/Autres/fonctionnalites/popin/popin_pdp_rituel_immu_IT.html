@@ -1,0 +1,84 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : dans Akineo
+
+    Nom de la classe parent : popin_2023
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<div class="popin_2023">
+    @@include('./components/p-did-you-know.html', {
+        "texte": "<span class='popin__open'>Clicca su questo link per accedere alle nostre fonti.</span>",
+    })
+<dialog id="popin" class="popin__dialog">
+    @@include('./components/cta.html', {
+        "class": "dialog__close",
+        "texte": " &#x2715;",
+    })
+    <div class="dialog">
+        @@include('./components/title.html', {
+            "texte": "<strong>Informazioni sulle fonti</strong>",
+        })
+        <div class="block-container">
+            <ul>
+                @@include('./components/li.html', {
+                    "texte": "[1] <strong>Jacques Buxeraud, Sébastien Faure</strong>, La vitamine C, Actualités Pharmaceutiques, Volume 60, Issue 604, Supplement, 2021, Pages S24-S26, ISSN 0515-3700, <a href='https://doi.org/10.1016/j.actpha.2021.01.025'>https://doi.org/10.1016/j.actpha.2021.01.025. </a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[2] <strong>Abdullah Al Mahmud,  Shafayet Ahmed Siddiqui, Md Rezaul Karim, Muhammad Rakib Al-Mamun, Shammi Akhter, Md Sohel, Mahedi Hasan, Sm Faysal Bellah, Mohammad Nurul Amin</strong>, Clinically proven natural products, vitamins and mineral in boosting up immunity: A comprehensive review, Heliyon, Volume 9, Issue 4, 2023, e15292, ISSN 2405-8440, <a href='https://doi.org/10.1016/j.heliyon.2023.e15292'>https://doi.org/10.1016/j.heliyon.2023.e15292. </a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[3] <strong>Gasmi A, Shanaida M, Oleshchuk O, Semenova Y, Mujawdiya PK, Ivankiv Y, Pokryshko O, Noor S, Piscopo S, Adamiv S, Bjørklund G.</strong> Natural Ingredients to Improve Immunity. Pharmaceuticals (Basel). 2023 Apr 1;16(4):528. doi: 10.3390/ph16040528. PMID: 37111285; PMCID: PMC10143734. ",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[4] <strong>Rafaela de Aquino Souza Miskinis, Lucas Ávila do Nascimento, Rosana Colussi.</strong> Bioactive compounds from acerola pomace: A review, Food Chemistry, Volume 404, Part A, 2023, 134613, ISSN 0308-8146, <a href='https://doi.org/10.1016/j.foodchem.2022.134613'>https://doi.org/10.1016/j.foodchem.2022.134613. </a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[5] <strong>EFSA  Panel  on  Dietetic  Products,  Nutrition  and  Allergies  (NDA)</strong>;  Scientific  Opinion  on  the substantiation  of  health  claims  related  to  vitamin  C  and  protection  of  DNA,  proteins  and  lipids  from  oxidative  damage  (ID 129,  138,  143,  148),  antioxidant  function  of  lutein  (ID  146),  maintenance  of  vision  (ID  141,  142),  collagen  formation  (ID 130, 131, 136, 137, 149), function of the nervous system (ID 133), function of the immune system (ID 134), function of the immune  system  during  and  after  extreme  physical  exercise  (ID  144),  non-haem  iron  absorption  (ID  132,  147),  energy-yielding metabolism (ID 135), and relief in case of irritation in the upper respiratory tract (ID 1714, 1715) pursuant to Article 13(1) of Regulation (EC) No 1924/2006 on request from the European Commission. EFSA Journal 2009; 7(9):1226. [28 pp.]. doi:10.2903/j.efsa.2009.1226. Available online: <a href='www.efsa.europa.eu'>www.efsa.europa.eu</a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[6] <strong>Carr AC, Maggini S.</strong> Vitamin C and Immune Function. Nutrients. 2017; 9(11):1211. <a href='https://doi.org/10.3390/nu9111211'>https://doi.org/10.3390/nu9111211</a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[7] <strong>Eva S. Wintergerst, Silvia Maggini, Dietrich H. Hornig</strong>; Immune-Enhancing Role of Vitamin C and Zinc and Effect on Clinical Conditions. Ann Nutr Metab 1 February 2006; 50 (2): 85–94. <a href='https://doi.org/10.1159/000090495'>https://doi.org/10.1159/000090495</a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[8] <strong>Gasmi A, Shanaida M, Oleshchuk O, Semenova Y, Mujawdiya PK, Ivankiv Y, Pokryshko O, Noor S, Piscopo S, Adamiv S, Bjørklund G.</strong> Natural Ingredients to Improve Immunity. Pharmaceuticals (Basel). 2023 Apr 1;16(4):528. doi: 10.3390/ph16040528. PMID: 37111285; PMCID: PMC10143734. ",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[9] <strong>Johnston CS, Barkyoumb GM</strong>, Schumacher SS. Vitamin C Supplementation Slightly Improves Physical Activity Levels and Reduces Cold Incidence in Men with Marginal Vitamin C Status: A Randomized Controlled Trial. Nutrients. 2014; 6(7):2572-2583. <a href='https://doi.org/10.3390/nu6072572'>https://doi.org/10.3390/nu6072572</a>",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[10]<strong> Polak E, Stępień AE, Gol O, Tabarkiewicz J.</strong> Potential Immunomodulatory Effects from Consumption of Nutrients in Whole Foods and Supplements on the Frequency and Course of Infection: Preliminary Results. Nutrients. 2021 Apr 1;13(4):1157. doi: 10.3390/nu13041157. PMID: 33915705; PMCID: PMC8065427. ",
+                })
+            </ul>
+        </div>
+        @@include('./components/cta.html', {
+            "class": "dialog__cta",
+            "texte": "Chiudere",
+        })
+    </div>
+</dialog>
+</div>
+
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+JS USE
+// =require specific/2023/popin.js
+-->
