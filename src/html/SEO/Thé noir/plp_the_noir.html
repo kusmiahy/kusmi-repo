@@ -1,0 +1,82 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/voir_plus.scss";
+
+    Content asset : the_noir_earl_grey-cat-landing-description-m
+
+    Nom de la classe parent : voir_plus_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="voir_plus_2023">
+    <article class="category-bottom-content">
+        <section class="category-bottom-content__block category-bottom-content__block--display block">
+            @@include('./components/h2.html', {
+                "texte": "Puis-je obtenir un coffret cadeau avec des thés épicés de Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Certainement, le &#34;coffret de thés épicés&#34; est conçu pour les amateurs de saveurs audacieuses et épicées, combinant des thés épicés et des infusions <span class='hide__text hide__fadeout'>aromatiques. Je souhaite vivre une expérience de thé luxueuse.</span> <span class='hide__cta hide__cta--view-more'>Voir plus</span>",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Kusmi Tea a-t-elle des suggestions à me faire ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Le coffret &#34;<a href=\"$url('Product-Show','pid','21690A1150')$\"\>Sélection Alain Ducasse</a>&#34; propose un assortiment de thés biologiques naturels, vous offrant une touche de luxe dans chaque tasse.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Qu'est ce que la La Collection Bio de Kusmi Tea ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Notre coffret <a href=\"$url('Product-Show','pid','21142A1400')$\"\>La Collection</a> porte bien son nom ! Il réunit 15 miniatures de thés et infusions emblématiques de notre maison, le tout accompagné d'une boîte de 100 filtres à thé ainsi que d'une jolie cuillère pour faciliter la dégustation de nos mélanges. C'est sans doute le plus incontournable des coffrets à offrir !",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Quels sont les avis sur le <a href=\"$url('Product-Show','pid','21194A1170')$\"\>Coffret Kusmi Infusions bio</a> ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "<a href=\"$url('Product-Show','pid','21194A1170')$\"\>Le Coffret Kusmi Infusions</a> a reçu un avis positif de 4.79/5.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "Je cherche un cadeau bien noté pour un anniversaire, quel est l'avis sur le <a href=\"$url('Product-Show','pid','21161A1170')$\"\>Coffret Les Earl Grey Kusmi Tea</a> ?",
+            })
+            @@include('./components/p.html', {
+                "texte": "Il a reçu un excellent avis avec une note de 5.00/5.",
+            })
+        </section>
+        <section class="category-bottom-content__block category-bottom-content__block--not-display block">
+            @@include('./components/h2.html', {
+                "texte": "J'hésite entre plusieurs coffrets pour un cadeau de fête. Pourriez-vous me dire les avis sur <a href=\"$url('Product-Show','pid','21690A1150')$\"\></a>La Sélection Alain Ducasse avec une pince à thé Kusmi Tea ? ",
+            })
+            @@include('./components/p.html', {
+                "texte": "Bien sûr ! Les avis laissés ont noté le produit à 4.73/5. <span class='hide__cta hide__cta--view-less'>Voir moins</span>",
+            })
+        </section>
+
+    </article>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2023/voir_plus.js
+-->

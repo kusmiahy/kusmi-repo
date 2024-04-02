@@ -1,0 +1,739 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/politique_de_confidentialite.scss";
+
+    Content asset : privacy-policy
+
+    Nom de la classe parent : privacy-policy_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}
+</style>
+<section class="privacy-policy_2024">
+    @@include('_components/title.html', {
+        "titre": "Privacy policy",
+    })
+    <div class="policy-paragraph-container">
+        @@include('_components/paragraph.html', {
+            "texte": "<span class='policy__title--center'>Updated on the 19th of March 2024</span>",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
+            "texte": "The navigation and use of the features offered by the <a href='http://www.kusmitea.com/int' target='_blank'>www.kusmitea.com</a> website (hereinafter the "KUSMI TEA Website") may entail the communication of data relating to the user.",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
+            "texte": "For this reason, this Privacy Policy (the "Policy") is intended to provide clear, simple, and comprehensive information to all concerned persons ("you", "your") about how the company ORIENTIS GOURMET ("ORIENTIS GOURMET") and its subsidiaries (collectively referred to as the "ORIENTIS GOURMET Group" or "we", "us" and "ours"), in their capacity as data controller, collect and use data relating to you and how you can exercise control over this use and exercise your rights in this respect.",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
+            "texte": "Moreover, specific notifications can be found on each collection form in order to ensure that you get comprehensive information before any of your data is processed.",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
+            "texte": "Unless otherwise stated, this Policy applies to all personal data collected on the Website but also to all other online services and activities associated with our brands KUSMI TEA and LØV ORGANIC and, more broadly, to the ORIENTIS GOURMET Group.",
+            "class": "",
+        })
+        @@include('_components/paragraph.html', {
+            "texte": "The Website is hosted exclusively in data centres located in Europe (Ireland) belonging to Amazon Web Services ("AWS"), Amazon Web Services Inc. 410 Terry Avenue North, Seattle, WA 98109-5210, USA. <a href='http://aws.amazon.com'>http://aws.amazon.com</a>",
+            "class": "",
+        })
+    </div>
+    <div class="container-accordeon">
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "1. Who is responsible for processing your data?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "The data controller for the personal data is the company ORIENTIS GOURMET, a simplified joint stock company with a capital of 11,494,590.79 euro, with its registered office at 32-34 rue Marbeuf 75008 Paris, registered in the RCS Paris under the number 350 283 057.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "2. Which of your data are processed and why?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/subtitle_accordeon.html', {
+                    "texte": "2.1. General information",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "This section is intended to inform you about what we do with data that you provide to us directly or that is collected indirectly as part of your use of our Websites and the Application and why we do so.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Identification data",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "By using our Websites and Application, you may be required to send us information, some of which is likely to identify you, namely, in particular, your title, surname, first name, date of birth, email address, postal address, postal code and telephone number.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "The obligatory or optional nature of the data is indicated to you during the collection with an asterisk (*). If you do not fill in these fields, we will unfortunately not be able to access your request. Other data is optional and is collected for statistical and customisation purposes only. You are therefore free to enter them or not, without this entailing any obligation or inconvenience for you.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "This is particularly the case when you (i) create your online customer account, (ii) register for a newsletter or other notification system, (iii) finalise your online purchase, (iv) subscribe to the KUSMIKLUB loyalty programme, (v) contact our customer service department or when (vi) you participate in competitions.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Pourquoi ?",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Création et gestion de votre compte client en ligne et du panier d’achat ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion et suivi de vos relations commerciales avec le Groupe ORIENTIS GOURMET (essentiellement les opérations relatives aux commandes, livraisons et retours, transactions, paiements et factures, réclamations…) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Envoi de communications commerciales de notre part et gestion de votre abonnement aux newsletters KUSMI TEA et/ou KUSMIKLUB (inscriptions et désabonnements), sous réserve de votre consentement si vous n’êtes pas client.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion et suivi de votre adhésion au programme de fidélité KUSMIKLUB propre au Site KUSMI TEA (inscription et désabonnement) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’études statistiques et marketing ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Suivi clientèle personnalisé ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’enquêtes de satisfaction ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Dans le cadre de votre participation à des jeux concours ou autres opérations promotionnelles ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion des impayés et du contentieux ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de l’exercice de vos droits conformément à l’article 7.",
+                    })
+                </ul>
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Les données relatives aux commandes en ligne",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "A l’occasion de toute commande de produit réalisée sur notre Site, nous sommes susceptibles de collecter, en plus des données d’identification, des informations relatives à votre transaction tels que le numéro de commande et le détail de l’achat, les données de facturation et les modalités et incidents de règlement.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Nous ne collectons aucune information sur vos données bancaires (numéros et données de cartes bancaires). Ces données sont collectées et traitées uniquement par notre système de paiement externe ADYEN. Nous ne conservons aucun numéro de carte bancaire. Nous recevons de la part de notre système de paiement que les informations sur la transaction de paiement. Pour plus d’information sur notre prestataire de paiement, veuillez-vous référer à notre paragraphe sur les « Destinataires » à l’article 5.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Pourquoi ?",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Exécution du contrat de vente ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion et suivi de vos relations commerciales avec le Groupe ORIENTIS GOURMET et les sociétés tierces exploitant des boutiques à enseigne KUSMI TEA (essentiellement les opérations relatives aux commandes, livraisons et retours, transactions, paiements et factures, réclamations …) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’études statistiques et marketing ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Suivi clientèle personnalisé;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de vos avis sur des produits, services ou contenus ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Preuve dans le respect des obligations légales et réglementaires (paiement, garantie, litige etc…) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion des impayés et du contentieux ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "La détection d’éventuelles activités abusives ou frauduleuses ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de l’exercice de vos droits conformément à l’article 7.",
+                    })
+                </ul>
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Les données concernant le suivi de notre relation commerciale",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Dans le cadre du suivi de notre relation commerciale, nous sommes notamment susceptibles de conserver tout ou partie des informations suivantes : demandes de documentation, produit acheté, service ou abonnement souscrit, quantité, montant, périodicité, adresse de livraison, historique des achats et des prestations de services, retour des produits, origine de la vente (vendeur, représentant, partenaire, affilié) ou de la commande, correspondances avec vous et service après-vente, échanges et commentaires.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Pourquoi ?",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Suivi clientèle personnalisé ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de vos avis sur des produits, services ou contenus ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Amélioration de nos offres, services et produits ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’enquêtes de satisfaction ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’études statistiques, marketing et comportementales (profilage) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de l’exercice de vos droits conformément à l’article 7.",
+                    })
+                </ul>
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Les données de navigation",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Lors de chacune de vos visites sur notre Site, nous sommes susceptibles de collecter indirectement et automatiquement des informations relatives aux appareils sur lesquels vous utilisez notre Site ou aux réseaux depuis lesquels vous accédez à notre Site tels que vos adresses IP , données de connexion, types et versions de navigateurs internet utilisés, systèmes et plateformes d’exploitation, données concernant votre parcours de navigation sur notre Site, notamment votre parcours sur les différentes pages URL de notre Site, le contenu auquel vous accédez ou que vous consultez, les termes de recherches utilisés, la durée de consultation de certaines pages, l’identifiant publicitaire de votre appareil et vos interactions avec la page. Parmi les technologies utilisées pour recueillir ces informations, nous avons notamment recours aux cookies. Pour en savoir plus à ce sujet, veuillez-vous référer à notre paragraphe sur les « Cookies » à l’article 6.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Pourquoi ?",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Fournir au client une expérience personnalisée de notre Site notamment en facilitant leur navigation ou en personnalisant les annonces publicitaires ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Optimisation du fonctionnement de notre Site;u contenus ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’études statistiques, marketing et comportementales (profilage) ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de l’exercice de vos droits conformément à l’article 7.",
+                    })
+                </ul>
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Les données d’utilisation des fonctionnalités réseaux sociaux",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Dans le cas où vous décidez d’utiliser les fonctionnalités des réseaux sociaux mises à votre disposition (« Facebook Connect » et « Google + ») sur notre Site, le Groupe ORIENTIS GOURMET aura accès à certaines données (notamment, vos nom et prénom, adresse e-mail, contacts) de votre compte sur ledit réseau social conformément aux conditions générales d’utilisation du réseau social concerné. Nous sommes également susceptibles de recueillir certaines de vos données lorsque vous interagissez avec des fonctionnalités de ces réseaux sociaux, tel que les fonctionnalités « Facebook Messenger » ou via l’outil d’analyse Facebook (le « pixel Facebook ») permettant de suivre votre activité lors de votre navigation sur notre Site. Pour plus d’information sur l’utilisation de vos données par ces réseaux sociaux, veuillez-vous référer à notre paragraphe sur les « Destinataires » à l’article 5.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Pourquoi ?",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le traitement de ces données nous est nécessaire pour accomplir les finalités suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Fournir au client une expérience personnalisée de notre Site notamment en facilitant leur navigation ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Envoi de publicités ciblées et adaptées à vos centres d’intérêts ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réalisation d’études statistiques, marketing et comportementales ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gestion de l’exercice de vos droits conformément à l’article 7.",
+                    })
+                </ul>
+                @@include('_components/subtitle_accordeon.html', {
+                    "texte": "2.2. Informations spécifiques à la publicité ciblée, l’envoi de newsletters et de SMS",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Sous réserve de votre consentement exprès, le Groupe ORIENTIS GOURMET utilise certaines de vos données pour vous adresser des newsletters, des communications sur les actualités et offres promotionnelles de nos marques et produits KUSMI TEA susceptibles de vous intéresser notamment par email, sms ou notification mobile ainsi que des publicités ciblées directement sur les plateformes des réseaux sociaux ou sites tiers à des fins de prospection commerciale.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Par exception à ce qui précède et conformément à la réglementation applicable en matière de données personnelles en vigueur, le Groupe ORIENTIS GOURMET peut vous envoyer de la prospection commerciale par voie électronique sans votre consentement préalable dès lors que vous êtes déjà client et que vous vous n’êtes pas opposé à recevoir de la prospection commerciale lors de la finalisation de votre achat (en ligne et/ou en boutique) et que la prospection concerne des produits ou services analogues à ceux déjà fournis par le Groupe ORIENTIS GOURMET.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong><u>En ce qui concerne les emails/SMS ou notification mobile promotionnels :</u></strong> vous pouvez vous inscrire à nos newsletters en cochant la case afférente ou en renseignant votre adresse email et/ou numéro de téléphone. Vous pouvez retirer votre consentement, le cas échéant, à tout moment en (i) décochant la case afférente dans la rubrique « Abonnements » de votre espace « Mon compte », (ii) cliquant sur le lien de désinscription « Désabonnez-vous ici » en bas de page de chacune de nos communications ou, le cas échéant en envoyant STOP en réponse au SMS ou (iii) en nous contactant selon les modalités décrites à l’article 7 ci-après.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Par ailleurs, après avoir navigué sur notre Site, il est possible que vous receviez un email bien que vous n’ayez pas fourni directement votre adresse email au Groupe ORIENTIS GOURMET. Cet envoi n’est toutefois possible que sous réserve de l’existence de votre consentement exprès. En effet, nous utilisons des prestataires afin d’identifier, grâce à la technique des cookies, des internautes ayant visité notre Site et de leur envoyer des emails personnalisés. Ces prestataires se sont engagés à obtenir, sous leur propre responsabilité, votre adresse email via leurs partenaires ayant déjà collecté licitement votre adresse et envers lesquels vous avez expressément consenti à l’envoi de publicité par des tiers. Vos données ne sont recueillies qu’en version cryptée et non lisible. Si vous ne souhaitez plus recevoir de mail, vous pouvez à tout moment vous désinscrire en cliquant sur le lien de désinscription fourni dans chacune de ces communications ou en nous contactant selon les modalités décrites à l’article 7 ci-après.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Enfin, nous utilisons également des prestataires pour l’envoi d’emails en cas de non finalisation du panier d’achat. Ces derniers utilisent la technologie des cookies ayant pour but de capturer l’adresse email renseignée par vous, avec votre accord, lors de la création de votre compte sur notre Site. Pour plus d’information, veuillez-vous référer à l’article 6 dédié aux « Cookies ».",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "En ce qui concerne la publicité ciblée :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<u>Sur les plateformes de réseaux sociaux :</u> en cas d’accord exprès de votre part, votre adresse email pourra être partagée sous forme hachée avec Facebook, à des fins de communication d’offres promotionnelles via le service d’audience personnalisée Facebook (« Facebook Custom Audiences »). Ce service nous permet de collecter des informations anonymisées notamment âge, sexe, plateforme device et centres d’intérêts ainsi que de créer des listes de clients afin de leur soumettre des publicités ciblées y compris sur leur page Facebook. Les informations hachées ne permettent pas à Facebook de les utiliser autrement que pour identifier un client existant déjà sur Facebook et lui adresser des publicités ciblées. Vous pouvez vous opposer à tout moment à ce traitement en configurant les paramètres relatifs à la publicité de votre compte ou en nous contactant selon les modalités décrites à l’article 7 ci-après.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<u>Sur des sites tiers :</u> par l’intermédiaire de cookies, nous sommes susceptibles de vous adresser des publicités ciblées sur des sites tiers partenaires.<br>Pour en savoir plus et notamment sur le moyen de gérer votre consentement, vous pouvez vous reporter à l’article 6 dédié aux « cookies ».",
+                    })
+                </ul>
+                @@include('_components/subtitle_accordeon.html', {
+                    "texte": "2.3. Informations spécifiques relatives aux données concernant des mineurs",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Les offres présentent sur notre Site ne ciblent pas et ne sont pas destinées aux enfants au sens de l’article 8 du Règlement 2016/679. En utilisant notre Site, vous certifiez donc avoir plus de 18 ans, à défaut veuillez ne pas utiliser notre Site sans autorisation parentale préalable.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "En conséquence, le Groupe ORIENTIS GOURMET décline toute responsabilité en l’absence d’une telle autorisation.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "3. Sur quel(s) fondement(s) juridique(s) vos données sont-elles traitées ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET a besoin de traiter certaines données vous concernant dans la mesure où celles-ci sont, selon les cas :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Nécessaires à l’exécution d’un contrat de vente ou de prestation de services ou de mesures précontractuelles prises à votre demande (par exemple, pour traiter votre commande),",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Nécessaires au respect d’obligations légales ou règlementaires (par exemple à des fins de facturation),",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Nécessaires aux fins des intérêts légitimes poursuivis par le Groupe ORIENTIS GOURMET ou un tiers à condition que vos intérêts ne prévalent pas sur ces derniers (par exemple, à des fins de sécurité des transactions ou pour l’analyse, l’optimisation et la personnalisation de nos offres en ligne),",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Collectées avec votre consentement préalable (par exemple, pour vous envoyer une newsletter à laquelle vous vous êtes abonné).",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Quel que soit le traitement concerné, le Groupe ORIENTIS GOURMET ne traite vos données que dans les limites prévues par la réglementation applicable.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "4. Combien de temps vos données sont-elles conservées ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vos données sont conservées <strong>pour la période pendant laquelle vous utilisez nos services</strong>, et supprimées au plus tard <strong>trois (3) ans à compter de notre dernier contact</strong> (tels que votre dernier achat, ou votre dernier clic sur un lien hypertexte contenu dans un courriel), sauf anonymisation de ces données notamment pour des raisons de statistiques ou consentement de votre part pour une durée de conservation plus longue.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Par exception, les données permettant d’établir la <strong>preuve</strong> d’un droit ou d’un contrat, ou conservées au titre du respect d’une <strong>obligation légale</strong>, peuvent faire l’objet d’une politique d’archivage intermédiaire pour une durée n’excédant pas la durée nécessaire aux finalités pour lesquelles elles sont conservées, conformément aux dispositions en vigueur (notamment mais non exclusivement celles prévues par le code de commerce, le code civil et le code de la consommation).",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "En cas d'exercice de vos droits dans les conditions prévus à l’article 7 de la présente Politique, les données relatives aux pièces d'identité pourront être conservées pendant le délai prévu à l'article 9 du code de procédure pénale (soit <strong>un (1) an</strong>). Les autres données pertinentes collectées dans ce cadre pourront être archivées pendant le délai de prescription prévu à l'article 8 du code de procédure pénale (soit <strong>trois (3) ans</strong>).",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Enfin, les informations stockées dans votre terminal (ex : cookies), ou tout autre élément utilisé pour vous identifier et permettant votre traçabilité, ainsi que les données de fréquentation brutes associant un identifiant, ne seront conservés que pour une durée maximale de <strong>treize (13) mois</strong>. Au-delà de ce délai, vos données sont soit supprimées, soit anonymisées.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "5. Qui a accès à vos données ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vos données ne pourront être divulguées qu’aux destinataires suivants ou aux catégories de destinataires suivantes, dans la limite de leurs attributions respectives et dans la mesure où cette transmission est strictement nécessaire pour accomplir les finalités prévues à l’article 2 de la présente Politique :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Les personnels habilités des services marketing, clientèle, commercial, administratifs, logistiques et informatiques du Groupe ORIENTIS GOURMET, ainsi que leurs responsables hiérarchiques ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les sociétés tierces exploitant des boutiques à enseigne KUSMI TEA ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les personnes chargées de missions de contrôle interne et externe ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les prestataires d’hébergement et de maintenance de la ou des bases de données clients/prospects ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les sous-traitants, prestataires et sociétés extérieures intervenant dans la réalisation des contrats de vente, des actions de CRM, dans la personnalisation des contenus du Site ainsi que la réalisation de contenus publicitaires, la réalisation des transactions financières, de l’expédition des commandes et de la mise à disposition du tchat et la réalisation d’études statistiques, marketing et comportementales. Ces entités sont tenues, dans la même mesure que le Groupe ORIENTIS GOURMET lui-même, d'assurer la protection des données.",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Toutes les personnes relevant de notre responsabilité et sociétés autorisées à accéder à vos données personnelles sont tenues à un engagement de confidentialité.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vous êtes informé que vos données personnelles sont susceptibles d’être transférées en dehors de l’Union européenne à la filiale américaine ORIENTIS DISTRIBUTION Inc. et ses sous-filiales, toutes situées aux Etats-Unis. Afin d’assurer à vos données personnelles un niveau de protection équivalent à celui offert par la réglementation européenne applicable, ORIENTIS GOURMET a conclu avec sa filiale américaine ORIENTIS DISTRIBUTION Inc. un accord, conformément aux clauses contractuelles validées par la Commission européenne et la CNIL.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "En aucun cas, le Groupe ORIENTIS GOURMET ne vend ni ne loue vos données personnelles à des tiers à des fins de marketing pour leurs propres activités.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Cas des réseaux sociaux :</strong> Dans le cadre des informations recueillies lors de l’utilisation des fonctionnalités réseaux sociaux (notamment Facebook et Google +), nous vous informons qu’une telle utilisation est susceptible d’entrainer des échanges de données entre le Groupe ORIENTIS GOURMET et lesdits réseaux sociaux. Certaines de vos informations peuvent faire l’objet d’un transfert dans un autre pays que votre pays de résidence et notamment hors de l’Union Européenne. Nous vous invitons à consulter leur politique de confidentialité afin de prendre connaissance des finalités d’utilisation, notamment publicitaires, des informations de navigation que ces réseaux sociaux peuvent recueillir grâce à leurs fonctionnalités. Si vous ne souhaitez pas que ces réseaux sociaux collectent des informations vous concernant lors de la navigation sur le Site, nous vous conseillons de vous déconnecter de ces réseaux sociaux avant de consulter notre Site. Vous pouvez également gérer vos préférences de confidentialité directement sur les outils des réseaux sociaux.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Les Prestataires de paiement : </strong>",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>ADYEN :</strong> L’ensemble des phases de paiement est réalisé par l’intermédiaire de notre système de paiement ADYEN prestataire certifié PCI-DSS, afin d’assurer la sécurité des paiements. Ce système est entièrement crypté et protégé. ADYEN ne conserve pas les numéros de carte après avoir transmis la transaction de paiement à ORIENTIS GOURMET. ORIENTIS GOURMET ne reçoit que les informations sur la transaction de paiement. Pour plus d’information, veuillez consulter la <a href='https://www.adyen.com/fr_FR/politiques-et-mentions-legales/privacy-policy' target='_blank'>Politique de confidentialité ADYEN</a>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>ALMA :</strong> Système de paiement sécurisé permettant de payer en trois (3) fois sans frais. Alma est susceptible de collecter auprès de nous les données personnelles suivantes : nom et prénom, adresse email, adresse(s) de livraison et de facturation, moyen de livraison (transporteur utilisé), coordonnées bancaires, numéro de téléphone, date de naissance, contenu du panier d’achat et historique des achats chez Kusmi Tea. Pour plus d’information, veuillez consulter la <a href='https://almapay.com/fr-FR/legal/politique-de-confidentialite' target='_blank'>Politique de confidentialité et de gestion des données ALMA</a>.",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Le Prestataire de service dans le cadre de notre service clientèle :</strong> Dans le cadre des informations recueillies lors de l’utilisation de notre service clientèle, nous vous informons que notre prestataire, <strong><u>WE CALL</u></strong>, est susceptible de collecter les données conversationnelles et, le cas échéant, de communiquer ces données à des tiers en cas d'obligation légale ou lorsque ces tiers traitent des données pour le compte de WE CALL. Vous pouvez désactiver l'utilisation de cookies en sélectionnant les paramètres appropriés de votre navigateur. Cependant, une telle désactivation pourrait empêcher l'utilisation de certaines fonctionnalités du Site. En utilisant notre Site, vous consentez expressément au traitement de vos données nominatives par WE CALL dans les conditions et pour les finalités décrites dans la présente Politique de Confidentialité.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Le Prestataire de service dans le cadre de la livraison de votre commande :</strong> Dans le cadre de la gestion de la livraison de votre commande, notre partenaire <strong><u>SHIPUP</u></strong> est amené à traiter vos données (nom, prénom, numéro de téléphone, adresse email, adresse postale (numéro et rue, code postal, ville, pays), produit(s) commandé(s) et date de commande) aux fins suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "L'envoi de notifications par e-mails, par messages textes (SMS) ou par d’autres moyens de communication appropriés, s’agissant de l’état de votre commande ainsi que de la disponibilité et/ou du transport de votre commande ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "L'accès à une page de suivi de votre commande ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "L’envoi d’enquêtes de satisfaction facultatives aux par e-mails et/ou par messages textes (SMS) ou par d’autres moyens de communication appropriés.",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Pour plus d’information, veuillez consulter la <a href='https://www.shipup.co/fr/privacy-policy' target='_blank'>Politique de confidentialité SHIPUP</a>.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Le Prestataire de service dans le cadre de l’envoi des emails :</strong> Dans le cadre de l’envoi de nos campagnes emails, notre partenaire <strong><u>SALESFORCE</u></strong> est amené à traiter vos données (nom, prénom, email, adresse, numéro de téléphone) et données de connexion (adresse IP ; login ; cookies) aux fins de l’exécution et de la gestion de Campagnes d’acquisition de leads. Pour plus d’information, veuillez consulter la <a href='https://www.salesforce.com/fr/company/privacy/' target='_blank'>Déclaration de confidentialité - Salesforce France</a>.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>Le Prestataire de service dans le cadre du parcours checkout :</strong> Dans le cadre de la passation de votre commande via la version mobile de notre site internet <a href='http://www.kusmitea.com/' target='_blank'>www.kusmitea.com</a>, notre partenaire <u><strong>TAPBUY</strong></u> est amené à traiter vos données (nom, prénom, numéro de téléphone, adresse email, adresse postale (numéro et rue, code postale, ville, pays), produits(s) commandé(s) et date de commande) aux fins de traitement de votre commande.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "6. Utilisons-nous des outils de tracabilité de votre navigation en ligne et pourquoi ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/subtitle_accordeon.html', {
+                    "texte": "6.1. Utilisation de cookies",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Définition du terme « cookie »",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Les cookies servent à faciliter la navigation sur notre Site et à rationaliser les procédures d’enregistrement ou de mesure d’audience. Les cookies sont des fichiers texte placés sur votre terminal (disque dur de votre ordinateur, tablette ou smartphone), par un serveur de page web. Votre ordinateur est sans doute configuré pour accepter les cookies. Vous pouvez cependant modifier ce paramètre pour qu’il les refuse et nous vous suggérons de le faire si l’utilisation des cookies vous inquiète.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Lorsque vous visitez notre Site, pour chercher, lire ou télécharger des informations, le Groupe ORIENTIS GOURMET recueille et conserve certains « renseignements visiteur » vous concernant tels le nom du domaine et de l’ordinateur hôte à partir desquels vous allez sur Internet, l’adresse du protocole internet (IP) de celui-ci, la date et l’heure de navigation sur notre Site, ainsi que les URL à partir desquels vous êtes passés pour arriver sur le Site. Vous devez y consentir afin de pouvoir sélectionner votre pays d’achat, effectuer une commande et conserver votre sélection dans le panier d’achat. Le Groupe ORIENTIS GOURMET utilise également ces informations pour analyser et mesurer la fréquentation de notre Site ainsi que pour cibler les annonces correspondant à vos centres d’intérêts.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Si vous ne voulez pas que le Groupe ORIENTIS GOURMET recueille ce type d’information, nous vous recommandons dene pas naviguer sur notre Site.",
+                })
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Les différents types de cookies que nous utilisons",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Voici différents types de cookies utilisés sur notre Site :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong><u>Cookies Nécessaires:</u></strong> ces cookies sont strictement nécessaires au fonctionnement de notre Site, ils sont donc obligatoires. Ils contribuent à rendre le Site utilisable en activant des fonctions de base comme la navigation de page et l'accès aux zones sécurisées du Site. Le Site ne peut pas fonctionner correctement sans ces cookies.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong><u>Cookies Préférences :</u></strong> ces cookies sont également obligatoires. Ils permettent au Site de retenir des informations qui modifient la manière dont le site se comporte ou s’affiche. Ils sont liés aux fonctionnalités inhérentes du Site et vous permettent de parcourir notre Site, simplifier sa navigation, d’utiliser ses fonctionnalités et d’enregistrer vos préférences (comme le fonctionnement du panier d’achat, la gestion du processus d’achat, l'identification à votre compte personnel ou vos choix en matière de langue et la région dans laquelle vous vous situez).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong><u>Cookies statistiques :</u></strong> ils permettent de recueillir des données statistiques anonymes relatives à la fréquentation de notre Site. Ce service est assuré pour notre compte par GOOGLE ANALYTICS 4. Les informations générées par ce type de cookies sont généralement transmises à un serveur de Google aux Etats Unis où elles y sont stockées. Pour plus d’information sur l’utilisation de vos données par Google, les paramètres et les possibilités d’opposition, nous vous prions de vous reporter aux <a href='https://policies.google.com/terms?hl=fr' target='_blank'>conditions d'utilisation de Google</a>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong><u>Cookies marketing et publicitaires :</u></strong> ces cookies sont utilisés pour effectuer le suivi des visiteurs au travers du Site. Ils sont utilisés pour vous envoyer des annonces ciblées et personnalisées. Ils nous permettent de mesurer l’efficacité de nos campagnes publicitaires et d'ajuster notre communication selon vos besoins et centres d’intérêts. Des cookies Réseaux Sociaux sont également collectés et vous permettent de vous connecter à vos réseaux sociaux et de partager des contenus depuis notre site Internet. Lorsqu'un internaute accède à notre Site par le biais d'un compte utilisateur d'un réseau social (dont Facebook ou Google +), le réseau social transmet au Groupe ORIENTIS GOURMET les données publiques relatives au profil de l'utilisateur grâce à ses cookies. Pour plus d’information sur l’utilisation de vos données par ces réseaux sociaux ou pour gérer vos préférences en matière de confidentialité, reportez-vous directement à leur politique de confidentialité. Les informations collectées et traitées dans ce contexte sont susceptibles d’être partagées avec d’autres sources.",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET utilise les services des prestataires suivants :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "GOOGLE ADWORDS. Pour en savoir plus, <a href='https://policies.google.com/technologies/ads?hl=fr' target='_blank'>cliquer ici</a>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "GOOGLE ANALYTICS 4. Pour en savoir plus, <a href='https://policies.google.com/privacy?hl=fr' target='_blank'>cliquer ici</a>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "CRITEO. Pour en savoir plus, veuillez <a href='https://www.criteo.com/fr/privacy/' target='_blank'>cliquer ici</a>.",
+                    })
+                </ul>
+                @@include('_components/undertitle_accordeon.html', {
+                    "texte": "Gestion des cookies par l’utilisateur",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vous pouvez à tout moment modifier vos préférences via l’outil de consentement aux Cookies sur notre Site accessible en bas de page du site dans la section &quot;Paramétrer&quot;.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vous pouvez également exercer vos choix selon les différents navigateurs en consultant les pages suivantes :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Internet Explorer™ : <a href='http://windows.microsoft.com/fr-fr/internet-explorer/use-tracking-protection#ie=ie-11'>http://windows.microsoft.com/fr-fr/internet-explorer/use-tracking-protection#ie=ie-11</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Safari™ : <a href='http://support.apple.com/kb/PH11952'>http://support.apple.com/kb/PH11952</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Chrome™ : <a href='https://support.google.com/chrome/answer/114836?'>https://support.google.com/chrome/answer/114836?</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Firefox™ : <a href='https://support.mozilla.org/fr/kb/comment-activer-option-ne-pas-pister</li>'>https://support.mozilla.org/fr/kb/comment-activer-option-ne-pas-pister</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Opera™ : <a href='http://help.opera.com/Windows/12.10/fr/notrack.html'>http://help.opera.com/Windows/12.10/fr/notrack.html</a>",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vous pouvez également vous connecter au site <a href='https://www.youronlinechoices.com/'>Youronlinechoices</a>. Cette plate-forme européenne est partagée par des centaines de professionnels de la publicité sur Internet et constitue une interface centralisée vous permettant d'exprimer votre refus ou votre acceptation des cookies susceptibles d'être utilisés afin d'adapter à la navigation de votre terminal les publicités susceptibles d'y être affichées : <a href='http://www.youronlinechoices.com/fr/controler-ses-cookies/'>http://www.youronlinechoices.com/fr/controler-ses-cookies/</a>.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET vous informe que cette procédure n'empêchera pas l'affichage de publicités sur les sites Internet que vous visitez. Elle ne bloquera que les technologies qui permettent d'adapter des publicités à vos centres d'intérêts.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Il est possible que le paramétrage que vous choisirez soit susceptible de modifier votre navigation sur Internet et vos conditions d'accès à notre Site. Le Groupe ORIENTIS GOURMET décline toute responsabilité concernant les conséquences liées au fonctionnement dégradé de notre Site résultant de l'impossibilité pour le Groupe ORIENTIS GOURMET d'enregistrer ou de consulter les données collectées nécessaires au fonctionnement de notre Site que vous auriez refusés ou supprimés.",
+                })
+                @@include('_components/subtitle_accordeon.html', {
+                    "texte": "6.2. Utilisation de balises web",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Une balise web est un fichier image invisible qui suit votre navigation sur notre Site ou sur une série de sites web. Certaines pages web de notre Site peuvent contenir des balises web. Nous utilisons ces balises principalement pour compter le nombre de visiteurs sur notre Site et pour fournir au Groupe ORIENTIS GOURMET un certain nombre d’indicateurs.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Ces balises web peuvent être utilisées avec certains de nos prestataires notamment afin de mesurer et améliorer l’efficacité de notre Site.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "En tout état de cause, les renseignements obtenus via ces balises sont strictement anonymes et permettent simplement de rassembler des statistiques sur la fréquentation de certaines pages de notre Site, et ce afin de mieux servir les clients de notre Site.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "7. Quels sont vos droits et comment les exercer ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Vous disposez, dans les conditions et limites prévues par la réglementation en vigueur, de plusieurs droits à l’égard du traitement de vos données :",
+                })
+                <ul class="single__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Le droit d'être informé sur notre utilisation de vos données personnelles.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit d'accéder aux informations personnelles que nous possédons sur vous.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit de demander la correction d'informations personnelles erronées que nous avons sur vous (ce que vous pouvez aussi faire directement dans la rubrique « mon compte » lorsque celui-ci existe).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit de demander que nous supprimions vos données, ou que nous arrêtions de les traiter ou de les collecter, dans certaines circonstances.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit de retirer votre consentement, le cas échéant, à recevoir de nos nouvelles et de vous opposer au traitement de vos données (notamment en vue de vous adresser des messages de marketing direct).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit de demander que nous vous remettions vos données ou que nous les transférions à un autre fournisseur de service (droit à la « portabilité »).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le droit de vous plaindre auprès de l’autorité nationale en charge de la protection des données personnelles (en France, il s’agit de la CNIL, Commission nationale de l'informatique et des libertés, dont le site est accessible <a href='https://www.cnil.fr/fr/professionnel'>ici</a>).",
+                    })
+                </ul>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Pour toute question et/ou pour exercer vos droits, vous pouvez nous contacter, par voie électronique ou postale, à l’adresse suivante :",
+                })
+                <div class="single__container-center">
+                    <p class="single__texte">
+                        <strong>
+                            <a href="mailto:dpo@orientis.fr" class="mailto">
+                                dpo@orientis.fr
+                            </a>
+                            <br>
+                            OU
+                            <br>
+                            Service Client ORIENTIS GOURMET - Parc du Hode — 76430 Saint Vigor d’Ymonville
+                        </strong>
+                    </p>
+                </div>
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Merci de préciser votre nom, vos coordonnées physiques et/ou électroniques, ainsi que le cas échéant, la désignation de la référence dont vous disposez en tant que client de notre Site.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Pour cesser de recevoir des messages marketing du Groupe ORIENTIS GOURMET, vous pouvez également cliquer sur le lien de désabonnement figurant dans chacun de nos messages.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET se réserve le droit d’exiger tout pièce justificative d’identité le cas échéant.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET s’engage à vous répondre dans les meilleurs délais, et en tout état de cause, dans un délai d'<strong>un (1) mois</strong> à compter de la réception de votre demande.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Au besoin, ce délai pourra être prolongé de <strong>deux (2) mois</strong>, selon la complexité et le nombre de demandes qui nous sont adressées. Dans ce cas, vous serez informé de cette prolongation et des motifs du report.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Si votre demande est présentée sous forme électronique, les informations vous seront également fournies par voie électronique lorsque cela est possible, à moins que vous ne demandiez expressément qu’il en soit autrement.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Dans le cas où nous ne serions pas en mesure de faire suite à votre demande, nous vous informerons des raisons et vous disposerez de la possibilité d'introduire une réclamation auprès d’une autorité de contrôle et/ou de former un recours juridictionnel.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "8. Comment protégeons-nous vos données ?",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "L’ensemble de vos données à caractère personnel sont conservées sur les serveurs de l’hébergeur <a href='https://www.salesforce.com/fr/'>Salesforce.com</a> France SAS situés en Union Européenne.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Le Groupe ORIENTIS GOURMET a mis en œuvre des mesures techniques et organisationnelles pour préserver la confidentialité et la sécurité de vos données et empêcher notamment que celles-ci ne soient déformées, endommagées, détruites ou que des tiers non-autorisés y aient accès.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Cependant, vous comprendrez aisément que le Groupe ORIENTIS GOURMET ne maîtrise pas tous les risques liés au fonctionnement d’Internet et qu’aucune technologie n’est fiable à 100%. Vous êtes donc informé de l’existence d’éventuels risques inhérents à l’utilisation et au fonctionnement de notre Site et indépendants de notre volonté et de nos efforts.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Si vous choisissez de créer un compte sur notre Site, vous devez vous assurer de la stricte confidentialité de votre mot de passe. Vous vous engagez à informer le Groupe ORIENTIS GOURMET de toute utilisation non autorisée de vos identifiant et mot de passe et de votre souhait, le cas échéant, de supprimer votre compte. Le Groupe ORIENTIS GOURMET ne saurait être responsable des conséquences qui résulteraient d’une utilisation non autorisée de votre compte.",
+                })
+                
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "9. Mise à jour de la politique de confidentialité",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": " Le Groupe ORIENTIS GOURMET se réserve le droit de modifier ou mettre à jour à tout moment la Politique de Confidentialité. Tout changement ou mise à jour sera effectif immédiatement dès qu’il sera publié sur notre Site.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "Dans le cas où ces changements nous paraitraient importants, nous ne manquerons pas de vous en tenir informé et de solliciter votre consentement si cela est requis par la réglementation applicable.",
+                })
+            </div>
+        </div>
+        <div class="container-accordeon__single">
+            <div class="single__title-container">
+                @@include('_components/title_accordeon.html', {
+                    "texte": "10. Droit applicable et litige",
+                })
+                <div class="single__svg">
+                    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0607 13.0607C13.6464 12.4749 13.6464 11.5251 13.0607 10.9393L3.51472 1.3934C2.92893 0.807612 1.97918 0.807612 1.3934 1.3934C0.807612 1.97918 0.807612 2.92893 1.3934 3.51472L9.87868 12L1.3934 20.4853C0.807612 21.0711 0.807612 22.0208 1.3934 22.6066C1.97918 23.1924 2.92893 23.1924 3.51472 22.6066L13.0607 13.0607ZM10 13.5H12V10.5H10V13.5Z"
+                            fill="#000" />
+                    </svg>
+                </div>
+            </div>
+            <div class="single__texte-container">
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "ORIENTIS GOURMET est soumise aux règles applicables en matière de protection des données personnelles, et, en particulier, le Règlement Général européen sur la Protection des Données Personnelles n°2016/679 du 27 avril 2016 (dit « RGPD »), ainsi que toutes les règles de droit national prises en application de celui-ci, à titre subsidiaire.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "En cas de litige et dans le cas où un accord amiable ne pourrait intervenir, le tribunal compétent sera celui déterminé selon les règles de procédure applicables.",
+                })
+                @@include('_components/texte_accordeon.html', {
+                    "texte": "<strong>ORIENTIS GOURMET SAS - 89 avenue Niel 75017 Paris (France) - RCS Paris 350 283 057.</strong>",
+                })
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+    JS USE
+    // =require specific/2024/politique_de_confidentialite.js
+-->

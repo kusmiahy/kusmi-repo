@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie.scss";
+
+    Content asset : HERBORISTERIE_CAMOMILLE_PUSH
+
+    Nom de la classe parent : herboristerie_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="herboristerie_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir nos tisanes sans arôme mais pas sans goût">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir nos tisanes sans arôme mais pas sans goût",
+            "texte-h2": "Nos tisanes sans arôme mais pas sans goût",
+            "texte-h3": "Bio et 100% naturel",
+            "texte-link": "Je découvre",
+        })
+    </div>
+    
+</a>

@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.gamme_rituel_homepromo_2023';
+var classParent = '.offre_vrac_multi_recettes_navpush_2024';
 
 const {
     series,

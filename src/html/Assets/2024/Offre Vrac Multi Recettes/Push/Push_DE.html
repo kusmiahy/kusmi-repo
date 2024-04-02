@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac_multi_recettes.scss";
+
+    Content asset : OFFRE_BEST_VRAC_PUSH
+
+    Nom de la classe parent : offre_vrac_multi_recettes_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_vrac_multi_recettes_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','the_vrac')$" title="Klicken Sie auf &quot;Jetzt nutzen&quot; und profitieren Sie von bis zu -25% auf unsere losen Nachfüllpackungen">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt nutzen&quot; und profitieren Sie von bis zu -25% auf unsere losen Nachfüllpackungen",
+            "texte-h2": "Schnupperangebot*",
+            "texte-h3": "Kombinieren Sie unsere verschiedenen losen Mischungen und erhalten <strong>Sie bis zu -25%</strong>",
+            "texte-link": "Jetzt nutzen",
+        })
+    </div>
+    
+</a>						

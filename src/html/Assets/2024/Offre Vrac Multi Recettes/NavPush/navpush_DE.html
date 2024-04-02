@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac_multi_recettes.scss";
+
+    Content asset : OFFRE_BEST_VRAC_NAV_PUSH
+
+    Nom de la classe parent : offre_vrac_multi_recettes_navpush_2024
+
+-->
+
+<section class="offre_vrac_multi_recettes_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Klicken Sie hier, um bis zu -25% auf unsere Großpackungen zu sparen",
+        "texte": "Nachfüllpackungen: bis zu -25%",
+        "lien": "$url('Search-Show','cgid','the_vrac')$",
+    })
+</section>

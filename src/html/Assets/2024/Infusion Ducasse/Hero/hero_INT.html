@@ -1,0 +1,33 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/ducasse_infusion.scss";
+
+    Content asset : DUCASSE_INFUSION_HP
+
+    Nom de la classe parent : ducasse_infusion_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="ducasse_infusion_hero_2024">
+    <a href="$url('Product-Show','pid','21094A1210')$" title="Click on &quot;Discover now&quot; to discover the new infusion by Alain Ducasse">
+        @@include('../components/slot.html', {
+            "alt": "Click on &quot;Discover now&quot; to discover the new infusion by Alain Ducasse",
+            "title": "Infusion by Alain Ducasse",
+            "subtitle": "Discover our new starred infusion",
+            "text-link": "Discover now",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_en.svg?$staticlink$",
+            "alt-new": "Sticker new",
+        })
+    </a>
+</section>

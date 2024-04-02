@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : herboristerie_navpush_2024
+
+-->
+
+<section class="herboristerie_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir nos tisanes sans arôme mais pas sans goût",
+        "texte": "Herboristerie Kusmi Tea",
+        "lien": "$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$",
+    })
+</section>

@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/ducasse_infusions.scss";
+
+    Content asset : DUCASSE_INFUSION_PUSH
+
+    Nom de la classe parent : ducasse_infusions_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="ducasse_infusions_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Product-Show','pid','21094A1210')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir la nouvelle infusion par Alain Ducasse">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir la nouvelle infusion par Alain Ducasse",
+            "texte-h2": "L'infusion par Alain Ducasse",
+            "texte-h3": "Découvrez la nouvelle infusion étoilée",
+            "texte-link": "Je découvre",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_fr.svg?$staticlink$",
+            "alt-new": "Pastille nouveauté",
+        })
+    </div>
+    
+</a>

@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac_multi_recettes.scss";
+
+    Content asset : OFFRE_BEST_VRAC_PUSH
+
+    Nom de la classe parent : offre_vrac_multi_recettes_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_vrac_multi_recettes_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','the_vrac')$" title="Cliccate su &quot;Scopri ora&quot; per ottenere uno sconto fino al 25% sulle nostre ricariche sfuse">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliccate su &quot;Scopri ora&quot; per ottenere uno sconto fino al 25% sulle nostre ricariche sfuse",
+            "texte-h2": "Offerta scoperta",
+            "texte-h3": "Acquista diverse ricette in blocco e ottieni uno sconto fino <strong>al 25%</strong>",
+            "texte-link": "Scopri ora",
+        })
+    </div>
+    
+</a>

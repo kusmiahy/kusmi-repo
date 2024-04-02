@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac_multi_recettes.scss";
+
+    Content asset : OFFRE_BEST_VRAC_HP
+
+    Nom de la classe parent : offre_vrac_multi_recettes_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_vrac_multi_recettes_hero_2024">
+    <a href="$url('Search-Show','cgid','the_vrac')$" title="Cliquez sur &quot;Je découvre&quot; pour profiter jusqu'à -25% sur nos recharges vrac">
+        @@include('../components/slot.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour profiter jusqu'à -25% sur nos recharges vrac",
+            "title": "Offre découverte",
+            "subtitle": "Achetez différentes recettes<span class='hide-desktop'><br></span> en vrac et bénéficiez d'une<span class='hide-desktop'><br></span> remise <strong>jusqu'à -25%</strong>",
+            "text-link": "Je découvre",
+        })
+    </a>
+</section>

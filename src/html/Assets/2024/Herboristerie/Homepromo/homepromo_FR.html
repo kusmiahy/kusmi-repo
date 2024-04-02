@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie.scss";
+
+    Content asset : HERBORISTERIE_CAMOMILLE_HOME_PROMO
+
+    Nom de la classe parent : herboristerie_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 herboristerie_homepromo_2024">
+    <a href="$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir nos tisanes sans arôme mais pas sans goût">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir nos tisanes sans arôme mais pas sans goût",
+            "title": "Nos tisanes sans arôme mais pas sans goût",
+            "subtitle": "Bio et 100% naturel",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Herboristerie Kusmi Tea ></span>",
+        })
+    </a>
+</section>
