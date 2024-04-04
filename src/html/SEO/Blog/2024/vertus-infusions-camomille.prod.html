@@ -37,7 +37,7 @@
     
                 "titre": "Les nombreux bienfaits de la camomille",
                 "date": "Publié le <span class='date__color'>20/08/2021</span>",
-                "url-produit": "$url('Search-Show','cgid','thes_et_infussions_bio')$",
+                "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
                 "lien-categorie": "blog/?filter=le-the",
                 "tag-texte": "Thé",
     
@@ -46,7 +46,7 @@
                 "texte": "Tous les projecteurs sont désormais braqués sur… la <strong>camomille</strong> ! Partons à la découverte d’une des <strong>plantes</strong> les plus vendues au monde en raison de tous les <strong>bienfaits</strong> qu’elle nous apporte, notamment en <strong>infusion</strong>.",
             })
         </section>
-        <article class="content">
+        <article class="content content__img">
             <section class="block">
                 @@include('_components/h2.html', {
                     "titre": "Comment reconnaître la camomille ?",
@@ -116,8 +116,8 @@
                     "texte": "Et si un simple remède floral pouvait être votre allié pour booster le système immunitaire? La camomille, connue pour ses nombreuses vertus, joue un rôle clé dans la <strong>stimulation des défenses naturelles</strong> de l’organisme. Consommer de la camomille sous forme d’infusion peut contribuer à mieux armer le corps contre les infections telles que les rhumes. <strong>Les flavonoïdes</strong>, puissants composants de la camomille, possèdent des propriétés antivirales et peuvent fournir un soutien précieux durant la saison froide. C’est une manière douce et naturelle de renforcer son bouclier immunitaire tout en se délectant d'une boisson apaisante.",
                 })
             </section>
-            <section class="block">
-                @@include('_components/h2.html', {
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
                     "titre": "Comment infuser la camomille ?",
                 })
                 @@include('_components/paragraphe.html', {
@@ -145,6 +145,13 @@
                     "class": "block__p",
                     "texte": "Le miel joindra notamment à l’<strong>infusion</strong> ses propriétés antimicrobiennes, antibactériennes et antifongiques.",
                 })
+                </div>
+                <a href="thym-citronne-camomille-feuilles-d-oranger-INTCBIOMASTER.html?v=21275A1120" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/tisane-camomille-thym-feuille-oranger.webp?$staticlink$",
+                        "alt": "Tisane camomille, thym citronné et fleur d’oranger",
+                    })
+                </a>
             </section>
             <section class="block">
                 @@include('_components/h2.html', {
