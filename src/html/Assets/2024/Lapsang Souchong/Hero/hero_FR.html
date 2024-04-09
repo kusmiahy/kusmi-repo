@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/lapsang_souchong.scss";
+
+    Content asset : LAPSANG_SOUCHONG_HERO
+
+    Nom de la classe parent : lapsang_souchong_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="lapsang_souchong_hero_2024">
+    <a href="$url('Product-Show','pid','21197A1070')$" class="hero hero--one-cta" title="Cliquez pour découvrir notre Lapsang Souchong : thé noir de Chine fumé">
+        @@include('../components/slot.html', {
+            "alt": "Cliquez pour découvrir notre Lapsang Souchong : thé noir de Chine fumé",
+            "title": "Lapsang Souchong : thé<span class='hide-mobile'><br></span> noir de Chine fumé",
+            "subtitle": "Laissez-vous tenter par son caractère<span class='hide-mobile'><br></span> doux mais puissant à la fois",
+            "texte-link": "Je découvre",
+            "class-cta": "",
+        })
+
+        <!-- hero__ctas-container--4-ctas pour pouvoir mettre 4 ctas dans ce template il faut rajouter cette class-->
+    </a>
+</section>									

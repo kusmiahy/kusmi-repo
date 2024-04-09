@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/lapsang_souchong.scss";
+
+    Content asset : LAPSANG_SOUCHONG_NAV_PUSH
+
+    Nom de la classe parent : 
+
+-->
+
+<section class="lapsang_souchong_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Clicca per scoprire il nostro Lapsang Souchong: tè nero cinese affumicato",
+        "texte": "L'affascinante Lapsang Souchong",
+        "lien": "$url('Product-Show','pid','21197A1070')$",
+    })
+</section>

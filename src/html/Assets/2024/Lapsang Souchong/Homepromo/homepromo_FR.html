@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/lapsang_souchong.scss";
+
+    Content asset : LAPSANG_SOUCHONG_HOME_PROMO
+
+    Nom de la classe parent : lapsang_souchong_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 lapsang_souchong_homepromo_2024">
+    <a href="$url('Product-Show','pid','21197A1070')$" title="Cliquez pour découvrir notre Lapsang Souchong : thé noir de Chine fumé">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez pour découvrir notre Lapsang Souchong : thé noir de Chine fumé",
+            "title": "Lapsang Souchong",
+            "subtitle": "Laissez-vous tenter par son caractère doux mais puissant à la fois",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>L'envoûtant Lapsang Souchong ></span>",
+        })
+    </a>
+</section>
