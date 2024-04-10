@@ -1,0 +1,57 @@
+{"newGA":{"event":"add_to_cart","ecommerce":{"items":[{"item_id":"SOMMBIOMASTER","item_name":"Rituel Sommeil","affiliation":"www.kusmitea.com","currency":"EUR","discount":0,"item_brand":"www.kusmitea.com","item_category":363,"item_category2":"231,232","item_category3":"18S","item_category4":"238","item_variant":"21251A1460","price":9.9,"quantity":1,"backgroundColor":"","variants":[{"variant_id":"21251A1070","price":23.9,"priceHundredGrams":"23,90 €","pricePerOZL":"6,83 €","formatName":"Boîte 100 g","inStock":true,"imageURL":"https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDHT_STG/on/demandware.static/-/Sites-masterCatalog_Kusmi/default/dwf3a121be/images/7/0/d/e/70dee1be1b9a08d0fd0cbd23b4bd2b2e4a08d923_21251A1070_SOMM100BIO__1_.png?sw=400&q=100"}]}]}},"oldGA":{"event":"addToCart","ecommerce":{"currencyCode":"EUR","add":{"products":[{"name":"Rituel Sommeil","id":"21251A1070","price":23.9,"brand":300,"category":"infusions_et_tisanes_types_de_the","variant":"100","quantity":1}]}}}},
+
+{
+    "newGA": {
+        "event": "add_to_cart",
+        "ecommerce": {
+            "items": [
+                {
+                    "item_id": "SOMMBIOMASTER",
+                    "item_name": "Rituel Sommeil",
+                    "affiliation": "www.kusmitea.com",
+                    "currency": "EUR",
+                    "discount": 0,
+                    "item_brand": "www.kusmitea.com",
+                    "item_category": 363,
+                    "item_category2": "231,232",
+                    "item_category3": "18S",
+                    "item_category4": "238",
+                    "item_variant": "21251A1460",
+                    "price": 9.9,
+                    "quantity": 1,
+                    "backgroundColor": "",
+                    "variants": [
+                        {
+                            "variant_id": "21251A1070",
+                            "price": 23.9,
+                            "priceHundredGrams": "23,90 €",
+                            "pricePerOZL": "6,83 €",
+                            "formatName": "Boîte 100 g",
+                            "inStock": true,
+                            "imageURL": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDHT_STG/on/demandware.static/-/Sites-masterCatalog_Kusmi/default/dwf3a121be/images/7/0/d/e/70dee1be1b9a08d0fd0cbd23b4bd2b2e4a08d923_21251A1070_SOMM100BIO__1_.png?sw=400&q=100"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "oldGA": {
+        "event": "addToCart",
+        "ecommerce": {
+            "currencyCode": "EUR",
+            "add": {
+                "products": [
+                    {
+                        "name": "Rituel Sommeil",
+                        "id": "21251A1070",
+                        "price": 23.9,
+                        "brand": 300,
+                        "category": "infusions_et_tisanes_types_de_the",
+                        "variant": "100",
+                        "quantity": 1
+                    }
+                ]
+            }
+        }
+    }
+}

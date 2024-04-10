@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.the_glace_2024';
+var classParent = '.fdm_2024';
 
 const {
     series,

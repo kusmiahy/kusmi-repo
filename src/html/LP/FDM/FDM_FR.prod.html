@@ -1,0 +1,283 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/fdm.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : fdm_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}
+</style>
+
+<!-- CSS Splide -->
+<link href="script/splide.min.css?$staticlink$" rel="stylesheet">
+<style>
+    .splide--pdp .splide__arrow svg {height: 30px;width: 30px;fill: #fff;}.splide--pdp .splide__arrow {background: none;opacity: 1;}
+</style>
+
+<div class="fdm_2024">
+    <section class="bestsellers">
+        @@include('_components/h3.html', {
+            "texte": "Nos bestsellers",
+            "class": "bestsellers__title",
+        })
+        <div class="bestsellers__container">
+            @@include('_components/element.html', {
+                "class": "bestsellers__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "{\"action_code\":\"add_to_cart_generic\",\"eventTypes\":\"hover,click\",\"ga_category\":\"Tile-Show\",\"ga_action\":\"Add to Cart\",\"ga_label\":\"Clic\",\"ga_value\":1,\"ga_noninteractive\":false,\"ga_use_hitcallback\":false,\"ga_hitcallback\":null,\"event\":\"actionEvent\"}' data-gtmproductinfo='{\"newGA\":{\"event\":\"add_to_cart\",\"ecommerce\":{\"items\":[{\"item_id\":\"SOMMBIOMASTER\",\"item_name\":\"Rituel Sommeil\",\"affiliation\":\"www.kusmitea.com\",\"currency\":\"EUR\",\"discount\":0,\"item_brand\":\"www.kusmitea.com\",\"item_category\":363,\"item_category2\":\"231,232\",\"item_category3\":\"18S\",\"item_category4\":\"238\",\"item_variant\":\"21251A1460\",\"price\":9.9,\"quantity\":1,\"backgroundColor\":\"\",\"variants\":[{\"variant_id\":\"21251A1070\",\"price\":23.9,\"priceHundredGrams\":\"23,90 €\",\"pricePerOZL\":\"6,83 €\",\"formatName\":\"Boîte 100 g\",\"inStock\":true,\"imageURL\":\"https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDHT_STG/on/demandware.static/-/Sites-masterCatalog_Kusmi/default/dwf3a121be/images/7/0/d/e/70dee1be1b9a08d0fd0cbd23b4bd2b2e4a08d923_21251A1070_SOMM100BIO__1_.png?sw=400&q=100\"}]}]}},\"oldGA\":{\"event\":\"addToCart\",\"ecommerce\":{\"currencyCode\":\"EUR\",\"add\":{\"products\":[{\"name\":\"Rituel Sommeil\",\"id\":\"21251A1070\",\"price\":23.9,\"brand\":300,\"category\":\"infusions_et_tisanes_types_de_the\",\"variant\":\"100\",\"quantity\":1}]}}}},",
+            })
+            @@include('_components/element.html', {
+                "class": "bestsellers__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+            @@include('_components/element.html', {
+                "class": "bestsellers__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+            @@include('_components/element.html', {
+                "class": "bestsellers__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+        </div>
+    </section>
+    <div class="storytelling">
+        @@include('_components/h3.html', {
+            "texte": "Lorem Ipsum Dolor",
+            "class": "storytelling__title",
+        })
+        @@include('_components/h4.html', {
+            "texte": "Un cadeau infusé d'amour",
+            "class": "storytelling__subtitle",
+        })
+        @@include('_components/image.html', {
+            "lien": "",
+            "alt": "",
+            "class": "storytelling__image",
+        })
+        <p class="storytelling__description font-barlow">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+        </p>
+    </div>
+    <section class="the-infusions">
+        <div class="splide the-infusions__splide" role="group">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "the-infusions__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "the-infusions__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "the-infusions__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "the-infusions__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="accessoires">
+        @@include('_components/h3.html', {
+            "texte": "Nos accessoires",
+            "class": "accessoires__title",
+        })
+        <div class="splide accessoires__splide" role="group">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "accessoires__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "accessoires__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "accessoires__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                    <div class="splide__slide">
+                            @@include('_components/element.html', {
+                            "class": "accessoires__product",
+                            "alt": "Ajouter Rituel Sommeil au panier",
+                            "data-pid": "21251A1070",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                            "nom": "Rituel Sommeil",
+                            "description": "Tisane pour dormir, délicieuse et bio",
+                            "prix": "23,90€",
+                            "data-gtm": "",
+                        })
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <a href="" title="Je découvre">
+        <section class="happy-ending">
+            @@include('_components/h3.html', {
+                "texte": "Lorem Ipsum Dolor",
+                "class": "happy-ending__title",
+            })
+            <p class="happy-ending__description font-barlow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+            <p class="happy-ending__cta font-barlow">
+                Je découvre
+            </p>
+        </section>
+    </a>
+</div>
+
+<!-- Modal du site -->
+<div id="addedToCartModal" class="reveal c-add-to-cart__modal without-overlay" data-close="" data-reveal="2kdhft-reveal"
+    data-overlay="false" role="dialog" aria-hidden="true" data-yeti-box="addedToCartModal"
+    data-resize="addedToCartModal" style="display: none; top: 80px; left: 537px; margin: 0px;" tabindex="-1"
+    data-gtm-vis-first-on-screen1655773_2352="6369">
+    <span class="c-add-to-cart__modal-icon c-add-to-cart__checked">
+        <svg class="svg-inline icon-checked" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="33"
+            height="33" viewBox="0 0 54.47 40">
+            <title>Tick</title>
+            <g>
+                <g>
+                    <path
+                        d="M15.26,39.2.8,24.74a2.73,2.73,0,1,1,3.85-3.86L17.19,33.43,49.82.8a2.72,2.72,0,1,1,3.85,3.85L19.12,39.2a2.72,2.72,0,0,1-3.86,0Z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </span>
+    <span class="c-add-to-cart__modal-icon c-add-to-cart__crossed hide">
+        <svg class="svg-inline icon-close" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="33"
+            height="33" viewBox="0 0 40 40">
+            <g>
+                <g>
+                    <polygon
+                        points="0 3.14 16.86 20 0 36.86 3.14 40 20 23.14 36.86 40 40 36.86 23.14 20 40 3.14 36.86 0 20 16.86 3.14 0 0 3.14">
+                    </polygon>
+                </g>
+            </g>
+        </svg>
+    </span>
+    <span class="c-add-to-cart__modal-title">Produit ajouté au panier</span>
+</div>
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+<!-- JS Splide -->
+<script src="script/splide.min.js?$staticlink$"></script>
+
+<!-- 
+    JS USE
+    // =require specific/2024/carousel_fdm.js
+-->

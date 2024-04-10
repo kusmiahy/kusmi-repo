@@ -1,0 +1,19 @@
+<div class="product @@class" title="@@alt">
+    <img src="@@lien-img" alt="@@alt" class="product__image">
+    <h4 class="product__title font-barlow">
+        @@nom
+    </h4>
+    <p class="product__description font-barlow">
+        @@description
+    </p>
+    <p class="product__price font-barlow">
+        @@prix
+    </p>
+    <input type="hidden" class="add-to-cart-url"
+    value="/on/demandware.store/Sites-Kusmi_FR-Site/fr_FR/Cart-AddProduct?pid=@@data-pid">
+    <!-- dwMarker="linclude" dwTemplateTitle="/default/product/components/addToCartGlobal.isml (app_fastcommerce)" dwTemplateURL="http://localhost:60606/target=/app_fastcommerce/cartridge/templates/default/product/components/addToCartGlobal.isml" -->
+    <button class="product__button font-barlow add-to-cart" title="Ajouter au panier" data-pid='@@data-pid' data-loyalty='false' data-gift='false' data-promo='null' data-gtm="@@data-gtm" data-gtm-event-added='true'>
+        Ajouter
+    </button>
+</div>
+
