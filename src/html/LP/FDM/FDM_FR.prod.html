@@ -26,10 +26,29 @@
 <!-- CSS Splide -->
 <link href="script/splide.min.css?$staticlink$" rel="stylesheet">
 <style>
-    .splide--pdp .splide__arrow svg {height: 30px;width: 30px;fill: #fff;}.splide--pdp .splide__arrow {background: none;opacity: 1;}
+    
 </style>
 
 <div class="fdm_2024">
+    <section class="hero">
+        <div class="hero__container">
+            <h2 class="hero__title font-sophillia">
+                Fête des mères
+            </h2>
+            <h3 class="hero__subtitle font-barlow">
+                Un cadeau infusé d'amour
+            </h3>
+            @@include('_components/image.html', {
+                "lien": "images/landing_page/2024/fdm/storytelling_image.webp?$staticlink$",
+                "alt": "Cliquer pour ajouter au panier Rituel Sommeil",
+                "class": "hero__image image-absolute--first",
+                "lien-produit": "21251A1070",
+            })
+            <p class="hero__description font-barlow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+            </p>
+        </div>
+    </section>
     <section class="bestsellers">
         @@include('_components/h3.html', {
             "texte": "Nos bestsellers",
@@ -92,15 +111,20 @@
             "class": "storytelling__subtitle",
         })
         @@include('_components/image.html', {
-            "lien": "",
-            "alt": "",
-            "class": "storytelling__image",
+            "lien": "images/landing_page/2024/fdm/storytelling_image.webp?$staticlink$",
+            "alt": "Cliquer pour ajouter au panier Rituel Sommeil",
+            "class": "storytelling__image image-absolute--second",
+            "lien-produit": "21251A1070",
         })
         <p class="storytelling__description font-barlow">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
         </p>
     </div>
     <section class="the-infusions">
+        @@include('_components/h3.html', {
+            "texte": "Nos thés et infusions",
+            "class": "the-infusions__title",
+        })
         <div class="splide the-infusions__splide" role="group">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -160,6 +184,50 @@
             </div>
         </div>
     </section>
+    <div class="coffrets">
+        @@include('_components/h3.html', {
+            "texte": "Nos coffrets",
+            "class": "coffrets__title",
+        })
+        <p class="coffrets__description font-barlow">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+        </p>
+        <div class="coffrets__container">
+            @@include('_components/element.html', {
+                "class": "coffrets__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+            @@include('_components/element.html', {
+                "class": "coffrets__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+            @@include('_components/element.html', {
+                "class": "coffrets__product",
+                "alt": "Ajouter Rituel Sommeil au panier",
+                "data-pid": "21251A1070",
+                "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+
+                "nom": "Rituel Sommeil",
+                "description": "Tisane pour dormir, délicieuse et bio",
+                "prix": "23,90€",
+                "data-gtm": "",
+            })
+        </div>
+    </div>
     <section class="accessoires">
         @@include('_components/h3.html', {
             "texte": "Nos accessoires",

@@ -2,12 +2,79 @@
     width: 100%;
 }
 
-.bestsellers__title, .storytelling__title, .accessoires__title, .happy-ending__title {
+.bestsellers__title, .storytelling__title, .accessoires__title, .happy-ending__title, .the-infusions__title, .coffrets__title {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 1rem;
+}
+
+.hero {
+    padding-block: 1.5rem;
+    @include min1024() {
+        height: 323px;
+        background-image: url('images/landing_page/2024/fdm/hero_image.webp?$staticlink$');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__container {
+        @include min1024() {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 30px;
+        @include min1024() {
+            font-size: 3.5rem;
+            color: #fff;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        letter-spacing: initial;
+        text-align: center;
+        text-transform: initial;
+        @include min1024() {
+            color: #fff;
+        }
+    }
+    &__image {
+        width: 100%;
+        min-height: 243px;
+        height: 30vh;
+        margin-bottom: 1rem;
+        @include min768() {
+            height: 40vh;
+        }
+        @include min1024() {
+            display: none;
+        }
+    }
+    &__description {
+        font-size: 14px;
+        font-weight: 500;
+        margin-inline: auto;
+        width: 85%;
+        margin-bottom: 0;
+        text-align: center;
+        @include min1024() {
+            font-size: 1rem;
+            color: #fff;
+        }
+    }
 }
 
 .product__button, .happy-ending__cta {
@@ -37,14 +104,22 @@
 .product {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
+    height: 380px;
+
+    &__description {
+        color: #000;
+    }
+    &__price {
+        color: #000;
+    }
 
     &__image {
-        height: 207px;
         width: 100%;
         object-fit: cover;
         margin-bottom: .5rem;
+        height: 207px;
     }
     &__title {
         font-size: 18px;
@@ -62,83 +137,177 @@
         font-size: 18px;
         margin-bottom: .5rem;
     }
-    &__cta {
+    &__button {
+        background-color: #fff;
+        color: #000;
         cursor: pointer;
+        transition: background .25s ease;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
     }
 
 }
 .image-absolute {
+    display: flex;
     position: relative;
     &__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        &::after {
-            content: url("data:image/svg+xml,%3Csvg width='11' height='13' viewBox='0 0 11 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10.3125 3.25H8.25V2.6C8.25 1.91044 7.96027 1.24912 7.44454 0.761522C6.92882 0.273928 6.22935 0 5.5 0C4.77065 0 4.07118 0.273928 3.55546 0.761522C3.03973 1.24912 2.75 1.91044 2.75 2.6V3.25H0.6875C0.505164 3.25 0.330295 3.31848 0.201364 3.44038C0.072433 3.56228 0 3.72761 0 3.9V11.05C0 11.5672 0.217299 12.0632 0.604092 12.4289C0.990886 12.7946 1.51549 13 2.0625 13H8.9375C9.48451 13 10.0091 12.7946 10.3959 12.4289C10.7827 12.0632 11 11.5672 11 11.05V3.9C11 3.72761 10.9276 3.56228 10.7986 3.44038C10.6697 3.31848 10.4948 3.25 10.3125 3.25ZM4.125 2.6C4.125 2.25522 4.26987 1.92456 4.52773 1.68076C4.78559 1.43696 5.13533 1.3 5.5 1.3C5.86467 1.3 6.21441 1.43696 6.47227 1.68076C6.73013 1.92456 6.875 2.25522 6.875 2.6V3.25H4.125V2.6ZM9.625 11.05C9.625 11.2224 9.55257 11.3877 9.42364 11.5096C9.29471 11.6315 9.11984 11.7 8.9375 11.7H2.0625C1.88016 11.7 1.7053 11.6315 1.57636 11.5096C1.44743 11.3877 1.375 11.2224 1.375 11.05V4.55H2.75V5.2C2.75 5.37239 2.82243 5.53772 2.95136 5.65962C3.0803 5.78152 3.25516 5.85 3.4375 5.85C3.61984 5.85 3.7947 5.78152 3.92364 5.65962C4.05257 5.53772 4.125 5.37239 4.125 5.2V4.55H6.875V5.2C6.875 5.37239 6.94743 5.53772 7.07636 5.65962C7.2053 5.78152 7.38016 5.85 7.5625 5.85C7.74484 5.85 7.9197 5.78152 8.04864 5.65962C8.17757 5.53772 8.25 5.37239 8.25 5.2V4.55H9.625V11.05Z' fill='black'/%3E%3C/svg%3E ");;
-            width: 11px;
-            height: 13px;
-            background-color: #fff;
-            padding: 1rem;
-            border-radius: 100px;
-            display: block;
-            position: absolute;
-            right: 5%;
-            top: 15%;
+    }
+    &.image-absolute--first .image-absolute__button {
+        left: 5%;
+        bottom: 15%;
+    }
+    &.image-absolute--second .image-absolute__button {
+        right: 5%;
+        top: 15%;
+    }
+    &__button {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 0.6rem .75rem;
+        border-radius: 100px;
+        display: block;
+        position: absolute;
+        transition: .25s all ease-in;
+        &:hover {
+            background-color: #000;
+            path {
+                fill: #fff;
+            }
         }
+    }
+    
+}
+
+.custom {
+    &__arrow {
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        background: white;
+        opacity: 1;
     }
 }
 
 .storytelling {
+    position: relative;
     width: 100%;
     padding-block: 1.5rem;
     &__image {
         width: 100%;
         height: 231px;
+        @include min768() {
+            height: 40vh;
+            min-height: 231px;
+        }
     }
     &__title {
         text-align: center;
         margin-bottom: .5rem;
     }
     &__subtitle {
+        letter-spacing: initial;
         font-weight: 500;
         font-size: 18px;
         margin-bottom: 0;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        line-height: 15px;
     }
     &__description {
         width: 90%;
+        margin-inline: auto;
         font-weight: 500;
         font-size: 14px;
         margin-block: 1.5rem 0;
+        text-align: center;
     }
 }
 
-.thes-infusions {
+.the-infusions {
     padding: 1.5rem 1rem;
 
+}
+
+.coffrets {
+    padding: 1.5rem 1rem;
+    &__title, &__description {
+        text-align: center;
+    }
+    &__description {
+        width: 90%;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .product__image {
+        width: 100%;
+        height: 193px;
+        @include min768() {
+            height: 280px;
+        }
+    }
+    &__product {
+        width: 85%;
+        height: auto;
+        @include min768() {
+            width: 75%;
+        }
+        &:first-child, &:last-child {
+            align-self: flex-start;
+        }
+        &:nth-child(2) {
+            align-self: flex-end;
+            align-items: flex-end;
+        }
+    }
 }
 
 .accessoires {
     padding: 1.5rem 1rem;
+    &__image {
+        height: 207px;
+    }
 }
 .happy-ending {
-    background-image: url('images/landing_page/2024/fdm/storytelling_image.webp?$staticlink$');
-    background-color: #ffffff65;
-    height: 365px;
+    background: 
+        linear-gradient(to right, rgb(255, 255, 255, .5), rgb(255, 255, 255, .5)), 
+        url('images/landing_page/2024/fdm/storytelling_image.webp?$staticlink$') no-repeat center;
+    background-size: cover;
+    height: 331px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-block: 1.5rem;
     &__title {
         margin-bottom: .5rem;
         text-align: center;
-        margin-bottom: .5rem;
     }
     &__description {
-        margin-bottom: 1.5rem;
         width: 60%;
         font-weight: 500;
         font-size: 14px;
-        margin-block: 1.5rem 0;
+        margin-block: 0 1.5re0;
+        text-align: center;
+        color: #000;
+    }
+    &__cta {
+        color: #000;
+        cursor: pointer;
     }
 }
