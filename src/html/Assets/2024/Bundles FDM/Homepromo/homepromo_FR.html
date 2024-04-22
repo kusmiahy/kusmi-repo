@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/bundle_fdm_assets.scss";
+
+    Content asset : FDM_bundle_HOME_PROMO
+
+    Nom de la classe parent : FDM_bundle_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 FDM_bundle_homepromo_2024">
+    <a href="$url('Seasonal-Show')$" title="Découvrez nos duo spécial Fête des Mères aux couleurs d’AquaRosa">
+        @@include('../components/homepromo.html', {
+            "alt": "Découvrez nos duo spécial Fête des Mères aux couleurs d’AquaRosa",
+            "title": "Bonne fête maman !",
+            "subtitle": "Découvrez nos duo spécial Fête des Mères aux couleurs d’AquaRosa",
+            "text-link": "<span class='hide-mobile-homepromo'>CTA texte desktop</span><span class='hide-desktop-homepromo'>CTA texte mobile ></span>",
+        })
+    </a>
+</section>

@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/gamme_fdm_assets.scss";
+
+    Content asset : FDM_GAMME_2024_HP
+
+    Nom de la classe parent : gamme_fdm_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="gamme_fdm_hero_2024">
+    <a href="$url('Seasonal-Show')$" title="Klicken Sie auf &quot;Jetzt entdecken&quot;, um unser Angebot zum Muttertag zu entdecken">
+        @@include('../components/slot.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt entdecken&quot;, um unser Angebot zum Muttertag zu entdecken",
+            "title": "Alles Gute zum Muttertag!",
+            "subtitle": "Ein Geschenk voller Liebe",
+            "text-link": "Jetzt entdecken",
+        })
+    </a>
+</section>									

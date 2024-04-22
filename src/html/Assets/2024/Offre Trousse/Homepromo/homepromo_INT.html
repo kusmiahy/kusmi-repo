@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_trousse_fdm.scss";
+
+    Content asset : Offre_Trousse_FDM_HOME_PROMO
+
+    Nom de la classe parent : offre_trousse_fdm_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_trousse_fdm_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Take advantage of a free kit in AquaRosa colors for purchases over 55€">
+        @@include('../components/homepromo.html', {
+            "alt": "Take advantage of a free kit in AquaRosa colors for purchases over 55€",
+            "title": "Free gift pouch!",
+            "subtitle": "An AquaRosa-colored pouch offered with purchases over 55€",
+            "text-link": "<span class='hide-mobile-homepromo'>Shop now</span><span class='hide-desktop-homepromo'>Free gift pouch! ></span>",
+        })
+    </a>
+</section>

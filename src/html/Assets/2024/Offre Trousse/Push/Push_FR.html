@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_trousse_fdm.scss";
+
+    Content asset : Offre_Trousse_FDM_PUSH
+
+    Nom de la classe parent : offre_trousse_fdm_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_trousse_fdm_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Profitez d'une trousse offerte aux couleurs d’AquaRosa dès 55€ d'achats">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Profitez d'une trousse offerte aux couleurs d’AquaRosa dès 55€ d'achats",
+            "texte-h2": "Trousse offerte !",
+            "texte-h3": "Une trousse aux couleurs d’AquaRosa dès 55€ d'achats",
+            "texte-link": "J'en profite",
+        })
+    </div>
+</a>

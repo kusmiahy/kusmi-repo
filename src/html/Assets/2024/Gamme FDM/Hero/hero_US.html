@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/gamme_fdm_assets.scss";
+
+    Content asset : FDM_GAMME_2024_HP
+
+    Nom de la classe parent : gamme_fdm_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="gamme_fdm_hero_2024">
+    <a href="$url('Seasonal-Show')$" title="Click on &quot;Discover now&quot; to discover our Mother's Day offer 20% OFF on all the gift sets">
+        @@include('../components/slot.html', {
+            "alt": "Click on &quot;Discover now&quot; to discover our Mother's Day offer 20% OFF on all the gift sets",
+            "title": "Happy Mother's Day!",
+            "subtitle": "20% OFF on all the gift sets",
+            "text-link": "Discover now",
+        })
+    </a>
+</section>									
