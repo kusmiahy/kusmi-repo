@@ -32,6 +32,8 @@ This README would normally document whatever steps are necessary to get your app
 <a href="$url('Page-Show','cid','cart-topbanner')$">Lien vers l'url de mon content asset dont l'id = cart-topbanner</a>
 <!-- Lien vers une page seasonal show (noël) -->
 <a href="$url('Seasonal-Show','cid','')$">Lien vers ma catégorie dont l'id = vestes</a>
+* Pour montrer la page FAQ
+$url('Faq-Show')$
 * Pour créer un compte
 $url('Account-Show')$
 * Pour se connecter

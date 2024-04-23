@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/lancement_fid.scss";
+
+    Content asset : LANCEMENT_KK_HP_PROMO
+
+    Nom de la classe parent : lancement_fid_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 lancement_fid_homepromo_2024">
+    <a href="$url('Seasonal-Show')$" title="Nouveau Kusmiklub ! Votre fidélité récompensée : Bénéficiez d'un BON D’ACHAT DE 5€ dès 70€ d'achats">
+        @@include('../components/homepromo.html', {
+            "alt": "Nouveau Kusmiklub ! Votre fidélité récompensée : Bénéficiez d'un BON D’ACHAT DE 5€ dès 70€ d'achats",
+            "title": "Nouveau Kusmiklub !",
+            "subtitle": "Votre fidélité récompensée : Bénéficiez d'un BON D’ACHAT DE 5€ dès 70€ d'achats",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Nouveau Kusmiklub ! ></span>",
+        })
+    </a>
+</section>

@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_trousse_fdm.scss";
+
+    Content asset : Offre_Trousse_FDM_HOME_PROMO
+
+    Nom de la classe parent : offre_trousse_fdm_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_trousse_fdm_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Profitieren Sie von einer kostenlosen Tasche in den Farben von AquaRosa ab einem Einkaufswert von CHF 75">
+        @@include('../components/homepromo.html', {
+            "alt": "Profitieren Sie von einer kostenlosen Tasche in den Farben von AquaRosa ab einem Einkaufswert von CHF 75",
+            "title": "Ein Täschchen in den Farben von AquaRosa GESCHENKT",
+            "subtitle": "ab einem Einkaufswert von CHF 75",
+            "text-link": "<span class='hide-mobile-homepromo'>Jetzt nutzen</span><span class='hide-desktop-homepromo'>Ein Täschchen Aquarosa geschenkt!* ></span>",
+        })
+    </a>
+</section>
