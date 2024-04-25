@@ -19,6 +19,7 @@
         background-size: cover;
         display: flex;
         justify-content: flex-start;
+        background-position: right center;
     }
     &__container {
         @include min1024() {
@@ -77,7 +78,7 @@
     }
 }
 
-.product__button, .happy-ending__cta {
+.product__button, .happy-ending__cta, .storytelling__cta {
     font-weight: 600;
     text-transform: uppercase;
     border: 1px solid black;
@@ -89,6 +90,12 @@
 
 .bestsellers {
     padding: 1.5rem 1rem;
+    @include min1024() {
+        padding: 1.5rem 80px;
+    }
+    @include min1440() {
+        padding: 1.5rem 156px;
+    }
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -98,6 +105,9 @@
 
     &__product {
         width: 47.2%;
+        @include min1024() {
+            width: 23%;
+        }
     }
 }
 
@@ -107,6 +117,9 @@
     justify-content: space-between;
     align-items: flex-start;
     height: 380px;
+    @include min1024() {
+        height: 361px;
+    }
 
     &__description {
         color: #000;
@@ -120,6 +133,9 @@
         object-fit: cover;
         margin-bottom: .5rem;
         height: 207px;
+        @include min1024() {
+            height: 229px;
+        }
     }
     &__title {
         font-size: 18px;
@@ -197,6 +213,12 @@
     position: relative;
     width: 100%;
     padding-block: 1.5rem;
+    @include min1024() {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2.5rem 80px 1.5rem;
+        gap: 1.5rem;
+    }
     &__image {
         width: 100%;
         height: 231px;
@@ -204,10 +226,29 @@
             height: 40vh;
             min-height: 231px;
         }
+        @include min1024() {
+            width: 50%;
+        }
+    }
+    &__container {
+        @include min1024() {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__title {
         text-align: center;
         margin-bottom: .5rem;
+        @include min1024() {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__subtitle {
         letter-spacing: initial;
@@ -217,6 +258,9 @@
         text-align: center;
         margin-bottom: 1.5rem;
         line-height: 15px;
+        @include min1024() {
+            margin-bottom: 1.5rem;
+        }
     }
     &__description {
         width: 90%;
@@ -225,18 +269,55 @@
         font-size: 14px;
         margin-block: 1.5rem 0;
         text-align: center;
+        
+        @include min1024() {
+            margin-block: 0 1.5rem;
+            width: 75%;
+        }
+    }
+    &__cta {
+        margin-bottom: 0;
+        color: #000;
     }
 }
 
 .the-infusions {
     padding: 1.5rem 1rem;
-
+    @include min1024() {
+        padding: 1.5rem 80px;
+    }
+    @include min1440() {
+        padding: 1.5rem 156px;
+    }
+    &__product {
+        @include min1024() {
+            width: 100%;
+            height: 400px;
+        }
+        .product__image {
+            padding: 1rem;
+            object-fit: contain;
+            @include min1024() {
+                padding: 2rem;
+            }
+        }
+    }
 }
 
 .coffrets {
     padding: 1.5rem 1rem;
+    @include min1024() {
+        padding: 3.5rem 80px 1.5rem;
+        display: flex;
+    }
+    @include min1440() {
+        padding: 3.5rem 156px 1.5rem;
+    }
     &__title, &__description {
         text-align: center;
+        @include min1024() {
+            text-align: left;
+        }
     }
     &__description {
         width: 90%;
@@ -245,6 +326,16 @@
         font-weight: 500;
         font-size: 14px;
         text-align: center;
+        @include min1024() {
+            width: 75%;
+            margin-inline: 0;
+            margin-bottom: 0;
+        }
+    }
+    &__text-container {
+        @include min1024() {
+            margin: auto;
+        }
     }
     &__container {
         display: flex;
@@ -252,6 +343,10 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        @include min1024() {
+            flex-direction: row;
+            width: 85%;
+        }
     }
     .product__image {
         width: 100%;
@@ -266,20 +361,46 @@
         @include min768() {
             width: 75%;
         }
+        @include min1024() {
+            width: 75%;
+            align-items: flex-start;
+            height: 400px;
+            text-align: left;
+        }
         &:first-child, &:last-child {
             align-self: flex-start;
         }
         &:nth-child(2) {
             align-self: flex-end;
-            align-items: flex-end;
+        }
+        &:nth-child(2) h4, &:nth-child(2) p, &:nth-child(2) {
+            align-self: flex-end;
         }
     }
 }
 
 .accessoires {
     padding: 1.5rem 1rem;
-    &__image {
-        height: 207px;
+    @include min1024() {
+        padding: 2rem 80px 1.5rem;
+    }
+    @include min1440() {
+        padding: 2rem 156px 1.5rem;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__product {
+        @include min1024() {
+            width: 100%;
+            height: 400px;
+        }
+        .product__image {
+            padding: 1rem;
+            object-fit: contain;
+            @include min1024() {
+            }
+        }
     }
 }
 .happy-ending {

@@ -9,7 +9,7 @@
 // --------------------- Library -------------------------
 @import "./style/specific/2024/LP/fdm.scss";
 
-    Content asset : 
+    Content asset : lp-fdm-2024
 
     Nom de la classe parent : fdm_2024
 
@@ -25,9 +25,9 @@
 
 <!-- CSS Splide -->
 <link href="script/splide.min.css?$staticlink$" rel="stylesheet">
-<style>
+<!-- <style>
     
-</style>
+</style> -->
 
 <div class="fdm_2024">
     <section class="hero">
@@ -45,7 +45,7 @@
                 "lien-produit": "21251A1070",
             })
             <p class="hero__description font-barlow">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="hide-mobile"><br></span>Suspendisse justo odio, aliquet consectetur adipiscing elit
             </p>
         </div>
     </section>
@@ -102,21 +102,29 @@
         </div>
     </section>
     <div class="storytelling">
-        @@include('_components/h3.html', {
-            "texte": "Lorem Ipsum Dolor",
-            "class": "storytelling__title",
-        })
-        @@include('_components/h4.html', {
-            "texte": "Un cadeau infusé d'amour",
-            "class": "storytelling__subtitle",
-        })
+        <div class="storytelling__container">
+            @@include('_components/h3.html', {
+                "texte": "Lorem Ipsum Dolor",
+                "class": "storytelling__title",
+            })
+            @@include('_components/h4.html', {
+                "texte": "Un cadeau infusé d'amour",
+                "class": "storytelling__subtitle",
+            })
+            <p class="storytelling__description font-barlow hide-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+            </p>
+            <a href="" class="font-barlow storytelling__cta hide-mobile">
+                Je découvre
+            </a>
+        </div>
         @@include('_components/image.html', {
             "lien": "images/landing_page/2024/fdm/storytelling_image.webp?$staticlink$",
             "alt": "Cliquer pour ajouter au panier Rituel Sommeil",
             "class": "storytelling__image image-absolute--second",
             "lien-produit": "21251A1070",
         })
-        <p class="storytelling__description font-barlow">
+        <p class="storytelling__description font-barlow hide-desktop">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
         </p>
     </div>
@@ -133,7 +141,7 @@
                             "class": "the-infusions__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -146,7 +154,7 @@
                             "class": "the-infusions__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -159,7 +167,7 @@
                             "class": "the-infusions__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -172,7 +180,7 @@
                             "class": "the-infusions__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -185,13 +193,15 @@
         </div>
     </section>
     <div class="coffrets">
-        @@include('_components/h3.html', {
-            "texte": "Nos coffrets",
-            "class": "coffrets__title",
-        })
-        <p class="coffrets__description font-barlow">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
-        </p>
+        <div class="coffrets__text-container">
+            @@include('_components/h3.html', {
+                "texte": "Nos coffrets",
+                "class": "coffrets__title",
+            })
+            <p class="coffrets__description font-barlow">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse justo odio, aliquet 
+            </p>
+        </div>
         <div class="coffrets__container">
             @@include('_components/element.html', {
                 "class": "coffrets__product",
@@ -241,7 +251,7 @@
                             "class": "accessoires__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -254,7 +264,7 @@
                             "class": "accessoires__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -267,7 +277,7 @@
                             "class": "accessoires__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",
@@ -280,7 +290,7 @@
                             "class": "accessoires__product",
                             "alt": "Ajouter Rituel Sommeil au panier",
                             "data-pid": "21251A1070",
-                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_product.webp?$staticlink$",
+                            "lien-img": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
 
                             "nom": "Rituel Sommeil",
                             "description": "Tisane pour dormir, délicieuse et bio",

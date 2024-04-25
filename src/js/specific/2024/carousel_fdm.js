@@ -6,22 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
             autoplay: true,
             speed: 1000,
             easing: 'ease',
-            perPage: 6,
+            perPage: 4,
             perMove: 1,
             pagination: false,
             gap: '.5rem',
                 breakpoints: {
                     767: {
                         perPage: 2,
-                        gap: '.5rem',
                     },
                     1024: {
                         perPage: 4,
-                        gap: '.5rem',
-                    },
-                    1440: {
-                        perPage: 5,
-                        gap: '.5rem',
                     },
                 },
             classes: {
@@ -40,22 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
             autoplay: true,
             speed: 1000,
             easing: 'ease',
-            perPage: 6,
+            perPage: 5,
             perMove: 1,
             pagination: false,
             gap: '.5rem',
                 breakpoints: {
                     767: {
                         perPage: 2,
-                        gap: '.5rem',
                     },
                     1024: {
                         perPage: 4,
-                        gap: '.5rem',
-                    },
-                    1440: {
-                        perPage: 5,
-                        gap: '.5rem',
                     },
                 },
             classes: {
