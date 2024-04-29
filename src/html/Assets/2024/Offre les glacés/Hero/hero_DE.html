@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_glace.scss";
+
+    Content asset : OFFRE_LES_THES_GLACES_HP
+
+    Nom de la classe parent : offre_glace_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_glace_hero_2024">
+    <a href="$url('Search-Show','cgid','carafes_a_the_glace')$" title="Erfrischen Sie sich mit unseren Eistee-Sets für nur 39,90€">
+        @@include('../components/slot.html', {
+            "alt": "Erfrischen Sie sich mit unseren Eistee-Sets für nur 39,90€",
+            "title": "Eistee-Angebot",
+            "subtitle": "Eistee-Set für 39,90€",
+            "text-link": "Jetzt nutzen",
+        })
+    </a>
+</section>

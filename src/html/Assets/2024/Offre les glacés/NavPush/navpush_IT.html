@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_glace.scss";
+
+    Content asset : OFFRE_LES_THES_GLACES_NAV_PUSH
+
+    Nom de la classe parent : offre_glace_navpush_2024
+
+-->
+
+<section class="offre_glace_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Rinfrescatevi con i nostri servizio da tè freddo a soli 39,90 €",
+        "texte": "Servizio da tè freddo a 39,90 €",
+        "lien": "$url('Search-Show','cgid','accessories_m')$",
+    })
+</section>

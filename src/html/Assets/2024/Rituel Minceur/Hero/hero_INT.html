@@ -1,0 +1,37 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_immunitaire.scss";
+
+    Content asset : RITUEL_IMMUNITAIRE_HERO
+
+    Nom de la classe parent : rituel_immunitaire_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="rituel_immunitaire_hero_2023">
+    <a href="$url('Product-Show','pid','21153A1070')$">
+        @@include('../components/slot.html', {
+            "alt": "Click on &quot;Discover now&quot; to discover our new product &quot;Immune System green tea&quot;",
+            "title": "Boost your<br>immune system",
+            "subtitle": "Innovation: discover our Immune Defense Ritual green tea enriched with vitamin C.",
+            "text-link": "Discover now",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_en.svg?$staticlink$",
+            "pastille-efficacite": "images/assets/2023/rituel_immunitaire/efficacite_prouve_en.svg?$staticlink$",
+            "alt-new": "Sticker new",
+            "alt-efficacite": "Sticker proven effectiveness",
+            "class-pastille": "pastille-nouveau--int",
+            "class-pastille-efficacite": "pastille-efficacite--int",
+        })
+    </a>
+</section>

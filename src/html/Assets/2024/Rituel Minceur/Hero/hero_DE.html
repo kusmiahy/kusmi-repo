@@ -1,0 +1,37 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/rituel_immunitaire.scss";
+
+    Content asset : RITUEL_IMMUNITAIRE_HERO
+
+    Nom de la classe parent : rituel_immunitaire_hero_2023
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="rituel_immunitaire_hero_2023">
+    <a href="$url('Product-Show','pid','21153A1070')$">
+        @@include('../components/slot.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt entdecken&quot;, um unser neues Produkt &quot;Ritual Immunabwehr&quot; kennenzulernen;",
+            "title": "Stärken Sie<span class='x-hide-mobile'><br></span>Ihre Immunabwehr",
+            "subtitle": "Innovation: Entdecken Sie unseren grünen Tee Ritual Immunabwehr mit Vitamin C angereichert.",
+            "text-link": "Jetzt entdecken",
+            "pastille-new": "images/assets/2023/rituel_immunitaire/nouveau_pastille_de.svg?$staticlink$",
+            "pastille-efficacite": "images/assets/2023/rituel_immunitaire/efficacite_prouve_de.svg?$staticlink$",
+            "alt-new": "Neuheitspastille",
+            "alt-efficacite": "Pastille erwiesenermaßen wirksam",
+            "class-pastille": "pastille-nouveau--de",
+            "class-pastille-efficacite": "pastille-efficacite--de",
+        })
+    </a>
+</section>

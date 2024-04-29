@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_glace.scss";
+
+    Content asset : OFFRE_LES_THES_GLACES_PUSH
+
+    Nom de la classe parent : offre_glace_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_glace_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','ensemble-a-the-glace')$" title="Rafraîchissez-vous avec nos ensembles à thé glacé à seulement 39,90 €">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Rafraîchissez-vous avec nos ensembles à thé glacé à seulement 39,90 €",
+            "texte-h2": "Offre thé glacé",
+            "texte-h3": "Ensemble à thé glacé à 39,90€",
+            "texte-link": "J'en profite",
+        })
+    </div>
+</a>

@@ -2,8 +2,10 @@ $article-title: #731f4b;
 $green-bio: #3cad2b;
 $orange-rituel: #ff6b36;
 $violet-rituel: #1e2d74;
+$minceur-rituel: #703975;
 $bg-rituel-somm: #eceef5;
 $bg-rituel-immu: #fff7f5;
+$bg-rituel-minceur: #fde7ff;
 $couleur-texte: $violet-rituel;
 $background-rituel: $bg-rituel-somm;
 
@@ -28,6 +30,9 @@ $title-size-desk: 1.5rem;
 }
 .bleu-rituel {
     color: $violet-rituel;
+}
+.minceur-rituel {
+    color: $minceur-rituel;
 }
 
 .title-wrapper__subtitle {
@@ -74,6 +79,10 @@ $title-size-desk: 1.5rem;
         margin-inline: .8rem;
         color: $orange-rituel;
     }
+    &--minceur {
+        margin-inline: .8rem;
+        color: $minceur-rituel;
+    }
 }
 
 .ingredients {
@@ -111,6 +120,13 @@ $title-size-desk: 1.5rem;
 
         .container .component .component__texte .texte__titre {
             color: $orange-rituel;
+        }
+    }
+    &.ingredients--minceur {
+        background-color: $bg-rituel-minceur;
+
+        .container .component .component__texte .texte__titre {
+            color: $minceur-rituel;
         }
     }
 

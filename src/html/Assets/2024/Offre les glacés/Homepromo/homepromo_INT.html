@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_glace.scss";
+
+    Content asset : OFFRE_LES_THES_GLACES_PROMO
+
+    Nom de la classe parent : offre_glace_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_glace_homepromo_2024">
+    <a href="$url('Search-Show','cgid','iced-tea-set')$" title="Refresh yourself with our iced teas sets at only 39,90€">
+        @@include('../components/homepromo.html', {
+            "alt": "Refresh yourself with our iced teas sets at only 39,90€",
+            "title": "Iced tea offer",
+            "subtitle": "Iced tea set for 39,90€",
+            "text-link": "<span class='hide-mobile-homepromo'>Shop now</span><span class='hide-desktop-homepromo'>Iced tea set for 39,90€ ></span>",
+        })
+    </a>
+</section>
