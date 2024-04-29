@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.offre_glace_navpush_2024';
+var classParent = '.rituel_minceur_hero_2024';
 
 const {
     series,

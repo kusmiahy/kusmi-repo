@@ -1,0 +1,620 @@
+$color-text: #000;
+$color-bg: #AA0033;
+$color-text-hero-push: #000;
+
+.rituel_minceur_push_2024 {
+    width: 100%;
+    margin-block: 5px;
+
+    @include min1024() {
+        margin-block: 10px;
+    }
+}
+
+.rituel_minceur_hero_2024,
+.rituel_minceur_homepromo_2024 {
+    width: 100%;
+}
+
+.rituel_minceur_homepromo_2024 {
+    @include min1024() {
+        width: 50%;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    picture {
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .pastille--proven-efficacy {
+        position: absolute;
+        bottom: 42%;
+        right: 11%;
+        width: 20%;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+        &.pastille-efficacite--de {
+            width: 25%;
+
+            @include min768() {
+                bottom: 59%;
+                right: 12%;
+                width: 20%;
+            }
+
+            @include min1024() {
+                right: 15%;
+                width: 15%;
+            }
+
+            @include min1440() {
+                right: 17%;
+                width: 13%;
+            }
+
+            @include min1920() {
+                right: 17%;
+                width: 12%;
+            }
+        }
+
+        &.pastille-efficacite--int {
+            bottom: 40%;
+            right: 13%;
+            width: 17%;
+
+            @include min768() {
+                bottom: 59%;
+                right: 16%;
+                width: 13%;
+            }
+
+            @include min1024() {
+                bottom: auto;
+                right: 19%;
+                width: 8%;
+                top: 10%;
+            }
+
+            @include min1440() {
+                right: 19%;
+                top: 8%;
+                width: 8%;
+            }
+        }
+
+        @include min768() {
+            bottom: 62%;
+            right: 6%;
+            width: 13%;
+        }
+
+        @include min1024() {
+            bottom: auto;
+            right: 19%;
+            width: 9%;
+            top: 6%;
+        }
+
+        @include min1440() {
+            bottom: auto;
+            right: 20%;
+            top: 10%;
+            width: 7%;
+        }
+    }
+
+    &__container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem 1rem 3rem;
+
+        @include min768() {
+            padding: .8rem 2.3rem 3rem;
+        }
+
+        @include min1024() {
+            padding: 1.2rem 2.6rem 3rem;
+            justify-content: flex-start;
+        }
+
+        @include min1440() {
+            padding: 2.5rem 5rem 4.5rem;
+        }
+
+        @include min1920() {
+            padding: 5.5rem 5.5rem 11.5rem;
+        }
+
+        .texte-container {
+            display: flex;
+
+            @include min768() {
+                width: 460px;
+            }
+
+            @include min1024() {
+                width: 515px;
+                height: 100%;
+                justify-content: space-between;
+            }
+
+            @include min1920() {
+                width: 600px;
+            }
+
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: .5rem;
+
+                .pastille--new {
+                    width: 21%;
+
+                    &.pastille-nouveau--de {
+                        width: 9%;
+                    }
+
+                    &.pastille-nouveau--int {
+                        width: 14%;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .pastille-ap {
+                    font-weight: 700;
+                    color: #000;
+                    padding-block: .2rem;
+                    border-bottom: 3px solid #000;
+                    border-top: 3px solid #000;
+                    text-transform: uppercase;
+                    line-height: 14px;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    @include min1024() {
+                        padding-block: .3rem;
+                        line-height: 16px;
+                        font-size: 20px;
+                        border-bottom: 4px solid #000;
+                        border-top: 4px solid #000;
+                    }
+                }
+
+
+                h2,
+                h3 {
+                    color: $color-text-hero-push;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                    text-align: left;
+                    line-height: 1.1;
+                    margin-bottom: 0;
+                    leading-trim: both;
+                    text-edge: cap;
+
+                    @include min768() {
+                        font-size: 40px;
+                    }
+
+                    @include min1024() {
+                        font-size: 37px;
+                    }
+
+                    @include min1440() {
+                        font-size: 3rem;
+                    }
+                }
+
+                h3 {
+                    text-transform: none;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    letter-spacing: 0.325px;
+                    text-align: left;
+                    width: 200px;
+                    line-height: 1.2rem;
+
+                    @include min768() {
+                        font-size: 20px;
+                        line-height: 1.5rem;
+                        width: 270px;
+                    }
+
+                    @include min1440() {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        .ctas-container {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            @include min1024() {
+                flex-direction: row;
+            }
+
+            .cta {
+                margin-block: 0;
+                width: auto;
+                line-height: 10px;
+                background-color: #141414;
+                color: #fff;
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 15px 25px;
+                border: 1px solid #fff;
+                transition: .2s ease-in;
+
+
+                @include min768() {
+                    padding: 15px 20px;
+                    font-size: 1rem;
+                    line-height: 13px;
+                }
+
+                @include min1024() {
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: #141414;
+                }
+            }
+        }
+    }
+
+}
+
+.push {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &:hover {
+        .text .cta {
+            text-decoration: none;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            @include min768() {
+                object-position: right
+            }
+            @include min1024() {
+                object-position: center
+            }
+        }
+    }
+
+    .pastille--proven-efficacy {
+        position: absolute;
+        width: 35%;
+        bottom: 38%;
+        right: 4%;
+
+        @include min768() {
+            width: 31%;
+            bottom: 38%;
+            right: 4%;
+        }
+
+        @include min1024() {
+            width: 33%;
+            bottom: 39%;
+            right: 5%;
+        }
+
+        @include min1440() {
+            bottom: 38%;
+        }
+        &.pastille--proven-efficacy--de {
+            width: 45%;
+            right: 1%;
+            @include min768() {
+                width: 40%;
+            }
+            @include min1024() {
+                width: 43%;
+                right: 2%;
+            }
+        }
+        &.pastille--proven-efficacy--int {
+            width: 33%;
+            bottom: 38%;
+            right: 4%;
+            @include min768() {
+                bottom: 37%;
+                right: 5%;
+            }
+            @include min1024() {
+                bottom: 37%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem .5rem;
+
+        @include min1024() {
+            padding: 1.5rem 1rem;
+        }
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: .3rem;
+
+            @include min1024() {
+                gap: .5rem;
+            }
+
+            .pastille--new {
+                height: 25px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            h2,
+            h3 {
+                color: $color-text-hero-push;
+            }
+
+            h2 {
+                font-size: 21px;
+                margin-bottom: 0;
+                line-height: 1.1;
+            }
+
+            h3 {
+                text-transform: none;
+                font-size: .9rem;
+                letter-spacing: normal;
+                margin-bottom: 0;
+                line-height: 1.15;
+                font-weight: 500;
+
+                @include min1024() {
+                    font-size: 1rem;
+                }
+
+            }
+        }
+
+        .cta {
+            text-decoration: underline;
+            font-size: .9rem;
+            font-weight: 600;
+            color: $color-text-hero-push;
+
+            @include min1024() {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+.homepromo {
+    height: 300px;
+    display: flex;
+    position: relative;
+
+    @media screen and (min-width:652px) {
+        height: 400px;
+    }
+
+    @include min1024() {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width:1650px) {
+        flex-direction: row;
+    }
+
+    &__content {
+        padding-inline: 2.45rem;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        @media screen and (min-width:652px) {
+            position: static;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: .5rem;
+            width: 50%;
+            height: 100%;
+            background-color: $color-bg;
+            padding-bottom: 0;
+            padding-top: 3rem;
+        }
+
+        @include min768() {
+            padding: 2.5rem 2.3rem 0;
+        }
+
+        @include min1024() {
+            width: 100%;
+            padding: .6rem 1.5rem 0;
+        }
+
+        @include min1440() {
+            padding: .8rem 1.5rem 0;
+        }
+
+        @media screen and (min-width:1650px) {
+            width: 50%;
+            padding: 3.7rem 2rem 0;
+        }
+
+
+        h2.title--rituel-immu,
+        h3.subtitle--rituel-immu {
+            display: none;
+
+            @media screen and (min-width:652px) {
+                margin-bottom: 0;
+                text-align: left;
+                letter-spacing: normal;
+                display: block;
+                color: $color-text;
+            }
+        }
+
+        .title--rituel-immu {
+            line-height: 1em;
+            font-weight: 600;
+            text-transform: none;
+
+            @media screen and (min-width:652px) {
+                font-size: 1.85rem;
+            }
+
+            @include min1440() {
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width:1650px) {
+                font-size: 2.3rem;
+            }
+
+            @include min1920() {
+                font-size: 2.5rem;
+            }
+        }
+
+        .subtitle--rituel-immu {
+            font-weight: 400;
+            font-size: 1.38rem;
+            line-height: 1.38rem;
+            text-transform: none;
+        }
+
+        .cta {
+            width: 100%;
+            background-color: #000;
+            padding: 12px;
+            border: 1px solid #fff;
+            color: #fff;
+            font-size: .8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 2;
+
+            @media screen and (min-width:500px) {
+                padding: 5px;
+            }
+
+            @media screen and (min-width:652px) {
+                letter-spacing: normal;
+                font-size: 1.4rem;
+                text-decoration: underline;
+                background-color: transparent;
+                padding: 0;
+                font-weight: 500;
+                border: none;
+                text-transform: none;
+                width: auto;
+                margin: 0
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (min-width:652px) {
+            width: 50%;
+        }
+
+        @include min1024() {
+            width: 100%;
+            height: 225px;
+        }
+
+        @media screen and (min-width:1650px) {
+            width: 50%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
