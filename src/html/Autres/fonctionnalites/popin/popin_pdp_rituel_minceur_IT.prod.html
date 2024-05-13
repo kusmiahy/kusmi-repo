@@ -1,0 +1,69 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/popin.scss";
+
+    Content asset : dans Akineo
+
+    Nom de la classe parent : popin_2024
+
+-->
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<div class="popin_2024">
+    @@include('./components/p-did-you-know.html', {
+        "texte": "<span class='popin__open'>Clicca su questo link per accedere alle nostre fonti.</span>",
+    })
+<dialog id="popin" class="popin__dialog">
+    @@include('./components/cta.html', {
+        "class": "dialog__close",
+        "texte": " &#x2715;",
+    })
+    <div class="dialog">
+        @@include('./components/title.html', {
+            "texte": "<strong>Informazioni sulle fonti</strong>",
+        })
+        <div class="block-container">
+            <ul>
+                @@include('./components/li.html', {
+                    "texte": "[1] World Obesity Atlas 2023. World Obesity Federation",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[2] Évaluation des risques liés aux pratiques alimentaires d'amaigrissement. ANSES. Novembre 2010",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[3] <strong>Kobayashi M, Kawano T, Ukawa Y, Sagesaka YM, Fukuhara I</strong>. Green tea beverages enriched with catechins with a galloyl moiety reduce body fat in moderately obese adults: a randomized double-blind placebo-controlled trial. Food Funct. 2016 Jan;7(1):498-507. doi: 10.1039/c5fo00750j. PMID: 26569165",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[4] <strong>Suliburska J, Bogdanski P, Szulinska M, Stepien M, Pupek-Musialik D, Jablecka</strong> A, Effects of green tea supplementation on elements, total antioxidants, lipids, and glucose values in the serum of obese patients, Biol Trace Elem Res, 2012 Dec; 149(3):315-22",
+                })
+                @@include('./components/li.html', {
+                    "texte": "[5] <strong>Auvichayapat P, Prapochanung M, Tunkamnerdthai O, Sripanidkulchai BO, Auvichayapat N, Thinkhamrop B, Kunhasura S, Wongpratoom S, Sinawat S, Hongprapas P.</strong> Effectiveness of green tea on weight reduction in obese Thais: A randomized, controlled trial. Physiol Behav. 2008 Feb 27; 93(3):486-91.",
+                })
+            </ul>
+        </div>
+        @@include('./components/cta.html', {
+            "class": "dialog__cta",
+            "texte": "Chiudere",
+        })
+    </div>
+</dialog>
+</div>
+
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+
+<!-- 
+JS USE
+// =require specific/2023/popin.js
+-->

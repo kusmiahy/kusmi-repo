@@ -35,6 +35,46 @@
 </style>
 
 <div class="pdp_rituel_2024">
+    <section class="ingredients ingredients--minceur">
+        <div class="ingredients__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--minceur",
+                "texte-titre": "Avec Rituel Minceur, prenez soin de vous tout en vous faisant plaisir !",
+            })
+        </div>
+        <div class="ingredients__container container">
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2024/rituel_minceur/bienfaits.svg?$staticlink$",
+                "alt": "pictogramme d'une femme en posture de yoga",
+                "titre": "Des bienfaits spécifiques",
+                "paragraphe": "Facilite la perte de poids, stimule le métabolisme, <strong>accélère l’oxydation des graisses</strong> et aide à brûler des calories",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2024/rituel_minceur/principe.svg?$staticlink$",
+                "alt": "pictogramme d'une feuille de thé vert",
+                "titre": "Un principe actif reconnu",
+                "paragraphe": "L’<strong>EGCG</strong> présent dans l’extrait de thé vert agit sur l’élimination des graisses",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2024/rituel_minceur/scientifique.svg?$staticlink$",
+                "alt": "pictogramme d'une fiole avec une feuille à l'intérieur",
+                "titre": "Un procédé scientifique innovant",
+                "paragraphe": "Permettant de fixer le principe actif directement sur nos ingrédients et garantissant son <strong>efficacité</strong>",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2024/rituel_minceur/picto_efficacite_fr.svg?$staticlink$",
+                "alt": "pictogramme du message efficacité prouvé",
+                "titre": "Une efficacité prouvée",
+                "paragraphe": "Les bienfaits de Rituel Minceur ont été prouvés et reconnus par des <strong>études cliniques</strong>",
+            })
+            @@include('./_components/ingredient-element.html', {
+                "lien-image": "images/pdp/2023/rituel_sommeil/plaisir.svg?$staticlink$",
+                "alt": "pictogramme d'une tasse vue d'en haut avec un coeur rouge au milieu de la tasse avec une pousse qui a deux feuilles",
+                "titre": "Un produit plaisir",
+                "paragraphe": "Au <strong>goût unique</strong>, facile à intégrer dans votre routine quotidienne",
+            })
+        </div>
+    </section>
     <section class="faq-wrapper">
         <div class="faq__title">
             @@include('./_components/title.html', {
@@ -126,5 +166,5 @@
 
 <!-- 
     JS USE
-    // =require specific/2023/rituel_immunitaire.js
+    // =require specific/2024/rituel_minceur.js
 -->

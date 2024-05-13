@@ -1,0 +1,23 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+    Content asset : GAMME_RITUEL_PUSH_NAV
+
+    Nom de la classe parent : gamme_rituel_navpush_2024
+
+-->
+
+<section class="gamme_rituel_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez pour découvrir notre nouvelle gamme &quot;Rituel, thé et infusion aux bienfaits prouvés&quot;",
+        "texte": "Agissez pour votre bien-être",
+        "lien": "$url('Search-Show','cgid','the_infusion_sante')$",
+    })
+</section>

@@ -57,21 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentURL.includes('com/fr')) {
         addLogos('.m-pdp__main-details', 'certification européenne bio', 'certification agriculture biologique', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'certification européenne bio', 'certification agriculture biologique', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_sommeil/pastille_melisse_fr.svg?$staticlink$', 'Pastille Enrichi en extrait de mélisse')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_fr.svg?$staticlink$', 'Pastille Enrichi en extrait de thé vert')
     }
     if (currentURL.includes('com/de')) {
         addLogos('.m-pdp__main-details', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_sommeil/pastille_melisse_de.svg?$staticlink$', 'Pastille Angereichert mit Melissenextrakt')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_de.svg?$staticlink$', 'Pastille Angereichert mit Grüntee-Extrakt')
     }
     if (currentURL.includes('com/int') || currentURL.includes('com/us') || currentURL.includes('com/en-ca')) {
         addLogos('.m-pdp__main-details', 'European organic certification', 'organic farming certification', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'European organic certification', 'organic farming certification', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_sommeil/pastille_melisse_en.svg?$staticlink$', 'Sticker enriched with lemon balm')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_int.svg?$staticlink$', 'Sticker enriched with green tea extract')
     }
     if (currentURL.includes('com/it')) {
         addLogos('.m-pdp__main-details', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2023/rituel_sommeil/pastille_melisse_it.svg?$staticlink$', 'Sticker arricchito con melissa')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_it.svg?$staticlink$', 'Sticker arricchito con estratto di tè verde')
     }
 })

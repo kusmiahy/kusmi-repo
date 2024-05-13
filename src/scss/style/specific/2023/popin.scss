@@ -122,7 +122,7 @@ $paragraphe-line-height-desk: 1.6rem;
     overflow-y: scroll;
 
     @include min1024() {
-        height: calc(55vh - 2rem - 55px);
+        height: calc(45vh - 2rem - 55px);
         padding-left: 1rem;
         overflow-y: auto;
     }

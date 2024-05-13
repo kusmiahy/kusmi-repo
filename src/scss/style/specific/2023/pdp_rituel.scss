@@ -2,10 +2,10 @@ $article-title: #731f4b;
 $green-bio: #3cad2b;
 $orange-rituel: #ff6b36;
 $violet-rituel: #1e2d74;
-$minceur-rituel: #703975;
+$minceur-rituel: #B10042;
 $bg-rituel-somm: #eceef5;
 $bg-rituel-immu: #fff7f5;
-$bg-rituel-minceur: #fde7ff;
+$bg-rituel-minceur: #FFFAFC;
 $couleur-texte: $violet-rituel;
 $background-rituel: $bg-rituel-somm;
 
@@ -536,7 +536,12 @@ $title-size-desk: 1.5rem;
     padding-block-end: $padding-block-mob;
 
     @include min1024() {
-        padding-block-end: 0rem;
+        padding-block: 2.5rem 0;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
     }
 
     .certifications {
@@ -557,6 +562,38 @@ $title-size-desk: 1.5rem;
                 height: 90px;
             }
 
+            &:first-child {
+                width: 80px;
+
+                @include min1024() {
+                    width: 110px;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 97px;
+
+                @include min1024() {
+                    width: 134.5px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 46px;
+
+                @include min1024() {
+                    width: 64px;
+                }
+            }
+
+            &:last-child {
+                width: 65px;
+
+                @include min1024() {
+                    width: 90px;
+                }
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -564,7 +601,6 @@ $title-size-desk: 1.5rem;
             }
         }
     }
-
     .planet {
         width: 100%;
         display: flex;
