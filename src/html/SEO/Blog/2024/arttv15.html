@@ -1,0 +1,266 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv15
+
+    Nom de la classe parent : minceur_article_2024
+
+    Titre : Le thé vert fait-il maigrir ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="minceur_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/rooibos/bienfaits-rooibos-sante.webp?$staticlink$",
+                "alt": "Le thé vert fait-il maigrir ?",
+    
+                "titre": "Le thé vert fait-il maigrir ?",
+                "date": "Publié le <span class='date__color'>25/04/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','rooibos')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Bienvenue dans l'univers du rooibos, cette plante native d'Afrique du Sud qui enchante les palais et booste notre santé. Ce &quot;buisson rougeâtre&quot;, comme évoque son nom afrikaaner, séduit par ses infusions sans théine et ses vertus exceptionnelles. Reconnu pour ses propriétés antioxydantes, le rooibos bio est une boisson de choix pour ceux qui aspirent à une consommation responsable. Dans cet article, nous allons explorer les 10 bienfaits incontestables du rooibos sur la santé.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Qu'est-ce que le rooibos ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le rooibos est une plante originaire d'Afrique du Sud connue pour son infusion rougeâtre sans théine. Apprécié pour son goût unique et ses multiples vertus, le rooibos bio est une boisson sans caféine, ce qui en fait une alternative aux thés traditionnels. Ses feuilles sont fermentées pour donner une infusion riche en antioxydants, contribuant ainsi à la santé globale et au bien-être. C'est cette combinaison de saveurs, l'absence de théine et ses propriétés bénéfiques qui font de l'infusion rooibos une boisson de choix pour un nombre croissant de personnes soucieuses de leur santé.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "1 - Impact sur la pression artérielle",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Consommée régulièrement, l'infusion de rooibos s'avère être une alliée précieuse pour maintenir une pression artérielle équilibrée. La présence de flavonoïdes dans les feuilles de cette plante d'Afrique, telles que la quercétine et l'aspalathine, contribue à la vasodilatation, améliorant ainsi la circulation sanguine et offrant un effet bénéfique sur la tension artérielle. Le rooibos favorise un cœur en santé en facilitant la gestion de l'hypertension, sans les effets excitants de la théine, faisant de cette boisson rouge une option parfaite pour les personnes soucieuses de leur santé cardiovasculaire.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "2 - Effets bénéfiques sur le cholestérol",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une infusion de rooibos régulière peut être un allié précieux pour le contrôle du cholestérol, un facteur important dans la prévention des maladies cardiovasculaires. Cet ajout sain à votre routine peut contribuer à équilibrer les niveaux de cholestérol dans le sang. Cette action bénéfique sur le cholestérol, associée à une alimentation équilibrée et à de l'exercice physique, peut aider à préserver la santé de votre cœur et à améliorer votre bien-être général.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "3 - Système digestif et rooibos : bienfaits et conseils",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nombreux sont les bienfaits santé associés à l'infusion de rooibos, notamment pour le système digestif. Cette boisson dénuée de théine est appréciée pour ses vertus apaisantes sur l'estomac. Les propriétés antioxydantes des feuilles de rooibos aident à calmer les troubles digestifs, réduisant ainsi l'inconfort lié aux indigestions.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "L'action du rooibos sur les troubles digestifs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'infusion de rooibos est appréciée pour ses vertus apaisantes sur le système digestif. Grâce à ses flavonoïdes, l'infusion rooibos bio favorise en douceur la digestion et peut réduire des symptômes tels que les crampes, l’acidité gastrique ou la constipation. Sa consommation régulière pourrait ainsi participer à un confort digestif, ce qui en fait un allié de choix post-repas ou en cas de petits désordres intestinaux.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Comment le rooibos peut aider en cas d'indigestion ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ses propriétés anti-inflammatoires et antispasmodiques facilitent la détente du système digestif, limitant ainsi les sensations de lourdeur et les ballonnements après les repas. Consommer une tasse de rooibos après le dîner peut aider le corps à mieux digérer, offrant un confort digestif optimal. ",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "4 - Le rooibos : un allié pour un sommeil réparateur",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si vous peinez à trouver le repos nocturne, considérez le rooibos comme votre complice bienveillant. L'infusion rooibos, dépourvue de théine, se veut une boisson idéale pour préparer le corps au sommeil. Ses propriétés relaxantes et apaisantes sont reconnues pour faciliter l'endormissement. Riches en antioxydants, les feuilles de cette plante d'Afrique du Sud aident à réduire le stress et l'anxiété, amenant à un sommeil plus profond et réparateur.  Pour une efficacité optimale, consommez une infusion rooibos bio une heure avant le coucher.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Conseils d'infusion pour améliorer le sommeil",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une infusion de rooibos avant de se glisser sous les draps peut favoriser un sommeil réparateur. Pour une tasse apaisante, laissez infuser les feuilles de rooibos bio pendant 5 à 7 minutes dans de l'eau chauffée juste en dessous de l'ébullition. L'absence de théine dans cette boisson nationale d'Afrique assure une détente sans perturber votre repos. Ajoutez une pincée d'épices comme la cannelle pour apaiser l'esprit et enraciner le corps, créant ainsi l'ambiance parfaite pour se réchauffer et s'ancrer dans le présent avant de s'abandonner à une nuit de sommeil paisible. Une consommation régulière de cette infusion rouge aux vertus antioxydantes pourrait bien se transformer en un rituel nocturne pour conclure la journée dans la sérénité.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Découvrez Rituel Sommeil notre <a class='banniere__link' href='/fr/rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070'>tisane pour dormir</a> à base de rooibos à la mangue et enrichie en extrait de mélisse. Chaque tasse de notre tisane Rituel Sommeil vous offre ainsi les bienfaits apaisants de la mélisse, enveloppant vos nuits d’un doux sommeil réparateur. Un produit plaisir facile à intégrer dans votre routine du soir ! Kusmi Tea vous propose aussi une large gamme d'infusions à base de rooibos : feel zen, lovely night, amande et vanille.",
+                    })
+                </div>
+                <a href="/fr/rituel-sommeil-SOMMBIOMASTER.html?v=21251A1070" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/rooibos/tisane-sommeil-rooibos.webp?$staticlink$",
+                        "alt": "Tisane pour dormir Rituel Sommeil",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "5 - Rooibos et soins de la peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'infusion de rooibos, apportée par la douceur de ses feuilles, peut apaiser les allergies cutanées et favoriser une peau apaisée et radieuse. Les recettes d'infusions rooibos enrichies d'épices ou d'herbes complémentaires peuvent également offrir une boisson tonifiante, laissant la peau hydratée et revitalisée. Pour profiter pleinement de ses vertus, inclure dans sa consommation quotidienne une infusion rooibos bio est une démarche simple pour préserver naturellement la beauté et la santé de l'épiderme.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "6 - Booster son immunité avec le rooibos",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Intégrer l'infusion de rooibos à votre routine peut être un moyen naturel de renforcer votre système immunitaire. Cette boisson délicieuse est riche en propriétés immuno-stimulantes. Les feuilles de rooibos contiennent un bouquet unique de minéraux et de vitamines qui contribuent à la santé de l'organisme. Pour amplifier vos défenses naturelles, envisagez une consommation régulière de rooibos rouge, choisissez de préférence une infusion rooibos bio pour éviter les pesticides, et associez-la à une alimentation équilibrée.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "7 - Le rooibos et la régulation de la glycémie",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'ajout de rooibos bio à un régime alimentaire peut accompagner une consommation équilibrée, en aidant à contrôler les pics de glycémie après les repas. Les études scientifiques suggèrent que la consommation régulière d'infusion de rooibos pourrait avoir un impact positif sur la santé métabolique. Pour autant, tout avis médical devrait être pris en compte pour l'intégrer avec sagesse dans un plan de soins de santé global.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le rooibos peut-il aider à maigrir ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous vous demandez si l'infusion de rooibos peut vous aider dans votre quête de perte de poids ? En tant que boisson faible en calories, le rooibos est un excellent substitut aux boissons sucrées. Son effet légèrement stimulant sur le métabolisme, dû aux antioxydants présents dans ses feuilles, pourrait favoriser une dépense énergétique accrue. La consommation régulière de rooibos, associée à un régime alimentaire équilibré et à de l'exercice physique, pourrait ainsi s'intégrer harmonieusement dans un plan de gestion du poids.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "8 - Renforcer les os avec le rooibos",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Gorgé de minéraux tels que le calcium, le magnésium et le manganèse, ce thé sans théine favorise une ossature solide et la prévention de maladies telles que l'ostéoporose. La consommation régulière d'infusion de rooibos, avec son profil antioxydant, contribue également à réduire les inflammations, aidant ainsi à maintenir des os en bonne santé. Intégrer cette infusion bio dans notre routine quotidienne est une recette simple pour choyer notre squelette tout en s'offrant un moment de plaisir gustatif.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "class": "block__p",
+                        "titre": "9 - Infusions de rooibos pour la gestion du stress",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "L'infusion de rooibos est votre alliée pour dénouer les tensions et apporter une sérénité bien méritée. Connue pour ses vertus apaisantes, cette boisson se caractérise par une absence totale de théine, ce qui en fait un choix judicieux avant le coucher ou lors de moments requérant calme et concentration. Riches en antioxydants et en propriétés relaxantes, les feuilles de rooibos se marient parfaitement avec des épices telles que la cannelle ou la camomille, offrant ainsi une infusion bio qui réconforte l'esprit et réchauffe le corps. Pour se délester du stress quotidien, une tasse de cet élixir rouge, symbole de bien-être et de tranquillité, s'avère être une recette simple pour une tranquillité retrouvée.",
+                    })
+                </div>
+                <a href="/fr/rooibos-amande-infusion-bio-ROAMBIOMASTER.html?v=21665A1070" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/rooibos/infusion-rooibos-amande.webp?$staticlink$",
+                        "alt": "Infusion rooibos amande",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "10 - Rooibos et soulagement des allergies",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'infusion de rooibos est réputée pour ses vertus apaisantes, notamment en période d'allergies où le corps réagit à différents allergènes. Riche en bioflavonoïdes tels que la quercétine, le rooibos bio aide à réguler la réaction histaminique responsable des symptômes allergiques. Les antioxydants contenus dans les feuilles de cette plante d'Afrique peuvent atténuer l'inflammation et procurer un soulagement naturel aux allergies cutanées.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les différents types de rooibos et leurs particularités",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le rooibos se présente sous deux variétés distinctes : le rooibos rouge et le rooibos vert. L'infusion de rooibos rouge, issue d'une fermentation des feuilles, arbore une couleur rougeâtre et offre une saveur douce, légèrement sucrée, qui rappelle la noisette.. Elle se consomme aussi bien chaude que froide, agrémentée d'épices pour une note chaleureuse. <br>À l'opposé, le rooibos vert, moins courant et non fermenté, conserve sa teinte naturelle et révèle des vertus similaires avec une concentration plus élevée de certains composants bénéfiques à la santé. Sa saveur est plus herbacée et son infusion se marie également avec diverses recettes.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le rooibos contient-il de la caféine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le rooibos, cette boisson nationale d'Afrique du Sud aux reflets rougeâtres, est exempt de théine, contrairement aux thés traditionnels. Parfait pour les personnes sensibles à la caféine ou cherchant à limiter leur consommation.<br>Si vous cherchez une infusion avec de la caféine, nous vous conseillons de vous orienter vers le <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/mate'>maté</a>. Il contient de la caféine et est souvent consommé pour ses propriétés stimulantes et énergisantes.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment le rooibos influence-t-il l'absorption du fer ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les tanins présents dans le <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-noir'>thé noir</a> ou le <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-vert'>thé vert</a> peuvent inhiber l'absorption de ce minéral essentiel.<br>En revanche, le rooibos, par sa composition unique et sa faible teneur en tanins, est considéré comme une boisson de choix pour ceux qui cherchent à maintenir des niveaux adéquats de fer dans l'organisme.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-du-soir')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_rituel_sommeil_1.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Top 6 des tisanes et infusions pour dormir ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','comment-notre-tisane-rituel-sommeil-aide-a-favoriser-un-sommeil-profond')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_rituel_sommeil_1.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','des-solutions-naturelles-pour-lutter-contre-les-troubles-du-sommeil')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_les_bienfaits_du_sommeil_profond_sur_la_sante.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Des solutions naturelles pour lutter contre les troubles du sommeil",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Le thé vert fait-il maigrir ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttv15')$",
+            })
+        </section>
+    </div>
+
+</div>
+

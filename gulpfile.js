@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.gamme_rituel_navpush_2024';
+var classParent = '.certifs_bio_2023';
 
 const {
     series,
