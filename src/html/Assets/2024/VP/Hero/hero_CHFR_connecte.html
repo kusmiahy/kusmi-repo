@@ -1,0 +1,33 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/vente_privilege.scss";
+
+    Content asset : GENERIQUE-VP-connectes_HP
+
+    Nom de la classe parent : vente_privilege_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2024">
+    @@include('../components/slot_connecte.html', {
+        "alt": "Cliquez sur un des boutons pour accéder à nos ventes privilèges",
+        "title": "Vente privilège",
+        "until": "Jusqu'à",
+        "number": "-50%",
+        "subtitle": "sur une sélection exclusive",
+        "texte-link1": "Nos thés & infusions",
+        "link1": "vente_privilege_thes_infusions",
+        "class-cta": "",
+    })
+</section>

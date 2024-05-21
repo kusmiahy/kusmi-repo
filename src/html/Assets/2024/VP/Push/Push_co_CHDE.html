@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/vente_privilege.scss";
+
+    Content asset : GENERIQUE-VP-connectes_PUSH
+
+    Nom de la classe parent : vente_privilege_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="vente_privilege_push_2023 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push_connecte.html', {
+            "alt": "Klicken Sie auf die Schaltfläche &quot;Ich bin dabei&quot;, um zu unseren Sonderverkäufen zu gelangen.",
+            "texte-h2": "Private Sales",
+            "until": "Bis zu",
+            "number": "-50%",
+            "texte-h3": "auf ausgewählte<br>Artikel",
+            "texte-link1": "Jetzt shoppen",
+            "link1": "$url('Search-Show','cgid','vente_privilege')$",
+            "class": "",
+        })
+    </div>
+</div>

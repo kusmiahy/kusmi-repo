@@ -1,0 +1,36 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/vente_privilege.scss";
+
+    Content asset : GENERIQUE-VP_HP
+
+    Nom de la classe parent : vente_privilege_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2024">
+    @@include('../components/slot_non_connecte.html', {
+        "alt": "Click on one of the buttons to access our special sales offers",
+        "title": "Private Sale",
+        "until": "Up to",
+        "number": "50% off",
+        "subtitle": "a premium selection",
+        "texte-link1": "Log in",
+        "texte-link2": "Register now",
+        "link1": "$url('Login-Show','cid','')$",
+        "link2": "/us/login/?activeTab=register&activateLoyalty=true",
+        "class-cta": "hero__ctas-container--4-ctas",
+        "class-reduction": ""
+    })
+</section>
