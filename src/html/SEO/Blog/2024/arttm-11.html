@@ -1,0 +1,171 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttn-22
+
+    Nom de la classe parent : minceur_article_2024
+
+    Titre :  Le yerba maté, votre allié pour la perte de poids ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="minceur_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/yerba-mate.webp?$staticlink$",
+                "alt": "yerba maté",
+    
+                "titre": " Le yerba maté, votre allié pour la perte de poids ?",
+                "date": "Publié le <span class='date__color'>01/03/2022</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "<a class='banniere__link' href=\"$url('Page-Show','cid','les-bienfaits-du-mate')$\"\>Les bienfaits du maté</a> sur la santé sont nombreux ! Allié minceur, coupe-faim, brûle-graisse, on attribue au maté de multiples propriétés en matière de perte de poids.<br>Mais ces allégations sont-elles réellement prouvées ? Grâce à ses antioxydants et à la caféine, les feuilles de maté peuvent en effet être considérées comme une aide pour éliminer. On leur confère également des vertus drainantes et détox. A quoi cela est-il dû ? Peut-on réellement dire que le maté est une plante qui aide à maigrir ? A-t-il une action sur la perte de poids ? On démêle le vrai du faux.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Maigrir ou perdre du poids avec le maté : est-ce possible ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans les bienfaits du maté, son pouvoir <strong>amaigrissant</strong> est souvent cité. A en croire certaines sources, sa consommation régulière déclencherait un vrai effet <strong>« coupe-faim »</strong>. D’après une étude japonaise<sup>2</sup>, le maté augmenterait la sensation de satiété et permettrait de mieux gérer <strong>l’apport calorique</strong> quotidien, donc indirectement à <strong>perdre du poids</strong>. Mais cela est-il suffisant pour dire que le maté a une action sur la perte de poids ?",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le maté et son pouvoir drainant",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La richesse en antioxydants et en caféine procure au maté <strong>des propriétés drainantes</strong>. Il aiderait à éliminer plus facilement et à lutter contre la rétention d’eau.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "A quoi est dû l’effet brûle-graisse supposé du maté ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Le maté est une boisson thermogénique, c’est-à-dire qu’il accélère le métabolisme et facilite la combustion des graisses par le corps. Comment ? En raison de sa teneur en caféine dont l’effet brûle-graisse est bien connu. Appartenant à la famille des méthylxanthines, la caféine favorise le processus de lipolyse qui consiste au déstockage des graisses. Elle contribue ainsi à stimuler le métabolisme. Chez Kusmi Tea, nous avons une large gamme de thé à base de maté, comme dans la gamme Détox et Rituel. Nous avons développé deux recettes de thés santé dont le Rituel Minceur, un mélange de thé vert et maté, enrichi en extrait de thé vert.<br>Découvrez notre <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html'>thé minceur</a> dès maintenant !",
+                    })
+                </div>
+                <a href="/fr/darjeeling-n37-DARJBIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/minceur/rituel-minceur-the-vert-mate.webp?$staticlink$",
+                        "alt": "rituel minceur thé vert et maté",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le maté : une boisson sans calorie",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de maté n’a pas d’impact sur votre régime alimentaire ni sur le poids indiqué sur la balance, à condition de ne pas y ajouter de sucre. Et pour se faire encore plus plaisir, les recettes ne manquent pas !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Maté et sport : amélioration des performances sportives ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté serait un atout dans le cadre de la pratique d’une activité sportive. D’après une étude américaine<sup>1</sup> menée sur un groupe de cyclistes, <strong>boire un yerba maté</strong> avant et pendant une activité sportive booste l’énergie et accélère le métabolisme. En raison de sa teneur en caféine, la fatigue physique ralentit et les performances physiques sont stimulées.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Notre recette détox au maté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et si vous vous prépariez un <a class='banniere__link' href='/fr/mate-MATEBIOMASTER.html?'>thé maté détox</a> ? Idéale pour les beaux jours, cette recette de maté froid se prépare en 5 minutes ! N’oubliez pas que <a class='banniere__link' href=\"$url('Page-Show','cid','recette-mate-boisson-argentine')$\"\>les recettes ne manquent pas</a>.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Ingrédients et matériel : 1 tasse d’eau bouillante, ½ pamplemousse, 2 cuillères de maté, 2 gouttes d’extrait de vanille, 1 clou de girofle",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez infuser 2 cuillères de maté dans votre tasse d’eau bouillante pendant 15 minutes ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez le clou de girofle et l’extrait de vanille durant l’infusion ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Filtrez votre thé et ajoutez le jus du ½ pamplemousse ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Mélangez le tout ;",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour un effet fraîcheur, ajoutez quelques glaçons et le tour est joué !<br>Testez vite cette <strong>recette de maté détox</strong>, facile et rapide ! Naturelle et tonique, cette boisson vous apportera le coup de boost nécessaire à votre journée.<br>Vous l’aurez compris, les propriétés brûle-graisse et amincissante du yerba maté sont indirectes. Boire du maté régulièrement ne vous fera pas maigrir ni perdre du poids à proprement parler mais vous aidera à éliminer plus facilement en raison de sa teneur en caféine et sa richesse en antioxydants. Seule une alimentation saine et la pratique d’une activité sportive régulière vous permettra d’atteindre votre objectif minceur.<br><strong>Sources :</strong><br><a class='banniere__link' href='https://pubmed.ncbi.nlm.nih.gov/22130241/'>https://pubmed.ncbi.nlm.nih.gov/22130241/</a><br><a class='banniere__link' href='https://journals.lww.com/acsm-msse/Fulltext/2018/04000/Metabolic_and_Performance_Effects_of_Yerba_Mate_on.23.aspx'>https://journals.lww.com/acsm-msse/Fulltext/2018/04000/Metabolic_and_Performance_Effects_of_Yerba_Mate_on.23.aspx</a><br><br><strong>A lire aussi sur le même thème :</strong><br><a class='banniere__link' href=\"$url('Page-Show','cid','artmm-3')$\"\>Peut-on boire du maté le soir ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','artmm-14')$\"\>Le maté nuit-il à l’absorption de fer ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','artmm-9')$\"\>Le maté est-il riche en caféine ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','artmm-8')$\"\>Quel goût a le maté ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','artmm-7')$\"\>Temps d’infusion : comment bien préparer le maté ?</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','les-bienfaits-du-mate')$",
+                    "lien-img": "blog/1_GOUT-mate.jpg?$staticlink$",
+                    "alt": "Cliquez pour voir la page",
+                    "titre": "Origines et 6 bienfaits : tout savoir sur le maté",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert est-il vraiment un allié minceur ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/articles/2024/matcha/latte-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour voir l'article'",
+                    "titre": "Le thé matcha peut-il aider à perdre du poids ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": " Le yerba maté, votre allié pour la perte de poids ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttn-22')$",
+            })
+        </section>
+    </div>
+
+</div>
+

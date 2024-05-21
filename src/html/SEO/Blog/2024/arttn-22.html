@@ -1,0 +1,133 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttn-22
+
+    Nom de la classe parent : minceur_article_2024
+
+    Titre :  Le thé noir, un allié minceur ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="minceur_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/the-noir-lapsang-souchong.webp?$staticlink$",
+                "alt": "thé noir lapsang souchong",
+    
+                "titre": " Le thé noir, un allié minceur ?",
+                "date": "Publié le <span class='date__color'>23/12/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrir",
+    
+                "texte": "Riche en caféine, en antioxydants et flavonoïdes, le thé noir fait partie de la famille des thés les plus consommés au monde. Parfaite pour une pause détente ou pour commencer la journée, cette boisson au goût intense et malté aurait, en outre, des propriétés amincissantes.<br>Le thé noir fait-il maigrir ? Est-il un allié brûle-graisse ? Kusmi s’est penché sur la question et vous répond avec transparence.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les vertus santé du thé noir",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Anti-cholestérol, brûle-graisse, coupe-faim… Le <strong>thé noir</strong> contient des polyphénols, ces molécules aux propriétés antioxydantes qui pourraient avoir <strong>de nombreux bienfaits</strong> pour notre santé et notre corps.<br>Toutes les variétés de thé sont fabriquées à partir des mêmes feuilles du théier Camellia Sinensis. Lors du processus d’oxydation des feuilles pour donner naissance au <strong>thé noir</strong>, les catéchines produisent de nouvelles sortes de flavonoïdes, appelées théarubigines et théaflavines. Celles-ci décupleraient <strong>l’action brûle-graisse du thé noir</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé noir, un supplément minceur ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <strong>thé noir</strong> serait un précieux allié lors d’un <strong>régime minceur</strong>. Il permettrait de favoriser le métabolisme, notamment d’éviter aux lipides et aux glucides de s’installer dans l’organisme. Grâce à ses propriétés diurétiques, le <strong>thé noir et un ventre plat </strong>pourraient bien aller de pair !<br>Bu entre les repas, il possède en outre une action coupe-faim et permet d’éviter les grignotages, ce qui participe à la perte de poids. Très pauvre en calories et en sodium, le thé noir peut être consommé quotidiennement. Pour accentuer ses effets, vous pouvez consommer du <strong>thé noir au citron pour maigrir</strong> ou l’aromatiser avec un autre agrume. Le citron s’avère être riche en vitamine C et anti-inflammatoire.<br>Evidemment, tout ceci est vrai seulement dans le cadre d’une alimentation saine et variée et d’une pratique physique régulière. Le thé noir à lui seul ne vous fera pas maigrir. Kusmi vous conseille de consulter un médecin pour des conseils plus précis sur la perte de poids.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "À quel moment de la journée faut-il boire du thé noir pour maigrir ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Le <strong>thé noir</strong>, <strong>réducteur de graisse</strong>, peut nous aider à perdre du poids naturellement, mais rappelons qu’il peut être plus bénéfique de le consommer à certains moments de la journée.<br>Il est recommandé de <strong>boire du thé noir le matin</strong> afin de jouir pleinement de l’action de ses antioxydants qui, grâce à ses polyphénols et ses catéchines, nous aident à purifier l'organisme et à éliminer les toxines. Consommé au petit-déjeuner, il pourra contribuer à activer et réveiller le métabolisme.<br>Le <strong>thé noir</strong> étant l'un des meilleurs thés pour digérer les aliments, boire une tasse 30 minutes après le petit-déjeuner et le déjeuner vous permettra une meilleure digestion. Kusmi Tea vous conseille aussi le thé vert qui peut-être un véritable allié minceur grâce à ses nombreuses vertus. Découvrez notre <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html'>Rituel Minceur</a> à l’efficacité prouvée.<br>Recommandations :<br>Si vous êtes sensible à la caféine, il est préférable d’éviter de boire du thé noir durant l’après-midi. Bien qu'il contienne moins de caféine que le café, le thé peut altérer la qualité de votre sommeil. De nombreuses recherches ont montré qu'un sommeil de qualité est capital pour la santé générale et a une influence sur le poids. ",
+                    })
+                </div>
+                <a href="/fr/darjeeling-n37-DARJBIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/the-noir-darjeeling.webp?$staticlink$",
+                        "alt": "thé noir darjeeling",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Kusmi Tea, un thé noir bio & Made in Normandie",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi Tea vous propose une gamme de délicieux thés noirs nature et aromatisés fabriqués dans nos ateliers en France. Dans le cadre de notre engagement en faveur d'une agriculture durable et d'un mode de vie sain, tous nos produits sont labellisés bios.<br>En résumé, le <strong>thé noir</strong> est la boisson parfaite pour accompagner un <strong>régime minceur</strong>. Consommé quotidiennement et dans le cadre d’une alimentation équilibrée, il vous aidera à maigrir progressivement.<br><br>A lire aussi :<br><a class='banniere__link' href=\"$url('Page-Show','cid','arttn-15')$\"\>Les effets diurétiques du thé noir ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','arttn-18')$\"\>Le thé noir est-il bon pour la digestion ?</a><br><a class='banniere__link' href=\"$url('Page-Show','cid','arttn-11')$\"\>Le thé noir, un puissant antioxydant</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert est-il vraiment un allié minceur ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/articles/2024/matcha/latte-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour voir l'article'",
+                    "titre": "Le thé matcha peut-il aider à perdre du poids ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-11')$",
+                    "lien-img": "blog/1_GOUT-mate.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le yerba maté, est-il vraiment un allié minceur ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": " Le thé noir, un allié minceur ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttn-22')$",
+            })
+        </section>
+    </div>
+
+</div>
+
