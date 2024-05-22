@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/vente_privilege.scss";
+
+    Content asset : GENERIQUE-VP-connectes_HP
+
+    Nom de la classe parent : vente_privilege_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="vente_privilege_hero_2024">
+    <a href="$url('Search-Show','cgid','vente_privilege')$" class="hero hero--one-cta" title="Jusqu'à -50% sur une sélection exclusive  + Livraison offerte dès 35€">
+        @@include('../components/slot_connecte_kk.html', {
+            "alt": "Jusqu'à -50% sur une sélection exclusive  + Livraison offerte dès 35€",
+            "title": "Vente privilège",
+            "subtitle": "jusqu'à -50%",
+            "description": "sur une sélection exclusive",
+            "text-link": "Toute la sélection",
+        })
+    </a>
+</section>

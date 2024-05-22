@@ -1,0 +1,155 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2023/bundle_rituel.scss";
+
+    Content asset : bundle-rituel-minc-x3-contenu-enrichi
+
+    Nom de la classe parent : pdp_rituel_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .m-pdp__video-content {
+        max-width: 100%;
+        padding: 0;
+    }
+</style>
+<!-- Le style pour les logos injectés -->
+<style>
+    .m-pdp__images-container{position:relative}.c-product-details__logos-bios{display:none}@media screen and (min-width:1024px){.c-product-details__logos-bios{margin-bottom:1rem;height:30px;display:flex;gap:.5rem}}.logos-bio__image{width:auto;height:100%;object-fit:contain}.m-pdp__images-container__logos-bios{position:absolute;bottom:0;right:3%;display:flex;gap:0rem;z-index:2;height:35px;gap:.5rem}.logos-bio__image{width:auto;height:100%;object-fit:contain}@media screen and (min-width:1024px){.m-pdp__images-container__logos-bios{display:none}}
+</style>
+<!-- Le style pour la pastille -->
+<style>
+    .m-pdp__video-content{max-width:100%;padding:0}.pastille-pdp__container{position:absolute;z-index:5;left:11%;top:6%;height:70px;width:70px}@media screen and (min-width:768px){.pastille-pdp__container{left:18%;top:8%;}}@media screen and (min-width:1024px){.pastille-pdp__container{left:8%;height:90px;width:90px}}.pastille-pdp__container img{width:100%;height:100%;object-fit:contain}
+</style>
+
+<div class="pdp_rituel_2024">
+    <section class="bio">
+        <div class="bio__title title-wrapper">
+            @@include('./_components/subtitle.html', {
+                "class-color": "title-wrapper__subtitle--green",
+                "texte-titre": "Nos certifications",
+            })
+        </div>
+        <div class="certifications">
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/bio_label.svg?$staticlink$",
+                    "alt": "label bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$",
+                    "alt": "certification européenne bio",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/certified_ab.svg?$staticlink$",
+                    "alt": "certification agriculture biologique",
+                })
+            </div>
+            <div class="certifications__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/bio_certifs/USDA_organic_seal.svg?$staticlink$",
+                    "alt": "usda organic label",
+                })
+            </div>
+        </div>
+        <div class="planet">
+            <div class="planet__image">
+                @@include('./_components/image.html', {
+                    "lien-img": "images/pdp/2023/rituel_sommeil/1_logo.svg?$staticlink$",
+                    "alt": "logo 1% for the planet member",
+                })
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+<script>
+    /**
+     * Injecter les logos en dessous 
+     */
+
+    function addLogos(id, altEuro, altAb, classLogos) {
+
+    const logos = document.createElement('div');
+
+    logos.classList.add(classLogos);
+    logos.innerHTML = `
+        <img src="images/pdp/bio_certifs/organic_logo_eu.svg?$staticlink$" class="logos-bio__image" alt="${altEuro}"/>
+        <img src="images/pdp/bio_certifs/certified_ab.svg?$staticlink$" class="logos-bio__image" alt="${altAb}"/>
+    `;
+
+    const parent = document.querySelector(id);
+
+    if (parent) {
+        parent.appendChild(logos);
+    }
+    }
+
+    /**
+    * Injecter une pastille à côté du produit dans le DOM
+    */
+
+        function addPastille(id, lienImg, altEuro) {
+
+        const pastille = document.createElement('div');
+
+        pastille.classList.add('pastille-pdp__container');
+        pastille.innerHTML = `
+            <img src="${lienImg}" class="pastille-pdp__container__image" alt="${altEuro}"/>`;
+
+        const parent = document.querySelector(id);
+
+        if (parent) {
+            parent.appendChild(pastille);
+        }
+        }
+
+        /**
+        * Quand une question est cliquée, la réponse apparait et si on reclique elle disparait
+        */
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+        // Injection des logos bios
+        const currentURL = window.location.href;
+
+        if (currentURL.includes('com/fr')) {
+            addLogos('.m-pdp__main-details', 'certification européenne bio', 'certification agriculture biologique', 'c-product-details__logos-bios');
+            addLogos('.m-pdp__images-container', 'certification européenne bio', 'certification agriculture biologique', 'm-pdp__images-container__logos-bios');
+            addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex3_fr.svg?$staticlink$', 'Pack produits x3')
+        }
+        if (currentURL.includes('com/de')) {
+            addLogos('.m-pdp__main-details', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'c-product-details__logos-bios');
+            addLogos('.m-pdp__images-container', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'm-pdp__images-container__logos-bios');
+            // addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_de.svg?$staticlink$', 'Pastille Angereichert mit Grüntee-Extrakt')
+        }
+        if (currentURL.includes('com/int') || currentURL.includes('com/us') || currentURL.includes('com/en-ca')) {
+            addLogos('.m-pdp__main-details', 'European organic certification', 'organic farming certification', 'c-product-details__logos-bios');
+            addLogos('.m-pdp__images-container', 'European organic certification', 'organic farming certification', 'm-pdp__images-container__logos-bios');
+            // addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_int.svg?$staticlink$', 'Sticker enriched with green tea extract')
+        }
+        if (currentURL.includes('com/it')) {
+            addLogos('.m-pdp__main-details', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'c-product-details__logos-bios');
+            addLogos('.m-pdp__images-container', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'm-pdp__images-container__logos-bios');
+            // addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastille_enrichi_en_the_vert_it.svg?$staticlink$', 'Sticker arricchito con estratto di tè verde')
+        }
+        })
+
+</script>

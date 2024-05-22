@@ -7,7 +7,7 @@
 @import "./style/base/**/*.scss";
 
 // --------------------- Library -------------------------
-@import "./style/specific/2023/vente_privilege.scss";
+@import "./style/specific/2024/vente_privilege.scss";
 
     Content asset : GENERIQUE-VP_PUSH-UNREGISTERED
 
@@ -19,19 +19,18 @@
 <link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 <!-- inject-style src="dist/css/main.min.css" -->
 
-<div class="vente_privilege_push_2023 col-xs-6 col-sm-4 col-lg-3">
+<div class="vente_privilege_push_2024 col-xs-6 col-sm-4 col-lg-3">
     <div class="push">
         @@include('../components/push_non_connecte.html', {
             "alt": "Registrati o accedi per accedere alle nostre offerte speciali",
             "texte-h2": "Vendite Esclusive",
-            "until": "Fino al",
-            "number": "50% di sconto",
-            "texte-h3": "su una selezione<br>di articoli",
+            "texte-h3": "Fino al<br>50% di sconto",
+            "texte-h4": "su una selezione di articoli",
             "texte-link1": "Accedi",
             "texte-link2": "Crea un account",
             "link1": "$url('Login-Show','cid','')$",
             "link2": "/it/login/?activeTab=register&activateLoyalty=true",
-            "class": "reduction__number--it",
+            "class": "text__title--it",
         })
     </div>
 </div>

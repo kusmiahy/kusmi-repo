@@ -197,10 +197,10 @@ $title-size-desk: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: $padding-block-mob;
+    padding-block-end: $padding-block-mob;
 
     @include min1024() {
-        padding-block: $padding-block-desk 0;
+        padding-block-end: 0rem;
     }
 
     .certifications {
@@ -215,47 +215,16 @@ $title-size-desk: 1.5rem;
 
         &__image {
             height: 65px;
+            width: auto;
 
             @include min1024() {
                 height: 90px;
             }
 
-            &:first-child {
-                width: 80px;
-
-                @include min1024() {
-                    width: 110px;
-                }
-            }
-
-            &:nth-child(2) {
-                width: 97px;
-
-                @include min1024() {
-                    width: 134.5px;
-                }
-            }
-
-            &:nth-child(3) {
-                width: 46px;
-
-                @include min1024() {
-                    width: 64px;
-                }
-            }
-
-            &:last-child {
-                width: 65px;
-
-                @include min1024() {
-                    width: 90px;
-                }
-            }
-
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
     }
@@ -267,6 +236,12 @@ $title-size-desk: 1.5rem;
         justify-content: center;
         align-items: center;
         padding-block: 1.5rem 0;
+
+        // gap: 1rem;
+
+        // @include min1024() {
+        //     gap: 1.5rem;
+        // }
 
         &__image {
             height: 65px;
@@ -282,5 +257,27 @@ $title-size-desk: 1.5rem;
                 height: 100%;
             }
         }
+
+        // &__texte {
+        //     display: flex;
+        //     justify-content: center;
+        //     padding-top: 1rem;
+        //     .container__texte {
+        //         text-align: center;
+        //         font-family: 'Barlow', sans-serif;
+        //         font-size: 1rem;
+        //         letter-spacing: .01rem;
+        //         line-height: 1.3rem;
+        //         .texte__uppercase {
+        //             text-transform: uppercase;
+        //         }
+        //         &--width {
+        //             width: 85%;
+        //             @include min1024() {
+        //                 width: 40%;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
