@@ -1,0 +1,267 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : bienfaits-melisse
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Les bienfaits de la mélisse : une plante miracle pour votre santé | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/2022-05_tisane-pour-maigrir-2.jpg?$staticlink$",
+                "alt": "Tisane pour maigrir",
+    
+                "titre": "Tisane pour maigrir : quelle est la plus efficace ? | Kusmi Tea",
+                "date": "Publié le <span class='date__color'>02/05/22</span>",
+                "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrez nos infusions et tisanes bio",
+    
+                "texte": "Certaines tisanes aident-elles réellement à perdre du poids ou à mincir ? Kusmi démêle pour vous le mythe de la réalité.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Tisane et infusion ventre plat : objectif zéro ballonnement",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Après un repas un peu trop riche ou trop copieux, votre ventre a tendance à gonfler ? Boire une tisane spéciale ventre plat pourrait vous aider à dégonfler votre abdomen. Découvrez 3 plantes souvent utilisées dans ce type d’infusion :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>La lavande :</strong> cette plante serait réputée pour calmer les troubles digestifs. Utilisée en tisane pour soulager les maux de ventre, elle réduirait les spasmes abdominaux et les gaz intestinaux. Une étude a démontré son efficacité contre la nausée et les <u><strong><a class='banniere__link' href='https://www.sciencedirect.com/science/article/abs/pii/S0965229918312330?via%3Dihub'>vomissements</a></strong></u>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>La menthe :</strong> infusée seule ou en association avec la verveine, cette herbe aromatique aurait des vertus amincissantes. La simple inhalation de l’odeur de menthe agirait comme un <u><strong><a class='banniere__link' href='https://www.aeroscena.com/pages/research-oils-30#:~:text=The%20primary%20implication%20of%20these,reduction%20and%20greater%20overall%20health'>coupe-faim</a></strong></u>. Riche en antioxydants, la menthe aurait des propriétés diurétiques et <u><strong><a class='banniere__link' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6031216/'>anti-inflammatoires</a></strong></u>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Le thym :</strong> il aurait des actions drainantes et amincissantes. Cette plante favoriserait la bonne digestion et empêcherait l’installation de mauvais cholestérol grâce à sa teneur en vitamine K.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Tisane et infusion brûle-graisses : éliminez vos kilos superflus",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ventre plat, objectif minceur… Il existe une multitude de tisanes dites “amaigrissantes” ou brûle graisses sur le marché qui promettent de perdre du poids rapidement. Attention ces allégations ne se fondent sur aucune preuve scientifique. Ces infusions ne sauraient remplacer la pratique régulière d’une activité sportive et une alimentation saine.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Quelles plantes sont catégorisées comme brûle-graisse ? Les plantes et épices renfermant un taux d’antioxydants important car ceux-ci stimuleraient la combustion des lipides (graisses) et accéléreraient le métabolisme :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Le romarin :</strong> cette plante méditerranéenne riche en acide carnosique stimule le métabolisme et entraînerait la perte de <u><strong><a class='banniere__link' href='https://pubmed.ncbi.nlm.nih.gov/12352220/'>poids</a></strong></u>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>L’ortie :</strong> cette fois-ci elle piquera seulement votre curiosité ! Préparée sous forme de tisane amaigrissante et minceur, elle pourrait vous libérer d’un poids. Riche en minéraux et en vitamines, l’ortie empêcherait l’accumulation de lipides dans les tissus adipeux et le <u><strong><a class='banniere__link' href='https://www.mdpi.com/2072-6643/12/4/1059/htm'>foie</a></strong></u>.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Le curcuma :</strong> grâce à sa teneur en curcumine, il agirait sur les tissus adipeux. Associé au gingembre, le curcuma accélérerait le métabolisme, favorisant l’amincissement de votre <u><strong><a class='banniere__link' href='https://pubmed.ncbi.nlm.nih.gov/26592847/'>silhouette</a></strong></u>",
+                    })
+                </ul>
+            </section>
+            <section class="block block-container">
+                
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Tisane et infusion detox : pour purifier l’organisme",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Vous souhaitez simplement faire une detox ? Optez pour des plantes comme :",
+                    })
+                    <ul class="block__ul">
+                        @@include('_components/li.html', {
+                            "texte": "Le fenouil qui aide à lutter contre les troubles digestifs et réduit les ballonnements",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Les queues de cerise, à qui on attribue des vertus amincissantes et diurétiques",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "La menthe poivrée qui boost le foie et aide l’organisme à éliminer les déchets",
+                        })
+                    </ul>
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "N’hésitez pas à ajouter du citron ou du gingembre dans vos tisanes. Question détox, il n’y a pas mieux. En plus, ces 2 ingrédients boosteront vos défenses immunitaires.",
+                    })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/2022-05_tisane-pour-maigrir.jpg?$staticlink$",
+                        "alt": "Tisane pour maigrir",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le réflexe detox : nos recettes d’infusion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Un esprit sain dans un corps sain, tel est votre adage ? Les fruits rouges et l’hibiscus riches en vitamine C auraient des actions antioxydantes et boosteraient le système immunitaire. Quant au maté, il viendrait à bout de toutes les graisses accumulées dans votre corps.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour un instant gourmand et peu calorique, nos recettes AquaRosa et Detox bio s’inviteront sous votre parasol cet été. Pour une infusion amincissante glacée maison ultra rafraîchissante, suivez le guide :</a>",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Faites bouillir de l’eau à 85 °C pour le maté ou 95 °C pour l’infusion hibiscus et fruits rouges. Attention à la température de l’eau ! Une eau trop chaude viendra dégrader les bienfaits des feuilles, tandis qu’une eau trop froide impactera l’infusion.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Remplissez la moitié d’une carafe d’eau chaude ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez infuser 10 à 15 min ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez une bonne quantité de glaçons.",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Votre boisson est prête à être dégustée !</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Réaliser votre infusion minceur et detox maison : nos idées recettes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "N’hésitez pas à faire votre propre tisane ou infusion minceur et détox maison ! Gingembre, citron, fenouil, queue de cerise, les idées recettes ne manquent pas. Par exemple, le mélange thym et citron est l’une des recettes détox par excellence.</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Choisir des plantes et feuilles bio pour profiter de tous les bienfaits",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour profiter au mieux de tous les bienfaits et propriétés minceur des plantes, Kusmi vous recommande d’opter pour du bio ! L’appellation vous garantit en effet des feuilles de qualité, sans pesticide, élevées dans le respect de l’environnement. Digestion, beauté de la peau, jambes lourdes, relaxation, sommeil, il existe une tisane pour chaque besoin.</a>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Consommée sans sucre ni adjonction de substitut, la tisane ne vous fera pas grossir. Cependant, rien ne prouve l’efficacité des tisanes pour maigrir sur la perte de poids. Et rien ne saurait remplacer une bonne alimentation et la pratique régulière d’une activité sportive. L’adage “tisane minceur” est donc à prendre avec des pincettes. En cas d’allaitement, de grossesse ou de maladies chroniques, il est recommandé de demander l’avis de votre médecin traitant.</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les ingrédients à privilégier dans une tisane pour maigrir",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Lorsqu'on cherche à alléger son poids, l'<strong>ingrédient principal d'une bonne tisane pour maigrir</strong> est son pouvoir diurétique et détoxifiant. Des plantes comme le thé vert, riche en catéchines, et le pissenlit, reconnu pour ses vertus sur le foie, sont à privilégier pour leur efficacité prouvée. Kusmi Tea vous propose un <u>Thé Minceur</u> enrichi en extrait de thé vert et au bon goût de fraise et cerise.</a>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une tisane efficace est souvent un savant mélange où chaque composant, tel que la reine-des-prés ou le fucus, est choisi pour son action spécifique sur l'organisme, qu'il s'agisse de <strong>booster le métabolisme ou de favoriser l'élimination des toxines</strong>. L'absence de stimulants artificiels est également un indicateur de qualité pour s'intégrer harmonieusement dans un programme de perte de poids naturel.</a>",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "À quel moment de la journée consommer sa tisane minceur ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Choisir le <strong>moment idéal pour consommer une tisane</strong> destinée à la perte de poids est un geste aussi stratégique que bénéfique. Il est recommandé de privilégier une tasse le matin pour stimuler le métabolisme, ou avant les repas pour favoriser une sensation de satiété. Le soir, optez pour des tisanes sans théine pour éviter de perturber le sommeil. La régularité étant la clé, intégrer ce rituel à votre routine quotidienne peut <strong>amplifier les effets positifs</strong> de votre démarche minceur.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/the-vert-maigrir.webp?$staticlink$",
+                        "alt": "thé vert pour maigrir",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Combien de tasses de tisane consommer au quotidien ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de tisanes pour maigrir doit être réalisée avec modération et discernement. <strong>Il est conseillé de boire une à trois tasses par jour</strong>, idéalement avant ou après les repas pour maximiser leur effet sur la digestion et le métabolisme. Gardons à l'esprit que la régularité est clé : une fréquence quotidienne peut favoriser une perte de poids progressive et naturelle. <strong>Toutefois, il est crucial de ne pas excéder cette recommandation</strong>, pour éviter tout déséquilibre ou effet secondaire indésirable. Une tisane bien choisie et consommée dans le respect de ces conseils apporte une contribution positive à un régime de perte de poids, en complément d'une alimentation équilibrée et d'une activité physique régulière.</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Association avec d'autres méthodes de perte de poids",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour optimiser les résultats des tisanes minceur, il est <strong>essentiel de les associer à un style de vie sain</strong>. Une alimentation équilibrée, riche en fruits, légumes et faible en sucres ajoutés et en graisses saturées, va de pair avec leur consommation. L'<strong>activité physique régulière</strong> est également un levier puissant pour accélérer la perte de poids, en augmentant la dépense énergétique et en favorisant le tonus musculaire. Ces habitudes combinées à votre routine de tisane pourraient s'avérer être une stratégie holistique efficace pour atteindre vos objectifs de silhouette.</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/2022_07-Tisane_maladie-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tisane diurétique : bienfaits sur la santé | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/2022-05_tisane-anti-stress.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "La tisane pour bébé ou enfant, une bonne idée ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttn-22')$",
+                    "lien-img": "blog/articles/2024/the-noir-lapsang-souchong.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé noir fait-il maigrir ? | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Les bienfaits de la mélisse : une plante miracle pour votre santé | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','tisane-pour-maigrir')$",
+            })
+        </section>
+    </div>
+</div>
+
