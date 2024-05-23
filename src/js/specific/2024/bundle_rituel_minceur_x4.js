@@ -50,21 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentURL.includes('com/fr')) {
         addLogos('.m-pdp__main-details', 'certification européenne bio', 'certification agriculture biologique', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'certification européenne bio', 'certification agriculture biologique', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex3_fr.svg?$staticlink$', 'Pack produits x3')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex4_fr.svg?$staticlink$', 'Pack produits x4')
     }
     if (currentURL.includes('com/de')) {
         addLogos('.m-pdp__main-details', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'europäische Bio-Zertifizierung', 'Zertifizierung biologischer Landwirtschaft', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex3_de.svg?$staticlink$', 'Produktpaket x3')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex4_de.svg?$staticlink$', 'Produktpaket x4')
     }
     if (currentURL.includes('com/int') || currentURL.includes('com/us') || currentURL.includes('com/en-ca')) {
         addLogos('.m-pdp__main-details', 'European organic certification', 'organic farming certification', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'European organic certification', 'organic farming certification', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex3_en.svg?$staticlink$', 'Product pack x3')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex4_en.svg?$staticlink$', 'Product pack x4')
     }
     if (currentURL.includes('com/it')) {
         addLogos('.m-pdp__main-details', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'c-product-details__logos-bios');
         addLogos('.m-pdp__images-container', 'Certificazione biologica europea', 'Certificazione dell\'agricoltura biologica', 'm-pdp__images-container__logos-bios');
-        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex3_it.svg?$staticlink$', 'Product pack x3', 'Confezione di prodotti x4')
+        addPastille('.m-pdp__images-container', 'images/pdp/2024/rituel_minceur/pastillex4_it.svg?$staticlink$', 'Product pack x4', 'Confezione di prodotti x4')
     }
 })

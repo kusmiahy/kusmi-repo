@@ -1,0 +1,240 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : infusion-verveine
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : La verveine, star des infusions relaxantes
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/bienfaits-verveine.webp?$staticlink$",
+                "alt": "Les bienfaits de la verveine",
+    
+                "titre": "La verveine, star des infusions relaxantes",
+                "date": "Publié le <span class='date__color'>10/03/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Découvrez nos infusions bio",
+    
+                "texte": "Surnommée “herbe sacrée” ou “herbe des sorciers”, la <strong>verveine</strong> s’est vue attribuer des <strong>vertus magiques</strong>. Sans promettre un miracle, on se délectera déjà simplement de son goût légèrement citronné, avant de tester sur nous <strong>ses propriétés relaxantes</strong>.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La verveine, plante anti-stress ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nos ancêtres connaissaient bien mieux les plantes que nous : elles étaient leurs médicaments. Consommée depuis l’Antiquité, la verveine a gagné en popularité grâce ses effets supposés sur le stress et l’anxiété. Si bien que c’est devenue la boisson idéale pour une soirée sous le signe de la relaxation.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quels sont les bienfaits de la verveine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Reconnue pour ses multiples vertus, la verveine, qu'elle soit officinale ou citronnelle, est une plante incontournable en phytothérapie. Les bienfaits de la verveine sont multiples : ",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "1 - Effets apaisants pour faciliter le sommeil",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La verveine est une plante merveilleuse réputée pour ses vertus apaisantes, particulièrement bénéfiques pour le sommeil. Une infusion de verveine, aussi connue sous les noms de verbena officinale ou verbena odorante, agit comme un relaxant naturel, aidant à soulager le stress et l'anxiété. ",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "2 - Aide à la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La verveine est une plante réputée pour ses propriétés digestives. Son effet apaisant favorise le relâchement des muscles de l'estomac, aidant ainsi à soulager les crampes, ballonnements et flatulences souvent associés à une digestion difficile. ",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "3 -  Effet de satiété, un allié minceur au quotidien",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La verveine est réputée pour son effet bénéfique dans la gestion du poids. En infusion, elle favorise une sensation de satiété et peut ainsi réduire la tendance au grignotage entre les repas, un atout précieux lorsqu'on cherche à perdre du poids. ",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "4 -  Réduit l’hypertension artérielle",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Des études suggèrent que l'infusion de verveine peut aider à dilater les vaisseaux sanguins, favorisant ainsi une meilleure circulation et contribuant à une légère réduction de la pression sanguine. L'effet calmant de la verveine aide aussi à soulager le stress et l'anxiété, deux facteurs pouvant influer sur l'hypertension. ",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "5 - Vertus anti-inflammatoire et antioxydantes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La verveine est reconnue pour ses vertus anti-inflammatoires et antioxydantes, faisant d'elle une plante prisée en phytothérapie. Les flavonoïdes et les huiles essentielles qu'elle contient confèrent à cette herbe une capacité à soulager diverses inflammations. Son action antioxydante aide à neutraliser les radicaux libres, responsables du vieillissement cellulaire et de nombreux troubles de santé.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quel goût a la verveine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La <strong>feuille de verveine</strong> aromatique est plébiscitée pour son agréable parfum citronné. Certains y décèleront même un léger goût <strong>mentholé</strong> voire de mandarine. Des saveurs qui se marient très bien avec les plats exotiques, les salades de fruits, les glaces, entremets ou crèmes. Autre idée : utiliser la <strong>verveine en marinade</strong>, avec d’autres plantes comme le <a class='banniere__link' href=\"$url('Page-Show','cid','gingembre-epice-vertus-the-epice')$\"\>gingembre</a> ou la <strong>citronnelle</strong>, avant d’y faire mariner du bar ou de la dorade. On vous laisse tester !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Nos conseils pour préparer une infusion à la verveine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que ce soit pour son goût, pour ses effets supposés sur le corps, ou pour les deux (c’est encore mieux d’allier saveur et bienfaits !), on vous dit comment procéder pour réaliser une infusion aux <strong>feuilles de verveine.</strong><br>Pour aller plus loin : <a class='banniere__link' href=\"$url('Page-Show','cid','comment-choisir-preparer-infusion')$\"\>L’infusion : comment la choisir et la préparer ?</a>",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                @@include('_components/h2.html', {
+                    "titre": "Quelle différence entre infusion et tisane à la verveine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Qu’on parte sur une infusion ou sur une <strong>tisane à la verveine</strong>, il s'agit en réalité de la même chose, du même résultat. A l’origine, l'<a class='banniere__link' href=\"$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$\"\>infusion</a>, c’est la technique de préparation qui consiste à verser de l’eau frémissante sur des feuilles, fleurs ou fruits. Tandis que la tisane est le nom donné à la boisson obtenue après l’infusion de plantes naturelles. Sauf qu’au fil du temps, le terme d’<a class='banniere__link' href=\"$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$\"\>infusion</a> s’impose de plus en plus comme celui de la boisson chaude, prête à déguster.",
+                })
+                </div>
+                <a href="/fr/rituel-sommeil-SOMMBIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/infusion-verveine-melisse.webp?$staticlink$",
+                        "alt": "Infusion à la verveine",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment préparer une infusion verveine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rien de plus simple : il vous faudra simplement de l’eau et des <strong>feuilles de verveine</strong>, fraîches ou <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>séchées</a>. Porter l’eau à ébullition, à une température de 100 degrés, avant de laisser infuser la verveine pendant 5 à 6 minutes. Selon vos goûts, vous pourrez y ajouter d’autres plantes bienfaitrices, comme de la menthe, de la citronnelle, de la <a class='banniere__link' href=\"$url('Page-Show','cid','vertus-infusions-camomille')$\"\>camomille</a>, du <a class='banniere__link' href=\"$url('Page-Show','cid','gingembre-epice-vertus-the-epice')$\"\>gingembre</a>, et sucrer avec du miel.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quand déguster une infusion à la verveine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Contrairement au thé, qui peut parfois empêcher les plus sensibles de dormir à cause de sa teneur en théine, l’infusion n’a pas d’effet stimulant. Elle peut donc se déguster tout au long de la journée. Selon les effets recherchés par les plantes, on pourra boire une infusion après les repas, pour faciliter la digestion, ou à différents moments de la journée pour accompagner un régime par exemple. Dans le premier cas, on choisira une <strong>infusion à la citronnelle</strong>, réputée pour calmer les troubles digestifs. Dans le second, une infusion à la réglisse ou à la menthe, qui favorisaient la combustion des graisses. Dans le cas de la <strong>verveine</strong>, ses potentiels effets anti-stress et anti-troubles du sommeil en font <a class='banniere__link' href=\"$url('Page-Show','cid','infusion-du-soir')$\"\>une infusion du soir</a> toute trouvée !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les infusions à la verveine de la maison Kusmi",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "S’il n’y a pas de <strong>verveine</strong> poussant dans votre jardin (ou que vous n’avez pas de jardin, ce qui est encore une meilleure excuse !), on vous conseille d’opter pour un mélange de plantes prêt à infuser. Et pour vous mettre l’eau (chaude) à la bouche, voici les recettes élaborées par les experts Kusmi Tea.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les infusions bio kusmi tea, éco-responsable et conditionnée en france",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Depuis 2020, <strong>Kusmi a fait le choix du</strong> <a class='banniere__link' href=\"$url('Page-Show','cid','kusmi-est-bio')$\"\>bio</a>. Tous nos ingrédients sont issus de l’<strong>agriculture biologique</strong>, certifiés par un cahier des charges strict, et contrôlés régulièrement. De plus, l’ensemble de notre gamme repose sur un <a class='banniere__link' href=\"$url('Page-Show','cid','kusmi-est-bio')$\"\>savoir-faire français</a>. C’est en <strong>Normandie, à Saint-Vigor d’Ymonville</strong>, près du Havre, que sont pensés, créés, mélangés et conditionnés l’ensemble de nos thés et infusions bio. Enfin, nos produits sont emballés de façon <a class='banniere__link' href=\"$url('Page-Show','cid','engagements')$\"\>éco-responsable</a>, dans des matières biosourcées, biodégradables ou recyclables. Que demander de plus ?",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "L’infusion be cool bio, à la menthe-verveine-pomme-réglisse",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>To be Cool or not to be </strong>? Vous avez 4h pour plancher sur le sujet. Ou bien plutôt 5 minutes d’infusion ! Être cool, c’est rester zen en toute circonstance. C’est laisser “cooler” les petits soucis de la vie, en savourant notre <a class='banniere__link' href='/fr/be-cool-infusion-bio-COOLBIOMASTER.html'>infusion Be Cool bio</a>. Si les vertus de la verveine vous intéressent, testez la verveine grâce à notre tisane bio BeCool. Les feuilles de <strong>verveine bio</strong> et menthe, accompagnées de pomme et de réglisse, suffisent à vous offrir un moment de douceur et de sérénité tout en vous faisant voir la tasse à moitié pleine.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "L’infusion sommeil, avec une touche de verveine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Qui dit <strong>verveine</strong>, dit relaxation et...bonne nuit. C’est en tout cas ce qu’on espère ! Pour vous accompagner dans la quête de Morphée, craquez pour notre <strong>infusion du soir</strong> <a class='banniere__link' href='/fr/rituel-sommeil-SOMMBIOMASTER.html'>Sommeil</a>. Mélange de rooibos à la mangue, mélisse et <strong>verveine</strong> pour vous apaiser. Ne soyez pas étonné si vous finissez par danser avec Morphée après une tasse de cette <strong>infusion bio</strong>.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bienfaits-melisse')$",
+                    "lien-img": "blog/articles/2024/bienfaits-melisse.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les bienfaits de la mélisse : une plante miracle pour votre santé",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bienfaits-rooibos-sur-la-sante')$",
+                    "lien-img": "blog/articles/2024/rooibos/bienfaits-rooibos-sante.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les 10 bienfaits du rooibos sur la santé",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','vertus-infusions-camomille')$",
+                    "lien-img": "blog/articles/2024/camomille-bienfaits.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les nombreux bienfaits de la camomille",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "La verveine, star des infusions relaxantes",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','infusion-verveine')$",
+            })
+        </section>
+    </div>
+
+</div>
+

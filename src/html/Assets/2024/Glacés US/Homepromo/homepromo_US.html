@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/glaces_us.scss";
+
+    Content asset : GLACES_US_HOME_PROMO
+
+    Nom de la classe parent : glaces_us_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 glaces_us_homepromo_2024">
+    <a href="$url('Search-Show','cgid','thes_infusions_glaces')$" title="Our best-sellers can also be enjoyed as iced teas!">
+        @@include('../components/homepromo.html', {
+            "alt": "Our best-sellers can also be enjoyed as iced teas!",
+            "title": "Let's break the ice",
+            "subtitle": "Our best-sellers can also be enjoyed as iced teas!",
+            "text-link": "<span class='hide-mobile-homepromo'>Enjoy now</span><span class='hide-desktop-homepromo'>Iced tea ></span>",
+        })
+    </a>
+</section>

@@ -1,0 +1,33 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/glaces_us.scss";
+
+    Content asset : GLACES_US_PUSH
+
+    Nom de la classe parent : glaces_us_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="glaces_us_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Our best-sellers can also be enjoyed as iced teas!",
+            "texte-h2": "Let's break the ice",
+            "texte-h3": "Our best-sellers can also be enjoyed as iced teas!",
+            "texte-link": "Enjoy now",
+            "link": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+            "class": "",
+        })
+    </div>
+</div>

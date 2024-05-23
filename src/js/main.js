@@ -4,6 +4,7 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
+        // =require specific/2024/bundle_rituel_minceur_x4.js
     } else {
         setTimeout(init);
     }

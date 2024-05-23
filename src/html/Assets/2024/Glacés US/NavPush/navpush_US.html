@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/glaces_us.scss";
+
+    Content asset : GLACES_US_PUSH_NAV
+
+    Nom de la classe parent : glaces_us_navpush_2024
+
+-->
+
+<section class="glaces_us_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Our best-sellers can also be enjoyed as iced teas!",
+        "texte": "Iced tea",
+        "lien": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+    })
+</section>

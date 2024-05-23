@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/glaces_us.scss";
+
+    Content asset : GLACES_US_HP
+
+    Nom de la classe parent : glaces_us_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="glaces_us_hero_2024">
+    <a href="$url('Search-Show','cgid','thes_infusions_glaces')$" class="hero hero--one-cta" title="Our best-sellers can also be enjoyed as iced teas!">
+        @@include('../components/slot.html', {
+            "alt": "Our best-sellers can also be enjoyed as iced teas!",
+            "title": "Let's break the ice",
+            "subtitle": "Our best-sellers can also be enjoyed as iced teas!",
+            "texte-link": "Enjoy now",
+            "class-cta": "",
+        })
+
+        <!-- hero__ctas-container--4-ctas pour pouvoir mettre 4 ctas dans ce template il faut rajouter cette class-->
+    </a>
+</section>
