@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_nomade.scss";
+
+    Content asset : KIT_NOMADE_NAV_PUSH
+
+    Nom de la classe parent : kit_nomade_navpush_2024
+
+-->
+
+<section class="kit_nomade_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Scopri il nostro set portatile a 36,90€ invece di 49,80€",
+        "texte": "Tè freddo da portare sempre con te",
+        "lien": "$url('Product-Show','pid','BUNDLENOMADE')$",
+    })
+</section>

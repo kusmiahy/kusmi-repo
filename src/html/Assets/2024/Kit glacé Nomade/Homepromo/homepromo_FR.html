@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_nomade.scss";
+
+    Content asset : KIT_NOMADE_HOME_PROMO
+
+    Nom de la classe parent : kit_nomade_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 kit_nomade_homepromo_2024">
+    <a href="$url('Product-Show','pid','BUNDLENOMADE')$" title="Découvrez notre ensemble nomade à 36,90€ au lieu de 49,80€">
+        @@include('../components/homepromo.html', {
+            "alt": "Découvrez notre ensemble nomade à 36,90€ au lieu de 49,80€",
+            "title": "Thé glacé à emporter !",
+            "subtitle": "Notre ensemble nomade à seulement 36,90€",
+            "text-link": "<span class='hide-mobile-homepromo'>J'en profite</span><span class='hide-desktop-homepromo'>Thé glacé à emporter ></span>",
+        })
+    </a>
+</section>
