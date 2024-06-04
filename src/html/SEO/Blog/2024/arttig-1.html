@@ -1,0 +1,157 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttig-1
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Notre recette de thé glacé à la menthe maison, pour accompagner tout l’été
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/glace/the_glace_a_la_menthe.webp?$staticlink$",
+                "alt": "thé glacé maison à la menthe",
+    
+                "titre": "Notre recette de thé glacé à la menthe maison, pour accompagner tout l’été",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés glacés bio",
+    
+                "texte": "Pour vous évader sans bouger de votre transat à l’ombre du parasol, goûtez notre recette de <strong>thé glacé menthe maison</strong>. Cette boisson désaltérante, gourmande et rafraîchissante vous accompagne à tout moment de la journée pour s’hydrater avec délice.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé glacé à la menthe maison pour un tea time exotique au bord de la piscine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous connaissez la version brûlante du thé à la menthe, qui vous plonge immédiatement dans la médina de Marrakech. Par temps de fortes chaleurs, pourquoi ne pas essayer sa version givrée tout aussi délicieuse ?<br>Le <strong>thé glacé menthe maison</strong> se déguste au petit-déjeuner, au goûter ou à l’apéritif, pour profiter d’une pause rafraîchissante. Elle deviendra à coup sûr votre boisson incontournable de l’été : à consommer sans modération pour s’hydrater avec plaisir.<br>En période de fortes chaleurs, boire du thé est idéal en raison de son puissant pouvoir désaltérant. Allié à la menthe, la plus rafraîchissante des herbes aromatiques, vous obtenez une boisson parfaite pour éviter la surchauffe !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La recette du thé glacé menthe maison étape par étape",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour réaliser votre recette de <strong>thé glacé à la menthe maison</strong>, optez pour un thé vert ou un thé blanc. Ils sont les plus indiqués. Leur légèreté se marie harmonieusement avec les notes rafraîchissantes de la menthe.<br>Un conseil : privilégiez la méthode d’infusion à froid pour profiter des plaisirs du thé sans aucune amertume. Pour un thé vert, prévoyez un temps d’infusion compris entre trente minutes et trois heures selon vos goûts. Comptez entre deux à quatre heures au total pour un thé blanc.<br>Pour préparer deux litres de <strong>thé glacé menthe maison</strong>, il vous faut :",
+                })
+                <ul class="block__ul block__ul--ol">
+                    @@include('_components/li.html', {
+                        "texte": "Deux litres d’eau minérale ou d’eau filtrée",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "10 g de thé vert ou de thé blanc, nature ou parfumé",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "2 beaux bouquets de menthe fraîche",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "100 g de sucre blanc en poudre, à doser à votre convenance",
+                    })
+                </ul>
+                <ol class="block__ul block__ul--ol">
+                    @@include('_components/li.html', {
+                        "texte": "Versez l’eau dans une grande carafe.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Disposez le thé dans un filtre et laissez infuser dans l’eau à froid pendant environ trois heures.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Retirez le thé et filtrez si besoin.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez les feuilles de menthe et le sucre, puis mélangez.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Placez votre mélange au réfrigérateur pendant au minimum 5 heures. Plus vous augmentez le temps d’infusion, plus les saveurs du thé et de la menthe se développeront.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Sortez votre carafe du réfrigérateur. Mélangez bien afin que le sucre ne reste pas dans le fond.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Votre <strong>thé glacé à la menthe maison</strong> est prêt !",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour aromatiser votre boisson, ajoutez-y des fruits de saison comme des pêches, des abricots ou des framboises. Vous pouvez également l’agrémenter d’un jus de citron et pourquoi pas d’un trait de sirop de fleur de sureau !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les idées Kusmi Tea pour mettre en valeur vos recettes de thé glacé à la menthe maison",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour profiter de saveurs ultras intenses, réalisez votre recette avec notre <a href='the-vert-a-la-menthe-VMENBIOMASTER.html' class='banniere__link'>thé vert à la menthe bio</a>. En une gorgée, la puissance des feuilles de thé enroulées et les arômes de la menthe vous transportent en Orient.<br>Pour un instant de pur plaisir, découvrez notre <a href='/fr/the-vert-a-la-menthe-bio-a-l-arome-naturel-de-rose-21188A1070.html' class='banniere__link'>thé vert à la menthe bio à l’arôme naturel de rose</a>. Le mélange raffiné de la reine des fleurs et des arômes vivifiant de la menthe vous feront succomber : une composition harmonieuse, délicate et envoûtante comme les Milles et Une Nuits.<br>Pour les audacieux en quête de fraîcheur, le <a href='/fr/the-vert-menthe-concombre-VCOMBIOMASTER.html' class='banniere__link'>thé vert menthe concombre bio</a> a tout bon. Laissez-vous transporter par une vague légère et désaltérante, divinement énergisante !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttig-2')$",
+                    "lien-img": "blog/articles/2024/glace/aquasummer_glacee.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Découvrez les thés glacés et infusions glacées de Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','faire-infusion-glacee-maison-Kusmi')$",
+                    "lien-img": "blog/articles/2024/glace/infusion-glacee.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment faire son infusion glacée maison ? Notre recette Kusmi !",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-glace-au-bureau')$",
+                    "lien-img": "blog/articles/2024/glace/the-glace-gourde-voyage.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé glacé, parfait pour se rafraîchir au bureau cet été",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Notre recette de thé glacé à la menthe maison, pour accompagner tout l’été",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttig-1')$",
+            })
+        </section>
+    </div>
+
+</div>
+

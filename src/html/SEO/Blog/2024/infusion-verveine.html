@@ -14,7 +14,7 @@
 
     Nom de la classe parent : blog_article_2024
 
-    Titre : La verveine, star des infusions relaxantes
+    Titre : Les 5 bienfaits de la verveine en infusion
 
 -->
 
@@ -35,8 +35,8 @@
                 "lien-img": "blog/articles/2024/bienfaits-verveine.webp?$staticlink$",
                 "alt": "Les bienfaits de la verveine",
     
-                "titre": "La verveine, star des infusions relaxantes",
-                "date": "Publié le <span class='date__color'>10/03/2021</span>",
+                "titre": "Les 5 bienfaits de la verveine en infusion",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
                 "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
                 "lien-categorie": "blog/?filter=infusions-bio",
                 "tag-texte": "Infusions bio",
@@ -49,11 +49,20 @@
         <article class="content content__img">
             <section class="block">
                 @@include('_components/h2.html', {
-                    "titre": "La verveine, plante anti-stress ?",
+                    "titre": "D’où vient la verveine ?",
                 })
                 @@include('_components/paragraphe.html', {
                     "class": "block__p",
-                    "texte": "Nos ancêtres connaissaient bien mieux les plantes que nous : elles étaient leurs médicaments. Consommée depuis l’Antiquité, la verveine a gagné en popularité grâce ses effets supposés sur le stress et l’anxiété. Si bien que c’est devenue la boisson idéale pour une soirée sous le signe de la relaxation.",
+                    "texte": "Issue de la famille des Verbenaceae, la <a class='banniere__link' href='/fr/be-cool-infusion-bio-COOLBIOMASTER.html'>verveine</a> est une plante herbacée aromatique, originaire du Pérou, du Chili et de l’Argentine. Nécessitant du soleil et de la chaleur pour se développer, on en trouve un peu partout dans le bassin méditerranéen, mais aussi en Italie, en Espagne et dans le sud de la France. Elle se décline en plusieurs variétés de plantes assez proches. Les plus connues sont la “<strong>verveine officinale</strong>” (verbena officinalis), aussi appelée “herbe à Vénus”, à qui on attribue depuis l’Antiquité des vertus magiques comme celle d’attirer l’amour. Mais aussi la “<strong>verveine odorante</strong>” (ou <strong>verveine citronnelle</strong>), réputée comme la plus enivrante, utilisée le plus souvent dans les <a class='banniere__link' href=\"$url('Page-Show','cid','type-infusion')$\"\>infusions</a>. C’est une plante qui se cultive assez facilement dans les jardins des zones tempérées et tropicale… si vous voulez vous lancer !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Nos conseils pour préparer une infusion à la verveine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que ce soit pour son goût, pour ses effets supposés sur le corps, ou pour les deux (c’est encore mieux d’allier saveur et bienfaits !), on vous dit comment procéder pour réaliser une infusion aux <strong>feuilles de verveine.</strong><br>Pour aller plus loin : <a class='banniere__link' href=\"$url('Page-Show','cid','comment-choisir-preparer-infusion')$\"\>L’infusion : comment la choisir et la préparer ?</a>",
                 })
             </section>
             <section class="block">
@@ -134,15 +143,6 @@
                         "alt": "Infusion à la verveine",
                     })
                 </a>
-            </section>
-            <section class="block">
-                @@include('_components/h2.html', {
-                    "titre": "",
-                })
-                @@include('_components/paragraphe.html', {
-                    "class": "block__p",
-                    "texte": "",
-                })
             </section>
             <section class="block">
                 @@include('_components/h2.html', {
@@ -229,7 +229,7 @@
         </section>
         <section class="block">
             @@include('_components/partager.html', {
-                "titre": "La verveine, star des infusions relaxantes",
+                "titre": "Les 5 bienfaits de la verveine en infusion",
                 "texte": "Partage cet article",
                 "url-network": "$url('Page-Show','cid','infusion-verveine')$",
             })

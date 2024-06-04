@@ -290,6 +290,9 @@ $article-title: #731f4b;
 .block__ul li {
     list-style-type: circle;
 }
+.block__ul.block__ul--ol li {
+    list-style-type: number;
+}
 
 .content__p--first {
     margin-bottom: 1.5rem;

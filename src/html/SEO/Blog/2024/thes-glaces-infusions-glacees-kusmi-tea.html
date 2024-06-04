@@ -1,0 +1,192 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : thes-glaces-infusions-glacees-kusmi-tea
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Notre recette de thé glacé maison à la pêche à reproduire facilement chez soi
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/glace/coffret-les-glaces.webp?$staticlink$",
+                "alt": "infusions glacées Kusmi",
+    
+                "titre": "Notre recette de thé glacé maison à la pêche à reproduire facilement chez soi",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions Bio",
+    
+                "cta-texte": "Découvrez nos infusions glacées",
+    
+                "texte": "Chaud devant ! Quand les températures grimpent à l’extérieur, elles baissent dans nos tasses ! Cet été on vit d’amour et de <strong>thés glacés</strong> avec nos nouveaux <a href=\"$url('Search-Show','cgid','thes_infusions_glaces')$\"\ class='banniere__link'>thés et infusions glacés</a> bio. ",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Thé et infusions glacés, le format parfait",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Pour allier l’agréable à l’utile, nous avons pensé nos <strong>thés et infusions glacés</strong> dans un format spécial prêt à l’emploi. Dans chaque boîte, six grands sachets idéalement calibrés pour préparer une carafe d’un litre de <strong>thé glacé</strong> ou d’<strong>infusion glacée</strong> 100% plaisir et zéro temps perdu. ",
+                    })
+                </div>
+                <a href="/fr/trio-sante-BUNDLETRIOSANTE18S.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/glace/les-trois-rituels-kusmi.webp?$staticlink$",
+                        "alt": "produits Rituel : Rituel Sommeil, Rituel Minceur et Rituel Défenses Immunitaires de Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Plutôt hibiscus glacé ou menthe frappée ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Préparez vos glaçons ! Les <a href=\"$url('Search-Show','cgid','thes_infusions_glaces')$\"\ class='banniere__link'>thés et infusions glacés</a> arrivent dans nos carafes, avec cinq recettes emblématiques destinées à satisfaire toutes les envies et plaire à tous les goûts.",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Ces mélanges, givrés juste ce qu’il faut, vont vous faire frissonner de plaisir. Pause solo, duo complice ou tea time entre amis, à chacun ses saveurs, <strong>à chacun son bonheur !</strong>",
+                    })
+                </div>
+                <a href="$url('Search-Show','cgid','thes_infusions_glaces')$" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/glace/infusions-glacees.webp?$staticlink$",
+                        "alt": "infusions glacées : AquaFrutti, AquaRosa, AquaSummer",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Plutôt fruits du verger ? L’<strong>infusion bio</strong> <a href='/fr/aquasummer-infusion-de-fruits-bio-AQSUBIOMASTER.html' class='banniere__link'>AquaSummer</a> recèle toutes les notes veloutées et charnues de la pêche et de l’abricot, sur des accents d’hibiscus gorgés de soleil. ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Fan des Tropiques ? L’<strong>infusion</strong> <a href='/fr/aquaexotica-infusion-de-fruits-bio-AQEXBIOMASTER.html' class='banniere__link'>AquaExotica</a> invite au voyage, avec son mélange de fleur d’hibiscus acidulée, de mangue infiniment douce et de saveurs exotiques de fruit du dragon.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Envie de superfruits ? L’<strong>infusion bio</strong> <a href='/fr/aquafrutti-infusion-de-fruits-bio-AQFRBIOMASTER.html' class='banniere__link'>AquaFrutti</a> associe hydratation et plaisir à travers l’hibiscus (encore lui ? ça tombe bien, on en redemande !), la subtilité des graines de grenade et la douceur de la pomme, du cassis et des baies de goji.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour voir la vie estivale en rose, l’<strong>infusion</strong> <a href='/fr/aquarosa-infusion-de-fruits-bio-AQUABIOMASTER.html' class='banniere__link'>AquaRosa</a> ! <a href=\"$url('Page-Show','cid','infusion-hibiscus-bienfaits')$\"\ class='banniere__link'>Hibiscus</a>, fruits rouges, pomme et baies noires… une infusion au caractère bien trempé !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour un traditionnel revisité, l’incontournable <a href='/fr/the-vert-a-la-menthe-VMENBIOMASTER.html' class='banniere__link'>Thé à la menthe</a> promet un rafraîchissement instantané, sur une base de gunpowder, ce <a href=\"$url('Search-Show','cgid','vert')$\"\>thé vert</a> de Chine aux feuilles roulées en forme de billes sera idéal pour un <strong>thé glacé à la menthe</strong> des plus rafraîchissant.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Mais comment préparer son thé glacé ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Rien de plus simple, découvrez notre tuto <strong>thé glacé</strong>.",
+                    })
+                    <ol class="block__ul block__ul--ol">
+                        @@include('_components/li.html', {
+                            "texte": "<strong><u>Étape 1 :</u></strong> Remplir une <a href=\"$url('Search-Show','cgid','carafes_a_the_glace')$\"\ class='banniere__link'>carafe</a> d’eau frémissante. <a href=\"$url('Search-Show','cgid','carafes_a_the_glace')$\"\ class='banniere__link'>Retrouvez nos carafes à thé glacé</a>",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong><u>Étape 2 :</u></strong> Plonger le <strong>sachet</strong> de son choix.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong><u>Étape 3 :</u></strong> Se détendre et l<strong>aisser le mélange infuser (7 à 10 minutes)</strong>.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong><u>Étape 4 :</u></strong> Ajouter beaucoup de <strong>glaçons</strong>.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong><u>Étape 5 :</u></strong> C’est prêt ! <strong>Dégustez, savourez, appréciez</strong>.",
+                        })
+                    </ol>
+                </div>
+                <a href="/fr/aquasummer-infusion-de-fruits-bio-AQSUBIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/glace/aquasummer.webp?$staticlink$",
+                        "alt": "produit AquaSummer Kusmi Tea",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Des thés et infusions glacés aussi bio que bons",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et naturellement, nos <strong>thés et infusions glacés</strong> sont <strong>bio</strong> : des plantes aux fruits en passant par les fleurs et les épices, tous nos mélanges sont constitués d’ingrédients naturels savoureux et de première qualité. Le tout agrémenté d’arômes naturels et d’huiles essentielles, qui ont le secret de nous faire du bien tout en respectant notre planète. <br><strong>Bio</strong>, bon et <strong>glacé</strong> que demander de plus pour affronter un été chaud ?<br>Psst... Saviez-vous que vous pouvez même opter pour un thé ou une infusion glacée autour d'un barbecue ? Cette pratique est très appréciée Outre-Atlantique. Rendez-vous sur le site <a href='https://thehungryhug.com/commencer-le-barbecue' class='banniere__link'>thehungryhug.com</a> pour passer le meilleur des moments entre amis.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-hibiscus-bienfaits')$",
+                    "lien-img": "blog/HIBI-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "L’infusion d’hibiscus : les bienfaits d’une tisane venue d’Afrique",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','AquaSummer-infusion-bio-peche-hibiscus')$",
+                    "lien-img": "blog/Summer-in-bed.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "AquaSummer, l’infusion bio qui donne la pêche",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','aquafrutti-infusion-bio-superfruitee')$",
+                    "lien-img": "blog/AquaFrutti-DSTN0018.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "AquaFrutti, l’infusion bio Superfruitée ",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Notre recette de thé glacé maison à la pêche à reproduire facilement chez soi",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','thes-glaces-infusions-glacees-kusmi-tea')$",
+            })
+        </section>
+    </div>
+
+</div>
+

@@ -1,0 +1,150 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : the-glace-au-bureau
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Le thé glacé, parfait pour se rafraîchir au bureau cet été
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/glace/the-glace-gourde-voyage.webp?$staticlink$",
+                "alt": "thé glacé gourde voyage",
+    
+                "titre": "Le thé glacé, parfait pour se rafraîchir au bureau cet été",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés glacés",
+    
+                "texte": "Avec les beaux jours qui arrivent et les températures qui augmentent on change nos petites habitudes au travail. Délaissant pour un temps la bouilloire, on se laisse tenter par des boissons fraîches et rafraîchissantes, telles que le thé glacé ou l’infusion glacée. Cet été, oubliez l'eau du robinet et les boissons sucrées, craquez plutôt pour les thés glacés Kusmi pour vous rafraîchir au bureau.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quels sont les atouts du thé glacé ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Plus sain qu’un soda, le thé glacé ne contient pas de produits chimiques ou industriels. Juste de l’eau, du <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\"\>thé vert</a>, du <a class='banniere__link' href=\"$url('Search-Show','cgid','blanc')$\"\>thé blanc</a> ou du <a class='banniere__link' href=\"$url('Search-Show','cgid','noir')$\"\>thé noir</a>, et parfois certains arômes naturels, contenus dans les fruits, les fleurs, les baies, les épices… À moins que vous ayez la main forte sur le sucrier, le <a class='banniere__link' href=\"$url('Page-Show','cid','conseils-ete-infusions-bio-glacees-thes-glaces')$\"\>thé glacé</a> est aussi moins sucré… voire pas du tout. C’est à vous de doser ! Comme le thé chaud, le thé glacé est connu pour son action stimulante. Libérée progressivement dans l’organisme, la théine augmenterait nos facultés de concentration et de mémorisation. Sans oublier que le thé est réputé pour être un anti-stress naturel, tout en étant riche en vitamine C et en <a class='banniere__link' href=\"$url('Page-Show','cid','the-vert-bio-bienfaits')$\"\>antioxydants</a>.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Quels sont les atouts de l’infusion glacée ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<a class='banniere__link' href=\"$url('Page-Show','cid','the-sans-theine')$\"\>Sans théine</a>, ces boissons rafraîchissantes reposent uniquement sur les bienfaits des plantes. En fonction de nos goûts, on optera pour des saveurs “fruits exotiques”, “fruits rouges”, “agrumes” ou “hibiscus”. Mais, on pourra aussi se décider en fonction des petits maux contre lesquels on veut lutter. Un déjeuner trop riche et difficile à digérer ? On partira sur de la verveine ou de la <a class='banniere__link' href='/fr/be-cool-infusion-bio-COOLBIOMASTER.html'>menthe poivrée</a>, avec <a class='banniere__link' href='/fr/be-cool-infusion-bio-COOLBIOMASTER.html'>l’infusion bio Be Cool</a>. Besoin de se déstresser ? On s’offrira une bulle de détente avec <a class='banniere__link' href='fr/feel-zen-infusion-bio-FEELBIOMASTER.html'>l’infusion bio Feel Zen</a>, au rooibos, fruits et caramel.",
+                    })
+                </div>
+                <a href="/fr/ensemble-a-the-glace-BUNDLEBLEUEXOSUM.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/glace/kit-the-glace-carafe.webp?$staticlink$",
+                        "alt": "kit thé glacé carafe",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment faire un thé glacé ou une infusion glacée ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La préparation d'une boisson aussi rafraîchissante que le thé glacé est simple comme bonjour. L’option la plus généreuse, c’est de craquer pour le format de sachet spécial carafe ! 1 sachet = 1 <a class='banniere__link' href=\"$url('Search-Show','cgid','carafes_a_the_glace')$\"\>carafe</a> d’un litre de thé glacé. Histoire de trinquer entre collègues… et de créer du lien dans l’open space ! Remplissez seulement à moitié une carafe d’eau frémissante à 95°C, avant de plonger le sachet spécial carafe. Détendez-vous tandis que le mélange infuse 7 minutes environ. Ajoutez une quantité importante de super-glaçons. C’est prêt ! Dégustez, savourez, appréciez votre <a class='banniere__link' href=\"$url('Page-Show','cid','thes-glaces-infusions-glacees-kusmi-tea')$\"\>boisson rafraîchissante</a>. Option deluxe : ajoutez-y des fruits comme des rondelles de concombre, de citron ou des feuilles de menthe pour pimper votre thé glacé et avoir l'impression d'être en terrasse alors que la réunion de 14h est sur le point de commencer.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Pourquoi s’octroyer une pause thé glacé au bureau ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Entre deux sessions de travail intense, les <a class='banniere__link' href=\"$url('Page-Show','cid','pause-the-au-bureau')$\"\>pauses</a> permettent de ralentir le rythme et de prendre un moment pour soi. S’arrêter, <a class='banniere__link' href=\"$url('Page-Show','cid','temps-pause-travail-pause-fika')$\"\>marquer un temps d’arrêt</a>, permet de mieux se re-concentrer après. Plus hydratante et rafraîchissante qu’un café, la dégustation d’un thé glacé ou d’une infusion glacée peut (aussi) être un moment de socialisation entre collègues. On apprend à mieux se connaître, on crée des liens, et cela renforce <strong>l’esprit d’équipe</strong>. Si vous cherchez d’autres conseils pour améliorer le bien-être au travail, voici une <a class='banniere__link' href=\"$url('Page-Show','cid','bien-etre-au-travail')$\"\>liste d’idées inspirantes.</a>",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Quels sont les thés et infusions glacées proposées par Kusmi Tea ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "À ajouter la liste de boissons rafraîchissantes à tester cet été au bureau : <a href='/fr/aquarosa-infusion-de-fruits-bio-AQUABIOMASTER.html' class='banniere__link'>AquaRosa</a>, l’eau de fruits bio pour tenter l’expérience de la piscine de rosé sans alcool. <a href='/fr/aquaexotica-infusion-de-fruits-bio-AQEXBIOMASTER.html' class='banniere__link'>AquaExotica</a>, un virgin cocktail sous les tropiques, à base d’infusion hibiscus et de fruits exotiques. <a href='/fr/aquasummer-infusion-de-fruits-bio-AQSUBIOMASTER.html' class='banniere__link'>AquaSummer</a>, l’infusion glacée bio saveurs pêche et abricot qui remplacera à merveille l’Iced tea industriel. <a href='/fr/aquafrutti-infusion-de-fruits-bio-AQFRBIOMASTER.html' class='banniere__link'>AquaFrutti</a> qui met à l’honneur les super-fruits et les baies de Goji. Sans oublier, le <a href='/fr/the-vert-a-la-menthe-VMENBIOMASTER.html' class='banniere__link'>thé vert bio à la menthe</a> version glacée… tout aussi frais, mais plus approprié au bureau qu’un mojito ! Alors pour quels thés glacés allez-vous craquer cet été au bureau ?",
+                    })
+                </div>
+                <a href="/fr/ensemble-a-the-glace-BUNDLEBLEUEXOSUM.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/glace/the-glace-kusmi-tea.webp?$staticlink$",
+                        "alt": "thé glacé kusmi tea",
+                    })
+                </a>
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttig-2')$",
+                    "lien-img": "blog/articles/2024/glace/aquasummer_glacee.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Découvrez les thés glacés et infusions glacées de Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','faire-infusion-glacee-maison-Kusmi')$",
+                    "lien-img": "blog/articles/2024/glace/coffret-les-glaces.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment faire son infusion glacée maison ? Notre recette Kusmi !",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','thes-glaces-infusions-glacees-kusmi-tea')$",
+                    "lien-img": "blog/articles/2024/glace/infusion-glacee.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Notre recette de thé glacé maison à la pêche à reproduire facilement chez soi",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Le thé glacé, parfait pour se rafraîchir au bureau cet été",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','the-glace-au-bureau')$",
+            })
+        </section>
+    </div>
+
+</div>
+

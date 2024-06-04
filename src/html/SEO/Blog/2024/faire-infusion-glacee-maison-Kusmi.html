@@ -1,0 +1,126 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : faire-infusion-glacee-maison-Kusmi
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Comment faire son infusion glacée maison ? Notre recette Kusmi !
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/glace/infusion-glacee.webp?$staticlink$",
+                "alt": "infusions glacées Kusmi",
+    
+                "titre": "Comment faire son infusion glacée maison ? Notre recette Kusmi !",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=recette",
+                "tag-texte": "Recettes",
+    
+                "cta-texte": "Découvrez nos infusions glacées",
+    
+                "texte": "",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Ramenez-nous des glaçons !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Qu’est-ce qui est <strong>bio</strong>, <strong>sans théine</strong> et se boit aussi chaude que glacée ? <a href='/fr/aquasummer-infusion-de-fruits-bio-AQSUBIOMASTER.html' class='banniere__link'>AquaSummer</a> ! Notre nouvelle <strong>infusion de fruits BIO </strong>à la <a href=\"$url('Page-Show','cid','peche-fruit-ete-vertus')$\"\ class='banniere__link'>pêche</a>, <strong>abricot</strong> et <a href=\"$url('Page-Show','cid','infusion-hibiscus-bienfaits')$\"\ class='banniere__link'>hibiscus</a> : tout simplement, le <strong>goût de l'été</strong> et de farniente parfait à déguster en glacée.<br>Avec <a href=\"$url('Page-Show','cid','AquaSummer-infusion-bio-peche-hibiscus')$\"\ class='banniere__link'>AquaSummer</a>, c’est l’été toute l’année : raison de plus pour vous apprendre à siroter votre <strong>infusion bio glacée</strong> même en novembre.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "On vous apprend à briser la glace ?",
+                })
+                <ol class="block__ul block__ul--ol">
+                    @@include('_components/li.html', {
+                        "texte": "Enfilez votre bikini et passez en mode summer. Hiver comme été, le goût de l’été c’est dans la <strong>tasse</strong> que ça se passe.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Remplissez votre <a href=\"$url('Search-Show','cgid','accessories_m')$\"\ class='banniere__link'>carafe</a> de <strong>60cl d’eau</strong> frémissante (90°). Une eau frémissante vous permettra d’infuser plus facilement votre <strong>tisane bio</strong>. C’est la clé pour un résultat parfumé avec du caractère. <a href=\"$url('Search-Show','cgid','accessories_m')$\"\ class='banniere__link'>Retrouvez nos accessoires Kusmi</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Détendez-vous tandis que le mélange infuse. Comptez environ <strong>7 minutes</strong>, et ajoutez une quantité importante de glaçons.<br>Pour les plus aventuriers d’entre vous, vous pouvez agrémenter votre <strong>infusion glacée</strong> avec des fruits frais. Rondelles de citron, concombre : à votre guise.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Et voilà ! Dégustez, savourez, appréciez votre <strong>infusion ou thé glacé !</strong>",
+                    })
+                </ol>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Nos mélanges glacés",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Chez Kusmi, on ne vit pas que d’amour et d’eau chaude… on aime aussi les <strong>thés et infusions glacés !</strong><br>C’est pourquoi plusieurs de nos mélanges sont parfaitement adaptés à vos <strong>préparations froides</strong> pour vous désaltérer. <a href=\"$url('Search-Show','cgid','thes_infusions_glaces')$\"\ class='banniere__link'>Retrouvez nos thés et infusions glacés</a>",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttig-1')$",
+                    "lien-img": "blog/articles/2024/glace/the_glace_a_la_menthe.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Notre recette de thé glacé à la menthe maison, pour accompagner tout l’été ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttig-2')$",
+                    "lien-img": "blog/articles/2024/glace/coffret-les-glaces.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Notre recette de thé glacé maison à la pêche à reproduire facilement chez soi",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-glace-au-bureau')$",
+                    "lien-img": "blog/articles/2024/glace/the-glace-gourde-voyage.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé glacé, parfait pour se rafraîchir au bureau cet été",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Comment faire son infusion glacée maison ? Notre recette Kusmi !",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','faire-infusion-glacee-maison-Kusmi')$",
+            })
+        </section>
+    </div>
+
+</div>
+

@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_bien52r.scss";
+
+    Content asset : OFFRE_BIEN525R_HOME_PROMO
+
+    Nom de la classe parent : offre_bien52r_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_bien52r_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Get a FREE 5 mini-tins gift set of your choice !">
+        @@include('../components/homepromo.html', {
+            "alt": "Get a FREE 5 mini-tins gift set of your choice !",
+            "title": "Get a FREE 5 mini-tins gift set of your choice !",
+            "subtitle": "with any $80+ order",
+            "text-link": "<span class='hide-mobile-homepromo'>Shop now</span><span class='hide-desktop-homepromo'>Free 5 mini-tins gift set ></span>",
+        })
+    </a>
+</section>

@@ -1,0 +1,166 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttig-2
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Découvrez les thés glacés et infusions glacées de Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/glace/aquasummer_glacee.webp?$staticlink$",
+                "alt": "thé glacé maison à la pêche",
+    
+                "titre": "Découvrez les thés glacés et infusions glacées de Kusmi Tea",
+                "date": "Publié le <span class='date__color'>04/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes_infusions_glaces')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés glacés bio",
+    
+                "texte": "Allongé sur votre transat au bord de la piscine un dimanche ensoleillé, que pourrait-il vous manquer ? Si ce n’est de quoi vous rafraîchir, là tout de suite… Pour savourer vos moments de farniente, découvrez la boisson star de l’été : le <strong>thé glacé maison à la pêche</strong>. Irrésistiblement fruité et délicat, il est une ode aux journées de vacances.",
+            })
+        </section>
+        <article class="content">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé glacé maison à la pêche : pour se faire plaisir tout l’été",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cet été, c’est décidé : les sodas restent au placard. On troque ces boissons trop sucrées contre un <strong>thé glacé maison</strong> saveur <strong>pêche</strong>, une délicieuse solution plus saine, tout aussi gourmande !<br>L’avantage ? Vous maîtrisez tous les ingrédients qui entrent dans sa composition et pouvez même inventer vos propres mélanges ! Adieu les autres arômes artificiels, place au naturel.<br>À vous de choisir entre les notes subtiles du thé blanc ou du thé vert, idéales avec la pêche. La rondeur et la douceur de ce fruit estival par excellence s’accordent également merveilleusement avec la puissance du thé noir. Laissez libre cours à votre imagination : ajoutez d’autres fruits encore, des fleurs ou des épices, les combinaisons sont infinies !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Réalisez votre thé glacé maison à la pêche pas à pas",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Hyper rafraîchissant et facile à réaliser, notre recette de <strong>thé glacé maison à la pêche</strong> constitue une base à customiser selon vos envies.<br>Pour concocter deux litres de <strong>thé glacé maison à la pêche</strong>, il vous faut :",
+                })
+                <ul class="block__ul block__ul--ol">
+                    @@include('_components/li.html', {
+                        "texte": "Deux litres d’eau minérale ou d’eau filtrée",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Quatre pêches bien mûres, bio de préférence",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "60 g de sucre de canne en poudre ou quatre cuillères à soupe de miel ou de sirop d’agave",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Deux cuillères à soupe de thé en vrac, nature ou parfumé",
+                    })
+                </ul>
+                <ol class="block__ul block__ul--ol">
+                    @@include('_components/li.html', {
+                        "texte": "Lavez les pêches à l’eau claire. Ôtez leur peau si elles ne sont pas bio",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Découpez-les en quartiers",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez l’eau, le sucre, le miel ou le sirop d’agave et les quartiers de fruit dans une casserole",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Portez à ébullition",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Lorsque l’eau bout, baissez à feu moyen et laissez cuire cinq minutes",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Retirez du feu et laissez refroidir",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Lorsque le mélange est à température, mettez le thé dans un filtre. Laissez infuser quarante-cinq minutes environ",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Retirez le thé et couvrez la carafe",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez reposer le mélange une nuit au réfrigérateur",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Votre boisson est prête à être dégustée",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Du réveil jusqu’à l’apéritif, ce <strong>thé glacé maison pêche</strong> se déguste en toute occasion. Son procédé d’infusion à froid permet une diffusion des saveurs du thé en toute subtilité et surtout sans amertume.<br>Servi bien frais, vous pouvez l’aromatiser de feuilles de basilic ou de menthe fraîche pour encore plus de saveurs. Il se déguste également agrémenté d’un jus de citron frais pour une touche acidulée des plus gourmandes.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Thé vert, thé blanc ou tisane : variez les plaisirs et les recettes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ce que nous adorons chez Kusmi, c’est la possibilité de customiser ses boissons en fonction de ses envies. Thé et infusions glacés se prêtent à de nombreux mélanges de fruits, de fleurs, d’épices et d’herbes fraîches. L’infusion Kusmi <a href='/fr/aquasummer-infusion-de-fruits-bio-AQSUBIOMASTER.html' class='banniere__link'>AquaSummer</a> est la base parfaite pour votre boisson glacée avec ses notes gourmandes de pêche, d’abricot et d’hibiscus. Succombez au plaisir du thé avec notre mélange de thé blanc, pêche, abricot simplement irrésistible, le <a href='/fr/white-bellini-BBELBIOMASTER.html' class='banniere__link'>White Bellini</a>. Pour réaliser un thé glacé maison à la pêche au goût original, découvrez le <a href=\"$url('Search-Show','cgid','blanc')$\"\ class='banniere__link'>mélange thé blanc/thé vert saveur pêche-cassis</a>.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttig-1')$",
+                    "lien-img": "blog/articles/2024/glace/the_glace_a_la_menthe.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Notre recette de thé glacé à la menthe maison, pour accompagner tout l’été ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','faire-infusion-glacee-maison-Kusmi')$",
+                    "lien-img": "blog/articles/2024/glace/infusion-glacee.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment faire son infusion glacée maison ? Notre recette Kusmi !",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-glace-au-bureau')$",
+                    "lien-img": "blog/articles/2024/glace/the-glace-gourde-voyage.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé glacé, parfait pour se rafraîchir au bureau cet été",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Découvrez les thés glacés et infusions glacées de Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttig-2')$",
+            })
+        </section>
+    </div>
+
+</div>
+
