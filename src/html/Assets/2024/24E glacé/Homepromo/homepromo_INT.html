@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/24e_glace.scss";
+
+    Content asset : 24E_GLACE_HOME_PROMO
+
+    Nom de la classe parent : 24e_glace_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 ving-quatre-glace_homepromo_2024">
+    <a href="$url('Product-Show','pid','21284A1170')$" title="Discover our Iced Teas set">
+        @@include('../components/homepromo.html', {
+            "alt": "Discover our Iced Teas set",
+            "title": "No summer without iced tea!",
+            "subtitle": "Our new 24 tea bags giftset to enjoy cold",
+            "text-link": "<span class='hide-mobile-homepromo'>Discover now</span><span class='hide-desktop-homepromo'>NEW: Discover our Iced Teas set ></span>",
+        })
+    </a>
+</section>

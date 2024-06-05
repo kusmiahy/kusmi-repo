@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : 
+
+-->
+
+<section class="template_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez pour découvrir notre offre",
+        "texte": "Titre du navpush",
+        "lien": "$url('Search-Show','cgid','CGID')$",
+    })
+</section>

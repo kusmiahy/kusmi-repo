@@ -1,0 +1,33 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP
+
+    Nom de la classe parent : soldes_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2024">
+    <a href="$url('Search-Show','cgid','Soldes')$" class="hero hero--one-cta" title="Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€">
+        @@include('../components/slot.html', {
+            "alt": "Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€",
+            "title": "Soldes",
+            "subtitle": "Jusqu'à -50%",
+            "texte": "sur une sélection de thés, infusions, coffrets et accessoires",
+            "texte-link": "Toute la sélection",
+            "class-cta": "",
+        })
+    </a>
+</section>
