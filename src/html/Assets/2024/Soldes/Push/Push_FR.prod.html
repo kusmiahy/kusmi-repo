@@ -9,9 +9,9 @@
 // --------------------- Library -------------------------
 @import "./style/specific/2024/soldes.scss";
 
-    Content asset : GENERIQUE-SOLDES_HP
+    Content asset : GENERIQUE-SOLDES_PUSH
 
-    Nom de la classe parent : soldes_hero_2024
+    Nom de la classe parent : soldes_ete_push_2024
 
 -->
 
@@ -19,16 +19,17 @@
 <link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
 <!-- inject-style src="dist/css/main.min.css" -->
 
-<section class="soldes_hero_2024">
-    <a href="$url('Search-Show','cgid','Soldes')$" class="hero hero--one-cta" title="Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€">
-        @@include('../components/slot.html', {
+<div class="soldes_ete_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push" title="Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€">
+        @@include('../components/push.html', {
             "alt": "Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€",
-            "title": "Soldes",
+            "texte-h2": "Soldes",
             "until": "jusqu'à",
             "number": "-50%",
-            "texte": "sur une sélection de thés, infusions, coffrets et accessoires<sup>*</sup>",
+            "texte-h4": "sur une sélection de thés, infusions, coffrets et accessoires",
             "texte-link": "Toute la sélection",
-            "class-cta": "",
+            "link": "$url('Search-Show','cgid','Soldes')$",
+            "class": "",
         })
-    </a>
-</section>
+    </div>
+</div>

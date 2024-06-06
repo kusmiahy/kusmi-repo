@@ -57,7 +57,7 @@ $color-bg: #E53150;
         width: 54.85%;
         gap: 32px;
         &.highlight--gap {
-            gap: 20px;
+            gap: 16px;
         }
 
         @include min768() {
@@ -83,7 +83,7 @@ $color-bg: #E53150;
                 align-items: center;
                 flex-direction: column;
                 gap: .5rem;
-                @include min768() {
+                @include min1440() {
                     gap: 1rem;
                 }
             }
@@ -99,6 +99,7 @@ $color-bg: #E53150;
             h2 {
                 text-transform: uppercase;
                 font-size: 40px;
+                line-height: 36px;
                 font-weight: 700;
                 margin-bottom: 0;
 
@@ -108,6 +109,8 @@ $color-bg: #E53150;
                 }
 
                 @include min768() {
+                    line-height: auto;
+                    margin-bottom: .5rem;
                     font-size: 56px;
                 }
                 @include min1920() {
@@ -115,23 +118,83 @@ $color-bg: #E53150;
                 }
             }
             .highlight {
-                margin-bottom: 0;
+                margin-bottom: .3rem;
                 font-weight: 700;
-                font-size: 18px;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: #fff;
+                &.highlight--de {
+                    width: 100%;
+                    background: none;
+                    @include min768() {
+                        flex-direction: column;
+                    }
+                    @include min1440() {
+                        flex-direction: row;
+                    }
+                    &.highlight--int {
+                        @include min1440() {
+                            width: 538px;
+                        }
+                    }
+                    @include min1440() {
+                        width: 591px;
+                        gap: 0;
+                        background-color: #fff;
+                    }
+                    .highlight__mobile {
+                        width: 100%;
+                        font-size: .8rem;
+                    }
+                    .highlight__desktop {
+                        width: 100%;
+                        font-size: .8rem;
+                    }
+                    .container-highlight--de {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .2rem;
+                        background-color: #fff;
+                        padding-inline: .3rem;
+                        @include min1440() {
+                            background: none;
+                            width: auto;
+                        }
+                    }
+                    .reste-phrase {
+                        background-color: #fff;
+                        padding-inline: .3rem;
+                        @include min1440() {
+                            background: none;
+                            padding: 0;
+                        }
+                    }
+                    @include min1024() {
+                        font-size: 20px;
+                    }
+                }
                 @include min768() {
                     background-color: #fff;
                     color: #000;
-                    display: flex;
-                    margin-bottom: .5rem;
+                    margin-bottom: 1rem;
                     flex-wrap: wrap;
                     gap: .5rem;
-                    padding: .8rem;
+                    padding-inline: .5rem;
+                    margin-bottom: 0;
                 }
                 @include min1024() {
                     font-size: 24px;
+                    margin-bottom: 0;
+                }
+                @include min1440() {
+                    width: 457px;
+                    flex-wrap: nowrap;
                 }
                 &__rotate {
+                    padding: .3rem;
                     transform: rotate(-8deg);
                     background-color: #000;
                     color: #fff;
@@ -140,10 +203,11 @@ $color-bg: #E53150;
                     width: 130px;
                     margin: 0 auto;
                     display: flex;
+                    align-items: center;
                     gap: .5rem;
                     background-color: #fff;
                     color: #000;
-                    padding: 5px;
+                    padding-inline: 5px;
                     &.highlight__mobile--two {
                         width: auto;
                         padding: 0;
@@ -157,10 +221,52 @@ $color-bg: #E53150;
                 font-size: 24px;
                 line-height: 19.2px;
                 font-weight: 700;
-                margin-bottom: 0;
                 padding: 10px;
-                @include min1920() {
+                margin-bottom: .3rem;
+                @include min1024() {
                     font-size: 2rem;
+                    margin-bottom: .5rem;
+                }
+            }
+            .reduction {
+                &__texte {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    margin-bottom: .3rem;
+                    color: $color-text;
+                    @include min1024() {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                }
+
+                &__number {
+                    font-weight: 800;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    text-transform: uppercase;
+                    color: $color-text;
+                    @include min768() {
+                        font-size: 2.5rem;
+                        line-height: 2.5rem;
+                    }
+                    @include min1920() {
+                        font-size: 3.5rem;
+                        line-height: 3.5rem;
+                    }
+                    &--it {
+                        font-size: 1.3rem;
+                        line-height: 1.3rem;
+                        @include min768() {
+                            font-size: 2rem;
+                            line-height: 2rem;
+                        }
+                        @include min1920() {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                        }
+                    }
                 }
             }
 
@@ -296,20 +402,70 @@ $color-bg: #E53150;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: .7rem;
+            gap: .3rem;
+
+            @include min768() {
+                gap: .6rem;
+            }
 
             h2,
-            h3 {
+            h3,
+            .reduction__texte,
+            .reduction__number {
                 color: $color-text;
                 text-align: center;
                 margin-bottom: 0;
             }
 
+            .reduction {
+                &__texte {
+                    font-size: .9rem;
+                    line-height: .9rem;
+                    font-weight: 600;
+                    color: $color-text;
+                    text-align: center;
+                    @include min768() {
+                        line-height: 1rem;
+                        font-size: 1rem;
+                    }
+                }
+
+                &__number {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    color: $color-text;
+                    &.reduction__number--it {
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+
+            .highlight {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0;
+                background-color: #fff;
+                color: #000;
+                font-weight: 700;
+                padding-inline: .3rem;
+                gap: .5rem;
+                align-items: center;
+                .rotate {
+                    transform: rotate(-8deg);
+                    padding: .2rem;
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+
             h2 {
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 1.2rem;
-                line-height: 1.4rem;
+                font-size: 32px;
+                line-height: 38px;
                 margin-inline: 1.3rem;
                 
                 &.font-barlow {
@@ -320,32 +476,33 @@ $color-bg: #E53150;
                     margin-inline: .5rem;
                 }
 
-                @include min768() {
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                }
             }
 
             h3 {
-                font-weight: 500;
+                font-weight: 700;
                 text-transform: none;
                 letter-spacing: normal;
-                line-height: 1rem;
-                font-size: .9rem;
+                line-height: 28.8px;
+                font-size: 24px;
                 margin-inline: 1.2rem;
                 @include max375() {
                     margin-inline: .5rem;
                 }
 
                 @include min768() {
-                    line-height: 1.2rem;
-                    font-size: 1rem;
                     margin-inline: .5rem;
                 }
-
-                @include min1024() {
-                    font-size: 18px;
-                    line-height: 21.6px;
+            }
+            h4 {
+                color: #fff;
+                font-size: .9rem;
+                text-align: center;
+                margin-bottom: 0;
+                letter-spacing: 0.32px;
+                line-height: 1.1rem;
+                @include min768() {
+                    font-size: 1rem;
+                    line-height: auto;
                 }
             }
         }
@@ -371,10 +528,6 @@ $color-bg: #E53150;
 
                 @include min768() {
                     font-size: 1rem;
-                }
-
-                @include min1024() {
-                    font-size: 18px;
                 }
             }
         }

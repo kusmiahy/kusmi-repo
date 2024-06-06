@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_PUSH
+
+    Nom de la classe parent : soldes_ete_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="soldes_ete_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push" title="Fino al 50% di sconto su una selezione esclusiva">
+        @@include('../components/push.html', {
+            "alt": "Fino al 50% di sconto su una selezione esclusiva",
+            "texte-h2": "Saldi",
+            "until": "Fino al",
+            "number": "50% di sconto",
+            "texte-h4": "su TUTTO il sito",
+            "texte-link": "su una selezione di tè, infusi, cofanetti e accessori",
+            "link": "$url('Search-Show','cgid','saldi')$",
+            "class": "",
+        })
+    </div>
+</div>

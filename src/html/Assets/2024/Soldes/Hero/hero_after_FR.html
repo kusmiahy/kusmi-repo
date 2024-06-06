@@ -21,12 +21,13 @@
 
 <section class="soldes_hero_2024">
     <a href="$url('Search-Show','cgid','Soldes')$" class="hero hero--one-cta" title="Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€">
-        @@include('../components/slot.html', {
+        @@include('../components/slot-after.html', {
             "alt": "Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€",
             "title": "Soldes",
+            "highlight": "<span class='hide-mobile'>+ EXTRA</span><span class='highlight__rotate hide-mobile'>-10%</span><span class='hide-mobile'>sur TOUT le site dès 80€<sup>*</sup></span><span class='hide-desktop highlight__mobile'>+ EXTRA <span class='highlight__rotate'>-10%</span></span>",
             "until": "jusqu'à",
             "number": "-50%",
-            "texte": "sur une sélection de thés, infusions, coffrets et accessoires<sup>*</sup>",
+            "texte": "<span class='hide-desktop'>sur TOUT le site dès 80€<sup>*</sup></span>",
             "texte-link": "Toute la sélection",
             "class-cta": "",
         })
