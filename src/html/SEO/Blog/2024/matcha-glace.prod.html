@@ -1,0 +1,322 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-23
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/recette-matcha-glace.webp?$staticlink$",
+                "alt": "Tisane pour maigrir",
+    
+                "titre": "Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea",
+                "date": "Publié le <span class='date__color'>03/06/2024</span>",
+                "url-produit": "/fr/matcha-bio-VCHABIOMASTER.html?v=21695A1040",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Notre thé matcha bio",
+    
+                "texte": "Comment boire votre thé matcha froid ? Kusmi vous dévoile ses recettes préférées : thé matcha glacé, matcha latte, bubble tea matcha. Découvrez-les !",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha, thé japonais d'un vert éclatant, se déguste aussi bien chaud que froid. C'est une boisson tonique, rafraîchissante et réconfortante, <strong><a class='banniere__link' href='/fr/bienfaits-matcha-peau/arttv25.html'>aux multiples bienfaits</a></strong>. Si vous êtes curieux et gourmand, découvrez nos 3 recettes de thé matcha froid !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matériel nécessaire à la préparation d'un matcha :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Le thé matcha bio de Kusmi Tea ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Un bol ou un mug ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Un chasen : le fouet traditionnel en bambou spécifique au thé matcha ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Une cuillère ou un chashaku (cuillère traditionnelle en bambou) ;",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé matcha, froid ou glacé ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La recette ancestrale du thé <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/matcha'>matcha</a> est la base de toutes les suivantes. Toute l'année, vous pouvez consommer du matcha glacé. Emportez votre boisson partout, elle gardera son effet boost !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<u><strong>Ingrédients</strong></u> : 1 cuillère à café de thé matcha, eau frémissante, 2 cuillères de miel ou sirop d'érable (facultatif).",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Dans un bol, mélangez la poudre de thé matcha avec de l'eau frémissante, à l'aide de votre chasen.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez du miel ou sirop d'érable et fouettez à nouveau.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez reposer votre boisson 20 min à température ambiante ou 10 min au réfrigérateur.",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Affrontez les fortes chaleurs estivales en agrémentant votre matcha de quelques glaçons. Il deviendra l'indispensable de vos vacances !",
+                })
+            </section>
+            <section class="block">
+                    @@include('_components/h2.html', {
+                        "titre": "Le thé matcha latte glacé, un incontournable",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "En combinant la force du matcha et la douceur du lait, le thé matcha latte se révèle être une boisson surprenante !",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Vous aimez les laits végétaux ? Faites-vous plaisir ! Lait d'amande, de soja, de riz ou d'avoine, préparez un matcha latte froid à votre goût pour vous accompagner toute la journée.",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<u><strong>Ingrédients</strong></u> : 1 cuillère à café de thé matcha, 10 cl de lait de vache ou végétal, 1 cuillère de miel ou de sirop d'agave, ½ cuillère à café d'extrait de vanille, quelques glaçons.",
+                    })
+                    <ol class="block__ul">
+                        @@include('_components/li.html', {
+                            "texte": "Dans un bol, mélangez la poudre de thé matcha avec de l'eau frémissante, à l'aide de votre chasen.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Faites frémir le lait dans une petite casserole, et ajoutez-le à la préparation.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Ajoutez-y le miel ou sirop d'agave et l'extrait de vanille.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Fouettez le tout pendant 30 secondes afin d'obtenir un mélange onctueux.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Laissez refroidir ou ajoutez des glaçons pour un matcha latte glacé. Dégustez !",
+                        })
+                    </ol>
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Le lait apporte la touche voluptueuse à cette recette, pour une expérience tout en douceur. L'amertume du thé matcha froid disparaît pour ne conserver que le goût de velours du lait.",
+                    })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Un matcha glacé oui, mais avec des « bulles » !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Prisé des Taïwanais, il fait fureur sur les réseaux sociaux : le bubble tea ! À boire froid ou glacé, le bubble tea matcha devient ludique grâce aux perles de tapioca : une nouvelle façon de boire votre boisson préférée ",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/recette-matcha-fouet.webp?$staticlink$",
+                        "alt": "recette matcha kusmi tea avec fouet",
+                    })
+                </div>
+                <div class="block__texte">
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "<u><strong>Ingrédients</strong></u> :  1 cuillère à café de thé matcha bio, 10 cl de lait de votre choix, 2 cuillères à soupe d'eau chaude, 2 cuillères de miel, 50 g de perles de tapioca, quelques glaçons</a>",
+                    })
+                    <ol class="block__ul">
+                        @@include('_components/li.html', {
+                            "texte": "Ajoutez les perles de tapioca dans de l'eau bouillante et laissez-les cuire pendant 15 min.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Égouttez les perles et laissez-les refroidir quelques minutes.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Dans un bol, fouettez la poudre de matcha et l'eau frémissante.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Dans un verre, ajoutez le matcha, le miel, le lait et les perles de tapioca. Mélangez le tout.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Agrémentez votre boisson de quelques glaçons, c'est prêt !",
+                        })
+                    </ol>
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les petites billes de tapioca viennent tapisser le fond du verre pour un effet esthétique réussi. Elles apportent une consistance et transforment votre thé matcha glacé en un véritable dessert savoureux !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Réaliser votre infusion minceur et detox maison : nos idées recettes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "N'hésitez pas à faire votre propre tisane ou infusion minceur et détox maison ! Gingembre, citron, fenouil, queue de cerise, les idées recettes ne manquent pas. Par exemple, le mélange thym et citron est l'une des recettes détox par excellence.</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Choisir des plantes et feuilles bio pour profiter de tous les bienfaits",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour profiter au mieux de tous les bienfaits et propriétés minceur des plantes, Kusmi vous recommande d'opter pour du bio ! L'appellation vous garantit en effet des feuilles de qualité, sans pesticide, élevées dans le respect de l'environnement. Digestion, beauté de la peau, jambes lourdes, relaxation, sommeil, il existe une tisane pour chaque besoin.</a>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Consommée sans sucre ni adjonction de substitut, la tisane ne vous fera pas grossir. Cependant, rien ne prouve l'efficacité des tisanes pour maigrir sur la perte de poids. Et rien ne saurait remplacer une bonne alimentation et la pratique régulière d'une activité sportive. L'adage “tisane minceur” est donc à prendre avec des pincettes. En cas d'allaitement, de grossesse ou de maladies chroniques, il est recommandé de demander l'avis de votre médecin traitant.</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Avantages et bienfaits du matcha glacé",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les chaudes journées d'été appellent souvent à des solutions rafraîchissantes, et <strong>le matcha glacé s'avère être un choix exquis</strong>. Consommation ancienne tissée de traditions, le matcha apporte à la fois un vent de fraîcheur et une palette de bienfaits pour l'organisme. Source inestimable d'antioxydants, cette poudre fine de thé vert révèle des vertus détoxifiantes et s'avère être une mine d'énergie plus douce et durable comparée à la caféine standard. En choisissant de le consommer glacé, on profite non seulement de ses effets stimulants à faible risque d'irritabilité, mais aussi d'une sensation de plénitude grâce à la théanine qu'il contient. De plus, <strong>intégrer le matcha dans vos boissons estivales est un pas vers un mode de vie bénéfique pour la santé</strong> sans faire de compromis sur le plaisir sensoriel. En résultat, un matcha glacé préparé avec soin est non seulement une bénédiction pour le palais mais aussi pour le bien-être général.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Meilleures pratiques de préparation",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Afin de concocter un matcha glacé d'excellence, préservez l'authenticité de son goût en mettant l'eau à température idéale : jamais bouillante, mais plutôt aux alentours de 80°C pour exalter ses arômes sans amertume. Pour une texture lisse et une mousse onctueuse, le <strong>fouet en bambou</strong>, dédié à cet art, devient votre allié : mouvements rapides et précis en forme de W insufflent vie à la poudre verte.<strong> Le choix du matcha</strong> influence également le palais ; privilégiez un matcha de grade cérémonial pour son profil gustatif plus raffiné, adapté à la dégustation sans accompagnements envahissants. L'harmonie des saveurs en résultera équilibrée, mettant en scène le matcha, star de votre rafraîchissement estival.",
+                })
+            </section>
+            
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Ustensiles indispensables pour préparer un matcha glacé",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Préparer un matcha glacé parfait commence par le choix des bons <strong>ustensiles</strong>. Penchez-vous d'abord sur le <strong>Chasen</strong>, le fameux fouet en bambou, dont les fines tiges tressées permettent d'obtenir une mousse homogène et légère, signature d'une préparation réussie. Ne sous-estimez pas l'importance de la <strong>Chashaku</strong>, cette cuillère doseuse traditionnelle qui vous aidera à mesurer la juste quantité de matcha, assurant ainsi l'équilibre parfait entre douceur et intensité aromatique. Le Chawan, le bol à matcha, n'est pas en reste ; sa forme et sa taille sont optimisées pour le fouettage et la dégustation. Enfin, un tamis fin est essentiel pour éviter les grumeaux et obtenir une texture onctueuse. Avec ces éléments en main, votre matcha glacé n'attend plus que d'être savouré!",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/set-matcha.webp?$staticlink$",
+                        "alt": "set matcha kusmi tea",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Nos astuces pour parfaire la préparation de son matcha glacé",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Filtrer ou ne pas filtrer : l'importance des tamis",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La clé pour réussir un matcha glacé homogène et onctueux réside dans une étape souvent négligée : le tamisage. <strong>L'utilisation d'un tamis fin est primordiale</strong> pour éviter les grumeaux désagréables qui peuvent gâcher l'expérience de dégustation. De plus, il assure la dispersion uniforme de la poudre dans l'eau ou le lait, révélant ainsi <strong>toute la richesse du goût du matcha</strong>. Ne sous-estimez pas le pouvoir d'un bon tamis ; il fait toute la différence dans l'élaboration d'une boisson lisse et raffinée, qui ravira vos papilles à chaque gorgée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Quelle quantité de matcha prévoir par tasse ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La règle d'or pour un matcha glacé divin est de doser avec précision : pour une tasse, <strong>il vous faudra environ une à deux cuillères à café</strong> de matcha en poudre, soit une quantité équivalente à deux grammes. Cette mesure est idéale pour révéler toute la richesse et la finesse des arômes sans tomber dans l'excès d'amertume. <strong>N'oubliez pas d'ajuster selon vos préférences personnelles</strong>, en gardant à l'esprit que plus la concentration est élevée, plus les saveurs seront intenses.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Peut-on ajouter des édulcorants ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Absolument, vous avez la liberté de sucrer votre matcha glacé selon vos préférences! Que vous optiez pour du sucre de canne traditionnel, du miel naturel ou même des alternatives plus saines comme le sirop d'agave ou le stevia, <strong>l'ajout d'édulcorants peut rehausser la douceur</strong> de votre boisson tout en préservant ses nuances délicates. Cependant, soyez prudent avec la quantité pour ne pas masquer le goût unique du matcha. <strong>Un équilibre délicat est la clé</strong> pour savourer pleinement les saveurs et profiter de l'expérience d'un matcha glacé rafraîchissant.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "<strong><i>Astuce Kusmi :</i></strong>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<i>Pour déguster votre bubble tea matcha glacé, procurez-vous des pailles spéciales au diamètre adapté.</i>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que vous le savouriez au petit-déjeuner, à la pause déjeuner ou au goûter, le thé matcha froid s'apprécie à tout moment de la journée ! Toutes nos recettes sont élaborées avec le thé matcha bio de Kusmi Tea, pour une boisson d'une qualité incomparable.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv25')$",
+                    "lien-img": "blog/1_MATCHA-peau-2.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé matcha, reconnu pour ses bienfaits sur la peau",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','matcha-the-vertus')$",
+                    "lien-img": "blog/2022-04_ARTICLE_matcha-chaud.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le matcha : un thé de Jade aux multiples bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','Nos meilleures recettes de matcha chaud')$",
+                    "lien-img": "blog/2022_05-matcha-the-vertus.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé noir, un allié minceur ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artmm-23')$",
+            })
+        </section>
+    </div>
+</div>
+
