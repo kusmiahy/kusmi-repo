@@ -1,0 +1,33 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_glace_6s.scss";
+
+    Content asset : KIT_GLACE_6S_HP
+
+    Nom de la classe parent : kit_glace_6s_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="kit_glace_6s_hero_2024">
+    <a href="$url('Search-Show','cgid','carafes_a_the_glace')$" title="Unser Set bestehend aus einer Karaffe und Teebeuteln für nur 39,90€">
+        @@include('../components/slot.html', {
+            "alt": "Unser Set bestehend aus einer Karaffe und Teebeuteln für nur 39,90€",
+            "title": "Eistee nach herzenslust",
+            "subtitle": "Unser Set bestehend aus einer Karaffe und Teebeuteln für nur 39,90€",
+            "text-link": "Jetzt nutzen",
+            "price": "52,70€",
+            "price_discount": "39,90€",
+        })
+    </a>
+</section>

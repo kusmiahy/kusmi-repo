@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_glace_6s.scss";
+
+    Content asset : KIT_GLACE_6S_HOME_PROMO
+
+    Nom de la classe parent : kit_glace_6s_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 kit_glace_6s_homepromo_2024">
+    <a href="$url('Search-Show','cgid','servizio_da_te_freddo')$" title="Il nostro set di caraffa e bustine di tè a soli 39,90€">
+        @@include('../components/homepromo.html', {
+            "alt": "Il nostro set di caraffa e bustine di tè a soli 39,90€",
+            "title": "Tè freddo a volontà",
+            "subtitle": "Il nostro set di caraffa e bustine di tè a soli 39,90€",
+            "text-link": "<span class='hide-mobile-homepromo'>Acquista ora</span><span class='hide-desktop-homepromo'>Tè freddo a volontà ></span>",
+        })
+    </a>
+</section>

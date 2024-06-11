@@ -20,14 +20,15 @@
 <!-- inject-style src="dist/css/main.min.css" -->
 
 <div class="soldes_ete_push_2024 col-xs-6 col-sm-4 col-lg-3">
-    <div class="push" title="Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€">
-        @@include('../components/push.html', {
-            "alt": "Jusqu'à -50% sur une sélection exclusive + Livraison offerte dès 45€",
-            "texte-h2": "Soldes",
-            "until": "jusqu'à",
+    <div class="push" title="Bis zu 50% Rabatt auf ausgewählte Artikel + Kostenlose Lieferung ab CHF 75 Bestellwert">
+        @@include('../components/push-after.html', {
+            "alt": "Bis zu 50% Rabatt auf ausgewählte Artikel + Kostenlose Lieferung ab CHF 75 Bestellwert",
+            "texte-h2": "Sale",
+            "extra": "<span class='rotate'>& 10%</span> EXTRA-RABATT",
+            "until": "Bis zu",
             "number": "-50%",
-            "texte-h4": "sur une sélection de thés, infusions, coffrets et accessoires",
-            "texte-link": "Toute la sélection",
+            "texte-h4": "auf unserer ganzen Seite<sup>*</sup>",
+            "texte-link": "Alle Produkte",
             "link": "$url('Search-Show','cgid','soldes')$",
             "class": "",
         })

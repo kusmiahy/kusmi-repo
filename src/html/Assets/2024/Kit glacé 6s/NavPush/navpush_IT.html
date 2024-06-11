@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_glace_6s.scss";
+
+    Content asset : KIT_GLACE_6S_NAV_PUSH
+
+    Nom de la classe parent : kit_glace_6s_navpush_2024
+
+-->
+
+<section class="kit_glace_6s_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Il nostro set di caraffa e bustine di tè a soli 39,90€",
+        "texte": "è freddo a volontà",
+        "lien": "$url('Search-Show','cgid','servizio_da_te_freddo')$",
+    })
+</section>

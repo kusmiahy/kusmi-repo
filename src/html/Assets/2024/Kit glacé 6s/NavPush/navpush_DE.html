@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/kit_glace_6s.scss";
+
+    Content asset : KIT_GLACE_6S_NAV_PUSH
+
+    Nom de la classe parent : kit_glace_6s_navpush_2024
+
+-->
+
+<section class="kit_glace_6s_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Unser Set bestehend aus einer Karaffe und Teebeuteln für nur 39,90€",
+        "texte": "Eistee nach herzenslust",
+        "lien": "$url('Search-Show','cgid','carafes_a_the_glace')$",
+    })
+</section>
