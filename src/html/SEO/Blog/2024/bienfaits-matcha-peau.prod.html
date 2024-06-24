@@ -1,0 +1,243 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv25
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Le thé matcha, reconnu pour ses bienfaits sur la peau | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/1_MATCHA-peau-2.png?$staticlink$",
+                "alt": "Le thé matcha, reconnu pour ses bienfaits sur la peau | Kusmi Tea",
+    
+                "titre": "Le thé matcha, reconnu pour ses bienfaits sur la peau | Kusmi Tea",
+                "date": "Publié le <span class='date__color'>14/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Découvrez notre gamme de thé matcha bio",
+    
+                "texte": "Le thé matcha a décidément tout bon. Alors qu’on adore le boire chaud ou glacé, mais aussi l’intégrer à nos recettes pâtissières préférées - madeleine, cookie, financier… - on vient d’apprendre qu’il pouvait aussi servir en tant que produit de beauté ! Alors, prêt(e) à tester ?",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé matcha, pour chouchouter notre peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "S’il s’agit de la même plante que le thé vert classique, le thé matcha est cultivé différemment. Privé de soleil quatre semaines avant la récolte, le théier compense en produisant plus d’acides aminés et de chlorophylle. Si bien que le matcha est plus fort en goût et plus concentré en principes actifs (polyphénols, tanins) que le thé vert standard. Riche en antioxydants, qui aident à lutter contre le vieillissement, le thé matcha exercerait une action apaisante, anti-rougeur, anti-stress et anti-inflammatoire. Bref, que de bienfaits utilisables pour la peau ! Les tanins du matcha sont, eux, connus pour réguler l’excès de sébum et purifier l’épiderme, tandis que les catéchines présentes également dans les feuilles aident traditionnellement à l’élimination des graisses. Des propriétés très recherchées qui s’activeraient aussi bien, quand on le déguste en boisson chaude ou froide, qu’une fois appliqué sur la peau ou les cheveux. Alors, on attend quoi pour s’y mettre ?",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Histoire et origine du matcha dans les soins de la peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <strong>matcha</strong>, cet allié incontesté de la <strong>beauté</strong> et de la santé, nous vient de traditions japonaises anciennes où il était déjà utilisé pour ses nombreux bienfaits sur la peau. Cette poudre fine de thé vert se distingue par sa richesse en antioxydants, véritables boucliers contre les radicaux libres responsables du vieillissement cutané. Historiquement, le matcha était cultivé de manière unique, couvert du soleil avant sa récolte pour stimuler la production d'acides aminés et de chlorophylle, amplifiant ainsi ses propriétés curatives.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/coffret-matcha.webp?$staticlink$",
+                        "alt": "Coffret kusmi matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En matière de <strong>soins de la peau</strong>, le matcha se révèle être un puissant allié. Son utilisation traditionnelle en masque offre un éventail de vertus : réduction de l'acné, purification de l'épiderme et régulation du sébum grâce aux tanins présents. Quant à la lutte contre les signes du vieillissement, les catéchines qu'il contient sont d'excellents partenaires. Ces services plusieurs fois centenaires, de l'époque des Samouraïs jusqu'aux rituels contemporains, font du matcha un élément incontournable des recettes de beauté maison ou d'une sélection de <strong>produits cosmétiques</strong> modernes.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En outre, le matcha ne se limite pas à être un ingrédient cosmétique ; sa consommation sous forme de thé apporte aussi de l'intérieur ses précieux bienfaits à la santé de la peau. C'est un véritable cadeau de la nature, créant des ponts entre l'alimentation saine et la <strong>cosmétique naturelle</strong>. De la simple cuillère de poudre à la confection de recettes sophistiquées, le matcha sous sa forme bio reste le meilleur choix pour garantir la qualité et l'efficacité de son usage, tant dans l'assiette que dans la routine beauté.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que ce soit en l'ajoutant à de l'eau pour créer un masque revitalisant, ou en concoctant un soin pour les cheveux visant à tonifier le cuir chevelu, le matcha démontre une fois de plus sa polyvalence. Nourri de sa tradition prestigieuse et intégré avec succès dans nos rituels contemporains, le matcha s'affirme ainsi comme un incontournable pour préserver la jeunesse et la santé de notre peau.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le masque au thé matcha pour la peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La poudre de thé matcha peut facilement être intégrée à une recette de soin maison : masque, shampoing, baume pour les lèvres, démaquillant… Si vous débutez, le plus simple est de démarrer par un masque ultra simple à réaliser, qui viendra réveiller votre teint. Comme on le ferait avec de l’argile, il vous suffit de diluer une cuillère à café de thé matcha dans un peu d’eau, avant de l’appliquer sur votre peau, de le laisser agir 5 à 10 minutes, avant de rincer. Autre option : y ajouter de l’argile verte (connue pour ses vertus purifiantes), un yaourt à la grecque bio ou du miel épais qui viendront nourrir en profondeur l’épiderme. Les plus calés en cosmétique naturelle pourront ajouter des huiles en fonction de vos besoins : amande douce pour nourrir la peau, huile de rose musquée pour un effet anti-âge, huile de jojoba pour lutter contre l’acné… Afin de vérifier si la recette est adaptée à votre peau, nous vous recommandons de tester sur une petite parcelle avant de l’appliquer entièrement.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le masque au thé matcha pour les cheveux",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé matcha est réputé pour tonifier et stimuler la repousse des cheveux, tout en purifiant le cuir chevelu. Vous pouvez en ajouter à vos masques déjà constitués ou bien vous lancer dans une recette maison. Un exemple : mélangez un œuf entier, une cuillère à soupe de thé matcha bio, une cuillère à café de miel bio, une cuillère à soupe d’huile de noix de coco bio. Une fois obtenu un mélange crémeux, laissez-le poser 20 minutes sur vos cheveux en insistant sur les longueurs. Rincer à l’eau froide ou tiède (pour éviter de faire cuir l'œuf !). Vous verrez, vos cheveux vous remercieront !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quel thé vert matcha choisir ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que ce soit pour le boire ou pour se l’appliquer sur le corps (peau ou cheveux), on vous recommande d’opter pour du thé matcha issu de l’agriculture biologique. On évite ainsi les risques d’ingérer des résidus chimiques, issus de produits de synthèse, utilisés par l'agriculture industrielle et intensive. Chez Kusmi Tea, tous nos thés sont bio et conditionnés en France. Que demander de plus ?",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Précautions à prendre et erreurs à éviter",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Intégrer le <strong>matcha</strong> dans sa routine beauté requiert quelques précautions pour profiter pleinement de ses <strong>bienfaits sur la peau</strong> et les cheveux. Avant toute utilisation topique, réaliser un test cutané est primordial pour s'assurer qu'il n'y a pas d'allergie ou de réaction négative. Il est conseillé d'utiliser du matcha bio de qualité premium, réduisant ainsi les risques liés aux résidus de pesticides. Pour préparer un masque maison, mélangez la poudre de matcha avec de l'eau ou d'autres ingrédients naturels comme le miel pour créer une pâte homogène, nécessaire pour une application facile. Les antioxydants contenus dans le matcha contribuent à réduire les effets du vieillissement, tandis que les catéchines aident à la gestion de l'acné.",
+                    })
+                </div>
+                 <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/kusmi-octobre-16.webp?$staticlink$",
+                        "alt": "fouet matcha",
+                    })
+                </div>
+                </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour une utilisation capillaire, le matcha peut être un excellent allié contre le stress oxydatif causé par les radicaux libres et peut même stimuler la croissance des cheveux. Toutefois, mélangez le matcha avec une huile adaptée à votre type de cheveux, comme l'huile de coco ou d'amande douce, et appliquez en masque avant de rincer à l'eau tiède. Lors de la préparation de vos recettes de beauté, veillez à conserver le matcha à l'abri de l'humidité et de la lumière pour préserver ses propriétés. De plus, privilégiez l'utilisation de cuillères non métalliques pour éviter toute réaction avec la poudre.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "FAQ - Les bienfaits du matcha pour la peau",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Quelle fréquence pour les soins au matcha ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'intégration du matcha dans votre routine de soins de la peau peut varier selon les besoins individuels et le type de peau. Toutefois, pour un soin maison comme un masque au matcha, il est recommandé de l'utiliser une à deux fois par semaine. En cas d'application directe de la poudre en tant que masque, assurez-vous de toujours tester sur une petite zone de votre peau afin d’éviter tout risque d'irritation ou d'allergie. Pour profiter de ses propriétés antioxydantes et de ses effets sur le vieillissement cutané, la consommation quotidienne de thé matcha peut être bénéfique, mais il est important de l'ajuster selon les réactions de votre corps et conseils d’un professionnel de santé.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Usage externe : 1-2 fois/semaine en masque",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Consommation interne avec modération, ajustée aux réactions individuelles",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Choisir du matcha bio pour éviter les résidus chimiques",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Tester sur une petite zone avant usage généralisé",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Lors de la préparation d'un masque, mélangez une cuillère à café de matcha avec de l'eau ou du miel naturel pour créer une pâte homogène. Pour le soin des cheveux, incorporer la poudre à un masque capillaire peut aider à la stimulation et la tonicité du cuir chevelu. Gardez à l'esprit que le matcha est un allié de qualité pour votre beauté naturelle et le soin de votre peau, grâce à ses forts taux de catéchines et antioxydants, mais son utilisation doit toujours être personnalisée et adaptée à vos besoins spécifiques.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En résumé, intégrer cette boisson énergisante dans nos recettes ou notre tasse de latte du matin offre non seulement un regain d'énergie similaire à celui du café, sans les effets indésirables de la caféine, mais aussi une contribution significative à la préservation de notre santé. Pour tous ceux qui recherchent des aliments aux propriétés bienfaisantes, le matcha est un choix de premier ordre.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Peut-on appliquer le matcha sur tous les types de peau ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha s'est révélé être un excellent allié pour la peau, convenant à la majorité des types de peau grâce à ses bienfaits antioxydants et apaisants. Cependant, tout comme avec tout produit de beauté, il est recommandé de réaliser un test cutané avant de l’utiliser de manière plus étendue, car certaines peaux peuvent présenter des sensibilités ou allergies particulières. Outre son utilisation sous forme de masque, le matcha peut également prendre sa place dans les soins pour les cheveux, apportant vigueur et protection contre les agressions extérieures. Utilisée pure ou incorporée dans vos recettes maison, la poudre de matcha démultiplie ses effets positifs quand elle est associée à de l'eau, des huiles végétales ou encore du miel naturel. Pour les adeptes du bio, privilégiez un matcha de qualité premium et bio, gage de sa pureté et de la préservation de ses précieuses propriétés.",
+                })
+            </section>            
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Le matcha peut-il remplacer certains produits de soin de la peau habituels ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha, cette poudre de thé vert aux multiples bienfaits, s'intègre progressivement dans nos routines beauté en tant qu'allié privilégié pour la peau. Riches en antioxydants, catéchines et tanins, qui combattent les radicaux libres et le vieillissement cutané, les propriétés de la poudre de matcha font d'elle un substitut naturel et efficace à certains produits de soins conventionnels.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "En tant que masque, mélangé à de l'eau ou du miel bio, le matcha purifie et apaise la peau, tout en régulant l'excès de sébum pouvant causer l'acné.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Intégré dans des recettes maison pour les cheveux, il aide à purifier le cuir chevelu et à favoriser la santé capillaire.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "La consommation régulière de thé matcha en boisson contribue également à une beauté intérieure, grâce à ses effets détoxifiants et ses propriétés anti-inflammatoires.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Opter pour du matcha de qualité premium et bio garantit non seulement l'absence de résidus chimiques, mais assure aussi une concentration optimale de ses principes actifs. Bien que le matcha ne puisse pas remplacer l'intégralité de nos soins habituels, il s'avère être un complément de choix, capable d'améliorer l'état de notre peau et de nos cheveux de façon naturelle et efficace.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','matcha-the-vertus')$",
+                    "lien-img": "blog/articles/2024/coffret-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Matcha : les bienfaits pour la santé | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-23')$",
+                    "lien-img": "blog/articles/2024/recette-matcha-glace.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert fait-il maigrir ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Le thé matcha, reconnu pour ses bienfaits sur la peau | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttv25')$",
+            })
+        </section>
+    </div>
+</div>

@@ -1,0 +1,332 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : matcha-the-vertus
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Matcha : les bienfaits pour la santé | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/coffret-matcha.webp?$staticlink$",
+                "alt": "Matcha : les bienfaits pour la santé | Kusmi Tea",
+    
+                "titre": "Matcha : les bienfaits pour la santé | Kusmi Tea",
+                "date": "Publié le <span class='date__color'>14/06/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "DÉCOUVREZ NOS MATCHA BIO",
+    
+                "texte": "Cette poudre fine, ce vert lumineux, ce goût si caractéristique… et ces nombreux bienfaits ! Le <strong><a class='banniere__link' href='/fr/matcha-bio-VCHABIOMASTER.html?v=21695A1040'>thé matcha</a></strong> ne ressemble à aucun autre <strong>thé</strong> et séduit de plus en plus d’adeptes, notamment ceux qui souhaitent prendre soin de leur santé ! Retour sur le phénomène <strong>Matcha</strong>.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le matcha c'est quoi : définition et propriétés",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le matcha est un thé vert du Japon.</strong> La boisson niponne possède une spécificité étonnante : elle ne se consomme pas sous la forme de feuilles, comme les autres thés, mais en <strong>poudre</strong>, une poudre incroyablement fine et légère. Plus sa <strong>couleur verte</strong> est intense, meilleure sera sa qualité. Mais à ce propos, comment le <strong>vert émeraude caractéristique du matcha</strong> est-il obtenu ? Les <strong>théieres</strong> dont est issu le thé vert en poudre sont couverts d’ombrières quelques semaines avant la récolte. Privées de lumière, ses feuilles doivent produire davantage de chlorophylle pour réaliser leur photosynthèse. Résultat ? Une couleur verte éclatante. Ce procédé permet à la plante de créer plus d’<strong>acides aminés</strong>. Cela adoucit le thé et augmente le taux de catéchine (polyphénols), un antioxydant très bon pour la santé !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Histoire du thé matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "C’est Eisai, un maître zen, qui a implanté le matcha au Japon en 1191. Il a ramené des graines suite à un séjour d’étude bouddhiste en Chine. Le matcha fut alors cultivé en très petites quantités à Kyoto (Japon), dans le premier temple zen créé par Eisai : la boisson rencontre un succès inattendu et est rapidement considérée comme le <strong>meilleur thé du Japon</strong>. Les moines établissent un <strong>rituel de dégustation du matcha</strong>, une <strong>cérémonie du thé</strong> devenue aujourd’hui emblématique du Japon. Ils ont également l’idée de recouvrir le thé pour en décupler les bienfaits et propriétés.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour obtenir ce thé rare, les cueilleurs sélectionnent ensuite à la main <strong>les plus belles feuilles des théiers</strong>. Puis elles sont séchées et sont délicatement broyées entre deux meules de pierre, le plus souvent de granit. Lors de la préparation de ce <strong>thé du Japon</strong>, l’eau absorbe totalement la poudre de matcha qui résulte du broyage. Il délivre alors tous ses <strong>bienfaits</strong>...",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quel est le goût du thé matcha ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha se caractérise par un goût végétal et unique en bouche. Qui ne fait pas toujours l’unanimité auprès de certains ! Attention aux caractères amers que certaines références peuvent avoir. Tous n’ont pas la même qualité. Un matcha Cérémonie haut de gamme n’est pas censé avoir une amertume trop marquée.",
+                })
+                @@include('_components/h2.html', {
+                    "titre": "Quels sont les bienfaits et vertus du matcha ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Un thé aux propriétés bénéfiques pour la santé et l’organisme ! Le matcha fut le <strong>thé favori des moines bouddhistes</strong>, des samouraïs et des empereurs. Les premiers étaient convaincus qu’il leur permettait de se concentrer tout en gardant l’esprit alerte durant leurs longues séances de méditation. Les seconds le buvaient avant le combat, afin qu’il leur apporte <strong>énergie et vivacité</strong>. Tous lui octroyaient le pouvoir de <strong>lutter contre la fatigue</strong> et d’assurer une certaine longévité. Une légende qui n’est pas sans fondement : <strong>le matcha serait un véritable cocktail bien-être</strong>, riche en vitamines, minéraux et antioxydants. Un concentré de bons nutriments, en somme !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Stimulant, relaxant, antioxydant… les propriétés du matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le Prince des thés verts</strong> est plein <strong>d’antioxydants</strong>, de <strong>vitamines (A, C et E)</strong>, d'<strong>oligo-éléments (zinc, cuivre et fer)</strong> et d’<strong>acides aminés </strong>(environ 20 fois plus que pour un thé vert classique). Sa richesse en catéchine lui permettrait notamment de :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "stimuler votre immunité",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "réduire la fatigue et booster votre énergie grâce à la caféine et au fer qu’il contient",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "réguler la pression sanguine",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "lutter contre le cancer de la prostate (aide à lutter contre les radicaux libres)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "prévenir les infections buccales",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "combattre la mauvaise haleine",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong><a class='banniere__link' href='/fr/bienfaits-matcha-peau/arttv25.html'>un effet belle peau</a></strong> en ralentissant le vieillissement des cellules",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La richesse en catéchines (polyphénols) du matcha, molécules aux remarquables pouvoirs antioxydants, est en partie l’explication aux milles vertus qui lui sont attribuées.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong><u>Bon à savoir :</u></strong> la famille des antioxydants est vaste. L’un des plus importants d’entre eux est le EGCG (épigallocatéchine gallate), un puissant flavonoïde et catéchine, que l’on retrouve en grande quantité dans le matcha.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et ce n’est pas fini ! Le <strong>thé vert matcha</strong> stimulerait aussi bien l’esprit que le corps : la boisson nippone est un excellent <strong>énergisant</strong> et <strong>relaxant</strong>. Le <strong>matcha est riche en magnésium</strong>, un oligo-élément minéral reconnu pour sa propriété anti-stress. Il contient également de la théanine.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La théanine a pour objectif de réguler l’humeur et agirait bénéfiquement sur la mémoire, la concentration et la dépression. Prêt pour votre prochaine <strong>pause bien-être</strong> ? Pour profiter pleinement des <strong><a class='banniere__link' href='/fr/les-bienfaits-du-mate.html'>bienfaits du thé matcha</a></strong>, on apprend à le préparer dans les règles de l’art…",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Effets antioxydants et détoxifiants",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de matcha, célèbre pour ses <strong>bienfaits antioxydants</strong>, est un véritable élixir pour la santé. Grâce à sa concentration élevée en catechines, notamment l'épigallocatéchine gallate (EGCG), cette poudre vert émeraude agit comme un puissant bouclier contre les radicaux libres, ces particules nuisibles impliquées dans le vieillissement cellulaire et diverses maladies. Les consommateurs réguliers de matcha s'accordent à dire que cet antioxydant naturel <strong>détoxifie efficacement le corps</strong>, grâce à la chlorophylle présente dans les feuilles de thé vert, qui favorise l'élimination des toxines et des métaux lourds.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'impact du matcha sur la santé ne s'arrête pas là; en plus de ses propriétés détoxifiantes, il <strong>soutient le métabolisme</strong> et la <strong>protection du foie</strong>. Selon les avis et les analyses qualitatives, la sélection d'un matcha bio et de qualité premium garantira un goût riche et une faible amertume, tout en assurant une concentration optimale en principes actifs bénéfiques. Ainsi, l'investissement dans un bon matcha japonais est souvent considéré comme judicieux par les amateurs, en raison de son <strong>effet positif sur la peau</strong> et sa capacité à favoriser une sensation de bien-être général.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En résumé, intégrer cette boisson énergisante dans nos recettes ou notre tasse de latte du matin offre non seulement un regain d'énergie similaire à celui du café, sans les effets indésirables de la caféine, mais aussi une contribution significative à la préservation de notre santé. Pour tous ceux qui recherchent des aliments aux propriétés bienfaisantes, le matcha est un choix de premier ordre.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Impact sur l'énergie et la concentration",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de matcha est reconnue pour procurer un <strong>regain d'énergie significatif </strong>et <strong>améliorer la concentration</strong>. Les effets de cette poudre fine de thé vert proviennent principalement de la caféine qu'elle contient, offrant une libération plus stable et plus durable que celle du café. La présence de L-théanine, un acide aminé unique, favorise une <strong>relaxation sans somnolence</strong>, facilitant ainsi une alerte mentale soutenue. Contrairement aux pics et creux énergétiques associés au café, le matcha procure un effet énergisant plus équilibré, sans anxiété ni agitation. Voici les impacts principaux qu'elle peut avoir sur l'organisme:",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/kusmi-octobre-16.webp?$staticlink$",
+                        "alt": "Coffret kusmi matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Augmentation de la vigilance et de la capacité de concentration sur le long terme.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Réduction de la fatigue et de la lassitude grâce à un bon niveau d'énergie maintenu tout au long de la journée.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Amélioration de l'humeur et du bien-être mental, réduisant le stress et l'anxiété.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les avis sont unanimes quant à son efficacité à soutenir un mode de vie actif et sain, faisant du matcha un allié santé de choix pour les adeptes d'une alimentation consciente et énergisante.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Les bienfaits cardiovasculaires du matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation régulière de matcha est associée à de multiples bienfaits pour le cœur et les vaisseaux sanguins. En effet, cette poudre fine et verdoyante est riche en catéchines, notamment l'épigallocatéchine gallate (EGCG), reconnue pour son <strong>impact positif sur la santé cardiovasculaire</strong>. Les études suggèrent que les propriétés antioxydantes de l'EGCG peuvent aider à réduire l'oxydation du LDL-cholestérol, communément appelé \"mauvais cholestérol\", et par conséquent, à <strong>prévenir l'athérosclérose</strong>. De plus, la consommation de matcha pourrait <strong>contribuer à l'abaissement de la pression artérielle</strong>, réduisant ainsi les risques d'hypertension, un des principaux facteurs de risque des maladies cardiovasculaires. Autre bienfait non négligeable, la théanine, un acide aminé présent en grande quantité dans le matcha, <strong>favorise la relaxation</strong> et diminue le stress, qui est un facteur connu pour ses méfaits sur le système cardiovasculaire.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Richesse en catéchines, notamment l'EGCG",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Protection contre l'oxydation du LDL-cholestérol",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Contribution potentielle à la réduction de la pression artérielle",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Effet relaxant de la théanine sur le système cardiovasculaire",
+                    })
+                </ul>
+            </section>            
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Matcha et gestion du poids",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha est bien plus qu'une simple boisson traditionnelle japonaise; c'est une poudre riche en bienfaits qui peut jouer un rôle clé dans la gestion du poids. Grâce à sa haute teneur en catéchines, des antioxydants puissants, le matcha favorise l'oxydation des graisses et stimule le métabolisme, <strong>accélérant ainsi la dépense calorique</strong>. Par ailleurs, la présence de caféine et de théanine dans cette poudre de thé vert hautement concentrée contribue à un effet de satiété prolongé, réduisant la tendance aux grignotages compulsifs et soutenant ainsi les efforts de contrôle du poids. De nombreux avis concordent sur l'efficacité du matcha bio comme allié minceur, non seulement en raison de ses propriétés naturelles mais aussi pour son influence positive sur l'énergie et la concentration, des facteurs essentiels pour maintenir une activité physique régulière. En intégrant le matcha dans vos recettes et boissons de tous les jours, vous optez pour une option santé dont les vertus ne cessent d'impressionner.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Influence sur la peau et la beauté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si vous cherchez à donner un coup d'éclat à votre peau tout en profitant d'une cure de bien-être, le matcha pourrait bien être votre nouvel allié beauté. Cette poudre fine d'un vert lumineux est non seulement un délice à consommer mais elle renferme aussi des propriétés bénéfiques pour la peau. Riche en antioxydants, notamment les fameuses catéchines, le matcha aide à combattre le vieillissement cutané et favorise l'éclat de la peau. Les avis des experts saluent ses vertus détoxifiantes, qui aident à purifier l'épiderme et à réduire l'apparence des imperfections.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Comment préparer le thé matcha pour profiter au mieux de ses bienfaits ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Pour que le corps assimile au mieux ces nombreux nutriments, la <strong><a class='banniere__link' href='/fr/matcha-preparation/artmm-10.html'>préparation du matcha</a></strong> répond à des règles spécifiques.",
+                    })
+                    @@include('_components/h3.html', {
+                        "titre": "Opter pour un thé matcha bio",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Pour profiter au mieux des bénéfices santé, Kusmi vous recommande de choisir un thé matcha bio. Si possible de Cérémonie. En effet, les thés matcha sont classés selon des “grades”, le Cérémonie étant le plus haut de gamme. Plus le grade est élevé, plus les feuilles qui composent votre matcha sont de bonne qualité. Un label bio viendra confirmer l’absence de pesticides dans votre boisson. Question couleur, un vert vif est symbole de qualité ! On opte donc pour un beau vert électrique.",
+                    })   
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/2022_05-matcha-the-vertus-2.jpg?$staticlink$",
+                        "alt": "matcha vertus",
+                    })
+                </div>
+                </section>
+                <section class="block">
+                        @@include('_components/h3.html', {
+                            "titre": "Comment boire le matcha pour profiter de ses vertus ?",
+                        })
+                        @@include('_components/paragraphe.html', {
+                            "class": "block__p",
+                            "texte": "Comme le matcha se présente sous forme de poudre, on ne le préparera pas comme un thé : on va le <strong>dissoudre dans l’eau chaude</strong> Pour garder ses <strong>propriétés</strong> intactes, il est préférable d’utiliser de l’eau minérale. Attention également à la température : on la versera <strong>frémissante</strong>. Si elle bout, elle brûlera malheureusement les antioxydants.",
+                        })
+                        @@include('_components/paragraphe.html', {
+                            "class": "block__p",
+                            "texte": "Voici quelques conseils simples pour se <strong>préparer un thé matcha</strong> en respectant les gestes rituels :",
+                        })
+                        <ul class="block__ul">
+                            @@include('_components/li.html', {
+                                "texte": "Munissez-vous d’un bol à thé.",
+                            })
+                            @@include('_components/li.html', {
+                                "texte": "Déposez-y un peu de poudre à l’aide d’une spatule en bambou baptisée « chasaku ».",
+                            })
+                            @@include('_components/li.html', {
+                                "texte": "Versez de l’eau pure chauffée à 80°.",
+                            })
+                            @@include('_components/li.html', {
+                                "texte": "Saisissez le fouet traditionnel en bambou, appelé « chasen », et remuez vigoureusement en décrivant des W avec votre poignet.",
+                            })
+                            @@include('_components/li.html', {
+                                "texte": "Lorsqu’une couche de mousse apparaît, le mélange est homogène et prêt à être dégusté. Au choix, nature ou sucré !",
+                            })
+                        </ul>
+                </section>
+                <section class="block">
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Un bon exemple à suivre ? Les <strong>Japonais, qui boivent le matcha</strong> durant la cérémonie traditionnelle du thé. Ce rituel mêle dégustation et méditation. Durant les quatre heures que dure la cérémonie, le maître reproduit des mouvements très codifiés, invitant au silence et à la concentration. Durant la cérémonie, ses hôtes savourent à la fois le thé et le bonheur de vivre l’instant présent (une autre vertu très importante pour l’esprit !).",
+                    })
+                </section>
+                <section class="block">
+                    @@include('_components/h3.html', {
+                        "titre": "Comment cuisiner le the matcha ?",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Star des desserts japonais, le <strong>matcha</strong> est de plus en plus <strong><a class='banniere__link' href='/fr/matcha-recette-cuisine/arttv4.html'>utilisé dans les recettes culinaires</a></strong> ailleurs dans le monde, et ce notamment en pâtisserie. En plus de <strong>ses nombreux bienfaits</strong>, il offre en effet maints avantages ! Sa saveur végétale et son amertume délicate se marient parfaitement aux goûts sucrés. Elles viennent leur apporter une touche de sophistication et d’originalité, accentuée par ce <strong>ton de vert</strong> reconnaissable entre mille que prennent alors cakes, madeleines ou encore financiers ! Envie de goûter au <strong>thé vert matcha</strong> ? Sautez le pas avec notre <strong><a class='banniere__link' href=''>coffret matcha</a></strong>. L’écrin renferme une <strong>boîte de matcha</strong>, un bol traditionnel, un fouet en bambou chasen et une spatule chasaku. Le <strong>kit complet pour préparer le thé</strong> en suivant le rituel du pays du Soleil-Levant.",
+                    })
+                </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-23')$",
+                    "lien-img": "blog/articles/2024/recette-matcha-glace.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','les-bienfaits-du-mate')$",
+                    "lien-img": "landing/01-2021_LP_MATE/mate-uruguay-yerba-mano-paisaje-landscape-1432343-pxhere.com.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Origines et 6 bientfaits : tout savoir sur le maté",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert fait-il maigrir ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Matcha : les bienfaits pour la santé | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','vertus-infusions-camomille')$",
+            })
+        </section>
+    </div>
+</div>
