@@ -1,0 +1,36 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_PUSH
+
+    Nom de la classe parent : soldes_ete_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<div class="soldes_ete_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push" title="Up to 50% OFF an exclusive selection">
+        @@include('../components/push-after-us.html', {
+            "alt": "Up to 50% OFF an exclusive selection",
+            "texte-h2": "Summer Sale",
+            "extra": "+ EXTRA <span class='rotate'>-10%</span>",
+            "until": "Up to",
+            "number": "50% OFF",
+            "texte-h4": "on the entire site<sup>*</sup>",
+            "texte-link": "All discounted products",
+            "link": "$url('Search-Show','cgid','sale')$",
+            "class": "",
+        })
+    </div>
+</div>
