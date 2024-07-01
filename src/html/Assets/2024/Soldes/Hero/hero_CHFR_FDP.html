@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/frais_de_port.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP
+
+    Nom de la classe parent : soldes_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2024">
+    <a href="$url('Search-Show','cgid','soldes')$" class="hero hero--one-cta" title="+ Frais de ports OFFERTS CHF 60*">
+        @@include('../components/slot-after-fdp.html', {
+            "alt": "Frais de ports OFFERTS CHF 60*",
+            "title": "Soldes",
+            "highlight": "<span class='highlight__texte hide-desktop'>+ Frais de ports</span><span class='hide-desktop'><br></span><span class='highlight__texte hide-desktop'>OFFERTS CHF 60<sup>*</sup></span><span class='highlight__texte hide-mobile'>Frais de ports OFFERTS CHF 60<sup>*</sup></span>",
+            "until": "jusqu'à",
+            "number": "-50%",
+            "texte-link": "Toute la sélection",
+            "class": "",
+        })
+    </a>
+</section>

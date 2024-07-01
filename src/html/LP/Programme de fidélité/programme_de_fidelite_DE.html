@@ -1,0 +1,84 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/_programme_de_fidelite.scss";
+
+    Content asset : (à voir le nom du content-asset)
+
+    Nom de la classe parent : programme-de-fid_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}
+    footer .layout--small{overflow: hidden;}
+    @media screen and (max-width:1024px) {.hero.layout--small {max-width: 100% !important;padding: 0 !important;}}
+</style>
+<section class="programme-de-fid_2024">
+    @@include('_components/hero.html', {
+        "alt": "Nehmen Sie an unserem Treueprogramm Kusmi Klub teil. Sobald Sie 70 Punkte erreicht haben, erhalten Sie einen Gutschein im Wert von 5€",
+        "titre": "So einfach geht's:<span class='hide-mobile'><br></span> kaufen, sammeln, profitieren",
+        "login-texte": "Ich melde mich an",
+        "signin-texte": "Ich erstelle ein Konto",
+    })
+    @@include('_components/second_slot.html', {
+        "titre": "1€ ausgegeben = 1 punkt gesammelt<br>70 punkte = ein einkaufsgutschein von 5€",
+        "des-bons-dachat-titre": "Gutscheine",
+        "des-bons-dachat-paragraphe": "Bei jedem Einkauf 1€ = 1 Punkt<br>70 Punkte = 1 Einkaufsgutschein über 5€",
+        "des-ventes-privees-titre": "Des ventes privées",
+        "des-ventes-privees-paragraphe": "Bénéficiez de remises <span class='hide-mobile'><br></span>exceptionnelles plusieurs fois par an",
+        "une-surprise-titre": "Eine Überraschungsgeschenk<span class='hide-mobile'><br></span> zum Geburtstag",
+        "un-avatantage-titre": "Exklusive Verkäufe",
+        "un-avatantage-paragraphe": "Profitieren Sie mehrmals<span class='hide-mobile'><br></span> im Jahr von außergewöhnlichen Rabatten",
+
+        "alt": "Piktogramm Kusmi Klub-Gutschein 1€ ausgegeben = 1 Punkt, 70 Punkte = EIN 5€-GUTschein",
+        "alt4": "Piktogramm Geschenkbox - Ein Premium-Vorteil - Eine Geschenkbox gratis ab 300€, die im Jahr ausgegeben werden",
+        "alt1": "Gutschein-Piktogramm' Kusmi Klub - Gutscheine - Bei jedem Einkauf 1€ = 1 Punkt 70 Punkte = 1 Gutschein über 5€",
+        "alt2": "Geschenk-Piktogramm - Eine Überraschung zum Geburtstag geschenkt",
+        "alt3": "Piktogramm Privatverkäufe - Privatverkäufe - Profitieren Sie mehrmals im Jahr von außergewöhnlichen Rabatten",
+    })
+    <article class="how">
+        @@include('_components/third_slot.html', {
+            "titre-achat": "Wie erhalte<span class='hide-desktop'><br></span> ich meinen Gutschein?",
+            "texte1": "Ich bin im Kusmiklub angemeldet",
+            "texte2": "Ich sammle 70 Punkte",
+            "texte3": "Ab 70 Punkten (70€ ausgegeben) wandle ich meine Punkte in einen Einkaufsgutschein von 5€ um",
+            "texte4": "Ich verwende meinen Gutschein, um mir etwas zu gönnen",
+    
+            "alt": "Piktogramm Gutschein Kusmi Klub 70 Punkte = EIN 5€-GUTSCHEIN",
+            "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_70P-5.svg?$staticlink$",
+            "class": "how__achat--first",
+        })
+        @@include('_components/third_slot.html', {
+            "titre-achat": "Wie erhalte ich<span class='hide-desktop'><br></span> meinen Premium-Vorteil?",
+            "texte1": "Sie haben in den letzten 12 Monaten für mehr als 300€ bei Kusmi Tea eingekauft?  Wir möchten uns bei Ihnen bedanken!",
+            "texte2": "Ein exklusives Geschenk wird auf der Website auf Sie warten!",
+            "texte3": "Erhalten Sie Ihren Premium-Vorteil! Er wird Ihnen per E-Mail zugeschickt",
+            "texte4": "Holen Sie sich Ihren Premium-Vorteil online ab",
+    
+            "alt": "Piktogramm Geschenkbox - Ein Premium-Vorteil - Eine Geschenkbox gratis ab 300€, die im Jahr ausgegeben werden.",
+            "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_250P-coffret.svg?$staticlink$",
+            "class": "how__achat--second",
+        })
+    </article>
+    @@include('_components/fourth_slot.html', {
+        "titre": "Haben sie fragen<span class='hide-desktop'><br></span> zum Kusmiklub?",
+        "cta-texte": "Alle Fragen anzeigen",
+        "lien-faq": "$url('Faq-Show')$",
+        "lien-kk": "$url('Login-Show', 'activeTab', 'register', 'activateLoyalty', 'true')$",
+        "titre-join": "Treten Sie uns bei!",
+        "cta-texte-kusmi-klub": "Ich trete dem Kusmiklub bei",
+        "title-cta": "Klicken Sie, um zu den FAQs zu gelangen",
+        "title-cta-kk": "Klicken Sie, um dem KusmiKlub beizutreten",
+    })
+</section>

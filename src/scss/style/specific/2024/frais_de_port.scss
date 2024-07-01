@@ -57,7 +57,7 @@ $color-bg: #E53150;
         width: 54.85%;
         gap: 32px;
         &.highlight--gap {
-            gap: 16px;
+            gap: 1.5rem;
         }
 
         @include min768() {
@@ -76,10 +76,7 @@ $color-bg: #E53150;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                gap: .5rem;
-                @include min1440() {
-                    gap: 1rem;
-                }
+                gap: 1.5rem;
             }
             
 
@@ -92,10 +89,27 @@ $color-bg: #E53150;
 
             h2 {
                 text-transform: uppercase;
-                font-size: 40px;
-                line-height: 36px;
+                font-size: 32px;
+                line-height: 28px;
                 font-weight: 700;
                 margin-bottom: 0;
+
+                &.title--de {
+                    font-size: 1.6rem;
+                    line-height: 28px;
+                    @include min768() {
+                        font-size: 40px;
+                        line-height: 36px;
+                    }
+                    @include min1440() {
+                        font-size: 56px;
+                        line-height: 53px;
+                    }
+                    @include min1920() {
+                        font-size: 72px;
+                        line-height: 69px;
+                    }
+                }
 
                 &.font-barlow {
                     text-transform: uppercase;
@@ -103,20 +117,22 @@ $color-bg: #E53150;
                 }
 
                 @include min768() {
-                    line-height: initial;
+                    font-size: 40px;
+                    line-height: 36px;
+                }
+                @include min1440() {
                     font-size: 56px;
+                    line-height: 53px;
                 }
                 @include min1920() {
                     font-size: 72px;
+                    line-height: 69px;
                 }
             }
 
             .highlight-fdp {
                 margin-bottom: 0;
                 @include min768() {
-                    font-size: 1rem;
-                }
-                @include min1440() {
                     font-size: 1.5rem;
                 }
                 .highlight__texte {
@@ -124,7 +140,7 @@ $color-bg: #E53150;
                     padding: .3rem;
                 }
                 color: #000;
-                font-size: .9rem;
+                font-size: 1rem;
                 font-weight: 700;
             }
 

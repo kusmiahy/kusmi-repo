@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/soldes.scss";
+
+    Content asset : GENERIQUE-SOLDES_HP
+
+    Nom de la classe parent : soldes_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="soldes_hero_2024">
+    <a href="$url('Search-Show','cgid','sale')$" class="hero hero--one-cta" title="+ FREE shipping for your +49€ order">
+        @@include('../components/slot-after-fdp.html', {
+            "alt": "Up to 50% OFF an exclusive selection",
+            "title": "Summer sale",
+            "highlight": "<span class='highlight__texte hide-desktop'>+ FREE shipping for</span><span class='hide-desktop'><br></span><span class='highlight__texte hide-desktop'>your +49€ order</span><span class='highlight__texte hide-mobile'>+ FREE shipping for your +49€ order</span>",
+            "until": "Up to",
+            "number": "50% OFF",
+            "texte-link": "All discounted products",
+            "class": "",
+        })
+    </a>
+</section>
