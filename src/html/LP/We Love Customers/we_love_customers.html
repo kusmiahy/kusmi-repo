@@ -1,0 +1,41 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/we_love_customers.scss";
+
+    Content asset : (à voir le nom du content-asset)
+
+    Nom de la classe parent : we_love_customers
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<section class="we_love_customers">
+    @@include('_components/first_slot.html', {
+        "titre-programme": "Programme de parrainage",
+        "concept-programme": "10€ pour vous,<br> 10€ pour votre PROCHE !",
+        "question_text": "Et si vous partagiez une tasse de thé avec vos proches ?",
+        "description-programme": "Faites découvrir KUSMI TEA à vos proches et bénéficiez d'un bon d'achat de 10€ pour chaque proche recruté ! <br> Grâce à votre parrainage, votre proche recevra un bon d'achat de 10€ pour sa première commande.*",
+        "modalite-programme": "*Offre valable à partir de 50€ d'achats, utilisable uniquement sur Kusmitea.com",
+    })
+    @@include('_components/second_slot.html', {
+        "test": "ici se trouvera la popin de renseingement des informations de parrainage"
+    })
+    @@include('_components/third_slot.html', {
+        "titre-step-parrainage": "Comment ça marche ?",
+        "point1": "Cliquez ci dessus pour accéder au formulaire de parrainage",
+        "texte1": "Renseignez le nom et l'email des proches que vous souhaitez parrainer.",
+        "point2": "Votre proche reçoit son bon d'achat",
+        "texte2": "Votre proche reçoit par email un bon d’achat de 10 € valable sur notre site web pendant 3 mois, à partir de 50 € d'achat*.",
+        "point3": "Dès sa commande, vous recevez votre récompense :",
+        "texte3": "Dès que votre proche passe sa première commande, vous bénéficiez à votre tour d’un bon d’achat de 10€ valable sur votre prochaine commande en ligne, à partir de 50 €  d'achats ! Si vous parrainez plusieurs personnes, les codes ne sont pas cumulables.",
+    })
+</section>
