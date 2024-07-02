@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/frais_de_ports.scss";
+
+    Content asset : FRAIS_DE_PORT_HOME_PROMO
+
+    Nom de la classe parent : frais_de_ports_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 frais_de_ports_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Nutzen Sie den kostenlosen Versand ab einem Bestellwert von CHF60 (statt CHF 89)">
+        @@include('../components/homepromo.html', {
+            "alt": "Nutzen Sie den kostenlosen Versand ab einem Bestellwert von CHF60 (statt CHF 89)",
+            "title": "Kostenloser Versand",
+            "subtitle": "Nutzen Sie den kostenlosen Versand ab einem Bestellwert von CHF60 (statt CHF 89)",
+            "text-link": "<span class='hide-mobile-homepromo'>Jetzt nutzen</span><span class='hide-desktop-homepromo'>Kostenloser Versand ></span>",
+        })
+    </a>
+</section>

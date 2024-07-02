@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/frais_de_ports.scss";
+
+    Content asset : FRAIS_DE_PORT_PUSH
+
+    Nom de la classe parent : frais_de_ports_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="frais_de_ports_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Approfitta della consegna gratuita a partire da 49 euro di acquisto (invece di 60€)">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Approfitta della consegna gratuita a partire da 49 euro di acquisto (invece di 60€)",
+            "texte-h2": "Spedizione gratuita",
+            "texte-h3": "Approfitta della consegna gratuita a partire da 49 euro di acquisto (invece di 60€)",
+            "texte-link": "Acquista ora",
+        })
+    </div>
+</a>
