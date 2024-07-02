@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.rooibos_article_2024';
+var classParent = '.we_love_customers';
 
 const {
     series,

@@ -1,12 +1,6 @@
-$color_1: var(--color-text);
-$color_2: var(--color-title);
-$background-color_1: var(--color-bg);
-
-:root {
-  --color-text: #4A4A4A;
-  --color-bg: #ED7C7C1F;
-  --color-title: #ED7C7C;
-}
+$color_text: #4A4A4A;
+$color_background: #ED7C7C1F;
+$color_title: #ED7C7C;
 
 .we_love_customers {
   width: 100%;
@@ -16,7 +10,7 @@ $background-color_1: var(--color-bg);
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: $color_1;
+  color: $color_text;
   gap: 19px;
   padding: 20px;
   @media screen and (min-width: 1024px) {
@@ -27,11 +21,12 @@ $background-color_1: var(--color-bg);
     font-size: 30px;
     line-height: 35.67px;
     font-weight: 400;
-    color: $color_2;
-    margin-top: 50px;
+    color: $color_title;
+    margin-top: 0px;
     @media screen and (min-width: 1024px) {
       font-size: 48px;
       line-height: 56.5px;
+      margin-top: 3.125rem;
     }
   }
 
@@ -40,7 +35,7 @@ $background-color_1: var(--color-bg);
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
-    color: $color_1;
+    color: $color_text;
     @media screen and (min-width: 1024px) {
       font-size: 24px;
       line-height: 28.8px;
@@ -79,12 +74,12 @@ $background-color_1: var(--color-bg);
 }
 
 .step_parrainage {
-  background-color: $background-color_1;
+  background-color: $color_background;
   margin: 0 calc(0px - (100vw - 100%) / 2);
   display: flex;
   justify-content: center;
   padding: 30px;
-  color: $color_1;
+  color: $color_text;
   @media screen and (min-width: 1024px) {
     padding: 50px;
   }
@@ -93,7 +88,7 @@ $background-color_1: var(--color-bg);
     display: flex;
     flex-direction: column;
     width: 680px;
-    color: $color_1;
+    color: $color_text;
   }
 
   ol {
@@ -125,15 +120,17 @@ $background-color_1: var(--color-bg);
   }
 
   .h3_step_parrainage {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 21.6px;
+    line-height: initial;
     text-align: center;
     text-transform: none;
-    color: $color_1;
+    letter-spacing: initial;
+    color: $color_text;
     @media screen and (min-width: 1024px) {
-      font-size: 22px;
-      line-height: 26.4px;
+      font-size: 32px;
+      line-height: initial;
+      letter-spacing: initial;
     }
   }
 
@@ -145,7 +142,7 @@ $background-color_1: var(--color-bg);
       font-size: 22px;
       font-weight: 600;
       line-height: 26.4px;
-      color: $color_2;
+      color: $color_title;
       @media screen and (min-width: 1024px) {
         font-size: 28px;
         line-height: 33.6px;
