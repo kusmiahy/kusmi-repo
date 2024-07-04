@@ -7,9 +7,13 @@ const allQuestions = document.querySelectorAll('.single__title-container');
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    allQuestions.forEach((question) => {
-        question.addEventListener('click', () => {
-            !question.classList.contains('single__title-container--toggled') ? question.classList.add('single__title-container--toggled') : question.classList.remove('single__title-container--toggled');
+    if(allQuestions) {
+        allQuestions.forEach((question) => {
+            question.addEventListener('click', () => {
+                !question.classList.contains('single__title-container--toggled') ? question.classList.add('single__title-container--toggled') : question.classList.remove('single__title-container--toggled');
+            })
         })
-    })
+    } else {
+        console.log('existe pas');
+    }
 })

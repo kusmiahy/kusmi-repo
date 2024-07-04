@@ -4,7 +4,7 @@ function init() {
     jschecker = checkLoaded();
     if (jschecker) {
         console.log('Script started');
-        // =require specific/2024/rituel_minceur.js
+        // =require specific/2024/politique_de_confidentialite.js
     } else {
         setTimeout(init);
     }
