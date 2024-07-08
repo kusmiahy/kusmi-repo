@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herbalism.scss";
+
+    Content asset : HERBORISTERIE_US_NAV_PUSH
+
+    Nom de la classe parent : herbalism_navpush_2024
+
+-->
+
+<section class="herbalism_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Herbalism: our herbal teas that don't have any artificial flavourings, but plenty of taste!",
+        "texte": "Herbalism Kusmi Tea",
+        "lien": "$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$",
+    })
+</section>

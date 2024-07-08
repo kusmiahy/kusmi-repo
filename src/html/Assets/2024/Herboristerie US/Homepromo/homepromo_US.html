@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herbalism.scss";
+
+    Content asset : HERBORISTERIE_US_HOME_PROMO
+
+    Nom de la classe parent : herbalism_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 herbalism_homepromo_2024">
+    <a href="$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$" title="Herbalism: our herbal teas that don't have any artificial flavourings, but plenty of taste!">
+        @@include('../components/homepromo.html', {
+            "alt": "Herbalism: our herbal teas that don't have any artificial flavourings, but plenty of taste!",
+            "title": "Herbalism Infusions",
+            "subtitle": "No artificial flavours, but plenty of taste!",
+            "text-link": "<span class='hide-mobile-homepromo'>Discover now</span><span class='hide-desktop-homepromo'>Herbalism Kusmi Tea ></span>",
+        })
+    </a>
+</section>

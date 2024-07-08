@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_essentiels.scss";
+
+    Content asset : OFFRE_ESSENTIELS_US_HOME_PROMO
+
+    Nom de la classe parent : offre_essentiels_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_essentiels_homepromo_2024">
+    <a href="$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$" title="Get a FREE Essentials gift set">
+        @@include('../components/homepromo.html', {
+            "alt": "Get a FREE Essentials gift set",
+            "title": "Get a FREE Essentials gift set",
+            "subtitle": "With any $65+ order",
+            "text-link": "<span class='hide-mobile-homepromo'>Shop now</span><span class='hide-desktop-homepromo'>FREE Essentials gift set ></span>",
+        })
+    </a>
+</section>

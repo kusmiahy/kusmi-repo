@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : OFFRE_ESSENTIELS_US_PUSH
+
+    Nom de la classe parent : offre_essentiels_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_essentiels_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$" title="FREE Essentials gift set">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "FREE Essentials gift set",
+            "texte-h2": "FREE Essentials gift set",
+            "texte-h3": "With any $65+ order",
+            "texte-link": "Shop now",
+        })
+    </div>
+</a>

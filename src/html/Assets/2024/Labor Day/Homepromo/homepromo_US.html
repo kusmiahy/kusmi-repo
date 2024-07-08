@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/memorial_day.scss";
+
+    Content asset : GEN_LABOR_DAY_US_HOME_PROMO
+
+    Nom de la classe parent : labor_day_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 labor_day_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Labor Day Offer | Enjoy 30% OFF your $100+ order until 05/28 included">
+        @@include('../components/homepromo.html', {
+            "alt": "Labor Day Offer | Enjoy 30% OFF your $100+ order until 05/28 included",
+            "title": "Labor Day Offer",
+            "subtitle": "<span class='highlight'>30% Off</span> your $100+ <strong>order until September 4<sup>th</sup></strong>",
+            "text-link": "<span class='hide-mobile-homepromo'>Enjoy now</span><span class='hide-desktop-homepromo'>Labor Day Offer ></span>",
+        })
+    </a>
+</section>
