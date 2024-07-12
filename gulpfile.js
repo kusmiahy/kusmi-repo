@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.bundle_ete_navpush_2024';
+var classParent = '.minceur_article_2024';
 
 const {
     series,

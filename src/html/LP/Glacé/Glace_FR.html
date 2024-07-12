@@ -1,0 +1,75 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/glace.scss";
+
+    Content asset : (à voir le nom du content-asset)
+
+    Nom de la classe parent : lp_glace_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<style>
+    .ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}
+</style>
+
+<section class="lp_glace_2024">
+    <article class="hero">
+        <div class="hero__background">
+            <svg class="hero__shape hide-desktop" xmlns="http://www.w3.org/2000/svg" style="position:absolute">
+                <defs>
+                    <clipPath id="mask">
+                        <path d="M0 0H375V163.727C375 163.727 328.646 180 187.5 180C46.3542 180 0 163.727 0 163.727V0Z"
+                            fill="black" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="hero__shape hide-desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 180">
+                <image id="image" width="100%" height="100%" clip-path="url(#mask)"
+                    xlink:href="images/landing_page/2024/glaces/hero_mob.webp?$staticlink$" />
+            </svg>
+            <svg class="hero__shape hide-mobile" xmlns="http://www.w3.org/2000/svg" style="position:absolute">
+                <defs>
+                    <clipPath id="maskDesk">
+                        <path d="M0 0H1440V208C1440 208 1262 271 720 271C178 271 0 208 0 208V0Z" fill="black">
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="hero__shape hide-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 271">
+                <image id="image" width="100%" height="100%" clip-path="url(#maskDesk)"
+                    xlink:href="images/landing_page/2024/glaces/hero_desk.webp?$staticlink$" />
+            </svg>
+        </div>
+        <div class="hero__text">
+            <h1 class="font-sophillia hero__title">
+                Pas d’été<span class="hide-desktop"><br></span> sans thés glacés !
+            </h1>
+        </div>
+    </article>
+    <article class="description">
+        <div class="description__text-container">
+            <div class="description__titre-container">
+                <h2 class="font-barlow description__subtitle">
+                    Les thés glacés
+                </h2>
+                <h3 class="font-barlow description__undertitle">
+                    Véritable incontournable des<span class="hide-desktop"><br></span> journées chaudes et ensoleillées !
+                </h3>
+            </div>
+            <p class="font-barlow description__body">
+                Impossible de rester de glace face à ces recettes savoureuses… Le mode d’emploi ? Rien de plus simple : un sachet, un mug, de l’eau frémissante, des glaçons et c’est tout bon !
+            </p>
+        </div>
+    </article>
+</section>

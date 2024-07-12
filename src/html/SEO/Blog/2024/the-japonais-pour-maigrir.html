@@ -1,0 +1,217 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : the-japonais-pour-maigrir
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Le thé japonais fait-il maigrir ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/minceur/the-japonais-maigrir.webp?$staticlink$",
+                "alt": "Le thé japonais pour maigrir",
+    
+                "titre": "Le thé japonais fait-il maigrir ?",
+                "date": "Publié le <span class='date__color'>12/07/2024</span>",
+                "url-produit": "$url('Product-Show','pid','21254A1070')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Notre thé vert minceur",
+    
+                "texte": "Le thé japonais est reconnu pour ses nombreux bienfaits sur la santé. <strong>Parmi ces bienfaits, l'un des plus populaires est son potentiel à favoriser la perte de poids.</strong> Dans cet article, nous explorerons les différentes variétés de thé japonais, leurs propriétés spécifiques et comment elles peuvent vous aider à atteindre vos objectifs de minceur.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les différentes variétés de thé japonais",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il existe plusieurs types de thé japonais, chacun avec ses propres caractéristiques. <strong>Le thé vert, le matcha et le genmaicha sont parmi les plus connus pour leurs vertus minceur.</strong>",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Thé vert",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href=\"$url('Search-Show','cgid','vert')$\">thé vert</a> est l'un des thés les plus consommés au Japon. Il est <strong>riche en catéchines, des antioxydants puissants qui aident à augmenter le métabolisme et à brûler les graisses</strong>. De plus, il contient de la caféine, qui peut stimuler l'énergie et améliorer la performance physique.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href=\"$url('Search-Show','cgid','matcha')$\">matcha</a> est une forme de thé vert en poudre, souvent utilisé dans les cérémonies traditionnelles. <strong>Il est particulièrement concentré en nutriments et antioxydants, ce qui en fait un allié puissant pour la perte de poids.</strong> La chlorophylle contenue dans le matcha aide également à détoxifier le corps, facilitant ainsi le processus de perte de poids.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Genmaicha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href=\"$url('Product-Show','pid','VGEN100D')$\">genmaicha</a> est un mélange de thé vert et de riz brun grillé. <strong>Ce thé a une teneur en calories plus faible et est souvent consommé pour ses effets détoxifiants</strong>. Il aide à la digestion et peut être un bon complément à un régime minceur.",
+                })
+            </section>
+            <section class="block block-container block">
+                <div class="block__texte">
+                @@include('_components/h2.html', {
+                    "titre": "Les mécanismes de perte de poids",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé japonais aide à maigrir de plusieurs manières.<strong> Les antioxydants, notamment les catéchines, jouent un rôle crucial dans la stimulation du métabolisme</strong>. De plus, la caféine contenue dans ces thés augmente la thermogenèse, permettant de brûler plus de calories même au repos.<br>Découvrez tous les bienfaits du thé vert sur la régulation du poids dans notre article dédié : <a class='banniere__link' href=\"$url('Page-Show','cid','arttv15')$\">https://www.kusmitea.com/fr/the-vert-minceur/arttv15.html</a> ",
+                })
+                </div>
+                <a href="$url('Product-Show','pid','21254A1070')$" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/minceur/thes-pour-maigrir.webp?$staticlink$",
+                        "alt": "Les thés japonais pour maigrir",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment consommer le thé japonais pour maigrir",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour maximiser les bienfaits du thé japonais, il est important de le consommer régulièrement et de manière appropriée. <strong>Il est recommandé de boire 2 à 3 tasses par jour, de préférence sans sucre pour éviter l'ajout de calories inutiles</strong>. Vous pouvez également l'incorporer dans des recettes, comme des smoothies ou des soupes, pour varier les plaisirs.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Préparation du thé vert",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour préparer le thé vert, utilisez de l'eau à environ 70-80°C et laissez infuser les feuilles pendant 2 à 3 minutes. <strong>Cela permet de préserver les nutriments et de bénéficier pleinement de ses propriétés amincissantes</strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Précautions à prendre",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bien que le thé japonais soit bénéfique pour la santé, il est important de le consommer avec modération. <strong>La caféine peut provoquer des effets secondaires tels que l'insomnie ou l'anxiété chez certaines personnes</strong>. Il est donc recommandé de ne pas dépasser trois tasses par jour et de consulter un professionnel de la santé si vous avez des préoccupations."
+                    ,
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Conclusion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé japonais est un allié précieux pour ceux qui souhaitent perdre du poids de manière naturelle. <strong>Ses propriétés antioxydantes, sa capacité à stimuler le métabolisme et ses effets détoxifiants en font une boisson idéale à intégrer dans un régime minceur</strong>. En consommant régulièrement du thé vert, du matcha ou du genmaicha, vous pouvez bénéficier de tous ces avantages et progresser vers vos objectifs de perte de poids.<br>Incorporez le thé japonais dans votre routine quotidienne pour découvrir ses bienfaits et profiter d'une santé améliorée et d'une silhouette affinée."
+                    ,
+                })
+            </section>
+            <a href="$url('Product-Show','pid','21254A1070')$">
+                <img class="article__image-solo" src="blog/articles/2024/minceur/the-vert-pour-maigrir-kusmi.webp?$staticlink$" alt="Le thé vert minceur kusmi tea">
+            </a>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "FAQ sur le thé japonais pour maigrir",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé japonais est un allié précieux pour ceux qui souhaitent perdre du poids de manière naturelle. <strong>Ses propriétés antioxydantes, sa capacité à stimuler le métabolisme et ses effets détoxifiants en font une boisson idéale à intégrer dans un régime minceur</strong>. En consommant régulièrement du thé vert, du matcha ou du genmaicha, vous pouvez bénéficier de tous ces avantages et progresser vers vos objectifs de perte de poids.<br>Incorporez le thé japonais dans votre routine quotidienne pour découvrir ses bienfaits et profiter d'une santé améliorée et d'une silhouette affinée."
+                    ,
+                })
+                @@include('_components/h3.html', {
+                    "titre": "1. Puis-je boire du thé japonais à jeun ? ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Oui, boire du thé japonais à jeun peut aider à stimuler le métabolisme dès le matin. Cependant, certaines personnes peuvent ressentir une irritation gastrique, il est donc préférable de l'accompagner d'une petite collation."
+                    ,
+                })
+                @@include('_components/h3.html', {
+                    "titre": "2. Le thé japonais peut-il remplacer un repas pour perdre du poids ? ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Non, le thé japonais ne doit pas remplacer un repas complet. Il peut être consommé en complément d'une alimentation équilibrée et d'un mode de vie sain pour optimiser la perte de poids."
+                    ,
+                })
+                @@include('_components/h3.html', {
+                    "titre": "3. Y a-t-il des effets secondaires à consommer du thé japonais pour maigrir ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation excessive de thé japonais peut entraîner des effets secondaires tels que l'insomnie, l'anxiété ou des problèmes digestifs en raison de la caféine. Il est important de ne pas dépasser 3 tasses par jour."
+                    ,
+                })
+                @@include('_components/h3.html', {
+                    "titre": "4. Le thé japonais est-il compatible avec tous les régimes alimentaires ? ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé japonais est généralement compatible avec la plupart des régimes alimentaires, y compris les régimes végétariens, végétaliens et sans gluten. Cependant, il est toujours bon de vérifier avec un professionnel de la santé si vous avez des restrictions alimentaires spécifiques."
+                    ,
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','le-role-des-plantes-naturelles-dans-l-amelioration-des-troubles-du-sommeil')$",
+                    "lien-img": "landing/ameliorer-votre-routine.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le rôle des plantes naturelles dans l'amélioration des troubles du sommeil ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','comment-notre-tisane-rituel-sommeil-aide-a-favoriser-un-sommeil-profond')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_comment_notre_tisane_rituel_sommeil_aide_a_favoriser_un_sommeil_profond.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment notre tisane Rituel Sommeil aide à favoriser un sommeil profond ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-du-soir')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_comment_notre_tisane_rituel_sommeil_aide_a_favoriser_un_sommeil_profond.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Top 6 des tisanes et infusions pour dormir",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Le thé japonais fait-il maigrir ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','the-japonais-pour-maigrir')$",
+            })
+        </section>
+    </div>
+
+</div>
+

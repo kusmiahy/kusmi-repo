@@ -1,0 +1,158 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : boire-du-the-matcha-a-jeun
+
+    Nom de la classe parent : minceur_article_2024
+
+    Titre : Faut-il boire son thé matcha le matin à jeun ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="minceur_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/matcha/boire-matcha-jeun.webp?$staticlink$",
+                "alt": "un latte matcha",
+    
+                "titre": "Faut-il boire son thé matcha le matin à jeun ?",
+                "date": "Publié le <span class='date__color'>20/10/2021</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Nos matchas",
+    
+                "texte": "Le <a class='banniere__link' href=\"$url('Search-Show','cgid','matcha')$\">thé matcha</a> est un <a class='banniere__link' href=\"$url('Search-Show','cgid','japon')$\">thé vert japonais</a> réduit finement en poudre. Il a beaucoup de succès et nombreux sont ceux qui le boivent pour ses bienfaits sur l’organisme et la santé. Mais quel est le meilleur moment pour le consommer ? Doit-on le boire à jeun pour décupler ses bienfaits et vertus ? Qu’en est-il lorsqu’on le consomme dès le réveil le matin à jeun ?",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Thé matcha et énergie au réveil",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Lorsque l’on boit du thé matcha au réveil le matin, l’organisme peut profiter pleinement de tous ses bienfaits. En premier lieu, sa teneur en caféine permet de donner au corps un coup de boost et d’énergie. L’organisme au réveil attend le premier apport énergétique, il est prêt et profite pleinement de ce qu’on lui donne. Quand on boit une tasse de thé matcha au réveil, l’organisme obtient une dose de caféine qui lui permet de démarrer et de se mettre en route rapidement. Terminé les réveils longs, où on traîne les pieds, le thé réveille réellement le corps pour attaquer la journée avec énergie et bonne humeur.<br>Saviez-vous que théine et caféine étaient en fait issues de la même molécule ? Et si, à la seule différence que la théine se libère de manière plus diffuse et sur la durée dans notre organisme tandis que la caféine a un effet booster. C’est pourquoi, le thé est un stimulant tandis que le café est un excitant.",
+                    })
+                </div>
+                <a href="/fr/matcha-VCHABIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/matcha/boire-matcha-jeun-2.webp?$staticlink$",
+                        "alt": "matcha dans un bol avec un fouet",
+                    })
+                </a>
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">
+                    @@include('_components/h2.html', {
+                        "titre": "Thé matcha et détox",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Le thé matcha contient de nombreux principes actifs naturels (dont l’EGCG issu de la famille des catéchines) qui aident le corps à se débarrasser des toxines que l’on ingère tous les jours. Avec ses antioxydants, il va vous permettre de rééquilibrer votre corps, et en le consommant à jeun, c’est encore plus efficace. Durant la nuit, l’organisme fait son travail : il digère les aliments et fait le tri dans les nutriments et si, au réveil, vous buvez une tasse de thé matcha, vous poursuivrez le processus détox pour commencer la journée avec un corps débarrassé d’un grand nombre de déchets. C’est en raison de sa richesse en antioxydants que le thé matcha possède des propriétés drainantes et des <a class='banniere__link' href=\"$url('Page-Show','cid','arttv25')$\">bienfaits du matcha pour la peau</a>.<br>Saviez-vous que les antioxydants lutteraient également contre le vieillissement prématuré des cellules et l’action des radicaux libres ? Limitant ainsi l’apparition de certaines maladies…<br>Beaucoup se demandent si le <a class='banniere__link' href=\"$url('Page-Show','cid','arttv16')$\">thé matcha est une bonne solution pour maigrir</a> ? Découvrez notre article dédié sur le sujet !",
+                    })
+                </div>
+                <a href="/fr/matcha-VCHABIOMASTER.html" class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/matcha/boire-matcha-jeun-3.webp?$staticlink$",
+                        "alt": "matcha dans une tasse en verre",
+                    })
+                </a>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Thé matcha et hydratation",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour obtenir un thé matcha traditionnel, il suffit de mélanger la poudre de thé vert avec de l’eau. En buvant une tasse de thé dès le réveil, à jeun, la première chose que vous donnez à votre corps, c’est de l’eau. Vous l’hydratez donc en profondeur et facilitez l'élimination des toxines. Cette première action matinale permet à votre corps d’évacuer ce qu’il a trié pendant votre sommeil. Avec une bonne tasse de thé à jeun, vous vous assurez de commencer la journée sur de bonnes bases.<br>Pour varier les plaisirs, la <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-1')$\">recette du matcha latte</a> est un incontournable !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Thé matcha et relaxation",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé matcha contient de la caféine qui donne de l’énergie, mais il contient également de la L-théanine connue pour être un relaxant naturel. Votre première tasse de thé matcha à jeun vous permettra de vous détendre, un moment de calme avant le tourbillon d’activités de la journée. Le fait de prendre le thé en étant à jeun permettra à votre organisme de profiter au mieux de la L-théanine, puisque votre organisme ne sera pas sollicité par d’autres aliments.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour profiter pleinement des <a class='banniere__link' href=\"$url('Page-Show','cid','matcha-the-vertus')$\">bienfaits du matcha</a> sur la santé, on opte pour une poudre de thé matcha bio garantie sans pesticide et cultivée dans le respect de l’environnement. Les nombreux contrôles qualité effectués lors de la fabrication et l’élaboration du thé vous garantissent un matcha de qualité. Attention tout de même à sa couleur qui doit être vert vif et non kaki. Originaire du japon, c’est encore mieux !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "N’hésitez plus, essayez le thé matcha à jeun au réveil et commencez vos journées en étant à la fois reboosté et apaisé. Vous ne pourrez bientôt plus vous passer de cet allié santé aux effets bénéfiques sur l’organisme !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quelle quantité de Matcha à jeun est recommandée ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La question de la quantité idéale de Matcha à consommer à jeun suscite souvent de vives discussions parmi les amateurs de cette boisson millénaire. Il est généralement recommandé de commencer avec une quantité modeste, soit autour de 1 à 2 grammes de poudre, l'équivalent d'une demi-cuillère à café, diluée dans environ 240 ml d'eau. Cette dose peut être ajustée selon la tolérance individuelle, en veillant à ne pas dépasser les 4 à 5 grammes quotidiens pour éviter les possibles <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-18')$\">effets secondaires du matcha</a> liés à la caféine présente dans le Matcha. Prudence et écoute de son corps reste le maître-mot pour une expérience Matcha à jeun revigorante et bienfaisante.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-avant-de-dormir')$",
+                    "lien-img": "blog/articles/2024/lovely_morning/blog_lovely_morning_1.webp?$staticlink$",
+                    "alt": "Cliquez pour voir la page",
+                    "titre": " Quel est le meilleur moment pour boire du thé vert ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-23')$",
+                    "lien-img": "blog/articles/2024/recette-matcha-glace.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Nos recettes de thé matcha glacé : délicieuses !",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/articles/2024/matcha/latte-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boire du thé matcha pour maigrir : bonne ou mauvaise idée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Faut-il boire son thé matcha le matin à jeun ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','boire-du-the-matcha-a-jeun')$",
+            })
+        </section>
+    </div>
+
+</div>
+
