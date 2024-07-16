@@ -70,3 +70,205 @@ $grey: #575757;
         color: $grey;
     }
 }
+
+.carafes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem .5rem 1rem;
+    gap: 1rem;
+    &__title, &__body {
+        margin-bottom: 0;
+    }
+    &__title {
+        width: 100%;
+        color: $orange;
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+    &__image {
+        width: 309px;
+        height: 309px;
+        border-radius: 100%;
+    }
+    &__body {
+        color: $grey;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: normal;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.carafes-xsell, .tasse-mug {
+    padding: 10px;
+    &__produit {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid #EEEEEE;
+        height: 510px;
+    }
+    &__image {
+        object-fit: contain;
+        object-position: center;
+        height: 171px;
+    }
+    &__title {
+        text-transform: none;
+        font-size: 18px;
+        line-height: 20px; 
+        text-align: center;
+        letter-spacing: normal;
+        font-weight: 400;
+        height: 60px;
+    }
+    &__description, &__type {
+        text-transform: none;
+        font-size: 16px;
+        line-height: 16px; 
+        text-align: center;
+        letter-spacing: normal;
+        font-weight: 400;
+    }
+    &__container {
+        gap: 22px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__container-last {
+        margin-block: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__prix {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.5rem;
+        .carafes-xsell__prix--real-price {
+            font-size: 16px;
+            color: #B5B5B5;
+            text-decoration: line-through;
+        }
+    }
+    &__button {
+        color: #000;
+        border: 1px solid #000;
+        text-align: center;
+        padding-block: .5rem;
+        font-size: 1rem;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 900;
+        &.carafes-xsell__button--last {
+            padding-inline: .75rem;
+            margin-inline: auto;
+            width: auto;
+        }
+    }
+}
+
+.custom {
+    &__arrow {
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        background: white;
+        opacity: 1;
+    }
+    &__prev {
+        display: none;
+    
+    }
+}
+
+.carafes-preparation {
+    padding: 1rem;
+    background-color: #F9F7F1;
+    &__title {
+        width: 100%;
+        color: $orange;
+        line-height: 2rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.steps {
+    list-style-type: none;
+
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 65%;
+
+    @include min768() {
+        grid-auto-columns: 30%;
+    }
+
+
+    padding: 0 1rem 1rem;
+    margin-bottom: 0;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+
+
+    @include min1024() {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+
+        @include min1024() {
+            width: 260px;
+        }
+        &:last-child {
+            .step__image {
+                width: 124px;
+            }
+        }
+
+        &__image-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+
+            .step__image {
+                object-fit: contain;
+                width: auto;
+                height: 180px;
+                @include min1024() {
+                    height: 200px;
+                }
+            }
+        }
+
+        &__description {
+            color: $grey;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: normal;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

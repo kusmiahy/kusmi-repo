@@ -1,0 +1,338 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/glace.scss";
+
+    Content asset : lp_glace
+
+    Nom de la classe parent : lp_glace_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<!-- CSS Splide -->
+<link href="script/splide.min.css?$staticlink$" rel="stylesheet">
+<style>
+    .ms-row.container.layout--small {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+</style>
+
+<section class="lp_glace_2024">
+    <article class="hero">
+        <div class="hero__background">
+            <svg class="hero__shape hide-desktop" xmlns="http://www.w3.org/2000/svg" style="position:absolute">
+                <defs>
+                    <clipPath id="mask">
+                        <path d="M0 0H375V163.727C375 163.727 328.646 180 187.5 180C46.3542 180 0 163.727 0 163.727V0Z"
+                            fill="black" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="hero__shape hide-desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 180">
+                <image id="image" width="100%" height="100%" clip-path="url(#mask)"
+                    xlink:href="images/landing_page/2024/glaces/hero_mob.webp?$staticlink$" />
+            </svg>
+            <svg class="hero__shape hide-mobile" xmlns="http://www.w3.org/2000/svg" style="position:absolute">
+                <defs>
+                    <clipPath id="maskDesk">
+                        <path d="M0 0H1440V208C1440 208 1262 271 720 271C178 271 0 208 0 208V0Z" fill="black">
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="hero__shape hide-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 271">
+                <image id="image" width="100%" height="100%" clip-path="url(#maskDesk)"
+                    xlink:href="images/landing_page/2024/glaces/hero_desk.webp?$staticlink$" />
+            </svg>
+        </div>
+        <div class="hero__text">
+            <h1 class="font-sophillia hero__title">
+                Pas d’été<span class="hide-desktop"><br></span> sans thés glacés !
+            </h1>
+        </div>
+    </article>
+    <article class="description">
+        <div class="description__text-container">
+            <div class="description__titre-container">
+                <h2 class="font-barlow description__subtitle">
+                    Les thés glacés
+                </h2>
+                <h3 class="font-barlow description__undertitle">
+                    Véritable incontournable des<span class="hide-desktop"><br></span> journées chaudes et ensoleillées
+                    !
+                </h3>
+            </div>
+            <p class="font-barlow description__body">
+                Impossible de rester de glace face à ces recettes savoureuses… Le mode d’emploi ? Rien de plus simple :
+                un sachet, un mug, de l’eau frémissante, des glaçons et c’est tout bon !
+            </p>
+        </div>
+    </article>
+    <article class="carafes">
+        <h2 class="font-sophillia carafes__title">
+            Formats carafe
+        </h2>
+        <img class="carafes__image" src="images/landing_page/2024/glaces/formats_carafes.webp?$staticlink$"
+            alt="image boîte 6 sachets aquasummer et aquarosa">
+        <p class="font-barlow carafes__body">
+            Pour siroter vos thés préférés en version glacée, rien de plus facile avec nos formats de sachet spécial
+            carafe !
+        </p>
+    </article>
+    <article class="carafes-xsell">
+        <div class="splide carafes-xsell__splide" role="group">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <a href="$url('Product-Show','pid','21682A1330')$" class="splide__slide" title="Découvrir">
+                        <div class="carafes-xsell__produit">
+                            <div class="carafes-xsell__container">
+                                <img class="carafes-xsell__image"
+                                    src="images/landing_page/2024/glaces/aquaexotica_packshot.png?$staticlink$"
+                                    alt="image boîte 6 sachets aquasummer et aquarosa">
+                                <div>
+                                    <h3 class="carafes-xsell__title">
+                                        AquaExotica (Infusion de fruits bio)
+                                    </h3>
+                                    <h4 class="carafes-xsell__description">
+                                        Tisane hibiscus, fruits exotiques
+                                    </h4>
+                                </div>
+                                <div>
+                                    <h3 class="carafes-xsell__type">
+                                        Boîte de 6 grands sachets
+                                    </h3>
+                                    <h4 class="carafes-xsell__prix">
+                                        8,90 €
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="carafes-xsell__button">
+                                Découvrir
+                            </p>
+                        </div>
+                    </a>
+                    <a href="$url('Product-Show','pid','21105A1330')$" class="splide__slide" title="Découvrir">
+                        <div class="carafes-xsell__produit">
+                            <div class="carafes-xsell__container">
+                                <img class="carafes-xsell__image"
+                                    src="images/landing_page/2024/glaces/the_vert_menthe_concombre_packshot.png?$staticlink$"
+                                    alt="image boîte 6 sachets aquasummer et aquarosa">
+                                <div>
+                                    <h3 class="carafes-xsell__title">
+                                        Thé vert menthe concombre
+                                    </h3>
+                                    <h4 class="carafes-xsell__description">
+                                        Thé vert bio, menthe bio, concombre
+                                    </h4>
+                                </div>
+                                <div>
+                                    <h3 class="carafes-xsell__type">
+                                        Boîte de 6 grands sachets
+                                    </h3>
+                                    <h4 class="carafes-xsell__prix">
+                                        8,90 €
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="carafes-xsell__button">
+                                Découvrir
+                            </p>
+                        </div>
+                    </a>
+                    <a href="$url('Product-Show','pid','21631A1330')$" class="splide__slide" title="Découvrir">
+                        <div class="carafes-xsell__produit">
+                            <div class="carafes-xsell__container">
+                                <img class="carafes-xsell__image"
+                                    src="images/landing_page/2024/glaces/aquarosa_packshot.png?$staticlink$"
+                                    alt="image boîte 6 sachets aquasummer et aquarosa">
+                                <div>
+                                    <h3 class="carafes-xsell__title">
+                                        AquaRosa (Infusion de fruits bio)
+                                    </h3>
+                                    <h4 class="carafes-xsell__description">
+                                        Tisane hibiscus, fruits exotiques
+                                    </h4>
+                                </div>
+                                <div>
+                                    <h3 class="carafes-xsell__type">
+                                        Boîte de 6 grands sachets
+                                    </h3>
+                                    <h4 class="carafes-xsell__prix">
+                                        8,90 €
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="carafes-xsell__button">
+                                Découvrir
+                            </p>
+                        </div>
+                    </a>
+                    <a href="$url('Product-Show','pid','21651A1330')$" class="splide__slide" title="Découvrir">
+                        <div class="carafes-xsell__produit">
+                            <div class="carafes-xsell__container">
+                                <img class="carafes-xsell__image"
+                                    src="images/landing_page/2024/glaces/the_vert_menthe_packshot.png?$staticlink$"
+                                    alt="image boîte 6 sachets aquasummer et aquarosa">
+                                <div>
+                                    <h3 class="carafes-xsell__title">
+                                        Thé vert à la menthe
+                                    </h3>
+                                    <h4 class="carafes-xsell__description">
+                                        Thé vert bio à la menthe
+                                    </h4>
+                                </div>
+                                <div>
+                                    <h3 class="carafes-xsell__type">
+                                        Boîte de 6 grands sachets
+                                    </h3>
+                                    <h4 class="carafes-xsell__prix">
+                                        8,90 €
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="carafes-xsell__button">
+                                Découvrir
+                            </p>
+                        </div>
+                    </a>
+                    <a href="$url('Product-Show','pid','BUNDLECARAQUASUM')$" class="splide__slide" title="Découvrir">
+                        <div class="carafes-xsell__produit">
+                            <div class="carafes-xsell__container">
+                                <img class="carafes-xsell__image"
+                                    src="images/landing_page/2024/glaces/ensemble_the_glace_packshot.png?$staticlink$"
+                                    alt="image boîte 6 sachets aquasummer et aquarosa">
+                                <div>
+                                    <h3 class="carafes-xsell__title">
+                                        Ensemble à thé glacé
+                                    </h3>
+                                    <h4 class="carafes-xsell__description">
+                                        AquaRosa, AquaSummer et une carafe noire T.TOTEM
+                                    </h4>
+                                </div>
+                                <div>
+                                    <h4 class="carafes-xsell__prix">
+                                        39,90 € <span class="carafes-xsell__prix--real-price">52,30 €</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <p class="carafes-xsell__button">
+                                Découvrir
+                            </p>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="carafes-xsell__container-last">
+            <a href="$url('Search-Show','cgid','652788321005')$"
+                class="carafes-xsell__button carafes-xsell__button--last">
+                Découvrir la sélection
+            </a>
+        </div>
+    </article>
+    <article class="carafes-preparation">
+        <h2 class="carafes-preparation__title font-sophillia">Préparez votre<span class="hide-desktop"><br></span> thé
+            glacé</h2>
+        <ol class="steps">
+            <li class="step">
+                <div class="step__image-container">
+                    <img class="step__image"
+                        src="images/pdp/2024/the_glace/premiere_etape_the_glace-6S.svg?$staticlink$"
+                        alt="Première étape pour préparer du thé glacé" />
+                </div>
+                <p class="step__description font-barlow">
+                    Remplissez votre carafe d’eau frémissante (à un peu plus de la moitié).
+                </p>
+            </li>
+            <li class="step">
+                <div class="step__image-container">
+                    <img class="step__image"
+                        src="images/pdp/2024/the_glace/deuxieme_etape_the_glace-6S.svg?$staticlink$"
+                        alt="Deuxième étape pour préparer du thé glacé" />
+                </div>
+                <p class="step__description font-barlow">
+                    Plongez le sachet de votre choix et détendez-vous tandis que le mélange infuse (10 minutes environ).
+                </p>
+            </li>
+            <li class="step">
+                <div class="step__image-container">
+                    <img class="step__image"
+                        src="images/pdp/2024/the_glace/troisieme_etape_the_glace-6S.svg?$staticlink$"
+                        alt="Troisième étape pour préparer du thé glacé" />
+                </div>
+                <p class="step__description font-barlow">
+                    Ajoutez une quantité importante de glaçons.
+                </p>
+            </li>
+            <li class="step">
+                <div class="step__image-container">
+                    <img class="step__image"
+                        src="images/pdp/2024/the_glace/quatrieme_etape_the_glace-6S.svg?$staticlink$"
+                        alt="Quatrième étape pour préparer du thé glacé" />
+                </div>
+                <p class="step__description font-barlow">
+                    C’est prêt ! Dégustez, savourez, appréciez.
+                </p>
+            </li>
+        </ol>
+    </article>
+    <article class="tasse-mug">
+        <h2 class="tasse-mug__title font-sophillia">Préparez votre<span class="hide-desktop"><br></span> thé
+            glacé</h2>
+            <div class="splide tasse-mug__splide" role="group">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <a href="$url('Product-Show','pid','21682A1330')$" class="splide__slide" title="Découvrir">
+                            <div class="tasse-mug__produit">
+                                <div class="tasse-mug__container">
+                                    <img class="tasse-mug__image"
+                                        src="images/landing_page/2024/glaces/aquaexotica_packshot.png?$staticlink$"
+                                        alt="image boîte 6 sachets aquasummer et aquarosa">
+                                    <div>
+                                        <h3 class="tasse-mug__title">
+                                            AquaExotica (Infusion de fruits bio)
+                                        </h3>
+                                        <h4 class="tasse-mug__description">
+                                            Tisane hibiscus, fruits exotiques
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <h3 class="tasse-mug__type">
+                                            Boîte de 6 grands sachets
+                                        </h3>
+                                        <h4 class="carafes-xsell__prix">
+                                            8,90 €
+                                        </h4>
+                                    </div>
+                                </div>
+                                <p class="tasse-mug__button">
+                                    Découvrir
+                                </p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+    </article>
+</section>
+
+
+<!-- inject(js)(inject) [../../dist/js/main.min.js] -->
+<!-- JS Splide -->
+<script src="script/splide.min.js?$staticlink$"></script>
+
+<!-- 
+    JS USE
+    // =require specific/2024/carousel_glaces.js
+-->
