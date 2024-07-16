@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : Aqua_20S_PUSH
+
+    Nom de la classe parent : aqua_20S_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="aqua_20S_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Une boîte de 20 sachets de la gamme Aqua offerte dès 55€ d'achats">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Une boîte de 20 sachets de la gamme Aqua offerte dès 55€ d'achats",
+            "texte-h2": "Prolongez l'été !",
+            "texte-h3": "Une boîte de 20 sachets de la gamme Aqua offerte dès 55€ d'achats",
+            "texte-link": "J'en profite",
+        })
+    </div>
+</a>

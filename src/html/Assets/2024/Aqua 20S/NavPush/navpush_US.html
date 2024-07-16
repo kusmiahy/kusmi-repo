@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : Aqua_20S_PUSH_NAV
+
+    Nom de la classe parent : aqua_20S_navpush_2024
+
+-->
+
+<section class="aqua_20S_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "A free tea bag box from the Aqua range for purchases over $65",
+        "texte": "Free tea bag box!",
+        "lien": "$url('Search-Show','cgid','nos_thes_infusions')$",
+    })
+</section>

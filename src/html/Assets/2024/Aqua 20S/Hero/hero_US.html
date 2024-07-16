@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/aqua_20S.scss";
+
+    Content asset : Aqua_20S_HP
+
+    Nom de la classe parent : aqua_20S_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="aqua_20S_hero_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="A free tea bag box from the Aqua range for purchases over $65">
+        @@include('../components/slot.html', {
+            "alt": "A free tea bag box from the Aqua range for purchases over $65",
+            "title": "Get ready for summer",
+            "subtitle": "A free tea bag box from the Aqua range for purchases over $65",
+            "text-link": "Shop now",
+        })
+    </a>
+</section>									

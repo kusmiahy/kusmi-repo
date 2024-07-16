@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.minceur_article_2024';
+var classParent = '.mentions-legales-cgv_2024';
 
 const {
     series,
