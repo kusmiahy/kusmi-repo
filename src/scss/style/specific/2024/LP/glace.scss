@@ -85,7 +85,9 @@ $grey: #575757;
             margin-top: 1rem;
             width: 950px;
             margin: auto;
-            text-align: left;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 28px;
         }
     }
 }
@@ -188,6 +190,9 @@ $grey: #575757;
     @include min1024() {
         padding-inline: 4rem;
         padding-block: 3rem;
+    }
+    @include min1920() {
+        padding-inline: 18rem;
     }
     &__title-container {
         display: flex;
@@ -292,18 +297,24 @@ $grey: #575757;
         }
     }
     &__slider {
-        display: flex;
-        gap: 4rem;
-        justify-content: center;
-        align-items: center;
+        @include min1024() {
+            display: flex;
+            gap: 4rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .tasse-mug__slider {
+        @include min1920() {
+            justify-content: space-between;
+        }
     }
     .tasse-mug__splide {
-        width: 62%;
-        @include min1440() {
-            width: 55%;
+        @include min1024() {
+            width: 62%;
         }
         @include min1920() {
-            width: 43%;
+            width: 60%;
         }
     }
     &__bbdetox {
@@ -342,7 +353,7 @@ $grey: #575757;
         width: 440px;
     }
     @include min1024() {
-        margin: auto;
+        margin-inline: auto;
         width: 715px;
     }
 }
@@ -370,12 +381,26 @@ $grey: #575757;
         justify-content: space-between;
         align-items: center;
         &__title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             width: calc(25% - 0.75rem);
-            text-align: center;
+            h2 {
+                text-align: center;
+            }
         }
         &__splide {
             width: 73%;
         }
+        &__pictos {
+            margin: 0 auto;
+        }
+    }
+}
+
+.belles-decouvertes {
+    @include min1024() {
+        flex-direction: row-reverse;
     }
 }
 
@@ -387,6 +412,9 @@ $grey: #575757;
     @include min1024() {
         padding-block: 3rem;
         padding-inline: 4rem;
+    }
+    @include min1920() {
+        padding-inline: 18rem;
     }
     &__title {
         width: 100%;

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const splide = new Splide('.carafes-xsell__splide', {
             type: 'loop',
             arrows: true,
-            autoplay: true,
+            autoplay: false,
             speed: 1000,
             easing: 'ease',
             perPage: 5,
@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const splide1 = new Splide('.tasse-mug__splide', {
             type: 'loop',
             arrows: true,
-            autoplay: true,
+            autoplay: false,
             speed: 1000,
             easing: 'ease',
-            perPage: 3,
+            perPage: 4,
             perMove: 1,
             pagination: false,
             gap: '1rem',
@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     767: {
                         perPage: 2,
                     },
-                    1024: {
-                        perPage: 3,
+                    1023: {
+                        perPage: 4,
                     },
                 },
             classes: {
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if(document.querySelector('.eaux-fruits__splide')) {
         const splide1 = new Splide('.eaux-fruits__splide', {
             type: 'loop',
-            arrows: true,
-            autoplay: true,
+            arrows: false,
+            autoplay: false,
             speed: 1000,
             easing: 'ease',
             perPage: 4,
@@ -69,9 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 breakpoints: {
                     767: {
                         perPage: 2,
+                        arrows: true,
                     },
                     1024: {
                         perPage: 4,
+                        arrows: true,
                     },
                 },
             classes: {
@@ -86,8 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if(document.querySelector('.belles-decouvertes__splide')) {
         const splide2 = new Splide('.belles-decouvertes__splide', {
             type: 'loop',
-            arrows: true,
-            autoplay: true,
+            arrows: false,
+            autoplay: false,
             speed: 1000,
             easing: 'ease',
             perPage: 4,
@@ -97,9 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 breakpoints: {
                     767: {
                         perPage: 2,
+                        arrows: true,
                     },
                     1024: {
                         perPage: 4,
+                        arrows: true,
                     },
                 },
             classes: {
@@ -114,8 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if(document.querySelector('.best-sellers__splide')) {
         const splide3 = new Splide('.best-sellers__splide', {
             type: 'loop',
-            arrows: true,
-            autoplay: true,
+            arrows: false,
+            autoplay: false,
             speed: 1000,
             easing: 'ease',
             perPage: 4,
@@ -125,9 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 breakpoints: {
                     767: {
                         perPage: 2,
+                        arrows: true,
                     },
                     1024: {
                         perPage: 4,
+                        arrows: true,
                     },
                 },
             classes: {
