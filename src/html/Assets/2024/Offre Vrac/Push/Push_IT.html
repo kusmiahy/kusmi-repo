@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac.scss";
+
+    Content asset : 2021_01-offre_recharge-PUSH
+
+    Nom de la classe parent : offre_vrac_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_vrac_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','the_vrac')$" title="Acquista più della stessa ricetta e ottieni fino al 25% di sconto">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Acquista più della stessa ricetta e ottieni fino al 25% di sconto",
+            "texte-h2": "Risparmia con le ricariche!",
+            "texte-h3": "Acquista più della stessa ricetta e ottieni fino al 25% di sconto",
+            "texte-link": "Acquista ora",
+        })
+    </div>
+</a>

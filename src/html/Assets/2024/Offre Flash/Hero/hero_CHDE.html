@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_flash_summer.scss";
+
+    Content asset : 2021_10-20-des-80_HP
+
+    Nom de la classe parent : offre_flash_summer_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_flash_summer_hero_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="20% Rabatt ab 100 CHF Einkaufswert">
+        @@include('../components/slot.html', {
+            "alt": "20% Rabatt ab 100 CHF Einkaufswert",
+            "title": "Flash Angebot",
+            "subtitle": "<span class='highlight-text'>20% Rabatt</span><span>ab <strong>100 CHF</strong> Einkaufswert<sup>*</sup></span>",
+            "text-link": "Jetzt nutzen",
+        })
+    </a>
+</section>									

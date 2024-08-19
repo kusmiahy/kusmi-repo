@@ -1,0 +1,37 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac.scss";
+
+    Content asset : 2021_03-offre_recharge-HP
+
+    Nom de la classe parent : offre_vrac_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="offre_vrac_hero_2024">
+    <a href="$url('Search-Show','cgid','the_vrac')$" title="Economisez jusqu'à -25% en achetant plus de vrac du même mélange">
+        @@include('../components/slot.html', {
+            "alt": "Economisez jusqu'à -25% en achetant plus de vrac du même mélange",
+            "title": "<span class='hide-mobile'>Refill your tin & save up to 25%!</span><span class='hide-desktop'>Refill your tin!</span>",
+            "subtitle": "<span class='hide-mobile'>Buy more loose leaf tea of the same blend & get</span><span class='hide-desktop'>Buy more of the same blend & get up to 25% OFF</span>",
+            "description1": "from 2<br> refill bags",
+            "pourcentage1": "-15%",
+            "description2": "from 3<br> refill bags",
+            "pourcentage2": "-20%",
+            "description3": "from 5<br> refill bags",
+            "pourcentage3": "-25%",
+            "text-link": "Shop now",
+        })
+    </a>
+</section>

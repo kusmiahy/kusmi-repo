@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : LP_GLACE_PUSH
+
+    Nom de la classe parent : template_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="template_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Page-Show','cid','thes_glaces')$" title="Le mode d’emploi pour un été au frais !">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Le mode d’emploi pour un été au frais !",
+            "texte-h2": "Les glacés",
+            "texte-h3": "Le mode d’emploi pour un été au frais !",
+            "texte-link": "Je découvre",
+        })
+    </div>
+</a>

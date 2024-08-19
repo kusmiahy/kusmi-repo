@@ -152,8 +152,8 @@ $grey: #575757;
         }
         @include min1024() {
             text-align: left;
-            font-size: 1.5rem;
-            line-height: 32px;
+            font-size: 1.2rem;
+            line-height: 28px;
         }
         @include min1440() {
             width: 640px;
@@ -213,7 +213,15 @@ $grey: #575757;
             margin-bottom: 1rem;
         }
     }
-    &__produit {
+
+    // &__text-container {
+    //     @include min1024() {
+    //         width: 60%;
+    //         margin: auto;
+    //     }
+    // }
+    &__produit {  
+        width: 100%;
         padding: 10px;
         display: flex;
         flex-direction: column;

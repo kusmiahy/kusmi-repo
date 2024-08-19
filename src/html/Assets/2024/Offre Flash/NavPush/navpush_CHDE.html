@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_flash_summer.scss";
+
+    Content asset : 2021_10-20-des-80_NAV_PUSH
+
+    Nom de la classe parent : offre_flash_summer_navpush_2024
+
+-->
+
+<section class="offre_flash_summer_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "20% Rabatt ab 100 CHF Einkaufswert*",
+        "texte": "20% Rabatt ab 100 CHF Einkaufswert*",
+        "lien": "$url('Search-Show','cgid','nos_thes_infusions')$",
+    })
+</section>

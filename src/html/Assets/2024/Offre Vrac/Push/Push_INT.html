@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_vrac.scss";
+
+    Content asset : 2021_01-offre_recharge-PUSH
+
+    Nom de la classe parent : offre_vrac_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="offre_vrac_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','the_vrac')$" title="Buy more of the same blend & get up to 25% OFF">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Buy more of the same blend & get up to 25% OFF",
+            "texte-h2": "Refill your tin!",
+            "texte-h3": "Buy more of the same blend & get up to 25% OFF",
+            "texte-link": "Shop now",
+        })
+    </div>
+</a>
