@@ -269,7 +269,9 @@ $article-title: #731f4b;
     }
 }
 
-
+ol li {
+    list-style-type: decimal !important;
+}
 
 .content__p,
 .block__p,

@@ -1,0 +1,338 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : recette-buche-noel-matcha
+
+    Nom de la classe parent : noel_article_2023
+
+    Titre : Recette : Bûche de Noël glacée au matcha et au chocolat
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-breadcrumb .product-breadcrumb{display:none}.c-article-banner{display:none}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2023/blog_matcha_produit_coffret.webp?$staticlink$",
+                "alt": "produit matcha Kusmi Tea",
+    
+                "titre": "Comment bien préparer son thé matcha ? ",
+                "date": "Publié le <span class='date__color'>14/08/2024</span>",
+                "url-produit": "/fr/nos-thes-infusions/types-de-the/matcha",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Notre matcha",
+    
+                "texte": "Pour préparer <strong>un thé matcha</strong> dans les règles de l’art, suivez la cérémonie <strong>japonaise traditionnelle</strong> ou revisitez-la de manière plus originale. Avec de l’eau pour la version classique ou du lait pour la version latte, les recettes pour préparer matcha ne manquent pas. En manque d’inspiration ? Kusmi vous partage tous les secrets de préparation de la <strong>poudre de thé vert</strong> !",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                    @@include('_components/h2.html', {
+                        "titre": "La cérémonie ancestrale du thé matcha ",
+                    })
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "Avez-vous déjà entendu parler de la <strong>cérémonie du thé</strong> ? Elle fut instaurée à la fin du XV<sup>e</sup> siècle dans la province de Kansai, au Japon, par le <strong>maître de thé japonais</strong> Sen No Rikyū . Par la suite, trois écoles réunies sous le nom de San-Senke ont repris ses enseignements. Chacune avait un rituel différent pour préparer le matcha. <br>Bien que certains tentent encore de respecter la cérémonie traditionnelle, d’autres optent pour une préparation plus moderne. De nos jours, le thé matcha n’est plus seulement consommé au Japon. Les adeptes de cette boisson aux multiples bienfaits sont présents dans le monde entier !",
+                    })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les outils traditionnels : chasen, chawan et autres accessoires",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour bien préparer votre thé matcha, quelques accessoires traditionnels japonais sont indispensables. Chacun d’eux joue un rôle crucial dans le processus :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Chasen : Le fouet en bambou indispensable pour mélanger la poudre de matcha et obtenir une mousse parfaite.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Chawan : Le bol utilisé pour préparer et déguster le matcha.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Chashaku : La cuillère en bambou pour doser la poudre de matcha.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Bol : Un bol spécifique pour contenir le matcha durant la préparation.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Tamis : Pour tamiser la poudre de matcha et éviter les grumeaux.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ces outils ne sont pas juste des accessoires, ils sont au cœur de la cérémonie du thé japonaise et garantissent une préparation authentique.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "L’importance de la température de l’eau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Afin de ne pas abîmer les feuilles de matcha, nous vous recommandons de ne pas dépasser une température de 80°C. Une eau comprise entre 70°C et 75°C est idéale. Si celle-ci est trop chaude, votre boisson risque d’être amère. Si vous n’avez pas la possibilité de régler la température avec votre bouilloire, nous vous conseillons de la laisser légèrement refroidir une fois que l’eau bout.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Usucha pour un matcha doux et léger",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il s’agit de la méthode la plus répandue au Japon, inspirée de l’école Enshû.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Versez 1 cuillère à café de matcha (environ 2 g) dans un bol en utilisant un chashaku (cuillère en bambou).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez 75 ml d’eau chaude (entre 70 et 80°).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Maintenez le chasen (fouet en bambou) avec deux doigts et mélangez le matcha en bougeant l’avant-bras. Une mousse et des bulles vont se former.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Écrasez les bulles à la surface en mélangeant plus lentement.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Formez un Z sur la mousse et relevez votre fouet d’un geste vertical.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Prenez le temps de déguster votre matcha dans une tasse ou un bol spécialement conçu pour ça.",
+                    })
+                </ul>
+                @@include('_components/h3.html', {
+                    "titre": "Koicha pour un arôme intense",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En utilisant cette méthode, vous profiterez d’une boisson plus épaisse, contenant une plus grande <strong>quantité de thé matcha.</strong>",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Dans un bol ou une tasse, versez 3 cuillères de matcha premium (entre 3 et 5 g).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez une cuillère à soupe d’eau chaude (entre 70 et 80°).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Mélangez le tout avec un chasen.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez à nouveau une cuillère à soupe d’eau chaude.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Mélangez de nouveau, sans fouetter, en formant un huit.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Assurez-vous d’obtenir une texture lisse sans bulles.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Buvez : vous ressentirez tout l’arôme du matcha en bouche.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment préparer un thé matcha onctueux sans fouet ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous ne possédez pas les ustensiles traditionnels pour <strong>préparer un thé matcha</strong> ? Pas de panique, vous pouvez utiliser un mixeur pour une préparation rapide.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Déposez 2 cuillères à café de poudre de thé vert dans votre mixeur.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Rajoutez 75 ml d’eau frémissante à 75°.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Mixez le tout.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez le matcha crémeux dans un bol.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Délectez-vous de cette boisson au goût unique.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment faire un matcha latte ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha latte est très apprécié en Europe. Pour une préparation simple et rapide, suivez le guide.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Dans un bol, versez 1 cuillère à café de matcha.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Rajoutez une noisette de lait de votre choix (végétal ou non).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Mélangez à l’aide d’un chansen ou d’un mixeur.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Savourez votre délicieux matcha latte.",
+                    })
+                </ul>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Matcha à froid : techniques et recettes rafraîchissantes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha ne se limite pas à une boisson chaude. Voici quelques techniques pour le savourer glacé :",
+                })
+                @@include('_components/h4.html', {
+                    "titre": "Matcha Iced Latte",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Préparation du matcha : Mélangez 1 à 2 grammes de poudre de matcha avec un peu d'eau chaude (70-80°C) jusqu'à obtenir une pâte lisse.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajouter du lait : Versez 200 ml de lait froid (végétal ou animal) dans un verre rempli de glaçons.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Combiner : Ajoutez la préparation de matcha dans le verre et mélangez bien.",
+                    })
+                </ol>
+                @@include('_components/h4.html', {
+                    "titre": "Matcha Lemonade",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Préparation du matcha : Mélangez 1 à 2 grammes de poudre de matcha avec un peu d'eau chaude.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajouter du citron : Pressez le jus d'un citron et ajoutez-le à la préparation de matcha.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Compléter avec de l'eau froide : Ajoutez 200 ml d'eau froide et des glaçons. Mélangez bien avant de servir.",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ces recettes rafraîchissantes sont parfaites pour les journées chaudes et offrent une alternative saine aux boissons sucrées. Découvrez toutes nos <a class='banniere__link' href='/fr/matcha-froid/artmm-23.html'><u>recettes de matcha froides et glacées</u></a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé matcha et la santé : bienfaits et précautions",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé matcha est reconnu pour ses nombreux bienfaits :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Antioxydants : Riche en catéchines, il aide à combattre les radicaux libres.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Énergie durable : Grâce à la caféine qu'il contient, il offre une énergie stable sans le pic d’excitation suivi de la chute rapide souvent associée au café.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Relaxation : Contient de la L-théanine, un acide aminé qui favorise la relaxation sans somnolence.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Consultez notre article dédié sur les <a class='banniere__link' href='/fr/matcha-the-vertus.html'><u>bienfaits du matcha</u></a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour plus de détails sur la recette du matcha latte, c’est <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-1')$\"\>par ici</a> ! Découvrez aussi <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-6')$\"\>la recette du matcha au lait de coco</a> et bien d’autres encore avec <a class='banniere__link' href=\"$url('Page-Show','cid','arttv4')$\"\>nos idées d’utilisation du matcha en cuisine</a>.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Prêt(e) <strong>à déguster un bon matcha</strong> ? Qu’il soit préparé de manière traditionnelle ou moderne, ce nectar à la couleur émeraude séduit le monde entier tant il est <a class='banniere__link' href=\"$url('Page-Show','cid','matcha-the-vertus')$\"\>riche en bienfaits</a> ! Choisissez le <a class='banniere__link' href=\"$url('Product-Show','pid','21695A1040')$\"\>thé matcha bio de Kusmi Tea</a>, une poudre verte et intense vous garantissant <strong>un thé matcha de qualité</strong> ! En version latte, glacée ou plus classique avec simplement de l’eau, tous les palais seront satisfaits. <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-4')$\"\>Une bonne alternative à la tasse de café traditionnelle</a>.",
+                })
+        </section>
+        </article>
+        <section class="slider-scroll">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-5')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "“Matcha bleu” ou “Blue matcha” : de quoi s’agit-il ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-13')$",
+                    "lien-img": "blog/1_MATCHA-cafe-1.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Le thé matcha, riche en théine, est-il un excitant ? ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-15')$",
+                    "lien-img": "blog/articles/2023/blog_matcha_fouet.webp?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Boire un thé matcha le soir : bonne ou mauvaise idée ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-2')$",
+                    "lien-img": "blog/1_MATCHA-prix.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Quel est le prix du thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-2')$",
+                    "lien-img": "blog/1-AJEUN.png?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Faut-il boire son thé matcha le matin à jeun ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-17')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour accéder à l'article",
+                    "titre": "Provenance et origine : de quelle plante provient le thé matcha ? ",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Recette : Bûche de Noël glacée au matcha et au chocolat",
+                "texte": "Partager cet article",
+                "url-network": "$url('Page-Show','cid','recette-buche-noel-matcha')$",
+            })
+        </section>
+    </div>
+
+</div>
+
