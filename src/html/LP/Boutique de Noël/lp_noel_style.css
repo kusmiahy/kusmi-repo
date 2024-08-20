@@ -1,0 +1,735 @@
+.c-product-tag__wrapper {
+    top: 2%;
+    right: 3%;
+}
+
+.boutique_de_noel_2024 main {
+    display: block
+}
+
+.boutique_de_noel_2024 a {
+    background-color: transparent
+}
+
+.boutique_de_noel_2024 img {
+    border-style: none
+}
+
+.boutique_de_noel_2024 input {
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0
+}
+
+.boutique_de_noel_2024 button,
+.boutique_de_noel_2024 input {
+    overflow: visible
+}
+
+.boutique_de_noel_2024 button {
+    text-transform: none
+}
+
+.boutique_de_noel_2024 [type=button],
+.boutique_de_noel_2024 button {
+    -webkit-appearance: button
+}
+
+.boutique_de_noel_2024 [type=button]::-moz-focus-inner,
+.boutique_de_noel_2024 button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+.boutique_de_noel_2024 [type=button]:-moz-focusring,
+.boutique_de_noel_2024 button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+.boutique_de_noel_2024 ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.boutique_de_noel_2024 [hidden] {
+    display: none
+}
+
+.boutique_de_noel_2024 {
+    width: 100%
+}
+.boutique_de_noel_2024 .button-discover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.boutique_de_noel_2024 .button-discover--left {
+    justify-content: flex-start;
+}
+
+.boutique_de_noel_2024 .button-all {
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    font-size: 1rem;
+    line-height: 15px;
+    padding: 12px 1rem;
+    transition: background .25s ease;
+    color: #000;
+}
+.boutique_de_noel_2024 .button-all:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.boutique_de_noel_2024 .anchors {
+    margin: auto;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.boutique_de_noel_2024 .item {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    width: 48%;
+    justify-content: center;
+    height: 90px;
+}
+.boutique_de_noel_2024 .item p {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: .3rem 1rem;
+}
+
+.boutique_de_noel_2024 .bestsellers__title {
+    text-align: left;
+    margin-bottom: 1rem
+}
+
+.boutique_de_noel_2024 .bestsellers__title,
+.boutique_de_noel_2024 .storytelling__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.boutique_de_noel_2024 .accessoires__title {
+    margin-bottom: 1rem
+}
+
+.boutique_de_noel_2024 .accessoires__title,
+.boutique_de_noel_2024 .happy-ending__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+.boutique_de_noel_2024 .the-infusions__title {
+    text-align: left
+}
+
+.boutique_de_noel_2024 .coffrets__title,
+.boutique_de_noel_2024 .the-infusions__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+.boutique_de_noel_2024 .hero {
+    padding-block: 1.5rem
+}
+
+.boutique_de_noel_2024 .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 30px
+}
+
+.boutique_de_noel_2024 .hero__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    letter-spacing: initial;
+    text-align: center;
+    text-transform: initial
+}
+
+.boutique_de_noel_2024 .hero__image {
+    width: 100%;
+    min-height: 243px;
+    height: 30vh;
+    margin-bottom: 1rem
+}
+.boutique_de_noel_2024 .hero__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.boutique_de_noel_2024 .hero__description {
+    font-size: 14px;
+    font-weight: 500;
+    margin-inline: auto;
+    width: 85%;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.boutique_de_noel_2024 .happy-ending__cta,
+.boutique_de_noel_2024 .product__button {
+    margin-bottom: 0
+}
+
+.boutique_de_noel_2024 .happy-ending__cta,
+.boutique_de_noel_2024 .product__button,
+.boutique_de_noel_2024 .storytelling__cta {
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    font-size: 1rem;
+    line-height: 15px;
+    padding: 12px 1rem;
+    transition: background .25s ease
+}
+.boutique_de_noel_2024 .happy-ending__cta:hover,
+.boutique_de_noel_2024 .product__button:hover,
+.boutique_de_noel_2024 .storytelling__cta:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.boutique_de_noel_2024 .bestsellers {
+    padding: 1.5rem 1rem
+}
+
+.boutique_de_noel_2024 .bestsellers__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.boutique_de_noel_2024 .bestsellers__product {
+    width: 47.2%
+}
+
+.boutique_de_noel_2024 .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 432px
+}
+.boutique_de_noel_2024 .product__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 217px
+}
+
+.boutique_de_noel_2024 .product__description,
+.boutique_de_noel_2024 .product__price {
+    color: #000
+}
+.boutique_de_noel_2024 .product__discounted {
+    color: #868686
+}
+
+.boutique_de_noel_2024 .product__image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: .5rem;
+    height: 207px
+}
+
+.boutique_de_noel_2024 .product__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+.boutique_de_noel_2024 .product__description {
+    font-size: 1rem;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+.boutique_de_noel_2024 .product__price {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: .5rem
+}
+.boutique_de_noel_2024 .product__discounted {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: line-through;
+    margin-bottom: 0
+}
+
+.boutique_de_noel_2024 .product__button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background .25s ease
+}
+
+.boutique_de_noel_2024 .product__button:hover {
+    background-color: #000;
+    color: #fff
+}
+
+.boutique_de_noel_2024 .image-absolute {
+    display: flex;
+    position: relative
+}
+
+.boutique_de_noel_2024 .image-absolute__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.boutique_de_noel_2024 .image-absolute.image-absolute--first .image-absolute__button {
+    left: 5%;
+    bottom: 5%
+}
+
+.boutique_de_noel_2024 .image-absolute.image-absolute--second .image-absolute__button {
+    right: 17%;
+    top: 57%;
+}
+
+.boutique_de_noel_2024 .image-absolute__button {
+    cursor: pointer;
+    background-color: #fff;
+    padding: .6rem .75rem;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    transition: .25s all ease-in
+}
+
+.boutique_de_noel_2024 .image-absolute__button:hover {
+    background-color: #000
+}
+
+.boutique_de_noel_2024 .image-absolute__button:hover path {
+    fill: #fff
+}
+
+.boutique_de_noel_2024 .custom__arrow {
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    opacity: 1
+}
+
+.boutique_de_noel_2024 .storytelling {
+    position: relative;
+    width: 100%;
+    padding-block: 1.5rem
+}
+
+.boutique_de_noel_2024 .storytelling__image {
+    width: 100%;
+    height: 231px
+}
+
+.boutique_de_noel_2024 .storytelling__title {
+    text-align: center;
+    margin-bottom: .5rem
+}
+
+.boutique_de_noel_2024 .storytelling__subtitle {
+    letter-spacing: initial;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 15px
+}
+
+.boutique_de_noel_2024 .storytelling__description {
+    width: 90%;
+    margin-inline: auto;
+    font-weight: 500;
+    font-size: 14px;
+    margin-block: 1.5rem 0;
+    text-align: center
+}
+
+.boutique_de_noel_2024 .storytelling__cta {
+    margin-bottom: 0;
+    color: #000
+}
+
+.boutique_de_noel_2024 .coffrets,
+.boutique_de_noel_2024 .the-infusions {
+    padding: 1.5rem 1rem
+}
+
+.boutique_de_noel_2024 .the-infusions__product .product__image {
+    padding: 1rem;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.boutique_de_noel_2024 .coffrets__title {
+    text-align: center
+}
+
+.boutique_de_noel_2024 .coffrets__description {
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center
+}
+.boutique_de_noel_2024 .product__container--coffrets {
+    height: 238px;
+}
+
+/* .boutique_de_noel_2024 .coffrets__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+} */
+
+.boutique_de_noel_2024 .coffrets .product__image {
+    width: 100%;
+    height: 193px
+}
+
+.boutique_de_noel_2024 .coffrets__product {
+    height: 442px;
+}
+
+.boutique_de_noel_2024 .coffrets__product:first-child,
+.boutique_de_noel_2024 .coffrets__product:last-child {
+    align-self: flex-start
+}
+
+.boutique_de_noel_2024 .coffrets__product:nth-child(2),
+.boutique_de_noel_2024 .coffrets__product:nth-child(2) h4,
+.boutique_de_noel_2024 .coffrets__product:nth-child(2) p,
+.boutique_de_noel_2024 .coffrets__product:nth-child(2) .product__button {
+    align-self: flex-end
+}
+
+.boutique_de_noel_2024 .accessoires {
+    padding: 1.5rem 1rem
+}
+
+.boutique_de_noel_2024 .accessoires__title {
+    text-align: center
+}
+
+.boutique_de_noel_2024 .accessoires__product .product__image {
+    padding: 1rem;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.boutique_de_noel_2024 .happy-ending {
+    background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("fdm/storytelling_image.webp?$staticlink$") no-repeat center;
+    background-size: cover;
+    height: 331px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1.5rem
+}
+
+.boutique_de_noel_2024 .happy-ending__title {
+    margin-bottom: .5rem;
+    text-align: center
+}
+
+.boutique_de_noel_2024 .happy-ending__description {
+    width: 60%;
+    font-weight: 500;
+    font-size: 14px;
+    margin-block: 0 1.5re0;
+    text-align: center;
+    color: #000
+}
+
+.boutique_de_noel_2024 .happy-ending__cta {
+    color: #000;
+    cursor: pointer
+}
+
+@media screen and (min-width:768px) {
+    .boutique_de_noel_2024 .hero__image {
+        height: 40vh
+    }
+
+    .boutique_de_noel_2024 .storytelling__image {
+        height: 40vh;
+        min-height: 231px
+    }
+
+    .boutique_de_noel_2024 .coffrets .product__image {
+        height: 280px
+    }
+
+}
+
+@media (min-width:768px) {
+    .boutique_de_noel_2024 .hide-desktop {
+        display: none !important
+    }
+    
+}
+@media (max-width:1023px) {
+    .boutique_de_noel_2024 .hide-before-desktop {
+        display: none !important
+    }
+}
+@media (min-width: 1023px) {
+    .boutique_de_noel_2024 .hide-since-desktop {
+        display: none !important
+    }
+    .boutique_de_noel_2024 .coffrets__product {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .boutique_de_noel_2024 .anchors {
+        background-color: none;
+    }
+    .boutique_de_noel_2024 .anchors__img {
+        width: 100%;
+    }
+
+    .boutique_de_noel_2024 .item {
+        background-color: initial;
+        flex-direction: column;
+        width: 24%;
+        height: 100%;
+        gap: 1rem;
+        margin-block: 2rem;
+    }
+    
+    .boutique_de_noel_2024 .hero {
+        height: 323px;
+        background-image: url("fdm/hero_image.webp?$staticlink$");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        background-position: right center
+    }
+
+    .boutique_de_noel_2024 .hero__container {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .boutique_de_noel_2024 .hero__title {
+        font-size: 3.5rem;
+        color: #fff
+    }
+
+    .boutique_de_noel_2024 .hero__subtitle {
+        color: #fff
+    }
+
+    .boutique_de_noel_2024 .hero__image {
+        display: none
+    }
+
+    .boutique_de_noel_2024 .hero__description {
+        font-size: 1rem;
+        color: #fff
+    }
+
+    .boutique_de_noel_2024 .bestsellers {
+        padding: 1.5rem 80px
+    }
+
+    .boutique_de_noel_2024 .bestsellers__product {
+        width: 23%
+    }
+
+    .boutique_de_noel_2024 .product {
+        height: 442px
+    }
+    .boutique_de_noel_2024 .product__container {
+        height: 222px
+    }
+
+    .boutique_de_noel_2024 .product__image {
+        height: 229px
+    }
+
+    .boutique_de_noel_2024 .storytelling {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2.5rem 80px 1.5rem;
+        gap: 1.5rem
+    }
+
+    .boutique_de_noel_2024 .storytelling__image {
+        width: 50%
+    }
+
+    .boutique_de_noel_2024 .storytelling__container,
+    .boutique_de_noel_2024 .storytelling__title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .boutique_de_noel_2024 .storytelling__subtitle {
+        margin-bottom: 1.5rem
+    }
+
+    .boutique_de_noel_2024 .storytelling__description {
+        margin-block: 0 1.5rem;
+        width: 75%
+    }
+
+    .boutique_de_noel_2024 .the-infusions {
+        padding: 1.5rem 80px
+    }
+
+    .boutique_de_noel_2024 .the-infusions__product {
+        width: 100%;
+        height: 420px;
+    }
+
+    .boutique_de_noel_2024 .the-infusions__product .product__image {
+        padding: 2rem
+    }
+
+    .boutique_de_noel_2024 .coffrets {
+        padding: 3.5rem 80px 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .boutique_de_noel_2024 .coffrets__description,
+    .boutique_de_noel_2024 .coffrets__title {
+        text-align: left
+    }
+
+    .boutique_de_noel_2024 .coffrets__description {
+        width: 75%;
+        margin-inline: 0;
+        margin-bottom: 0
+    }
+
+    .boutique_de_noel_2024 .coffrets__text-container {
+        /* margin: auto */
+    }
+
+    .boutique_de_noel_2024 .coffrets__container {
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; */
+        width: 70%
+    }
+
+    .boutique_de_noel_2024 .coffrets__product {
+        width: 100%;
+        align-items: flex-start;
+        height: 485px;
+        text-align: left
+    }
+
+    .boutique_de_noel_2024 .coffrets__product:nth-child(2),
+    .boutique_de_noel_2024 .coffrets__product:nth-child(2) h4,
+    .boutique_de_noel_2024 .coffrets__product:nth-child(2) p,
+    .boutique_de_noel_2024 .coffrets__product:nth-child(2) .product__button {
+        align-self: flex-start
+    }
+
+    .boutique_de_noel_2024 .accessoires {
+        padding: 2rem 80px 1.5rem
+    }
+
+    .boutique_de_noel_2024 .accessoires__product {
+        width: 100%;
+        height: 400px
+    }
+}
+
+@media screen and (min-width:1439px) {
+
+    .boutique_de_noel_2024 .bestsellers,
+    .boutique_de_noel_2024 .the-infusions {
+        padding: 1.5rem 156px
+    }
+
+    .boutique_de_noel_2024 .coffrets {
+        padding: 3.5rem 156px 1.5rem
+    }
+
+    .boutique_de_noel_2024 .accessoires {
+        padding: 2rem 156px 1.5rem
+    }
+}
+@media screen and (min-width:1919px) {
+
+    .boutique_de_noel_2024 .hero {
+        height: 423px;
+    }
+    .boutique_de_noel_2024 .happy-ending {
+        height: 571px;
+        background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("fdm/storytelling_image_desktop.webp?$staticlink$") no-repeat center;
+    }
+    .boutique_de_noel_2024 .bestsellers__product .product__image {
+        height: 289px;
+    }
+}
+
+@media (max-width:767px) {
+    .boutique_de_noel_2024 .hide-mobile {
+        display: none !important
+    }
+}
+@media (min-width:767px) {
+    .boutique_de_noel_2024 .hide-after-tablet {
+        display: none !important
+    }
+}
+@media (max-width:1023px) {
+    .boutique_de_noel_2024 .hide-before-desktop {
+        display: none !important
+    }
+}

@@ -1,0 +1,666 @@
+.c-product-tag__wrapper {
+    top: 2%;
+    right: 3%;
+}
+
+.fdm_2024 main {
+    display: block
+}
+
+.fdm_2024 a {
+    background-color: transparent
+}
+
+.fdm_2024 img {
+    border-style: none
+}
+
+.fdm_2024 input {
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0
+}
+
+.fdm_2024 button,
+.fdm_2024 input {
+    overflow: visible
+}
+
+.fdm_2024 button {
+    text-transform: none
+}
+
+.fdm_2024 [type=button],
+.fdm_2024 button {
+    -webkit-appearance: button
+}
+
+.fdm_2024 [type=button]::-moz-focus-inner,
+.fdm_2024 button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+.fdm_2024 [type=button]:-moz-focusring,
+.fdm_2024 button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+.fdm_2024 ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.fdm_2024 [hidden] {
+    display: none
+}
+
+.fdm_2024 {
+    width: 100%
+}
+
+.fdm_2024 .bestsellers__title {
+    text-align: left;
+    margin-bottom: 1rem
+}
+
+.fdm_2024 .bestsellers__title,
+.fdm_2024 .storytelling__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.fdm_2024 .accessoires__title {
+    margin-bottom: 1rem
+}
+
+.fdm_2024 .accessoires__title,
+.fdm_2024 .happy-ending__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.fdm_2024 .the-infusions__title {
+    text-align: left
+}
+
+.fdm_2024 .coffrets__title,
+.fdm_2024 .the-infusions__title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+.fdm_2024 .hero {
+    padding-block: 1.5rem
+}
+
+.fdm_2024 .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 30px
+}
+
+.fdm_2024 .hero__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    letter-spacing: initial;
+    text-align: center;
+    text-transform: initial
+}
+
+.fdm_2024 .hero__image {
+    width: 100%;
+    min-height: 243px;
+    height: 30vh;
+    margin-bottom: 1rem
+}
+.fdm_2024 .hero__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.fdm_2024 .hero__description {
+    font-size: 14px;
+    font-weight: 500;
+    margin-inline: auto;
+    width: 85%;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.fdm_2024 .happy-ending__cta,
+.fdm_2024 .product__button {
+    margin-bottom: 0
+}
+
+.fdm_2024 .happy-ending__cta,
+.fdm_2024 .product__button,
+.fdm_2024 .storytelling__cta {
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    font-size: 1rem;
+    line-height: 15px;
+    padding: 12px 1rem;
+    transition: background .25s ease
+}
+.fdm_2024 .happy-ending__cta:hover,
+.fdm_2024 .product__button:hover,
+.fdm_2024 .storytelling__cta:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.fdm_2024 .bestsellers {
+    padding: 1.5rem 1rem
+}
+
+.fdm_2024 .bestsellers__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.fdm_2024 .bestsellers__product {
+    width: 47.2%
+}
+
+.fdm_2024 .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 432px
+}
+.fdm_2024 .product__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 217px
+}
+
+.fdm_2024 .product__description,
+.fdm_2024 .product__price {
+    color: #000
+}
+.fdm_2024 .product__discounted {
+    color: #868686
+}
+
+.fdm_2024 .product__image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: .5rem;
+    height: 207px
+}
+
+.fdm_2024 .product__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+.fdm_2024 .product__description {
+    font-size: 1rem;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+.fdm_2024 .product__price {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: .5rem
+}
+.fdm_2024 .product__discounted {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: line-through;
+    margin-bottom: 0
+}
+
+.fdm_2024 .product__button {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background .25s ease
+}
+
+.fdm_2024 .product__button:hover {
+    background-color: #000;
+    color: #fff
+}
+
+.fdm_2024 .image-absolute {
+    display: flex;
+    position: relative
+}
+
+.fdm_2024 .image-absolute__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.fdm_2024 .image-absolute.image-absolute--first .image-absolute__button {
+    left: 5%;
+    bottom: 5%
+}
+
+.fdm_2024 .image-absolute.image-absolute--second .image-absolute__button {
+    right: 17%;
+    top: 57%;
+}
+
+.fdm_2024 .image-absolute__button {
+    cursor: pointer;
+    background-color: #fff;
+    padding: .6rem .75rem;
+    border-radius: 100px;
+    display: block;
+    position: absolute;
+    transition: .25s all ease-in
+}
+
+.fdm_2024 .image-absolute__button:hover {
+    background-color: #000
+}
+
+.fdm_2024 .image-absolute__button:hover path {
+    fill: #fff
+}
+
+.fdm_2024 .custom__arrow {
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    opacity: 1
+}
+
+.fdm_2024 .storytelling {
+    position: relative;
+    width: 100%;
+    padding-block: 1.5rem
+}
+
+.fdm_2024 .storytelling__image {
+    width: 100%;
+    height: 231px
+}
+
+.fdm_2024 .storytelling__title {
+    text-align: center;
+    margin-bottom: .5rem
+}
+
+.fdm_2024 .storytelling__subtitle {
+    letter-spacing: initial;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 15px
+}
+
+.fdm_2024 .storytelling__description {
+    width: 90%;
+    margin-inline: auto;
+    font-weight: 500;
+    font-size: 14px;
+    margin-block: 1.5rem 0;
+    text-align: center
+}
+
+.fdm_2024 .storytelling__cta {
+    margin-bottom: 0;
+    color: #000
+}
+
+.fdm_2024 .coffrets,
+.fdm_2024 .the-infusions {
+    padding: 1.5rem 1rem
+}
+
+.fdm_2024 .the-infusions__product .product__image {
+    padding: 1rem;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.fdm_2024 .coffrets__title {
+    text-align: center
+}
+
+.fdm_2024 .coffrets__description {
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center
+}
+.fdm_2024 .product__container--coffrets {
+    height: 238px;
+}
+
+/* .fdm_2024 .coffrets__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+} */
+
+.fdm_2024 .coffrets .product__image {
+    width: 100%;
+    height: 193px
+}
+
+.fdm_2024 .coffrets__product {
+    height: 442px;
+}
+
+.fdm_2024 .coffrets__product:first-child,
+.fdm_2024 .coffrets__product:last-child {
+    align-self: flex-start
+}
+
+.fdm_2024 .coffrets__product:nth-child(2),
+.fdm_2024 .coffrets__product:nth-child(2) h4,
+.fdm_2024 .coffrets__product:nth-child(2) p,
+.fdm_2024 .coffrets__product:nth-child(2) .product__button {
+    align-self: flex-end
+}
+
+.fdm_2024 .accessoires {
+    padding: 1.5rem 1rem
+}
+
+.fdm_2024 .accessoires__title {
+    text-align: center
+}
+
+.fdm_2024 .accessoires__product .product__image {
+    padding: 1rem;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.fdm_2024 .happy-ending {
+    background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("fdm/storytelling_image.webp?$staticlink$") no-repeat center;
+    background-size: cover;
+    height: 331px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1.5rem
+}
+
+.fdm_2024 .happy-ending__title {
+    margin-bottom: .5rem;
+    text-align: center
+}
+
+.fdm_2024 .happy-ending__description {
+    width: 60%;
+    font-weight: 500;
+    font-size: 14px;
+    margin-block: 0 1.5re0;
+    text-align: center;
+    color: #000
+}
+
+.fdm_2024 .happy-ending__cta {
+    color: #000;
+    cursor: pointer
+}
+
+@media screen and (min-width:768px) {
+    .fdm_2024 .hero__image {
+        height: 40vh
+    }
+
+    .fdm_2024 .storytelling__image {
+        height: 40vh;
+        min-height: 231px
+    }
+
+    .fdm_2024 .coffrets .product__image {
+        height: 280px
+    }
+
+}
+
+@media (min-width:768px) {
+    .fdm_2024 .hide-desktop {
+        display: none !important
+    }
+}
+@media (max-width:1023px) {
+    .fdm_2024 .hide-before-desktop {
+        display: none !important
+    }
+}
+@media (min-width: 1023px) {
+    .fdm_2024 .hide-since-desktop {
+        display: none !important
+    }
+    .fdm_2024 .coffrets__product {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .fdm_2024 .hero {
+        height: 323px;
+        background-image: url("fdm/hero_image.webp?$staticlink$");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+        background-position: right center
+    }
+
+    .fdm_2024 .hero__container {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .fdm_2024 .hero__title {
+        font-size: 3.5rem;
+        color: #fff
+    }
+
+    .fdm_2024 .hero__subtitle {
+        color: #fff
+    }
+
+    .fdm_2024 .hero__image {
+        display: none
+    }
+
+    .fdm_2024 .hero__description {
+        font-size: 1rem;
+        color: #fff
+    }
+
+    .fdm_2024 .bestsellers {
+        padding: 1.5rem 80px
+    }
+
+    .fdm_2024 .bestsellers__product {
+        width: 23%
+    }
+
+    .fdm_2024 .product {
+        height: 442px
+    }
+    .fdm_2024 .product__container {
+        height: 222px
+    }
+
+    .fdm_2024 .product__image {
+        height: 229px
+    }
+
+    .fdm_2024 .storytelling {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2.5rem 80px 1.5rem;
+        gap: 1.5rem
+    }
+
+    .fdm_2024 .storytelling__image {
+        width: 50%
+    }
+
+    .fdm_2024 .storytelling__container,
+    .fdm_2024 .storytelling__title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .fdm_2024 .storytelling__subtitle {
+        margin-bottom: 1.5rem
+    }
+
+    .fdm_2024 .storytelling__description {
+        margin-block: 0 1.5rem;
+        width: 75%
+    }
+
+    .fdm_2024 .the-infusions {
+        padding: 1.5rem 80px
+    }
+
+    .fdm_2024 .the-infusions__product {
+        width: 100%;
+        height: 420px;
+    }
+
+    .fdm_2024 .the-infusions__product .product__image {
+        padding: 2rem
+    }
+
+    .fdm_2024 .coffrets {
+        padding: 3.5rem 80px 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fdm_2024 .coffrets__description,
+    .fdm_2024 .coffrets__title {
+        text-align: left
+    }
+
+    .fdm_2024 .coffrets__description {
+        width: 75%;
+        margin-inline: 0;
+        margin-bottom: 0
+    }
+
+    .fdm_2024 .coffrets__text-container {
+        /* margin: auto */
+    }
+
+    .fdm_2024 .coffrets__container {
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; */
+        width: 70%
+    }
+
+    .fdm_2024 .coffrets__product {
+        width: 100%;
+        align-items: flex-start;
+        height: 485px;
+        text-align: left
+    }
+
+    .fdm_2024 .coffrets__product:nth-child(2),
+    .fdm_2024 .coffrets__product:nth-child(2) h4,
+    .fdm_2024 .coffrets__product:nth-child(2) p,
+    .fdm_2024 .coffrets__product:nth-child(2) .product__button {
+        align-self: flex-start
+    }
+
+    .fdm_2024 .accessoires {
+        padding: 2rem 80px 1.5rem
+    }
+
+    .fdm_2024 .accessoires__product {
+        width: 100%;
+        height: 400px
+    }
+}
+
+@media screen and (min-width:1439px) {
+
+    .fdm_2024 .bestsellers,
+    .fdm_2024 .the-infusions {
+        padding: 1.5rem 156px
+    }
+
+    .fdm_2024 .coffrets {
+        padding: 3.5rem 156px 1.5rem
+    }
+
+    .fdm_2024 .accessoires {
+        padding: 2rem 156px 1.5rem
+    }
+}
+@media screen and (min-width:1919px) {
+
+    .fdm_2024 .hero {
+        height: 423px;
+    }
+    .fdm_2024 .happy-ending {
+        height: 571px;
+        background: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("fdm/storytelling_image_desktop.webp?$staticlink$") no-repeat center;
+    }
+    .fdm_2024 .bestsellers__product .product__image {
+        height: 289px;
+    }
+}
+
+@media (max-width:767px) {
+    .fdm_2024 .hide-mobile {
+        display: none !important
+    }
+}
+@media (min-width:767px) {
+    .fdm_2024 .hide-after-tablet {
+        display: none !important
+    }
+}
+@media (max-width:1023px) {
+    .fdm_2024 .hide-before-desktop {
+        display: none !important
+    }
+}
