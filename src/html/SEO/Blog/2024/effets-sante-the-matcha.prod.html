@@ -1,0 +1,273 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-18
+
+    Nom de la classe parent : blog_article_2024
+
+    Titre : Quels sont les effets secondaires du thé matcha sur la santé ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="blog_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/effet-secondaire-matcha.webp?$staticlink$",
+                "alt": "Quels sont les effets secondaires du thé matcha sur la santé ?",
+    
+                "titre": "Quels sont les effets secondaires du thé matcha sur la santé ?",
+                "date": "Publié le <span class='date__color'>29/08/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "Nos matchas",
+    
+                "texte": "Amateur ou amatrice de <a class='banniere__link' href='/fr/nos-thes-infusions/origine/japon' class='banniere__link'>thé japonais</a> ? Vous avez certainement entendu parler des <a class='banniere__link' href='/fr/matcha-the-vertus.html'>nombreux bienfaits et vertus du matcha sur la santé</a> et l'organisme. Antioxydant, stimulant naturel, drainant, cette poudre de thé vert n'a pas à faire ses preuves en la matière ! Mais consommée en quantité excessive, elle pourrait provoquer certains <strong>effets secondaires</strong>. Kusmi Tea tente de vous éclairer. Découvrez quels sont-t-ils et comment les éviter pour profiter de cette boisson au goût unique.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "D'où vient le thé matcha ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Traditionnellement consommé en Asie, notamment au Japon, le <strong>thé matcha</strong> est une boisson appréciée pour ses nombreux bienfaits.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour en savoir plus sur <a class='banniere__link' href=\"$url('Page-Show','cid','artmm-17')$\"\>l'origine du matcha</a> !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha présenté sous forme d'<em>une poudre vert jade </em>est le <strong>résultat du broyage des feuilles de <em>Camellia Sinensis</em>.</strong> Cette plante pousse en altitude dans la partie sud du Japon, à l'abri du soleil et de la pollution. Très riches en antioxydants et en chlorophylle, les feuilles sont réduites en poudre très fine dont 100 % des propriétés sont consommées. C'est pourquoi, le thé matcha a un pouvoir antioxydant plus important que ces cousins les thés verts !",
+                })
+            </section>
+
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Comment préparer un matcha?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<em>De l'eau chaude, 1 à 2 g de matcha bio de Kusmi Tea, fouettez énergiquement quelques instants avec un chasen, le tour est joué ! Les plus gourmands ajouteront un voile de lait. Attention cependant à la température de l'eau, celle-ci ne doit pas dépasser les 80°C au risque d'abîmer les feuilles, de dégrader leurs bienfaits ou de rendre la boisson trop amère. Concernant le temps d'infusion, il est généralement recommandé de mélanger 1 minute.</em>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Diverses recettes existent pour consommer cette merveilleuse poudre verte, découvrez notre <a class='banniere__link' href='/fr/matcha-latte/artmm-1.html'>recette du chai matcha latte</a>, à boire chaud ou bien glacé ! ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour en savoir plus sur la <a class='banniere__link' href='fr/matcha-preparation/bien-preparer-son-matcha.html'>préparation du thé matcha</a> !",
+                })
+            </section>
+            <div>
+                @@include('_components/h2.html', {
+                    "titre": "Le matcha et ses bienfaits",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé matcha est un des rares thés verts dont les feuilles entières sont utilisées. Étant intégralement ingérées, elles libèrent leurs propriétés pour des bienfaits et un plaisir décuplé.",
+                })
+            </div>
+            <section class="block block-container no-mb">
+                <div class="block__texte">
+                    @@include('_components/paragraphe.html', {
+                        "class": "block__p",
+                        "texte": "La consommation de thé vert, dont le matcha, pourrait :",
+                    })
+                    <ol class="block__ul">
+                        @@include('_components/li.html', {
+                            "texte": "<strong>Faciliter l'élimination des déchets</strong> par l'organisme par ses propriétés drainantes.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong>Booster le tonus et fournir une bonne dose d'énergie </strong>en réduisant la fatigue.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Riche en catéchines, notamment l'EGCG, cette fine poudre de thé vert accélère le métabolisme et augmente la dépense énergétique de l'organisme.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Le <a class='banniere__link' href='/fr/the-matcha-minceur/arttv16.html'>thé matcha fait-il maigrir</a> ? En raison de ses <strong>propriétés brûle-graisse</strong>, il est donc un allié minceur par excellence !",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "<strong>Apaiser !</strong> Et oui, le matcha comme le thé vert contient un acide aminé s'appelant la L-theanine. Cette molécule aurait un effet sur le niveau de stress et d'anxiété. Ce qui vaut au matcha d'être rangé dans la catégorie des stimulants naturels et non des excitants comme l'est le café. Avec le matcha, adieu le pic de nervosité qui accompagne généralement une tasse de café.",
+                        })
+                        @@include('_components/li.html', {
+                            "texte": "Enfin, cette poudre de thé vert est également très concentrée en antioxydants (egcg). Naturellement présents dans notre alimentation, les <strong>antioxydants protègent notre organisme</strong> sur le long terme en luttant contre l'action des radicaux libres et le développement de certaines maladies. Ils auraient également un impact sur le vieillissement prématuré des cellules et le renforcement de nos défenses immunitaires !",
+                        })
+                    </ol>
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/Kusmi-Octobre-15-IG.webp?$staticlink$",
+                        "alt": "coffret matcha",
+                    })
+                </div>
+            </section>
+            <div>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En somme, le matcha renforce les défenses immunitaires de l'organisme. Vous vous sentez plus énergique pour affronter la journée !",
+                })
+            </div>
+
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les effets secondaires de la caféine sur l'organisme",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous l'aurez donc compris, tout comme le café s'il est <strong>consommé en trop grande quantité</strong> peut être à l'origine de certains effets secondaires sur la santé, il en est de même pour la famille des thés ! Et le matcha n'échappe pas à la règle. Voici les effets secondaires pouvant être déclenchés par la caféine si sa consommation est excessive :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Maux de tête",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Insomnie et anxiété",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Maux d'estomac et constipation",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour prévenir les <strong>effets du thé matcha</strong> et profiter pleinement des vertus de votre boisson favorite, Kusmi tea partage avec vous quelques conseils.",
+                })
+            </section>
+
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Opter pour une consommation raisonnable",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Comme toute boisson contenant de la <strong>caféine</strong>, une quantité raisonnable de thé matcha est préconisée. Chaque personne possède une tolérance différente à la théine/caféine. Les doses recommandées peuvent donc ne pas être adaptées à votre situation. En cas de doute, consultez l'avis de votre médecin.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est conseillé de ne pas dépasser 2 à 3 tasses de matcha par jour, pour ainsi éviter les <strong>éventuels effets secondaires</strong> énoncés précédemment.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Espacer votre consommation des repas",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est généralement recommandé d'espacer sa tasse de thé de <strong>2 heures avant et après votre repas</strong>. De cette manière, vous êtes certain(e) que le thé n'aura pas d'impact sur votre niveau de fer.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est conseillé de ne pas dépasser 2 à 3 tasses de matcha par jour, pour ainsi éviter les <strong>éventuels effets secondaires</strong> énoncés précédemment.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé matcha a-t-il un impact sur l'absorption du fer par l'organisme ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Comme tous les thés, le matcha peut avoir une incidence sur la capacité d'absorption du fer par l'organisme. Cela concernerait principalement le fer non-héminique.",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Le fer héminique se trouve dans les aliments d'origine animale : viande, poisson, fruits de mer…",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le fer non héminique provient des aliments d'origine végétale : légumineuses, céréales, légumes, oléagineux, tofu…",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Est-ce que le <a class='banniere__link' href='/fr/matcha-fer/artmm-22.html'>matcha fait-il baisser notre taux de fer</a> ? ",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "La qualité de votre thé matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour mieux apprécier cette boisson et profiter de ses bienfaits, choisissez un thé matcha de qualité. <strong>Un matcha bio sera gage de valeurs gustatives, écologiques et d'une composition saine.</strong> L'appellation bio garantit en effet de nombreux contrôles qualité lors de la production et de l'élaboration du thé ! La poudre est d'une couleur verte (green) et intense ? Alors vous ne vous trompez pas !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Kusmi Tea, un matcha bio <em>made in France</em>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Chez Kusmi Tea nous vous proposons un <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/matcha'>matcha bio de qualité made in Normandie</a> pour un réel moment de bien-être. Disponibles en vrac ou en boîte, nos thés sont produits selon une agriculture raisonnée et durable.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Convaincu ? Nous vous invitons à goûter notre poudre de thé matcha bio tout droit venue du Japon, vous ne pourrez plus vous en passer ! Lors de la récolte, nous veillons à ce que celle-ci ne soit constituée que des meilleures feuilles.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Appréciable à tout moment de la journée, le thé matcha est une vraie source de bienfaits. Mais en quantité excessive, il pourrait présenter des effets secondaires pour votre santé. La clé ? Chez Kusmi Tea, on vous recommande de garder une consommation modérée et d'écouter son corps car nous ne possédons pas tous la même tolérance à la caféine.",
+                })
+            </section>
+
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-19')$",
+                    "lien-img": "blog/2022-04_ARTICLE_Effet-secondaire-mate.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Existe-t-il des effets secondaires au yerba maté ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv13')$",
+                    "lien-img": "blog/1-THE-tache-les-dents.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Quels sont les effets secondaires du thé vert ? ",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttn-19')$",
+                    "lien-img": "blog/1_EFFETS-THE-NOIR_2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": " Les effets secondaires du thé noir : mythe ou réalité ? ",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Quels sont les effets secondaires du thé matcha sur la santé ? ",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artmm-18')$",
+            })
+        </section>
+    </div>
+
+</div>
+

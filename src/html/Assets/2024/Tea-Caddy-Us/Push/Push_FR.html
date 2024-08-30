@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/tea_caddy_us.scss";
+
+    Content asset : Teacaddy_Xmas_24_US_Push
+
+    Nom de la classe parent : tea_caddy_us_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="tea_caddy_us_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Search-Show','cgid','vrac_boites_sachets')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Free tea tin",
+            "texte-h2": "Free tea tin<sup>*</sup>",
+            "texte-h3": "for every 300g of loose tea purchased",
+            "texte-link": "Shop now",
+        })
+    </div>
+</a>

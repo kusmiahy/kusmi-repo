@@ -388,6 +388,12 @@ $article-title: #731f4b;
                 height: 350px;
             }
         }
+
+        &.no-mb {
+            @include min1024(){
+             margin-bottom: 0px;
+            } 
+         }
     }
 
     &__container-texte-image {
@@ -464,6 +470,12 @@ $article-title: #731f4b;
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .blog_article_2024 .block:not(last-child) .no-mb{
+      margin-bottom: 0px;
+    }
+  }
 
 .slider {
     width: 100%;
