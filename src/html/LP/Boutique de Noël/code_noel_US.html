@@ -21,9 +21,9 @@
     <div class="storytelling">
         <div class="storytelling__container">
             <h3 class="font-barlow storytelling__title">Our offers</h3>
-            <h4 class="font-barlow storytelling__subtitle">In limited edition​</h4>
+            <h4 class="font-barlow storytelling__subtitle">In limited edition</h4>
             <p class="storytelling__description font-barlow hide-before-desktop">
-                Discover our special offers for a frosty Christmas: a kit, gift sets, duos and exclusive recipes!
+                Discover our special offers for a frosty Christmas: gift sets, duos and exclusive recipes!
             </p>
             <a href="$url('Page-Show','cid','offres-du-moment')$" class="font-barlow storytelling__cta hide-before-desktop">
                 Discover now
@@ -49,15 +49,15 @@
     <h3 class="font-barlow accessoires__title">Find the perfect gift</h3>
     <div class="anchors">
         <a href="#the-infusions" class="item thes-infusions-ancre">
-            <p>Christmas Teas and Infusions</p>
+            <p>Christmas Teas=</p>
             <img class="anchors__img hide-mobile" src="images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$" alt="1">
         </a>
-        <a href="#coffrets" class="item coffrets-noel-ancre">
+        <a href="#accessoires" class="item coffrets-noel-ancre">
+            <p>Christmas Infusions</p>
+            <img class="anchors__img hide-mobile" src="images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$" alt="1">
+        </a>
+        <a href="#coffrets" class="item accessoires-ancre">
             <p>Christmas gift sets</p>
-            <img class="anchors__img hide-mobile" src="images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$" alt="1">
-        </a>
-        <a href="#accessoires" class="item accessoires-ancre">
-            <p>Accessories to offer</p>
             <img class="anchors__img hide-mobile" src="images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$" alt="1">
         </a>
         <a href="" class="item secret-santa-ancre">
@@ -66,11 +66,25 @@
         </a>
     </div>
     <section id="the-infusions" class="the-infusions">
-        <h3 class="font-barlow the-infusions__title">Our teas and infusions</h3>
+        <h3 class="font-barlow the-infusions__title">Our teas</h3>
         <div class="splide the-infusions__splide" role="group">
             <div class="splide__track">
                 <ul class="splide__list the-infusions__list">
                     
+                </ul>
+            </div>
+        </div>
+        <div class="button-discover">
+            <a href="$url('Search-Show','cgid','vestes')$" class="button-all font-barlow">
+                See all
+            </a>
+        </div>
+    </section>
+    <section id="accessoires" class="accessoires">
+        <h3 class="font-barlow accessoires__title">Our infusions</h3>
+        <div class="splide accessoires__splide" role="group">
+            <div class="splide__track">
+                <ul class="splide__list accessoires__list">
                 </ul>
             </div>
         </div>
@@ -106,23 +120,9 @@
             </a>
         </div>
     </div>
-    <section id="accessoires" class="accessoires">
-        <h3 class="font-barlow accessoires__title">Our accessories</h3>
-        <div class="splide accessoires__splide" role="group">
-            <div class="splide__track">
-                <ul class="splide__list accessoires__list">
-                </ul>
-            </div>
-        </div>
-        <div class="button-discover">
-            <a href="$url('Search-Show','cgid','vestes')$" class="button-all font-barlow">
-                See all
-            </a>
-        </div>
-    </section>
     <a href="$url('Search-Show','cgid','fete_des_meres')$" title="Je découvre">
         <section class="happy-ending">
-            <h3 class="font-barlow happy-ending__title">See the whole Christmas selection </h3>
+            <h3 class="font-barlow happy-ending__title">See the whole Christmas selection</h3>
             <p class="happy-ending__cta font-barlow">
                 Discover
             </p>
@@ -166,20 +166,20 @@
     const data = {
         "hero": {
             "title": "Fête des mères",
-            "subtitle": "Un cadeau infusé d'amour",
+            "subtitle": "Enjoy a magical Christmas with Kusmi",
             "imageSrc": "images/landing_page/2024/fdm/hero_image_mobile.webp?$staticlink$",
-            "imageAlt": "Fête des mères un cadeau infusé d'amour",
+            "imageAlt": "Enjoy a magical Christmas with Kusmi",
             "buttonUrl": "$url('Product-Show','pid','BUNDLEFDMDECOUV45EBIO')$"
         },
         "bestsellers": [
             {
-                "link": "21289A2500",
+                "link": "21211A2500",
                 "link_product": "$url('Product-Show','pid','21289A2500')$",
                 "imageAlt": "Add Kusmi Tea Organic Advent Calendar to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$",
                 "title": "Kusmi Tea Organic Advent Calendar",
                 "description": "Black, green, white tea, infusion, infuser",
-                "price": "38,90€",
+                "price": "$",
                 "discounted_price": "",
                 "pastille": "",
                 "master": "21289A2500",
@@ -189,13 +189,13 @@
                 "cgid": "",
             },
             {
-                "link": "21286A1070",
+                "link": "21081A1070",
                 "link_product": "$url('Product-Show','pid','21286A1070')$",
                 "imageAlt": "Add Tsarevna Organic to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/coffret_decouverte_fete_des_meres_produit.webp?$staticlink$",
                 "title": "Tsarevna Organic",
                 "description": "Christmas black tea with spices",
-                "price": "23,50€",
+                "price": "$",
                 "discounted_price": "",
                 "pastille": "",
                 "master": "21286A1070",
@@ -205,13 +205,13 @@
                 "cgid": "",
             },
             {
-                "link": "21287A1070",
+                "link": "21082A1070",
                 "link_product": "$url('Product-Show','pid','21287A1070')$",
                 "imageAlt": "Add Glögg to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/coffret_ducasse_produit.webp?$staticlink$",
                 "title": "Glögg",
                 "description": "Christmas Herbal tea, hibiscus and spices",
-                "price": "23,50€",
+                "price": "$",
                 "discounted_price": "",
                 "pastille": "",
                 "master": "",
@@ -221,13 +221,13 @@
                 "cgid": "",
             },
             {
-                "link": "21296A1210",
+                "link": "21142A1400",
                 "link_product": "$url('Product-Show','pid','21296A1210')$",
                 "imageAlt": "Add Alain Ducasse Christmas Tea to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/duo_bien_etre_produit.webp?$staticlink$",
                 "title": "Alain Ducasse Christmas Tea",
                 "description": "Rose-raspberry green and black tea",
-                "price": "34,90€",
+                "price": "$",
                 "discounted_price": "",
                 "pastille": "",
                 "master": "21296A1210",
@@ -239,7 +239,7 @@
         ],
         "thes_infusions": [
             {
-                "link": "21296A1210",
+                "link": "21081A1120",
                 "link_product": "$url('Product-Show','pid','21296A1210')$",
                 "imageAlt": "Add Alain Ducasse Christmas Tea to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/rituel_sommeil_packshot.png?$staticlink$",
@@ -255,7 +255,7 @@
                 "cgid": "",
             },
             {
-                "link": "21094A1210",
+                "link": "21718A1070",
                 "link_product": "$url('Product-Show','pid','21094A1210')$",
                 "imageAlt": "Add L'Infusion Alain Ducasse (Organic) to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/infusion_ducasse_packshot.png?$staticlink$",
@@ -271,7 +271,7 @@
                 "cgid": "",
             },
             {
-                "link": "21288A1430",
+                "link": "21656A1070",
                 "link_product": "$url('Product-Show','pid','21288A1430')$",
                 "imageAlt": "Add Tsarevna and Glögg Gift Set (Organic) to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/the_blanc_ducasse_packshot.png?$staticlink$",
@@ -321,7 +321,7 @@
         ],
         "coffrets": [
             {
-                "link": "21286A1260",
+                "link": "21081A1260",
                 "link_product": "$url('Product-Show','pid','21286A1260')$",
                 "imageAlt": "Add Tsarevna Gift Set (Organic) to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/coffret_decouverte_fete_des_meres_produit.webp?$staticlink$",
@@ -337,7 +337,7 @@
                 "cgid": "",
             },
             {
-                "link": "21294A1220",
+                "link": "21218A1220",
                 "link_product": "$url('Product-Show','pid','21294A1220')$",
                 "imageAlt": "Add Christmas gift set to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/duo_infusions_fete_des_meres_produit.webp?$staticlink$",
@@ -353,7 +353,7 @@
                 "cgid": "",
             },
             {
-                "link": "21685A1500",
+                "link": "21220A1220",
                 "link_product": "$url('Product-Show','pid','21690A1150')$",
                 "imageAlt": "Add Tchaï of the Tiger gift set to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/coffret_la_selection_ducasse.webp?$staticlink$",
@@ -371,7 +371,7 @@
         ],
         "accessoires": [
             {
-                "link": "5000000954",
+                "link": "21082A1070",
                 "link_product": "$url('Product-Show','pid','5000000954')$",
                 "imageAlt": "Add Two-cup gift set to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/prince_a_the_packshot.png?$staticlink$",
@@ -387,7 +387,7 @@
                 "cgid": "",
             },
             {
-                "link": "5000000955",
+                "link": "21631A1070",
                 "link_product": "$url('Product-Show','pid','5000000955')$",
                 "imageAlt": "Add Two-cup gift set to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/prince_a_the_packshot.png?$staticlink$",
@@ -403,7 +403,7 @@
                 "cgid": "",
             },
             {
-                "link": "5000000957",
+                "link": "21654A1070",
                 "link_product": "$url('Product-Show','pid','5000000957')$",
                 "imageAlt": "Add Kusmi Tea Insulated Bottle 49CL to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/prince_a_the_packshot.png?$staticlink$",
@@ -419,7 +419,23 @@
                 "cgid": "",
             },
             {
-                "link": "5000000855",
+                "link": "21666A1070",
+                "link_product": "$url('Product-Show','pid','5000000855')$",
+                "imageAlt": "Add Porcelain tea mug with filter 48cl to the cart",
+                "imageUrl": "images/landing_page/2024/fdm/prince_a_the_packshot.png?$staticlink$",
+                "title": "Porcelain tea mug with filter 48cl",
+                "description": "Kusmi Tea",
+                "price": "21,90€",
+                "discounted_price": "",
+                "pastille": "",
+                "master": "",
+                "price_number": 21.9,
+                "price_oz": "",
+                "format": "",
+                "cgid": "",
+            },
+            {
+                "link": "21665A1070",
                 "link_product": "$url('Product-Show','pid','5000000855')$",
                 "imageAlt": "Add Porcelain tea mug with filter 48cl to the cart",
                 "imageUrl": "images/landing_page/2024/fdm/prince_a_the_packshot.png?$staticlink$",
@@ -570,7 +586,7 @@
 
         document.querySelector(".coffrets__splide") && new Splide(".coffrets__splide", { type: "loop", arrows: false, autoplay: false, speed: 1e3, easing: "ease", perPage: 3, perMove: 1, pagination: !1, gap: ".5rem", breakpoints: { 767: { perPage: 2 }, 1023: { perPage: 3 } }, classes: { arrows: "splide__arrows custom__arrows", arrow: "splide__arrow custom__arrow", prev: "splide__arrow--prev custom__prev", next: "splide__arrow--next custom__next" } }).mount();
 
-        document.querySelector(".accessoires__splide") && new Splide(".accessoires__splide", { type: "loop", arrows: false, autoplay: false, speed: 1e3, easing: "ease", perPage: 4, perMove: 1, pagination: !1, gap: ".5rem", breakpoints: { 767: { perPage: 2 }, 1024: { perPage: 4 } }, classes: { arrows: "splide__arrows custom__arrows", arrow: "splide__arrow custom__arrow", prev: "splide__arrow--prev custom__prev", next: "splide__arrow--next custom__next" } }).mount() })) : setTimeout(init) } function checkLoaded() { return console.log("page is fully loaded"), !0 
+        document.querySelector(".accessoires__splide") && new Splide(".accessoires__splide", { type: "loop", arrows: false, autoplay: false, speed: 1e3, easing: "ease", perPage: 5, perMove: 1, pagination: !1, gap: ".5rem", breakpoints: { 767: { perPage: 2 }, 1024: { perPage: 5 } }, classes: { arrows: "splide__arrows custom__arrows", arrow: "splide__arrow custom__arrow", prev: "splide__arrow--prev custom__prev", next: "splide__arrow--next custom__next" } }).mount() })) : setTimeout(init) } function checkLoaded() { return console.log("page is fully loaded"), !0 
     } init();
 
 </script>

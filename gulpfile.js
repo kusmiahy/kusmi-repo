@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.offre_vrac_push_2024';
+var classParent = '.octobre_rose_navpush_2024';
 
 const {
     series,

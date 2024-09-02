@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/octobre_rose.scss";
+
+    Content asset : gen_octobre_rose_HOME_PROMO
+
+    Nom de la classe parent : octobre_rose_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 octobre_rose_homepromo_2024">
+    <a href="$url('Product-Show','pid','21285A1070')$" title="Support Breast Cancer Research with Kusmi organic green tea - 100% of profits donated to the charity Ruban Rose">
+        @@include('../components/homepromo.html', {
+            "alt": "Support Breast Cancer Research with Kusmi organic green tea - 100% of profits donated to the charity Ruban Rose",
+            "title": "KUSMI TEA X PINK OCTOBER",
+            "subtitle": "Research saves lives. Support it",
+            "text-link": "<span class='hide-mobile-homepromo'>Discover now</span><span class='hide-desktop-homepromo'>Kusmi Tea x Pink October ></span>",
+            
+            "lien-img": "images/assets/2024/octobre_rose/octobre_rose_hero_desk_int.webp?$staticlink$",
+            "lien-img-tab": "images/assets/2024/octobre_rose/octobre_rose_hero_tab_int.webp?$staticlink$",
+        })
+    </a>
+</section>
