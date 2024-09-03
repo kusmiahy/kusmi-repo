@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_tisaniere.scss";
+
+    Content asset : OFFRE_TISANIERE_RITUEL_PUSH
+
+    Nom de la classe parent : offre_tisaniere_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Search-Show','cgid','nos_thes_infusions')$" class="offre_tisaniere_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Click on &quot;Shop now&quot; to discover our new &quot;Offer&quot;",
+            "texte-h2": "Infuse<br>with style!",
+            "texte-h3": "Your tea mug for 5€ with a purchase of 50€ or more",
+            "texte-link": "Shop now",
+        })
+    </div>
+    
+</a>

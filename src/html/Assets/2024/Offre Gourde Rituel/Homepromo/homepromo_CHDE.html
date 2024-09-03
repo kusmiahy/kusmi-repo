@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/offre_tisaniere.scss";
+
+    Content asset : OFFRE_TISANIERE_RITUEL_HOME_PROMO
+
+    Nom de la classe parent : offre_tisaniere_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 offre_tisaniere_homepromo_2024">
+    <a href="$url('Search-Show','cgid','nos_thes_infusions')$" title="Klicken Sie auf &quot;Jetzt nutzen&quot;, um unser neues &quot;Teeangebot&quot; zu entdecken;">
+        @@include('../components/homepromo.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt nutzen&quot;, um unser neues &quot;Teeangebot&quot; zu entdecken;",
+            "title": "Stilvoll aufbrühen!",
+            "subtitle": "Ihr Mug für CHF10 ab einem Einkaufswert von CHF70",
+            "text-link": "<span class='hide-mobile-homepromo'>Jetzt nutzen</span><span class='hide-desktop-homepromo'>Stilvoll aufbrühen! ></span>",
+        })
+    </a>
+</section>

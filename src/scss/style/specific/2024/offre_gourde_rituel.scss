@@ -1,9 +1,8 @@
-$color-text-hero: #fff;
-$color-bg: #E3BABF;
-$color-text-push: #fff;
-$color-text-homepromo: #303030;
+$color-text: #fff;
+$color-bg: #FF6B36;
+$color-text-push: #000;
 
-.tea_caddy_us_push_2024 {
+.offre_gourde_rituel_push_2024 {
     width: 100%;
     margin-block: 5px;
 
@@ -12,12 +11,12 @@ $color-text-homepromo: #303030;
     }
 }
 
-.tea_caddy_us_hero_2024,
-.tea_caddy_us_homepromo_2024 {
+.offre_gourde_rituel_hero_2024,
+.offre_gourde_rituel_homepromo_2024 {
     width: 100%;
 }
 
-.tea_caddy_us_homepromo_2024 {
+.offre_gourde_rituel_homepromo_2024 {
     @include min1024() {
         width: 50%;
     }
@@ -56,7 +55,7 @@ $color-text-homepromo: #303030;
 
         @include min1024() {
             padding: 1.2rem 2.6rem 3rem;
-            // justify-content: flex-start;
+            justify-content: flex-start;
         }
 
         @include min1440() {
@@ -75,9 +74,16 @@ $color-text-homepromo: #303030;
             }
 
             @include min1024() {
-                // height: 100%;
-                width: 100%;
+                height: 100%;
                 justify-content: space-between;
+            }
+
+            @include min1440() {
+                width: 515px;
+            }
+
+            @include min1920() {
+                width: 600px;
             }
 
             .title-container {
@@ -87,9 +93,8 @@ $color-text-homepromo: #303030;
                 gap: .5rem;
 
                 h2,
-                h3,
-                h4 {
-                    color: $color-text-hero;
+                h3 {
+                    color: $color-text;
                 }
 
                 h2 {
@@ -97,6 +102,8 @@ $color-text-homepromo: #303030;
                     text-align: left;
                     line-height: 1.1;
                     margin-bottom: 0;
+                    leading-trim: both;
+                    text-edge: cap;
 
                     @include min768() {
                         font-size: 40px;
@@ -109,10 +116,6 @@ $color-text-homepromo: #303030;
                     @include min1440() {
                         font-size: 3rem;
                     }
-                    &.font-barlow {
-                        font-weight: 700;
-                        text-transform: uppercase;
-                    }
                 }
 
                 h3 {
@@ -121,6 +124,7 @@ $color-text-homepromo: #303030;
                     font-weight: 600;
                     letter-spacing: 0.325px;
                     text-align: left;
+                    width: 90%;
                     line-height: 1.2rem;
 
                     @include min768() {
@@ -131,14 +135,6 @@ $color-text-homepromo: #303030;
                     @include min1440() {
                         width: auto;
                     }
-                }
-
-                h4 {
-                    font-weight: 400;
-                    text-transform: none;
-                    font-size: 1rem;
-                    line-height: 19.2px;
-                    text-align: left;
                 }
             }
         }
@@ -238,6 +234,20 @@ $color-text-homepromo: #303030;
         flex-direction: column;
         gap: .8rem;
 
+        .pastille--new {
+            width: 60px;
+            height: auto;
+            @include min768() {
+                width: 65px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
         &__title {
             display: flex;
             flex-direction: column;
@@ -248,18 +258,8 @@ $color-text-homepromo: #303030;
                 gap: .5rem;
             }
 
-            .pastille--new {
-                height: 25px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                }
-            }
-
             h2,
-            h3,
-            h4 {
+            h3 {
                 color: $color-text-push;
             }
 
@@ -267,10 +267,6 @@ $color-text-homepromo: #303030;
                 font-size: 21px;
                 margin-bottom: 0;
                 line-height: 1.1;
-                &.font-barlow {
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
             }
 
             h3 {
@@ -285,11 +281,6 @@ $color-text-homepromo: #303030;
                     font-size: 1rem;
                 }
 
-            }
-            h4 {
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 16.8px;
             }
         }
 
@@ -376,7 +367,7 @@ $color-text-homepromo: #303030;
                 text-align: left;
                 letter-spacing: normal;
                 display: block;
-                color: $color-text-homepromo;
+                color: $color-text;
             }
         }
 
@@ -425,7 +416,7 @@ $color-text-homepromo: #303030;
             }
 
             @media screen and (min-width:652px) {
-                color: $color-text-homepromo;
+                color: $color-text;
                 letter-spacing: normal;
                 font-size: 1.4rem;
                 text-decoration: underline;
@@ -468,8 +459,4 @@ $color-text-homepromo: #303030;
             object-fit: cover;
         }
     }
-}
-
-.no-mb {
-    margin-bottom: 0px;
 }
