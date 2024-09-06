@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie2.scss";
+
+    Content asset : HERBORISTERIE_GAMME_HP
+
+    Nom de la classe parent : herboristerie2_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="herboristerie2_hero_2024">
+    <a href="$url('Search-Show','cgid','health_tea_infusion')$">
+        @@include('../components/slot.html', {
+            "alt": "Click on &quot;Shop now&quot; to discover our new &quot;Offer&quot;",
+            "title": "Bottle Offer x Ritual",
+            "subtitle": "A bottle for €5<span class='hide-desktop'></span><br>when you purchase 3 Ritual products!",
+            "text-link": "Shop now",
+        })
+    </a>
+</section>

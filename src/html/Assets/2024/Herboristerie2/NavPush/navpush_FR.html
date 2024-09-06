@@ -1,0 +1,23 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+    Content asset : HERBORISTERIE_GAMME_NAV_PUSH
+
+    Nom de la classe parent : herboristerie_navpush_2024
+
+-->
+
+<section class="herboristerie_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Cliquez pour découvrir notre nouvelle &quot;Offre Herboristerie&quot;",
+        "texte": " Nouvelles infusions Herboristerie",
+        "lien": "$url('Search-Show','cgid','infusionas_et_tisanes_sachets')$",
+    })
+</section>

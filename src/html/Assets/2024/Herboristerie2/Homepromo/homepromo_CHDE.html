@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie2.scss";
+
+    Content asset : GEN_GOURDE_RITUEL_HOME_PROMO
+
+    Nom de la classe parent : herboristerie2_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 herboristerie2_homepromo_2024">
+    <a href="$url('Search-Show','cgid','the_infusion_sante')$" title="Klicken Sie auf &quot;Jetzt nutzen&quot;, um unser neues &quot;Teeangebot&quot; zu entdecken;">
+        @@include('../components/homepromo.html', {
+            "alt": "Klicken Sie auf &quot;Jetzt nutzen&quot;, um unser neues &quot;Teeangebot&quot; zu entdecken;",
+            "title": "Angebot Trinkflasche x Ritual",
+            "subtitle": "Eine Trinkflasche für CHF 10<br />beim Kauf von 3 Ritual-Produkten!",
+            "text-link": "<span class='hide-mobile-homepromo'>Jetzt nutzen</span><span class='hide-desktop-homepromo'>Angebot Trinkflasche x Ritual ></span>",
+        })
+    </a>
+</section>

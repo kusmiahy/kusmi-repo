@@ -150,9 +150,14 @@
     display: block;
 }
 
-
 .hide-mobile {
     @media (max-width: 767px) {
+        display: none !important;
+    }
+}
+
+.hide-tablet {
+    @media (min-width: 500px) {
         display: none !important;
     }
 }

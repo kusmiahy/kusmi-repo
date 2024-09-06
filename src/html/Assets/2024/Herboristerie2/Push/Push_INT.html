@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/herboristerie2.scss";
+
+    Content asset : GEN_GOURDE_RITUEL_PUSH
+
+    Nom de la classe parent : herboristerie2_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a href="$url('Search-Show','cgid','health_tea_infusion')$" class="herboristerie2_push_2024 col-xs-6 col-sm-4 col-lg-3">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Click on &quot;Shop now&quot; to discover our new &quot;Offer&quot;",
+            "texte-h2": "Bottle Offer x Ritual",
+            "texte-h3": "A bottle for €5 when you purchase 3 Ritual products!",
+            "texte-link": "Shop now",
+        })
+    </div>
+    
+</a>
