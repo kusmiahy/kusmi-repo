@@ -1,0 +1,245 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-1
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Nos recettes de matcha latte, coco… - Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/1_TCHAI-MATCHA-latte.jpg?$staticlink$",
+                "alt": "Nos recettes de matcha latte, coco… - Kusmi Tea",
+    
+                "titre": "Nos Recettes de Matcha Latte",
+                "date": "Publié le <span class='date__color'>09/09/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Thé",
+    
+                "cta-texte": "DÉCOUVREZ NOS MATCHA BIO",
+    
+                "texte": "Vous aimez le matcha ? Découvrez nos recettes de matcha latte ! Un délice pour rendre vos pauses ou petits-déjeuners gourmands.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Un matcha de qualité by Kusmi",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Chez Kusmi, nous aimons faire plaisir à tout le monde et à tous les goûts. C’est pourquoi, il est important pour nous de vous proposer des mélanges savoureux, à la fois bons pour vous et pour la planète. Ainsi, dans cette démarche de responsabilité environnementale, tous nos mélanges sont certifiés bio, et sont aromatisés dans nos ateliers en Normandie.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "C’est ainsi qu’est né le <strong><a class='banniere__link' href='/fr/matcha-bio-VCHABIOMASTER.html?v=21695A1040'>thé vert Matcha Bio</a></strong> <strong>by Kusmi</strong>, un thé vert bio en poudre japonais, à déguster de manière traditionnelle (ou pas!). Un thé pur et non pas un mélange, mais qui se marie à nombre d’ingrédients pour une infinité de recettes !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "A lire aussi : <a class='banniere__link' href='/fr/matcha-the-vertus.html'>Les bienfaits du thé matcha sur la santé</a> et <a class='banniere__link' href='/fr/bienfaits-matcha-peau/arttv25.html'>Les vertus du thé matcha sur la peau</a>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le matcha, du Japon au reste du monde",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha, fine poudre de feuilles de thé vert, est traditionnellement préparé et consommé lors d’une cérémonie de thé, emblématique pour les japonais. Mais son utilisation s’est démocratisée dans de nombreux secteurs de l’alimentation. On retrouve notamment énormément de pâtisseries au matcha des plus traditionnelles aux plus occidentales : mochis, doriyaki, madeleines, bûches ou encore macarons, les possibilités sont infinies.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha profite également d’un fort engouement chez les boissons : dalgona matcha latte, tchaï matcha latte, matcha latte au chocolat blanc, bubble tea thé vert matcha, matcha green juice… Aujourd’hui nous vous proposons une recette simple, efficace, délicieuse et VEGAN : un thé vert matcha latte bio, au lait de coco.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La matcha mania",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Au travers de la matcha mania, de nombreuses déclinaisons de boissons au matcha ont été développées. Nous vous avons notamment proposé une recette de <strong>dalgona matcha</strong>, inspiré du très populaire café au lait fouetté sud-coréen.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour les latte lovers, mais pas que, nous vous proposons aujourd’hui une recette de tchaï matcha latte qui vous fera vite oublier votre café matinal quotidien. Sceptiques ? Nous allons vous le prouver en moins de 5 minutes !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Ingrédients pour réaliser votre chai matcha latte :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "1 cuillère à café de poudre de thé vert matcha bio",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "1 sachet de thé noir tchaï, nous vous conseillons notre réconfortant Kashmir Tchaï",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "½ tasse d’eau chaude",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "½ tasse de lait (nous avons également une recette de matcha latte vegan au lait de coco juste ici)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "1 cuillère à café de sirop de vanille",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Commencez par infuser un sachet de thé noir tchaï dans une demi tasse d’eau chaude pendant 3 minutes. Dans un bol, tamisez une cuillère à café de poudre de matcha bio. Cela vous permettra d’éviter de tomber sur des grumeaux de matcha très amers. Versez ensuite le thé noir tchaï chaud et mélangez avec un fouet jusqu’à obtenir un liquide vert foncé mousseux.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "A vous de décider maintenant si vous préférez une boisson chaude réconfortante ou une boisson froide énergisante.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour un chai matcha latte glacé :",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il vous suffit de sortir le lait de votre frigo et d’en verser 300 ml dans un verre (avec des glaçons si vous le souhaitez). Ajoutez ensuite le mélange tchaï-matcha que vous avez préparé précédemment, avec 1 cuillère à café de sirop de vanille. Mélangez le tout et vous pourrez déguster un matcha latte aussi rafraîchissant que nutritif !",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Pour un matcha latte chaud :",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Chauffez les 300 ml de lait et versez les dans un verre. Ajoutez le mélange de thé tchaï-matcha préparé à l’étape précédente avec 1 cuillère à café de sirop de vanille. Mélangez le tout à l’aide d’un mousseur à lait pour déguster le matcha latte le plus onctueux que vous aurez jamais goûté !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Alors, qu’en pensez-vous ? Avons-nous relevé le défi ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Intéressé(e) par nos autres recettes ? Découvrez notre délicieuse boisson à base de <u>café et matcha</u> et <strong>nos idées de recettes pour utiliser le matcha en cuisine</strong>.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/1_TCHAI-MATCHA-latte-1.jpg?$staticlink$",
+                        "alt": "chai matcha latte glacé",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le matcha latte au lait de coco, un twist vegan",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le matcha est particulièrement associé à ses bienfaits pour la santé en raison de sa forte teneur en antioxydants, ce qui lui vaut l'étiquette de “superfood”. Les réseaux sociaux ont fortement contribué à la diffusion du message sur ses bienfaits pour la santé, en créant une micro-communauté de matcha lovers. En faites-vous partie ?",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Ingrédients pour réaliser votre recette de matcha latte vegan :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "1 cuillère à café de poudre de thé vert matcha bio",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "½ tasse d’eau chaude",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "½ tasse de lait de coco en brique",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "1 cuillère à café de sucre vanillé",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "1 cuillère à café de lait de coco concentré",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "copeaux de coco (optionnel)",
+                    })
+                </ul>
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/recette-matcha.webp?$staticlink$",
+                        "alt": "recette matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Commencez par tamiser dans un bol une cuillère à café de poudre de matcha bio. Ajoutez 1 cuillère à café de sucre vanillé puis versez ½ tasse d’eau chaude. Fouettez en formant un W jusqu’à ce que le mélange devienne mousseux.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans un verre, mélangez à l’aide d’un mousseur à lait ½ tasse de lait de coco avec 1 cuillère à café de lait de coco concentré. Ajoutez quelques glaçons puis versez le matcha. Ajoutez quelques copeaux de coco si vous le souhaitez, et votre matcha latte vegan au lait de coco est prêt à être dégusté !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-23')$",
+                    "lien-img": "blog/articles/2024/recette-matcha-glace.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Nos recettes de thé matcha glacé : délicieuses ! | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bien-preparer-son-matcha')$",
+                    "lien-img": "blog/articles/2023/blog_matcha_produit_coffret.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment bien préparer son thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/articles/2024/matcha/latte-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boire du thé matcha pour maigrir : bonne ou mauvaise idée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Nos recettes de matcha latte, coco… - Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','vertus-infusions-camomille')$",
+            })
+        </section>
+    </div>
+</div>
