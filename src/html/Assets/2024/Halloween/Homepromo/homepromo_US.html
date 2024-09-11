@@ -1,0 +1,31 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/halloween.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : halloween_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 halloween_homepromo_2024">
+    <a href="$url('Product-Show','pid','21285A1070')$" title="20% OFF on all the black teas">
+        @@include('../components/homepromo.html', {
+            "alt": "20% OFF on all the black teas",
+            "title": "The Halloween Offer",
+            "subtitle": "Dare and try our magic potions 20% OFF on all the black teas*",
+            "text-link": "<span class='hide-mobile-homepromo'>Shop now</span><span class='hide-desktop-homepromo'>The Hallowen Offer ></span>",
+        })
+    </a>
+</section>
