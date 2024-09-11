@@ -1,0 +1,30 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/marionnaud_fr.scss";
+
+    Content asset : KUSMI_MARIONNAUD_HOME_PROMO
+
+    Nom de la classe parent : marionnaud_fr_homepromo_2024
+
+-->
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 marionnaud_fr_homepromo_2024">
+    <a href="$url('Product-Show','pid','5000000985')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre offre Kusmi Tea x Marionnaud">
+        @@include('../components/homepromo.html', {
+            "alt": "Kusmi Tea x Marionnaud",
+            "title": "Kusmi Tea x Marionnaud",
+            "subtitle": "Le coffret Bien-être au Jasmin et Thé vert pour un doux moment cocoon",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Kusmi Tea x Marionnaud ></span>",
+        })
+    </a>
+</section>

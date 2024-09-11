@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.herboristerie2_homepromo_2024';
+var classParent = '.marionnaud_fr_homepromo_2024';
 
 const {
     series,

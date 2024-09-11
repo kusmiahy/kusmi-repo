@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/tea_caddy_us.scss";
+
+    Content asset : 
+
+    Nom de la classe parent : tea_caddy_us_navpush_2024
+
+-->
+
+<section class="tea_caddy_us_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Free tea tin",
+        "texte": "FREE tea tin*",
+        "lien": "$url('Search-Show','cgid','vrac_boites_sachets')$",
+    })
+</section>
