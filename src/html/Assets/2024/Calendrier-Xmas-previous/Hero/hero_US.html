@@ -1,0 +1,275 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+      .content-GEN_CALENDRIER {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        padding: 4% 4% 7% 4%;
+        width: 100%;
+      }
+      .content-cta-GEN_CALENDRIER {
+        position: absolute;
+        bottom: 10%;
+        left: 4%;
+      }
+      .content-GEN_CALENDRIER p, .content-GEN_CALENDRIER h2, .content-GEN_CALENDRIER h3, .content-GEN_CALENDRIER h4{
+        font-family: 'Sophillia', sans-serif;
+        text-transform: inherit;
+        letter-spacing: inherit;
+        text-align: left;
+        color: #ab9158;
+        font-weight: 500;
+        letter-spacing: inherit;
+  
+      }
+      .content-GEN_CALENDRIER p{
+          font-family: 'Barlow', sans-serif;
+        font-size: 14px;
+        line-height: initial;
+      }
+      .content-GEN_CALENDRIER h2{
+      font-family: 'Sophillia', sans-serif;
+         max-width: 100%;
+        font-size: 23px;
+      }
+      .content-GEN_CALENDRIER h3{
+        font-size: 25px;
+        line-height: initial; 
+        margin-bottom: 5px;
+      font-weight: 400;
+      }
+      .content-GEN_CALENDRIER h4{
+        font-size: 13px;
+        line-height: initial;
+      font-weight: 400;
+  
+      }
+      span.txt-barre{
+        text-decoration: line-through;
+      }
+      .content-GEN_CALENDRIER img{
+        display: block;
+        margin-bottom: 10px;
+      }
+      .cta {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 30px;
+        background: #1c1c1b;
+        padding: 3px 25px;
+        border: 1px solid #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .delete{visibility: hidden;
+      }
+      .pictogramme{
+        width: 45px;
+        height: auto;
+        margin-top: 10px;
+      }
+  
+     .content-GEN_CALENDRIER #h-boite-de {
+        font-size: 25px;
+      }
+  
+    @media(min-width:500px){
+      .delete{visibility: visible;
+      }
+    }
+    @media(min-width:600px){
+      .content-GEN_CALENDRIER h2{
+        font-size: 40px;
+      }
+      .content-GEN_CALENDRIER h3{
+        font-size: 25px;
+      }
+      .content-GEN_CALENDRIER h4{
+        font-size: 18px;
+      }
+      .content-GEN_CALENDRIER p{
+        font-size: 17px;
+        line-height: initial;
+      }
+  
+    .content-GEN_CALENDRIER #h-boite-de{
+        font-size: 25px;
+      }
+    }
+    @media(min-width:768px){
+      .content-GEN_CALENDRIER {
+        padding: 2% 0% 2% 5%;
+      }
+  
+      .content-GEN_CALENDRIER h2{
+        max-width: 60%;
+      }
+      .content-GEN_CALENDRIER h3, .content-GEN_CALENDRIER h4{
+        max-width: 42%;
+      }
+      .content-cta-GEN_CALENDRIER {
+        bottom: 23%;
+      }
+      .pictogramme{
+        width: 48px;
+      }
+  
+     .content-GEN_CALENDRIER #h-boite-de{
+        font-size: 40px;
+      }
+    }
+    @media(min-width:900px){
+      .content-cta-GEN_CALENDRIER {
+        bottom: 30%;
+      }
+  
+     .content-GEN_CALENDRIER #h-boite-de{
+        font-size: 45px;
+      }
+    }
+  
+    @media(min-width:1024px){
+      .content-GEN_CALENDRIER {
+        padding: 2% 0% 5% 4%;
+      }
+      .content-GEN_CALENDRIER h2, .content-GEN_CALENDRIER h3{
+        max-width: 38%;
+      }
+      .content-GEN_CALENDRIER h2{
+        font-size: 35px;
+      }
+      .cta {
+        font-size: 18px;
+      }
+      .content-cta-GEN_CALENDRIER {
+        bottom: 20%;
+      }
+      .content-cta-GEN_CALENDRIER p:hover {
+        color: black;
+        font-size: 18px;
+        line-height: 30px;
+        background: white;
+        border: 1px solid white;
+      }
+    }
+  
+    @media(min-width:1200px){
+      .content-GEN_CALENDRIER h2, .content-GEN_CALENDRIER h3{
+        max-width: 32%;
+      }
+    }
+  
+    @media(min-width:1400px){
+      .content-GEN_CALENDRIER {
+        padding-left: 8%;
+      }
+      .content-GEN_CALENDRIER h2, .content-GEN_CALENDRIER h3{
+  /*      max-width: 40%;*/
+      }
+      .content-GEN_CALENDRIER h2{
+        font-size: 40px;     
+      }
+      .content-cta-GEN_CALENDRIER {
+        left: 8%;
+        bottom: 30%;
+      }
+    }
+  
+    @media(min-width:1600px){
+      .content-GEN_CALENDRIER {
+        padding-left: 8%;
+      }
+      .content-GEN_CALENDRIER h2, .content-GEN_CALENDRIER h3{
+        max-width: 29%;
+      }
+      .content-cta-GEN_CALENDRIER {
+        left: 8%;
+        bottom: 40%;
+      }
+    }
+  
+    @media(min-width:1800px){
+      .content-GEN_CALENDRIER h2{
+        font-size: 45px;
+      }
+      .content-GEN_CALENDRIER h4{
+        font-size: 25px;
+      }
+      .content-GEN_CALENDRIER p{
+        font-size: 20px;
+      }
+    }
+    @media(min-width:2200px){
+      .content-GEN_CALENDRIER h2{
+        font-size: 52px;
+      }
+      .content-GEN_CALENDRIER h4{
+        font-size: 30px;
+      }
+      .content-GEN_CALENDRIER p{
+        font-size: 24px;
+      }
+    }
+    @media(min-width:2400px){
+      .content-GEN_CALENDRIER h2{
+        font-size: 60px;
+      }
+      .content-GEN_CALENDRIER h4{
+        font-size: 40px;
+      }
+      .content-GEN_CALENDRIER #h-boite-de{
+        font-size: 60px;
+      }
+      .content-GEN_CALENDRIER p{
+        font-size: 30px;
+      }
+    }
+  
+    /* PICTO BIO*/
+    .picto-bio{
+      position: absolute;
+      top: 90%;
+      right: 0%;
+      max-width: 100%;
+      height: 79px;
+    }
+    @media(min-width:400px){
+      .picto-bio{
+        top: 100%;
+      }
+    }
+    @media(min-width:500px){
+      .picto-bio{
+        top: 130%;
+        height: 100px;
+      }
+    }
+    @media(min-width:768px){
+      .picto-bio{
+        top: 6%;
+        right: 5%;
+        height: 110px;
+      }
+    }
+    @media(min-width:1600px){
+      .picto-bio{
+        top: 6%;
+        right: 10%;
+      }
+    }
+  /* FIN PICTO BIO */
+  
+  </style>
+  
+  <a href="/us/kusmi-tea-organic-advent-calendar-21148A2500.html" style="display:block; position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 2;">
+    <div class="content-cta-GEN_CALENDRIER">
+      <p class="cta">Discover now</p>
+    </div>
+  </a>
+  <div class="content-GEN_CALENDRIER">
+    <h2><b>Organic Advent Calendar : 1 day 1 surprise</b></h2>
+  
+    <img alt="new" class="pictogramme" src="anim/ope/pastille-new-tsar22.png?$staticlink$" />
+    <img alt="picto-bio" class="picto-bio" src="anim/generique/noel2022/picto-bio-noel.png?$staticlink$" />
+  
+  </div>
