@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.octobre_rose_hero_2024';
+var classParent = '.calendrier_xmas_hero_2024';
 
 const {
     series,
