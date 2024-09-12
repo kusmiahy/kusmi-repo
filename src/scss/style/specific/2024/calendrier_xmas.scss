@@ -1,6 +1,6 @@
 $color-text-hero: #FFD79C;
 $color-bg: #353C58;
-$color-text-push: #000;
+$color-text-push: #FFD79C;
 $color-text-homepromo: #FFD79C;
 
 .calendrier_xmas_push_2024 {
@@ -472,7 +472,7 @@ $color-text-homepromo: #FFD79C;
                 line-height: 1.1;
                 &.font-barlow {
                     font-weight: 700;
-                    text-transform: uppercase;
+                    // text-transform: uppercase;
                 }
             }
 
@@ -506,6 +506,13 @@ $color-text-homepromo: #FFD79C;
                 font-size: 1rem;
             }
         }
+    }
+
+    .pastille {
+        position: absolute;
+        top: 33%;
+        right: 20%;
+        width: 65px;
     }
 
 }
