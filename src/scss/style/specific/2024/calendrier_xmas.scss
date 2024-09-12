@@ -1,7 +1,7 @@
 $color-text-hero: #FFD79C;
 $color-bg: #353C58;
 $color-text-push: #000;
-$color-text-homepromo: #000;
+$color-text-homepromo: #FFD79C;
 
 .calendrier_xmas_push_2024 {
     width: 100%;
@@ -239,7 +239,12 @@ $color-text-homepromo: #000;
 
         @include min1024 {
             top: 20%;
-            right: 18%;
+            right: 16%;
+            width: 100px;
+        }
+
+        @include min1440 {
+            width: 110px;
         }
     }
 
