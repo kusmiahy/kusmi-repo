@@ -12,12 +12,17 @@
     </div>
     <picture class="homepromo__image">
         <!-- images/assets/2024/aqua_20S/aqua_20S_homepromo.webp?$staticlink$ -->
-        <source srcset="@@lien-img-tab"
-                media="(min-width: 1650px)" />
         <source srcset="@@lien-img"
-                media="(min-width: 1024px)" />
+                media="(min-width: 1650px)" />
         <source srcset="@@lien-img-tab"
+                media="(min-width: 1024px)" />
+        <source srcset="@@lien-img"
                 media="(min-width: 652px)" />
-        <img src="@@lien-img" alt="@@alt" />
+        <source srcset="@@lien-img-tab"
+                media="(min-width: 480px)" />
+        <img src="@@lien-img-mob" alt="@@alt" />
     </picture>
+    <div class="homepromo__pastille">
+        <img src="@@lien-img-pastille" alt="">
+    </div>
 </div>

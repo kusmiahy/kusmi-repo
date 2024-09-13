@@ -641,4 +641,15 @@ $color-text-homepromo: #000;
             object-fit: cover;
         }
     }
+
+    &__pastille {
+        position: absolute;
+        top: 2%;
+        right: 25%;
+        width: 90px;
+
+        @media screen and (min-width:480px) {
+            display: none;
+        }
+    }
 }
