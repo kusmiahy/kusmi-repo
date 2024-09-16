@@ -27,7 +27,7 @@
 /* Basic comment */
 
 // .bandeau-footer-body2021v2
-var classParent = '.octobre_rose_homepromo_2024';
+var classParent = '.programme-de-fid_2024';
 
 const {
     series,

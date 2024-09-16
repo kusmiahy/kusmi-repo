@@ -1,0 +1,84 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/LP/_programme_de_fidelite.scss";
+
+    Content asset : programme-fidelite-kusmiklub
+
+    Nom de la classe parent : programme-de-fid_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+
+<!-- inject-style src="dist/css/main.min.css" -->
+<style>
+    .ms-row.container.layout--small {max-width: 100% !important;padding: 0 !important;}
+    footer .layout--small{overflow: hidden;}
+    @media screen and (max-width:1024px) {.hero.layout--small {max-width: 100% !important;padding: 0 !important;}}
+</style>
+<section class="programme-de-fid_2024">
+    @@include('_components/hero.html', {
+        "alt": "Rejoignez notre programme de fidélité Kusmi Klub, dès que vous atteignez 150 points vous avez un bon d'achat de CHF 5",
+        "titre": "C'est simple :<span class='hide-mobile'><br></span> achetez, cumulez, profitez",
+        "login-texte": "Je me connecte",
+        "signin-texte": "Je m'inscris",
+    })
+    @@include('_components/second_slot.html', {
+        "titre": "CHF 1 dépensé = 1 point<br>150 points = UN BON D’ACHAT DE CHF 5",
+        "des-bons-dachat-titre": "Des bons d’achat",
+        "des-bons-dachat-paragraphe": "À chaque achat, CHF 1 = 1 point<br>150 points = 1 bon d’achat de CHF 5",
+        "des-ventes-privees-titre": "Des ventes privées",
+        "des-ventes-privees-paragraphe": "Bénéficiez de remises <span class='hide-mobile'><br></span>exceptionnelles plusieurs fois par an",
+        "une-surprise-titre": "Une surprise offerte<span class='hide-mobile'><br></span> pour votre anniversaire",
+        "un-avatantage-titre": "Un avantage premium",
+        "un-avatantage-paragraphe": "Un coffret offert dès<span class='hide-mobile'><br></span> CHF 300  dépensés dans l’année",
+
+        "alt": "pictogramme bon de réduction Kusmi Klub CHF 1 dépensé = 1 point, 150 points = UN BON D’ACHAT DE CHF 5",
+        "alt4": "pictogramme coffret cadeau - Un avantage premium - Un coffret offert dès CHF 300 dépensés dans l’année",
+        "alt1": "pictogramme bon d'achat' Kusmi Klub -  Des bons d’achat - À chaque achat, CHF 1 = 1 point 150 points = 1 bon d’achat de CHF 5 ",
+        "alt2": "pictogramme cadeau - Une surprise offerte pour votre anniversaire",
+        "alt3": "pictogramme ventes privées - Des ventes privées - Bénéficiez de remises exceptionnelles plusieurs fois par an",
+    })
+    <article class="how">
+        @@include('_components/third_slot.html', {
+            "titre-achat": "Comment obtenir<span class='hide-desktop'><br></span> mon bon d’achat ?",
+            "texte1": "<span class='hide-desktop'>Je crée mon compte client gratuitement ou je me connecte pour rejoindre le programme de fidélité</span><span class='hide-mobile'>Je suis inscrit au KusmiKlub</span>",
+            "texte2": "Je cumule 150 points",
+            "texte3": "Dès 150 points (CHF 150 dépensés) je transforme mes points en un bon d’achat de CHF 5",
+            "texte4": "J'utilise mon bon d’achat pour me faire plaisir",
+    
+            "alt": "pictogramme bon de réduction Kusmi Klub 150 points = UN BON D’ACHAT DE CHF 5",
+            "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_70P-5.svg?$staticlink$",
+            "class": "how__achat--first",
+        })
+        @@include('_components/third_slot.html', {
+            "titre-achat": "Comment obtenir mon<span class='hide-desktop'><br></span> avantage premium ?",
+            "texte1": "Vous avez acheté plus de CHF 300 chez Kusmi Tea dans les 12 derniers mois ?  Nous souhaitons vous remercier !",
+            "texte2": "Un cadeau exclusif vous attendra sur le site !",
+            "texte3": "Recevez votre avantage premium ! Il vous sera envoyé par mail",
+            "texte4": "Récupérez votre avantage premium en ligne",
+    
+            "alt": "pictogramme coffret cadeau - Un avantage premium - Un coffret offert dès CHF 300 dépensés dans l’année",
+            "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_250P-coffret.svg?$staticlink$",
+            "class": "how__achat--second",
+        })
+    </article>
+    @@include('_components/fourth_slot.html', {
+        "titre": "Des questions sur<span class='hide-desktop'><br></span> le KusmiKlub ?",
+        "cta-texte": "Voir toutes les questions",
+        "lien-faq": "$url('Faq-Show')$",
+        "lien-kk": "$url('Login-Show', 'activeTab', 'register', 'activateLoyalty', 'true')$",
+        "titre-join": "Rejoignez-nous",
+        "cta-texte-kusmi-klub": "J'adhère au KusmiKlub",
+        "title-cta": "Cliquez pour accéder à la FAQ",
+        "title-cta-kk": "Cliquez pour adhérer au KusmiKlub",
+    })
+</section>
