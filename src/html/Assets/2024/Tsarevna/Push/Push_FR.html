@@ -1,0 +1,35 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/tsarevna.scss";
+
+    Content asset : GEN_TSAR_PUSH
+
+    Nom de la classe parent : tsarevna_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="tsarevna_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('Product-Show','pid','21286A1070')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre thé de Noël en édition limitée !">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir notre thé de Noël en édition limitée",
+            "texte-h2": "Tsarevna",
+            "texte-h3": "Le thé de Noël en édition limitée",
+            "texte-link": "Je découvre",
+
+            "lien-img": "images/assets/2024/tsarevna/tsarevna_push.webp?$staticlink$",
+
+            "lien-img-pastille": "images/assets/2024/tsarevna/pastille-editionlimitee-FR.webp?$staticlink$",
+        })
+    </div>
+</a>

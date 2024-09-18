@@ -1,0 +1,56 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/calendrier_xmas.scss";
+
+    Content asset : GEN_CALENDRIER_HP
+
+    Nom de la classe parent : calendrier_xmas_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="calendrier_xmas_hero_2024">
+    <div class="hide-desktop">
+        <a href="$url('Product-Show','pid','21289A2500')$" title="Click on &quot;Discover now&quot; to discover our new Advent calendar" class="hide-desktop">
+            @@include('../components/slot.html', {
+                "alt": "Click on &quot;Discover now&quot; to discover our new Advent calendar",
+                "title": "Advent calendar",
+                "subtitle": "24 surprises for a frosted Christmas !",
+                "text-link": "Discover now",
+    
+                "lien-img-desk": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_mob.webp?$staticlink$",
+
+                "lien-img-pastille": "images/assets/2024/calendrier_xmas/pastille_editionlimitee-INT.webp?$staticlink$",
+            })
+        </a>
+    </div>				
+    
+    <div class="hide-mobile">
+        <a href="$url('Product-Show','pid','21289A2500')$" class="hero hero--color hide-mobile" title="Click on &quot;Disover now&quot; to discover our new Advent calendar">
+            @@include('../components/slot_color.html', {
+                "alt": "Click on &quot;Disover now&quot; to discover our new Advent calendar",
+                "title": "Advent calendar",
+                "subtitle": "24 surprises for a frosted Christmas !",
+                "texte-link": "Discover now",
+    
+                "lien-img-desk": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_mob.webp?$staticlink$",
+
+                "lien-img-pastille": "images/assets/2024/calendrier_xmas/pastille_editionlimitee-INT.webp?$staticlink$",
+            })
+            </a>
+        </div>
+</section>

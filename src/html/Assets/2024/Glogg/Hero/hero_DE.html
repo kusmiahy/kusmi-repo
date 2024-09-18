@@ -1,0 +1,56 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/calendrier_xmas.scss";
+
+    Content asset : GEN_CALENDRIER_HP
+
+    Nom de la classe parent : calendrier_xmas_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="calendrier_xmas_hero_2024">
+    <div class="hide-desktop">
+        <a href="$url('Product-Show','pid','21289A2500')$" title="Entdecken Adventskalender" class="hide-desktop">
+            @@include('../components/slot.html', {
+                "alt": "Entdecken Adventskalender",
+                "title": "Adventskalender",
+                "subtitle": "24 Überraschungen, um sich auf ein frostiges Weihnachtsfest vorzubereiten!",
+                "text-link": "Jetzt entdecken",
+    
+                "lien-img-desk": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_mob.webp?$staticlink$",
+
+                "lien-img-pastille": "images/assets/2024/calendrier_xmas/pastille_editionlimitee-DE.webp?$staticlink$",
+            })
+        </a>
+    </div>				
+    
+    <div class="hide-mobile">
+        <a href="$url('Product-Show','pid','21285A1070')$" class="hero hero--color hide-mobile" title="Entdecken Adventskalender">
+            @@include('../components/slot_color.html', {
+                "alt": "Entdecken Adventskalender",
+                "title": "Adventskalender",
+                "subtitle": "24 Überraschungen, um sich auf ein frostiges Weihnachtsfest vorzubereiten!",
+                "texte-link": "Jetzt entdecken",
+    
+                "lien-img-desk": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/calendrier_xmas/calendrier_xmas_hero_mob.webp?$staticlink$",
+
+                "lien-img-pastille": "images/assets/2024/calendrier_xmas/pastille_editionlimitee-DE.webp?$staticlink$",
+            })
+            </a>
+        </div>
+</section>

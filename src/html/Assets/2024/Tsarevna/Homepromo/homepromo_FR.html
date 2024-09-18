@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/calendrier_xmas.scss";
+
+    Content asset : GEN_CALENDRIER_HOME_PROMO
+
+    Nom de la classe parent : calendrier_xmas_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 calendrier_xmas_homepromo_2024">
+    <a href="$url('Product-Show','pid','21289A2500')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir notre calendrier de l'Avent">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir notre calendrier de l'Avent",
+            "title": "Calendrier de l'Avent",
+            "subtitle": "24 surprises pour préparer un Noël givré !",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Calendrier de l'Avent ></span>",
+            
+            "lien-img": "images/assets/2024/calendrier_xmas/calendrier_xmas_homepromo.webp?$staticlink$",
+            "lien-img-tab": "images/assets/2024/calendrier_xmas/calendrier_xmas_homepromo_tab.webp?$staticlink$",
+        })
+    </a>
+</section>
