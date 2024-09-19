@@ -1,0 +1,32 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/editions_speciales_noel.scss";
+
+    Content asset : GEN_editions_speciales_noel_PUSH
+
+    Nom de la classe parent : editions_speciales_noel_push_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<a class="editions_speciales_noel_push_2024 col-xs-6 col-sm-4 col-lg-3" href="$url('SearchShow','cgid','new')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir nos thés et infusions de Noël">
+    <div class="push">
+        @@include('../components/push.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir nos thés et infusions de Noël",
+            "texte-h2": "Nos thés et infusions de Noël",
+            "texte-link": "Je découvre",
+
+            "lien-img": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_push.webp?$staticlink$",
+        })
+    </div>
+</a>

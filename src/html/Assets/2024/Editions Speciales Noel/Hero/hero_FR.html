@@ -1,0 +1,60 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/editions_speciales_noel.scss";
+
+    Content asset : GEN_editions_speciales_noel_HERO
+
+    Nom de la classe parent : editions_speciales_noel_hero_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="editions_speciales_noel_hero_2024">
+    <div class="hide-desktop">
+        <div title="Cliquez pour découvrir nos thés et infusions de Noël" class="hide-desktop">
+            @@include('../components/slot.html', {
+                "alt": "Cliquez pour découvrir nos thés et infusions de Noël",
+                "title": "Nos thés et infusions de Noël",
+                "subtitle": "Partez à la montagne avec nos éditions spéciales",
+
+                "text-link1": "Tsarevna",
+                "text-link2": "Glögg",
+                "link1": "$url('Product-Show','pid','21286A1070')$",
+                "link2": "$url('Product-Show','pid','21287A1070')$",
+    
+                "lien-img-desk": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_mob.webp?$staticlink$",
+            })
+        </div>
+    </div>				
+    
+    <div class="hide-mobile">
+        <div href="$url('Product-Show','pid','21289A2500')$" class="hero hero--color hide-mobile" title="Cliquez pour découvrir nos thés et infusions de Noël">
+            @@include('../components/slot_color.html', {
+                "alt": "Cliquez pour découvrir nos thés et infusions de Noël",
+                "title": "Nos thés et infusions de Noël",
+                "subtitle": "Partez à la montagne avec nos éditions spéciales",
+
+                "text-link1": "Tsarevna",
+                "text-link2": "Glögg",
+                "link1": "$url('Product-Show','pid','21286A1070')$",
+                "link2": "$url('Product-Show','pid','21287A1070')$",
+    
+                "lien-img-desk": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_desk.webp?$staticlink$",
+                "lien-img-tab": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_tab.webp?$staticlink$",
+                "lien-img-mob": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_hero_mob.webp?$staticlink$",
+            })
+            </div>
+        </div>
+</section>

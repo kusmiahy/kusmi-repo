@@ -1,0 +1,24 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/template.scss";
+
+    Content asset : GEN_CALENDRIER_NAV_PUSH
+
+    Nom de la classe parent : editions_speciales_noel_navpush_2024
+
+-->
+
+<section class="editions_speciales_noel_navpush_2024">
+    @@include('../components/navpush.html', {
+        "alt": "Découvrez nos thés et infusions de Noël",
+        "texte": "Nos éditions spéciales Noël",
+        "lien": "$url('SearchShow','cgid','new')$",
+    })
+</section>

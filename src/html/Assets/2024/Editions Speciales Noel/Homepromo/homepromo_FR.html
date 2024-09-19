@@ -1,0 +1,34 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+@import "./style/specific/2024/editions_speciales_noel.scss";
+
+    Content asset : GEN_editions_speciales_noel_HOMEPROMO
+
+    Nom de la classe parent : editions_speciales_noel_homepromo_2024
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+<section class="col-xs-12 col-md-6 editions_speciales_noel_homepromo_2024">
+    <a href="$url('SearchShow','cgid','new')$" title="Cliquez sur &quot;Je découvre&quot; pour découvrir nos thés et infusions de Noël">
+        @@include('../components/homepromo.html', {
+            "alt": "Cliquez sur &quot;Je découvre&quot; pour découvrir nos thés et infusions de Noël",
+            "title": "Nos thés et infusions de Noël",
+            "subtitle": "Partez à la montagne avec nos éditions spéciales",
+            "text-link": "<span class='hide-mobile-homepromo'>Je découvre</span><span class='hide-desktop-homepromo'>Nos éditions spéciales Noël ></span>",
+            
+            "lien-img": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_homepromo.webp?$staticlink$",
+            "lien-img-tab": "images/assets/2024/editions_speciales_noel/2024-08_xmas-editions-speciales_homepromo_tab.webp?$staticlink$",
+        })
+    </a>
+</section>
