@@ -9,7 +9,7 @@
 // --------------------- Library -------------------------
 @import "./style/specific/2024/LP/_programme_de_fidelite.scss";
 
-    Content asset : (à voir le nom du content-asset)
+    Content asset : programme-fidelite-kusmiklub
 
     Nom de la classe parent : programme-de-fid_2024
 
@@ -26,24 +26,28 @@
 </style>
 <section class="programme-de-fid_2024">
     @@include('_components/hero.html', {
-        "alt": "Join our Kusmi Klub loyalty program, and as soon as you reach 70 points you'll receive a €5 voucher",
+        "alt": "Join our Kusmi Klub loyalty program, and as soon as you reach 100 points you'll receive a $5 voucher",
         "titre": "It's as simple as that:<span class='hide-mobile'><br></span> buy, collect, benefit",
         "login-texte": "I register",
         "signin-texte": "Create account",
+        "link-text-1": "Log in to see your benefits",
+        "link-text-2": "Sign up to access the benefits of the Kusmiklub",
     })
     @@include('_components/second_slot.html', {
-        "titre": "1€ spent = 1 point collected<br>70 points = a shopping voucher of 5€",
+        "titre": "$1 spent = 1 point collected<br>100 points = a shopping voucher of $5",
+        "lien-img-bon": "images/landing_page/2024/programme_de_fid/LP_KK-bon-US.webp?$staticlink$",
+        "lien-img-bon-achat": "images/landing_page/2024/programme_de_fid/LP_PICTOS_KK_BON-US.webp?$staticlink$",
         "des-bons-dachat-titre": "Vouchers",
-        "des-bons-dachat-paragraphe": "With every purchase 1€ = 1 point <br>70 points = 1 €5 shopping voucher",
+        "des-bons-dachat-paragraphe": "With every purchase $1 = 1 point <br>100 points = 1 $5 shopping voucher",
         "des-ventes-privees-titre": "Private sales",
         "des-ventes-privees-paragraphe": "Benefit from exceptional <span class='hide-mobile'><br></span>discounts several times a year",
         "une-surprise-titre": "A surprise gift<span class='hide-mobile'><br></span> for your birthday",
         "un-avatantage-titre": "A premium advantage",
         "un-avatantage-paragraphe": "A gift set from<span class='hide-mobile'><br></span> 300 points collected per year",
 
-        "alt": "Kusmi Klub discount voucher pictogram 1€ spent = 1 point, 70 points = A 5€ PURCHASE VOUCHER",
-        "alt4": "pictogram gift box - A premium advantage - A free gift box for every 300€ spent during the year",
-        "alt1": "pictogram voucher Kusmi Klub - Vouchers - For each purchase, €1 = 1 point 70 points = 1 €5 voucher ",
+        "alt": "Kusmi Klub discount voucher pictogram $1 spent = 1 point, 100 points = A $5 PURCHASE VOUCHER",
+        "alt4": "pictogram gift box - A premium advantage - A free gift box for every $300 spent during the year",
+        "alt1": "pictogram voucher Kusmi Klub - Vouchers - For each purchase, $1 = 1 point 100 points = 1 $5 voucher ",
         "alt2": "pictogram gift - A surprise for your birthday",
         "alt3": "pictogram private sales - Private sales - Benefit from exceptional discounts several times a year",
     })
@@ -51,22 +55,22 @@
         @@include('_components/third_slot.html', {
             "titre-achat": "How do I<span class='hide-desktop'><br></span> receive my voucher?",
             "texte1": "I am registered in the Kusmiklub",
-            "texte2": "I collect 70 points",
-            "texte3": "From 70 points (70€ spent) I convert my points into a shopping voucher of 5€",
+            "texte2": "I collect 100 points",
+            "texte3": "From 100 points ($100 spent) I convert my points into a shopping voucher of $5",
             "texte4": "I use my voucher to treat myself to something",
     
-            "alt": "pictogramme bon de réduction Kusmi Klub 70 points = UN BON D’ACHAT DE 5€",
-            "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_70P-5.svg?$staticlink$",
+            "alt": "pictogramme bon de réduction Kusmi Klub 100 points = UN BON D’ACHAT DE $5",
+            "lien-image": "images/landing_page/2024/programme_de_fid/KK-points-US.webp?$staticlink$",
             "class": "how__achat--first",
         })
         @@include('_components/third_slot.html', {
             "titre-achat": "How do I get<span class='hide-desktop'><br></span> my Premium benefit?",
-            "texte1": "Have you spent more than €300 at Kusmi Tea in the last 12 months?  We would like to thank you! ",
+            "texte1": "Have you spent more than $300 at Kusmi Tea in the last 12 months?  We would like to thank you! ",
             "texte2": "An exclusive gift will be waiting for you on the website! ",
             "texte3": "Receive your Premium Advantage! It will be sent to you by e-mail. ",
             "texte4": "Collect your Premium advantage online.",
     
-            "alt": "pictogram gift box - A premium advantage - A free gift box for every €300 spent in the year",
+            "alt": "pictogram gift box - A premium advantage - A free gift box for every $300 spent in the year",
             "lien-image": "images/landing_page/2024/programme_de_fid/PICTOS_KK_250P-coffret.svg?$staticlink$",
             "class": "how__achat--second",
         })
