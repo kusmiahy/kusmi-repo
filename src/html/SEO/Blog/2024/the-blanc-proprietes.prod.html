@@ -1,0 +1,256 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : the-blanc-proprietes
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Le thé blanc : ses bienfaits pour la santé et ses propriétés bien-être
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/the-blanc.jpg?$staticlink$",
+                "alt": "Le thé blanc : ses bienfaits pour la santé et ses propriétés bien-être",
+    
+                "titre": "Le thé blanc : ses bienfaits pour la santé et ses propriétés bien-être",
+                "date": "Publié le <span class='date__color'>25/09/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','blanc')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés blancs",
+    
+                "texte": "Connaissez-vous le thé blanc ? Très peu transformé, ce thé se caractérise par son goût délicat et ses vertus désaltérantes. Faiblement oxydé, le thé blanc recèlerait des vertus insoupçonnées. Découvrez-en plus sur cette boisson !",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé blanc est une boisson précieuse, particulièrement prisée pour ses bienfaits santé. Peu transformé, ce thé conserve un maximum de nutriments et d’antioxydants, ce qui en fait un allié idéal pour votre bien-être. Découvrez les bienfaits du thé blanc et pourquoi il est recommandé de l’intégrer dans votre routine quotidienne aussi bien qu’en infusion ou en simple sachets.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Qu'est-ce que le thé blanc ?",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé blanc, originaire de Chine, est l'un des thés les plus délicats. Ses jeunes pousses et bourgeons sont soigneusement cueillis à la main, ce qui lui confère sa pureté. Le thé blanc, aussi appelé &laquo;Bai&raquo;, subit très peu de transformation, ce qui permet à ses feuilles de conserver un maximum de leurs propriétés. Il existe différents types de thés blancs, tels que le Bai Mu Tan, le Bai Hao Yin Zhen ou encore le Pai Tan, tous appréciés pour leurs arômes délicats et leurs bienfaits santé.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Pourquoi choisir un thé blanc bio ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Opter pour un thé blanc bio vous assure une boisson exempte de pesticides et de produits chimiques, tout en bénéficiant des multiples bienfaits du thé blanc pour la santé. Les feuilles de thé blanc bio conservent davantage de nutriments et d’antioxydants, favorisant ainsi une meilleure protection de votre corps contre les radicaux libres.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/bienfait-the-blanc.webp?$staticlink$",
+                        "alt": "les bienfaits du thé blanc",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Thé blanc : une boisson délicate",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé blanc est le plus délicat des thés. Jeunes pousses et bourgeons sont soigneusement cueillis à la main au printemps, juste avant l’éclosion. Ce thé doit son nom au léger duvet blanc qui recouvre les feuilles de thé au moment de la récolte. Le thé blanc est le thé le moins transformé offrant une superbe saveur. On compte deux étapes de transformation seulement :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "le flétrissage, qui s’effectue traditionnellement à l’air libre (ou parfois dans une salle à température contrôlée).",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "puis la dessiccation qui permet de le sécher (d’abord au soleil puis à l’ombre) pour le conditionner et le conserver.",
+                    })
+                </ul>
+                @@include('_components/h3.html', {
+                    "titre": "Un thé précieux",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Alors si le thé blanc nécessite moins d’étapes de fabrication, pourquoi est-il si prisé ? Eh bien c’est parce que ces deux phases sont effectuées de manière progressive, au rythme de l’évolution naturelle des feuilles. Ni torréfié ni roulé, le thé blanc est si peu manipuléé qu’il n’a subi qu’une légère oxydation, uniquement en surface. Et c’est précisément cela qui le rend précieux. La liqueur du thé blanc, de couleur jaune pâle, offre ainsi en bouche de douces notes fleuries, empreintes de fraîcheur et de raffinement. Les Chinois l’apprécient particulièrement l’été dans leur théière, lorsqu’ils le dégustent pour se désaltérer en infusion.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les différents types de thés blancs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il existe plusieurs types de thés blancs, chacun avec ses spécificités et bienfaits. Parmi les plus populaires, on trouve :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Bai Mu Tan (ou Pai Mu Tan) : un grand cru de thé blanc, aux arômes floraux et boisés.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Bai Hao Yin Zhen : réputé pour sa finesse, ce thé est exclusivement composé de bourgeons argentés.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Hao Yin : un autre grand thé blanc, apprécié pour sa douceur et son parfum raffiné.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ces thés blancs se distinguent par leurs ingrédients de qualité et leur préparation artisanale. Leur prix varie selon la rareté des feuilles utilisées et leur origine. N’hésitez pas à consulter les avis des consommateurs pour trouver celui qui correspond le mieux à vos attentes.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le Pai Mu Tan, un thé blanc d’exception",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ce nom signifie littéralement en chinois « Pivoine blanche », ce qui en dit long sur leur délicatesse, leur parfum floral et leur pureté. Le Pai Mu Tan est particulièrement frais, doux et velouté et présente des accents fleuris délicatement zestés. Son goût légèrement boisé rappelle celui de la châtaigne. La fragilité de ses feuilles nécessite une préparation dans les règles de l’art : une eau frémissante (minérale de préférence) à 70-80°, pas plus, au risque de brûler ses délicats arômes en infusion.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les propriétés du thé blanc",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Comme elle ne subit que peu de transformations, la feuille de thé blanc conserve un maximum de nutriments, de propriétés et donc de bienfaits. On dit de cette boisson bien-être qu’elle recèlerait bien des vertus !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé blanc, votre allié minceur",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé blanc est reconnu pour ses effets sur la perte de poids. Une étude a révélé que l’extrait de thé blanc peut favoriser la dégradation des graisses et restreindre la création de nouvelles cellules adipeuses. Intégrer ce thé en infusion ou en sachets à votre alimentation peut soutenir vos objectifs minceur.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez aussi notre <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html?v=21254A1070'>thé minceur</a> !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Une boisson à l’effet joli teint",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Grâce à ses antioxydants, le thé blanc protège le collagène et l’élastine de la peau, ralentissant ainsi l’apparition des rides et ridules. Votre peau paraît plus jeune et plus éclatante.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Lorsque le collagène et l’élastine de la peau sont abîmés, rides et ridules peuvent apparaître. Dans votre tasse en sachets ou dans votre théière, le thé blanc entraverait l'activité des enzymes qui détériorent justement ce collagène et l’élastine. Sa consommation régulière contribue à la santé de la peau.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Un thé doux pour le coeur",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé blanc réduirait le niveau de mauvais cholestérol. Le cholestérol fatigue le coeur en gênant la bonne circulation sanguine. Des maladies cardio-vasculaires peuvent alors apparaître : insuffisance cardiaque, infarctus, accident vasculaire cérébral…. Il paraît que les personnes qui boivent quotidiennement trois d’étasses ou plus de thé présentent un risque de maladie du cœur inférieur à 21%.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/the-blanc-kusmi.webp?$staticlink$",
+                        "alt": "thé blanc kusmi tea",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Soutien du système immunitaire",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les catéchines et les antioxydants présents dans le thé blanc renforcent le système immunitaire, aidant votre corps à mieux se défendre contre les infections.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez aussi notre <a class='banniere__link' href='/fr/rituel-defenses-immunitaires-IMMUBIOMASTER.html?v=21153A1070'>thé immunité</a> !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Une boisson booster de matière grise",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les catéchines du thé blanc auraient un pouvoir sur la bonne santé de notre cerveau en plus de sa saveur. Leur effet antioxydant préserverait notamment les neurones du stress oxydant. Un produit exceptionnel capable de transformer votre eau frémissante en une véritable infusion bien être.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Favorise une bonne santé bucco-dentaire",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Riche en fluorure, le thé blanc aideraient vos dents à se protéger contre les caries et les attaques acides. La catéchine du thé blanc est un antioxydant puissant qui permettrait de redonner à votre sourire tout son éclat ! Délicat, élégant et vertueux, le thé blanc a tout bon ! Pauvre en théine et sans caféine, le thé blanc se savoure à toute heure de la journée à place d’un café !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Un sourire zéro défaut",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez toute la gamme des <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-blanc'>thés blancs Kusmi</a>. Pour les amateurs de saveurs fruitées, alors c'est le Tropical White qu'il vous faut ! Ce thé blanc aux saveurs de mangue et de passion ravira vos papilles ! Si vous préférez les saveurs délicates et fleuries, n'attendez plus pour vous faire une tasse de notre Thé Blanc Alain Ducasse aux notes de framboise et de rose. Enfin, pour ceux qui connaissent déjà notre thé noir <a class='banniere__link' href='/fr/anastasia-ANASBIOMASTER.html?v=21642A1070'>Anastasia</a>, découvrez sa version en thé blanc <a class='banniere__link' href='/fr/white-anastasia-BANABIOMASTER.html?v=21635A1070'>White Anastasia</a> pour encore plus de douceur !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-noir-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP-the-noir/DSTN0009-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé noir bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP_the-vert/Detobio-3.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','comment-choisir-son-the-blanc')$",
+                    "lien-img": "landing/01-2021_LP_the-vert/DSTN0499-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment bien choisir son thé blanc ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Le thé blanc : ses bienfaits pour la santé et ses propriétés bien-être",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','the-blanc-proprietes')$",
+            })
+        </section>
+    </div>
+</div>

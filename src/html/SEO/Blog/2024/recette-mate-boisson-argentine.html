@@ -1,0 +1,234 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : recette-mate-boisson-argentine
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Boisson star de l’Argentine : le maté
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/mate.jpg?$staticlink$",
+                "alt": "Boisson star de l’Argentine : le maté",
+    
+                "titre": "Nos Recettes de Matcha Latte",
+                "date": "Publié le <span class='date__color'>09/09/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','mate')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Notre maté",
+    
+                "texte": "<strong>Le maté</strong> compte de plus en plus d’adeptes : cette <strong>boisson</strong> se sirote à tout moment de la journée, nature ou mélangée. Mais saviez-vous qu’elle est <strong>LA boisson nationale argentine</strong> et que sa consommation s’accompagne d’un rituel de dégustation incontournable ? On vous dit tout.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le maté, pas du thé ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le maté est issu d’une plante de la famille des houx :</strong> la yerba mate, ou Ilex paraguariensis. Cet arbuste ne ressemble donc en rien au théier ! Mais l’<strong>infusion de ses feuilles</strong> n’en est pas moins délicieuse. Sa particularité est de ne pousser qu’en <strong>Amérique du Sud</strong> et notamment dans les régions du nord-est de l’Argentine, autour des frontières avec le Paraguay et le sud du Brésil. L’histoire raconte que <strong>le maté était déjà consommé par les amérindiens</strong> Guaranis, qui le mastiquaient ou le laissaient tremper dans leur gourde d’eau fraîche. Ainsi, il lui donnait sa saveur végétale typique, légèrement amère. La <strong>yerba mate</strong> poussait alors à l’état sauvage, bien avant de commencer à être cultivé à des fins commerciales.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La yerba mate est réputée pour sa teneur en caféine et en antioxydants. Cette boisson argentine se consomme traditionnellement dans une calebasse avec une bombilla, une sorte de paille métallique filtrante. Les Argentins apprécient son goût distinctif, souvent comparé à celui du thé vert, mais avec une amertume unique qui évoque les saveurs du terroir sud-américain.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La culture du maté en Argentine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de maté est profondément ancrée dans la culture argentine. À Buenos Aires ou dans les provinces plus reculées du nord, il est courant de voir des Argentins partager cette boisson lors de réunions familiales ou entre amis. Le maté est souvent comparé au vin ou même au café pour son rôle social et culturel au sein du pays. C'est une boisson qui unit, créant des bulles de convivialité et de partage dans un monde en perpétuel mouvement.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "La légende du mate",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Selon la légende argentine, le maté a été offert par les dieux à un peuple en quête d'une boisson rituelle. Elle symbolise l'amitié et le partage, des valeurs toujours présentes dans la société actuelle. Cette légende est un témoignage de l'importance du maté dans la culture sud-américaine.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le mate à travers le temps",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Depuis les temps anciens, le maté a voyagé à travers l'Amérique du Sud, devenant une boisson de choix non seulement pour les Argentins, mais aussi pour le monde entier. Des marques comme Amanda et Yerbee continuent de promouvoir cette tradition à travers leurs produits. Aujourd'hui, le maté est reconnu comme un produit phare de l'industrie des boissons argentines, rivalisant avec le café et le thé dans de nombreux pays.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/recette-mate2.jpg?$staticlink$",
+                        "alt": "recette mate",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits du maté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Au-delà de son goût unique, <strong>les <a class='banniere__link' href='/fr/les-bienfaits-du-mate.html'>bienfaits du maté</a></strong> sont nombreux !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Une boisson riche en nutriments",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté est une source d'énergie naturelle. Riche en caféine, il aide à rester alerte tout au long de la journée. Il vous fait profiter de ses 13 vitamines et d’importants minéraux comme le magnésium et le potassium qui sont essentiels pour le corps.Il contient un véritable concentré d’antioxydants qui contribueraient à renforcer vos défenses naturelles. C’est grâce aux polyphénols contenus dans les feuilles de thé broyées. Il en fait un allié de taille pour lutter contre le stress oxydatif.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Les vertus thérapeutiques du mate",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les bienfaits du maté vont bien au-delà de la simple stimulation. Il aide à la digestion, renforce le système immunitaire et peut même aider à la perte de poids grâce à ses propriétés diurétiques. C'est une boisson qui s'inscrit parfaitement dans une routine bio et saine. Pour beaucoup d'Argentins, le maté est bien plus qu'une boisson, c'est un mode de vie qui incarne la santé et le bien-être.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Alors vous pensez toujours que <a class='banniere__link' href='/fr/mate-effets-secondaires/artmm-19.html'>le maté est un danger pour la santé</a> ? On a un article complet sur le sujet !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment préparer le maté ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les Argentins et plusieurs de leurs voisins <strong>boivent du maté</strong> à longueur de journée, à la maison, au travail ou dans la rue ; en famille, entre collègues et entre amis. Leur point commun ? Ils sont tous extrêmement attentifs à <strong>le préparer</strong> et à le déguster dans les <strong>règles de l’art</strong>.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": " Voici les étapes essentielles pour savourer cette boisson nationale :.",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Choisir la calebasse :</strong> C'est le récipient traditionnel, souvent fabriqué en courge séchée.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Remplir de yerba maté : </strong>Remplissez la calebasse aux deux tiers avec des feuilles de yerba. Selon ses goûts, on peut ajouter du sucre, du miel, des épices (cannelle, cardamome, gingembre ou bien anis), de la menthe ou des écorces d’agrumes.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Incliner et secouer :</strong> Inclinez la calebasse pour que les feuilles se tassent d'un côté.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Ajouter l'eau :</strong> Versez lentement de l'eau chaude (mais non bouillante) sur les feuilles. L'eau doit être à une température idéale pour éviter de brûler les feuilles et nuire au goût.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Insérer la bombilla :</strong> Placez la bombilla dans le maté en la maintenant bien en place.",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dégustez ensuite cette infusion, seul ou en compagnie, pour un moment de partage et de convivialité. Le maté est souvent consommé lors de voyages ou de journées de détente, reflétant le rythme de vie argentin.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour en savoir plus sur la <a class='banniere__link' href='/fr/temps-infusion-mate/artmm-7.html'>préparation du maté</a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Maté, le partage et la convivialité en héritage",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En effet, <strong>le maté se prépare et se boit rarement seul</strong>. Il réunit tout le monde, tout le temps et partout. Du matin au soir, toutes générations et toutes classes sociales confondues, les Argentins savourent leur boisson préférée, à la ville comme à la campagne. La calebasse passe de main en main, régulièrement remplie d’eau chaude par le maître de cérémonie du moment, et de temps à autre réapprovisionnée en <strong>yerba mate</strong>. Dans l’objectif de promouvoir cet héritage culturel, les touristes sont invités à suivre la « <strong>Ruta de la Yerba Mate</strong> » (la route du maté), qui les conduit au cœur des régions productrices à la rencontre des agriculteurs. Ces derniers partagent avec les curieux leur savoir-faire et leurs traditions. Une expérience gastronomique et culturelle unique, en pleine nature, à intégrer dans tout itinéraire de voyage en Argentine. <strong>Le maté « s’accompagne » aussi de savoureux autres ingrédients.</strong>",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Différentes recettes de maté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La yerba mate s’associe à merveille avec d’autres ingrédients. Voici quelques bons exemples de <strong>thés matés </strong>:",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Le mélange <strong>BB Detox de Kusmi Tea</strong> réunit le<strong> maté et le thé vert</strong> au sein d’une même recette. BB Detox compte aussi sur la présence du rooibos (qui rappelons-le n’est pas non plus un thé !), de graines de guarana ou encore de pissenlit.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "La préparation <strong>Boost de la maison Kusmi</strong> marie elle aussi le <strong>maté et le thé</strong>. La cannelle, le gingembre, la vanille et la cardamome rendent le tout très savoureux. L’essayer, c’est l’adopter.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le Blue Detox ne peut que vous faire saliver. Le mélange <strong>exotique</strong> associe une nouvelle fois le <strong>thé, la yerba mate et le rooibos</strong>. En le sirotant, vous serez surpris de retrouver l’arôme sucré de l’ananas, faisant partie intégrante de la recette.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Dernier exemple, et non des moindres : <strong>Euphoria</strong>, une préparation de <strong>maté, de thé, de fèves de cacao, d’écorces d’orange et de fleurs d’oranger</strong>. Un délicieux mélange qui ravira les plus gourmands d’entre vous ! Le petit plus de la recette : la yerba mate est grillée. La torréfaction la rend plus goûteuse.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "À présent que vous en savez plus sur la <strong>préparation du maté</strong>, faites comme Antoine Griezmann, qui l’adore et ne manque pas une occasion d’en faire la promotion : prenez votre <strong>yerba mate, votre maté et votre bombilla</strong> et dégustez votre maté en bonne compagnie !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','matcha-the-vertus')$",
+                    "lien-img": "blog/articles/2024/coffret-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Matcha : les bienfaits pour la santé | Kusmi Tea",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-darjeeling')$",
+                    "lien-img": "blog/1-Bienfaits-darjelling.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "A la découverte des vertus du thé noir Darjeeling, la crème des thés noirs",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-menthe-marocain')$",
+                    "lien-img": "blog/the-menthe6.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé à la menthe marocain de A à Z : recettes et bienfaits",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Boisson star de l’Argentine : le maté",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','recette-mate-boisson-argentine')$",
+            })
+        </section>
+    </div>
+</div>
