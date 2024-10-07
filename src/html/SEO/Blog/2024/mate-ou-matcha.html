@@ -1,0 +1,222 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-16
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Maté ou matcha : lequel choisir ? | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/1_MATCHA-prix.jpg?$staticlink$",
+                "alt": "Maté ou matcha : lequel choisir ? | Kusmi Tea",
+    
+                "titre": "Le grand duel maté VS thé matcha : quelles différences ?",
+                "date": "Publié le <span class='date__color'>25/09/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés",
+    
+                "texte": "Entre le yerba maté, boisson star de l’Amérique latine et le matcha, poudre de thé vert la plus réputée de l’archipel japonais votre coeur balance ? On vous comprend ! Il est souvent difficile de choisir entre ces 2 boissons. Pour vous aider à trancher - du moins temporairement - et décider lequel prendra place en premier dans votre mug préféré, on a cherché à mettre en avant leurs points communs, leurs bienfaits et leurs singularités. Alors qui sera le gagnant de ce match au sommet ?",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté et le matcha sont deux thés aux histoires fascinantes et aux multiples bienfaits. Le maté, originaire d’Amérique du Sud, est une infusion au goût unique, appréciée pour sa teneur en caféine et en antioxydants. Cette boisson, souvent consommée dans une ambiance conviviale, fait partie intégrante de la culture et de la tradition des peuples sud-américains.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez notre gamme de <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/mate'>maté</a></strong> et <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/matcha'>matcha bio</a></strong> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "1/ Maté et matcha, deux mots ressemblants",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si les mots de matcha et de maté se ressemblent, débutant par les trois mêmes lettres, il s’agit d’un hasard linguistique. En effet, &laquo;Matcha&raquo; signifie &laquo;thé moulu&raquo; en japonais, tandis que &laquo;yerba maté&raquo; est un dérivé de &laquo;mati&raquo; en langue quechua (peuple autochtone présent en Argentine, Bolivie, Pérou, Equateur, Chili et Colombie), qui désigne la calebasse ou gourde servant à la préparation du maté. Puis par extension, le terme fut utilisé pour la boisson elle-même.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Que vous cherchiez une boisson pour perdre du poids ou pour booster votre énergie, ces deux thés sont d’excellents choix. Le matcha est connu pour offrir une énergie douce et durable, tandis que le maté apporte une énergie plus immédiate.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "2/ Maté et matcha, deux plantes distinctes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Alors que l’on a tendance à entendre &laquo;thé&raquo; dans le mot maté, cette boisson n’en est pas. Les feuilles servant à l’élaborer sont issues d’une autre plante : la yerba mate. Aujourd’hui cultivée dans plusieurs pays d’Amérique latine, celle-ci poussait à l’état sauvage, quand les Amérindiens Guaranis se sont mis à la consommer il y a plusieurs milliers d’années. A l’inverse, le thé vert matcha, quant à lui, est un thé vert en poudre issu d’une ancienne cérémonie japonaise. Résultat de feuilles de thés broyées entre deux blocs de granit, pour donner une poudre couleur vert émeraude. On la déguste en la faisant mousser dans un bol. La singularité du matcha, par rapport à un autre thé vert, réside dans le fait que la feuille n’est pas seulement infusée, mais entièrement ingérée lors de la dégustation. Un délice de saveurs uniques !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Sa teneur élevée en antioxydants et sa richesse en nutriments en font un véritable allié pour la santé. Cette boisson, consommée depuis des siècles, se distingue par ses saveurs subtiles et son pouvoir énergisant.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "3/ Maté et matcha, une différence d’équipement et de préparation",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Un des points communs entre ces deux boissons, est qu’il sera difficile de les préparer sans certains accessoires. Pour le yerba maté, il vous faudra donc investir dans une gourde, appelée &laquo;calebasse&raquo;, dans lequel le maté est infusé. Ainsi que dans un tube métallique (&laquo;bombilla&raquo;), qui sert à la fois de paille, mais aussi de filtre. Pour préparer un thé matcha dans les règles de l’art, il vous faudra un bol circulaire (appelé &laquo;chawan&raquo; au Japon, et réalisé en porcelaine), un fouet traditionnel (&laquo;chasen&raquo;) en bambou qui sert à battre la poudre de thé pour obtenir une mousse onctueuse, et enfin une petite spatule en bois (&laquo;chasaku&raquo;) qui permet de doser la bonne quantité de matcha.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>NB</strong> : nous vous recommandons vivement d’opter pour des produits bio. L’appellation vous garantit en effet une meilleure qualité et des feuilles élevées dans le respect de l’environnement selon les critères de l’agriculture durable et responsable.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "4/ Le goût du maté VS le goût du matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les deux boissons peuvent être classées dans la même catégorie de goût, celle d’une saveur végétale, légèrement amère. Mais cela reste une généralité, car tous les yerba matés et matchas ne sont pas uniforme en goût. Le maté traditionnel se boit très amer, alors que le maté vert (non affiné) est plus doux, plus aromatisé. Même similitude pour le matcha, dont l’amertume peut être plus ou moins marquée, selon la qualité ou la concentration. Quand l’équilibre entre végétalité et amertume a lieu, on parle alors d’un goût &laquo;umami&raquo;. Un terme japonais qui désigne un après-goût durable et doux. Enfin, on notera que l’on peut jouer sur le goût du maté et du matcha, en les agrémentant d’eau, de sucre ou de lait, par exemple.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "La recette du matcha &laquo;classique&raquo; :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Mettre une cuillère à café de matcha au fond de votre bol.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "En parallèle, faire chauffer de l’eau dans une bouilloire. Ne pas dépasser une température de 70 à 80°C au risque d’abîmer les feuilles de matcha ou de rendre la boisson trop amère.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Verser progressivement l’eau dans le bol et battre la préparation à l’aide du fouet pour obtenir un liquide onctueux voir légèrement mousseux.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Déguster ! Pour la version latte, il suffit d’ajouter du lait.",
+                    })
+                </ol>   
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour en savoir plus sur la préparation du thé matcha, <strong><a class='banniere__link' href='/fr/matcha-preparation/artmm-10.html'>c’est par ici</a></strong> !",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "La recette du maté &laquo;classique&raquo; :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Remplir la calebasse au ⅔ avec les feuilles de yerba maté. Former un tas au fond sur le côté du récipient.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Faire chauffer de l’eau à une température de 70-80°C. Une eau trop chaude rendra la boisson amère. A vous de faire en fonction de vos goûts.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Verser délicatement l’eau dans la bombilla sur le côté vide juste à côté des feuilles de yerba maté.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Placer la bombilla et déguster ! Les feuilles commencent à infuser après 30 secondes.",
+                    })
+                </ol>   
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/gamme-mate-et-matcha.webp?$staticlink$",
+                        "alt": "gamme maté et matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "5/ Les bienfaits du maté VS les bienfaits du matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Maté et matcha ont pour point commun d’être des concentrés d’antioxydants, de minéraux et de vitamines, qui stimulent l’immunité naturelle et ralentissent le vieillissement des cellules. Plus spécifiquement, ceux présents dans le maté aideraient à la concentration, tout en diminuant le cholestérol et la tension artérielle. Autre atout du maté : il aurait un effet coupe-faim, forçant l'organisme à puiser dans ses réserves. Le matcha, quant à lui, comprend une molécule, la théanine, réputée pour agir bénéfiquement sur la mémoire et la concentration.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "A lire aussi : <strong><a class='banniere__link' href='/fr/les-bienfaits-du-mate.html'>Les bienfaits du maté sur la santé</a></strong> et <strong><a class='banniere__link' href='/fr/matcha-the-vertus.html'>Les vertus du matcha sur l’organisme</a></strong>.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "6/ L’effet stimulant du maté VS du matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Maté et matcha ont pour point commun d’être composés de caféine ou de théine (car il s’agit de la même molécule), ce qui en fait des boissons stimulantes, procurant un petit &laquo;coup de boost&raquo;. Contrairement au café, qui est lui un excitant, et dont l’effet est plus fort, mais plus limité dans le temps, matcha et maté ont une action qui s’inscrit plus doucement et  plus longtemps dans le temps. Le matcha reste actif dans l’organisme pendant 8 heures. En agissant sur notre système cérébral, la théine/caféine permet d'accroître la vigilance et de lutter contre l’endormissement. Moins énergisant que le café, matcha et maté, sont en revanche plus stimulant qu’un thé classique. Est-ce que le maté et le matcha empêchent de dormir ? On répondra que &laquo;ça dépend&raquo;, car l'impact de la caféine/théine sur le sommeil dépend de la sensibilité de chacun.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ces deux thés Yerba maté et matcha sont donc 2 plantes entre lesquelles il est souvent difficile de choisir. Goût, préparation, prix, origine, leurs différences ne manquent pas ! Mais celles-ci possèdent toutes deux de nombreux bienfaits : richesse en antioxydants, effet boost grâce à la caféine, renforcement du système immunitaire, etc. Et puis pourquoi choisir ? Il vous suffit d’alterner entre les 2 pour varier les plaisirs !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans un voyage de découverte de nouvelles saveurs, pourquoi ne pas essayer les deux ? Chaque thé raconte une histoire riche, profondément ancrée dans la culture et la tradition de son pays d'origine. Testez-les et découvrez lequel correspond à vos préférences !",
+                })
+            </section>        
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-12')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Guide d’achat : comment choisir un matcha de qualité ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','recette-mate-boisson-argentine')$",
+                    "lien-img": "blog/mate.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Nos Recettes de Matcha Latte",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-4')$",
+                    "lien-img": "blog/1_MATCHA-cafe-1.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Thé matcha VS café : qui sera le gagnant de ce grand duel ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Maté ou matcha : lequel choisir ? | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artmm-16')$",
+            })
+        </section>
+    </div>
+</div>

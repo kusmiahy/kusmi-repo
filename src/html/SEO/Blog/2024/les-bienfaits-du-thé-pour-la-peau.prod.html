@@ -1,0 +1,238 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : les-bienfaits-du-the-pour-la-peau
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Les bienfaits du thé pour la peau | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/kusmi-tea-kettle.webp?$staticlink$",
+                "alt": "Les bienfaits du thé pour la peau | Kusmi Tea",
+    
+                "titre": "Les bienfaits du thé pour la peau",
+                "date": "Publié le <span class='date__color'>07/10/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','thes')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez nos thés",
+    
+                "texte": "Le thé est bien plus qu'une simple boisson. Riche en antioxydants, polyphénols et catéchines, il offre de nombreux avantages pour la santé, mais aussi pour la peau. Qu'il s'agisse de <a class='banniere__link' href='/nos-thes-infusions/notre-selection/thes-earl-grey'>thé noir type Earl Grey</a>, de <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-vert'>thé vert</a> ou même de <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-blanc'>thé blanc</a>, chaque variété possède des propriétés uniques qui favorisent une peau saine et éclatante. Découvrez pourquoi intégrer le thé dans <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-et-infusion-sante'>votre routine quotidienne</a> peut améliorer considérablement la qualité de votre peau.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Pourquoi intégrer le thé dans votre routine quotidienne ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé, sous ses différentes formes, regorge de bienfaits pour la peau. Non seulement il aide à prévenir les signes visibles du vieillissement cutané, mais il agit également comme un bouclier contre les agressions extérieures. Grâce à ses propriétés antioxydantes, il protège la peau des radicaux libres, responsables du vieillissement prématuré",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "De plus, les thés sont reconnus pour leurs actions hydratantes et apaisantes, idéales pour les peaux sensibles et déshydratées. Il est donc intéressant de l'intégrer non seulement dans son alimentation, mais aussi dans sa routine beauté. En effet, de nombreux soins cosmétiques utilisent aujourd'hui les extraits de thé pour leurs vertus purifiantes, apaisantes et régénérantes.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Pourquoi le thé est-il bon pour la peau ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé doit ses effets bénéfiques sur la peau à sa composition unique. Chaque type de thé possède des composants spécifiques qui lui confèrent des propriétés distinctes :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<a class='banniere__link' href='/fr/the-vert-bio-bienfaits.html'>Thé vert : </a>Riche en catéchines, ce thé est un puissant antioxydant qui aide à prévenir les dommages cellulaires et favorise une peau éclatante.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<a class='banniere__link' href='/fr/the-noir-bienfaits-peau/arttn-14.html'>Thé noir :</a> Ses propriétés anti-inflammatoires en font un allié contre les imperfections. Il est également riche en antioxydants, ce qui contribue à lutter contre le vieillissement prématuré.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<a class='banniere__link' href='/fr/the-blanc-proprietes.html'>Thé blanc :</a> Ce thé, peu transformé, est réputé pour ses capacités hydratantes et apaisantes, idéal pour les peaux sensibles.",
+                    })
+                </ul>   
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits du thé noir pour la peau",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Un allié contre les imperfections cutanées",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé noir est particulièrement apprécié pour ses propriétés anti-inflammatoires. Grâce à ses polyphénols, il aide à calmer les inflammations de la peau, comme l'acné. Ces composés réduisent les rougeurs et permettent de purifier les pores en profondeur, aidant ainsi à prévenir les boutons et autres imperfections. Utilisé en masque ou dans des produits nettoyants, le thé noir agit comme un agent purifiant qui laisse la peau plus nette et équilibrée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé noir, un bouclier contre le vieillissement prématuré",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Riche en antioxydants, le thé noir est un excellent allié contre le vieillissement prématuré de la peau. Les radicaux libres, présents dans l'environnement, sont l'une des principales causes de la formation des rides et du relâchement cutané. Les antioxydants, contenus dans le thé noir, neutralisent ces radicaux libres, réduisant ainsi l'apparition des signes visibles de l'âge. En intégrant des soins à base de thé noir dans votre routine, vous pouvez ainsi protéger votre peau et favoriser son raffermissement.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits du thé vert pour la peau",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Un puissant hydratant naturel",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé vert est particulièrement adapté aux peaux sensibles et déshydratées. Grâce à ses propriétés hydratantes et apaisantes, il aide à restaurer la barrière hydrolipidique de la peau, prévenant ainsi la perte d’eau. Appliqué sous forme de crème ou de gel douche hydratant, le thé vert nourrit la peau en profondeur tout en l’apaisant. Il est idéal pour calmer les irritations et les rougeurs, souvent associées aux peaux sèches et sensibles.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé vert pour une peau éclatante et saine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les propriétés purifiantes du thé vert en font également un excellent ingrédient pour les peaux grasses et sujettes aux imperfections. En régulant la production de sébum, il aide à maintenir une peau nette tout en boostant son éclat naturel. Les catéchines et les polyphénols présents dans le thé vert jouent un rôle actif dans la réduction des impuretés, laissant ainsi une peau éclatante, plus saine et équilibrée.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le coffret gel douche avec son thé noir et thé vert Kusmi Tea x Marionnaud : un rituel bien-être complet",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La marque de Marionnaud SKIN.SYSTÈME s'associe à la maison de thé française Made in Normandie Kusmi Tea pour offrir une expérience sensorielle unique à travers le coffret exclusif « Éveil des sens autour du thé ». Ce coffret incarne une invitation au voyage sensoriel et au bien-être. Une fusion parfaite entre les rituels de beauté et les plaisirs savoureux du thé, conçue pour éveiller les sens et procurer un véritable moment de détente et de plaisir. Ensemble, Marionnaud et Kusmi Tea célèbrent l'art d'offrir, mettant en avant des ingrédients d’origine naturelle et promouvant des initiatives plus durables comme un flacon rechargeable. Cette union témoigne de leur engagement envers le bien-être, en proposant des produits qui stimulent à la fois le corps et l'esprit, et en servant leur mission commune de créer des expériences enrichissantes pour leurs clients.",
+                })  
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/marionnaud_portrait.webp?$staticlink$",
+                        "alt": "Marionnaud_Portrait",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Une synergie entre soins corporels et bienfaits du thé pour la peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La collaboration entre Kusmi Tea et Marionnaud a donné naissance à un <a class='banniere__link' href='https://www.marionnaud.fr/idees-cadeaux/coffrets-soin/coffret-soin-corps/bath-body-kusmi-tea-x-skinsysteme-eveil-des-sens-autour-du-the-skinsysteme/p/BP_102987416'>coffret soin corps</a> de gel douche combinant les bienfaits du jasmin et du thé vert. Ce coffret est conçu pour offrir une expérience de soin complète, tout en alliant les propriétés purifiantes et revitalisantes de deux thés : un <a class='banniere__link' href='/fr/vert-jasmin-VJASBIOMASTER.html'>thé vert jasmin</a> et un <a class='banniere__link' href='/fr/anastasia-ANASBIOMASTER.html'>thé Earl Grey nommé Anastasia</a>. Ce coffret est l’occasion parfaite pour vous offrir une journée <a class='banniere__link' href='https://www.marionnaud.fr/conseils-beaute/web/rituel-bien-etre-spa-a-la-maison'>spa à la maison</a> à moindre coût !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé noir pour revitaliser votre peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Profitez du thé noir iconique Anastasia en plus de votre gel douche. Grâce à ses propriétés régénérantes, il redonne à la peau souplesse et fermeté, tout en la protégeant des agressions extérieures.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le thé vert pour apaiser et hydrater votre corps",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gel douche au jasmin et au thé vert, quant à lui, apaise les peaux sensibles et hydrate en profondeur. Idéal pour les peaux sujettes aux irritations, ce soin procure une sensation de fraîcheur et de confort durable après chaque utilisation. Son effet hydratant laisse la peau douce et souple, tout en prévenant la déshydratation cutanée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Un rituel beauté complet pour une peau douce et protégée",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L’utilisation conjointe des gels douche avec du <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-noir'>thé noir</a> et au <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-vert'>thé vert</a> permet d’adopter un rituel beauté complet. En intégrant ces produits dans votre routine quotidienne, vous profitez des bienfaits du thé pour nourrir, protéger et revitaliser votre peau au quotidien.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment intégrer le thé dans votre routine beauté quotidienne ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour profiter pleinement des bienfaits du thé pour la peau, voici quelques conseils :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Utilisez des produits à base de thé :</strong> Les gels douche, crèmes et masques contenant des extraits de thé noir ou vert sont idéaux pour une routine beauté complète.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Appliquez des masques au thé :</strong> Un masque au thé vert une fois par semaine aide à purifier la peau et à réduire les imperfections",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Boire du thé régulièrement :</strong> Consommer du thé quotidiennement, en particulier du thé vert, aide à améliorer l’aspect général de la peau grâce à ses propriétés antioxydantes.",
+                    })
+                </ol>   
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Adoptez le thé sous toutes ses formes pour un bien-être global",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Les bienfaits du thé pour la peau au quotidien : à boire ou à utiliser en soin",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Qu'il soit consommé ou utilisé dans des produits cosmétiques, le thé offre de nombreux bienfaits pour la peau. Hydratation, régénération, protection contre les signes du vieillissement : intégrer le thé dans votre routine quotidienne est une solution naturelle pour une peau éclatante et en pleine santé. Avec des produits comme le coffret gel douche Kusmi Tea x Marionnaud, vous pouvez profiter d’un rituel bien-être complet, à la fois purifiant et apaisant, pour une peau douce et protégée. Vous pouvez également découvrir <a class='banniere__link' href='/fr/puressentiel-routine-soir-sommeil.html'>notre rituel pour bien dormir</a>.",
+                })
+            </section>        
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP_the-vert/Vert_Menthe_Compo-V2.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-noir-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP-the-noir/DSTN0009-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé noir bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','comment-choisir-son-the-blanc')$",
+                    "lien-img": "landing/01-2021_LP_the-vert/DSTN0499-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment bien choisir son thé blanc ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Les bienfaits du thé pour la peau | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','les-bienfaits-du-the-pour-la-peau')$",
+            })
+        </section>
+    </div>
+</div>
