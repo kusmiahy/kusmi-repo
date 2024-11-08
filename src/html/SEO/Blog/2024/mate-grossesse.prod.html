@@ -1,0 +1,225 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-28
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Boire du maté pendant la grossesse
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/grossesse_mate.webp?$staticlink$",
+                "alt": "Boire du maté pendant la grossesse",
+    
+                "titre": "Peut-on boire du maté pendant la grossesse ?",
+                "date": "Publié le <span class='date__color'>04/11/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','mate')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Sélection de maté",
+    
+                "texte": "Le maté, une infusion traditionnelle d'Amérique du Sud, gagne en popularité auprès des femmes enceintes cherchant des alternatives au café. Cependant, il est important de comprendre comment cette boisson affecte le corps pendant la grossesse. Consommer du maté en quantités modérées, environ deux à trois fois par semaine, peut être sans danger pour une future maman.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La grossesse est un événement particulier dans la vie d’une femme. La responsabilité d’une seconde vie est souvent source de doutes et de craintes. « Que puis-je consommer ? Que dois-je manger ? Que dois-je boire ? », toute femme enceinte se pose ces questions. Et les réponses sont souvent peu évidentes à trouver : café, thé, maté font partie des boissons concernant lesquelles Santé Publique France ne donne pas de réponse tranchée. Vous êtes amatrice de maté ? Vous vous posez la question de savoir si vous pouvez continuer à en boire pendant votre grossesse ? Kusmi a rassemblé pour vous les informations disponibles sur le sujet. Nous tenons néanmoins à rappeler que rien ne remplace l’avis d’un médecin et vous encourageons à consulter en cas de question ou de doute.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Boire du yerba maté enceinte : est-ce possible ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une consommation raisonnable de caféine, soit 1 à 2 tasses de maté par jour, est préconisée par l’OMS afin d’écarter tout risque pour le bébé. Cela reviendrait à limiter votre apport en caféine à moins de 200 mg par jour.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "N’hésitez pas à demander conseil à votre médecin",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Au début de votre grossesse, consultez votre médecin afin de lui demander conseil à propos de votre alimentation et de votre consommation de boissons caféinées, entre autres.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La vigilance reste donc de mise : chaque femme n’ayant pas la même tolérance à la caféine et chaque grossesse étant différente. Si vous vous posez des questions ou avez des doutes concernant votre consommation de maté, n’hésitez pas à demander l’avis de votre médecin ou professionnel de santé. Il saura vous aiguiller et vous conseiller au mieux.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Grossesse et yerba maté : avec modération !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La <a class='banniere__link' href='/fr/mate-cafeine/artmm-9.html'>caféine présente dans le maté</a> est un stimulant naturel. Il est donc important de modérer sa consommation pendant la grossesse.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Attention également à ne pas multiplier les sources de caféine au risque de dépasser les doses recommandées. La quantité de yerba maté bue doit être ajustée en fonction des autres boissons consommées par la femme enceinte au cours de sa journée.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Au vu du peu d’informations disponibles sur les effets du yerba maté pendant la grossesse et l’allaitement, l’AEM (Agence Européenne des Médicaments) conseille une consommation restreinte pendant cette période.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'hydratation est essentielle pendant la grossesse, et bien que l'eau reste la meilleure option, une infusion de maté peut également contribuer à cet objectif. Les enceintes doivent être particulièrement attentives à leur consommation de boissons contenant de la caféine, y compris le maté, pour éviter tout risque de complications.",
+                })     
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les effets du yerba maté sur la santé et l’organisme",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté possède de nombreux bienfaits pour la santé et l’organisme :",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté se prépare en infusant des feuilles dans de l'eau chaude. Certaines femmes préfèrent ajouter une touche de lait pour adoucir le goût, faisant de cette infusion une expérience agréable pour toute la famille. Il est toutefois crucial de consulter un professionnel de santé avant d'intégrer cette boisson dans votre routine hebdomadaire, surtout pendant la grossesse.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est un stimulant naturel et apporte de l’énergie en réduisant la sensation de fatigue. Cet effet provient de sa teneur en caféine. Boire une tasse de maté le matin vous fournira l’énergie nécessaire pour effectuer votre journée.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté est un puissant antioxydant en raison de la présence de polyphénols. Ces molécules permettent de renforcer les défenses immunitaires et de ralentir le vieillissement prématuré des cellules.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ensuite, le maté contient des vitamines (A, B2 et B3) et minéraux (magnésium, zinc, potassium et fer).",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Enfin, le maté aiderait à la digestion. Une aide en cas de repas trop copieux ou de digestion difficile.",
+                })     
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les alternatives au yerba maté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les sources animales sont <strong>riches en fer</strong>. Par exemple, parmi les aliments les plus riches en fer, on compte le boudin noir, les fruits de mer, les abats et la viande rouge.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Evidemment, les régimes végétariens ne sont pas pour autant dépourvus de fer. Les aliments céréaliers complets, les fruits à coque, les légumineuses (lentilles), certains légumes verts (épinards) sont aussi de bonnes sources de fer.",
+                })    
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La consommation de thé vert est-elle problématique pour certaines personnes ?",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Le Rooibos",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Parmi celles-ci, on peut citer le <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/rooibos-bio'>rooibos</a></strong>, un thé rouge sans théine venu d’Afrique du sud. Il possède tous les bienfaits d’un thé (antioxydant) mais sans les inconvénients liés à la présence de théine ou caféine. A consommer sans modération !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Les infusions",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pensez aussi aux <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/infusion-et-tisane'>infusions</a></strong> ! Tilleul, verveine, camomille, seront vos meilleures amies si vous souhaitez vous détendre et vous relaxer.",
+                })    
+            </section>
+            
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Kusmi Tea, un maté bio made in France",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi vous propose un thé maté de grande qualité, un produit sain et bio. Notre marque garantit un savoir-faire made in Normandie pour une approche locale, responsable et conviviale ! Découvrez toutes les saveurs proposées dans notre gamme de matés : citron, pamplemousse, gingembre ou encore ortie !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Psst…",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une paille à maté, la fameuse bombilla, est disponible chez Kusmi Tea pour boire votre boisson préférée !",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Comment bien préparer un yerba maté ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous aurez besoin d’une calebasse (tasse à maté), d’une bombilla (paille à maté) et de feuilles de maté bio. Vous devez remplir les ¾ de votre calebasse avec du maté. Mettez la main sur le trou et retournez délicatement le récipient de manière à ce que la poudre tombe. En parallèle, faites chauffer de l’eau. La température ne doit pas dépasser 80°C au risque d'endommager les feuilles ou de rendre le goût trop amer. une fois que l’eau est chaude, versez-la dans votre calebasse. Le temps d’infusion dépend de vos goûts. Placez la bombilla dans le bol. Une fois le degré d’infusion atteint, vous pouvez déguster !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Boire du maté pendant la grossesse, oui, mais avec modération ! N’hésitez pas à demander conseil à votre médecin. Avec toutes ces précautions, vous pourrez continuer à boire votre maté sans risque pour votre bébé. Sinon, optez plutôt pour un rooibos ou une infusion bio !",
+                })
+            </section>
+               
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv23')$",
+                    "lien-img": "blog/1_MATCHA-enceinte.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les femmes enceintes peuvent-elles boire du thé matcha pendant la grossesse ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv6')$",
+                    "lien-img": "blog/1-THE-vert-grossesse.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Femme enceinte : Peut-on boire du thé vert pendant la grossesse ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','les-bienfaits-du-mate')$",
+                    "lien-img": "landing/01-2021_LP_MATE/mate-uruguay-yerba-mano-paisaje-landscape-1432343-pxhere.com.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Origines et 6 bienfaits : tout savoir sur le maté",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Boire du maté pendant la grossesse",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artmm-28')$",
+            })
+        </section>
+    </div>
+</div>

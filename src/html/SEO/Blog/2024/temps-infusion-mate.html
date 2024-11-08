@@ -1,0 +1,301 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artmm-7
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Temps d’infusion et préparation du maté | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/the_origine_mate.webp?$staticlink$",
+                "alt": "Temps d’infusion et préparation du maté | Kusmi Tea",
+    
+                "titre": "Temps d’infusion et préparation : comment bien faire son maté ?",
+                "date": "Publié le <span class='date__color'>11/10/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','mate')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrez le maté",
+    
+                "texte": "Le maté est une boisson traditionnelle d'Amérique du Sud, riche en caféine, offrant un coup de boost naturel. Sa préparation est simple mais nécessite quelques étapes clés pour un goût authentique. Commencez par remplir un tiers de votre calebasse, le récipient traditionnel, avec l'herbe de maté. Ensuite, inclinez légèrement la calebasse pour que les parois du récipient soient couvertes. Il peut être infusé à la méthode traditionnelle ou comme le thé. De quelle manière préparer un bon maté ? Quel temps d’infusion faut-il respecter ? Kusmi Tea vous accompagne étape par étape.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté est apprécié pour ses nombreuses infusions, car il peut être réinfusé plusieurs fois tout en conservant sa forte teneur en caféine. Choisissez un produit de qualité pour profiter pleinement de cette boisson énergisante et vivifiante, idéale pour commencer la journée ou partager entre amis.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Il est généralement préparé en versant de l’eau chaude sur les feuilles et peut être dégusté dans une simple tasse. L’utilisation d’un filtre permet de retenir les particules fines et de profiter pleinement de l’infusion.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez la <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/mate'>gamme de maté bio Kusmi Tea</a></strong> constituée de nos best sellers :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Thé Minceur :</strong>  mélange de thé vert, maté, fraise et cerise",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>BB Detox :</strong> mélange de thé vert, maté et pamplemousse",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Blue Détox :</strong> mélange de thé vert, maté et ananas",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Detox :</strong> mélange de thé vert, maté et citron",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Boost :</strong> mélange de thé vert, maté et gingembre",
+                    })
+                </ul>    
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/gamme_de_mate.webp?$staticlink$",
+                        "alt": "Gamme de mate",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "La préparation traditionnelle du yerba maté en 5 étapes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour respecter la méthode traditionnelle de préparation du maté, il vous faut une calebasse et une bombilla. En Argentine, la calebasse est une courge sèche et creuse servant de récipient. Il existe aussi des pots à maté en bois de diverses formes. La bombilla sert de paille filtrante.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cette boisson permet de nombreuses infusions, ce qui prolonge l’expérience de dégustation. Que ce soit en version simple ou agrémentée de saveurs supplémentaires, le maté conserve une place importante dans les habitudes de consommation, offrant une alternative stimulante aux boissons comme le café, tout en restant fidèle à ses racines traditionnelles. Les parois du récipient permettent de diffuser la chaleur de manière uniforme, créant une boisson réconfortante qui réveille les sens.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour bien doser les feuilles, une cuillère est utilisée afin de garantir une intensité adaptée aux goûts de chacun. Choisir un bon <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/mate'>produit de maté</a> est essentiel pour obtenir une boisson riche en saveurs et en bienfaits. Que vous le consommiez au quotidien ou occasionnellement, le maté reste une alternative stimulante aux autres boissons chaudes grâce à ses propriétés naturelles et son mode de préparation simple.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez ci-dessous les 5 étapes à suivre pour la préparation de votre meilleur maté et des conseils concernant le temps d’infusion !",
+                })     
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "1. Curez la calebasse",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Déposez les feuilles de maté dans le récipient, ajoutez de l’eau chaude et laissez infuser toute une nuit. Le lendemain, videz l’eau et récupérez les feuilles à faire sécher. Grattez le fond de la calebasse avec une cuillère pour éliminer les résidus. Faites-la sécher tête en bas.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "2. Remplissez-la de feuilles de yerba maté",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Remplissez la calebasse aux ¾ de yerba maté, puis agitez-la en recouvrant le dessus avec votre main. Jetez le dépôt de poudre récolté.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "3. Laissez infuser les feuilles",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Inclinez la calebasse sur un côté pour former un puits, ajoutez-y de l’eau froide. Laissez infuser 5 minutes.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "4. Insérez la bombilla",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Mettez la bombilla au fond du puits et tassez les feuilles. Ne touchez plus votre filtre.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "5. Versez l’eau chaude et dégustez votre boisson",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Versez de l’eau chaude, entre 70 °C et 80 °C, à travers la bombilla. Attention à ne pas servir l’eau bouillante au risque de brûler les feuilles. Laissez infuser 5 à 10 minutes. Il ne vous reste plus qu’à savourer votre maté avec la paille de la bombilla tout au long de la journée ! Le temps d’infusion dépend évidemment du goût que vous souhaitez donner à votre boisson.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bon à savoir : plus l’eau sera chaude, plus votre maté sera amer. C’est pourquoi, il est recommandé de ne pas la servir bouillante.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Infusion : combien de fois puis-je réinfuser le yerba maté ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi vous conseille de boire votre maté dans la même journée. Vous pouvez le réinfuser une dizaine de fois. Ensuite, il se dénature, vous le sentirez à son goût très amer.",
+                })
+                    @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le maté est une bonne alternative au thé ou au café et permet d’apporter un peu nouveauté et d’exotisme dans sa journée en variant les plaisirs.",
+                })
+                    @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En boutique et sur le site, plusieurs recettes à base de maté made in Normandie issus de l’agriculture biologique sont proposées. Nous mettons un point d’honneur à respecter notre engagement en faveur du développement durable au travers de nos actions.",
+                })  
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2024/gamme_shootime_mate.webp?$staticlink$",
+                    "alt": "Gamme mate",
+                })
+            </div>
+            </section>
+            <section class="block">
+            @@include('_components/h2.html', {
+                "titre": "Et si je veux préparer le yerba maté autrement ? Nos idées de préparation",
+            })
+            @@include('_components/paragraphe.html', {
+                "class": "block__p",
+                "texte": "Vous pouvez préparer un maté de qualité de façon originale. Voici quelques idées !",
+            })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Maté cocido",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vous voulez boire un maté à la méthode espagnole ? C’est simple, procédez comme avec un thé classique, à l’aide d’une passoire ou une boule à thé.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "<strong>Le petit plus :</strong>",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Humidifiez le maté avec de l’eau froide pour qu’il conserve tous ses arômes. Versez ensuite l’eau chaude et laissez infuser 5 minutes.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Gringo style",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Voilà une méthode stylée ! Il s’agit d’un mix entre la préparation traditionnelle et espagnole :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Versez le maté dans une grande tasse ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez de l’eau froide ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Placez la bombilla ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Remettez de l’eau chaude ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez infuser 8 minutes.",
+                    })
+                </ul>   
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Maté térere",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La version fraîche pour un été paraguayen vous tend les bras :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Mettez 4 cuillères de maté dans une cafetière à piston ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez 1 litre d’eau frémissante ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Infusez 5 à 8 minutes ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Filtrez et laissez la boisson refroidir ;",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez du jus de citron ou du miel pour aromatiser et savourez !",
+                    })
+                </ul>   
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Préparer un bon yerba maté tout en conservant les arômes, c’est possible ! Soyez original en variant les méthodes, mais surtout, respectez le temps d’infusion et la température de l’eau. Buvez-le chaud ou froid selon vos envies ! Rien ne se perd dans le maté, il peut se réinfuser toute la journée. De quoi varier les plaisirs et remplacer le thé ou le café tout en profitant des nombreux bienfaits de cette plante. Alors envie de partir en Argentine ?",
+                })
+            </section> 
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "A lire aussi sur le même thème :",
+                })
+                </section>       
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','les-bienfaits-du-mat')$",
+                    "lien-img": "landing/01-2021_LP_MATE/mate-uruguay-yerba-mano-paisaje-landscape-1432343-pxhere.com.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Origines et 6 bienfaits : tout savoir sur le maté",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-3')$",
+                    "lien-img": "blog/1_MATE-soir.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le maté empêche-t-il de dormir le soir ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-16')$",
+                    "lien-img": "blog/1_MATCHA-prix.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le grand duel maté VS thé matcha : quelles différences ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Temps d’infusion et préparation du maté | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artmm-7')$",
+            })
+        </section>
+    </div>
+</div>
