@@ -69,6 +69,7 @@ $article-title: #731f4b;
                     text-decoration: underline;
                 }
             }
+
         }
 
         .texte__h1 {
@@ -183,6 +184,32 @@ $article-title: #731f4b;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+
+    &__cta {
+        margin-block: 1rem 0;
+        font-size: $paragraphe-size-mob;
+        padding: .7rem 1.5rem;
+        color: #000;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        font-weight: 600;
+        // margin-bottom: 1rem;
+        transition: all .2s ease-in;
+
+        max-width: 80%;
+        text-align: center;
+
+        @include min1024() {
+            font-size: $paragraphe-size-desk;
+            // margin-block: 1rem 0;
+            order: 1;
+        }
+
+        &:hover {
+            background: #000;
+            color: #fff;
         }
     }
 
