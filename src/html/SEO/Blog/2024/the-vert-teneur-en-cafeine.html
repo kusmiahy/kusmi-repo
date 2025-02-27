@@ -1,0 +1,187 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv8
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Thé vert et théine : un thé qui réveille ? | Kusmi Tea
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/gamme_thes_vert.webp?$staticlink$",
+                "alt": "thé vert et théine Kusmi Tea",
+    
+                "titre": "Le thé vert contient-il de la caféine ou de la théine ?",
+                "date": "Publié le <span class='date__color'>04/11/2024</span>",
+                "url-produit": "$url('Search-Show','cgid','vert')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Découvrir nos thés verts",
+    
+                "texte": "Qu’il soit noir ou vert, le thé comprend de la théine. Mais quand on découvre que théine et caféine sont en réalité une seule et même molécule, là ça se complique un peu plus… Et oui, la teneur en caféine du thé vert est bien réelle ! Kusmi Tea vous explique quelle est son action sur l’organisme ? A-t-elle des bienfaits sur la santé ?",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "De quoi est composé le thé vert ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "D’abord, le thé vert est composé des feuilles du théier, qui ont été séchées après la récolte. Mais si on passe ces feuilles à la loupe, on constate qu’elles contiennent des polyphénols ou catéchines et plus particulièrement des EGCG (des molécules organiques largement présentes chez les végétaux), mais aussi des vitamines, des oligo-éléments et minéraux... Et de la théine !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le thé vert, notamment le matcha, est apprécié pour ses saveurs uniques et ses multiples bienfaits sur l'organisme. Originaire de Chine et du Japon, ce thé regorge d'ingrédients essentiels comme les polyphénols et la caféine (également appelée théine). Chaque infusion libère ces composés actifs, offrant à la fois un effet stimulant doux et constant tout au long de la journée.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Qu’est-ce que la théine, molécule contenue dans tous les thés verts ?",
+                })      
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Présente dans les feuilles de thé vert, la théine se libère dès qu’elles sont plongées dans l’eau chaude. La théine est alors considérée comme le principal actif du thé. C’est un alcaloïde, une substance organique d'origine végétale. La particularité des alcaloïdes, c’est que ces molécules contiennent toutes au moins un atome d’azote dans leur constitution. Mais alors pourquoi dit-on que les thés contiennent de la caféine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Contrairement au café, le thé vert est souvent préféré pour une consommation régulière, car il est moins excitant. Toutefois, pour ceux qui recherchent une boisson sans caféine, les tisanes sont une excellente alternative.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/defense_immu_sachets.webp?$staticlink$",
+                        "alt": "sachets defense immunitaire",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Théine et caféine, est-ce la même chose ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si on a, pendant un temps, pensé le contraire, théine et caféine sont la même molécule. La différence entre les deux boissons chaudes - les plus consommées au monde - vient du fait que le café en contient en plus grande quantité : trois à quatre fois plus que dans une tasse de thé. C’est pour cela qu’on considère le café comme un excitant, tandis que le thé est lui considéré seulement comme un stimulant. Le thé vert n’est donc pas un excitant. Les effets du thé sont beaucoup plus diffus et constants dans le temps, là où le café fournit des “coups de boost”. Des différences de concentration que l’on constate aussi entre les différents types de thé : le thé noir est le plus riche en théine (notamment parce qu’il la libère plus rapidement), devant le thé vert et le thé blanc, réputé comme le plus “léger”.",
+                })     
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "À quoi sert la théine/caféine ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans la nature, dans les graines, les feuilles, les fruits, la théine/caféine a un effet défensif. Elle agit comme un insecticide naturel, afin de lutter contre les prédateurs. Mais chez les humains, la théine (caféine) agit comme un stimulant, nous donnant de l’énergie.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Quel est l’impact de cette molécule sur la santé ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Elle est donc intéressante d’un point de vue santé ! Libérée progressivement dans l’organisme pendant six heures, la théine (caféine) boosterait ainsi la concentration et nos facultés de mémorisation. L’autre effet de la théine est diurétique : elle permet à l’organisme d’éliminer davantage d’eau et de sel qu’en temps normal. Pas mal non ?",
+                })  
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "L’effet stimulant de la théine dans le thé vert est-il le même pour chacun ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La stimulation ressentie, le taux d’absorption de la théine/caféine, et la tolérance sera propre à chacun. Alors que l’effet stimulant et énergisant du thé vert est recherché par certains, car jugé bénéfique, d’autres pourront, au contraire, vouloir s’en passer. C’est le cas des personnes sensibles à la caféine, qui peuvent redouter le fait d’avoir du mal à s’endormir. Le thé noir représentera une très bonne alternative pour les personnes recherchant une boisson à mi-chemin entre le thé vert et le café.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2024/the_vert_chine.webp?$staticlink$",
+                        "alt": "the vert chine",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment “déthéiner” du thé vert ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si l’on peut, bien évidemment, opter pour d’autres boissons chaudes sans théine/caféine, comme <a class='banniere__link' href='/fr/nos-thes-infusions/infusions/infusion-et-tisane'>les tisanes</a> ou <a class='banniere__link' href='https://www.kusmitea.com/fr/nos-thes-infusions/infusions/rooibos-bio'>le rooibos</a>, on peut aussi alléger la présence de théine dans sa tasse de thé vert ou de thé matcha. Pour ce faire, il suffit de faire infuser le thé une première fois pendant une minute, puis de jeter cette première eau, contenant le plus de caféine. On garde ensuite le même thé (le même sachet, la même boule à thé...) qu’on fait infuser une nouvelle fois, dans une nouvelle eau. Cette deuxième infusion sera beaucoup plus légère en théine, tout en préservant les saveurs de notre thé vert préféré.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Optez pour du bio avec les thés verts bio Kusmi Tea",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour profiter au mieux des bienfaits du thé vert, Kusmi Tea vous recommande d’opter pour du bio. L’appellation vous garantit un thé sans pesticide et de nombreux contrôles qualité effectués lors de l’élaboration du produit. De quoi boire sa tasse en toute sérénité !",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Kusmi Tea vous propose une <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-vert'>gamme de thés verts bio</a>, garantissant un produit de qualité, sans pesticides, pour une consommation en toute sérénité. Profitez des effets bénéfiques du thé vert sur la concentration et la santé, tout en savourant les traditions millénaires venues de Chine et du Japon.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Thé vert et <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-noir'>thé noir</a> contiennent donc de la caféine/théine mais en plus petite quantité que celle contenue dans le café. Celle-ci joue un rôle important sur l’organisme et la santé en apportant une dose d’énergie dans notre quotidien. Contrairement au café qui est considéré comme un excitant, le thé est au contraire rangé dans la famille des stimulants. Découvrez notre gamme de thés verts bio Kusmi Tea, vous allez l’adorer !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-vert-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP_the-vert/DSTN0500-V2.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert fait-il maigrir ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv16')$",
+                    "lien-img": "blog/articles/2024/matcha/latte-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boire du thé matcha pour maigrir : bonne ou mauvaise idée ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Thé vert et théine : un thé qui réveille ? | Kusmi Tea",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttv8')$",
+            })
+        </section>
+    </div>
+</div>
