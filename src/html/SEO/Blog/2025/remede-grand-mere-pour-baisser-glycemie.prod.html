@@ -1,0 +1,316 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : remede-grand-mere-pour-baisser-glycemie
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Quel remède de grand-mère pour baisser la glycémie ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/remede-grand-mere-pour-baisser-glycemie/theiere_japonaise.webp?$staticlink$",
+                "alt": "Tisanes qui baisse la glycémie",
+    
+                "titre": "Les remèdes de grand-mère pour faire baisser la glycémie",
+                "date": "Publié le <span class='date__color'>04/03/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','toutes-infusions')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Nos tisanes",
+    
+                "texte": "La glycémie élevée peut entraîner des complications de santé, notamment pour les personnes atteintes de diabète de type 2. Si l’alimentation et l’activité physique jouent un rôle essentiel dans la régulation du taux de glucose dans le sang, certaines infusions à base de plantes peuvent aussi offrir des bienfaits naturels. Les remèdes de grand-mère pour baisser la glycémie existent depuis des siècles et s’appuient sur des ingrédients riches en principes actifs. Voici une sélection des meilleures tisanes pour favoriser l'équilibre glycémique et optimiser votre bien-être.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les plantes aux vertus hypoglycémiantes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Certaines plantes sont reconnues pour leurs effets sur la glycémie et leur capacité à améliorer la sensibilité à l’insuline. Intégrées à votre alimentation sous forme d’infusions, elles aident à maintenir un taux de glucose stable.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "1 - Cannelle : l’épice régulatrice de glycémie",
+                })  
+                    @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La cannelle est un remède naturel puissant pour réguler le taux de sucre dans le sang. Elle agit sur la sensibilité à l’insuline et limite les pics glycémiques après les repas.",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Infuser un bâton de cannelle dans une tasse d’eau chaude pendant quelques minutes pour une boisson savoureuse.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajouter une cuillère à café de poudre de cannelle à de l’eau chaude et laisser infuser quelques minutes.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Consommer entre 1 et 6 g de cannelle par jour pour profiter de ses effets bénéfiques.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Nous vous proposons aussi une <a class='banniere__link' href='/fr/pomme-cannelle-INPCBIOMASTER.html?v=21279A1120'>tisane pomme-cannelle</a> bio !",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/remede-grand-mere-pour-baisser-glycemie/tisane_pomme_cannelle.webp?$staticlink$",
+                        "alt": "Boite sachets Pomme Cannelle",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "2 - Myrtille : un soutien naturel pour la glycémie",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les feuilles de myrtille sont traditionnellement utilisées pour leurs bienfaits sur la glycémie. Pour une tisane efficace, faites infuser des feuilles séchées dans de l’eau chaude pendant cinq minutes avant de filtrer et de déguster.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "3 - Fenugrec : une graine aux bienfaits méconnus",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le fenugrec est riche en fibres solubles qui ralentissent l'absorption des glucides et favorisent la stabilisation de la glycémie. Pour une infusion efficace, faites tremper une cuillère à soupe de graines de fenugrec dans un verre d’eau toute la nuit et consommez cette boisson à jeun le matin. Une autre méthode consiste à faire bouillir les graines pendant quelques minutes dans de l’eau avant de boire l’infusion.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "4 - Gingembre : un allié puissant pour le pancréas",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingembre possède des effets anti-inflammatoires et favorise la production d’insuline par le pancréas. Une infusion de gingembre frais réduit la résistance à l’insuline et aide à réguler la glycémie. Pour la préparer, râpez un petit morceau de gingembre frais et laissez-le infuser dans de l’eau bouillante pendant dix minutes.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "5 - Pissenlit : un dépuratif naturel",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les feuilles de pissenlit peuvent favoriser l’absorption du glucose par les cellules musculaires et contribuer à la régulation de la glycémie. Faites infuser des feuilles de pissenlit fraîches ou séchées dans de l’eau chaude pendant dix minutes.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "6 - Ginseng : une racine adaptogène",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le ginseng est utilisé depuis des siècles pour ses effets sur la glycémie et la gestion du stress. Il améliore la sensibilité à l'insuline et aide à contrôler les niveaux de glucose dans le sang. Une infusion à base de racine de ginseng séchée permet de profiter de ses bienfaits.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/remede-grand-mere-pour-baisser-glycemie/racine_ginseng.webp?$staticlink$",
+                        "alt": "Racine de ginseng",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "7 - Thé vert et thé noir : des antioxydants puissants",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href='/fr/the-vert-bio-bienfaits.html'>thé vert est connu pour ses nombreux bienfaits</a> sur la santé, notamment sur la régulation de la glycémie. Les catéchines qu’il contient peuvent améliorer la sensibilité à l’insuline et réduire la résistance à celle-ci. Privilégiez du <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-vert'>thé vert bio</a> non sucré et laissez-le infuser quelques minutes dans de l’eau chaude.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le <a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/the-noir'>thé noir</a>, grâce à sa fermentation, est riche en polyphénols qui aident à réduire l'absorption du glucose dans l'intestin. Cette action sur le métabolisme des sucres en fait un excellent allié pour modérer les pics de glycémie.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "8 - Autres plantes bénéfiques",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Chicorée</strong> : Sa richesse en inuline contribue à ralentir l’absorption des glucides et favoriser un bon équilibre glycémique.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong><a class='banniere__link' href='/fr/nos-thes-infusions/infusions/rooibos-bio'>Rooibos </a></strong>: Ce thé sans théine contient des antioxydants spécifiques qui aident à prévenir les pics de sucre dans le sang.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Thym</strong> : Ses composés phénoliques, comme le thymol et le carvacrol, participent à une meilleure régulation glycémique.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Aloe vera</strong> : Connu pour ses effets sur la peau, il possède aussi des propriétés hypoglycémiantes en améliorant la gestion du glucose sanguin.",
+                    })
+                </ul>    
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "L'importance de la régulation de la glycémie dans la gestion du poids",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Saviez-vous que le taux de glycémie a un impact direct sur le poids ? En effet, contrôler les niveaux de sucre dans le sang est essentiel pour maintenir un métabolisme sain et favoriser la combustion des graisses de manière efficace. Voici pourquoi la gestion de la glycémie est si importante dans votre parcours de perte de poids :",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte"><ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Stabiliser votre appétit</strong> : Une glycémie instable entraîne des fringales et favorise la consommation excessive de glucides.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Favoriser la combustion des graisses </strong>: Un taux élevé d'insuline favorise le stockage des graisses, tandis qu'une glycémie équilibrée facilite leur élimination.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Maintenir un niveau d’énergie stable </strong>: Une glycémie bien contrôlée évite les coups de fatigue et améliore la motivation pour l'exercice.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Améliorer l'humeur </strong>: Les fluctuations glycémiques influencent l’état émotionnel. Une régulation efficace favorise une meilleure stabilité mentale.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez notre thé enrichi en thé vert, <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html?v=21254A1070'>Rituel Minceur</a>.",
+                })        
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/remede-grand-mere-pour-baisser-glycemie/rituel_minceur.webp?$staticlink$",
+                        "alt": "Boite vrac Rituel Minceur",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Tableau récapitulatif des tisanes les plus efficaces contre la glycémie",
+                })
+                <table class="blog__table font-barlow">
+                    <thead>
+                        <tr>
+                            <th>Plante</th>
+                            <th>Effets sur la glycémie</th>
+                            <th>Mode de consommation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cannelle</td>
+                            <td>Améliore la sensibilité à l'insuline</td>
+                            <td>Infusion de poudre ou bâton</td>
+                        </tr>
+                        <tr>
+                            <td>Myrtille</td>
+                            <td>Aide à stabiliser la glycémie</td>
+                            <td>Infusion de feuilles séchées</td>
+                        </tr>
+                        <tr>
+                            <td>Fenugrec</td>
+                            <td>Réduit l'absorption des glucides</td>
+                            <td>Eau infusée à froid ou bouillie</td>
+                        </tr>
+                        <tr>
+                            <td>Gingembre</td>
+                            <td>Stimule le pancréas</td>
+                            <td>Infusion de racine fraîche</td>
+                        </tr>
+                        <tr>
+                            <td>Pissenlit</td>
+                            <td>Favorise l’absorption du glucose</td>
+                            <td>Infusion de feuilles</td>
+                        </tr>
+                        <tr>
+                            <td>Ginseng</td>
+                            <td>Régule le stress et la glycémie</td>
+                            <td>Infusion de racine séchée</td>
+                        </tr>
+                        <tr>
+                            <td>Thé vert et noir</td>
+                            <td>Améliore la sensibilité à l’insuline</td>
+                            <td>Infusion de feuilles</td>
+                        </tr>
+                        <tr>
+                            <td>Chicorée</td>
+                            <td>Modère l'absorption des sucres</td>
+                            <td>Infusion de racine torréfiée</td>
+                        </tr>
+                        <tr>
+                            <td>Rooibos</td>
+                            <td>Limite les pics de glycémie</td>
+                            <td>Infusion de feuilles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les tisanes sont un remède de grand-mère simple et efficace pour aider à réguler la glycémie naturellement. L’association de plantes comme la cannelle, la myrtille, le fenugrec, le gingembre ou le ginseng permet de stabiliser le taux de sucre dans le sang tout en profitant de leurs bienfaits pour la santé. Intégrer ces infusions à une alimentation équilibrée et un mode de vie actif maximise leurs effets positifs.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour varier les plaisirs et optimiser votre bien-être, explorez notre sélection de thés et infusions bio Kusmi Tea.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','remedes-grand-mere-reduire-cholesterol')$",
+                    "lien-img": "blog/articles/2025/remedes-grand-mere-cholesterol/the_vrac.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les remèdes de grand-mère pour faire baisser le cholestérol naturellement",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','remedes-grand-mere-systeme-immunitaire')$",
+                    "lien-img": "blog/articles/2025/remedes-grand-mere-systeme-immunitaire/boite_rituel.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les remèdes de grand-mère pour renforcer le système immunitaire : secrets naturels pour une santé optimale",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','the-noir-bio-bienfaits')$",
+                    "lien-img": "landing/01-2021_LP-the-noir/DSTN0009-2.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé noir bio et ses bienfaits",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Quel remède de grand-mère pour baisser la glycémie ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','remede-grand-mere-pour-baisser-glycemie')$",
+            })
+        </section>
+    </div>
+</div>

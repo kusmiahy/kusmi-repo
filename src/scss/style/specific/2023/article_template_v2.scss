@@ -810,3 +810,20 @@ ol li {
         }
     }
 }
+
+.blog__table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    @include min768() {
+        font-size: 1rem;
+    }
+    letter-spacing: 1px;
+    text-align: center;
+
+    th, td {
+        border: 1px solid rgb(160 160 160);
+        padding: 8px 10px;
+    }
+}
+ 
