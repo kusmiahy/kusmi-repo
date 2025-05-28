@@ -1,0 +1,150 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : arttv4
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Thé matcha : nos idées recettes pour l'utiliser en cuisine ?
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+            <!-- titre -->
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2024/recette-matcha.webp?$staticlink$",
+                "alt": "Recette Matcha",
+    
+                "titre": "Thé matcha : nos idées recettes pour l'utiliser en cuisine ?",
+                "date": "Publié le <span class='date__color'>07/05/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','matcha')$",
+                "lien-categorie": "blog/?filter=le-the",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Nos Matcha",
+    
+                "texte": "Plébiscité pour sa saveur végétale et son amertume délicate, le <strong><a class='banniere__link' href='/fr/nos-thes-infusions/types-de-the/matcha'>thé matcha</a></strong> est considéré comme l’un des thés les plus précieux. Star des desserts japonais, il est de plus en plus utilisé en cuisine. La preuve en quelques recettes qui devraient vous mettre l’eau à la bouche...",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Le thé matcha, un ingrédient de choix pour vos recettes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La grande singularité du <strong>thé vert matcha</strong> réside dans le fait qu’il n’est pas seulement infusé, mais entièrement ingéré lors de la dégustation. Délicatement broyées entre deux meules de pierre, les <strong>feuilles de thé</strong> se présentent sous forme de poudre. À l’aide d’un fouet en bambou, cette dernière est absorbée par l’eau, jusqu’à devenir un savoureux mélange mousseux vert émeraude. Objet d’une cérémonie du thé, devenue emblématique du <strong>Japon</strong>, le <strong>thé matcha</strong> est aussi <strong>utilisé en cuisine</strong>. Le plus souvent en <strong>pâtisserie</strong>, car son amertume et sa végétalité se marient très bien aux saveurs sucrées. De plus, sa couleur verte caractéristique apporte une touche d’originalité et d’esthétique aux recettes les plus classiques.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Recettes de boissons au thé matcha",
+                })
+                    @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En dehors du <strong><a class='banniere__link' href='/fr/matcha-VCHABIOMASTER.html?v=21695A1040'>thé matcha</a></strong> préparé de façon traditionnelle, du <strong>matcha latte</strong> (au lait de vache ou au lait végétal) ou du rafraîchissant <strong>matcha latte glacé</strong>, plusieurs autres boissons le mettent à l’honneur. Parmi elles,  le <strong><a class='banniere__link' href='/fr/recette-dalgona-the-matcha.html'>Dalgona Matcha</a></strong> est originaire de Corée du Sud. Traditionnellement, il s’agit d’un café fouetté obtenu en mélangeant du café en poudre, de l’eau et du sucre, le tout arrosé de lait… sauf qu’ici le café est remplacé par du thé matcha. À tester également : le café matcha glacé, le <strong>bubble tea matcha</strong>, le <strong>smoothie au thé matcha</strong>, le milkshake au thé matcha ou le cocktail matchajito (à consommer avec modération !).",
+                }) 
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/2-MATCHA-cuisine.png?$staticlink$",
+                        "alt": "Thé matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Recettes d’entrées et de plats au thé matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les recettes salées comprenant du thé matcha sont plus rares. Mais on aimait bien l’idée de vous en suggérer quand même quelques-unes, notamment si vous vous lancez un jour le défi d’organiser un <strong>dîner au thé matcha</strong>, <strong>de l’entrée au dessert (chiche ?)</strong>. Parmi les recettes japonaises traditionnelles, on vous recommande de commander un jour des <strong>nouilles soba au thé matcha</strong> ou des <strong>udon au matcha</strong>. A l’apéro, on vous suggère d’essayer les crackers au parmesan-thé matcha. En entrée, pourquoi ne pas tenter un gaspacho de petits-pois, chantilly au thé matcha, une soupe froide concombre matcha ou une friture d’éperlans tempura au thé matcha ? En plat, le poisson semble mieux s’y marier que la viande avec le thé vert, comme le montrent ces recettes de lotte grillée au thé matcha, de <strong>saumon au thé matcha</strong>, de <strong>cabillaud au thé matcha</strong>, ou de <strong>tartare de langoustine au matcha</strong>.",
+                })
+            </section>
+            <section class="block block-container">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Une multitude de dessert au thé matcha",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Très à la mode en pâtisserie, où l’on parle même de “<strong>matcha mania</strong>”, on le retrouve aussi bien dans des recettes traditionnelles japonaises - <strong>mochis au thé matcha</strong>, dorayakis au thé matcha, glace au thé matcha - que dans des desserts nés dans l’Hexagone : madeleines au thé matcha, financiers au thé matcha, macarons au thé matcha, gâteau basque au thé matcha, crêpes au thé matcha, profiteroles au thé matcha…",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Mais aussi dans des gâteaux originaires d’autres régions du monde, mais dont le succès en a fait des incontournables de nos desserts ou de nos goûters : <strong>cake au thé matcha</strong>, <strong>cookies au thé matcha</strong> et <strong>au chocolat blanc</strong>, <strong>muffins au thé matcha</strong>, <strong>tiramisu au thé matcha</strong>, <strong>babka au thé matcha</strong>, <strong>cheesecake au thé matcha</strong>, <strong>pana cotta au thé matcha</strong>, <strong>cupcakes au matcha</strong>, <strong>marbré au matcha</strong>, <strong>riz au lait au matcha</strong>, <strong>bûche de Noël au matcha</strong>… Reste plus qu’à s’approvisionner en matcha avant de passer à la pratique et réaliser la meilleure des recette !",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/3-MATCHA-cuisine.png?$staticlink$",
+                        "alt": "Dessert au matcha",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "On opte pour du bio",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Et pour décupler les arômes et la saveur de votre recette, choisissez un thé matcha de qualité ! Chez Kusmi, on ne saurait que trop vous recommander d’opter pour une appellation bio car celle-ci garantit des contrôles qualité réguliers lors de l’élaboration du produit ! Un <strong><a class='banniere__link' href='/fr/matcha-VCHABIOMASTER.html?v=21695A1040'>matcha bio</a></strong> sans pesticide c’est quand même mieux !",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','matcha-the-vertus')$",
+                    "lien-img": "blog/articles/2024/coffret-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le matcha : un thé de Jade aux multiples bienfaits",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-17')$",
+                    "lien-img": "blog/1_MATCHA-bleu.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Provenance et origine : de quelle plante provient le thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bien-preparer-son-matcha')$",
+                    "lien-img": "blog/articles/2023/blog_matcha_produit_coffret.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Comment bien préparer son thé matcha ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Thé matcha : nos idées recettes pour l'utiliser en cuisine ?",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','arttv4')$",
+            })
+        </section>
+    </div>
+</div>
