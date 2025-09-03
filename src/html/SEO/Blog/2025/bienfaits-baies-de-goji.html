@@ -1,0 +1,220 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : bienfaits-baies-de-goji
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Baies de goji : Bienfaits, vertus et comment les consommer
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+           
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/bienfaits-baies-de-goji/tisane_aquafrutti.webp?$staticlink$",
+                "alt": "AquaFrutti, Infusion sans théine",
+    
+                "titre": "Baies de goji : Comment les consommer pour profiter de leurs bienfaits ?",
+                "date": "Publié le <span class='date__color'>28/05/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','toutes-infusions')$",
+                "lien-categorie": "blog/?filter=the_fruite",
+                "tag-texte": "Fruitées",
+    
+                "cta-texte": "Nos thés à la baie de goji",
+    
+                "texte": "Vous ne pouvez pas passer à côté des bienfaits de la baie de Goji ! Ce fruit star au goût légèrement sucré possède en effet de nombreuses vertus. Ce n’est d’ailleurs pas pour rien qu’il se retrouve dans tous les conseils healthy du moment et les meilleures tisanes. Zoom sur ce super-aliment venu d’Asie...",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Qu’est-ce que la baie de Goji ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Petit fruit rouge orangé à la forme allongée, la baie de Goji pousse sur un arbuste pouvant atteindre les 3 mètres de hauteur. Nous avons nommé… le lyciet de Chine ! La floraison de la plante se déroule de juin à septembre et les baies mûrissent entre août et octobre. Mais il faut que le lyciet ait minimum quatre ans pour qu’il produise des baies avec une concentration optimale en substances nutritives…",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment consommer les baies de Goji ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Généralement, les baies de Goji sont consommées séchées, mais on peut également les manger fraîches. Mélangées à des céréales dans un bol ou cuisinées dans des gâteaux aux fruits : les possibilités de recettes sont infinies ! Elles peuvent aussi être bues dans des jus, smoothies ou encore en infusions !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits des infusions de baies de Goji",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En Asie, l’on consomme les Gojis depuis la nuit des temps. La médecine traditionnelle chinoise vante d’ailleurs les nombreuses propriétés médicinales de ces « fruits de la jeunesse éternelle ». Notons bien que les baies de Goji ont fait l’objet de peu d’études, ce qui ne permet pas de prouver scientifiquement ses bienfaits. Ce dont on est sûr, c’est que ces fruits asiatiques sont riches en protéines et contiennent de nombreux minéraux et oligo-éléments comme le fer, le phosphore et le calcium. Ce n’est que dans les années 70 que les baies de Goji sont découvertes en Occident. Et depuis, on ne s’en passe plus ! On les adore pour leur multitude de bienfaits sur la santé qu’on leur accorde :",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "LEUR RICHESSE EN VITAMINES C",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Saviez-vous que les baies de Goji contiennent trois fois plus de vitamines C que les oranges ? Elles nous donneraient ainsi un vrai coup de pep’s et nous aideraient à lutter contre la fatigue passagère. D’ailleurs, les sportifs infusent des Gojis ou mangent le fruit pour bénéficier d’énergie pendant l’effort et récupérer plus facilement après. Le fort taux en vitamine C de ces baies renforcerait également notre système immunitaire et nous éviterait donc de tomber malades.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "LEUR TENEUR EN BÊTA-CAROTÈNE",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Leur teneur en bêta quoi ? On vous entend d’ici ! Figurez-vous que le bêta-carotène est un antioxydant qui aide à protéger la peau des UV. Ça ne remplace pas une crème solaire, mais c’est toujours ça de pris ! Les Gojis en sont emplis ! Elles en contiennent d’ailleurs plus que les carottes, soit 8,4mg contre 6,6mg pour 100g. Sur le plan purement esthétique, le teint offert par le bêta-carotène serait même plus apprécié que le bronzage.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "UNE ALLIÉE PRÉCIEUSE POUR LA VISION ET LA PEAU",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les baies de goji sont une source naturelle de lutéine et zéaxanthine, deux antioxydants puissants reconnus pour leur rôle dans la protection de la rétine et la prévention de la dégénérescence maculaire liée à l’âge. Ces fruits rouges contribuent également à filtrer la lumière bleue nocive des écrans. Côté peau, leur richesse en vitamines C et E, ainsi qu’en bêta-carotène, soutient la production de collagène et aide à maintenir une peau souple, hydratée et protégée contre les agressions extérieures. Consommer des baies de goji, c’est offrir à ses yeux et à sa peau une protection naturelle au quotidien.",
+                })
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/bienfaits-baies-de-goji/boite_aquafrutti.webp?$staticlink$",
+                    "alt": "Boite tisane AquaFrutti",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "UN SUPER-ALIMENT IDÉAL POUR LES VÉGÉTARIENS ET VÉGÉTALIENS",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les baies de goji sont une source végétale précieuse de nutriments essentiels, ce qui en fait un excellent allié pour les personnes suivant une alimentation végétarienne ou végétalienne. Naturellement riches en protéines, en fer et en vitamines, notamment la vitamine C qui favorise l’absorption du fer, elles viennent compléter les apports nutritionnels souvent plus difficiles à couvrir sans produits d’origine animale. En les intégrant à ses recettes du quotidien, par exemple dans un porridge, une salade de fruits ou une infusion bien-être, on profite de leurs bienfaits tout en respectant ses choix alimentaires. Un atout santé 100 % végétal qui s’inscrit parfaitement dans une consommation responsable et équilibrée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "UN ALLIÉ MINCEUR DANS UNE ALIMENTATION ÉQUILIBRÉE",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Envie d’un coup de pouce naturel pour affiner sa silhouette ? Grâce à leur faible indice glycémique, leur richesse en fibres et leur effet rassasiant, les baies de goji sont de véritables alliées dans une démarche de <a class='banniere__link' href='/fr/tisane-maigrir/artti-1.html'>perte de poids</a>. (N’hésitez pas à essayer notre <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html?v=21254A1070'>rituel thé minceur</a>). Elles permettent de limiter les fringales, de réguler l’appétit et d’éviter les pics de glycémie responsables des envies de grignotage. Leur teneur en protéines végétales est également intéressante pour préserver la masse musculaire pendant un régime. Que ce soit dans une <a class='banniere__link' href='/fr/nos-thes-infusions/infusions/infusion-et-tisane'>infusion</a> chaude, un bol de fruits ou une recette healthy, ces baies séchées s’intègrent parfaitement à une alimentation équilibrée. Un petit plaisir naturel pour prendre soin de sa ligne sans frustration.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "UN BOUCLIER NATUREL CONTRE LE VIEILLISSEMENT PRÉMATURÉ",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Grâce à leur exceptionnelle concentration en <a class='banniere__link' href='/fr/the-vert-un-puissant-antioxydant.html'>antioxydants (tel que le thé vert)</a>, les baies de goji sont reconnues pour leur capacité à lutter contre les radicaux libres, principaux responsables du vieillissement prématuré des cellules. Ces petits fruits rouges, riches en vitamines A, C, et E, en bêta-carotène et en polysaccharides, aideraient à préserver l’élasticité de la peau, à réduire l’apparition des rides et à maintenir l’éclat du teint. Leur action protectrice ne se limite pas à la peau : elle concernerait ainsi les cellules de l’organisme, contribuant ainsi à un meilleur vieillissement global. Intégrer les baies de goji dans son alimentation quotidienne, c’est offrir à son corps un véritable soin anti-âge 100 % naturel.",
+                })
+            </section>
+            <section class="block block-container block-container">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "UN SOUTIEN NATUREL POUR LE CŒUR",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les baies de goji ne sont pas seulement appréciées pour leur goût délicatement sucré ou leur richesse en vitamines : elles seraient aussi bénéfiques pour la santé cardiovasculaire. Grâce à leur forte teneur en antioxydants, en bêta-sistérols et en polysaccharides, ces petites baies rouges contribueraient à réduire le taux de mauvais cholestérol dans le sang et à améliorer la circulation sanguine. Des études préliminaires évoquent même leur effet protecteur contre certains troubles cardiaques liés à l’inflammation ou au stress oxydatif. Consommer régulièrement des baies de goji pourrait ainsi participer à la prévention des maladies cardiovasculaires, en soutenant le bon fonctionnement du système sanguin et en renforçant les parois des vaisseaux.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/bienfaits-baies-de-goji/sachets_defense_immu.webp?$staticlink$",
+                        "alt": "Sachets Défenses immunitaires",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "UNE ACTION PRÉVENTIVE POTENTIELLE CONTRE LE CANCER",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Certaines recherches suggèrent que les baies de goji pourraient jouer un rôle dans la prévention de certains types de cancer, grâce à leur fort pouvoir antioxydant. Riches en vitamine C, en bêta-carotène et en polysaccharides, ces fruits séchés issus du lyciet aideraient à neutraliser les radicaux libres, responsables de la détérioration cellulaire. Si les études scientifiques restent encore limitées, les premières observations indiquent que la consommation régulière de baies de goji, dans le cadre d’une alimentation saine et variée, pourrait contribuer à renforcer les cellules de l’organisme et à soutenir les mécanismes naturels de défense contre les agents cancérigènes. Un geste simple pour prendre soin de sa santé sur le long terme.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "DES BIENFAITS POUR RÉDUIRE LE CHOLESTÉROL NATURELLEMENT",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Parmi les nombreux effets bénéfiques des baies de goji, leur action sur le <a class='banniere__link' href='/fr/remedes-grand-mere-reduire-cholesterol.html'>taux de cholestérol</a> mérite d’être soulignée. Ces fruits secs contiennent naturellement du bêta-sitostérol, un composé végétal connu pour aider à réduire l’absorption du cholestérol dans l’intestin. Résultat : une baisse potentielle du mauvais cholestérol (LDL) et un meilleur équilibre lipidique global. De plus, leur richesse en fibres, en antioxydants et en vitamines soutient le bon fonctionnement du métabolisme et favorise un profil sanguin plus sain. Intégrer les baies de goji dans son alimentation quotidienne pourrait donc s’avérer bénéfique pour maintenir un taux de cholestérol stable, en complément d’une hygiène de vie équilibrée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "UN SOUTIEN NATUREL POUR RÉGULER LA GLYCÉMIE",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les baies de goji sont une excellente option pour les personnes cherchant à <a class='banniere__link' href='/fr/remede-grand-mere-pour-baisser-glycemie.html'>réguler leur glycémie de manière naturelle</a>. Grâce à leur faible indice glycémique, elles ont un impact minimal sur les niveaux de sucre dans le sang, ce qui les rend idéales pour les personnes suivant un régime spécifique ou désireuses de maintenir leur équilibre glycémique. De plus, leur riche teneur en fibres contribue à une digestion plus lente, limitant ainsi les pics de glycémie après les repas. Les polysaccharides présents dans ces fruits auraient également un rôle à jouer dans le soutien du métabolisme, aidant l’organisme à mieux gérer le sucre. Intégrer les baies de goji dans une alimentation équilibrée pourrait donc être un allié pour maintenir une glycémie stable, tout en profitant de leurs autres bienfaits pour la santé.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "UNE BAIE DÉTOX",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les infusions de baies de Goji permettraient de détoxifier l’organisme des impuretés que nous respirons quotidiennement, surtout en zone polluée. Le faible indice glycémique du fruit charnu faciliterait par ailleurs la sensation de satiété. Il nous aiderait ainsi à contrôler notre appétit lors des repas.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "BAIE “BIEN ÊTRE”",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "On accorde aux baies de Goji des propriétés positives pour notre peau et cheveux. Leurs vertus antioxydantes auraient un effet anti-âge sur l’épiderme en diminuant la formation de rides. En buvant de délicieuses tisanes aux baies de Goji, on se sentirait donc mieux dans notre peau… mais pas seulement ! Les baies de Goji auraient également le pouvoir de nous mettre de bonne humeur grâce à l’énergie qu’elles nous transmettent. Sans oublier qu’elles contribueraient à réduire notre stress.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artti-13')$",
+                    "lien-img": "blog/2022-06_tisane-moringa-bienfait.jpg?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Infusion : Quels sont les bienfaits de la tisane au moringa sur la santé ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artti-6')$",
+                    "lien-img": "blog/articles/2025/bienfaits-fenouil/INFUSIONS_23_ONLY100BIO_POR_01.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Quels sont les 7 bienfaits de la tisane au fenouil sur la santé ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv19')$",
+                    "lien-img": "blog/articles/2025/the-gingembre-les-bienfaits/the-vert-gingembre-citron.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les bienfaits du gingembre : propriétés, usages et effets sur la santé",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Baies de goji : Bienfaits, vertus et comment les consommer",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','bienfaits-baies-de-goji')$",
+            })
+        </section>
+    </div>
+</div>

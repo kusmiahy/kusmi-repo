@@ -1,0 +1,304 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : bienfaits-fleur-de-souci.html
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Fleur de souci : bienfaits pour la santé & utilisations au naturel
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+           
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/bienfaits-fleur-de-souci/visuel_verre_the.webp?$staticlink$",
+                "alt": "Boite infusion pomme cannelle",
+    
+                "titre": "Bienfaits de la fleur de souci pour votre santé",
+                "date": "Publié le <span class='date__color'>28/08/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','infusions_et_tisanes_types_de_the')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Infusions & tisanes",
+    
+                "texte": "Les bienfaits de la fleur de souci sont connus et utilisés depuis l'Antiquité, où les Égyptiens, les Grecs et les Romains l'employaient déjà pour traiter diverses affections. Cette plante médicinale, aussi appelée Calendula officinalis, contient plus de 15 principes actifs, notamment des huiles essentielles, des flavonoïdes et des vitamines C et E, qui lui confèrent ses remarquables propriétés thérapeutiques. <br>Le Calendula est particulièrement reconnu pour ses vertus anti-inflammatoires, antibactériennes et antioxydantes. Les bienfaits du souci officinal sont impressionnants tant pour l'usage interne qu'externe. En effet, cette plante peut soulager vos troubles digestifs, apaiser vos douleurs menstruelles et favoriser le bon fonctionnement de votre foie, tandis qu'en application cutanée, elle accélère la cicatrisation des plaies et traite efficacement l'eczéma.<br>Dans cet article, vous découvrirez pourquoi le souci et ses différentes préparations méritent une place dans votre pharmacie naturelle. Explorons ensemble les vertus souvent méconnues de cette fleur dorée qui embellit nos jardins depuis le XIIe siècle.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Origine et particularités de la fleur de souci",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Originaire du bassin méditerranéen, le souci officinal possède une histoire qui remonte à plusieurs millénaires. Cette plante solaire aux multiples vertus médicinales s'est naturalisée dans de nombreuses régions du monde grâce à sa capacité d'adaptation remarquable.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Une plante solaire aux racines anciennes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Vénérée depuis l'Antiquité, la fleur de souci ornait les jardins des Égyptiens, des Grecs et des Romains qui l'utilisaient déjà pour ses vertus curatives, notamment pour traiter les affections cutanées et les inflammations. Au Moyen Âge, cette plante gagna en popularité en Europe où elle fut intégrée dans les jardins des monastères pour ses propriétés médicinales.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par ailleurs, cette plante herbacée de 30 à 70 cm de hauteur se caractérise par ses tiges ramifiées, anguleuses et velues.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Souci ou Calendula : quelle différence ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En réalité, &laquo;souci&raquo; et &laquo;calendula&raquo; désignent la même plante, mais l'origine de ces noms révèle des aspects différents de ses caractéristiques. Le terme &laquo;Calendula&raquo; provient du latin calendae, qui désignait le premier jour du mois dans le calendrier romain, en référence à sa floraison presque perpétuelle.",
+                }) 
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "De son côté, le nom &laquo;souci&raquo; dérive du latin solsequia (qui suit le soleil) et non de sollicitare (se soucier) comme on pourrait le croire à tort. Cette étymologie fait référence au phénomène de nyctinastie : les fleurs s'ouvrent au lever du soleil et se referment à son coucher.",
+                })  
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits internes du souci officinal",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour comprendre les véritables trésors cachés de cette plante, plongeons dans les bienfaits internes du souci officinal. En infusion ou en teinture, cette fleur solaire offre de nombreux avantages thérapeutiques pour votre organisme.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Soulagement des troubles digestifs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le souci est particulièrement efficace pour apaiser les inflammations du système digestif. Il figure parmi les <a class='banniere__link' href='/fr/tisane-digerer/artti-2.html'>tisanes et infusions qui facilitent la digestion</a>. En effet, ses propriétés antispasmodiques et anti-inflammatoires soulagent les douleurs liées aux gastrites, aux ulcères gastro-intestinaux et aux spasmes gastro-intestinaux. Dans certains cas, les préparations à base de souci, combinées avec d'autres plantes comme la <a class='banniere__link' href='/fr/bienfaits-melisse.html'>mélisse</a> et la <a class='banniere__link' href='/fr/vertus-infusions-camomille.html'>camomille</a> matricaire, peuvent accompagner efficacement le traitement des troubles digestifs d'origine inflammatoire. Notez également que cette plante aide à réduire les crampes, les ballonnements et la diarrhée.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Régulation du cycle menstruel",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Traditionnellement, le souci officinal est reconnu pour ses effets bénéfiques sur le cycle féminin. Si vous souffrez de règles irrégulières, sachez que des infusions de souci consommées pendant 10 jours avant la date présumée des règles peuvent, à long terme, contribuer à régulariser votre cycle. De plus, grâce à son action antispasmodique, cette plante diminue les douleurs liées aux contractions de l'utérus. Pour accompagner les dysménorrhées, le souci peut être associé au framboisier et à l'Achillée millefeuille.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Soutien du foie et effet détox",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La calenduline, composant actif du souci, est reconnue pour ses bienfaits dans le traitement des troubles hépatiques. Cette plante possède des propriétés drainantes et purifiantes qui favorisent le nettoyage du foie. Ainsi, le souci aide votre organisme à éliminer les toxines accumulées et soutient le bon fonctionnement de la vésicule biliaire. Il rejoint les autres <a class='banniere__link' href='/fr/nos-thes-infusions/notre-selection/thes-detox-et-bien-etre'>thés détox et bien-être</a>.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Effet calmant sur le système nerveux",
+                }) 
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Moins connu mais tout aussi précieux, le calendula officinal agit comme un antidépresseur naturel. Par conséquent, il peut contribuer à soulager les symptômes de dépression, d'anxiété et de stress grâce à ses propriétés apaisantes. Cette plante est également efficace pour lutter contre l'insomnie et favoriser un sommeil réparateur.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour profiter de ces bienfaits, vous pouvez préparer une infusion en plongeant 1 à 2 g de fleurs séchées dans 150 ml d'eau bouillante pendant 5 à 10 minutes. Buvez une tasse trois fois par jour, pendant deux semaines maximum.",
+                })  
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les bienfaits externes pour la peau et les muqueuses",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Reconnue pour ses vertus médicinales depuis des siècles, la fleur de souci se distingue particulièrement par son efficacité en application externe, tout comme les <a class='banniere__link' href='/fr/les-bienfaits-du-the-pour-la-peau.html'>bienfaits du thé pour la peau</a>. Ses composants actifs agissent directement sur la peau et les muqueuses pour offrir une solution naturelle à de nombreux problèmes cutanés.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Cicatrisation des plaies et brûlures",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le souci accélère remarquablement la guérison des plaies sans laisser de cicatrices grâce à sa capacité à stimuler la production de collagène et de glycoprotéines. Son action antibactérienne et antiseptique prévient les infections, tandis que ses propriétés cicatrisantes favorisent la régénération des tissus endommagés. Pour les brûlures légères, l'application d'une crème ou d'une pommade à base de calendula soulage la douleur et accélère la guérison.",
+                })
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/bienfaits-fleur-de-souci/boite_lovely_morning.webp?$staticlink$",
+                    "alt": "Boite Label Impérial",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une étude publiée dans la revue &laquo;Scars, Burns & Healing&raquo; en 2023 a démontré que la prise quotidienne d'une gélule contenant 2g de calendula accélérait significativement la guérison des brûlures au deuxième degré. Par ailleurs, chez des femmes traitées par radiothérapie anticancéreuse, l'application d'une pommade au souci s'est révélée nettement efficace dans la prévention et le traitement des irritations cutanées causées par les rayons.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Apaisement des irritations et eczéma",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le calendula constitue un allié précieux contre l'eczéma et autres affections cutanées. Ses propriétés anti-inflammatoires, adoucissantes et anti-démangeaisons apaisent les peaux irritées. En effet, le souci traite efficacement les altérations dermatologiques comme le psoriasis, l'acné, les rougeurs et les inflammations.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'application régulière d'huile ou d'extrait de souci est particulièrement recommandée après une épilation ou une exfoliation pour calmer les irritations. De plus, son action antibactérienne le rend efficace contre certaines infections cutanées, notamment celles causées par le staphylocoque doré.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Protection contre les UV et vieillissement cutané",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Riche en vitamine E (tocophérol), en carotènes et en flavonoïdes, le souci renforce la peau contre les agressions extérieures. Ces composants confèrent à la plante un puissant pouvoir <a class='banniere__link' href='/fr/the-noir-antioxydant/arttn-11.html'>antioxydant</a> qui combat les radicaux libres responsables du vieillissement prématuré.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les propriétés antioxydantes du souci contribuent également à protéger la peau des radiations solaires. Une étude a même démontré une synergie entre l'huile essentielle de calendula et les crèmes solaires, suggérant que le calendula pourrait renforcer la protection contre les coups de soleil.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le souci stimule aussi la régénération cellulaire et favoriserait la production de collagène, améliorant ainsi l'élasticité et la fermeté cutanée. Combiné à l'acide hyaluronique, il offre un effet anti-âge particulièrement efficace.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment utiliser le souci au quotidien",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Exploiter les bienfaits de la fleur de souci au quotidien est simple grâce à diverses préparations faciles à réaliser. Découvrez comment intégrer cette plante médicinale dans votre routine pour profiter de ses nombreuses vertus.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Tisane de souci : préparation et bienfaits",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour préparer une délicieuse tisane aux propriétés apaisantes, suivez ces étapes :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Faites chauffer 250 ml d'eau jusqu'à frémissement",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Ajoutez une cuillère à café de fleurs de souci séchées",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez infuser pendant 10 minutes",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Filtrez et dégustez, éventuellement avec un peu de miel",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation recommandée est de 1 à 3 tasses par jour. Cette infusion favorise le bon fonctionnement du foie, soulage les <a class='banniere__link' href='/fr/les-effets-du-the-sur-la-constipation.html'>troubles intestinaux</a> et apaise les voies respiratoires. Par ailleurs, utilisée froide en compresse, elle calme les yeux irrités et fait un excellent bain de bouche.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Huile de calendula : application et effets",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le macérat huileux de calendula s'obtient en faisant infuser des fleurs de souci dans une huile végétale. Pour le préparer vous-même, remplissez un bocal de fleurs fraîches et entières, couvrez d'huile d'olive ou d'amande douce, puis laissez macérer au soleil pendant deux à trois semaines. Ensuite, filtrez pour retirer les résidus de plantes.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cette huile &laquo;miracle&raquo; apaise les coups de soleil, les irritations cutanées et l'eczéma. De plus, elle convient parfaitement aux peaux sensibles des bébés et des personnes âgées. Appliquez-la directement sur les zones concernées ou utilisez-la comme base pour vos cosmétiques maison.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Pommade et baume : pour quels usages ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les baumes au calendula contiennent généralement 10% d'extraits de fleurs de souci. Ils sont particulièrement efficaces pour :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Hydrater les zones sèches (coudes, genoux, pieds)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Apaiser les brûlures après exposition solaire",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Calmer les rougeurs et irritations des fesses de bébé",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Favoriser la cicatrisation des crevasses et gerçures",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour fabriquer votre propre baume, faites fondre au bain-marie 40 ml de macérat de calendula avec 6 g de cire d'abeille, puis ajoutez éventuellement quelques gouttes d'huile essentielle de lavande vraie.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Utilisation en cuisine : une touche colorée et saine",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En cuisine, les fleurs de souci servent à la fois de colorant naturel et d'élément décoratif. Ajoutez quelques pétales frais ou séchés à vos salades, soupes ou desserts pour une touche colorée. Vous pouvez également réaliser une sauce légère en mixant les pétales avec du fromage blanc, du jus de citron et un peu de sirop. Cette préparation remplace avantageusement le beurre sur les tartines tout en apportant une note fraîche et ensoleillée à vos plats.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les vertus intemporelles du souci officinal",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La fleur de souci représente véritablement un trésor thérapeutique complet que la nature nous offre. Tout au long de cet article, vous avez découvert comment cette plante millénaire continue d'impressionner par ses multiples applications tant internes qu'externes.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv19')$",
+                    "lien-img": "blog/articles/2025/the-gingembre-les-bienfaits/the-vert-gingembre-citron.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les bienfaits du gingembre : propriétés, usages et effets sur la santé",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','meilleures-plantes-pour-dormir')$",
+                    "lien-img": "blog/articles/2024/meilleures-plantes-dormir.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les plantes pour mieux dormir : nature et sérénité au service de votre sommeil",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','vertus-infusions-camomille')$",
+                    "lien-img": "blog/articles/2025/bienfaits-camomille/camomille.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les 3 bienfaits de la camomille",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Bienfaits de la fleur de souci pour votre santé",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','bienfaits-fleur-de-souci')$",
+            })
+        </section>
+    </div>
+</div>

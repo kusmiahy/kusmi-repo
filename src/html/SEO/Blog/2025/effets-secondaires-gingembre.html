@@ -1,0 +1,381 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : effets-secondaires-gingembre.html
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Gingembre : précautions et effets secondaires à connaître
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+           
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/effets-secondaires-gingembre/boite_the_vert_gingembre.webp?$staticlink$",
+                "alt": "Boite thé vert Gingembre",
+    
+                "titre": "Danger du gingembre : découvrez quels sont ses effets secondaires",
+                "date": "Publié le <span class='date__color'>03/07/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','nos_thes_infusions')$",
+                "lien-categorie": "blog/?filter=nos-thes-infusions",
+                "tag-texte": "Le thé",
+    
+                "cta-texte": "Nos thés et infusions",
+    
+                "texte": "Utilisé depuis des millénaires en Chine et en Inde, le Gingembre peut provoquer, en cas d'excès, <a class='banniere__link' href='/fr/tisane-contre-acidite-gastrique.html'>acidités gastriques</a>, nausées, ballonnements ou diarrhées. Il peut aussi interagir avec des médicaments comme les anticoagulants, les traitements contre le diabète ou l’hypertension. Les personnes ayant des troubles de la coagulation doivent rester prudentes. Découvrez dans cet article ses contre-indications, ses effets secondaires et comment le consommer sans danger.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Les effets secondaires les plus courants du gingembre",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bien que le <a class='banniere__link' href='/fr/nos-thes-infusions/composition/gingembre'>gingembre</a> soit vanté pour ses nombreuses vertus thérapeutiques, il n'est pas dénué d'effets indésirables. Selon les études scientifiques, ceux-ci surviennent principalement lors d'un excès ou chez les personnes présentant certaines sensibilités. Examinons en détail les désagréments les plus fréquemment rapportés.",
+                })   
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Brûlures d'estomac et reflux",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingembre présente une dualité intéressante concernant les brûlures d'estomac. D'une part, il est reconnu pour ses caractéristiques anti-inflammatoires qui peuvent apaiser l'inflammation de l'œsophage et diminuer l'acidité gastrique. D'autre part, un excès peut provoquer l'inverse.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Selon l'Agence européenne des médicaments, les brûlures d'estomac (dyspepsie) font partie des troubles fréquents, observés chez 1 à 10 patients sur 100. Le gingérol, composé actif qui confère au gingembre son goût piquant et brûlant, peut irriter la muqueuse de l'estomac lorsqu'il est consommé à forte dose.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Paradoxalement, certaines sources recommandent le gingembre pour calmer les reflux acides grâce à ses propriétés anti-inflammatoires et digestives. Cependant, ceci semble être dose-dépendant - le soulagement se transformant en inconfort lorsque les quantités recommandées sont dépassées.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Ballonnements et gaz",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les ballonnements et flatulences constituent d'autres troubles indésirables fréquemment signalés lors d'un excès de gingembre. Ces désagréments digestifs résultent généralement d'une perturbation de la flore intestinale, particulièrement lorsque les doses sont augmentées trop rapidement.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Néanmoins, il existe ici aussi un paradoxe thérapeutique. À dose modérée, le gingembre peut justement aider à réduire les ballonnements grâce à ses propriétés carminatives. Il favorise la <a class='banniere__link' href='/fr/tisane-digerer/artti-2.html'>digestion</a>, détend les intestins et assure un meilleur transit. Par conséquent, c'est souvent l'excès qui transforme une plante bénéfique en source d'inconfort.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour éviter ces désagréments, il est recommandé d'augmenter progressivement les doses quotidiennes, surtout pour les personnes n'ayant pas l'habitude d'en consommer.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "Diarrhée et nausées",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La diarrhée figure parmi les effets secondaires les plus courants du gingembre, notamment en cas de surconsommation. Cette réaction s'explique par l'action stimulante du gingembre sur le système digestif. Lorsque cette stimulation devient excessive, elle peut accélérer le transit intestinal jusqu'à provoquer des diarrhées.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Fait intéressant, le gingembre est fréquemment utilisé pour combattre les nausées, notamment pendant la grossesse. Toutefois, à forte dose, il peut paradoxalement les provoquer. Cette dualité d'action souligne l'importance de respecter les doses recommandées :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "En poudre: jusqu'à 5g/jour (environ une cuillère à café)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Racine séchée: jusqu'à 1 cuillère à café par jour",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Frais: 10 à 15g/jour de rhizome",
+                    })
+                </ul>
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/effets-secondaires-gingembre/boites_miniatures_the_vert.webp?$staticlink$",
+                    "alt": "Boites miniatures thé vert",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Menstruations abondantes",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Un trouble moins connu mais significatif concerne l'influence du gingembre sur les menstruations. Il peut augmenter le volume des règles chez certaines femmes. Cela est lié aux propriétés fluidifiantes du sang que possède le gingembre.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les règles sont considérées comme abondantes lorsque leur durée excède 7 jours et/ou que la quantité totale dépasse 80ml par jour. Pour les femmes souffrant déjà de ménorragies (règles abondantes), consommer du gingembre pourrait donc aggraver ce problème.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par ailleurs, les propriétés anti-inflammatoires du gingembre, qui en font un allié contre les douleurs menstruelles, peuvent se retourner contre les utilisatrices en cas de surconsommation. Il est généralement recommandé de ne pas dépasser 4 tasses de tisane de gingembre par jour pour éviter d'accentuer les saignements menstruels.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le respect des doses recommandées reste donc la clé pour profiter du gingembre tout en minimisant ses effets indésirables. Une consommation excessive peut rapidement transformer cette épice aux multiples vertus en source de désagréments significatifs.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Contre-indications médicales à connaître",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Certaines personnes devraient absolument éviter la consommation de gingembre en raison de pathologies spécifiques. Malgré ses vertus reconnues, cette racine peut, dans certains contextes médicaux, représenter un réel danger pour la santé. Examinons ensemble les principales contre-indications médicales du gingembre.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Troubles de la coagulation",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingembre possède des propriétés anticoagulantes naturelles qui inhibent la coagulation sanguine. Cette caractéristique, bénéfique dans certains cas, devient problématique pour les personnes souffrant déjà de troubles de la coagulation. Le gingembre peut amplifier ces problèmes et aggraver les troubles sanguins existants.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les conséquences peuvent varier de petits saignements à des hémorragies plus graves. Par ailleurs, le gingembre est fortement déconseillé avant toute intervention chirurgicale ou anesthésie. Ses propriétés vasodilatatrices augmentent considérablement le risque hémorragique pendant l'opération. La FDA (Food and Drug Administration) a d'ailleurs émis une mise en garde spécifique concernant l'utilisation du gingembre chez les patients sous traitements anticoagulants, notamment la warfarine.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Calculs biliaires",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingembre est formellement contre-indiqué en cas d'obstruction des voies biliaires, et ce pour deux raisons principales. Premièrement, il possède des propriétés cholérétiques qui stimulent la production de bile par le foie, ce qui peut s'avérer néfaste en présence de calculs. Deuxièmement, le gingembre contient des minéraux comme le phosphore, le calcium et le sodium qui, chez les personnes atteintes de troubles de la vésicule biliaire, peuvent favoriser l'apparition ou l'aggravation de calculs biliaires.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les personnes souffrant de calculs ou présentant des risques d'obstruction biliaire devraient donc consulter un professionnel de santé avant toute consommation régulière de gingembre.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Ulcères gastriques",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les principes actifs du gingembre, notamment le gingérol et le shogaol, peuvent interagir avec certains traitements médicamenteux, dont les antiacides utilisés pour soigner les ulcères gastriques. Cette interaction peut diminuer l'efficacité des traitements ou aggraver les symptômes.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En outre, la consommation excessive de gingembre peut provoquer une irritation de la gorge, de la bouche, ainsi que des brûlures d'estomac particulièrement problématiques pour les personnes souffrant d'ulcères. Le gingembre frais non mâché présente également un risque d'occlusion intestinale, une complication potentiellement grave pour les personnes ayant des problèmes digestifs préexistants.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Interactions médicamenteuses à surveiller",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Si le gingembre possède de nombreuses vertus thérapeutiques, son action pharmacologique provoque des interactions médicamenteuses potentiellement graves. Comprendre ces interactions peut éviter des complications dangereuses pour la santé.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Anticoagulants et antiagrégants",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingérol et le shogaol, composés actifs du gingembre, fluidifient le sang grâce à leurs propriétés vasodilatatrices. Cette action peut considérablement amplifier l'effet des médicaments anticoagulants et antiagrégants plaquettaires.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Médicaments contre le diabète",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Plusieurs études ont démontré que le gingembre diminue la glycémie chez les patients atteints de diabète de type 2. Cette action hypoglycémiante, bien que bénéfique dans certains contextes, peut devenir problématique lorsqu'elle s'ajoute à celle des médicaments antidiabétiques.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Ainsi, la prise simultanée de gingembre et d'antidiabétiques peut provoquer une baisse excessive du taux de sucre sanguin. Par conséquent, les personnes diabétiques doivent surveiller plus étroitement leur glycémie lorsqu'elles consomment du gingembre.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Traitements pour l'hypertension",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En raison de ses effets vasodilatateurs, le gingembre peut réduire la pression artérielle de manière similaire à certains médicaments pour l'hypertension. Cette action combinée peut entraîner une hypotension parfois sévère.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par prudence, les personnes sous traitement hypotenseur devraient consulter leur médecin avant de consommer régulièrement du gingembre. Une surveillance plus étroite de la tension artérielle peut s'avérer nécessaire pour ajuster les doses médicamenteuses si besoin.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Autres plantes et compléments naturels",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le danger du gingembre s'étend également à ses interactions avec d'autres plantes médicinales. Par exemple, la consommation conjointe de gingembre et de plantes aux propriétés anticoagulantes peut augmenter considérablement le risque de saignement.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Parmi ces plantes, on retrouve notamment :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "L'ail et l'oignon",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le <a class='banniere__link' href='/fr/epice-curcuma-bienfaits-superaliment.html'>curcuma</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le ginkgo biloba",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le <a class='banniere__link' href='/fr/les-bienfaits-du-ginseng.html'>ginseng</a>",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "La fève tonka",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Le <a class='banniere__link' href='/fr/tisane-anti-stress/artti-3.html'>millepertuis</a>",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "D'après la FDA, l'association du gingembre avec le curcuma est particulièrement risquée car leurs effets anticoagulants se renforcent mutuellement.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "De même, certaines plantes ayant une action sur la glycémie comme l'aloe vera ou la cannelle peuvent, combinées au gingembre, provoquer des hypoglycémies sévères.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Face à ces nombreuses interactions, je recommande vivement de consulter un professionnel de santé avant d'entreprendre toute cure de gingembre, particulièrement si vous suivez déjà un traitement médicamenteux.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment consommer le gingembre sans danger",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour en profiter tout en minimisant les troubles, quelques précautions s'imposent. Suivre certaines règles simples permet d'écarter le danger du gingembre tout en bénéficiant de ses caractéristiques médicinales.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Respecter les doses recommandées",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La consommation de gingembre est généralement sans danger lorsque les doses conseillées sont respectées. Toutefois, un excès peut provoquer des troubles digestifs comme des brûlures d'estomac et des diarrhées. Les experts recommandent ces quantités maximales quotidiennes :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Gingembre frais: 10 à 15g par jour (une tranche de 6-7mm d'épaisseur)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gingembre en poudre: 1 à 4g par jour (environ 1 cuillère à café)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Gingembre séché: 0,5 à 2g par jour",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Jus de gingembre: un seul shot quotidien, pas davantage",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par ailleurs, il est conseillé d'augmenter progressivement les doses, particulièrement pour les personnes non habituées à cette épice.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Choisir la bonne forme de gingembre",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le gingembre existe sous diverses formes, chacune ayant ses spécificités :",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Celui frais ou séché convient parfaitement aux infusions (une tranche dans de l'eau bouillante). Pour soulager les nausées, on peut mâchonner directement une tranche fraîche.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les compléments alimentaires standardisés offrent une concentration précise en principes actifs. Néanmoins, la dose quotidienne ne devrait pas dépasser 1g pour éviter tout trouble indésirable.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En cas de mal des transports, prenez le gingembre 30 à 60 minutes avant le départ pour une efficacité optimale.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Éviter les cures prolongées sans avis médical",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Avant d'entreprendre une cure, consultez impérativement votre médecin. Cette consultation devient indispensable si vous prenez des médicaments, car le gingembre peut interagir avec de nombreux traitements, notamment les anticoagulants et antidiabétiques.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'Organisation Mondiale de la Santé déconseille formellement l'usage du gingembre chez les enfants de moins de six ans. Quant aux femmes enceintes, la dose ne devrait pas dépasser 250mg de rhizome séché quatre fois par jour.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Enfin, arrêtez immédiatement la consommation de gingembre si vous constatez des effets indésirables comme des crampes abdominales ou des brûlures d'estomac persistantes.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-18')$",
+                    "lien-img": "blog/articles/2024/effet-secondaire-matcha.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Quels sont les effets secondaires du thé matcha sur la santé ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artmm-19')$",
+                    "lien-img": "blog/articles/2024/mate-effets-secondaires/mate-effets-secondaires.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Existe-t-il des effets secondaires au yerba maté ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv13')$",
+                    "lien-img": "blog/articles/2024/the_vert_effet_secondaire/the_vert_effet_secondaire.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Quels sont les effets secondaires du thé vert ?",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Gingembre : précautions et effets secondaires à connaître",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','effets-secondaires-gingembre')$",
+            })
+        </section>
+    </div>
+</div>

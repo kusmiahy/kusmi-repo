@@ -1,0 +1,415 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : artti-2
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Tisane digestion : bienfaits de la mélisse et verveine
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+           
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/tisane-digerer/boite_sommeil.webp?$staticlink$",
+                "alt": "Boite Rituel Sommeil",
+    
+                "titre": "Tisane digestion : les vertus de la mélisse & verveine",
+                "date": "Publié le <span class='date__color'>01/07/2025</span>",
+                "url-produit": "$url('Search-Show','cgid','infusion-et-tisane')$",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Nos infusions et tisanes",
+    
+                "texte": "Après un repas copieux, les ballonnements et lourdeurs digestives viennent-ils régulièrement gâcher votre bien-être ? Découvrez les <a class='banniere__link' href='/fr/nos-thes-infusions/moment/apres-repas'>thés après repas</a> de Kusmi Tea, alliant mélisse et <strong>verveine bio pour apaiser</strong> naturellement votre système digestif. Ces infusions bienfaisantes, issues de plantes médicinales reconnues et cultivées en agriculture responsable, combinent tradition thérapeutique et engagement premium pour une digestion légère et un confort retrouvé.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Sommaire",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Mélisse : Une plante pour digérer en douceur",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Verveine : Une plante aux multiples vertus pour la digestion",
+                    })
+                </ol>   
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Mélisse : Une plante bio pour digérer en douceur",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La <a class='banniere__link' href='/fr/feel-zen-infusion-bio-FEELBIOMASTER.html?v=21677A1070'>mélisse</a>, plante emblématique des jardins médiévaux, se distingue par ses vertus digestives ancestrales. Cette herbe aromatique, aux feuilles ovales et dentelées, libère un parfum citronné apaisant. Employée depuis l'Antiquité, elle apporte un <strong>soutien naturel pour les désagréments digestifs</strong> passagers.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Origine et histoire de la mélisse, de ses premières utilisations médicinales à aujourd'hui",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Originaire du bassin méditerranéen, la mélisse s'est répandue en Europe grâce aux moines médiévaux qui en cultivaient les vertus apaisantes. Utilisée autrefois pour réconforter l'âme et le ventre, elle orne aujourd'hui les recettes de tisanes bio. Sa trajectoire millénaire témoigne d'une <strong>reconnaissance constante de ses bienfaits digestifs.</strong>",
+                })
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/tisane-digerer/visuel_bienfaits_melisse.webp?$staticlink$",
+                    "alt": "Visuel descriptif bienfaits Mélisse",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Composition biochimique de la mélisse et ses principes actifs bénéfiques pour le système digestif",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La richesse de la mélisse réside dans son huile essentielle, composée de citral et de citronnelle. Ces molécules fluidifient les contractions intestinales et adoucissent les spasmes. Ses flavonoïdes renforcent son action apaisante, <strong>transformant chaque gorgée en un véritable soin digestif naturel</strong>.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Action spécifique de la mélisse sur les spasmes intestinaux et les ballonnements",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La mélisse apaise les maux de ventre rebelles en détendant les parois intestinaux. Ses vertus antispasmodiques soulagent les ballonnements aigus et les inconforts post-repas. Cette plante digestive <strong>transforme chaque tisane en véritable bouclier</strong> contre les désagréments intestinaux occasionnels.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Propriétés relaxantes de la mélisse favorisant le sommeil et une meilleure digestion nocturne",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le pouvoir apaisant de la mélisse s'étend au sommeil et au système digestif. En apaisant l'esprit, elle <strong>prépare l'organisme à une nuit réparatrice</strong>. Cette synergie entre détente mentale et confort intestinal illumine les soirées en douceur digestive.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Découvrez notre <a class='banniere__link' href='/fr/rituel-sommeil-SOMMBIOMASTER.html?v=21251A1460'>tisane pour dormir à base de verveine</a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Propriétés apaisantes de la mélisse sur le stress, facteur aggravant des troubles digestifs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le stress altère la flore intestinale et déclenche des réactions digestives douloureuses. <a class='banniere__link' href='/fr/bienfaits-melisse.html'>Les bienfaits de la mélisse</a> interviennent en douceur sur le système nerveux, <strong>rétablissant un équilibre propice à une sérénité digestive</strong>. En apaisant l'esprit, elle libère le ventre de ses tensions.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Différentes formes de mélisse disponibles sur le marché",
+                })
+                <table class="blog__table font-barlow">
+                    <thead>
+                        <tr>
+                            <th>Formes de mélisse</th>
+                            <th>Caractéristiques</th>
+                            <th>Avantages digestifs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sachets pré-dosés bio</td>
+                            <td>Pratique, dosage standardisé</td>
+                            <td>Calme les spasmes intestinaux rapidement, idéal après repas</td>
+                        </tr>
+                        <tr>
+                            <td>Vrac en feuilles séchées</td>
+                            <td>Pureté maximale, origine France possible,</td>
+                            <td>Concentration élevée en principes actifs, action prolongée sur le transit</td>
+                        </tr>
+                        <tr>
+                            <td>Gélules végétales</td>
+                            <td>Concentration élevée, moins de plaisir à le consommer</td>
+                            <td>Effet ciblé sur les ballonnements, pratique pour les actifs</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Préparation idéale d'une infusion de mélisse pour optimiser ses vertus digestives",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Versez de l'eau frémissante sur des feuilles fraîchement ciselées. Laissez infuser 10 minutes pour une action optimale. Cette tisane, à déguster tiède, <strong>libère arômes subtils et bienfaits digestifs</strong> dans une expérience sensorielle complète.",
+                })
+            </section>
+            <section class="block block-container block-container">
+                <div class="block__texte">
+                @@include('_components/h3.html', {
+                    "titre": "Dosage recommandé et fréquence de consommation pour des effets optimaux sur la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Deux à trois infusions quotidiennes suffisent pour profiter des <strong>vertus digestives de la mélisse</strong>. <strong>Privilégiez les moments post-repas</strong> ou les soirées agitées pour un effet apaisant immédiat. Une consommation modérée préserve son efficacité sur le long terme.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Principaux bienfaits de la mélisse sur la santé digestive",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Réduction des spasmes</strong> et crampes intestinales grâce à ses propriétés antispasmodiques",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Soulagement des ballonnements</strong> et gaz en favorisant l'élimination des gaz",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Réduction de la rétention d'eau</strong> liés au stress et à l'anxiété par son action relaxante",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Réduction de la rétention d'eau</strong> global et prévention des inconforts post-repas",
+                    })
+                </ul>
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/tisane-digerer/sachets_sommeil.webp?$staticlink$",
+                        "alt": "Sachets Rituel Sommeil",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Qualité et origine de la mélisse bio, garantie de pureté et d'efficacité optimale",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La <strong>mélisse bio préserve son intégrité</strong> sans résidus chimiques. Ses vertus s'expriment pleinement quand elle est cultivée en agriculture biologique. La traçabilité rigoureuse des feuilles garantit un produit pur, concentré sur ses propriétés digestives naturelles.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Culture responsable de la mélisse bio et son impact positif sur l'environnement",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La culture biologique de mélisse préserve la biodiversité et nourrit les sols sans produits de synthèse. Ce mode de production vertueux respecte les équilibres naturels. Chaque feuille cultivée en bio devient <strong>symbole d'harmonie</strong> entre bienfaits digestifs et éco-conception responsable.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Conservation optimale de la mélisse pour préserver ses propriétés digestives",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rangez vos feuilles dans un récipient opaque et hermétique, à température ambiante. Une conservation rigoureuse préserve ses huiles essentielles et son potentiel digestif. <strong>La mélisse séchée garde ses qualités</strong> plusieurs mois en conditions optimales.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Précautions d'emploi et contre-indications éventuelles de la mélisse",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Évitez une consommation prolongée sans avis médical. Les femmes enceintes ou allaitantes devraient consulter un professionnel avant usage. En respectant les dosages recommandés, cette plante <strong>demeure sans danger</strong> pour la majorité des adultes soucieux de leur bien-être digestif.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h2.html', {
+                    "titre": "Verveine : Une plante aux multiples vertus pour la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La <a class='banniere__link' href='/fr/verveine---menthe-infusion-bio-INVMBIOMASTER.html?v=21649A1120'>verveine odorante</a>, aux feuilles allongées et parfumées, s'invite dans les tisanes digestives de Kusmi Tea. <strong>Ses bienfaits sur le système digestif</strong> sont connus depuis des siècles. Cette plante méditerranéenne allie élégance botanique et vertus apaisantes pour le confort intestinal.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Origine sud-américaine de la verveine et son introduction en Europe comme plante médicinale",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Originaire d'Amérique du Sud, la verveine a conquis l'Europe au XVIIIe siècle. Les moines espagnols en cultivaient les secrets digestifs. Aujourd'hui, sa culture responsable se développe dans des terroirs favorables, <strong>perpétuant une tradition médicinale réinventée</strong> pour l'ère du bien-être moderne.",
+                })
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/tisane-digerer/visuel_verveine.webp?$staticlink$",
+                    "alt": "Visuel descriptif bienfaits Verveine",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Composition biochimique de la verveine et ses principes actifs bénéfiques pour la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'huile essentielle de citral et de néroliol anime les vertus digestives de la verveine. Ces molécules fluidifient les contractions intestinales et adoucissent les désagréments post-repas. Chaque infusion délivre subtilité aromatique et bienfaits thérapeutiques en parfaite harmonie.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Action spécifique de la verveine sur les crampes d'estomac et les indigestions",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les spasmes rebelles cèdent devant l'action antispasmodique de la verveine. Ses composés apaisent les crampes d'estomac et les digestions lourdes. <strong>Cette plante digestive transforme chaque tasse en remède élégant</strong> contre les excès alimentaires, sans altérer le plaisir des repas.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Arôme citronné caractéristique de la verveine et son effet positif sur l'appétit",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le parfum vif de citron vert éclate au contact de l'eau chaude. Ce zeste végétal éveille les papilles et stimule un appétit timide. Cette fraîcheur aromatique transforme chaque tasse en <strong>prélude gourmand</strong> à une digestion harmonieuse.",
+                })
+            </section>
+            <section class="block block-container block-container">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "Préparation optimale d'une infusion de verveine pour maximiser ses bienfaits digestifs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Versez de l'eau frémissante sur des feuilles fraîchement récoltées. Laissez infuser 10 minutes pour libérer les arômes et les vertus digestives. Cette cérémonie sensorielle transforme l'acte de boire en <strong>rituel thérapeutique et élégant</strong>.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Posologie recommandée et moments idéaux de consommation de la verveine pour la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Deux à trois tasses par jour suffisent pour apprécier les vertus digestives de la verveine. <strong>Préférez les moments post-repas</strong> ou les soirées agitées pour un effet immédiat. Cette modération préserve son efficacité sur le long terme.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/tisane-digerer/sachets_verveine_menthe.webp?$staticlink$",
+                        "alt": "Sachets Verveine Menthe",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Associations bénéfiques de la verveine avec d'autres plantes digestives pour une action renforcée",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Associée à la mélisse ou au fenouil, la verveine compose des tisanes digestives sublimes.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Différentes formes de verveine disponibles sur le marché",
+                })
+                <table class="blog__table font-barlow">
+                    <thead>
+                        <tr>
+                            <th>Formats de verveine</th>
+                            <th>Spécificités</th>
+                            <th>Applications digestives</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sachets de thé</td>
+                            <td>Vrac bio en feuilles</td>
+                            <td>Huile essentielle</td>
+                        </tr>
+                        <tr>
+                            <td>Infusion aromatique, arôme citronné naturel</td>
+                            <td>Qualité premium, agriculture biologique, origine contrôlée</td>
+                            <td>Usage externe ou dilué, très concentrée</td>
+                        </tr>
+                        <tr>
+                            <td>Apaise les crampes d'estomac, favorise la digestion légère</td>
+                            <td>Effet détoxifiant sur le foie, soutien du système digestif</td>
+                            <td>Massage abdominal pour relancer le transit, soulagement immédiat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Critères de qualité et origine de la verveine bio pour une efficacité optimale",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La verveine bio préserve son intégrité sans résidus chimiques. Ses vertus s'expriment pleinement en agriculture biologique. La traçabilité rigoureuse des feuilles garantit un <strong>produit pur et son authenticité</strong> végétale.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Culture durable de la verveine bio et son impact positif sur la biodiversité",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La culture biologique de verveine préserve les écosystèmes et nourrit les sols sans produits de synthèse. Ce mode de production vertueux respecte les équilibres naturels. Chaque feuille cultivée en bio incarne un <strong>engagement pour la biodiversité</strong> et l'harmonie digestive.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Applications thérapeutiques de la verveine pour différents troubles digestifs",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Relaxation des crampes d'estomac</strong> grâce à son action antispasmodique",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Amélioration de la digestion</strong> lente ou difficile avec un effet sur la motricité intestinale",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Prévention des ballonnements</strong> grâce à ses propriétés carminatives",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "<strong>Équilibre du microbiote intestinal</strong> favorisé par sa richesse en composés volatils",
+                    })
+                </ul>
+                @@include('_components/h3.html', {
+                    "titre": "Conservation et stockage appropriés de la verveine pour préserver ses vertus digestives",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Rangez vos feuilles dans un contenant hermétique et à l'abri de la lumière. Une <strong>conservation rigoureuse préserve</strong> ses arômes et son potentiel digestif. La verveine séchée garde ses qualités plusieurs mois en conditions optimales, prolongeant votre bien-être digestif.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Entre la mélisse apaisante et la verveine rafraîchissante, offrez à votre système digestif des <strong>solutions naturelles et élégantes</strong>. Choisissez des tisanes bio pour une digestion alliée à l’art de vivre à la française.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','bienfaits-melisse')$",
+                    "lien-img": "blog/articles/2024/bienfaits-melisse.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les bienfaits de la mélisse : une plante miracle pour votre santé",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','infusion-verveine')$",
+                    "lien-img": "blog/articles/2024/bienfaits-verveine.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Les 5 bienfaits de la verveine en infusion",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','tisane-pour-le-sommeil-mythes-et-realites')$",
+                    "lien-img": "blog/articles/2023/rituel_sommeil/blog_tisanes_pour_le_sommeil_mythes_et_realites.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tisane pour le sommeil : Mythes et réalités",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Tisane digestion : bienfaits de la mélisse et verveine",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','artti-2')$",
+            })
+        </section>
+    </div>
+</div>
