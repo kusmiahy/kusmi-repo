@@ -1,0 +1,477 @@
+<!-- 
+
+    SCSS USE
+
+// -------------------- Style.css ------------------------
+
+@import "./style/base/**/*.scss";
+
+// --------------------- Library -------------------------
+
+@import "./style/specific/2023/article_template_v2.scss";
+
+    Content asset : tisane-pissenlit-bienfaits
+
+    Nom de la classe parent : rooibos_article_2024
+
+    Titre : Tisane de pissenlit : bienfaits, usages et préparation
+
+-->
+
+<!-- CSS Font -->
+<link href="fonts/fonts.css?$staticlink$" rel="stylesheet">
+<!-- inject-style src="dist/css/main.min.css" -->
+
+
+<style>
+    .c-article-banner,.c-blog-header.flex-row-reverse.flex-md-row.center-xs.start-md,.c-breadcrumb .product-breadcrumb{display:none}.m-blog-article__breadcrumbs.ms-row.collapsed.center-xs.start-md{text-align:center}.c-article-text{max-width:100%;padding:0}
+</style>
+
+<div class="rooibos_article_2024">
+    <div class="article">
+        <section class="article__banniere banniere">
+           
+            @@include('_components/banniere.html', {
+                "lien-img": "blog/articles/2025/tisane-pissenlit-bienfaits/fleurs_pissenlit.webp?$staticlink$",
+                "alt": "Fleur de pissenlit",
+    
+                "titre": "Tisane de pissenlit : bienfaits, usages et préparation",
+                "date": "Publié le <span class='date__color'>10/09/2025</span>",
+                "url-produit": "/fr/rituel-drainant-DRAIBIOMASTER.html?v=21315A1070",
+                "lien-categorie": "blog/?filter=infusions-bio",
+                "tag-texte": "Infusions bio",
+    
+                "cta-texte": "Tisane détox à l’extrait de pissenlit",
+    
+                "texte": "Le pissenlit, cette plante commune à fleurs jaunes, offre bien plus que des tisanes pissenlit bienfaits pour votre santé. En fait, cette herbe sauvage est l'une des plus riches en polyphénols, de puissants antioxydants. Non seulement elle détoxifie votre organisme lorsqu'elle est préparée en infusion ou décoction, mais elle contient également des vitamines A, B6, B9 et C, ainsi que du fer et du potassium.",
+            })
+        </section>
+        <article class="content content__img">
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Connue scientifiquement sous le nom de Taraxacum officinale, cette plante aussi appelée Dent-de-Lion en raison de ses feuilles dentées possède des propriétés diurétiques remarquables. La tisane de pissenlit peut être préparée à partir de trois parties différentes de la plante : sa racine, ses feuilles et ses fleurs jaunes d'or. Riche en lactones sesquiterpéniques et autres substances amères, elle favorise la digestion et améliore la fonction hépatique grâce à ses flavonoïdes et polysaccharides. Que vous cherchiez à purifier votre sang, soutenir votre foie ou simplement profiter d'une boisson naturellement bénéfique, la tisane de pissenlit mérite certainement une place dans votre routine bien-être.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Qu’est-ce que la tisane de pissenlit ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de pissenlit représente bien plus qu'une simple boisson aux herbes. Cette préparation ancestrale est reconnue pour ses nombreux bienfaits sur la santé et s'inscrit parmi les remèdes naturels les plus polyvalents de la phytothérapie traditionnelle.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Origine et nom botanique",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Originaire d'Europe et d'Asie, le pissenlit s'est aujourd'hui naturalisé dans presque toutes les régions tempérées du monde. Son nom scientifique, <i>Taraxacum officinale</i>, révèle déjà ses vertus médicinales - &ldquo;officinale&rdquo; désignant les plantes utilisées en pharmacie. Le terme &ldquo;pissenlit&rdquo; provient quant à lui directement de son effet diurétique prononcé (qui fait &ldquo;pisser au lit&rdquo;).",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cette plante vivace appartient à la famille des Astéracées (ou Composées) et possède une extraordinaire capacité d'adaptation. Son utilisation remonte à l'Antiquité, où elle était déjà appréciée par les médecins grecs et romains pour ses propriétés dépuratives. Au Moyen Âge, les herboristes l'employaient couramment pour traiter les troubles digestifs et hépatiques.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En France, le pissenlit est aussi connu sous différents noms populaires : dent-de-lion (en référence à la forme dentelée de ses feuilles), salade de taupe, florin d'or ou encore laitue de chien. Ces appellations variées témoignent de l'ancrage profond de cette plante dans notre culture.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Parties utilisées : racine, feuille, fleur",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La richesse de la tisane de pissenlit réside dans la possibilité d'utiliser l'intégralité de la plante, chaque partie offrant des propriétés spécifiques :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "La racine : Partie la plus concentrée en principes actifs, elle contient des lactones sesquiterpéniques, des triterpènes et de l'inuline (un prébiotique naturel). Récoltée idéalement en automne ou au début du printemps, la racine soutient particulièrement le foie et la digestion.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les feuilles : Riches en vitamines (A, C, K), en minéraux (potassium, calcium, fer) et en flavonoïdes, elles sont cueillies avant la floraison pour une meilleure saveur. Les feuilles possèdent d'excellentes propriétés diurétiques et dépuratives.",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Les fleurs : Dotées d'un nectar doux et légèrement sucré, elles apportent une touche de douceur à la tisane tout en contribuant à ses effets détoxifiants. Elles contiennent notamment de la lutéine, bénéfique pour la santé oculaire.",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour une tisane de pissenlit bienfaits optimaux, il est recommandé d'alterner ou de combiner ces différentes parties selon les besoins spécifiques et la saison.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Les bienfaits de la tisane de pissenlit",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Reconnue depuis des siècles pour ses vertus thérapeutiques, la tisane de pissenlit offre une multitude de bienfaits pour l'organisme. Cette boisson médicinale simple à préparer agit sur plusieurs systèmes du corps humain, contribuant ainsi au maintien d'une santé optimale. Découvrons ses principales propriétés, scientifiquement documentées.",
+                })
+            </section>
+            <section class="block block-container block-container--reversed">
+                <div class="block__texte">@@include('_components/h3.html', {
+                    "titre": "Soutien du foie et de la digestion",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de pissenlit est avant tout reconnue pour son action bénéfique sur le foie. Elle stimule efficacement la production de bile (effet cholérétique) et favorise son évacuation vers l'intestin (effet cholagogue) grâce à ses composants amers, dont la Taraxine. Cette double action facilite la digestion des graisses et soutient l'épuration hépatique. En effet, la bile contient les résidus toxiques issus de la filtration du foie.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par ailleurs, les feuilles de pissenlit optimisent les fonctions digestives en stimulant les sécrétions salivaires et gastriques. Elles soulagent également les ballonnements et nausées fréquents. La racine de pissenlit, quant à elle, s'avère particulièrement efficace contre les congestions du foie et contribue au maintien de l'équilibre du pH stomacal, apportant ainsi un meilleur confort gastrique.",
+                })
+            </div>
+            <div class="block__image">
+                @@include('_components/image.html', {
+                    "lien": "blog/articles/2025/tisane-pissenlit-bienfaits/boite_rituel_drainant.webp?$staticlink$",
+                    "alt": "Boite Rituel Drainant",
+                })
+            </div>
+            </section>
+            <section class="block">
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'inuline présente dans le pissenlit favorise notamment la prolifération de la flore intestinale, agissant comme un prébiotique naturel. Cette fibre soluble améliore la fonctionnalité intestinale globale et soulage la constipation légère.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Effet diurétique et drainage rénal",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Le terme &ldquo;pissenlit&rdquo; provient directement de son effet de <a class='banniere__link' href='/fr/rituel-drainant-DRAIBIOMASTER.html?v=21315A1070'>tisane drainante</a> et de son puissant effet diurétique. Cette propriété est due principalement à la présence de flavonoïdes et de sels de potassium en grande quantité. De plus, cette action diurétique est particulièrement utile pour les personnes sujettes aux calculs rénaux. Hors période de crise, l'augmentation du volume des urines permet d'éliminer les substances responsables des calculs (calcium, oxalates, acide urique, cystine) avant qu'elles ne forment des cristaux.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Contrairement aux diurétiques conventionnels, le pissenlit est riche en potassium, ce qui limite les pertes de ce minéral par les urines et prévient tout déséquilibre électrolytique.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Action sur la peau et les articulations",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les propriétés dépuratives du pissenlit ont un <a class='banniere__link' href='/fr/the-noir-bienfaits-peau/arttn-14.html'>effet bénéfique sur la peau, tel que le thé noir</a> ! En favorisant l'élimination des toxines, la tisane peut améliorer différentes affections cutanées comme l'acné, les dermatoses ou l'eczéma. Elle contribue également à éclaircir le teint en stimulant la circulation sanguine.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Concernant les articulations, les propriétés anti-inflammatoires du pissenlit, dues à ses flavonoïdes et lactones sesquiterpéniques, apportent un soulagement aux personnes souffrant de douleurs articulaires ou musculaires. Cette plante est ainsi traditionnellement recommandée pour les affections rhumatismales comme l'arthrose et la goutte.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Régulation du cholestérol et du sucre",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Des études suggèrent que la tisane de pissenlit pourrait <a class='banniere__link' href='/fr/remedes-grand-mere-reduire-cholesterol.html'>aider à réduire les niveaux de cholestérol</a>. Les stérols végétaux qu'elle contient limitent l'absorption du cholestérol dans l'intestin et favorisent son élimination, contribuant ainsi au maintien d'un taux de cholestérol sain.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Quant à la <a class='banniere__link' href='/fr/remede-grand-mere-pour-baisser-glycemie.html'>régulation glycémique</a>, la racine de pissenlit possède des propriétés hypoglycémiantes grâce à l'inuline qu'elle contient. Cette fibre semble réduire l'absorption du glucose par les intestins et abaisser le niveau de sucre dans le sang. D'autres composés comme les stérols, les acides phénols et les lactones sesquiterpéniques contribuent également à cet effet bénéfique pour les personnes diabétiques.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Effet sur la perte de poids",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de pissenlit peut s'avérer une alliée précieuse dans un programme d'amincissement. Son action diurétique aide à éliminer l'excès d'eau, réduisant ainsi la rétention hydrique responsable des gonflements. Les feuilles riches en fibres augmentent la sensation de satiété, limitant les envies de grignotage entre les repas.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En outre, en améliorant les fonctions hépatiques, le pissenlit optimise la métabolisation des graisses. Certains composés présents dans cette plante inhibent également l'enzyme pancréatique responsable de la digestion des lipides (lipase pancréatique), diminuant ainsi l'assimilation des aliments riches en cholestérol et, par conséquent, le risque de prise de poids.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "N’hésitez pas à essayer également notre <a class='banniere__link' href='/fr/rituel-minceur-MINCBIOMASTER.html?v=21254A1070'>thé minceur</a> !",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Comment préparer une infusion de pissenlit ?",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour profiter pleinement des propriétés du pissenlit, la méthode de préparation joue un rôle essentiel. Chaque partie de cette plante médicinale nécessite une technique spécifique pour extraire ses principes actifs de manière optimale.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Infusion de feuilles : méthode et dosage",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "L'infusion est la méthode idéale pour préparer les feuilles de pissenlit, parties tendres de la plante. Pour réaliser une infusion parfaite :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Prenez 4 à 10 grammes de feuilles séchées pour 150 ml d'eau",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Portez l'eau à frémissement (entre 80 et 90°C)",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Versez l'eau chaude directement sur les feuilles",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez infuser pendant 10 à 15 minutes à couvert",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Filtrez avant de consommer",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La posologie recommandée est d'une tasse de 150 ml, trois fois par jour. Cette préparation permet d'extraire efficacement les composés actifs tout en préservant leurs qualités. Notez que les feuilles fraîchement cueillies peuvent aussi être utilisées, mais il faudra les laver soigneusement avant préparation.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour adoucir l'amertume naturelle, l'ajout d'une cuillère à café de miel est tout à fait approprié. Certains apprécient également l'association avec quelques rondelles de gingembre frais ou un filet de jus de citron.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Décoction de racines : méthode et dosage",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les racines, plus denses et coriaces, nécessitent une décoction pour libérer pleinement leurs principes actifs :",
+                })
+                <ol class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Utilisez 30 grammes (environ deux cuillères à soupe) de racines séchées par litre d'eau",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Placez les racines dans l'eau froide",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Portez à ébullition puis maintenez à feu doux",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Laissez bouillir pendant 10 à 15 minutes",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Retirez du feu et laissez infuser encore 15 à 30 minutes à couvert",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Filtrez avant consommation",
+                    })
+                </ol>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour une préparation optimale, il est conseillé de couper les racines séchées en petits morceaux avant utilisation. La posologie généralement recommandée est d'un litre de décoction réparti sur la journée ou 2 à 3 tasses par jour.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une alternative consiste à utiliser une pincée de racines (environ 3 à 5 grammes) dans 250 ml d'eau pour une décoction plus concentrée.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Conseils de consommation au quotidien",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour maximiser les bienfaits de la tisane de pissenlit dans votre routine quotidienne :",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Consommez votre infusion de feuilles avant les repas, idéalement 30 minutes avant, particulièrement si vous cherchez à stimuler la digestion.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour l'effet diurétique et détoxifiant, privilégiez une consommation dès le matin, à jeun. Cette habitude permet d'optimiser l'action dépurative sans perturber votre sommeil.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Concernant la fréquence, alternez entre périodes de consommation régulière et pauses. Une cure de 1 à 3 semaines est généralement recommandée, notamment au printemps pour profiter pleinement des effets détoxifiants.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Conservez toujours votre préparation au réfrigérateur si vous ne la consommez pas immédiatement, mais préférez la boire dans les 24 heures pour préserver ses propriétés. Par ailleurs, accompagnez votre cure de tisane d'une consommation d'eau suffisante pour favoriser l'effet diurétique.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Quand et pourquoi utiliser la tisane de pissenlit ?",
+                })
+            </section>
+            <section class="block block-container block-container">
+                <div class="block__texte">@@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La question du moment idéal pour consommer la tisane de pissenlit est essentielle pour maximiser ses bienfaits thérapeutiques. Cette boisson médicinale s'avère particulièrement efficace à certaines périodes et pour des conditions spécifiques.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Cure de détox saisonnière",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Utilisez la tisane de pissenlit principalement pendant les changements de saison pour une détoxification optimale. Cette plante est particulièrement recommandée au printemps et en automne pour des cures purifiantes. Le pissenlit est reconnu comme un allié précieux pour les détox aux intersaisons, grâce à ses propriétés diurétiques, cholagogues et dépuratives générales.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Une cure efficace dure généralement entre 10 jours et 3 semaines, suivie d'une pause d'une semaine si nécessaire. Pendant cette période, prenez 2 à 3 tasses quotidiennes pour stimuler la fonction hépatique et favoriser l'élimination des toxines. Le pissenlit, en complément du vinaigre de cidre, facilite l'élimination des toxiques délogés.",
+                })
+                </div>
+                <div class="block__image">
+                    @@include('_components/image.html', {
+                        "lien": "blog/articles/2025/tisane-pissenlit-bienfaits/vrac_sachet_rituel_drainant.webp?$staticlink$",
+                        "alt": "Vrac et Sachets de rituel Drainant",
+                    })
+                </div>
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "En cas de troubles digestifs",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de pissenlit peut être utilisée ponctuellement après un repas copieux ou lorsque vous ressentez une lourdeur digestive. Ses principes amers stimulent la production de bile, facilitant ainsi la digestion des graisses et réduisant les symptômes associés à leur mauvaise digestion.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Par ailleurs, consommez cette <a class='banniere__link' href='/fr/tisane-digerer/artti-2.html'>infusion en cas de ballonnements</a>, nausées ou constipation opiniâtre. Le pissenlit régule efficacement le travail des intestins paresseux tout en favorisant la prolifération de la flore intestinale grâce à l'inuline qu'il contient.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour soulager ces troubles, buvez votre tisane 30 minutes avant les repas, notamment avant ceux riches en matières grasses.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Pour améliorer la circulation et la peau",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Utilisez la tisane de pissenlit pour purifier votre sang et améliorer votre circulation sanguine. Cette plante agit comme un puissant tonique qui nettoie le sang et favorise la circulation, ce qui peut améliorer l'aspect de votre peau en réduisant les imperfections.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "En outre, l'infusion est particulièrement indiquée en cas d'affections cutanées comme l'acné, l'eczéma, le psoriasis ou diverses dermatoses. Les propriétés détoxifiantes du pissenlit aident à éliminer les toxines responsables des boutons et de l'acné.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour les problèmes de peau, alternez entre une consommation régulière (2-3 tasses par jour) et l'application de compresses imbibées de tisane tiède directement sur les zones touchées. Cette double approche amplifie l'efficacité du traitement.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h2.html', {
+                    "titre": "Précautions et contre-indications",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Malgré ses nombreux bienfaits thérapeutiques, la tisane de pissenlit n'est pas adaptée à tous les profils. Avant de commencer une cure, il est essentiel de connaître ses limites et contre-indications pour l'utiliser en toute sécurité.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Effets secondaires possibles",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Bien que généralement bien tolérée, la tisane de pissenlit peut provoquer certains désagréments. Les effets indésirables les plus fréquemment rapportés sont les brûlures d'estomac, causées principalement par la taraxacine présente dans la plante. Vous pourriez également ressentir des nausées, particulièrement lors des premières utilisations.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Dans certains cas, une inflammation des voies biliaires peut survenir, nécessitant l'arrêt immédiat de la consommation. Par ailleurs, le latex (sève) contenu dans le pissenlit frais peut déclencher des réactions cutanées chez les personnes sensibles. Ces manifestations allergiques, bien que rares, se traduisent généralement par des éruptions sur la peau.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Pour limiter ces effets secondaires, privilégiez des cures de courte durée, idéalement entre une et trois semaines, avec des périodes de repos entre chaque cure.",
+                })
+                @@include('_components/h3.html', {
+                    "titre": "Interactions avec les médicaments",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "La tisane de pissenlit peut interagir avec plusieurs catégories de médicaments, diminuant leur efficacité ou amplifiant leurs effets. Soyez particulièrement vigilant si vous prenez :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Des anticoagulants : le pissenlit pourrait renforcer leur effet fluidifiant",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Des antidiabétiques : ses propriétés hypoglycémiantes risquent de déséquilibrer votre traitement",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Des diurétiques : l'effet combiné pourrait être trop puissant",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Des médicaments contenant du lithium : utilisés contre les troubles bipolaires",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Des traitements contre le reflux gastro-œsophagien",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Avant de commencer une cure, consultez impérativement votre médecin si vous suivez un traitement médical, même occasionnel.",
+                })
+            </section>
+            <section class="block">
+                @@include('_components/h3.html', {
+                    "titre": "Personnes à risque : femmes enceintes, enfants, etc.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Certains profils doivent absolument éviter la consommation de tisane de pissenlit. C'est notamment le cas des femmes enceintes et allaitantes, en raison du manque d'informations sur ses effets durant ces périodes. Les enfants de moins de douze ans ne devraient pas en consommer non plus.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Cette tisane est formellement contre-indiquée pour les personnes souffrant de :",
+                })
+                <ul class="block__ul">
+                    @@include('_components/li.html', {
+                        "texte": "Troubles hépatiques graves",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Obstruction ou calculs des voies biliaires",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Obstruction intestinale ou ulcère du duodénum",
+                    })
+                    @@include('_components/li.html', {
+                        "texte": "Insuffisance rénale ou problèmes cardiaques",
+                    })
+                </ul>
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "Les personnes allergiques aux plantes de la famille des Astéracées (camomille, marguerite) présentent également un risque accru de réactions allergiques au pissenlit, pouvant aller jusqu'au choc anaphylactique.",
+                })
+                @@include('_components/paragraphe.html', {
+                    "class": "block__p",
+                    "texte": "N'utilisez jamais la tisane de pissenlit pendant une crise de calculs urinaires (colique néphrétique), car l'augmentation du volume urinaire pourrait aggraver significativement les douleurs en augmentant la pression sur les calculs.",
+                })
+            </section>
+        </article>
+        <section class="slider">
+            @@include('_components/h2-section.html', {
+                "titre": "En relation",
+            })
+            <div class="articles">
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','recettes-bienfaits-boisson-detox')$",
+                    "lien-img": "blog/articles/2024/boisson-detox.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Boisson détox : purifiez votre corps et boostez votre énergie !",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','arttv15')$",
+                    "lien-img": "blog/articles/2024/minceur/rituel-minceur-the-vert.webp?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Le thé vert fait-il maigrir ?",
+                    "cta": "En savoir plus",
+                })
+                @@include('_components/article.html', {
+                    "lien": "$url('Page-Show','cid','artti-17')$",
+                    "lien-img": "blog/2-allie_minceur.png?$staticlink$",
+                    "alt": "Cliquez pour lire l'article",
+                    "titre": "Tisane et infusion drainante : la boisson bien-être idéale pour éliminer",
+                    "cta": "En savoir plus",
+                })
+            </div>
+        </section>
+        <section class="block">
+            @@include('_components/partager.html', {
+                "titre": "Tisane de pissenlit : bienfaits, usages et préparation",
+                "texte": "Partage cet article",
+                "url-network": "$url('Page-Show','cid','tisane-pissenlit-bienfaits')$",
+            })
+        </section>
+    </div>
+</div>
